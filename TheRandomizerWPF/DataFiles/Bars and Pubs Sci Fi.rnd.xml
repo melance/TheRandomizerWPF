@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+		 xsi:type="AssignmentGrammar">
+	<name>Bars &amp; Pubs (Sci-Fi)</name>
+	<author>Lance Boudreaux</author>
+	<description>Generates a random futuristic drinking hole.</description>
+	<category>Environment</category>
+	<genre>Sci-Fi</genre>
+	<system>Generic</system>
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start"><![CDATA[<h3 style="margin:0;">[Name]</h3>
+		<b>Location</b>:    [Location]<br />
+		<b>Description</b>: A [Stories]-story establishment with [Walls] walls that are [Decorations].<br />
+		<b>Barkeeper</b>:   A [Size] [Age] [Gender] [Trait].
+		]]></item>
+	
+		<item name="Name">The [Noun] &amp; [Noun]</item>
+		<item name="Name">The [Adjective] [Noun]</item>
+		<item name="Name">[Owner]'s [Type]</item>
+		<item name="Name">[Owner]'s [Noun] [Type]</item>
+		<item name="Name">[Type] [Noun]</item>
+		<item name="Name">[Type] [Adjective] [Noun]</item>
+		
+		<item name="Location">In the slums</item>
+		<item name="Location">Alleyway</item>
+		<item name="Location">Inside a hotel</item>
+		<item name="Location">downtown</item>
+		<item name="Location">In a rural area</item>
+		<item name="Location">On skid row</item>
+		<item name="Location">In the red light district</item>
+		<item name="Location">Uptown</item>
+		<item name="Location">Underground</item>
+		<item name="Location">In the suburbs</item>
+		<item name="Location">At the top of a skyscraper</item>
+		
+		<item name="Size" weight="1">diminutive</item>
+		<item name="Size" weight="2">tiny</item>
+		<item name="Size" weight="5">small</item>
+		<item name="Size" weight="10">average height</item>
+		<item name="Size" weight="5">tall</item>
+		<item name="Size" weight="2">very tall</item>
+		<item name="Size" weight="1">towering</item>
+		<item name="Size" weight="1">giant</item>
+		
+		<item name="Age">young</item>
+		<item name="Age">twenty-something</item>
+		<item name="Age">thirty-something</item>
+		<item name="Age">middle age</item>
+		<item name="Age">old</item>
+		<item name="Age">very old</item>
+		<item name="Age">forty-something</item>
+		
+		<item name="Gender">male</item>
+		<item name="Gender">female</item>
+		<item name="Gender">androgynous</item>
+		<item name="Gender">trans-gender</item>
+		<item name="Gender">transsexual</item>
+		
+		<item name="Trait">who is unremarkable</item>
+		<item name="Trait">with a facial scar</item>
+		<item name="Trait">with a missing eye</item>
+		<item name="Trait">with a misshapen hand</item>
+		<item name="Trait">with long hair</item>
+		<item name="Trait">with [Color] hair</item>
+		<item name="Trait">with alopecia</item>
+		<item name="Trait">with a slight limp</item>
+		<item name="Trait">with a bad limp</item>
+		<item name="Trait">with dark skin</item>
+		<item name="Trait">with pale skin</item>
+		<item name="Trait">albino</item>
+		<item name="Trait">wearing coke-bottle glasses</item>
+		<item name="Trait">wearing neon clothing</item>
+		<item name="Trait">with 9 fingers</item>
+		<item name="Trait">wearing earphones</item>
+		<item name="Trait">cleaning glasses</item>
+		<item name="Trait">moving fluidly</item>
+		<item name="Trait">with [Color] eyes</item>
+		<item name="Trait">who is barefoot</item>
+		<item name="Trait">with a broken nose</item>
+		<item name="Trait">with a black eye</item>
+		<item name="Trait">with a lazy eye</item>
+		<item name="Trait">who is cross-eyed</item>
+		<item name="Trait">with a cleft lip</item>
+		<item name="Trait">with a hare lip</item>
+		<item name="Trait">sporting a mohawk</item>
+		<item name="Trait">sporting liberty spikes</item>
+		<item name="Trait">carrying a sidearm</item>
+				
+		<item name="Stories" weight="15">single</item>
+		<item name="Stories" weight="5">double</item>
+		<item name="Stories" weight="1">triple</item>
+		
+		<item name="Walls">steel</item>
+		<item name="Walls">wood</item>
+		<item name="Walls">plastic</item>
+		<item name="Walls">plaster</item>
+		<item name="Walls">brick</item>
+		
+		<item name="Decorations">bare</item>
+		<item name="Decorations">decorated with local art</item>
+		<item name="Decorations">covered in dirt</item>
+		<item name="Decorations">exceptionally clean</item>
+		<item name="Decorations">full of random items</item>
+		<item name="Decorations">covered in televisions</item>
+		<item name="Decorations">decorated with cliché posters</item>
+		<item name="Decorations">windowless</item>
+		<item name="Decorations">painted [Color]</item>
+		<item name="Decorations">graffitied</item>
+		<item name="Decorations">lined with pool tables</item>
+		<item name="Decorations">lined with patrons</item>
+		
+		<item name="Color">blue</item>
+		<item name="Color">red</item>
+		<item name="Color">green</item>
+		<item name="Color">purple</item>
+		<item name="Color">yellow</item>
+		<item name="Color">orange</item>
+		<item name="Color">brown</item>
+		<item name="Color">white</item>
+		<item name="Color">black</item>
+		<item name="Color">tan</item>
+		<item name="Color">beige</item>
+		<item name="Color">camouflage</item>
+		<item name="Color">silver</item>
+		<item name="Color">bronze</item>
+		<item name="Color">burgundy</item>
+		<item name="Color">maroon</item>
+		<item name="Color">navy</item>
+		<item name="Color">olive</item>
+		
+		<item name="Type">Club</item>
+		<item name="Type">Café</item>
+		<item name="Type">Pub</item>
+		<item name="Type">Bistro</item>
+		<item name="Type">Bar</item>
+		<item name="Type">Tavern</item>
+		<item name="Type">Lounge</item>
+		
+		<item name="Adjective">Dead</item>
+		<item name="Adjective">Short</item>
+		<item name="Adjective">Off</item>
+		<item name="Adjective">Hard</item>
+		<item name="Adjective">Tech</item>
+		<item name="Adjective">Dark</item>
+		<item name="Adjective">Blue</item>
+		<item name="Adjective">Red</item>
+		<item name="Adjective">Green</item>
+		<item name="Adjective">Black</item>
+		<item name="Adjective">Blind</item>
+		<item name="Adjective">South</item>
+		<item name="Adjective">North</item>
+		<item name="Adjective">East</item>
+		<item name="Adjective">West</item>
+		<item name="Adjective">Urban</item>
+		<item name="Adjective">Cyber</item>
+		<item name="Adjective">Blank</item>
+		<item name="Adjective">Titanium</item>
+		<item name="Adjective">Steel</item>
+		<item name="Adjective">Bone</item>
+		
+		<item name="Noun">Matrix</item>
+		<item name="Noun">Charge</item>
+		<item name="Noun">Circuit</item>
+		<item name="Noun">Beat</item>
+		<item name="Noun">Rocker</item>
+		<item name="Noun">Illusion</item>
+		<item name="Noun">Phantasia</item>
+		<item name="Noun">Phantasm</item>
+		<item name="Noun">Pony</item>
+		<item name="Noun">Horse</item>
+		<item name="Noun">Fire</item>
+		<item name="Noun">Body</item>
+		<item name="Noun">Dance</item>
+		<item name="Noun">Squad</item>
+		<item name="Noun">Time</item>
+		<item name="Noun">Noir</item>
+		<item name="Noun">Town</item>
+		<item name="Noun">Light</item>
+		<item name="Noun">Line</item>
+		<item name="Noun">Mice</item>
+		<item name="Noun">Straight</item>
+		<item name="Noun">Stone</item>
+		<item name="Noun">Haven</item>
+		<item name="Noun">Heaven</item>
+		<item name="Noun">Hell</item>
+		<item name="Noun">Wanted</item>
+		<item name="Noun">Runner</item>
+		<item name="Noun">Shadow</item>
+		<item name="Noun">House</item>
+		<item name="Noun">Yard</item>
+		
+		<item name="Owner">Killroy</item>
+		<item name="Owner">Henry</item>
+		<item name="Owner">Bone</item>
+		<item name="Owner">Bob</item>
+		<item name="Owner">Dante</item>
+		<item name="Owner">Crystal</item>
+		<item name="Owner">Lance</item>
+		<item name="Owner">Ashe</item>
+		<item name="Owner">Brenna</item>
+		<item name="Owner">Lizzie</item>
+		<item name="Owner">Country</item>
+		<item name="Owner">Dallas</item>
+		<item name="Owner">Texas</item>
+		<item name="Owner">Paris</item>
+		<item name="Owner">London</item>
+		<item name="Owner">Glenda</item>
+		<item name="Owner">Robin</item>
+		<item name="Owner">Bruce</item>
+		<item name="Owner">Layne</item>
+		<item name="Owner">Lisa</item>
+		<item name="Owner">Raven</item>
+	</items>
+</Grammar>
+		

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Export into a WebHelp format</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Export into a WebHelp format</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/webhelp.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      This wizard is designed to create a so-called <b>online help</b>, the format that is usually called as <i>WebHelp</i>.
+      Essentially it is about copying the directory structure of your project (the source files) to a specified folder
+      and the generation of a "frame" (main page) in HTML or XML format, that allows such a help to be easily browsed in the <b>web browser</b>.
+    </p>
+    
+    <p>
+      Precision Helper allows usage of <b>user defined templates</b> for the creation of online help (see below).
+    </p>
+    
+    <p>
+      In the wizard, select a template, that will be used to build online help, and the main file location of newly created WebHelp
+      (i.e. <i>C:\webhelp\test\index.htm</i>, <i>C:\webhelp\test\default.htm</i>, etc.).
+      Then click "Next &gt;" to start this action.
+    </p>
+    <p>
+      When the wizard successfully finishes its work, you will be asked if you want to immediately <b>open the newly created help</b> in the webbrowser.
+    </p>
+
+    <p class="big" style="padding-top:8px;">
+      WebHelp templates
+    </p>
+
+    <p>
+      Examples of these templates can be found in <i>application data folder</i> of Precision Helper product (in <i>Templates</i> subfolder).
+    </p>
+    <p style="margin-left:24px; text-align:left;">
+      For default installation on Windows 2000/XP it is a folder:<br>
+      <i>"C:\Documents and Settings\%UserName%\AppData\Precision\precisionhelper\Templates\"</i><br><br>
+            For default installation on Windows Vista (and newer) it is a folder:<br>
+      <i>"C:\Users\%UserName%\AppData\Roaming\Precision\precisionhelper\Templates\"</i>
+    </p>
+    
+    <p>
+      Each template must be located in separate folder and the folder name must have a proper language identifier as an extension (i.e. "<i>test.en</i>", "<i>test.cs</i>", etc.).
+      The template definition file must have a "<b>WebHelp.ini</b>" name.
+      Definition file syntax is simple and is included in Precision Helper template examples.
+      So, if you want to create your own templates, study the definition files in installed examples.
+    </p>
+    <p>
+    	The rest of the template may comprise any files you want to use in your online help - ie. html, xml, xslt, css, js files, etc.
+    </p>
+    <p>
+      In Precision Helper, there is a special template included, to create so-called <a href="toolsExportSingleDoc.htm">single html document</a>.
+      This template is usefull to create a document, that can be opened in some text editors and especially that can be converted (or <i>virtually printed</i>) to <a href="ExportPDF.htm">Adobe PDF</a> document format.
+    </p>
+    
+    <p class="big" style="padding-top:8px;">
+      Additional functions in WebHelp templates
+    </p>
+    <p>
+      <b>Standard WebHelp template</b>
+      and <b>Standard WebHelp template (synchronized topics and TOC)</b> implements the following additional features: 
+    </p>
+    <ul>
+      <li>Automatic highlighting of searched terms</li>
+      <li>Automatic synchronization of displayed topic and the contents tree</li>
+      <li>
+        Direct navigation to desired topic from an external application.<br />
+        So, although the WebHelp is designed with HTML frames, you can refer directly to desired topic by using the simple url syntax like:<br />
+        &nbsp;&nbsp;&nbsp;"<i>c:\webhelp\index.htm#mytopic.htm</i>",<br />
+        &nbsp;&nbsp;&nbsp;"<i>c:\webhelp\index.htm#topics/mytopic.htm</i>",<br />
+        &nbsp;&nbsp;&nbsp;"<i>http://www.mysite.com/webhelp/index.php#mytopic.htm</i>", apod.
+        <br />
+        Link to the help topic has to be placed after the <b>#</b> (sharp) sign.         
+      </li>
+    </ul>                 
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. All rights reserved.
+  </div>
+</body>
+</html>

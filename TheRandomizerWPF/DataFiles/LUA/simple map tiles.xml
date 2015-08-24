@@ -1,0 +1,14 @@
+<tiles>
+	<t>
+		<North></North>
+		<East></East>
+		<South></South>
+		<West></West>
+		<Tile><![CDATA[
+		<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		]]></Tile>
+	</t>
+
+</tiles>

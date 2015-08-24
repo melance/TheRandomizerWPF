@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		 xsi:type="AssignmentGrammar">
+	<name>Corporation Names</name>
+	<author>Lance Boudreaux</author>
+	<description>Generates corporation names.</description>
+	<category>Name</category>
+	<adsf></adsf>
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start">[Adjective] [Noun] [Type]</item>
+		<item name="Start">[Noun] [Adjective] [Type]</item>
+		<item name="Start">[Name] [Noun] [Type]</item>
+		<item name="Start">[Name] [Type]</item>
+		<item name="Start">[Noun] [TechnoPrefix][TechnoSuffix]</item>
+		<item name="Start">[Name] [TechnoPrefix][TechnoSuffix]</item>
+		<item name="Start">[TechnoPrefix][TechnoSuffix] [Type]</item>
+		<item name="Start">[TechnoPrefix][TechnoSuffix] [Noun] [Type]</item>
+		
+		<item name="Type">Inc.</item>
+		<item name="Type">Corporation</item>
+		<item name="Type">LLC</item>
+		<item name="Type">Unlimited</item>
+		<item name="Type">Corp.</item>
+		<item name="Type">Partners</item>
+		<item name="Type">LLP</item>
+		<item name="Type">Ltd.</item>
+		<item name="Type">Company</item>
+		<item name="Type">Association</item>
+		<item name="Type">Incorporated</item>
+		<item name="Type">Society</item>
+		<item name="Type">Foundation</item>
+		<item name="Type">Institution</item>
+		<item name="Type">Union</item>
+		<item name="Type">Syndicate</item>
+		<item name="Type">Services</item>
+		<item name="Type">Specialties</item>
+		
+		<item name="Noun">Agriculture</item>
+		<item name="Noun">Apex</item>
+		<item name="Noun">Application</item>
+		<item name="Noun">Automation</item>
+		<item name="Noun">Automotive</item>
+		<item name="Noun">Biology</item>
+		<item name="Noun">Computer</item>
+		<item name="Noun">Data</item>
+		<item name="Noun">Development</item>
+		<item name="Noun">Engineering</item>
+		<item name="Noun">Entertainment</item>
+		<item name="Noun">Equipment</item>
+		<item name="Noun">Exploration</item>
+		<item name="Noun">Fuel</item>
+		<item name="Noun">Gas</item>
+		<item name="Noun">Gene</item>
+		<item name="Noun">Group</item>
+		<item name="Noun">Hardware</item>
+		<item name="Noun">Health</item>
+		<item name="Noun">Horizon</item>
+		<item name="Noun">Information</item>
+		<item name="Noun">Instrument</item>
+		<item name="Noun">Logistic</item>
+		<item name="Noun">Machine</item>
+		<item name="Noun">Manufacturing</item>
+		<item name="Noun">Mechanics</item>
+		<item name="Noun">Media</item>
+		<item name="Noun">Mining</item>
+		<item name="Noun">Motor</item>
+		<item name="Noun">Network</item>
+		<item name="Noun">Photographic</item>
+		<item name="Noun">Radio</item>
+		<item name="Noun">Science</item>
+		<item name="Noun">Service</item>
+		<item name="Noun">Software</item>
+		<item name="Noun">Space</item>
+		<item name="Noun">Spark</item>
+		<item name="Noun">Sport</item>
+		<item name="Noun">System</item>
+		<item name="Noun">Terraforming</item>
+		<item name="Noun">Tools</item>
+		<item name="Noun">Training</item>
+		<item name="Noun">Vista</item>
+		<item name="Noun">World</item>
+		
+		<item name="Adjective">Air</item>
+		<item name="Adjective">Alternative</item>
+		<item name="Adjective">American</item>
+		<item name="Adjective">Atomic</item>
+		<item name="Adjective">British</item>
+		<item name="Adjective">Brown</item>
+		<item name="Adjective">Calibrated</item>
+		<item name="Adjective">Canadian</item>
+		<item name="Adjective">Chemical</item>
+		<item name="Adjective">Digital</item>
+		<item name="Adjective">Earth</item>
+		<item name="Adjective">Eastern</item>
+		<item name="Adjective">Electric</item>
+		<item name="Adjective">Electronic</item>
+		<item name="Adjective">Financial</item>
+		<item name="Adjective">Foreign</item>
+		<item name="Adjective">Future</item>
+		<item name="Adjective">General</item>
+		<item name="Adjective">Genetic</item>
+		<item name="Adjective">Imperial</item>
+		<item name="Adjective">Integrated</item>
+		<item name="Adjective">Liquid</item>
+		<item name="Adjective">Medical</item>
+		<item name="Adjective">Mexican</item>
+		<item name="Adjective">Mutual</item>
+		<item name="Adjective">Networked</item>
+		<item name="Adjective">Northern</item>
+		<item name="Adjective">Official</item>
+		<item name="Adjective">Open</item>
+		<item name="Adjective">Royal</item>
+		<item name="Adjective">Solar</item>
+		<item name="Adjective">Southern</item>
+		<item name="Adjective">Space</item>
+		<item name="Adjective">Tactical</item>
+		<item name="Adjective">Technological</item>
+		<item name="Adjective">Western</item>
+		<item name="Adjective">Wholesale</item>
+		
+		<item name="TechnoPrefix">Psycho</item>
+		<item name="TechnoPrefix">Cyber</item>
+		<item name="TechnoPrefix">Chemo</item>
+		<item name="TechnoPrefix">Dyno</item>
+		<item name="TechnoPrefix">Atonomo</item>
+		<item name="TechnoPrefix">Techno</item>
+		<item name="TechnoPrefix">Gene</item>
+		<item name="TechnoPrefix">Geo</item>
+		<item name="TechnoPrefix">Astro</item>
+		<item name="TechnoPrefix">Aero</item>
+		<item name="TechnoPrefix">Auto</item>
+		
+		<item name="TechnoSuffix">tronics</item>
+		<item name="TechnoSuffix">nautics</item>
+		<item name="TechnoSuffix">graphic</item>
+		<item name="TechnoSuffix">dynamics</item>
+		<item name="TechnoSuffix">soft</item>
+		<item name="TechnoSuffix">mantics</item>
+		<item name="TechnoSuffix">logistics</item>
+		<item name="TechnoSuffix">netics</item>
+		<item name="TechnoSuffix">mation</item>
+		
+		<item name="Name" weight="80">[USLastName]</item>
+		<item name="Name" weight="10">[UpperCase][UpperCase]</item>
+		<item name="Name" weight="10">[UpperCase][UpperCase][UpperCase]</item>
+	</items>
+	<imports>
+		<import>LettersAndDigits</import>
+		<import>USNames</import>
+	</imports>
+</Grammar>

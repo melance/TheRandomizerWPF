@@ -1,0 +1,123 @@
+﻿<html>
+	
+<head>
+	<title>LUA Grammar File Structure</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.5.0.497">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "The Randomizer.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("LUAGrammarFileStructure");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">LUA Grammar File Structure</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="GrammarFiles.html">Grammar Files</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="GrammarFiles.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="DiceRollGrammarFileStructure.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="PhonotacticsGrammarFileStructure.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps3"><span class="rvts8">The following information is specific to LUA Grammar Files which are useful for translating random generation tables into grammar files. See the Grammar Files help section for common information about all </span><a class="rvts13" href="GrammarFileStructure.html">Grammar Files</a><span class="rvts8">.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Script</span></span></h3>
+<p class="rvps3"><span class="rvts8">The LUA grammar file functionality is entirely contained inside of a "script" tag. &nbsp;The contents of this tag should be a LUA chunk with a return value of simple data types or a table of simple data types. &nbsp;The parameters received from the user are available as global variables. &nbsp;</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Example</span></p>
+<p class="rvps9"><span class="rvts18">&lt;?xml version="1.0"?&gt;</span></p>
+<p class="rvps9"><span class="rvts18">&lt;Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> xmlns:xsd="http://www.w3.org/2001/XMLSchema"</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> xsi:type="LUAGrammar"&gt;</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">&lt;name&gt;LUA Test&lt;/name&gt;</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">&lt;authur&gt;Lance Boudreaux&lt;/authur&gt;</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">&lt;description&gt;A test of the LUA functionality&lt;/description&gt;</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">&lt;category&gt;Test&lt;/category&gt;</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">&lt;parameters&gt;</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">&lt;parameter name="type" display="Type" type="List" valueType="Label"&gt;</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">&lt;option display="Any"&gt;any&lt;/option&gt;</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">&lt;option display="Option One"&gt;option1&lt;/option&gt;</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">&lt;option display="Option Two"&gt;option 2&lt;/option&gt;</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">&lt;/parameter&gt;</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">&lt;/parameters&gt;</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">&lt;supportsMaxLength&gt;false&lt;/supportsMaxLength&gt;</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">&lt;script&gt;</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">&lt;![CDATA[</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">mymodule = require 'LUATest'</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">if type == 'any' then</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">type = calc:SelectFromTable({'option1','option2'})</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">end</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">return type</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps9"><span class="rvts18"></span><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts18">]]&gt;</span></p>
+<p class="rvps9"><span class="rvts18">&lt;/script&gt;</span></p>
+<p class="rvps9"><span class="rvts18">&lt;/Grammar&gt;</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">The calc object</span></span></h3>
+<p class="rvps3"><span class="rvts8">The calc object provides all of the same functions that are allowed in other grammars that are detailed in the </span><a class="rvts13" href="CalculationFunctions.html">Calculation Functions</a><span class="rvts8"> section. &nbsp;Additional methods available are:</span></p>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Evaluate(Expression as String): </span><span class="rvts8">This will evaluate a calculation string using the NCalc engine as is done in the other grammars. &nbsp;Please see the </span><a class="rvts13" href="CalculationFunctions.html">Calculation Functions</a><span class="rvts8"> section for more details.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">FileToString(FilePath as String): </span><span class="rvts8">This will read the entire contents of a file and return them as a single string. &nbsp;The file path can be full or relative. &nbsp;Relative file paths are relative to the location of the grammar file.</span></p>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><span class="rvts15">FileToTable(FilePath as String): </span><span class="rvts8">This will read the contents of a file and return them as a zero based table of strings. &nbsp;The file path can be full or relative. &nbsp;Relative file paths are relative to the location of the grammar file.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">SelectFromTable(Values as Table): </span><span class="rvts8">This will randomly select an item from the table. &nbsp;It requires the index to be integer based and in ascending order. &nbsp;For example: {1='Item One', 6='Item Two', 10='Item Three'} &nbsp;will tell the function to select a random number between 1 and 10 and select the item that has the closest index greater than the number.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Require Path</span></span></h3>
+<p class="rvps3"><span class="rvts8">The default require search path is expanded to include the [grammar file directories]\lua</span></p>
+<p></p>
+<p class="rvps2"><span class="rvts6">Created with the Personal Edition of HelpNDoc: </span><a class="rvts7" href="http://www.helpndoc.com/feature-tour">Easily create Help documents</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2014 by Lance Boudreaux. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

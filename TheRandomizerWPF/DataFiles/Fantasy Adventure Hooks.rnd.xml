@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar">
+	<name>Adventure Hooks (Fantasy)</name>
+	<author>Lance Boudreaux</author>
+	<description>A fantasy adventure hook generator.</description>
+	<genre>Fantasy</genre>
+	<category>Encounter</category>
+	<parameters />
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start">A(n) [LargeMonster] [Action]s a nearby [Settlement].</item>
+		<item name="Start">Forbidden lovers from a nearby [Settlement] run away to a [DangerousLocation].</item>
+		<item name="Start">The adventurers must protect a(n) [Person] from a(n) [Person].</item>
+		<item name="Start">A local [Person] is suspected of kidnapping people.</item>
+		<item name="Start">A local [Person] claims to have been attacked by a [Monster] on the road.</item>
+		<item name="Start">A cult is abducting people for sacrifices.</item>
+		<item name="Start">Strange lights and sounds come from a(n) [DangerousLocation].</item>
+		<item name="Start">A dying [Person] claims to have found a mother lode of [Mineral].</item>
+		<item name="Start">A cursed item comes to the adventurers passing on a corruption.</item>
+		<item name="Start">A demon possesses a(n) [Person] to fulfill an ancient obligation made with a [Person] no longer alive.</item>
+		<item name="Start">A friend asks for help in settling a duel of honor.</item>
+		<item name="Start">A respected [Person] is accused of serious crimes; is it a frame up?</item>
+		<item name="Start">Rumors are spreading of a [Person] who has returned from the dead.</item>
+		<item name="Start">A killer stalks a [Settlement] at night.</item>
+		<item name="Start">A(n) [Person] has become lost in a(n) [DangerousLocation] and need help.</item>
+		<item name="Start">[Monster]s are gathering in large numbers near a local [Settlement].</item>
+		<item name="Start">The nobles of a local [Settlement] are calling for help to find thieves that stole their riches.</item>
+		<item name="Start">A group of undead have begun guarding a(n) [DangerousLocation].</item>
+		<item name="Start">A local [Settlement] has been devastated by a mysterious [NaturalDisaster].</item>
+		<item name="Start">The group is asked to escort a caravan through dangerous territory.</item>
+		<item name="Start">The local rulers plan to execute a [=Pick('friend','family member','lover') of one of the adventurers.</item>
+		<item name="Start">A local [Person] is accused of governmental corruption</item>
+		<item name="Start">A conflict erupts between a group of [Monster]s and [Monster]s.</item>
+		<item name="Start">On their deathbed, a(n) [Person] asks for help achieving a final task.</item>
+		<item name="Start">All of the citizens of a local [Settlement] have mysteriously disappeared.</item>
+		<item name="Start">Two [Settlement]s are contesting who has rights to a local mine.</item>
+		<item name="Start">Rumors arise of a [Monster] in the nearby forest.</item>
+		<item name="Start">A(n) [Person] is seeing the near future, they foresee a [NaturalDisaster] in the local [Settlement]</item>
+		<item name="Start">A mage is granting wishes to anyone willing to pay.</item>
+		<item name="Start">The daughter of a noble has run away to an enemy [Settlement].</item>
+		<item name="Start">All of the mages in the nearby area have lost their ability to cast spells.</item>
+		<item name="Start">All of the soldiers in a nearby [Settlement] have fallen into a magical sleep just as an army gathers outside.</item>
+		<item name="Start">A(n) [Settlement] suffering from a plague say they were cursed.</item>
+		<item name="Start">The adventurers awaken with short term memory loss.</item>
+		<item name="Start">A [Person] claiming to have information about a recent murder turns up dead.</item>
+		<item name="Start">A ship of undead arrive at the docks but do not disembark.</item>
+		<item name="Start">One of the PCs [=Pick('family members','friends','lovers') is being hunted by a(n) [Enemy].</item>
+		<item name="Start">The hometown of a PC is being raided by [Monster]s.</item>
+		<item name="Start">The tarrasque is sleeping beneath a nearby mountain.</item>
+		<item name="Start">A [Location] filled with treasure and artifacts is hidden nearby.</item>
+		<item name="Start">A man is healing the sick and raising the dead for free in villages nearby.</item>
+		<item name="Start">A local [Medium] hoard is requesting a meeting with the PCs to discuss a peace treaty with the nearby [Settlement].</item>
+		<item name="Start">Once thought dead, an ancient [ChromaticDragon+MetallicDragon] was spotted in a nearby [NaturalLocation].</item>
+		<item name="Start">A(n) [Person] has come into the possession of an extremely powerful artifact.</item>
+		<item name="Start">The lair of a [Medium] group has been affected by a plague.</item>
+		<item name="Start">Every citizen of a local [Settlement] suddenly has a mysterious double that mimics them perfectly walking around.</item>
+		<item name="Start">A(n) [Person] from an unknown foreign land is claiming to have nearly escaped a genocide.</item>
+		<item name="Start">A(n) [Person] from an unknown foreign land is claiming that invaders are coming.</item>
+		<item name="Start">A(n) [ChromaticDragon+MetallicDragon] is demanding a [=Pick('human','virginal','monetary')] sacrifice monthly or it will destroy the local [Settlement].</item>
+		<item name="Start">A [=Pick('traveler from the future','prophet','mystic','witch doctor','gypsy')] is demanding to see the local ruler to warn of a catastrophe.</item>
+		<item name="Start">All of a PC's possession have been stolen.</item>
+		<item name="Start">The PC's are accused of [Crime].</item>
+		
+		<item name="Crime">theft</item>
+		<item name="Crime">murdering a(n) [Person]</item>
+		<item name="Crime">kidnapping</item>
+		<item name="Crime">treason</item>
+		<item name="Crime">adultery</item>
+		<item name="Crime">pick pocketing</item>
+		<item name="Crime">rape</item>
+		<item name="Crime">assault</item>
+		<item name="Crime">blasphemy</item>
+		<item name="Crime">heresy</item>
+		
+		<item name="NaturalDisaster">tornado</item>
+		<item name="NaturalDisaster">hurricane</item>
+		<item name="NaturalDisaster">earthquake</item>
+		<item name="NaturalDisaster">storm</item>
+		<item name="NaturalDisaster">sandstorm</item>
+		<item name="NaturalDisaster">blizzard</item>
+		<item name="NaturalDisaster">locust swarm</item>
+		<item name="NaturalDisaster">fire</item>
+		<item name="NaturalDisaster">tsunami</item>
+		<item name="NaturalDisaster">wildfire</item>
+		<item name="NaturalDisaster">disease</item>
+		<item name="NaturalDisaster">plague</item>
+		<item name="NaturalDisaster">hail</item>
+		<item name="NaturalDisaster">sinkhole</item>
+		<item name="NaturalDisaster">drought</item>
+		<item name="NaturalDisaster">crop blight</item>
+		<item name="NaturalDisaster">cattle plague</item>
+		
+		<item name="LargeMonster">[Large]</item>
+		<item name="LargeMonster">[Huge]</item>
+		<item name="LargeMonster">[Gargantuan]</item>
+		<item name="LargeMonster">[Colossal]</item>
+		
+		<item name="Mineral">copper</item>
+		<item name="Mineral">silver</item>
+		<item name="Mineral">gold</item>
+		<item name="Mineral">platinum</item>
+		<item name="Mineral">iron</item>
+		<item name="Mineral">lead</item>
+		<item name="Mineral">tin</item>
+		<item name="Mineral">mercury</item>
+		<item name="Mineral">adamantine</item>
+		<item name="Mineral">mithril</item>
+		<item name="Mineral">obsidian</item>
+		<item name="Mineral">orichalcum</item>
+		
+		<item name="Action">attack</item>
+		<item name="Action">terrorize</item>
+		<item name="Action">stalk</item>
+		<item name="Action">threaten</item>
+		<item name="Action">inhabit</item>
+		<item name="Action">leave</item>
+		
+		<item name="Location">[Settlement]</item>
+		<item name="Location">[DangerousLocation]</item>
+		<item name="Location">[Building]</item>
+		<item name="Location">[NaturalLocation]</item>
+		
+		<item name="Settlement">town</item>
+		<item name="Settlement">city</item>
+		<item name="Settlement">hamlet</item>
+		<item name="Settlement">kingdom</item>
+		<item name="Settlement">settlement</item>
+		<item name="Settlement">castle</item>
+		<item name="Settlement">village</item>
+		
+		<item name="Building">temple</item>
+		<item name="Building">lighthouse</item>
+		<item name="Building">monastery</item>
+		<item name="Building">convent</item>
+		<item name="Building">castle</item>
+		<item name="Building">prison</item>
+		<item name="Building">dungeon</item>
+		<item name="Building">religious site</item>
+		
+		<item name="NaturalLocation">forest</item>
+		<item name="NaturalLocation">woods</item>
+		<item name="NaturalLocation">desert</item>
+		<item name="NaturalLocation">mountains</item>
+		<item name="NaturalLocation">valley</item>
+		<item name="NaturalLocation">swamp</item>
+		<item name="NaturalLocation">marsh</item>
+		<item name="NaturalLocation">bog</item>
+		<item name="NaturalLocation">coastline</item>
+		<item name="NaturalLocation">prairie</item>
+		<item name="NaturalLocation">steppe</item>
+
+		<item name="DangerousLocation">ruin</item>
+		<item name="DangerousLocation">dungeon</item>
+		<item name="DangerousLocation">abandoned castle</item>
+		<item name="DangerousLocation">abandoned mine</item>
+		<item name="DangerousLocation">wizard's tower</item>
+		<item name="DangerousLocation">haunted woods</item>
+		<item name="DangerousLocation">cultist temple</item>
+		<item name="DangerousLocation">cave system</item>
+		
+		<item name="Enemy">[Person]</item>
+		<item name="Enemy">[Monster]</item>
+
+		<item name="Person">adventurer</item>
+		<item name="Person">archer</item>
+		<item name="Person">bandit</item>
+		<item name="Person">barbarian</item>
+		<item name="Person">baron</item>
+		<item name="Person">bartender</item>
+		<item name="Person">beggar</item>
+		<item name="Person">bishop</item>
+		<item name="Person">blacksmith</item>
+		<item name="Person">cardinal</item>
+		<item name="Person">champion</item>
+		<item name="Person">cleric</item>
+		<item name="Person">cooper</item>
+		<item name="Person">cook</item>
+		<item name="Person">courier</item>
+		<item name="Person">druid</item>
+		<item name="Person">dwarf</item>
+		<item name="Person">elf</item>
+		<item name="Person">farmer</item>
+		<item name="Person">fool</item>
+		<item name="Person">gypsy</item>
+		<item name="Person">hangman</item>
+		<item name="Person">henchman</item>
+		<item name="Person">hermit</item>
+		<item name="Person">hunter</item>
+		<item name="Person">innkeeper</item>
+		<item name="Person">jester</item>
+		<item name="Person">knave</item>
+		<item name="Person">king</item>
+		<item name="Person">knight</item>
+		<item name="Person">lady</item>
+		<item name="Person">lord</item>
+		<item name="Person">maiden</item>
+		<item name="Person">mariner</item>
+		<item name="Person">mercenary</item>
+		<item name="Person">merchant</item>
+		<item name="Person">messenger</item>
+		<item name="Person">noble</item>
+		<item name="Person">nobleman</item>
+		<item name="Person">paladin</item>
+		<item name="Person">peddler</item>
+		<item name="Person">potter</item>
+		<item name="Person">priest</item>
+		<item name="Person">prince</item>
+		<item name="Person">prostitute</item>
+		<item name="Person">ranger</item>
+		<item name="Person">rogue</item>
+		<item name="Person">queen</item>
+		<item name="Person">sailer</item>
+		<item name="Person">scoundrel</item>
+		<item name="Person">soldier</item>
+		<item name="Person">sorcerer</item>
+		<item name="Person">squire</item>
+		<item name="Person">thief</item>
+		<item name="Person">undertaker</item>
+		<item name="Person">vagabond</item>
+		<item name="Person">warrior</item>
+		<item name="Person">wizard</item>
+	</items>
+	<imports>
+		<import>monsters by size</import>
+		<import>monsters by type</import>
+	</imports>
+</Grammar>

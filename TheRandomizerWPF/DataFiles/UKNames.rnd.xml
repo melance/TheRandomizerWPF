@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar">
+	<name>UK Names</name>
+	<author>Lance Boudreaux</author>
+	<description>A full name generator that presents names based on the top male first, female first, and surnames from England, Ireland, Scotland, and Wales.</description>
+	<genre>Modern</genre>
+	<category>Name</category>
+	<parameters>
+		<parameter name="Gender" display="Gender" type="List" valueType="Label">
+			<option>Any</option>
+			<option>Male</option>
+			<option>Female</option>
+		</parameter>
+	</parameters>
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start">[Gender]</item>
+		<item name="Any">[UKFullName]</item>
+		<item name="Male">[UKMaleFullName]</item>
+		<item name="Female">[UKFemaleFullName]</item>
+	</items>
+	<imports>
+		<import>UKNames</import>
+	</imports>
+</Grammar>

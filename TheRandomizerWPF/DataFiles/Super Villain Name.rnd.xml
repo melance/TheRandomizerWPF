@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+		 xsi:type="TableGrammar">
+	<name>Super Villain Name and Title</name>
+	<author>Lance Boudreaux</author>
+	<description>Generates a super villain name and title</description>
+	<genre>Comic Book</genre>
+	<category>Name</category>
+	<tables>
+		<table name="Prefix" action="Random" column="Roll" delimiter="|">
+			<![CDATA[
+		Roll | Name
+		01   | Acid
+		02   | Arctic
+		03   | Black
+		04   | Blue
+		05   | Burgundy
+		06   | Crazed
+		07   | Dark
+		08   | Deadly
+		09   | Evil
+		10   | Feral
+		11   | Flare
+		12   | Gold
+		13   | Golden
+		14   | Gray
+		15   | Green
+		16   | Infinity
+		17   | Killer
+		18   | Maroon
+		19   | Pale
+		20   | Poison
+		21   | Psion
+		22   | Psycho
+		23   | Quake
+		24   | Red
+		25   | Silver
+		26   | Sonic
+		27   | Star
+		28   | Storm
+		29   | Strange
+		30   | Strike
+		31   | Tidal
+		32   | Tri
+		33   | War
+		34   | White
+		]]></table>
+		<table name="Suffix" action="Random" column="Roll" delimiter="|"><![CDATA[
+		Roll | Name
+		01   | Badger
+		02   | Beast
+		03   | Blight
+		04   | Born
+		05   | Brain
+		06   | Croc
+		07   | Cyborg
+		08   | Demon
+		09   | Devil
+		10   | Doctor
+		11   | Doom
+		12   | Dragon
+		13   | Emperor
+		14   | Fist
+		15   | Killer
+		16   | Light
+		17   | Lord
+		18   | Nymph
+		19   | One
+		20   | Professor
+		21   | Shot
+		22   | Slicer
+		23   | Stalker
+		24   | Sword
+		25   | Tempter
+		26   | Thorn
+		27   | Tiger
+		28   | Tornado
+		29   | Tyrant
+		30   | Usurper
+		31   | Violator
+		32   | Vulture
+		33   | Warrior
+		34   | Whip
+		35   | Wizard
+		]]></table>
+		<table name="TitlePrefix" action="Random" column="Roll" delimiter="|"><![CDATA[
+		Roll | Name
+		01   | Trickster
+		02   | Destroyer
+		03   | Terror
+		04   | Ruler
+		05   | Murderer
+		06   | Richest
+		07   | Monarch
+		08   | Master
+		09   | Enslaver
+		10   | Horror
+		11   | Mistake
+		12   | Mercenary
+		13   | Keeper
+		14   | Rogue
+		15   | General
+		16   | Reviled
+		17   | Smiter
+		18   | Eviscerator
+		19   | Queller
+		20   | Abolisher
+		21   | Silencer
+		22   | Watcher
+		23   | Assassin
+		24   | Pestilence
+		25   | Hated
+		26   | Feared
+		27   | Dreaded
+		28   | Survivor
+		29   | Immortal
+		30   | Consort
+		31   | Demon
+		32   | 
+		]]></table>
+		<table name="TitleSuffix" action="Random" column="Roll" delimiter="|"><![CDATA[
+		Roll | Name
+		01   | Men
+		02   | Hope
+		03   | Europe
+		04   | Gotham
+		05   | Women
+		06   | the Ancient Ones
+		07   | the New Gods
+		08   | Titans
+		09   | Death
+		10   | Time
+		11   | Humanity
+		12   | Earth
+		13   | the States
+		14   | the Future
+		15   | Asia
+		16   | Mars
+		17   | the Galaxy
+		18   | the Universe
+		19   | the Stars
+		20   | Nature
+		21   | the Living
+		22   | Metropolis
+		23   | Law
+		24   | Freedom
+		25   | Knowledge
+		26   | Lust
+		27   | Space
+		28   | Faith
+		29   | Asia
+		30   |
+		]]></table>
+	</tables>
+	<output>
+		[=if('[TitlePrefix.Name]' != '','','The ')] [Prefix.Name] [Suffix.Name] [=if('[TitlePrefix.Name]'!='', ' The [TitlePrefix.Name]' + if('[TitleSuffix.Name]'!='',' of [TitleSuffix.Name]',''), '')]
+	</output>
+</Grammar>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+		 xsi:type="AssignmentGrammar">
+	<name>Random Encounters (World of Darkness)</name>
+	<author>Lance Boudreaux</author>
+	<description>A list of encounters designed for the World of Darkness but applicable to most modern RPGs</description>
+	<category>Encounter</category>
+	<genre>Horror</genre>
+	<system>World of Darkness</system>
+	<parameters />
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start">You [encounter]</item>
+		<item name="encounter">see a homeless person who you feel isn't quite who they seem.</item>
+		<item name="encounter">witness a vampire feeding in public.</item>
+		<item name="encounter">see a mortal gang out looking for trouble.</item>
+		<item name="encounter">see a family member on the front page of the news.</item>
+		<item name="encounter">see a woman running down the street away from something.</item>
+		<item name="encounter">are stopped and harassed by the police.</item>
+		<item name="encounter">are nearly struck by a falling body from a nearby sky scraper.</item>
+		<item name="encounter">catch someone attempting to pick pocket you.</item>
+		<item name="encounter">are accosted by an elderly woman insisting she must read your fortune.</item>
+		<item name="encounter">see an ambulance go screaming by.</item>
+		<item name="encounter">see someone leaving a club with another patron who looks out of it.</item>
+		<item name="encounter">are bitten by a stray dog.</item>
+		<item name="encounter">see a man pull out a gun and randomly start firing into a crowd.</item>
+		<item name="encounter">see a man pull out a gun and randomly start threatening the air.</item>
+		<item name="encounter">see a man pull out a gun and start screaming at a nearby tree.</item>
+		<item name="encounter">are passed by a woman who is quietly sobbing to herself.</item>
+		<item name="encounter">find a dead body in the back of an alley.</item>
+		<item name="encounter">are stopped by a taxi driver who insists you come with him.</item>
+		<item name="encounter">see a street performer with a large audience but something just doesn't seem right.</item>
+		<item name="encounter">witness a hit and run.</item>
+		<item name="encounter">cross paths with a group of friends leaving a bar drunk and looking for trouble.</item>
+		<item name="encounter">see a child franticly looking for their parents.</item>
+		<item name="encounter">see a security guard taking his job way too far.</item>
+		<item name="encounter">witness burglar(s) breaking into a building.</item>
+		<item name="encounter">see a man running down the street in a sweat looking for someone or something.</item>
+		<item name="encounter">witness a limo driver stop by a random pedestrian and offer them a ride.</item>
+		<item name="encounter">hear a blood curdling scream from nearby.</item>
+		<item name="encounter">cross paths with an odd looking group of nomads.</item>
+		<item name="encounter">find a small cabin in the woods that appears significantly larger when entered.</item>
+		<item name="encounter">come accross an injured person who needs medical assistance.</item>
+		<item name="encounter">are approached by a man in an obvious panic who hands you a key, mumbles something incoherent, and runs away.</item>
+		<item name="encounter">encounter a dead body in the woods surrounded by and being protected by a pack of wolves</item>
+		<item name="encounter">pass a man screaming about the apocalypse on the street who begins harassing you.</item>
+		<item name="encounter">are trapped in a flash flood.</item>
+		<item name="encounter">experience an earthquake.</item>
+		<item name="encounter">are accosted by killer bees.</item>
+		<item name="encounter">encounter a tornado.</item>
+		<item name="encounter">see an ambulance vear off the road and wreck into a tree or lamp post.</item>
+		<item name="encounter">find a series of freshly dug graves not in a cemetery.</item>
+		<item name="encounter">come across something eating a corpse.</item>
+		<item name="encounter">hear a street preacher screaming about the end of days and they seem to be a little to informed about the details of the various supernatural beings.</item>
+		<item name="encounter">encounter the largest rat you have ever seen.</item>
+		<item name="encounter">continuously receive regularly calls with cryptic but nonsensical messages from a voice and number you don't recognize.</item>
+		<item name="encounter">witness an UFO.</item>
+		<item name="encounter">have your computer overtaken and it begins to "speak" to you (as in the Matrix).</item>
+		<item name="encounter">come upon a corpse that's species cannot be identified.</item>
+		<item name="encounter">hear a strange noise occasionally near you but it's location is indiscernible.</item>
+		<item name="encounter">come across two dogs (or wolves) viciously attacking each other.</item>
+		<item name="encounter">are mugged.</item>
+		<item name="encounter">are approached by a clown in full costume asking for directions.</item>
+		<item name="encounter">feel as if the gargoyle above you is watching you.</item>
+	</items>
+</Grammar>

@@ -1,0 +1,161 @@
+﻿<html>
+	
+<head>
+	<title>Grammar Editor</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.5.0.497">
+	<meta name="keywords" content="Grammar, Tools">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "The Randomizer.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("GrammarEditor");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Grammar Editor</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="TheUserInterface.html">The User Interface</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="TheUserInterface.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="Preferences.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="MarkovChainGenerator.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps3"><span class="rvts8">The grammar editor allows for grammar files to be created and edited in a more friendly manner than using a text editor.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">File Menu</span></span></h3>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">The file menu allows you to create new grammars, open existing grammars, save the current grammar, preview the XML of the grammar, and exit the tool.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Tools Menu</span></span></h3>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">There are two tools available from the grammar editor:</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Preview XML</span><span class="rvts8"> shows what the xml file that will be created by this grammar looks like.</span></p>
+<p class="rvps3"><span class="rvts15">Analyze</span><span class="rvts8"> displays an analysis report of the grammar.</span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Header</span></span></h3>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">The header area of the grammar editor allows you to define the general information about the grammar such as the name, description and category.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Name</span><span class="rvts8"> is the name that will be displayed in the type list when the grammar is loaded on the main form.</span></p>
+<p class="rvps3"><span class="rvts15">Category</span><span class="rvts8"> is the category that thegrammar will be listed under in the grammar combobox on the main form.</span></p>
+<p class="rvps3"><span class="rvts15">Author</span><span class="rvts8"> is the name of the author of the grammar.</span></p>
+<p class="rvps3"><span class="rvts15">Supports Max Length</span><span class="rvts8"> tells the main form if the grammar will require a max length of generated items. This is highly recommended if the grammar has the potential to enter into indefinite loops.</span></p>
+<p class="rvps3"><span class="rvts15">Description</span><span class="rvts8"> is the tooltip that will appear when the cursor is hovered over the grammar name in the type list. It should be relatively short but descriptive enough for a user to know what to expect when using the grammar.</span></p>
+<h1 class="rvps8"><span class="rvts0"><span class="rvts16">Assignment Grammars</span></span></h1>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/Grammar Editor Assignment Grammar.png"/></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Parameters</span></span></h3>
+<p class="rvps3"><span class="rvts8">This grid allows for the addition, editing and removal of parameters. The name, display, and type are defined here as well as the ability to add options for list parameters.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Name</span><span class="rvts8"> is the name of the parameter as it will appear in the grammar rules.</span></p>
+<p class="rvps3"><span class="rvts15">Display</span><span class="rvts8"> is the text to display next to the edit control when displaying the parameter to the user.</span></p>
+<p class="rvps3"><span class="rvts15">Default </span><span class="rvts8">is the default value of the parameter.</span></p>
+<p class="rvps3"><span class="rvts15">Type</span><span class="rvts8"> determines what type of control will be used to receive the user input. At present, only the list option is useful but in a future update the others will become more useful</span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Rules</span></span></h3>
+<p class="rvps3"><span class="rvts8">The rules are the main content of the grammar. They tell the system how to generate the random things for the grammar. For more detailed information on how grammar files work see the Grammar Files Help document.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Label</span><span class="rvts8"> (a.k.a. Name) is the label for this particular rule which can be used in the Next column or in the Expression.</span></p>
+<p class="rvps3"><span class="rvts15">Next</span><span class="rvts8"> tells the generator which rule(s) are next in the chain of generation.</span></p>
+<p class="rvps3"><span class="rvts15">Weight</span><span class="rvts8"> determines the weight of a particular rule when multiple rules have the same label. The weight determines the likelyhood that a particular rule will be selected within the rules that contain the same label. For example, if there are 3 rules labeled as "Start" with weights of 1,1, and 2. Then the first two have a 25% chance of be chosen and the last has a 50% chance.</span></p>
+<p class="rvps3"><span class="rvts15">Expression</span><span class="rvts8"> this is the expression that is evaluated by the generator when a rule is selected.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Imports</span></span></h3>
+<p class="rvps3"><span class="rvts8">This is where you can define libraries that you would like to import into the grammar.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h1 class="rvps8"><span class="rvts0"><span class="rvts16">Dice Roll Grammars</span></span></h1>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/Grammar Editor Dice Roll Grammar.png"/></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Dice Rolls</span></span></h3>
+<p class="rvps3"><span class="rvts8">This grid is where the dice roll functions are defined. &nbsp;In order to use multiple functions, there must be a parameter that is used to select the appropriate function. &nbsp;For example, if you have functions called "Standard", "Extended", and "Custom" then you must have a List parameter with these values for the user to select from.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h1 class="rvps8"><span class="rvts0"><span class="rvts16">LUA Grammars</span></span></h1>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/Grammar Editor LUA Grammar.png"/></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Script</span></span></h3>
+<p class="rvps3"><span class="rvts8">This text box contains the entire LUA script that will be executed when the grammar is run.</span></p>
+<h1 class="rvps8"><span class="rvts0"><span class="rvts16">Phonotactics Grammars</span></span></h1>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/Grammar Editor Phonotactics Grammar.png"/></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Options</span></span></h3>
+<p class="rvps3"><span class="rvts8">There is currently only one option for Phonotactics Grammars and that is the Case of the generated result.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Case determines what case the final word will be in. There are four options:</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps3"><span class="rvts15">None</span><span class="rvts8">: the final generated result will be displayed unaltered.</span></li>
+<li class="rvps3"><span class="rvts15">Proper</span><span class="rvts8">: the final generated result will be displayed with all letters following a space capitalized.</span></li>
+<li class="rvps3"><span class="rvts15">Upper</span><span class="rvts8">: the final generated result will be in all upper case.</span></li>
+<li class="rvps3"><span class="rvts15">Lower</span><span class="rvts8">: the final generated result will be in all lower case.</span></li>
+</ul>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Definitions</span></span></h3>
+<p class="rvps3"><span class="rvts8">The definitions grid contains the keys and their definitions for the grammar.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Key</span><span class="rvts8"> is the key that will be used in the patterns for this definition. It must be a single character.</span></p>
+<p class="rvps3"><span class="rvts15">Delimiter</span><span class="rvts8"> is the character placed between the replacement values of the definition.</span></p>
+<p class="rvps3"><span class="rvts15">Values</span><span class="rvts8"> is the delimiter separated list of values that can act as replacement values for the key</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Patterns</span></span></h3>
+<p class="rvps3"><span class="rvts8">The grid of patterns determines what patterns are available for this grammar.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Value</span><span class="rvts8"> is the pattern of keys.</span></p>
+<p class="rvps3"><span class="rvts15">Weight</span><span class="rvts8"> is the weight of this particular pattern when randomly selecting a pattern from the list.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h1 class="rvps8"><span class="rvts0"><span class="rvts16">Table Grammars</span></span></h1>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/Grammar Editor Table Grammar.png"/></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Tables</span></span></h3>
+<p class="rvps3"><span class="rvts8">This grid contains the list of tables that are used to generate the values of the grammar. &nbsp;</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Name </span><span class="rvts8">is the name of the table</span></p>
+<p class="rvps3"><span class="rvts15">Action </span><span class="rvts8">is the type of action that will be performed on the table.</span></p>
+<p class="rvps3"><span class="rvts15">Delimiter </span><span class="rvts8">is the character that is used to delimit values in the table.</span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Output</span></span></h3>
+<p class="rvps3"><span class="rvts8">This area contains the output html for the generated values.</span></p>
+<p></p>
+<p class="rvps2"><span class="rvts6">Created with the Personal Edition of HelpNDoc: </span><a class="rvts7" href="http://www.helpndoc.com/help-authoring-tool">Free help authoring tool</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2014 by Lance Boudreaux. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

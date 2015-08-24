@@ -1,0 +1,13 @@
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x64\Debug\lua52.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x64\Debug\Grammars.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x64\Debug\Grammars.pdb
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x64\Debug\KeraLua.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x64\Debug\NCalc.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x64\Debug\NLua.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x64\Debug\Utility.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x64\Debug\Utility.pdb
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\obj\x64\Debug\Grammars.vbprojResolveAssemblyReference.cache
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\obj\x64\Debug\Grammars.Resources.resources
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\obj\x64\Debug\Grammars.vbproj.GenerateResource.Cache
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\obj\x64\Debug\Grammars.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\obj\x64\Debug\Grammars.pdb

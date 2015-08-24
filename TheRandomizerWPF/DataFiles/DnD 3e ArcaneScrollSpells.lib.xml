@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<library>
+	<item name="ArcaneScrollSpell1st" from="1" to="5">Burning Hands</item>
+	<item name="ArcaneScrollSpell1st" from="6" to="10">Change self</item>
+	<item name="ArcaneScrollSpell1st" from="11" to="15">Charm person</item>
+	<item name="ArcaneScrollSpell1st" from="16" to="18">Color spray</item>
+	<item name="ArcaneScrollSpell1st" from="19" to="22">Detect secret doors</item>
+	<item name="ArcaneScrollSpell1st" from="23" to="25">Detect undead</item>
+	<item name="ArcaneScrollSpell1st" from="26" to="28">Enlarge</item>
+	<item name="ArcaneScrollSpell1st" from="29" to="31">Erase</item>
+	<item name="ArcaneScrollSpell1st" from="32" to="36">Feather fall</item>
+	<item name="ArcaneScrollSpell1st" from="37" to="39">Grease</item>
+	<item name="ArcaneScrollSpell1st" from="40" to="44">Identify</item>
+	<item name="ArcaneScrollSpell1st" from="45" to="47">Jump</item>
+	<item name="ArcaneScrollSpell1st" from="48" to="51">Mage armor</item>
+	<item name="ArcaneScrollSpell1st" from="52" to="54">Magic weapon</item>
+	<item name="ArcaneScrollSpell1st" from="55" to="57">Mount</item>
+	<item name="ArcaneScrollSpell1st" from="58" to="60">Ray of enfeeblement</item>
+	<item name="ArcaneScrollSpell1st" from="61" to="63">Reduce</item>
+	<item name="ArcaneScrollSpell1st" from="64" to="66">Shield</item>
+	<item name="ArcaneScrollSpell1st" from="67" to="69">Shocking grasp</item>
+	<item name="ArcaneScrollSpell1st" from="70" to="73">Silent image</item>
+	<item name="ArcaneScrollSpell1st" from="74" to="78">Sleep</item>
+	<item name="ArcaneScrollSpell1st" from="79" to="81">Spider climb</item>
+	<item name="ArcaneScrollSpell1st" from="82" to="84">Summon monster I</item>
+	<item name="ArcaneScrollSpell1st" from="85" to="87">Tenser's floating disk</item>
+	<item name="ArcaneScrollSpell1st" from="88" to="92">Unseen servant</item>
+	<item name="ArcaneScrollSpell1st" from="93" to="95">Ventriloquism</item>
+
+	<item name="ArcaneScrollSpell2nd" from="1" to="3">Arcane lock</item>
+	<item name="ArcaneScrollSpell2nd" from="4" to="8">Blindess/deafness</item>
+	<item name="ArcaneScrollSpell2nd" from="9" to="13">Blur</item>
+	<item name="ArcaneScrollSpell2nd" from="14" to="18">Bull's strength</item>
+	<item name="ArcaneScrollSpell2nd" from="19" to="22">Cat's grace</item>
+	<item name="ArcaneScrollSpell2nd" from="23" to="25">Darkvision</item>
+	<item name="ArcaneScrollSpell2nd" from="26" to="30">Detect thoughts</item>
+	<item name="ArcaneScrollSpell2nd" from="31" to="33">Flaming sphere</item>
+	<item name="ArcaneScrollSpell2nd" from="34" to="38">Invisibility</item>
+	<item name="ArcaneScrollSpell2nd" from="39" to="41">Knock</item>
+	<item name="ArcaneScrollSpell2nd" from="42" to="46">Levitate</item>
+	<item name="ArcaneScrollSpell2nd" from="47" to="51">Locate object</item>
+	<item name="ArcaneScrollSpell2nd" from="52" to="54">Melf's acid arrow</item>
+	<item name="ArcaneScrollSpell2nd" from="55" to="59">Minor image</item>
+	<item name="ArcaneScrollSpell2nd" from="60" to="64">Mirror image</item>
+	<item name="ArcaneScrollSpell2nd" from="65" to="69">Misdirection</item>
+	<item name="ArcaneScrollSpell2nd" from="70" to="72">Protection from arrows</item>
+	<item name="ArcaneScrollSpell2nd" from="73" to="77">See invisibility</item>
+	<item name="ArcaneScrollSpell2nd" from="78" to="80">Spectral hand</item>
+	<item name="ArcaneScrollSpell2nd" from="81" to="83">Stinking cloud</item>
+	<item name="ArcaneScrollSpell2nd" from="84" to="87">Summon monster II</item>
+	<item name="ArcaneScrollSpell2nd" from="88" to="92">Web</item>
+	<item name="ArcaneScrollSpell2nd" from="93" to="95">Stinking cloud</item>
+
+	<item name="ArcaneScrollSpell3rd" from="1" to="5">Blink</item>
+	<item name="ArcaneScrollSpell3rd" from="6" to="10">Clairaudience/clairvoyance</item>
+	<item name="ArcaneScrollSpell3rd" from="11" to="15">Dispel magic</item>
+	<item name="ArcaneScrollSpell3rd" from="16" to="20">Displacement</item>
+	<item name="ArcaneScrollSpell3rd" from="21" to="25">Fireball</item>
+	<item name="ArcaneScrollSpell3rd" from="26" to="28">Flame arrow</item>
+	<item name="ArcaneScrollSpell3rd" from="29" to="31">Fly</item>
+	<item name="ArcaneScrollSpell3rd" from="32" to="33">Gaseous form</item>
+	<item name="ArcaneScrollSpell3rd" from="34" to="36">Greater magic weapon</item>
+	<item name="ArcaneScrollSpell3rd" from="37" to="39">Halt undead</item>
+	<item name="ArcaneScrollSpell3rd" from="40" to="42">Haste</item>
+	<item name="ArcaneScrollSpell3rd" from="43" to="45">Hold person</item>
+	<item name="ArcaneScrollSpell3rd" from="46" to="47">Invisibility sphere</item>
+	<item name="ArcaneScrollSpell3rd" from="48" to="53">Lightning bolt</item>
+	<item name="ArcaneScrollSpell3rd" from="54" to="54">Magic circle against chaos</item>
+	<item name="ArcaneScrollSpell3rd" from="55" to="55">Magic circle against evil</item>
+	<item name="ArcaneScrollSpell3rd" from="56" to="56">Magic circle against good</item>
+	<item name="ArcaneScrollSpell3rd" from="57" to="57">Magic circle against law</item>
+	<item name="ArcaneScrollSpell3rd" from="58" to="58">Nondetection</item>
+	<item name="ArcaneScrollSpell3rd" from="61" to="65">Slow</item>
+	<item name="ArcaneScrollSpell3rd" from="66" to="70">Spectral hand</item>
+	<item name="ArcaneScrollSpell3rd" from="71" to="75">Suggestion</item>
+	<item name="ArcaneScrollSpell3rd" from="76" to="79">Summon monster III</item>
+	<item name="ArcaneScrollSpell3rd" from="80" to="84">Tongues</item>
+	<item name="ArcaneScrollSpell3rd" from="85" to="87">Vampiric touch</item>
+	<item name="ArcaneScrollSpell3rd" from="88" to="90">Water breathing</item>
+</library>

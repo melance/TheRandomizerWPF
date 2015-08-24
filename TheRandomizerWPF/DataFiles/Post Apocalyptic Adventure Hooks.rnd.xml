@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+		 xsi:type="AssignmentGrammar">
+	<name>Adventure Hooks (Post Apocalyptic)</name>
+	<author>Lance Boudreaux</author>
+	<description>Generates adventure hooks for post-apocalyptic settings</description>
+	<category>Encounters</category>
+	<genre>Post Apocalyptic</genre>
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start">Your [Settlement] is overrun by [EnemyGroup].</item>
+		<item name="Start">You're running low on [Supplies] and must get more soon.</item>
+		<item name="Start">Supplies are being used to quickly because [SupplySap].</item>
+		<item name="Start">The local [Utility] has stopped working.</item>
+		<item name="Start">You hear [RadioGroup] over [Radio].</item>
+		<item name="Start">You come across a [RaidLocation] and [RaidLocationState].</item>
+		<item name="Start">A [ExtortionGroup] is demanding tribute in exchange for protection.</item>
+		<item name="Start">[Outbreak] has broken out in your group.</item>
+		<item name="Start">One of your group went out to [MissingPersonJob] and has not returned.</item>
+		<item name="Start">While [SettlementJob] one of your group [WorkerMishap].</item>
+		
+		<item name="SettlementJob">building a food store</item>
+		<item name="SettlementJob">reinforcing the doors</item>
+		<item name="SettlementJob">reinforcing windows</item>
+		<item name="SettlementJob">standing guard</item>
+		<item name="SettlementJob">taking a break from working</item>
+		<item name="SettlementJob">cutting down a tree</item>
+		<item name="SettlementJob">gathering fire wood</item>
+		<item name="SettlementJob">setting up camp</item>
+		<item name="SettlementJob">scouting the area</item>
+		<item name="SettlementJob">hunting</item>
+		
+		<item name="WorkerMishap">passed out</item>
+		<item name="WorkerMishap">was attacked by an unknown assailant</item>
+		<item name="WorkerMishap">disappeared</item>
+		<item name="WorkerMishap">broke a bone in their [=Pick('leg','arm','hand','foot')]</item>
+		<item name="WorkerMishap">injured their [=Pick('neck','back','leg','arm','hand','foot')]</item>
+		<item name="WorkerMishap">was attacked by a [=Pick('rabid','wild')] animal</item>
+		<item name="WorkerMishap">broke a rib</item>
+		<item name="WorkerMishap">was approached by a member of a cult</item>
+		<item name="WorkerMishap">killed a [=Pick('person','zombie')]</item>
+		<item name="WorkerMishap">cut themselves with a rusted tool</item>
+		<item name="WorkerMishap">received a large cut</item>
+		<item name="WorkerMishap">ran away</item>
+		<item name="WorkerMishap">saw a car drive by</item>
+		<item name="WorkerMishap">saw another group of survivors in the distance</item>
+		<item name="WorkerMishap">saw a pack of wolves staring them down</item>
+		<item name="WorkerMishap">saw a pack of zombies</item>
+		<item name="WorkerMishap">saw some mutated wildlife</item>
+		<item name="WorkerMishap">received radiation poisoning</item>
+		<item name="WorkerMishap">was shot by a stray bullet</item>
+		<item name="WorkerMishap">was shot by someone who ran away</item>
+		<item name="WorkerMishap">saw a plane fly over head</item>
+		<item name="WorkerMishap">saw a helicopter over head</item>
+		<item name="WorkerMishap">thought they heard a train whistle</item>
+		
+		<item name="MissingPersonJob">scavenge for supplies</item>
+		<item name="MissingPersonJob">scavenge for food</item>
+		<item name="MissingPersonJob">hunt for food</item>
+		<item name="MissingPersonJob">fish for food</item>
+		<item name="MissingPersonJob">trade with a nearby [Settlement]</item>
+		<item name="MissingPersonJob">scout the area</item>
+		<item name="MissingPersonJob">scout ahead</item>
+		<item name="MissingPersonJob">spy on a nearby [Settlement]</item>
+		<item name="MissingPersonJob">look for other survivors</item>
+		<item name="MissingPersonJob">collect fire wood</item>
+		
+		<item name="Settlement">camp</item>
+		<item name="Settlement">town</item>
+		<item name="Settlement">city</item>
+		<item name="Settlement">stronghold</item>
+		<item name="Settlement">encampment</item>
+		<item name="Settlement">village</item>
+		<item name="Settlement">home</item>
+		<item name="Settlement">house</item>
+		
+		<item name="EnemyGroup">zombies</item>
+		<item name="EnemyGroup">a band of raiders</item>
+		<item name="EnemyGroup">a group of anarchists</item>
+		<item name="EnemyGroup">a militia</item>
+		<item name="EnemyGroup">an insect swarm</item>
+		<item name="EnemyGroup">an unknown group striking at night</item>
+		<item name="EnemyGroup">rats</item>
+		<item name="EnemyGroup">scorpions</item>
+		<item name="EnemyGroup">snakes</item>
+		
+		<item name="ExtortionGroup">group of bandits</item>
+		<item name="ExtortionGroup">militia</item>
+		<item name="ExtortionGroup">band of gypsies</item>
+		<item name="ExtortionGroup">band of mutants</item>
+		<item name="ExtortionGroup">cult</item>
+		
+		<item name="Supplies">food</item>
+		<item name="Supplies">medical supplies</item>
+		<item name="Supplies">medication</item>
+		<item name="Supplies">clean water</item>
+		<item name="Supplies">ammunition</item>
+		<item name="Supplies">tools</item>
+		<item name="Supplies">morale</item>
+		<item name="Supplies">wood</item>
+		<item name="Supplies">fuel</item>
+		
+		<item name="SupplySap">there are too many survivors unable to pull their weight</item>
+		<item name="SupplySap">someone is stealing them</item>
+		<item name="SupplySap">something is stealing them</item>
+		<item name="SupplySap">some survivors are being wasteful</item>
+		<item name="SupplySap">pets are being provided with them</item>
+		
+		<item name="Utility">power plant</item>
+		<item name="Utility">water station</item>
+		<item name="Utility">sewage station</item>
+		
+		<item name="RadioGroup">another group of survivors who sound like they can help you</item>
+		<item name="RadioGroup">another group of survivors and they are in trouble</item>
+		<item name="RadioGroup">a garbled message</item>
+		<item name="RadioGroup">someone screaming</item>
+		<item name="RadioGroup">someone speaking in a language you do not understand</item>
+		<item name="RadioGroup">wild animal sounds</item>
+		<item name="RadioGroup">inhuman sounds</item>
+		<item name="RadioGroup">a voice discernible through the static</item>
+		<item name="RadioGroup">a voice say, "Help me" through the static</item>
+		<item name="RadioGroup">music</item>
+		<item name="RadioGroup">faint music through the static</item>
+		<item name="RadioGroup">silence</item>
+		
+		<item name="Radio">an FM radio</item>
+		<item name="Radio">an AM radio</item>
+		<item name="Radio">a HAM radio</item>
+		<item name="Radio">a CB</item>
+		<item name="Radio">a walkie-talkie</item>
+		<item name="Radio">a shortwave radio</item>
+		<item name="Radio">a police scanner</item>
+		<item name="Radio">a cell phone</item>
+		<item name="Radio">a telephone</item>
+		
+		<item name="RaidLocation">gas station</item>
+		<item name="RaidLocation">grocery store</item>
+		<item name="RaidLocation">hospital</item>
+		<item name="RaidLocation">hospice</item>
+		<item name="RaidLocation">nursing home</item>
+		<item name="RaidLocation">funeral home</item>
+		<item name="RaidLocation">farm house</item>
+		<item name="RaidLocation">suburban neighborhood</item>
+		<item name="RaidLocation">prison</item>
+		<item name="RaidLocation">police station</item>
+		<item name="RaidLocation">hotel</item>
+		<item name="RaidLocation">motel</item>
+		<item name="RaidLocation">YMCA</item>
+		<item name="RaidLocation">gym</item>
+		<item name="RaidLocation">factory</item>
+		<item name="RaidLocation">warehouse</item>
+		<item name="RaidLocation">cabin</item>
+		<item name="RaidLocation">apartment complex</item>
+		<item name="RaidLocation">apartment building</item>
+		
+		<item name="RaidLocationState">it appears completely abandoned</item>
+		<item name="RaidLocationState">it appears to have been recently occupied</item>
+		<item name="RaidLocationState">it is in ruins</item>
+		<item name="RaidLocationState">it appears to be occupied</item>
+		<item name="RaidLocationState">is being overgrown by plants</item>
+		<item name="RaidLocationState">you can hear a low humming noise from within</item>
+		<item name="RaidLocationState">you can hear talking</item>
+		<item name="RaidLocationState">you hear someone inside scream</item>
+		<item name="RaidLocationState">the doors and windows are boarded up</item>
+		<item name="RaidLocationState">a single warning shot lands near you</item>
+		<item name="RaidLocationState">several doors are open</item>
+		<item name="RaidLocationState">you hear an unrecognizable noise from within</item>
+		
+		<item name="Outbreak">The flu</item>
+		<item name="Outbreak">A plague</item>
+		<item name="Outbreak">Tuberculous</item>
+		<item name="Outbreak">Mutiny</item>
+		<item name="Outbreak">Mutation</item>
+		<item name="Outbreak">An unknown disease</item>
+		<item name="Outbreak">Hysteria</item>
+		<item name="Outbreak">Mass delusion</item>
+		<item name="Outbreak">Dysentery</item>
+		<item name="Outbreak">Mad cow disease</item>
+		<item name="Outbreak">Food poisoning</item>
+		<item name="Outbreak">Typhoid fever</item>
+		<item name="Outbreak">Chickenpox</item>
+		<item name="Outbreak">Shingles</item>
+		<item name="Outbreak">Panic</item>
+		<item name="Outbreak">Low morale</item>
+		<item name="Outbreak">Depression</item>
+		<item name="Outbreak">Cheerfulness</item>		
+	</items>
+</Grammar>

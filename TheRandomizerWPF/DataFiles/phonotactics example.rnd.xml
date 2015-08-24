@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+		 xsi:type="PhonotacticsGrammar">
+  <name>Test</name>
+  <author>Lance Boudreaux</author>
+  <description>Test Description</description>
+  <category>Test</category>
+  <parameters />
+  <supportsMaxLength>false</supportsMaxLength>
+  <case>Proper</case>
+	<!--<definitions>
+		<item key="Test" delimiter=",">A,B,C,D</item>
+	</definitions>-->
+  <definitions>
+    <item key="V" delimiter=",">A,E,I,O,U</item>
+    <item key="C" delimiter=",">B,C,D,F,G,H,J,K,L,M,N,P,Q,R,S,T,V,W,X,Y,Z</item>
+  </definitions>
+  <patterns>
+    <item weight="1">(C)V(C)CV</item>
+    <item weight="1">CVC</item>
+  </patterns>
+</Grammar>

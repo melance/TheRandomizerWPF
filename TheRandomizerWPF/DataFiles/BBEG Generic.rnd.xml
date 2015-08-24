@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+		 xsi:type="AssignmentGrammar">
+	<name>Big Bad Evil Guy (Generic)</name>
+	<author>Lance Boudreaux</author>
+	<description>Creates an outline for a big bad evil guy (BBEG).</description>
+	<category>NPC</category>
+	<genre>Generic</genre>
+	<system>Generic</system>
+	<items>
+		<item name="Width">100px</item>
+		
+		<item name="Start" weight="1">
+			<![CDATA[<table>
+	<tr><td width="[Width]"><b>Type:</b></td><td>Alien [Alien]</td></tr>
+	<tr><td><b>Motivation:</b></td><td>[Motivation]</td></tr>
+	</table>]]></item>
+		<item name="Start" weight="1">
+			<![CDATA[<table>
+	<tr><td width="[Width]"><b>Type:</b></td><td>[Environmental|Magic|Paranormal]</td></tr>
+	</table>]]></item>
+		<item name="Start" weight="3">
+			<![CDATA[<table>
+	<tr><td width="[Width]"><b>Type:</b></td><td>[Group|Human|Humanoid|Monster]</td></tr>
+	<tr><td><b>Motivation:</b></td><td>[Motivation]</td></tr>
+	<tr><td><b>Habitat:</b></td><td>[Habitat]</td></tr>
+	</table>]]></item>
+
+		<item name="Alien">full invasion force</item>
+		<item name="Alien">forward reconnaissance</item>
+		<item name="Alien">refugees</item>
+		<item name="Alien">scout team</item>
+		<item name="Alien">terraforming team</item>
+		<item name="Alien">overlord and his guards</item>
+		<item name="Alien">criminals</item>
+		<item name="Alien">warlords</item>
+		<item name="Alien">prison escapees</item>
+		<item name="Alien">military platoon</item>
+		<item name="Alien">terraforming technology</item>
+
+		<item name="Environmental">Hurricane</item>
+		<item name="Environmental">Tornadoes</item>
+		<item name="Environmental">Blizzard</item>
+		<item name="Environmental">Dust storm</item>
+		<item name="Environmental">Sand storm</item>
+		<item name="Environmental">Avalanche</item>
+		<item name="Environmental">Volcano</item>
+		<item name="Environmental">Draught</item>
+		<item name="Environmental">Flood</item>
+		<item name="Environmental">Wildfire</item>
+		<item name="Environmental">City fire</item>
+		<item name="Environmental">Mine collapse</item>
+		<item name="Environmental">Earthquake</item>
+		<item name="Environmental">Tsunami</item>
+		<item name="Environmental">Limnic eruption</item>
+		<item name="Environmental">Heat wave</item>
+		<item name="Environmental">Epidemic</item>
+		<item name="Environmental">Meteor shower</item>
+		<item name="Environmental">Sinkhole</item>
+
+		<item name="Group">Militant group</item>
+		<item name="Group">Foreign occupation</item>
+		<item name="Group">Foreign army</item>
+		<item name="Group">Local uprising</item>
+		<item name="Group">Guerilla uprising</item>
+		<item name="Group">Government overthrow</item>
+		<item name="Group">Domestic army uprising</item>
+		<item name="Group">Villager uprising</item>
+		<item name="Group">Military dictatorship</item>
+		<item name="Group">Corporation</item>
+		<item name="Group">Brigands</item>
+		<item name="Group">Highwaymen</item>
+		<item name="Group">Thugs</item>
+		<item name="Group">Raiders</item>
+
+		<item name="Human">Dictator</item>
+		<item name="Human">Usurper</item>
+		<item name="Human">King</item>
+		<item name="Human">Knight</item>
+		<item name="Human">Wizard</item>
+		<item name="Human">Warlock</item>
+		<item name="Human">Sorceror</item>
+		<item name="Human">Terrorist</item>
+		<item name="Human">Expatriot</item>
+		<item name="Human">Evil priest</item>
+		<item name="Human">Assassin</item>
+		<item name="Human">Charasmatic leader</item>
+		<item name="Human">Tyrant</item>
+		<item name="Human">Overloard</item>
+		<item name="Human">Warlord</item>
+		<item name="Human">Warmonger</item>
+
+		<item name="Humanoid">Orcish raiders</item>
+		<item name="Humanoid">Ogre</item>
+		<item name="Humanoid">Troll</item>
+		<item name="Humanoid">Elven army</item>
+		<item name="Humanoid">Dwarven army</item>
+		<item name="Humanoid">Robot</item>
+		<item name="Humanoid">Robot army</item>
+		<item name="Humanoid">Lizardmen</item>
+		<item name="Humanoid">Little green men</item>
+
+		<item name="Magic">Ancient curse</item>
+		<item name="Magic">Magical plague</item>
+		<item name="Magic">[Curse] curse</item>
+
+		<item name="Monster">Titan</item>
+		<item name="Monster">Terrasque</item>
+		<item name="Monster">Dragon</item>
+		<item name="Monster">Lych</item>
+		<item name="Monster">Giant</item>
+		<item name="Monster">Mindflayer</item>
+		<item name="Monster">Undead army</item>
+		<item name="Monster">Wyrm</item>
+		<item name="Monster">Demon</item>
+		<item name="Monster">Vampire</item>
+		<item name="Monster">Xenomorph</item>
+		<item name="Monster">Lycanthrope</item>
+		<item name="Monster">Golem</item>
+		<item name="Monster">Basilisk</item>
+		<item name="Monster">Cockatrice</item>
+		<item name="Monster">Chimera</item>
+		<item name="Monster">Cyclops</item>
+		<item name="Monster">Fenris</item>
+		<item name="Monster">Gargoyle</item>
+		<item name="Monster">Dracolich</item>
+		<item name="Monster">Hippogryph</item>
+		<item name="Monster">Kraken</item>
+		<item name="Monster">Cerberus</item>
+		<item name="Monster">Lillith</item>
+		<item name="Monster">Spice worm</item>
+		<item name="Monster">Gorgon</item>
+		<item name="Monster">Minotaur</item>
+		<item name="Monster">Hyrda</item>
+		<item name="Monster">Wyvern</item>
+		
+		<item name="Paranormal">Poltergeist</item>
+		<item name="Paranormal">Spectre</item>
+		<item name="Paranormal">UFO</item>
+
+		<item name="Curse">Sleep</item>
+		<item name="Curse">Death</item>
+		<item name="Curse">Pestilence</item>
+		<item name="Curse">Hatred</item>
+		<item name="Curse">Insanity</item>
+		<item name="Curse">Transmutation</item>
+
+		<item name="Motivation">Desire for acceptance</item>
+		<item name="Motivation">A deep seeded feeling of betrayed</item>
+		<item name="Motivation">To take advantage of a catastrophe</item>
+		<item name="Motivation">Conspiracy against someone</item>
+		<item name="Motivation">Corruption has taken over</item>
+		<item name="Motivation">Corruption must end</item>
+		<item name="Motivation">Desire for someone or something</item>
+		<item name="Motivation">A sense of desperation</item>
+		<item name="Motivation">To destroy the world</item>
+		<item name="Motivation">Discovery of new ideas, worlds, and more</item>
+		<item name="Motivation">To repair honor</item>
+		<item name="Motivation">A heart filled with fear</item>
+		<item name="Motivation">Glory is most important</item>
+		<item name="Motivation">Simple greed</item>
+		<item name="Motivation">A soul filled with grief/loss</item>
+		<item name="Motivation">Hatered is all consuming</item>
+		<item name="Motivation">Must regain honor</item>
+		<item name="Motivation">Jealousy is all encompassing</item>
+		<item name="Motivation">Justice must be served on those that have committed wrongful acts</item>
+		<item name="Motivation">Love drives some to madness</item>
+		<item name="Motivation">Notoriety is a trait for the strong</item>
+		<item name="Motivation">There is a destiny that must be obtained</item>
+		<item name="Motivation">A peaceful rest has been disturbed and replaced with vengence</item>
+		<item name="Motivation">Persecution show be avenged</item>
+		<item name="Motivation">Power is the only goal</item>
+		<item name="Motivation">There is a destiny that must be prevented from happening</item>
+		<item name="Motivation">Can a broken mind be minded?</item>
+		<item name="Motivation">The rulers must be overthrown</item>
+		<item name="Motivation">Revenge drives the sane to violence</item>
+		<item name="Motivation">Rivalry must be satisfied</item>
+		<item name="Motivation">The greater power shall be served</item>
+		<item name="Motivation">Our culture must stand unafraid</item>
+		<item name="Motivation">War and conquest are all that matter</item>
+		<item name="Motivation">Outcasts often return to seek their justice</item>
+
+		<item name="Habitat">Grasslands</item>
+		<item name="Habitat">Sea</item>
+		<item name="Habitat">Mountains</item>
+		<item name="Habitat">Mines</item>
+		<item name="Habitat">Dungeon</item>
+		<item name="Habitat">Tower</item>
+		<item name="Habitat">Cave</item>
+		<item name="Habitat">Caverns</item>
+		<item name="Habitat">Swamps</item>
+		<item name="Habitat">Hills</item>
+		<item name="Habitat">Wastelands</item>
+		<item name="Habitat">Ruins</item>
+		<item name="Habitat">Tundra</item>
+		<item name="Habitat">Desert</item>
+		<item name="Habitat">Castle</item>
+		<item name="Habitat">Subway</item>
+		<item name="Habitat">Underground</item>
+	</items>
+</Grammar>

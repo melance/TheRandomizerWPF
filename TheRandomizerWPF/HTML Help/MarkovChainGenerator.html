@@ -1,0 +1,181 @@
+﻿<html>
+	
+<head>
+	<title>Markov Chain Generator</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.5.0.497">
+	<meta name="keywords" content="Tools">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "The Randomizer.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("MarkovChainGenerator");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Markov Chain Generator</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="TheUserInterface.html">The User Interface</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="TheUserInterface.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="GrammarEditor.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="ItemListConverter.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps3"><span class="rvts8">The Markov Chain Generator is one method of creating a grammar based upon a collection of existing words or names. It can create some very nice grammars given a large enough list of words. This does not mean smaller lists can't work as a good starting point for a grammar but they will rarely give much variety.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">To learn more about Markov Chains, see this </span><a class="rvts13" href="http://en.wikipedia.org/wiki/Markov_chain">article</a><span class="rvts8"> on Wikipedia.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/Markov Chain Generator.png"/></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Grammar Info</span></span></h3>
+<p class="rvps3"><span class="rvts8">Grammar info fills in the header information of the grammar. In order to have a usable grammar, this information should be filled in.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Name</span><span class="rvts8">: The name of the grammar</span></p>
+<p class="rvps3"><span class="rvts15">Description</span><span class="rvts8">: The description of the grammar</span></p>
+<p class="rvps3"><span class="rvts15">Author: </span><span class="rvts8">The author of the grammar</span></p>
+<p class="rvps3"><span class="rvts15">Genre: </span><span class="rvts8">The genre the grammar falls under</span></p>
+<p class="rvps3"><span class="rvts15">System: </span><span class="rvts8">The roleplaying system the grammar is intended for</span></p>
+<p class="rvps3"><span class="rvts15">Category</span><span class="rvts8">: The category to list the grammar under</span></p>
+<p class="rvps3"><span class="rvts15">Supports Max Length</span><span class="rvts8">: Does this grammar allow max length. This should usually be true for Markov Chain grammars</span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Markov Chain Options</span></span></h3>
+<p class="rvps3"><span class="rvts8">Input options are the name list file that will be the template of the grammar and the length of each syllable. These are the most important parts of generating the grammar.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">File</span></p>
+<p class="rvps3"><span class="rvts8">The file is a list of "names" in a file separated by new lines like the sample here:</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps9"><span class="rvts18">Bob</span></p>
+<p class="rvps9"><span class="rvts18">Robert</span></p>
+<p class="rvps9"><span class="rvts18">Rob</span></p>
+<p class="rvps9"><span class="rvts18">Frank</span></p>
+<p class="rvps9"><span class="rvts18">Fred</span></p>
+<p class="rvps9"><span class="rvts18">Henry</span></p>
+<p class="rvps9"><span class="rvts18">Joe</span></p>
+<p class="rvps3"><span class="rvts17"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Syllable Length</span></p>
+<p class="rvps3"><span class="rvts8">The syllable length determines the length of each piece that will pulled from each name. Using the name list above and an example syllable length of 2 we would receive a Markov Chain that can be visualized like this:</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps9"><span class="rvts18">Bo=&gt;b=&gt;[end]</span></p>
+<p class="rvps9"><span class="rvts18">Ro=&gt;be=&gt;rt=&gt;[end]</span></p>
+<p class="rvps9"><span class="rvts18">Ro=&gt;b=&gt;[end]</span></p>
+<p class="rvps9"><span class="rvts18">Fr=&gt;an=&gt;k=&gt;[end]</span></p>
+<p class="rvps9"><span class="rvts18">Fr=&gt;ed=&gt;[end]</span></p>
+<p class="rvps9"><span class="rvts18">He=&gt;nr=&gt;y=&gt;[end]</span></p>
+<p class="rvps9"><span class="rvts18">Jo=&gt;e=&gt;[end]</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Limit Weight</span></p>
+<p class="rvps3"><span class="rvts8">This option can be used to prevent unusually large weights from skewing the generation of the items when randomized. Simply select the checkbox and tell the tool the largest weight you will allow.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Then, when deconstructed into a grammar:</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps9"><span class="rvts18">[start]=&gt;Bo</span></p>
+<p class="rvps9"><span class="rvts18">[start]=&gt;Ro</span></p>
+<p class="rvps9"><span class="rvts18">[start]=&gt;Fr</span></p>
+<p class="rvps9"><span class="rvts18">[start]=&gt;He</span></p>
+<p class="rvps9"><span class="rvts18">[start]=&gt;Jo</span></p>
+<p class="rvps9"><span class="rvts18">Bo=&gt;b</span></p>
+<p class="rvps9"><span class="rvts18">Ro=&gt;be</span></p>
+<p class="rvps9"><span class="rvts18">Ro=&gt;b</span></p>
+<p class="rvps9"><span class="rvts18">Fr=&gt;an</span></p>
+<p class="rvps9"><span class="rvts18">Fr=&gt;ed</span></p>
+<p class="rvps9"><span class="rvts18">He=&gt;nr</span></p>
+<p class="rvps9"><span class="rvts18">Jo=&gt;e</span></p>
+<p class="rvps9"><span class="rvts18">b=&gt;[end]</span></p>
+<p class="rvps9"><span class="rvts18">be=&gt;rt</span></p>
+<p class="rvps9"><span class="rvts18">an=&gt;k</span></p>
+<p class="rvps9"><span class="rvts18">ed=&gt;[end]</span></p>
+<p class="rvps9"><span class="rvts18">nr=&gt;y</span></p>
+<p class="rvps9"><span class="rvts18">e=&gt;[end]</span></p>
+<p class="rvps9"><span class="rvts18">rt=&gt;[end]</span></p>
+<p class="rvps9"><span class="rvts18">k=&gt;[end]</span></p>
+<p class="rvps9"><span class="rvts18">y=&gt;[end]</span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Actions</span></span></h3>
+<p class="rvps3"><span class="rvts15">Generate</span><span class="rvts8"> will generate the Markov Chain in the output window.</span></p>
+<p class="rvps3"><span class="rvts15">Save</span><span class="rvts8"> allows you to save the Markov Chain to a file.</span></p>
+<p class="rvps3"><span class="rvts15">?</span><span class="rvts8"> provides help on how to use the Markov Chain Generator</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">The Output</span></span></h3>
+<p class="rvps3"><span class="rvts8">The output will be a Randomizer grammar file.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps9"><span class="rvts18">&lt;?xml version="1.0"?&gt;</span></p>
+<p class="rvps9"><span class="rvts18">&lt;Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar"&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp;&lt;name /&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp;&lt;authur /&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp;&lt;description /&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp;&lt;category /&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp;&lt;parameters /&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp;&lt;supportsMaxLength&gt;true&lt;/supportsMaxLength&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp;&lt;items&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="Start" weight="1" next=""&gt;[Bo]&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="Bo" weight="1" next="b"&gt;Bo&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="b" weight="1" next=""&gt;b&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="Start" weight="1" next=""&gt;[Ro]&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="Ro" weight="1" next="be"&gt;Ro&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="be" weight="1" next="rt"&gt;be&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="rt" weight="1" next=""&gt;rt&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="Ro" weight="1" next="b"&gt;Ro&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="b" weight="1" next=""&gt;b&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="Start" weight="1" next=""&gt;[Fr]&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="Fr" weight="1" next="an"&gt;Fr&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="an" weight="1" next="k"&gt;an&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="k" weight="1" next=""&gt;k&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="Fr" weight="1" next="ed"&gt;Fr&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="ed" weight="1" next=""&gt;ed&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="Start" weight="1" next=""&gt;[He]&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="He" weight="1" next="nr"&gt;He&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="nr" weight="1" next="y"&gt;nr&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="y" weight="1" next=""&gt;y&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="Start" weight="1" next=""&gt;[Jo]&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="Jo" weight="1" next="e"&gt;Jo&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="e" weight="1" next=""&gt;e&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp;&lt;/items&gt;</span></p>
+<p class="rvps9"><span class="rvts18">&lt;/Grammar&gt;</span></p>
+<p></p>
+<p class="rvps2"><span class="rvts6">Created with the Personal Edition of HelpNDoc: </span><a class="rvts7" href="http://www.helpndoc.com/create-epub-ebooks">Write EPub books for the iPad</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2014 by Lance Boudreaux. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

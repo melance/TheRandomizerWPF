@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>[Name]</title>
+    <style type="text/css">
+        body {
+            font-family: Verdana;
+        }
+        h1 {
+            background: gray;
+            width: 100%;
+            padding: 3px;
+            margin: 0px;
+        }
+        caption {
+            font-weight: bolder;
+            font-size: 14px;
+        }
+        #description {
+            border-bottom: 1px solid dimgray;
+            font-weight: bold;
+            width: 100%;
+            margin-bottom: 3px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+        #header {
+            border-bottom: 1px solid dimgray;
+            width: 100%;
+            margin-bottom: 3px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+        table {
+            border-collapse: collapse;
+            empty-cells: hide;
+        }
+        th {
+            text-align: left;
+        }
+        td {
+            padding: 3px;
+            border: 1px solid dimgray;
+        }
+        td.number {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>[Name]</h1>
+    <div id="description">[Description]</div>
+    <div id="header">
+    <b>Category:</b> [Category] <br />
+    <b>Author:</b> [Author] <br />
+    </div>
+    <b>Parameter Count:</b> [ParameterCount]<br />
+    <b>Rules Count:</b> [RuleCount]<br />
+    <b>XML Lines:</b> [XMLLength]<br />
+    <table>
+        <caption>Parameters</caption>
+        <thead>
+            <tr>
+                <th>Parameter</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            [Parameters]
+        </tbody>
+    </table>
+    <table>
+        <caption>Rules</caption>
+        <thead>
+            <tr>
+                <th>Label</th>
+                <th>Count</th>
+                <th>Total Weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            [Rules]
+        </tbody>
+    </table>
+    <h2>Warnings</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Label</th>
+                <th>Type</th>
+                <th>Warning</th>
+            </tr>
+        </thead>
+        <tbody>
+            [Warnings]
+        </tbody>
+    </table>
+</body>
+</html>

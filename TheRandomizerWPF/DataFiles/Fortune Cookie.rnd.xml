@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+		 xsi:type="TableGrammar">
+	<name>Fortune Cookie</name>
+	<author>Lance Boudreaux</author>
+	<description>Pulls a fortune from inside of a fortune cookie</description>
+	<category>Other</category>
+	<tables>
+		<table name="Cookie" action="Random" column="Roll" delimiter="|"><![CDATA[
+		Roll | Fortune
+		002  | The man or woman you desire feels the same about you.
+		003  | Meeting adversity well is the source of your strength.
+		004  | A dream you have will come true.
+		005  | Our deeds determine us, as much as we determine our deeds.
+		006  | Never give up. You're not a failure if you don't give up.
+		007  | You will become great if you believe in yourself.
+		008  | There is no greater pleasure than seeing your loved ones prosper.
+		009  | You will marry your lover.
+		010  | A very attractive person has a message for you.
+		011  | You already know the answer to the questions lingering inside your head.
+		012  | It is now, and in this world, that we must live.
+		013  | You must try, or hate yourself for not trying.
+		014  | You can make your own happiness.
+		015  | The greatest risk is not taking one.
+		016  | The love of your life is stepping into your planet this summer.
+		017  | Love can last a lifetime, if you want it to.
+		018  | Adversity is the parent of virtue.
+		019  | Serious trouble will bypass you.
+		020  | A short stranger will soon enter your life with blessings to share.
+		021  | Now is the time to try something new.
+		022  | Wealth awaits you very soon.
+		023  | If you feel you are right, stand firmly by your convictions.
+		024  | If winter comes, can spring be far behind?
+		025  | Keep your eye out for someone special.
+		026  | You are very talented in many ways.
+		027  | A stranger, is a friend you have not spoken to yet.
+		028  | A new voyage will fill your life with untold memories.
+		029  | You will travel to many exotic places in your lifetime.
+		030  | Your ability for accomplishment will follow with success.
+		031  | Nothing astonishes men so much as common sense and plain dealing.
+		032  | Its amazing how much good you can do if you don't care who gets the credit.
+		033  | Everyone agrees. You are the best.
+		034  | Life consist not in holding good cards, but in playing those you hold well.
+		035  | Jealousy doesn't open doors, it closes them!
+		036  | It's better to be alone sometimes.
+		037  | When fear hurts you, conquer it and defeat it!
+		038  | Let the deeds speak.
+		039  | You will be called in to fulfill a position of high honor and responsibility.
+		040  | The man on the top of the mountain did not fall there.
+		041  | You will conquer obstacles to achieve success.
+		042  | Joys are often the shadows, cast by sorrows.
+		043  | Fortune favors the brave.
+		044  | An upward movement initiated in time can counteract fate.
+		045  | A journey of a thousand miles begins with a single step.
+		046  | Sometimes you just need to lay on the floor.
+		047  | Never give up. Always find a reason to keep trying.
+		048  | If you have something worth fighting for, then fight for it.
+		049  | Stop wishing. Start doing.
+		050  | Accept your past without regrets. Handle your present with confidence. Face your future without fear.
+		051  | Stay true to those who would do the same for you.
+		052  | Ask yourself if what you are doing today is getting you closer to where you want to be tomorrow.
+		053  | Happiness is an activity.
+		054  | Help is always needed but not always appreciated. Stay true to your heart and help those in need weather they appreciate it or not.
+		055  | Hone your competitive instincts.
+		056  | Finish your work on hand don't be greedy.
+		057  | For success today, look first to yourself.
+		058  | Your fortune is as sweet as a cookie.
+		059  | Integrity is the essence of everything successful.
+		060  | If you're happy, you're successful.
+		061  | You will always be surrounded by true friends
+		062  | Believing that you are beautiful will make you appear beautiful to others around you.
+		063  | Happiness comes from a good life.
+		064  | Before trying to please others think of what makes you happy.
+		065  | When hungry, order more Chinese food.
+		066  | Your golden opportunity is coming shortly.
+		067  | For hate is never conquered by hate. Hate is conquered by love .
+		068  | You will make many changes before settling down happily.
+		069  | A man is born to live and not prepare to live.
+		070  | You cannot become rich except by enriching others.
+		071  | Don't pursue happiness - create it.
+		072  | You will be successful in love.
+		073  | All your fingers can't be of the same length.
+		074  | Wise sayings often fall on barren ground, but a kind word is never thrown away.
+		075  | A lifetime of happiness is in store for you.
+		076  | It is very possible that you will achieve greatness in your lifetime.
+		077  | Be tactful; overlook your own opportunity.
+		078  | You are the controller of your destiny.
+		079  | Everything happens for a reason.
+		080  | How can you have a beautiful ending without making beautiful mistakes.
+		081  | You can open doors with your charm and patience.
+		082  | Welcome the change coming into your life.
+		083  | There will be a happy romance for you shortly.
+		084  | Your fondest dream will come true within this year.
+		085  | You have a deep interest in all that is artistic.
+		086  | Your emotional nature is strong and sensitive.
+		087  | A letter of great importance may reach you any day now.
+		088  | Good health will be yours for a long time.
+		089  | You will become better acquainted with a coworker.
+		090  | To be old and wise, you must first be young and stupid.
+		091  | Failure is only the opportunity to begin again more intelligently.
+		092  | Integrity is doing the right thing, even if nobody is watching.
+		093  | Conquer your fears or they will conquer you.
+		094  | You are a lover of words; One day you will write a book.
+		095  | In this life it is not what we take up, but what we give up, that makes us rich.
+		096  | Fear can keep us up all night long, but faith makes one fine pillow.
+		097  | Seek out the significance of your problem at this time. Try to understand.
+		098  | Never upset the driver of the car you're in; they're the master of your destiny until you get home.
+		099  | He who slithers among the ground is not always a foe.
+		100  | You learn from your mistakes, you will learn a lot today.
+		101  | You only need look to your own reflection for inspiration. Because you are Beautiful!
+		102  | You are not judged by your efforts you put in; you are judged on your performance.
+		103  | Rivers need springs.
+		104  | Good news from afar may bring you a welcome visitor.
+		105  | When all else seems to fail, smile for today and just love someone.
+		106  | Patience is a virtue, unless its against a brick wall.
+		107  | When you look down, all you see is dirt, so keep looking up.
+		108  | If you are afraid to shake the dice, you will never throw a six.
+		109  | Even if the person who appears most wrong, is also quite often right.
+		110  | A single conversation with a wise man is better than ten years of study.
+		111  | Happiness is often a rebound from hard work. 
+		112  | The world may be your oyster, but that doesn't mean you'll get it's pearl.
+		113  | Your life will be filled with magical moments.
+		114  | You're true love will show himself to you under the moonlight. 
+		115  | Do not follow where the path may lead. Go where there is no path...and leave a trail
+		116  | Do not fear what you don't know
+		117  | The object of your desire comes closer.
+		118  | You have a flair for adding a fanciful dimension to any story.
+		119  | If you wish to know the mind of a man, listen to his words
+		120  | The most useless energy is trying to change what and who God so carefully created.
+		121  | Do not be covered in sadness or be fooled in happiness they both must exist
+		122  | You will have unexpected great good luck.
+		123  | You will have a pleasant surprise
+		124  | All progress occurs because people dare to be different.
+		125  | Your ability for accomplishment will be followed by success.
+		126  | The world is always ready to receive talent with open arms.
+		127  | Things may come to those who wait, but only the things left by those who hustle.
+		128  | We can't help everyone. But everyone can help someone.
+		129  | Every day is a new day. But tomorrow is never promised.
+		130  | Express yourself: Don't hold back!
+		131  | It is not necessary to show others you have change; the change will be obvious.
+		132  | You have a deep appreciation of the arts and music.
+		133  | If your desires are not extravagant, they will be rewarded.
+		134  | You try hard, never to fail. You don't, never to win.
+		135  | Never give up on someone that you don't go a day without thinking about.
+		136  | It never pays to kick a skunk.
+		137  | In case of fire, keep calm, pay bill and run.
+		138  | Next full moon brings an enchanting evening.
+		139  | Not all closed eye is sleeping nor open eye is seeing.
+		140  | Impossible is a word only to be found in the dictionary of fools.
+		141  | You will soon witness a miracle.
+		142  | The time is alway right to do what is right.
+		143  | Love is as necessary to human beings as food and shelter.
+		144  | You will make heads turn.
+		145  | You are extremely loved. Don't worry :)
+		146  | If you are never patient, you will never get anything done. If you believe you can do it, you will be rewarded with success.
+		147  | You will soon embark on a business venture.
+		148  | You believe in the goodness of man kind.
+		149  | You will have a long and wealthy life.
+		150  | You will take a pleasant journey to a place far away.
+		151  | You are a person of culture.
+		152  | Keep it simple. The more you say, the less people remember.
+		153  | Life is like a dog sled team. If you ain't the lead dog, the scenery never changes.
+		154  | Prosperity makes friends and adversity tries them.
+		155  | Nothing seems impossible to you.
+		156  | Patience is bitter, but its fruit is sweet.
+		157  | The only certainty is that nothing is certain.
+		158  | Success is the sum of my unique visions realized by the sweat of perseverance.
+		159  | When you expect your opponent to yield, you also should avoid hurting him.
+		160  | Human evolution: 'wider freeway" but narrower viewpoints.
+		161  | Intelligence is the door to freedom and alert attention is the mother of intelligence.
+		162  | Back away from individuals who are impulsive.
+		163  | Enjoyed the meal? Buy one to go too.
+		164  | You believe in the goodness of mankind.
+		165  | A big fortune will descend upon you this year. 
+		166  | Now these three remain, faith, hope, and love. The greatest of these is love.
+		167  | For success today look first to yourself.
+		168  | Determination is the wake-up call to the human will.
+		169  | There are no limitations to the mind except those we acknowledge.
+		170  | A merry heart does good like a medicine.
+		171  | Whenever possible, keep it simple.
+		172  | Your dearest wish will come true. 
+		173  | Poverty is no disgrace.
+		174  | If you don't do it excellently, don't do it at all.
+		175  | You have an unusual equipment for success, use it properly.
+		176  | Emotion is energy in motion.
+		177  | You will soon be honored by someone you respect.
+		178  | Punctuality is the politeness of kings and the duty of gentle people everywhere.
+		179  | Your happiness is intertwined with your outlook on life.
+		180  | Elegant surroundings will soon be yours.
+		181  | If you feel you are right, stand firmly by your convictions.
+		182  | Your smile brings happiness to everyone you meet. 
+		183  | Instead of worrying and agonizing, move ahead constructively.
+		184  | Do you believe? Endurance and persistence will be rewarded. 
+		185  | A new business venture is on the horizon.
+		186  | Never underestimate the power of the human touch.
+		187  | Hold on to the past but eventually, let the times go and keep the memories into the present.
+		188  | Truth is an unpopular subject. Because it is unquestionably correct.
+		189  | The most important thing in communication is to hear what isn't being said.
+		190  | You are broad minded and socially active.
+		191  | Your dearest dream is coming true. God looks after you especially. 
+		192  | You will receive some high prize or award.
+		193  | Your present question marks are going to succeed.
+		194  | You have a fine capacity for the enjoyment of life.
+		195  | You will live long and enjoy life.
+		196  | An admirer is concealing his/her affection for you.
+		197  | A wish is what makes life happen when you dream of rose petals.
+		198  | Love can turn cottage into a golden palace. 
+		199  | Lend your money and lose your friend.
+		200  | You will kiss your crush.
+		]]></table>
+	</tables>
+	<output>
+	[Cookie.Fortune]
+	</output>
+</Grammar>

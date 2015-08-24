@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+		 xsi:type="TableGrammar">
+	<name>Random Table</name>
+	<author>Lance Boudreaux</author>
+	<description>Generates a random table</description>
+	<category>Environment</category>
+	<tables>
+		<table name="TableType" action="Random" column="Roll" delimiter="|">
+		Roll | TableType
+		01	 | Poker
+		02	 | Dining
+		03   | Conference
+		04   | Folding
+		05   | Picnic
+		06   | Bedside
+		07   | End
+		08   | Work
+		09   | Coffee
+		10   | Drafting
+		11   | Stone
+		12	 | Wooden
+		13	 | Ivory
+		14   | Metal
+		15   | Bone
+		</table>
+	</tables>
+	<output>
+	[TableType.TableType] table
+	</output>
+</Grammar>

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Item List Converter</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+	  <div id="topictop">&nbsp;</div>
+	  <div id="topictitleleft">
+		<div id="topictitle">
+		  <h3>Item List Converter</h3>
+		</div>
+	  </div>
+  
+	<div id="main">
+	<p>
+		The Item List Converter is designed to make converting a simple list of items into a grammar. This tool was used to create the Top US Names grammar.
+	</p>
+
+	<p class="big">
+		Grammar Info
+	</p>
+	<p>
+		Grammar info fills in the header information of the grammar. In order to have a usable grammar, this information should be filled in.
+	</p>
+	<ul class="shr">
+		<li><b>Name</b>: The name of the grammar</li>
+		<li><b>Description</b>: The description of the grammar</li>
+		<li><b>Author</b>: The author of the grammar</li>
+		<li><b>Tags</b>: A list of tags used to categorize the grammar</li>
+		<li><b>Supports Max Length</b>: Does this grammar allow max length.  This should rarely be true for Item Lists.</li>
+	</ul>
+	
+	<p class="big">
+		Options
+	</p>
+	<p>
+		The options set how the weight of each item is calculated.
+	</p>
+	<ul class="shr">
+		<li><b>Weight Evenly</b>: every item has the same weight.</li>
+		<li><b>Weight Ascending</b>: each item has the weight of the previous item plus one.</li>
+		<li><b>Weight Descending</b>: each item has the weight of the previous item minus one.</li>
+	</ul>
+	<ul class="shr">
+		<li><b>Assignment Grammar</b>: If this is selected, a full grammar file will be generated</li>
+		<li><b>Assignment Library</b>: If this is selected, a library file will be generated instead of a full grammar</li>
+	</ul>
+	<ul class="shr">
+		<li><b>Remove Duplicates</b>: If selected, any duplicate items found will be removed</li>
+		<li><b>Case Sensitive</b>: If selected, duplicate detection will be case sensitive</li>
+	</ul>
+	
+	<p class="big">
+		Item List
+	</p>
+	<p>
+		This is the list of the files to use as a source for the grammar or library.
+	</p>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+</body>
+</html>

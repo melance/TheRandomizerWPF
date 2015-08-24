@@ -1,0 +1,122 @@
+﻿<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		 xsi:type="AssignmentGrammar">
+	<name>Planets</name>
+	<author>Lance Boudreaux</author>
+	<description>Generates planets and their descriptions.</description>
+	<genre>Sci-Fi</genre>
+	<category>Environment</category>
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start">
+			<![CDATA[
+		<span style="font-size:24px;font-weight:bolder;">[=Generate('Planet Names',20)]</span><br />
+		<b>Surface</b>: [Surface]<br />
+		<b>Land</b>: [=Roll(1,101)-1]%<br />
+		<b>Weather</b>: [Weather]<br />
+		<b>Sun(s)</b>: [Suns]<br />
+		<b>Moon(s)</b>: [Moons]<br />
+		<b>Plantlife</b>: [Plantlife]<br />
+		<b>Animals</b>: [Wildlife]<br />
+		<b>Humanoid Population</b>: [=Format(Roll(1,1000000),'#,##0')]/mi²<br />
+		<b>Technology Level</b>: [Technology]<br />
+		<b>Natural Resources</b>: [NaturalResources]<br />
+		<b>Orbital Period</b>: [=Format(Roll(100,10000),'#,##0')] days<br />
+		<b>Rotation Period</b>: [=Roll(10,1000)] hours<br />
+		<b>Diameter:</b> [=Format(Roll(1,200)*1000,'#,##0')] miles<br />
+		<b>Gravity: </b> [=Roll(1,100)] ft/s²<br />
+		<b>Atmosphere Density: </b> [Atmosphere]<br />
+		<b>Atmosphere Primary Composition: </b> [Element] and [Element]<br />
+		]]></item>
+		
+		<item name="Surface" weight="10">Ice</item>
+		<item name="Surface" weight="10">Lava</item>
+		<item name="Surface" weight="50">Rock</item>
+		<item name="Surface" weight="50">Dirt</item>
+		<item name="Surface" weight="10">Gas</item>
+		
+		<item name="Weather" weight="5">Violent</item>
+		<item name="Weather" weight="5">Calm</item>
+		<item name="Weather" weight="50">Seasonal</item>
+		<item name="Weather" weight="10">Still</item>
+		<item name="Weather" weight="5">Wild</item>
+		<item name="Weather" weight="5">Savage</item>
+		<item name="Weather" weight="50">Stable</item>
+		<item name="Weather" weight="25">Shifting</item>
+
+		<item name="Suns" weight="70">Single [SunType]</item>
+		<item name="Suns" weight="25">Binary [SunType]/[SunType]</item>
+		<item name="Suns" weight="5">Trinary [SunType]/[SunType]/[SunType]</item>
+
+		<item name="Moons" weight="50">[=ToText(Roll(1,2))]</item>
+		<item name="Moons" weight="20">[=ToText(Roll(2,2))]</item>
+		<item name="Moons" weight="5">[=ToText(Roll(4,4))]</item>
+		<item name="Moons" weight="2">[=ToText(Roll(16,4))]</item>
+		
+		<item name="SunType" weight="2">B Class</item>
+		<item name="SunType" weight="5">A Class</item>
+		<item name="SunType" weight="10">F Class</item>
+		<item name="SunType" weight="15">G Class</item>
+		<item name="SunType" weight="20">K Class</item>
+		<item name="SunType" weight="50">M Class</item>
+		<item name="SunType" weight="10">L Class</item>
+		<item name="SunType" weight="5">T Class</item>
+
+		<item name="Plantlife" weight="10">Abundant [Planttype]</item>
+		<item name="Plantlife" weight="10">Scarce [Planttype]</item>
+		<item name="Plantlife" weight="5">Excessive [Planttype]</item>
+		<item name="Plantlife" weight="50">Average [Planttype]</item>
+		<item name="Plantlife" weight="5">Nonexistant</item>
+		
+		<item name="Planttype" weight="10">Grasses and Fungus</item>
+		<item name="Planttype" weight="5">Moss and Wetlands</item>
+		<item name="Planttype" weight="50">Trees and Grasses</item>
+		<item name="Planttype" weight="25">Giant Forests</item>
+
+		<item name="Wildlife" weight="5">Nonexistant</item>
+		<item name="Wildlife" weight="10">Abundant [Animaltypes]</item>
+		<item name="Wildlife" weight="10">Scarce [Animaltypes]</item>
+		<item name="Wildlife" weight="5">Overpopulated [Animaltypes]</item>
+		<item name="Wildlife" weight="50">Average [Animaltypes]</item>
+		
+		<item name="Animaltypes" weight="10">Dinosaurs</item>
+		<item name="Animaltypes" weight="5">Simple Life</item>
+		<item name="Animaltypes" weight="5">Sea Life</item>
+		<item name="Animaltypes" weight="15">Small Mammalians</item>
+		<item name="Animaltypes" weight="15">Small Lizards</item>
+		<item name="Animaltypes" weight="30">Varied</item>
+		<item name="Animaltypes" weight="5">Extremely Varied</item>
+
+		<item name="Technology">Stone Age</item>
+		<item name="Technology">Bronze Age</item>
+		<item name="Technology">Iron Age</item>
+		<item name="Technology">Classical Era</item>
+		<item name="Technology">Midieval Era</item>
+		<item name="Technology">Age of Discovery</item>
+		<item name="Technology">Age of Industry</item>
+		<item name="Technology">Modern Era</item>
+		<item name="Technology">Post-Modern Era</item>
+		<item name="Technology">Near Future</item>
+		<item name="Technology">Future</item>
+		<item name="Technology">Distant Future</item>
+
+		<item name="NaturalResources">Soil</item>
+		<item name="NaturalResources">Water</item>
+		<item name="NaturalResources">Minerals</item>
+		<item name="NaturalResources">Vegetation</item>
+		<item name="NaturalResources">Animals</item>
+
+		<item name="Atmosphere" weight="5">Light</item>
+		<item name="Atmosphere" weight="15">Average</item>
+		<item name="Atmosphere" weight="5">Heavy</item>
+
+		<item name="Element" weight="25">Oxygen</item>
+		<item name="Element" weight="25">Nitrogen</item>
+		<item name="Element" weight="5">Helium</item>
+		<item name="Element" weight="5">Methane</item>
+		<item name="Element" weight="5">Argon</item>
+		<item name="Element" weight="25">Carbon Dioxide</item>
+		
+	</items>
+</Grammar>

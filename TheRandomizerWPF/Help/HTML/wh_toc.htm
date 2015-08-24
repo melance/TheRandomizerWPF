@@ -1,0 +1,105 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+	<link rel="StyleSheet" href="css/dtree.css" type="text/css" />
+	<script type="text/javascript" src="js/dtree.js"></script>
+
+  <style type="text/css">
+    * html body{ /*IE6 hack*/
+    padding: 0 0 0 0;
+    }
+
+    body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    height: 100%;
+    max-height: 100%;
+    }
+
+    #framecontent{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    #width:100%;
+    height: 100%;
+    overflow: auto;
+    border-right:1px dashed #d8d8d8;
+    }
+  </style>
+</head>
+<body>
+  <div id="framecontent">
+    <div class="dtree" style="margin:0px;padding:0px;padding-left:6px;padding-top:6px;">
+    	<script type="text/javascript">
+    		<!--
+    		d = new dTree('d');
+    		d.config.target="right";
+        d.config.useCookies=false;
+        
+d.add(0,-1,'The Randomizer','topics/Welcome.htm');
+  d.add('1','0',"Introduction",'topics/Welcome.htm');
+    d.add('1.1','1',"Welcome",'topics/Welcome.htm');
+    d.add('1.2','1',"Terminology",'topics/Terminology.htm');
+    d.add('1.3','1',"License",'topics/License.htm');
+  d.add('2','0',"The User Interface",'topics/The Main Screen.htm');
+    d.add('2.1','2',"The Main Screen",'topics/The Main Screen.htm');
+    d.add('2.2','2',"Settings",'topics/Preferences.html');
+    d.add('2.3','2',"Grammar Editor",'topics/Grammar Editor.htm');
+      d.add('2.3.1','2.3',"Grammar Editor",'topics/Grammar Editor.htm');
+      d.add('2.3.2','2.3',"Grammar Editor Assignment",'topics/Grammar Editor Assignment.htm');
+      d.add('2.3.3','2.3',"Grammar Editor Dice Roll",'topics/Grammar Editor Dice Roll.htm');
+      d.add('2.3.4','2.3',"Grammar Editor LUA",'topics/Grammar Editor LUA.htm');
+      d.add('2.3.5','2.3',"Grammar Editor Phonotactics",'topics/Grammar Editor Phonotactics.htm');
+      d.add('2.3.6','2.3',"Grammar Editor Table",'topics/Grammar Editor Table.htm');
+    d.add('2.4','2',"Markov Chain Generator",'topics/Markov Generator.htm');
+    d.add('2.5','2',"Item List Converter",'topics/Item List Converter.htm');
+    d.add('2.6','2',"Phonotactics Generator",'topics/Phonotactics Generator.htm');
+  d.add('3','0',"Grammar Files",'topics/What Are Grammar Files.htm');
+    d.add('3.1','3',"What Are Grammar Files?",'topics/What Are Grammar Files.htm');
+    d.add('3.2','3',"Grammar File Structure",'topics/Grammar File Structure.htm');
+    d.add('3.3','3',"Assignment Grammar Structure",'topics/Assignment Grammar Structure.htm');
+    d.add('3.4','3',"Dice Roller Grammar Structure",'topics/Dice Roller Grammar Structure.htm');
+    d.add('3.5','3',"LUA Grammar Structure",'topics/LUA Grammar Structure.htm');
+    d.add('3.6','3',"Phonotactics Grammar Structure",'topics/Phonotactics Grammar Structure.htm');
+    d.add('3.7','3',"Table Grammar Structure",'topics/Table Grammar Structure.htm');
+    d.add('3.8','3',"Calculation Functions",'topics/calculation functions.htm');
+  d.add('4','0',"Tutorials",'tutorials/Generate Content.htm');
+    d.add('4.1','4',"How To Generate Content",'topics/How To Generate Content.htm');
+    d.add('4.2','4',"How to Filter Generators",'topics/How to Filter Generators.htm');
+    d.add('4.3','4',"How to Edit Tags",'topics/How to Edit Tags.htm');
+
+    		document.write(d);
+
+        function selectTopic(path)
+        {
+          var nId = -1;
+          path = unescape(path.replace(/\\/gi, "\/").toLowerCase());
+          if (d.selectedNode!=null)
+          {
+            if (path.indexOf('/'+d.aNodes[d.selectedNode].url.toLowerCase())!=-1)
+              nId = -2;
+          }
+          if (nId == -1)
+          {
+            for (var n=1; n<d.aNodes.length; n++) {
+      			  if (path.indexOf('/'+d.aNodes[n].url.toLowerCase())!=-1)
+              {
+      				  nId=n;
+      				  break;
+      			  }
+            }
+            if (nId!=-1)
+              d.openTo(nId,true,true);
+          }
+        }
+    		//-->
+    	</script>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Project properties</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Project properties</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/pprops.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      The "Project properties" page is a place for definition of general project parameters.
+      The main parameters are available for editing directly on the page, additional parameters can be
+      edited in the <a href="helpBar_OI.htm">Object Inspector</a>.
+    </p>
+    <p>
+      Beside the classic browsing buttons, you can also use the navigational buttons in the "general project files" section.
+      These buttons will navigate you to those places in Precision Helper, where you can edit the appropriate files.
+    </p>
+    <p class="big" style="padding-top:8px;">
+      General project files
+    </p>
+    <ul class="shr">
+      <li><b>Compiled help file</b> - the name and location of resulting help file for your project. Here it means the <b>CHM</b> (<i>Microsoft Compiled Html Help</i>) file.
+          More info about publishing help into another formats can be found in <a href="Publishing.htm">Publishing the help</a> chapter.</li>
+      <li><b>Default topic</b> - default <a href="pageTopic.htm">topic</a>, that will be displayed when the help is opened</li>
+      <li><b>Contents file</b> -  the file, where the main <a href="navBar_TOC.htm">table of contents</a> is stored
+          (more tables can be defined in any of the <a href="pageWinTypes.htm">window type</a> definitions)</li>
+      <li><b>Index file</b> - the file, where the main <a href="navBar_IDX.htm">index of keywords</a> is stored
+          (more indices can be defined in any of the <a href="pageWinTypes.htm">window type</a> definitions)</li>
+      <li><b>Stop list file</b> - fulltext search index stop list file. Text file with words (one word per line), that will be ignored during build of fulltext search index.</li>
+      <li><b>Error log file</b> - the file, where <a href="helpBar_Log.htm">compilation log</a> is stored.
+          If you do not fill this parameter, Precision Helper creates the file automatically - the name will be taken from the project filename (with the <i>.log</i> extension).</li>
+    </ul>
+
+    <p class="big">
+      Language and font
+    </p>
+    <ul class="shr">
+      <li><b>Language</b> - language for the resulting compiled html help (<i>CHM</i>). Language is important for the proper functioning of full-text search.
+       	  This and other parameters in this section does not affect the help publishing to other formats.</li>
+      <li><b>Default font</b> - default font for user interface elements of resulting <i>CHM</i> help
+          (ie. <a href="navBar_TOC.htm">contents</a>, <a href="navBar_IDX.htm">index</a>, etc.).
+          The appearance of contents and / or index can be defined separately in their <a href="helpBar_OI.htm">Object Inspector</a>.</li>
+      <li><b>Character set</b> - character set definition for the "<i>Default font</i>"</li>
+    </ul>
+
+    <p class="big">
+      <a name="others"></a> Other options
+    </p>
+    <ul class="shr">
+      <li><b>Create binary table of contents</b> - binary compiled contents is used for MSDN collections and for "Next" / "Prior" buttons functionality (see the <a href="pageWinTypes.htm">window type</a> definition).
+          For the <a href="pageMergeFiles.htm">merged contents</a> and "<a href="pageUSec.htm">INFO TYPES</a>" section to work correctly, the option must be <b>unchecked</b>.</li>
+      <li><b>Create binary index</b> - for the <a href="pageMergeFiles.htm">merged contents</a> and "<a href="pageUSec.htm">INFO TYPES</a>" section to work correctly,
+          the option must be <b>checked</b>.</li>
+      <li><b>Include keywords from topics</b> - when checked, the compiler will remove any keywords (so-called <i>K-Links</i>) from the topics and place them in the index file.
+          We recommend to leave this option unchecked. </li>
+      <li><b>Compile fulltext search info</b> - the fulltext search index will be generated (only for the <i>CHM</i> format)</li>
+      <li><b>Create .CHI index file</b> - this option is normally <b>unchecked</b>. <i>CHI</i> indices are used for MSDN collections and if they are generated,
+          they should be distributed with the resulting compiled help.</li>
+      <li><b>Display compile progress</b> - the <a href="helpBar_Log.htm">compilation log file</a> will contain names of processed files (topics)</li>
+      <li><b>Display compile notes</b> - the <a href="helpBar_Log.htm">compilation log file</a> will contain other informations and notes</li>
+      <li><b>Enhanced decompilation</b> - enhanced decompilation info will be stored in the resulting compiled help</li>
+    </ul>
+
+    <p class="big">
+      <a name="oi"></a> Object Inspector - Current project - Other options
+    </p>
+    <ul class="shr">
+      <li><b>Auto generate TOC (to level)</b> - the <i>hhc</i> compiler will generate the table of contents automatically, by using he &lt;h1&gt;, &lt;h2&gt;, etc. tags.
+          This option is provided only for full compiler syntax support. For automatic generation of content items use the <a href="toolsTOCGen.htm">Auto add topics wizard</a>.</li>
+      <li><b>Flat result (no folders)</b> - the resulting compiled help archive (<b>CHM</b>) will not contain directory structure of topics, styles and other files,
+          but all the files will be located on the root level. Using of this option is not recommended and is provided only for full compiler syntax support.</li>
+      <li><b>Compatibility</b> - compatibility mode of the help project file</li>
+    </ul>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. All rights reserved.
+  </div>
+</body>
+</html>

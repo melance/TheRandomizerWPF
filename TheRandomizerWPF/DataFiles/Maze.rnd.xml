@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:type="LUAGrammar">
+	<name>Maze</name>
+	<author>Lance Boudreaux</author>
+	<description>Generates a random maze</description>
+	<tags>
+		<tag>Map</tag>
+	</tags>
+	<parameters>
+	    <parameter name="width" display="Width" type="Text" default="10" />
+		<parameter name="height" display="Height" type="Text" default="10" />
+		<parameter name="size" display="Cell Size (px)" type="Text" default="10" />
+	</parameters>
+	<supportsMaxLength>false</supportsMaxLength>
+	<css><![CDATA[]]></css>
+	<script>
+	mazeMaker = require('Maze Builder')
+	
+	printMaze(buildMaze(0,true,true), true)
+	</script>
+</Grammar>

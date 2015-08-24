@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Context help</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Context help</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/context.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      The context-sensitive help editor <b>gives you the full control</b> over assigning context IDs, alias IDs, source files and commentaries.
+      Possibility to work in <b>simple mode</b> is advantageous for users who do not want to deal with detailed definitions.
+    </p>
+    <img src="../img/ss_map2.jpg" class="ssright"/>
+    <p>
+      This editor allows you to also enter so-called <b>text popups</b>, a visual <b>indication of duplicities</b>
+      and last but not least copying and pasting the selected items to and from the clipboard (for easy collaboration with other applications).
+    </p>
+    <p>
+      Context help navigation panel is used for <b>filtering the items</b>, selecting the working mode and for setting an additional editor parameters.
+	    It also allows the <b>batch assignment</b> of context identifiers to all help topics.<br>
+      It is divided into three sections - <b>Topics filter</b>, <b>Identifiers filter</b> and <b>Other options</b>.
+    </p>
+    <p>
+      Editor itself is located on the <a href="pageMap.htm">Context help page</a>,
+      that shows the table of topics, context help identifiers, source files and comments.
+      All editing and assignment can be performed directly in this table, so the creation of context-sensitive help in the Precision Helper is similar to the work in spreadsheet editor.
+    </p>
+    
+    <p>
+      <i>Note:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;The table of context-sensitive help identifiers is automatically <b>pre-filled with all topics</b> defined anywhere in the project.
+      You do not have to manualy add or remove topics, but only assign the identifiers.
+      Saved are only the rows of context-sensitive help table, having completed the necessary data.</i>
+    </p>
+    <p>
+      The context help editor options description is provided <a href="pageMap.htm">here</a>.
+    </p>
+
+    <br>
+
+    <p class="big" style="padding-top:8px;">
+      Context help panel options
+    </p>
+    <ul class="shr">
+      <li style="list-style-type:none"><i>Topics filter:</i></li>
+      <li><b>Content topics</b> - displays topics from <a href="navBar_TOC.htm">table of contents</a></li>
+      <li><b>Index topics</b> - displays topics from <a href="navBar_IDX.htm">index of keywords</a></li>
+      <li><b>Files topics</b> - displays topics from <a href="navBar_Files.htm">included files list</a></li>
+      <li><b>Other topics</b> - displays all other topics, that does not meet the previous conditions</li>
+      <li><b>Text popups</b> - displays text popups</li>
+
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Identifiers filter:</i></li>
+      <li><b>Duplicit IDs</b> - displays only rows, that have duplicated context or symbolic identifier</li>
+      <li><b>No context IDs</b> - displays only rows without context identifier</li>
+      <li><b>No symbolic IDs</b> - displays only rows without symbolic identifier</li>
+      <li><b>Comments</b> - displays only rows with comments</li>
+      
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Other options:</i></li>
+      <li><b>Mark duplicit items</b> - a useful option, that helps with finding duplicities in the table.
+          Cells with duplicate identifiers will be marked with a red tilde (see also "Identifiers filter - Duplicit IDs" above)</li>
+      <li><b>Automatically assign IDs</b> - if you do not want to assign identifiers automatically in the batch process (see the "Assign identifiers" below),
+          but you would appreciate some form of automation of this activity, you can use this option.
+          It allows to assign identifiers (and their sources) automatically only for the table row that is currently editing.
+          So, by pressing the SPACEBAR and then the ENTER key (on any other column then the first) you can get the automatically assigned context-sensitive help definition for currently selected row.</li>
+      <li><b>Show advanced columns</b> - this is the option to setup a <b>working mode</b>. If it is checked, you have the full control over the definition
+          (you see and can edit the topics, identifiers, sources and comments).
+          If it is unchecked, you see and can edit only two of most important columns (topic and the context identifier)
+          and the rest of the definition is generated automatically (regardless of the option "Automatically assign IDs").</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Show all items ...</b> - this action will turn on all the filters in <i>Topics filter</i> and <i>Identifiers filter</i> sections (see above)</li>
+      <li><a name="assignids"></a> <b>Assign identifiers ...</b> - this action will perform a batch assignment of identifiers (only cells without the definition are filled).
+          Also when the editor page is closing, it performs some checks, so you will be informed about the bad or missing definition.</li>
+    </ul>
+<br><br>
+    <p>
+      <b>Used terminology</b>
+    </p>
+    <ul class="shr">
+      <li><i>context identifier</i> - integer identifier (also known as "MAP ID" or "HelpContext") that is used to link the application and the help.
+          Help for the topic (with context identifier assigned) can be displayed directly from your application
+          (your development tool must support the help and application linking - see also <a href="toolsAPITester.htm">API Tester</a>).</li>
+      <li><i>symbolic identifier</i> - symbolic name (an alfanumeric identifier also known as "ALIAS ID") that is used as an interface between the context identifier
+          and the topic if necessary (ie. when the topic file has the spaces in his name, etc.)</li>
+      <li><i>source file</i> - this means the physical storage of context or symbolic identifier. Identifiers can be stored directly in the project file,
+          or in the separate so-called "header" files (see also <a href="dialogOptions.htm#hhc">Options - External tools - MS Html Help</a>).</li>
+      <li><i>text popup</i> - text popups are short descriptions, that are displayed to the end user when he hover the mouse over some application element.
+          These items of context-sensitive help are always stored separately from project file, so they always have assigned the source files (resp. at least the symbolic ID source file).</li>
+    </ul>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. All rights reserved.
+  </div>
+</body>
+</html>

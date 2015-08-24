@@ -1,0 +1,213 @@
+﻿<html>
+	
+<head>
+	<title>Assignment Grammar File Structure</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.5.0.497">
+	<meta name="keywords" content="Grammar">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "The Randomizer.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("AssignmentGrammarFileStructure");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Assignment Grammar File Structure</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="GrammarFiles.html">Grammar Files</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="GrammarFiles.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="GrammarFileStructure.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="DiceRollGrammarFileStructure.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps3"><span class="rvts8">Assignment Grammar Files are a generic grammar type which is highly customizable. &nbsp;The following information is specific to Assignment Grammar Files. See the </span><a class="rvts13" href="GrammarFileStructure.html">Grammar Files</a><span class="rvts8"> help section for common information about all Grammar Files.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">The Rules</span></span></h3>
+<p class="rvps3"><span class="rvts8">The rules are the meat of the grammar. The rules are what tell The Randomizer how to generate it's content. Based on Markov Chains, the rules are extremely flexible and powerful.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Properties</span></p>
+<div class="rvps3"><table width="680" border="1" cellpadding="0" cellspacing="0" style="border-color: #000000; border-style: solid;">
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 86px;"><p class="rvps3"><span class="rvts15">Element</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 321px;"><p class="rvps3"><span class="rvts15">Description</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 265px;"><p class="rvps3"><span class="rvts15">Values</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 86px;"><p class="rvps3"><span class="rvts8">item</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 321px;"><p class="rvps3"><span class="rvts8">A single rule</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 265px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 86px;"><p class="rvps3"><span class="rvts8">[name]</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 321px;"><p class="rvps3"><span class="rvts8">The label of the rule</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 265px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 86px;"><p class="rvps3"><span class="rvts8">[weight]</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 321px;"><p class="rvps3"><span class="rvts8">The weight of this particular rule during selection</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 265px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 86px;"><p class="rvps3"><span class="rvts8">[next]</span><span class="rvts8"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 321px;"><p class="rvps3"><span class="rvts8">The label of the rule that will come after this one</span><span class="rvts8"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 265px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 86px;"><p class="rvps3"><span class="rvts8">{expression}</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 321px;"><p class="rvps3"><span class="rvts8">The value of this rule</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 265px;"><p class="rvps3"><span class="rvts8">See the expressions section below</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts8"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps3"><span class="rvts15">Sample</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps9"><span class="rvts18">&lt;items&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="Start"&gt;[Gender]&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="Any" weight="50"&gt;[MaleName]&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="Any" weight="50"&gt;[FemaleName]&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="Male"&gt;[MaleName]&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="Female"&gt;[FemaleName]&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="MaleName" weight="300" next="[Space]"&gt;James&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="MaleName" weight="299" next="[Space]"&gt;John&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="MaleName" weight="298" next="[Space]"&gt;Robert&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="MaleName" weight="297" next="[Space]"&gt;Michael&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;:</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;:</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="SurName" weight="1"&gt;Williamson&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18">&lt;/items&gt;</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Expressions</span></span></h3>
+<p class="rvps3"><span class="rvts8">Expressions are the key to the rules. They can be as simple as a string value or as complex as a series of labels, strings, calculations, and formatting commands.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Strings</span></p>
+<p class="rvps3"><span class="rvts8">The simplest form of an expression is a string. Things such as "Lance" or "A". An example rule would look like so:</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps9"><span class="rvts18">&lt;item name="StringValue"&gt;Lance&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18">&lt;item name="StringValue"&gt;Boudreaux&lt;/item&gt;</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Labels</span></p>
+<p class="rvps3"><span class="rvts8">Labels can also be placed in the expression. These tell the generator to produce a result from the results of evaluating that label. For example, you could generate a first and last name using an expression something akin to:</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps9"><span class="rvts18">&lt;item name="FullName"&gt;[FirstName] [LastName]&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18">&lt;item name="FirstName"&gt;Lance&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18">&lt;item name="FirstName"&gt;John&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18">&lt;item name="LastName"&gt;Boudreaux&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18">&lt;item name="LastName"&gt;Doe&lt;/item&gt;</span></p>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Calculations</span></p>
+<p class="rvps3"><span class="rvts8">Calculations look similar to labels but allow for numerical and string computations to be done. &nbsp;They are denoted by being in square brackets with an equal sign immediately after the opening bracket:</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps9"><span class="rvts18">&lt;item name="Strength"&gt;[=Roll(3,6)]&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18">&lt;item name="NumberOfOrcs"&gt;You encounter [=ToText(Roll(2,4)+2)] orcs!&lt;/item&gt;</span></p>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><span class="rvts8">You can find a list of functionality available for calculations at the </span><a class="rvts13" href="https://ncalc.codeplex.com/" target="_blank">nCalc</a><span class="rvts8"> website. &nbsp;Additional functions included in The Randomizer are detailed in the </span><a class="rvts13" href="CalculationFunctions.html">Calculation Functions</a><span class="rvts8"> help topic but also include those listed here:</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<div class="rvps3"><table width="100%" border="1" cellpadding="0" cellspacing="0" style="border-color: #000000; border-style: solid;">
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 148px;"><p class="rvps7"><span class="rvts15">Function</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 1166px;"><p class="rvps7"><span class="rvts15">Description</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 148px;"><p class="rvps3"><span class="rvts8">Items([Label])</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 1166px;"><p class="rvps3"><span class="rvts8">Returns the number of rule items that have been visited thus far. &nbsp;If the Label is provided it counts only those rule items with that label.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Formatting</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Formatting can be added to expressions in the form of html tags. &nbsp;For example, if you wanted to make a word bold and red you could use the following code:</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps9"><span class="rvts18">&lt;item name="Orcs"&gt;&lt;![CDATA[&lt;span style="font-weight:bold;color:red"&gt;ORCS!&lt;/span&gt;]]&gt;&lt;/item&gt;</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Imports</span></p>
+<p class="rvps3"><span class="rvts8">It is possible in Assignment Grammars to import library files that contain rules that will be included in the grammar. Library files have an extension of *.lib.xml and are included in the same folder as the grammars. Importing the library is done by adding import tags with the content being the name of the library file with or without the extension.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Sample:</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;imports&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;import&gt;USNames&lt;/import&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;/imports&gt;</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Library File Sample:</span></p>
+<p class="rvps9"><span class="rvts18">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span></p>
+<p class="rvps9"><span class="rvts18">&lt;library&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="FirstName"&gt;John&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="FirstName"&gt;Lance&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="LastName"&gt;Doe&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item name="LastName"&gt;Boudreaux&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18">&lt;/library&gt;</span></p>
+<p></p>
+<p class="rvps2"><span class="rvts6">Created with the Personal Edition of HelpNDoc: </span><a class="rvts7" href="http://www.helpndoc.com/help-authoring-tool">Free help authoring tool</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2014 by Lance Boudreaux. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

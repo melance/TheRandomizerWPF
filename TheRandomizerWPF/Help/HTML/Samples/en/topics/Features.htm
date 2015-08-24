@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Full features list</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Full features list</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/FeatureList.gif" style="float: left; margin-right:12px;" />
+    <p>
+      Here is the full features list of <b>Precision Helper</b> product. Detailed description
+      of individual features can be found in <a href="GUI.htm">The User interface</a> chapter and its topics.
+    </p>
+    <p class="big" style="padding-top:8px;">
+      Basic features
+    </p>
+    <ul class="shr">
+      <li><a href="ProjectsList.htm">Help projects management</a> (favorite projects, recently opened projects)</li>
+      <li>Creating, opening, editing and saving the help projects in native <i>Microsoft Html Help (HHP)</i> format</li>
+      <li><a href="navBar_Builds.htm">Batch project compilations</a> (definition and management of project compilation lists)</li>
+      <li>Publishing (export) into the following formats: <a href="ribbonBar.htm#build">CHM</a>, <a href="toolsExportWebHelp.htm">WebHelp</a>, <a href="ExportPDF.htm">PDF</a>
+          and <a href="toolsExportSingleDoc.htm">single html document</a> (see <a href="#export">Import/Export</a>)</li>
+      <li><a href="dialogOptions.htm#backup">Automatic backup</a> of project files and application data files</li>
+      <li><a href="dialogOptions.htm#style">Multilingual user interface</a> including help and compiler error message reference (switching language without restarting)</li>
+      <li><a href="mainForm.htm">Modern look and feel</a>, working with multiple topics <a href="tabBar.htm">in tabs</a> - see <a href="#gui">User interface</a></li>
+    </ul>
+    
+    <p class="big">
+     <a name="toc"></a>Table of contents editing
+    </p>
+    <ul class="shr">
+      <li>Extensive editing possibilities for <a href="navBar_TOC.htm">table of contents</a> - using keyboard, clipboard, drag &amp; drop between instances of application,
+          drag &amp; drop from and into other applications (see also <a href="#gui">User interface</a>)</li>
+      <li>Working with any <i>table of contents</i> defined in the project (easy selection of contents for editing)</li>
+      <li><a href="helpBar_OI.htm">Object Inspector</a>, the tool for easy setting parameters and behaviour (for selected topic as well as for whole contents)</li>
+      <li><a href="toolsTOCGen.htm">Automatic insertion of topics</a> into the <i>contents</i> - different options of topic sources</li>
+      <li>A lot of options for <a href="dialogOptions.htm#edit">selecting or creating a topic</a> (enter the url, file selection via the system dialog,
+        <a href="dialogPrjFiles.htm">project file selection dialog</a>, selecting the topic from external help, creating a copy of another topic, creating a blank topic, etc.)</li>
+      <li>Option to include an <a href="pageTopic.htm#toctopicsel">external contents</a> (from different contents file and / or from different help file)</li>
+      <li>Possibility to use predefined <a href="dialogOptions.htm#mtools">external editor</a> or associated application for topic editing</li>
+      <li>Printing, previewing, finding text and zooming the <a href="pageTopic.htm">displayed topic</a></li>
+      <li><a href="pageTopic.htm#quickkeys">Quick assignment of keywords</a> (ia. adding text, that is selected in the current topic)</li>
+      <li>Quick searching (filtering) of <a href="navBar_TOC.htm">content items</a></li>
+      <li>Mutual navigation to the topics between contents, <a href="#index">index</a> and <a href="#map">contexts</a></li>
+    </ul>
+
+    <p class="big">
+      <a name="index"></a>Index of keywords
+    </p>
+    <ul class="shr">
+      <li>Possibility to define a structured <a href="navBar_IDX.htm">index</a>, as well as links between the keywords -
+          using the keyboard, clipboard, drag &amp; drop between application instances and / or other applications (see also <a href="#gui">User interface</a>)</li>
+      <li>Possibility to work with any index defined in the project (an easy selection of the index to edit)</li>
+      <li><a href="helpBar_OI.htm">Object Inspector</a>, the tool for easy setting parameters and behaviour (for selected keyword as well as for whole index)</li>
+      <li><a href="toolsIDXGen.htm">Automatic insertion of keywords</a> from topic titles into the index - different options of topic sources</li>
+      <li>A lot of options for <a href="dialogOptions.htm#edit">selecting or creating a topic</a> (enter the url, file selection via the system dialog,
+        <a href="dialogPrjFiles.htm">project file selection dialog</a>, selecting the topic from external help, creating a copy of another topic, creating a blank topic, etc.)</li>
+      <li>Possibility to use predefined <a href="dialogOptions.htm#mtools">external editor</a> or associated application for editing</li>
+      <li>Printing, previewing, finding text and zooming the <a href="pageTopic.htm">displayed topic</a></li>
+      <li><a href="pageTopic.htm#quickkeys">Quick assignment of keywords</a> during the editing of table of contents (see <a href="#toc">Table of contents editing</a>)</li>
+      <li>Quick searching (filtering) of <a href="navBar_IDX.htm">keywords</a></li>
+      <li>Mutual navigation to the topics between <a href="#toc">contents</a>, index and <a href="#map">contexts</a></li>
+    </ul>
+
+    <p class="big">
+      <a name="map"></a>Context-sensitive help editor
+    </p>
+    <ul class="shr">
+      <li>Complex editor of <a href="navBar_MAP.htm">context-sensitive help</a> - full control over assigning context IDs, alias IDs, source files and commentaries.</li>
+      <li>Allows editing in <a href="navBar_MAP.htm">simple mode</a> (only help context ID is required)</li>
+      <li>Possibility to enter <i>Text popups</i></li>
+      <li>The context-sensitive <a href="pageMap.htm">table</a> is automatically pre-filled with all topics defined anywhere in the project (it means during editing, not for saving)</li>
+ 	    <li>Automatic mapping of contextual and symbolic identifiers (all blank, or only currently edited line of the table)</li>
+ 	    <li>Option to <a href="dialogOptions.htm#hhc">store the context help items</a> directly to the help project file or to an external source files (.h, .ali, .txt)</li>
+ 	    <li>Editor informs you about duplicities (quick warning message after item editing, visual indication)</li>
+ 	    <li>Several options for <a href="navBar_MAP.htm">table filtering</a></li>
+ 	    <li>Copying to the clipboard, pasting from clipboard - allows easy transfer of table items between the instances of the application as well as between different applications (eg. Microsoft Excel, text editors, developer tools)</li>
+      <li><a href="pageMap.htm">File preview</a> for currently selected table row</li>
+    </ul>
+
+    <p class="big">
+      Additional project editing
+    </p>
+    <ul class="shr">
+      <li>Editing the list of <a href="navBar_Files.htm">included files</a>, the files explicitly included in the resulting help
+          - many filtering options, <a href="pageFiles.htm">preview</a> of selected file in the list, transfer to and from the clipboard, drag &amp; drop between different application instances
+          and /or other applications (Windows Explorer, text editor, etc.)</li>
+      <li><a href="pageWinTypes.htm">Window type</a> definitions, including the <i>visual designer</i> (defining buttons, navigation pane tabs, main menu, font, colors, etc.)</li>
+      <li>Copying window type definition to the clipboard - allows you to transfer the window type between application instances and /or between other applications (in native Microsoft HHP format)</li>
+      <li>Editing the <a href="pageMergeFiles.htm">merged external help files</a> list - quick searching, clipboard support, drag &amp; drop support for application instances and / or for Windows Explorer, text editor, etc.</li>
+      <li>Direct manual editing of <a href="pageUSec.htm">other project sections</a> (INFO TYPES, SUBTYPES)</li>
+    </ul>
+    
+    <p class="big">
+      <a name="import"></a>Import
+    </p>
+    <ul class="shr">
+      <li><a href="toolsImportCHM.htm">CHM</a> - creating a new help project via decompilation of selected Microsoft CHM file</li>
+      <li><a href="toolsLocatePrj.htm">Project files</a> - searching for existing help projects in the selected folder and their adding into the projects list</li>
+    </ul>
+
+    <p class="big">
+      <a name="export"></a>Export
+    </p>
+    <ul class="shr">
+      <li><a href="ribbonBar.htm#build">CHM</a> - compiling the help project into the <i>Microsoft CHM</i> format (user defined compiler can be used - hha.dll/hhc.exe)</li>
+      <li><a href="toolsExportWebHelp.htm">WebHelp</a> - creating an online help (support for user defined templates)</li>
+      <li><a href="toolsExportePUB.htm">ePUB (e-book)</a> - creating an e-book</li>
+      <li><a href="toolsExportSingleDoc.htm">Single document</a> - creating a single html document</li>
+      <li><a href="ExportPDF.htm">PDF</a><sup><small>*)</small></sup></li>
+    </ul>
+
+    <p class="big">
+      Other tools
+    </p>
+    <ul class="shr">
+      <li><a href="toolsCHMViewer.htm">CHM Viewer</a> (browsing the content of CHM file)</li>
+      <li><a href="toolsAPITester.htm">API Tester</a> (for developers: testing the Html Help API - CHM file selection, testing desired context ID, topic file and / or keyword)</li>
+      <li>User defined <a href="dialogOptions.htm#mtools">external tools</a> (CHM compiler, html editor, image editor, web browser)</li>
+    </ul>
+
+    <p class="big">
+      <a name="gui"></a>User interface
+    </p>
+    <ul class="shr">
+      <li>Modern <a href="mainForm.htm">user interface</a>, wide set of options for setting the "look and feel" (color schemes, panel layouts, tabs style, navigation panel buttons layout, etc.)</li>
+      <li>Working with multiple topics <a href="tabBar.htm">in tabs</a> - also more tabs can be opened for other editors and lists (builds list, window type designers, etc.)</li>
+      <li><a href="HomePage.htm">Quick launch</a> - buttons with user defined actions, located directly on the product <i>welcome page</i></li>
+      <li><a href="helpBar_Search.htm">Global search</a> - searching texts (words) in selected areas of project and application (including topic texts)</li>
+      <li>Quick searching (filtering) in all available lists</li>
+      <li>Proven model of the <a href="helpBar_OI.htm">Object Inspector</a>, known from many developer tools</li>
+      <li>Large set of possibilities in <a href="dialogPrjFiles.htm">project file selection dialog</a>
+          - different <i>search places</i>, filtering by file type and / or name, browsing compiled help files (CHM) as a folder, etc.</li>
+      <li><a href="dialogOptions.htm#sys">Tray icon</a> (option to show/hide)</li>
+      <li>Possibility of opening the selected topic not only in a defined <a href="dialogOptions.htm#mtools">editor or browser</a>,
+          but also in other applications (associated applications, a list of applications in which the file was last opened)</li>
+      <li><a href="CmdLine.htm">Starting with parameters</a> - opening the new application instance</li>
+      <li>Wide support for clipboard and mouse dragging functionality - between application instances and / or between Precision Helper and other applications</li>
+      <li>Full implementation of <i>Microsoft Html Help Project</i> file format<sup><small>**)</small></sup></li>
+    </ul>
+
+    <p class="big">
+      Miscellaneous
+    </p>
+    <ul class="shr">
+      <li>Context-sensitive help - <a href="helpBar_Help.htm">help for specific situations</a> in the application is always displayed in the <a href="helpBar_Help.htm">Help tab</a></li>
+      <li>Html Help Compiler Error Message Reference included</li>
+      <li>Product has no special requirements neither for hardware nor for software - see <a href="SysReq.htm">System requirements</a>.</li>
+    </ul>
+
+    <p class="big">
+      License
+    </p>
+    <ul class="shr">
+      <li><b>This product is distributed totally FREE !</b> (see <a href="License.htm">License agreement</a>)</li>
+    </ul>
+
+    <br />
+    <p class="small" style="border-top: 1px solid #bbbbbb;padding-top:8px">
+      <i>&nbsp;&nbsp;*)</i>&nbsp;&nbsp;See <a href="ExportPDF.htm">Export into the Adobe PDF file format</a>.<br>
+      <i>**)</i>&nbsp;&nbsp;Except INFO TYPES a SUBSETS sections (the support for these sections is not fully implemented even in the system <i>CHM Help viewer</i>).
+        In Precision Helper these sections can be <a href="pageUSec.htm">edited manually</a>.<br>
+    </p>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. All rights reserved.
+  </div>
+</body>
+</html>

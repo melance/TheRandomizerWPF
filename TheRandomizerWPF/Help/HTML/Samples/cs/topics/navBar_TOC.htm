@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Obsah nápovědy</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Obsah nápovědy</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/toc.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      Jednou z nejpodstatnějších částí nápovědy je její obsah. Tento navigační panel
+      je místem, kde můžete pohodlně definovat strukturu a vzhled obsahu Vaší nápovědy.
+    </p>
+    <img src="../img/ss_welcome_01s.jpg" class="ssright"/>
+    <p>
+      Při výběru položky obsahu se vždy automaticky zobrazuje <a href="pageTopic.htm">stránka s příslušným tématem</a>
+      nebo informacemi o záhlaví (příp. vloženém obsahu), na které lze vybrat, vytvořit (a příp. otevřít pro úpravy) téma nápovědy
+      odpovídající vybrané položce obsahu.
+    </p>
+    <p>
+      Navigační panel obsahu a <a href="pageTopic.htm">stránka tématu</a> jsou úzce propojeny a v podstatě tvoří
+      jeden celek, jehož účelem je rychle a efektivně definovat obsah nápovědy.
+    </p>
+    <p>
+      Nejdůležitější volby a akce, týkající se úprav obsahu a tématu, jsou k dispozici i na <a href="ribbonBar.htm">pásu karet</a> (karta Obsah).
+    </p>
+    <p>
+      Kromě standardních možností úprav nabízí Precision Helper široké možnosti uplatnění <b>schránky</b> a funkcí <b>přetažení myší</b>. A to nejen v rámci aplikace
+      a jejích instancí, ale i mezi Precision Helper a jinými aplikacemi (viz níže).
+    </p>
+    <p>
+      Podívejte se také na informace o <a href="toolsTOCGen.htm">automatickém přidání témat</a> do obsahu a informace o úpravách <a href="navBar_IDX.htm">rejstříku</a>.
+    </p>
+    
+    <p>
+      <i>Poznámka:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;Jestliže je ve Vašem projektu nápovědy definováno více obsahů (např. v <a href="pageWinTypes.htm">typech oken</a>),
+      zobrazí se na tomto panelu také tlačítko pro výběr obsahu, který chcete editovat.</i>
+    </p>
+
+    <p class="big" style="padding-top:8px;">
+      Možnosti úprav obsahu
+    </p>
+    <ul class="shr">
+      <li><b>Přidat záhlaví</b> - přidá do obsahu nové záhlaví. Záhlaví může být kdykoliv změněno na téma a naopak, a to pomocí voleb pro <a href="#topicsel">výběr tématu</a>.</li>
+      <li><b>Přidat téma</b> - přidá do obsahu nové téma. V dialogu <a href="dialogOptions.htm#edit">Nastavení</a> si můžete zvolit, jaká akce bude vyvolána při přidání tématu (výběr souboru, vytvoření prázdného tématu, apod.)</li>
+      <li><b>Přejmenovat</b> - přejmenování položky obsahu. Nemění se text v tématu, ale pouze název položky obsahu jako takové.
+          Precision Helper umožňuje automatické zjištění titulku tématu a jeho přiřazení položce obsahu (viz <a href="dialogOptions.htm#edit">Nastavení - Základní - Úpravy - Vždy použít titulek tématu</a>).</li>
+      <li><b>Smazat</b> - odstranění položky tématu (včetně podřízených). Samozřejmě se nemaže soubor tématu jako takový, ale pouze položka v obsahu.</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Vyjmout</b> - vyjmutí vybraných položek obsahu do schránky. Vyjmutí v plném rozsahu funguje jen v rámci obsahu aplikace Precision Helper (a jejích instancí).
+          Při přenosu do jiné aplikace se tato akce chová jako kopie do schránky (položky se po vložení ze schránky v jiné aplikaci nemažou).
+          <i>Poznámka: Výběr více položek je možné realizovat vždy jen v rámci jedné úrovně</i>.</li>
+      <li><b>Kopírovat</b> - zkopírování vybraných položek obsahu do schránky (pro použití v Precision Helper i včetně podřízených)</li>
+      <li><b>Vložit</b> - vložení položek obsahu ze schránky</li>
+      <li><b>Duplikovat</b> - duplikuje vybrané položky obsahu. Jedná se vlastně o spojení akcí <i>Kopírovat + Vložit</i>.</li>
+      <li><b>Přetažení myší</b> - v rámci úprav obsahu můžete položky libovolně přetahovat myší a to jak v rámci jednoho obsahu, tak mezi jednotlivými instancemi aplikace Precision Helper,
+          a také mezi Precision Helper a jinými aplikacemi (např. textovým editorem, tabulkovým procesorem, apod.).</li>
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Tip:<br>&nbsp;&nbsp;&nbsp;&nbsp;V případě, že vložíte ze schránky seznam souborů (zkopírovaný např. v aplikaci Průzkumník Windows, v textovém editoru, apod.),
+          vytvoří Precision Helper položky obsahu včetně odkazů na dané soubory a zjištění titulku tématu.</i></li>
+
+      <li style="list-style-type:none"></li>
+      <li><b>Nahoru</b> - přesune vybrané položky v rámci struktury obsahu nahoru</li>
+      <li><b>Dolů</b> - přesune vybrané položky v rámci struktury obsahu dolů</li>
+      <li><b>Doleva</b> - přesune vybrané položky v rámci struktury obsahu doleva</li>
+      <li><b>Doprava</b> - přesune vybrané položky v rámci struktury obsahu doprava</li>
+      <li><b>Seřadit</b> - seřadí vybranou úroveň struktury obsahu dle abecedy</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Rozbalit vše</b> - rozbalí všechny položky v rámci struktury obsahu</li>
+      <li><b>Sbalit vše</b> - sbalí všechny položky v rámci struktury obsahu</li>
+      <li><b>Rychlé vyhledávání</b> - jestliže chcete najít položku obsahu dle názvu nebo souboru tématu, použijte pole <i>Vyhledat</i> (v panelu vpravo nahoře)</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Přidat témata automaticky</b> - otevře průvodce pro <a href="toolsTOCGen.htm">automatické přidání témat</a></li>
+      <li><b>API Tester</b> - otevře nástroj <a href="toolsAPITester.htm">API Tester</a> (pro rychlé ověření správnosti definice kontextové nápovědy nebo rejstříku)</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+     <a name="topicsel"></a> Výběr tématu
+    </p>
+    <ul class="shr">
+      <li><b>Vybrat soubor projektu</b> - výběr tématu pro aktuální položku obsahu pomocí dialogu pro <a href="dialogPrjFiles.htm">výběr souboru projektu</a>.</li>
+      <li><b>Vybrat soubor</b> - výběr tématu pomocí systémového dialogu pro výběr souboru</li>
+      <li><b>Zadat cestu nebo adresu url</b> - manuální zadání cesty k souboru tématu nebo adresy url (dialog obsahuje i roletovou nabídku se všemi soubory definovanými kdekoliv v projektu)</li>
+      <li><b>Vytvořit nové téma ze šablony</b> - vytvoří nový soubor tématu na základě zvolené šablony, v umístění, které vyberete. 
+          Nejprve bude zobrazen dialog pro <a href="dialogPrjFiles.htm">výběr šablony</a> a následně systémový dialog
+          pro výběr souboru, v němž zadáte umístění a název nového souboru tématu.</li>
+      <li><b>Vytvořit nové téma z existujícího souboru</b> - vytvoří nový soubor tématu kopíí z Vámi zvoleného existujícího tématu. Pro výběr existujícího tématu je zobrazen
+          dialog pro <a href="dialogPrjFiles.htm">výběr souboru projektu</a> a následně je zobrazen systémový dialog pro výběr souboru, v němž zadáte umístění a název nového souboru tématu.</li>
+      <li><b>Vytvořit nové prázdné téma</b> - vytvoří nový soubor tématu v umístění, které zvolíte, a přiřadí toto nové téma položce obsahu</li>
+      <li><b>Vybrat z jiné nápovědy</b> - výběr odkazu na téma umístěné v externí nápovědě (viz dialog pro <a href="dialogPrjFiles.htm">výběr souboru projektu</a>)</li>
+      <li><b>Zařadit jiný obsah</b> - zařadí do struktury <a href="pageMergeFiles.htm">externí obsah</a>. Můžete zvolit jiný soubor obsahu (<i>hhc</i>) nebo odkaz na soubor obsahu v <a href="dialogPrjFiles.htm">externí nápovědě</a>.</li>
+      <li><b>Zrušit (vytvořit záhlaví)</b> - odebere položce obsahu odkaz na soubor tématu a tím ji změní na záhlaví</li>
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Poznámka:<br>&nbsp;&nbsp;&nbsp;&nbsp;Precision Helper si pamatuje poslední z voleb pro výběr tématu (kromě volby pro zařazení jiného obsahu)
+           a tu nabízí jako výchozí v rámci celé aplikace.</i></li>
+      <li style="list-style-type:none"></li>
+      <li><b>Uložit jako šablonu</b> - touto volbou můžete kterékoliv téma uložit a používat jako šablonu.
+          Precision Helper automaticky detekuje použité styly, obrázky, a další soubory, které jsou v tématu použity,
+          a uloží je spolu s tématem do příslušné složky nově vytvořené šablony.</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Další možnosti práce s tématem
+    </p>
+    <ul class="shr">
+      <li><b>Vlastnosti</b> - zobrazí kartu <a href="helpBar_OI.htm">Editoru vlastností</a>, ve kterém můžete upravovat <b>vzhled a chování</b> aktuální položky i celého obsahu.
+          <a name="quickkeys"></a>Kromě toho je zde k dispozici panel pro <b>rychlé přiřazování klíčových slov</b>, ve kterém můžete přiřazovat slova tématu
+          pouhým zaškrtnutím nebo přidávat slova nová (další volby panelu jsou dostupné také v jeho kontextové nabídce).</li>
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Tip:<br>&nbsp;&nbsp;&nbsp;&nbsp;Když kdekoliv v zobrazeném tématu označíte nějaký text a v editoru vlastností (v panelu klíčová slova) zvolíte akci <b>Přidat klíč</b>,
+          bude označený text přidán jako nové klíčové slovo.</i></li>
+      <li style="list-style-type:none"></li>
+          
+      <li><b>Upravit</b> - otevře externí editor pro úpravu nebo prohlížení aktuálního tématu. V kontextové nabídce tohoto tlačítka máte pro otevření k dispozici
+          <a href="dialogOptions.htm#mtools">Vámi zvolený editor a prohlížeč</a>, a také aplikace asociované s příponou aktuálního tématu.</li>
+      
+      <li style="list-style-type:none"></li>
+      <li><b>Tisk</b> - tisk zobrazeného <a href="pageTopic.htm">tématu</a></li>
+      <li><b>Náhled</b> - tiskový náhled pro aktuálně zobrazené <a href="pageTopic.htm">téma</a></li>
+      <li><b>Najít</b> - hledání textu na stránce aktuálně zobrazeného <a href="pageTopic.htm">tématu</a></li>
+      <li><b>Velikost textu</b> - volba velikosti textu pro aktuálně zobrazené <a href="pageTopic.htm">téma</a></li>
+      <li><b>Zvětšit</b> - zvětšení měřítka aktuálně zobrazeného <a href="pageTopic.htm">tématu</a></li>
+      <li><b>Zmenšit</b> - zmenšení měřítka aktuálně zobrazeného <a href="pageTopic.htm">tématu</a></li>
+      <li style="list-style-type:none"></li>
+      <li><b>Zpět</b> - umožňuje přejít zpět v rámci historie procházení zobrazených témat</li>
+      <li><b>Vpřed</b> - umožňuje přejít vpřed v rámci historie procházení zobrazených témat</li>
+      <li><b>Aktualizovat</b> - aktualizuje zobrazení aktuálního tématu</li>
+      <li><b>Synchronizovat</b> - synchronizuje strom obsahu s právě zobrazeným tématem</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Volby stylu obsahu (v editoru vlastností)
+    </p>
+    <ul class="shr">
+      <li><b>Automaticky rozbalovat</b> - automatické rozbalování a sbalování větví obsahu při jejich výběru v rámci prohlížení nápovědy</li>
+      <li><b>Automaticky synchronizovat výběr</b> - automaticky se nastavuje na položku v obsahu dle aktuálně zobrazeného tématu v nápovědě (vhodné při procházení přes odkazy v tématech)</li>
+      <li><b>Barva písma</b> - barva písma obsahu</li>
+      <li><b>Barva pozadí</b> - barva pozadí obsahu</li>
+      <li><b>Generován automaticky</b> - indikuje, že tento obsah byl vytvořen automaticky kompilátorem nápovědy (jen pro čtení) (viz <a href="pageProject.htm#oi">Vlastnosti projektu</a>)</li>
+      <li><b>ID okna</b> - výchozí identifikátor <a href="pageWinTypes.htm">typu okna</a>, ve kterém mají být položky obsahu (témata) zobrazovány (viz také <a href="pageTopic.htm#oi">Ostatní parametry tématu</a>)</li>
+      <li><b>ID rámce</b> - výchozí identifikátor rámce (frame), ve kterém mají být položky obsahu (témata) zobrazovány (viz také <a href="pageTopic.htm#oi">Ostatní parametry tématu</a>)</li>
+      <li><b>Používat ikony složek</b> -pro záhlaví a témata budou místo klasických ikon (knihy a listu s otazníkem) použity ikony složky a listu s řádky</li>
+      <li><b>Soubor ikon</b> - nápověda ve formátu CHM umožňuje použít vlastní soubor (bitmapu) s ikonami položek obsahu. Zde můžete tento soubor zadat.</li>
+      <li><b>Šířka ikony</b> - zde zadejte šířku jedné ikony v rámci vlastního souboru s ikonami (viz předchozí volba)</li>
+      <li><b>Výběr celého řádku</b> - vyběr položky obsahu bude indikován zvýrazněním přes celý řádek</li>
+      <li><b>Výchozí písmo</b> - výchozí písmo pro položky obsahu</li>
+      <li><b>Vždy zobrazit výběr</b> - vybraná položka obsahu bude zvýrazněna i v případě, že v ní nebude umístěn kurzor klávesnice</li>
+      <li><b>Zobrazit kořen stromu</b> - zobrazí tlačítka (+/-) a linky i v první úrovni položek obsahu</li>
+      <li><b>Zobrazit linky stromu</b> - zobrazí linky struktury položek obsahu</li>
+      <li><b>Zobrazit okraj</b> - rozšířený okraj panelu obsahu (cca 2 body)</li>
+      <li><b>Zobrazit tlačítka</b> - zobrazí tlačítka (+/-) pro rozbalení a sbalení větve ve struktuře obsahu</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Rozšířený styl okna</b> - (<i>pouze pro vývojáře</i>) číselná hodnota rozšířeného stylu okna obsahu (Extended window style)</li>
+    </ul>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. Všechna práva vyhrazena.
+  </div>
+</body>
+</html>

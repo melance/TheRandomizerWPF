@@ -1,0 +1,59 @@
+table, tr, th, td {
+	border: 1px solid black;
+	text-align: left;
+	vertical-align: top;
+	color: #586272;
+	padding: 3px;
+	font-size: 0.9em;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+	background: Gainsboro;
+}
+
+th {
+	background: #586272;
+	color: GhostWhite;
+}
+
+p.bold {
+	font-weight: bold;
+	color: #662412;
+	margin: 0;
+	padding: 0;
+}
+
+p.sub
+{
+	color: #999;
+	font-weight: bold;
+}
+
+pre {
+	border: 4px inset #036;
+	background: #EEF;
+	padding: 1em;
+	color: #036;
+	margin: 0px 6px 12px 6px;
+}
+code {
+	color:#036;
+	font-family: Consolas,"Courier New", Courier, Monospace;
+}
+	
+p.big
+{
+  clear: none;
+}
+
+.screenShot {
+	float: right;
+	clear: right;
+	display: inline-block;
+	border: 4px inset gray;
+	margin: 0 0 6px 6px;
+}

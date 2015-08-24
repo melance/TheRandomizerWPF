@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AssignmentGrammar">
+  <name>Gang Name Generator (Sci-Fi)</name>
+  <author>Lance Boudreaux</author>
+  <description>A gang name generator for sci-fi games</description>
+  <category>Name</category>
+  <genre>Sci-Fi</genre>
+  <parameters />
+  <supportsMaxLength>false</supportsMaxLength>
+  <items>
+    <item name="Start" weight="75">The [Prefix] [Suffix]</item>
+    <item name="Start" weight="25">The [Suffix]</item>
+    <item name="Prefix">Black</item>
+    <item name="Prefix">Blood</item>
+    <item name="Prefix">Bloody</item>
+    <item name="Prefix">Blue</item>
+    <item name="Prefix">Boondock</item>
+    <item name="Prefix">Bronze</item>
+    <item name="Prefix">City</item>
+    <item name="Prefix">Cobalt</item>
+    <item name="Prefix">Copper</item>
+    <item name="Prefix">Crimson</item>
+    <item name="Prefix">Cyber</item>
+    <item name="Prefix">Dead</item>
+    <item name="Prefix">Deadend</item>
+    <item name="Prefix">[Direction]side</item>
+    <item name="Prefix">Earth</item>
+    <item name="Prefix">Fire</item>
+    <item name="Prefix">Flame</item>
+    <item name="Prefix">Forgotten</item>
+    <item name="Prefix">Free</item>
+    <item name="Prefix">Freedom</item>
+    <item name="Prefix">Glowing</item>
+    <item name="Prefix">Hidden</item>
+    <item name="Prefix">Ice</item>
+    <item name="Prefix">Internet</item>
+    <item name="Prefix">Invincible</item>
+    <item name="Prefix">Invisible</item>
+    <item name="Prefix">Last</item>
+    <item name="Prefix">Lost</item>
+    <item name="Prefix">Nine</item>
+    <item name="Prefix">Onyx</item>
+    <item name="Prefix">Ruby</item>
+    <item name="Prefix">Sanguine</item>
+    <item name="Prefix">Screaming</item>
+    <item name="Prefix">Street</item>
+    <item name="Prefix">Terrible</item>
+    <item name="Prefix">Tunnel</item>
+    <item name="Prefix">Urban</item>
+    <item name="Prefix">Wind</item>
+    <item name="Prefix">Wise</item>
+    <item name="Direction">North</item>
+    <item name="Direction">South</item>
+    <item name="Direction">East</item>
+    <item name="Direction">West</item>
+    <item name="Suffix">Anarchists</item>
+    <item name="Suffix">Angels</item>
+    <item name="Suffix">Bats</item>
+    <item name="Suffix">Boys</item>
+    <item name="Suffix">Cerberus</item>
+    <item name="Suffix">Clubbers</item>
+    <item name="Suffix">Creatures</item>
+    <item name="Suffix">Dancers</item>
+    <item name="Suffix">Demons</item>
+    <item name="Suffix">Devils</item>
+    <item name="Suffix">Dukes</item>
+    <item name="Suffix">Fighters</item>
+    <item name="Suffix">Forsaken</item>
+    <item name="Suffix">Freaks</item>
+    <item name="Suffix">Griffins</item>
+    <item name="Suffix">Hackers</item>
+    <item name="Suffix">Haters</item>
+    <item name="Suffix">Immortals</item>
+    <item name="Suffix">Killers</item>
+    <item name="Suffix">Knives</item>
+    <item name="Suffix">Minds</item>
+    <item name="Suffix">Monsters</item>
+    <item name="Suffix">Morgues</item>
+    <item name="Suffix">Panthers</item>
+    <item name="Suffix">Phantoms</item>
+    <item name="Suffix">Posse</item>
+    <item name="Suffix">Riders</item>
+    <item name="Suffix">Sabers</item>
+    <item name="Suffix">Saints</item>
+    <item name="Suffix">Seraphim</item>
+    <item name="Suffix">Shakers</item>
+    <item name="Suffix">Snakes</item>
+    <item name="Suffix">Souls</item>
+    <item name="Suffix">Sweepers</item>
+    <item name="Suffix">Tears</item>
+    <item name="Suffix">Tribe</item>
+    <item name="Suffix">Walkers</item>
+  </items>
+  <imports />
+</Grammar>

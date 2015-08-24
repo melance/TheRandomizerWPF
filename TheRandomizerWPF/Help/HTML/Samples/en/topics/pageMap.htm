@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Context help (the editor)</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Context help (the editor)</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/context.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      The context-sensitive help editor <b>gives you the full control</b> over assigning context IDs, alias IDs, source files and commentaries.
+      Possibility to work in <b>simple mode</b> is advantageous for users who do not want to deal with detailed definitions.
+    </p>
+    <img src="../img/ss_map.jpg" class="ssright"/>
+    <p>
+      This editor allows you to also enter so-called <b>text popups</b>, a visual <b>indication of duplicities</b>
+      and last but not least copying and pasting the selected items to and from the clipboard (for easy collaboration with other applications).
+    </p>
+    <p>
+      Context help <a href="navBar_MAP.htm">navigation panel</a> is used for <b>filtering the items</b>, selecting the working mode and for setting an additional editor parameters.
+	    It also allows the <b>batch assignment</b> of context identifiers to all help topics.<br>
+    </p>
+    <p>
+      Editor itself is located on the "Context help page",
+      that shows the table of topics, context help identifiers, source files and comments.
+      All editing and assignment can be performed directly in this table, so the creation of context-sensitive help in the Precision Helper is similar to the work in spreadsheet editor.
+    </p>
+    <p>
+      The table can be also filtered by the text, this with help of the <b>Search</b> field (in the top right corner of the page).
+    </p>
+    <p>
+      Editor offers wide <b>clipboard support</b>, where it is possible to transfer the entire selected rows or only the columns of data,
+      and this is for application itself (and its instances), as well as for interaction between Precision Helper and other applications (ie. development tool, spreadsheet editor, etc.)
+    </p>
+
+    <p>
+      <i>Note:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;The table of context-sensitive help identifiers is automatically <b>pre-filled with all topics</b> defined anywhere in the project.
+      You do not have to manualy add or remove topics, but only assign the identifiers.
+      Saved are only the rows of context-sensitive help table, having completed the necessary data.</i>
+    </p>
+    <p>
+      The context help navigation panel description is provided <a href="navBar_MAP.htm">here</a>.
+    </p>
+
+    
+
+    <p class="big" style="padding-top:8px;">
+      Context-sensitive help editor options
+    </p>
+    <ul class="shr">
+      <li><b>Add text popup</b> - adds new "text popup" item (unlike the topics, the text popups cannot be pre-filled, so you have to manage them manualy)</li>
+      <li><b>Add topic</b> - as mentioned above, all <a href="pageTopic.htm">topics</a> are already pre-filled, but if you want to add some topic file, that is not defined somewhere in the project yet,
+          you can use this option.</li>
+      <li><b>Remove</b> - this action removes the context help definition from selected rows of the table. For topics this mean the cleaning of all columns except the first,
+          the selected "text popups" rows are removed completely.</li>
+      <li><b>By pressing F2 key</b> (or by starting write the text) you start the editing of selected cell.
+          Different cells provide different support controls to enter desired data (ie. column "Source file" contains a combo box with all source files listed in this column, etc.).</li>
+      <li><b>Copy to clipboard</b> - selected cells are copied to the clipboard. Selection in the topics column (the first column) can be realized by mouse or by the keyboard,
+          selection in other columns can be handled by the SHIFT and the CTRL keys.
+          All rows in current column can be selected by CTRL+A hot key.
+          If the cells in the first column (the topics) are selected, to the clipboard are copied whole rows (all columns),
+          otherwise only the selected column for all selected rows are copied.
+          Copying whole rows can be useful for transfer the definition <b>to your development tool</b>, this is when you do not use the header source files (.h, .ali).
+          </li>
+      <li><b>Paste from clipboard</b> - this option has a very extensive possibilities (and consequences), depending on what information is placed in the clipboard and what cell is selected (focused).
+        <ul class="shr">
+          <li><i>When the clipboard contains whole definition rows</i> - always set focus on the first column (otherwise the data will be pasted into the irrelevant columns).
+              The data from the clipboard will be inserted always <i>from the row on which you stand</i>, until the END OF THE CLIPBOARD DATA (so a new rows could be added).</li>
+          <li><i>If you want to add the clipboard data as a new rows</i> - use the option "<b>Paste as new ...</b>" described below</li>
+          <li><i>When the clipboard contains only "one column" of data</i> (rows in the clipboard are separated by CRLF characters and columns are separated by TAB character) -
+              set focus to this column in which you want to insert data.
+              The data from the clipboard will be inserted always <i>from the row on which you stand</i>, until the END OF YOUR TABLE (or to the end of the clipboard data).</li>
+          <li>In contrast to standard editing, the pasting from the clipboard does not check the data in any way. The check is carried out subsequently, on completion of work with the editor (closing the page).</li>
+        </ul>
+      </li>
+      <li><b>Paste as new ...</b> - this option inserts the data from the clipboard as a new rows and it is available only on the first column of the table.
+          The new rows are inserted as a "<i>text popups</i>" or as a <i>topics</i>, depending on a character of inserted data (if the first column of data has a filename character, the topic is inserted).</li>
+      <li><b>Assign IDs to selected</b> - this option is a variant of the action "<a href="navBar_MAP.htm#assignids">Assign identifiers</a>". It assigns identifiers for selected rows only.</li>
+      <li><b>Go to ...</b> - go to the selected topic at the <a href="navBar_TOC.htm">content</a>, <a href="navBar_IDX.htm">index</a>, or <a href="navBar_Files.htm">included files</a></li>
+      <li><b>Duplicit item ...</b> - if duplicities exist for the selected item, use this option for navigation to them</li>
+      <li><b>API Tester</b> - opens the <a href="toolsAPITester.htm">API Tester</a> tool (to quickly verify the definition of context help identifiers)</li>
+      <li><b>Inspector</b> - shows the <a href="helpBar_OI.htm">Object Inspector</a>, where the topic preview or text popup preview is displayed</li>
+    </ul>
+
+  <br><br>
+    <p>
+      <b>Used terminology</b>
+    </p>
+    <ul class="shr">
+      <li><i>context identifier</i> - integer identifier (also known as "MAP ID" or "HelpContext") that is used to link the application and the help.
+          Help for the topic (with context identifier assigned) can be displayed directly from your application
+          (your development tool must support the help and application linking - see also <a href="toolsAPITester.htm">API Tester</a>).</li>
+      <li><i>symbolic identifier</i> - symbolic name (an alfanumeric identifier also known as "ALIAS ID") that is used as an interface between the context identifier
+          and the topic if necessary (ie. when the topic file has the spaces in his name, etc.)</li>
+      <li><i>source file</i> - this means the physical storage of context or symbolic identifier. Identifiers can be stored directly in the project file,
+          or in the separate so-called "header" files (see also <a href="dialogOptions.htm#hhc">Options - External tools - MS Html Help</a>).</li>
+      <li><i>text popup</i> - text popups are short descriptions, that are displayed to the end user when he hover the mouse over some application element.
+          These items of context-sensitive help are always stored separately from project file, so they always have assigned the source files (resp. at least the symbolic ID source file).</li>
+    </ul>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. All rights reserved.
+  </div>
+</body>
+</html>

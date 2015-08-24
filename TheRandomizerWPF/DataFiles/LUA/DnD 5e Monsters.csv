@@ -1,0 +1,436 @@
+﻿Name,Size,Type,Tags,AlignmentLNC,AlignmentGNE,CR,Source
+Aarakocra,Medium,Humanoid,Aarakocra,Neutral,Good,0.25,MM
+Aboleth,Large,Aberration,,Lawful,Evil,10,MM
+Deva,Medium,Celestial,,Lawful,Good,10,MM
+Planetar,Large,Celestial,,Lawful,Good,16,MM
+Solar,Large,Celestial,,Lawful,Good,21,MM
+Animated Armor,Medium,Construct,,Unaligned,Unaligned,1,MM
+Flying Sword,Small,Construct,,Unaligned,Unaligned,0.25,MM
+Rug of Smothering,Large,Construct,,Unaligned,Unaligned,2,MM
+Ankheg,Large,Monstrosity,,Unaligned,Unaligned,2,MM
+Azer,Medium,Elemental,,Lawful,Neutral,2,MM
+Banshee,Medium,Undead,,Chaotic,Evil,4,MM
+Basilisk,Medium,Monstrosity,,Unaligned,Unaligned,3,MM
+Behir,Huge,Monstrosity,,Neutral,Evil,11,MM
+Beholder,Large,Aberration,,Lawful,Evil,13,MM
+Death Tyrant,Large,Undead,,Lawful,Evil,14,MM
+Spectator,Medium,Aberration,,Lawful,Neutral,3,MM
+Needle Blight,Medium,Plant,,Neutral,Evil,0.25,MM
+Twig Blight,Small,Plant,,Neutral,Evil,0.125,MM
+Vine Blight,Medium,Plant,,Neutral,Evil,0.5,MM
+Bugbear,Medium,Humanoid,Goblinoid,Chaotic,Evil,1,MM
+Bugbear Chief,Medium,Humanoid,Goblinoid,Chaotic,Evil,3,MM
+Bulette,Large,Monstrosity,,Unaligned,Unaligned,5,MM
+Bullywug,Medium,Humanoid,Bullywug,Neutral,Evil,0.25,MM
+Cambion,Medium,Fiend,,Any,Evil,5,MM
+Carrion Crawler,Large,Monstrosity,,Unaligned,Unaligned,2,MM
+Centaur,Large,Monstrosity,,Neutral,Good,2,MM
+Chimera,Large,Monstrosity,,Chaotic,Evil,6,MM
+Chuul,Large,Aberration,,Chaotic,Evil,4,MM
+Cloaker,Large,Aberration,,Chaotic,Neutral,8,MM
+Cockatrice,Small,Monstrosity,,Unaligned,Unaligned,0.5,MM
+Couatl,Medium,Celestial,,Lawful,Good,4,MM
+Crawling Claw,Tiny,Undead,,Neutral,Evil,0,MM
+Cyclops,Huge,Giant,,Chaotic,Neutral,6,MM
+Darkmantle,Small,Monstrosity,,Unaligned,Unaligned,0.5,MM
+Death Knight,Medium,Undead,,Chaotic,Evil,17,MM
+Demilich,Tiny,Undead,,Neutral,Evil,18,MM
+Balor,Huge,Fiend,Demon,Chaotic,Evil,19,MM
+Barlgura,Large,Fiend,Demon,Chaotic,Evil,5,MM
+Chasme,Large,Fiend,Demon,Chaotic,Evil,6,MM
+Dretch,Small,Fiend,Demon,Chaotic,Evil,0.25,MM
+Glabrezu,Large,Fiend,Demon,Chaotic,Evil,9,MM
+Goristro,Large,Fiend,Demon,Chaotic,Evil,17,MM
+Hezrou,Large,Fiend,Demon,Chaotic,Evil,8,MM
+Manes,Small,Fiend,Demon,Chaotic,Evil,0.125,MM
+Marilith,Large,Fiend,Demon,Chaotic,Evil,16,MM
+Nalfeshnee,Large,Fiend,Demon,Chaotic,Evil,13,MM
+Quasit,Tiny,Fiend,Demon,Chaotic,Evil,1,MM
+Shadow Demon,Medium,Fiend,Demon,Chaotic,Evil,4,MM
+Vrock,Large,Fiend,Demon,Chaotic,Evil,6,MM
+Yochlol,Medium,Fiend,Demon,Chaotic,Evil,10,MM
+Barbed Devil,Medium,Fiend,Devil,Lawful,Evil,5,MM
+Bearded Devil,Medium,Fiend,Devil,Lawful,Evil,3,MM
+Bone Devil,Large,Fiend,Devil,Lawful,Evil,9,MM
+Chain Devil,Medium,Fiend,Devil,Lawful,Evil,8,MM
+Erinyes,Medium,Fiend,Devil,Lawful,Evil,12,MM
+Horned Devil,Large,Fiend,Devil,Lawful,Evil,11,MM
+Ice Devil,Large,Fiend,Devil,Lawful,Evil,14,MM
+Imp,Tiny,Fiend,Devil,Lawful,Evil,1,MM
+Lemure,Medium,Fiend,Devil,Lawful,Evil,0,MM
+Pit Fiend,Large,Fiend,Devil,Lawful,Evil,20,MM
+Spined Devil,Small,Fiend,Devil,Lawful,Evil,2,MM
+Allosaurus,Large,Beast,,Unaligned,Unaligned,2,MM
+Ankylosaurus,Huge,Beast,,Unaligned,Unaligned,3,MM
+Plesiosaurus,Large,Beast,,Unaligned,Unaligned,2,MM
+Triceratops,Huge,Beast,,Unaligned,Unaligned,5,MM
+Pteranodon,Medium,Beast,,Unaligned,Unaligned,0.25,MM
+Tyrannosaurus Rex,Huge,Beast,,Unaligned,Unaligned,8,MM
+Displacer Beast,Large,Monstrosity,,Lawful,Evil,3,MM
+Doppelganger,Medium,Monstrosity,Shapechanger,Neutral,Neutral,3,MM
+Adult Blue Dracolich,Huge,Undead,,Lawful,Evil,17,MM
+Young Red Shadow Dragon,Large,Dragon,,Chaotic,Evil,13,MM
+Ancient Black Dragon,Gargantuan,Dragon,,Chaotic,Evil,21,MM
+Adult Black Dragon,Huge,Dragon,,Chaotic,Evil,14,MM
+Young Black Dragon,Large,Dragon,,Chaotic,Evil,7,MM
+Black Dragon Wyrmling,Medium,Dragon,,Chaotic,Evil,2,MM
+Ancient Blue Dragon,Gargantuan,Dragon,,Chaotic,Evil,23,MM
+Adult Blue Dragon,Huge,Dragon,,Chaotic,Evil,16,MM
+Young Blue Dragon,Large,Dragon,,Chaotic,Evil,9,MM
+Blue Dragon Wyrmling,Medium,Dragon,,Chaotic,Evil,3,MM
+Ancient Green Dragon,Gargantuan,Dragon,,Chaotic,Evil,22,MM
+Adult Green Dragon,Huge,Dragon,,Chaotic,Evil,15,MM
+Young Green Dragon,Large,Dragon,,Chaotic,Evil,8,MM
+Green Dragon Wyrmling,Medium,Dragon,,Chaotic,Evil,2,MM
+Ancient Red Dragon,Gargantuan,Dragon,,Chaotic,Evil,24,MM
+Adult Red Dragon,Huge,Dragon,,Chaotic,Evil,17,MM
+Young Red Dragon,Large,Dragon,,Chaotic,Evil,10,MM
+Red Dragon Wyrmling,Medium,Dragon,,Chaotic,Evil,4,MM
+Ancient White Dragon,Gargantuan,Dragon,,Chaotic,Evil,20,MM
+Adult White Dragon,Huge,Dragon,,Chaotic,Evil,13,MM
+Young White Dragon,Large,Dragon,,Chaotic,Evil,6,MM
+White Dragon Wyrmling,Medium,Dragon,,Chaotic,Evil,2,MM
+Ancient Brass Dragon,Gargantuan,Dragon,,Chaotic,Good,20,MM
+Adult Brass Dragon,Huge,Dragon,,Chaotic,Good,13,MM
+Young Brass Dragon,Large,Dragon,,Chaotic,Good,6,MM
+Brass Dragon Wyrmling,Medium,Dragon,,Chaotic,Good,1,MM
+Ancient Bronze Dragon,Gargantuan,Dragon,,Chaotic,Good,22,MM
+Adult Bronze Dragon,Huge,Dragon,,Chaotic,Good,15,MM
+Young Bronze Dragon,Large,Dragon,,Chaotic,Good,8,MM
+Bronze Dragon Wyrmling,Medium,Dragon,,Chaotic,Good,2,MM
+Ancient Copper Dragon,Gargantuan,Dragon,,Chaotic,Good,21,MM
+Adult Copper Dragon,Huge,Dragon,,Chaotic,Good,14,MM
+Young Copper Dragon,Large,Dragon,,Chaotic,Good,7,MM
+Copper Dragon Wyrmling,Medium,Dragon,,Chaotic,Good,1,MM
+Ancient Gold Dragon,Gargantuan,Dragon,,Chaotic,Good,24,MM
+Adult Gold Dragon,Huge,Dragon,,Chaotic,Good,17,MM
+Young Gold Dragon,Large,Dragon,,Chaotic,Good,10,MM
+Gold Dragon Wyrmling,Medium,Dragon,,Chaotic,Good,3,MM
+Ancient Silver Dragon,Gargantuan,Dragon,,Chaotic,Good,23,MM
+Adult Silver Dragon,Huge,Dragon,,Chaotic,Good,16,MM
+Young Silver Dragon,Large,Dragon,,Chaotic,Good,9,MM
+Silver Dragon Wyrmling,Medium,Dragon,,Chaotic,Good,2,MM
+Dragon Turtle,Gargantuan,Dragon,,Neutral,Neutral,17,MM
+Drider,Large,Monstrosity,,Chaotic,Evil,6,MM
+Dryad,Medium,Fey,,Neutral,Neutral,1,MM
+Duergar,Medium,Humanoid,Dwarf,Lawful,Evil,1,MM
+Air Elemental,Large,Elemental,,Neutral,Neutral,5,MM
+Earth Elemental,Large,Elemental,,Neutral,Neutral,5,MM
+Fire Elemental,Large,Elemental,,Neutral,Neutral,5,MM
+Water Elemental,Large,Elemental,,Neutral,Neutral,5,MM
+Drow,Medium,Humanoid,Elf,Neutral,Evil,0.25,MM
+Drow Elite Warrior,Medium,Humanoid,Elf,Neutral,Evil,5,MM
+Drow Mage,Medium,Humanoid,Elf,Neutral,Evil,7,MM
+Drow Priestess of Lolth,Medium,Humanoid,Elf,Neutral,Evil,8,MM
+Empyrean,Huge,Celestial,Titan,Chaotic,Good,23,MM
+Empyrean,Huge,Celestial,Titan,Neutral,Evil,23,MM
+Ettercap,Medium,Monstrosity,,Neutral,Evil,2,MM
+Ettin,Large,Giant,,Chaotic,Evil,4,MM
+"Faerie Dragon (Red, Orange, Yellow)",Tiny,Dragon,,Chaotic,Good,1,MM
+"Faerie Dragon (Green, Blue, Indigo, Violet)",Tiny,Dragon,,Chaotic,Good,2,MM
+Flameskull,Tiny,Undead,,Neutral,Evil,4,MM
+Flumph,Small,Aberration,,Lawful,Good,0.125,MM
+Fomorian,Huge,Giant,,Chaotic,Evil,8,MM
+Gas Spore,Large,Plant,,Unaligned,Unaligned,0.5,MM
+Shrieker,Medium,Plant,,Unaligned,Unaligned,0,MM
+Violet Fungus,Medium,Plant,,Unaligned,Unaligned,0.25,MM
+Galeb Duhr,Medium,Elemental,,Neutral,Neutral,6,MM
+Gargoyle,Medium,Elemental,,Chaotic,Evil,2,MM
+Dao,Large,Elemental,,Neutral,Evil,11,MM
+Djinni,Large,Elemental,,Chaotic,Good,11,MM
+Efreeti,Large,Elemental,,Lawful,Evil,11,MM
+Marid,Large,Elemental,,Chaotic,Neutral,11,MM
+Ghost,Medium,Undead,,Any,Any,4,MM
+Ghast,Medium,Undead,,Chaotic,Evil,2,MM
+Ghoul,Medium,Undead,,Chaotic,Evil,1,MM
+Cloud Giant,Huge,Giant,,Neutral,Good,9,MM
+Cloud Giant,Huge,Giant,,Neutral,Evil,9,MM
+Fire Giant,Huge,Giant,,Lawful,Evil,9,MM
+Frost Giant,Huge,Giant,,Neutral,Evil,8,MM
+Hill Giant,Huge,Giant,,Chaotic,Evil,5,MM
+Stone Giant,Huge,Giant,,Neutral,Neutral,7,MM
+Storm Giant,Huge,Giant,,Chaotic,Good,13,MM
+Gibbering Mouther,Medium,Aberration,,Neutral,Neutral,2,MM
+Githyanki Warrior,Medium,Humanoid,Gith,Lawful,Evil,3,MM
+Githyanki Knight,Medium,Humanoid,Gith,Lawful,Evil,8,MM
+Githzerai Monk,Medium,Humanoid,Gith,Lawful,Neutral,2,MM
+Githzerai Zerth,Medium,Humanoid,Gith,Lawful,Neutral,6,MM
+Gnoll,Medium,Humanoid,Gnoll,Chaotic,Evil,0.5,MM
+Gnoll Pack Lord,Medium,Humanoid,Gnoll,Chaotic,Evil,2,MM
+Gnoll Fang of Yeenoghu,Medium,Fiend,Gnoll,Chaotic,Evil,4,MM
+Deep Gnome (Svirfneblin),Small,Humanoid,Gnome,Neutral,Good,0.5,MM
+Goblin,Small,Humanoid,Goblinoid,Neutral,Evil,0.25,MM
+Goblin Boss,Small,Humanoid,Goblinoid,Neutral,Evil,1,MM
+Clay Golem,Large,Construct,,Unaligned,Unaligned,9,MM
+Flesh Golem,Medium,Construct,,Neutral,Neutral,5,MM
+Iron Golem,Large,Construct,,Unaligned,Unaligned,16,MM
+Stone Golem,Large,Construct,,Unaligned,Unaligned,10,MM
+Gorgon,Large,Monstrosity,,Unaligned,Unaligned,5,MM
+Grell,Medium,Aberration,,Neutral,Evil,3,MM
+Grick,Medium,Monstrosity,,Neutral,Neutral,2,MM
+Grick Alpha,Large,Monstrosity,,Neutral,Neutral,7,MM
+Griffon,Large,Monstrosity,,Unaligned,Unaligned,2,MM
+Grimlock,Medium,Humanoid,Grimlock,Neutral,Evil,0.25,MM
+Green Hag,Medium,Fey,,Neutral,Evil,3,MM
+Night Hag,Medium,Fiend,,Neutral,Evil,5,MM
+Sea Hag,Medium,Fey,,Chaotic,Evil,2,MM
+Half-Red Dragon Veteran,Medium,Humanoid,Human,Any,Any,5,MM
+Harpy,Medium,Monstrosity,,Chaotic,Evil,1,MM
+Hell Hound,Medium,Fiend,,Lawful,Evil,3,MM
+Helmed Horror,Medium,Construct,,Neutral,Neutral,4,MM
+Hippogriff,Large,Monstrosity,,Unaligned,Unaligned,1,MM
+Hobgoblin,Medium,Hunanoid,Goblinoid,Lawful,Evil,0.5,MM
+Hobgoblin Captain,Medium,Humanoid,Goblinoid,Lawful,Evil,3,MM
+Hobgoblin Warlord,Medium,Humanoid,Goblinoid,Lawful,Evil,6,MM
+Homunculus,Tiny,Construct,,Neutral,Neutral,0,MM
+Hook Horror,Large,Monstrosity,,Neutral,Neutral,3,MM
+Invisible Stalker,Medium,Elemental,,Neutral,Neutral,6,MM
+Jackalwere,Medium,Humanoid,Shapechanger,Chaotic,Evil,0.5,MM
+Kenku,Medium,Humanoid,Kenku,Chaotic,Neutral,0.25,MM
+Winged Kobold,Small,Humanoid,Kobold,Lawful,Evil,0.25,MM
+Kobold,Small,Humanoid,Kobold,Lawful,Evil,0.125,MM
+Kraken,Gargantuan,Monstrosity,Titan,Chaotic,Evil,23,MM
+Kuo-Toa,Medium,Humanoid,Kuo-Toa,Neutral,Evil,0.25,MM
+Kuo-Toa Archpriest,Medium,Humanoid,Kuo-Toa,Neutral,Evil,6,MM
+Kuo-Toa Whip,Medium,Humanoid,Kuo-Toa,Neutral,Evil,1,MM
+Lamia,Large,Monstrosity,,Chaotic,Evil,4,MM
+Lich,Medium,Undead,,Any,Evil,21,MM
+Lizardfolk,Medium,Humanoid,Lizardfolk,Neutral,Neutral,0.5,MM
+Lizardfolk Shaman,Medium,Humanoid,Lizardfolk,Neutral,Neutral,2,MM
+Lizardfolk King/Queen,Medium,Humanoid,Lizardfolk,Chaotic,Evil,4,MM
+Werebear,Medium,Humanoid,Shapechanger,Neutral,Good,5,MM
+Wereboar,Medium,Humanoid,Shapechanger,Neutral,Evil,4,MM
+Wererat,Medium,Humanoid,Shapechanger,Lawful,Evil,2,MM
+Weretiger,Medium,Humanoid,Shapechanger,Neutral,Neutral,4,MM
+Werewolf,Medium,Humanoid,Shapechanger,Chaotic,Evil,3,MM
+Magmin,Small,Elemental,,Chaotic,Neutral,0.5,MM
+Manticore,Large,Monstrosity,,Lawful,Evil,3,MM
+Medusa,Medium,Monstrosity,,Lawful,Evil,6,MM
+Dust Mephit,Small,Elemental,,Neutral,Evil,0.5,MM
+Ice Mephit,Small,Elemental,,Neutral,Evil,0.5,MM
+Magma Mephit,Small,Elemental,,Neutral,Evil,0.5,MM
+Mud Mephit,Small,Elemental,,Neutral,Evil,0.25,MM
+Smoke Mephit,Small,Elemental,,Neutral,Evil,0.25,MM
+Steam Mephit,Small,Elemental,,Neutral,Evil,0.25,MM
+Merfolk,Medium,Humanoid,Merfolk,Neutral,Neutral,0.125,MM
+Merrow,Large,Monstrosity,,Chaotic,Evil,2,MM
+Mimic,Medium,Monstrostiy,Shapechanger,Neutral,Neutral,2,MM
+Mind Flayer,Medium,Aberration,,Lawful,Evil,7,MM
+Minotaur,Large,Monstrosity,,Chaotic,Evil,3,MM
+Monodrone,Medium,Construct,,Lawful,Neutral,0.125,MM
+Duodrone,Medium,Construct,,Lawful,Neutral,0.25,MM
+Tridrone,Medium,Construct,,Lawful,Neutral,0.5,MM
+Quadrone,Medium,Construct,,Lawful,Neutral,1,MM
+Pentadrone,Large,Construct,,Lawful,Neutral,2,MM
+Mummy,Medium,Undead,,Lawful,Evil,3,MM
+Mummy Lord,Medium,Undead,,Lawful,Evil,15,MM
+Myconid Sprout,Small,Plant,,Lawful,Neutral,0,MM
+Quaggoth Spore Servant,Medium,Plant,,Unaligned,Unaligned,1,MM
+Myconid Adult,Medium,Plant,,Lawful,Neutral,0.5,MM
+Myconid Sovereign,Large,Plant,,Lawful,Neutral,2,MM
+Bone Naga,Large,Undead,,Lawful,Evil,4,MM
+Spirit Naga,Large,Monstrosity,,Chaotic,Evil,8,MM
+Guardian Naga,Large,Monstrosity,,Lawful,Good,10,MM
+Nightmare,Large,Fiend,,Neutral,Evil,3,MM
+Nothic,Medium,Aberration,,Neutral,Evil,2,MM
+Ogre,Large,Giant,,Chaotic,Evil,2,MM
+Half-Ogre,Large,Giant,,Chaotic,Any,1,MM
+Oni,Large,Giant,,Lawful,Evil,7,MM
+Black Pudding,Large,Ooze,,Unaligned,Unaligned,4,MM
+Gelatinous Cube,Large,Ooze,,Unaligned,Unaligned,2,MM
+Gray Ooze,Medium,Ooze,,Unaligned,Unaligned,0.5,MM
+Ochre Jelly,Large,Ooze,,Unaligned,Unaligned,2,MM
+Orc,Medium,Humanoid,Orc,Chaotic,Evil,0.5,MM
+Orc War Chief,Medium,Humanoid,Orc,Chaotic,Evil,4,MM
+Orc Eye of Gruumsh,Medium,Humanoid,Orc,Chaotic,Evil,2,MM
+Orog,Medium,Humanoid,Orc,Chaotic,Evil,2,MM
+Otyugh,Large,Aberration,,Neutral,Neutral,5,MM
+Owlbear,Large,Monstrosity,,Unaligned,Unaligned,3,MM
+Pegasus,Large,Celestial,,Chaotic,Good,2,MM
+Peryton,Medium,Monstrosity,,Chaotic,Evil,2,MM
+Piercer,Medium,Monstrosity,,Unaligned,Unaligned,0.5,MM
+Pixie,Tiny,Fey,,Neutral,Good,0.25,MM
+Pseudodragon,Tiny,Dragon,,Neutral,Good,0.25,MM
+Purple Worm,Gargantuan,Monstrosity,,Unaligned,Unaligned,15,MM
+Quaggoth,Medium,Humanoid,Quaggoth,Chaotic,Neutral,2,MM
+Rakshasa,Medium,Fiend,,Lawful,Evil,13,MM
+Young Remorhaz,Large,Monstrosity,,Unaligned,Unaligned,5,MM
+Remorhaz,Huge,Monstrostiy,,Unaligned,Unaligned,11,MM
+Revenant,Medium,Undead,,Neutral,Neutral,5,MM
+Roc,Gargantuan,Monstrosity,,Unaligned,Unaligned,11,MM
+Roper,Large,Monstrosity,,Neutral,Evil,5,MM
+Rust Monster,Medium,Monstrosity,,Unaligned,Unaligned,0.5,MM
+Sahuagin,Medium,Humanoid,Sahuagin,Lawful,Evil,0.5,MM
+Sahuagin Priestess,Medium,Humanoid,Sahuagin,Lawful,Evil,2,MM
+Sahuagin Baron,Medium,Humanoid,Sahuagin,Lawful,Evil,5,MM
+Fire Snake,Medium,Elemental,,Neutral,Evil,1,MM
+Salamander,Large,Elemental,,Neutral,Evil,5,MM
+Satyr,Medium,Fey,,Chaotic,Neutral,0.5,MM
+Scarecrow,Medium,Construct,,Chaotic,Evil,1,MM
+Shadow,Medium,Undead,,Chaotic,Evil,0.5,MM
+Shambling Mound,Large,Plant,,Unaligned,Unaligned,5,MM
+Shield Guardian,Large,Construct,,Unaligned,Unaligned,7,MM
+Skeleton,Medium,Undead,,Lawful,Evil,0.5,MM
+Minotaur Skeleton,Large,Undead,,Lawful,Evil,2,MM
+Warhorse Skeleton,Large,Undead,,Lawful,Evil,0.5,MM
+Red Slaad,Large,Aberration,,Chaotic,Neutral,5,MM
+Slaad Tadpole,Tiny,Aberration,,Chaotic,Neutral,0.125,MM
+Blue Slaad,Large,Aberration,,Chaotic,Neutral,7,MM
+Green Slaad,Large,Aberration,Shapechanger,Chaotic,Neutrol,8,MM
+Gray Slaad,Medium,Aberration,Shapechanger,Chaotic,Neutral,9,MM
+Death Slaad,Medium,Aberration,Shapechanger,Chaotic,Neutral,10,MM
+Specter,Medium,Undead,,Chaotic,Evil,1,MM
+Androsphinx,Large,Monstrosity,,Lawful,Evil,17,MM
+Gynosphinx,Large,Monstrosity,,Lawful,Neutral,11,MM
+Sprite,Tiny,Fey,,Neutral,Good,0.25,MM
+Stirge,Tiny,Beast,,Unaligned,Unaligned,0.125,MM
+Succubus/Incubus,Medium,Fiend,Shapechanger,Neutral,Evil,4,MM
+Tarrasque,Gargantuan,Monstrosity,Titan,Unaligned,Unaligned,30,MM
+Thri-Kreen,Medium,Humanoid,Thri-Kreen,Chaotic,Neutral,1,MM
+Treant,Huge,Plant,,Chaotic,Good,9,MM
+Troglodyte,Medium,Humanoid,Troglodyte,Chaotic,Evil,0.25,MM
+Troll,Large,giant,,Chaotic,Evil,5,MM
+Umber Hulk,Large,Monstrosity,,Chaotic,Evil,5,MM
+Unicorn,Large,Celestial,,Lawful,Good,5,MM
+Vampire,Medium,Undead,Shapechanger,Lawful,Evil,13,MM
+Vampire Spawn,Medium,Undead,,Neutral,Evil,5,MM
+Water Weird,Large,Elemental,,Neutral,Neutral,3,MM
+Wight,Medium,Undead,,Neutral,Evil,3,MM
+Will-o'-Wisp,Tiny,Undead,,Chaotic,Evil,2,MM
+Wraith,Medium,Undead,,Neutral,Evil,5,MM
+Wyvern,Large,Dragon,,Unaligned,Unaligned,6,MM
+Xorn,Medium,Elemental,,Neutral,Neutral,5,MM
+Yeti,Large,Monstrosity,,Chaotic,Evil,3,MM
+Abominable Yeti,Huge,Monstrosity,,Chaotic,Evil,9,MM
+Yuan-ti Abomination,Large,Monstrosity,"Shapechanger, Yuan-ti",Neutral,Evil,7,MM
+Yuan-ti Malison,Medium,Monstrosity,"Shapechanger, Yuan-ti",Neutral,Evil,3,MM
+Yuan-ti Pureblood,Medium,Humanoid,Yuan-ti,Neutral,Evil,1,MM
+Arcanaloth,Medium,Fiend,Yugoloth,Neutral,Evil,12,MM
+Mezzoloth,Medium,Fiend,Yugoloth,Neutral,Evil,5,MM
+Nycaloth,Large,Fiend,Yugoloth,Neutral,Evil,9,MM
+Ultroloth,Medium,Fiend,Yugoloth,Neutral,Evil,13,MM
+Zombie,Medium,Undead,,Neutral,Evil,0.25,MM
+Ogre Zombie,Large,Undead,,Neutral,Evil,2,MM
+Beholder Zombie,Large,Undead,,Neutral,Evil,5,MM
+Ape,Medium,Beast,,Unaligned,Unaligned,0.5,MM
+Awakened Shrub,Small,Plant,,Unaligned,Unaligned,0,MM
+Awakened Tree,Huge,Plant,,Unaligned,Unaligned,2,MM
+Axe Beak,Large,Beast,,Unaligned,Unaligned,0.24,MM
+Baboon,Small,Beast,,Unaligned,Unaligned,0,MM
+Badger,Tiny,Beast,,Unaligned,Unaligned,0,MM
+Bat,Tiny,Beast,,Unaligned,Unaligned,0,MM
+Black Bear,Medium,Beast,,Unaligned,Unaligned,0.5,MM
+Blink Dog,Medium,Fey,,Lawful,Good,0.25,MM
+Blood Hawk,Small,Beast,,Unaligned,Unaligned,0.125,MM
+Boar,Medium,Beast,,Unaligned,Unaligned,0.25,MM
+Brown Bear,Large,Beast,,Unaligned,Unaligned,1,MM
+Camel,Large,Beast,,Unaligned,Unaligned,0.125,MM
+Cat,Tiny,Beast,,Unaligned,Unaligned,0,MM
+Constrictor Snake,Large,Beast,,Unaligned,Unaligned,0.25,MM
+Crab,Tiny,Beast,,Unaligned,Unaligned,0,MM
+Crocodile,Large,Beast,,Unaligned,Unaligned,0.5,MM
+Death Dog,Medium,Monstrosity,,Neutral,Evil,1,MM
+Deer,Medium,Beast,,Unaligned,Unaligned,0,MM
+Dire Wolf,Large,Beast,,Unaligned,Unaligned,1,MM
+Draft Horse,Large,Beast,,Unaligned,Unaligned,0.25,MM
+Eagle,Small,Beast,,Unaligned,Unaligned,0,MM
+Elephant,Huge,Beast,,Unaligned,Unaligned,4,MM
+Elk,Large,Beast,,Unaligned,Unaligned,0.25,MM
+Flying Snake,Tiny,Beast,,Unaligned,Unaligned,0.125,MM
+Frog,Tiny,Beast,,Unaligned,Unaligned,0,MM
+Giant Ape,Huge,Beast,,Unaligned,Unaligned,7,MM
+Giant Badger,Medium,Beast,,Unaligned,Unaligned,0.25,MM
+Giant Bat,Large,Beast,,Unaligned,Unaligned,0.25,MM
+Giant Boar,Large,Beast,,Unaligned,Unaligned,2,MM
+Giant Centipede,Small,Beast,,Unaligned,Unaligned,0.25,MM
+Giant Constrictor Snake,Huge,Beast,,Unaligned,Unaligned,2,MM
+Giant Crab,Medium,Beast,,Unaligned,Unaligned,0.125,MM
+Giant Crocodile,Huge,Beast,,Unaligned,Unaligned,5,MM
+Giant Eagle,Large,Beast,,Neutral,Good,1,MM
+Giant Elk,Huge,Beast,,Unaligned,Unaligned,2,MM
+Giant Fire Beetle,Small,Beast,,Unaligned,Unaligned,0,MM
+Giant Frog,Medium,Beast,,Unaligned,Unaligned,0.25,MM
+Giant Goat,Large,Beast,,Unaligned,Unaligned,0.5,MM
+Giant Hyena,Large,Beast,,Unaligned,Unaligned,1,MM
+Giant Lizard,Large,Beast,,Unaligned,Unaligned,0.25,MM
+Giant Octopus,Large,Beast,,Unaligned,Unaligned,1,MM
+Giant Owl,Large,Beast,,Neutral,Neutral,0.25,MM
+Giant Poisonous Snake,Medium,Beast,,Unaligned,Unaligned,0.25,MM
+Giant Rat,Small,Beast,,Unaligned,Unaligned,0.125,MM
+Giant Scorpion,Large,Beast,,Unaligned,Unaligned,3,MM
+Giant Sea Horse,Large,Beast,,Unaligned,Unaligned,0.5,MM
+Giant Shark,Huge,Beast,,Unaligned,Unaligned,5,MM
+Giant Spider,Large,Beast,,Unaligned,Unaligned,1,MM
+Giant Toad,Large,Beast,,Unaligned,Unaligned,1,MM
+Giant Vulture,Large,Beast,,Neutral,Evil,1,MM
+Giant Wasp,Medium,Beast,,Unaligned,Unaligned,0.5,MM
+Giant Weasel,Medium,Beast,,Unaligned,Unaligned,0.125,MM
+Giant Wolf Spider,Medium,Beast,,Unaligned,Unaligned,0.25,MM
+Goat,Medium,Beast,,Unaligned,Unaligned,0,MM
+Hawk,Tiny,Beast,,Unaligned,Unaligned,0,MM
+Hunter Shark,Large,Beast,,Unaligned,Unaligned,2,MM
+Hyena,Medium,Beast,,Unaligned,Unaligned,0,MM
+Jackal,Small,Beast,,Unaligned,Unaligned,0,MM
+Killer Whale,Huge,Beast,,Unaligned,Unaligned,3,MM
+Lion,Large,Beast,,Unaligned,Unaligned,1,MM
+Lizard,Tiny,Beast,,Unaligned,Unaligned,0,MM
+Mammoth,Huge,Beast,,Unaligned,Unaligned,6,MM
+Mastiff,Medium,Beast,,Unaligned,Unaligned,0.125,MM
+Mule,Medium,Beast,,Unaligned,Unaligned,0.125,MM
+Octopus,Small,Beast,,Unaligned,Unaligned,0,MM
+Owl,Tiny,Beast,,Unaligned,Unaligned,0,MM
+Panther,Medium,Beast,,Unaligned,Unaligned,0.25,MM
+Phase Spider,Large,Monstrosity,,Unaligned,Unaligned,3,MM
+Poisonous Snake,Tiny,Beast,,Unaligned,Unaligned,0.125,MM
+Polar Bear,Large,Beast,,Unaligned,Unaligned,2,MM
+Pony,Medium,Beast,,Unaligned,Unaligned,0.125,MM
+Quipper,Tiny,Beast,,Unaligned,Unaligned,0,MM
+Rat,Tiny,Beast,,Unaligned,Unaligned,0,MM
+Raven,Tiny,Beast,,Unaligned,Unaligned,0,MM
+Reef Shark,Medium,Beast,,Unaligned,Unaligned,0.5,MM
+Rhinoceros,Large,Beast,,Unaligned,Unaligned,2,MM
+Riding Horse,Large,Beast,,Unaligned,Unaligned,0.25,MM
+Saber-Toothed Tiger,Large,Besat,,Unaligned,Unaligned,2,MM
+Scorpion,Tiny,Beast,,Unaligned,Unaligned,0,MM
+Sea Horse,Tiny,Beast,,Unaligned,Unaligned,0,MM
+Spider,Tiny,Beast,,Unaligned,Unaligned,0,MM
+Swarm of Bats,Medium,Swarm,,Unaligned,Unaligned,0.25,MM
+Swarm of Insects,Medium,Swarm,,Unaligned,Unaligned,0.5,MM
+Swarm of Poisonous Snakes,Medium,Swarm,,Unaligned,Unaligned,2,MM
+Swarm of Quippers,Medium,Swarm,,Unaligned,Unaligned,1,MM
+Swarm of Rats,Medium,Swarm,,Unaligned,Unaligned,0.25,MM
+Swarm of Ravens,Medium,Swarm,,Unaligned,Unaligned,0.25,MM
+Tiger,Large,Beast,,Unaligned,Unaligned,1,MM
+Vulture,Medium,Beast,,Unaligned,Unaligned,0,MM
+Warhorse,Large,Beast,,Unaligned,Unaligned,0.5,MM
+Weasel,Tiny,Beast,,Unaligned,Unaligned,0,MM
+Winter Wolf,Large,Monstrosity,,Neutral,Evil,3,MM
+Wolf,Medium,Beast,,Unaligned,Unaligned,0.25,MM
+Worg,Large,Monstrosity,,Neutral,Evil,0.5,MM
+Acolyte,Medium,Humanoid,Any Race,Any,Any,0.25,MM
+Archmage,Medium,Humanoid,Any Race,Any,Any,12,MM
+Assassin,Medium,Humanoid,Any Race,Any,Neutral,8,MM
+Assassin,Medium,Humanoid,Any Race,Any,Evil,8,MM
+Bandit,Medium,Humanoid,Any Race,Neutral,Any,0.125,MM
+Bandit,Medium,Humanoid,Any Race,Chaotic,Any,0.125,MM
+Bandit Captain,Medium,Humanoid,Any Race,Neutral,Any,2,MM
+Bandit Captain,Medium,Humanoid,Any Race,Chaotic,Any,2,MM
+Berserker,Medium,Humanoid,Any Race,Any,Chaotic,2,MM
+Commoner,Medium,Humanoid,Any Race,Any,Any,0,MM
+Cultist,Medium,Humanoid,Any Race,Any,Neutral,0.125,MM
+Cultist,Medium,Humanoid,Any Race,Any,Evil,0.125,MM
+Cult Fanatic,Medium,Humanoid,Any Race,Any,Neutral,2,MM
+Cult Fanatic,Medium,Humanoid,Any Race,Any,Evil,2,MM
+Druid,Medium,Humanoid,Any Race,Any,Any,2,MM
+Gladiator,Medium,Humanoid,Any Race,Any,Any,5,MM
+Guard,Medium,Humanoid,Any Race,Any,Any,0.125,MM
+Knight,Medium,Humanoid,Any Race,Any,Any,3,MM
+Mage,Medium,Humanoid,Any Race,Any,Any,6,MM
+Noble,Medium,Humanoid,Any Race,Any,Any,0.125,MM
+Priest,Medium,Humanoid,Any Race,Any,Any,2,MM
+Scout,Medium,Humanoid,Any Race,Any,Any,0.5,MM
+Spy,Medium,Humanoid,Any Race,Any,Any,1,MM
+Thug,Medium,Humanoid,Any Race,Any,Neutral,0.5,MM
+Thug,Medium,Humanoid,Any Race,Any,Evil,0.5,MM
+Tribal Warrior,Medium,Humanoid,Any Race,Any,Any,0.125,MM
+Veteran,Medium,Humanoid,Any Race,Any,Any,3,MM

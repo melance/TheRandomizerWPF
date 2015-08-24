@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Window types</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Window types</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/wt.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      Each topic in the <a href="navBar_TOC.htm">table of contents</a> (resp. each keyword in the <a href="navBar_IDX.htm">index</a>)
+      can be assigned to another window type, in which will be displayed.
+      You do not need to define a window types, but doing so, you will be able to design the look and layout of your help.
+    </p>
+    <img src="../img/ss_wintype.jpg" class="ssright"/>
+    <p>
+      Precision Helper offers for these purposes <b>the visual window type designer</b>, where not only the user immediately sees the final appearance of the window,
+      but which also allows to interactively design the "window type" by using the simple mouse clicks.
+    </p>
+    <p>
+      Parameters that can not be defined in the visual design, are available in <a href="helpBar_OI.htm">Object Inspector</a>.
+    </p>
+    <p>
+      The basic parameters of the window type are available directly above the visual designer panel.
+      For the "file parameters" (default topic, contents file, etc.) you can use the "browse" buttons
+      and also the "navigation" buttons, that will navigate you to the appropriate place in the application, where the corresponding file can be edited.
+    </p>
+
+    <p class="big" style="padding-top:8px;">
+      Window types page options
+    </p>
+    <ul class="shr">
+      <li><b>Add</b> - adds a new window type. You have to enter the "<i>window type identifier</i>" in the displayed dialog.</li>
+      <li><b>Delete</b> - deletes the current window type</li>
+
+      <li style="list-style-type:none"></li>
+      <li><b>Window type selection</b> combo box (in the top right corner of the page) allows switching between already defined window types
+          (window type for editing can be selected also in the <a href="navBar_Others.htm">Settings navigation panel</a>)</li>
+
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none">The "<b>Advanced</b>" button (and the designer popup menu)</li>
+      <li><b>Inspector</b> - shows the <a href="helpBar_OI.htm">Object Inspector</a>, where you can change the other parameters of window type design</li>
+      <li><b>Copy to clipboard</b> - copies the current window type definition to the clipboard, so you can apply it for another window type
+          (<i>the definition is copied exactly in the format specified for the html help projects, so you can, if necessary, apply it in another application that supports these projects</i>)</li>
+      <li><b>Paste from clipboard</b> - the window type definition stored in the clipboard is applied to the current window type</li>
+      <li><b>Default size</b> - sets the dimensions of the window in the designer to default values</li>
+      
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      The Visual window type designer options
+    </p>
+    <ul class="shr">
+      <li><b>Window caption</b> - the window title that is shown in the help viewer for the resulting help</li>
+      <li><b>Default window type</b> - indicates that current window type is the default, that is used when the resulting help is open</li>
+      <li><b>Home page</b> - the topic, that will be displayed, when end user clicks the "<i>Home page</i>" button in the help viewer.</li>
+      <li><b>Default topic</b> - the topic, that will be displayed, when the resulting help is open</li>
+      <li><b>Contents file</b> - <a href="navBar_TOC.htm">table of contents</a> shown in this window type</li>
+      <li><b>Index file</b> - <a href="navBar_IDX.htm">index of keywords</a> shown in this window type</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Changing the size</b> and / or <b>changing the position</b> of the window in the designer, you define the default dimensions and the default position of the window,
+          when the resulting help is open</li>
+      <li><b>By clicking the toolbar button</b> in the designer, you <b>select / deselect</b> it for showing in the resulting help</li>
+      <li><b>By changing the tab</b> in the left pane (Contents, Index, Search, Favorites) you set the default tab for showing when the resulting help is open</li>
+      <li><b>Changing the size</b> of the left pane in the designer you set the default width of this pane when the resulting help is open</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Overview of other design parameters
+    </p>
+    <ul class="shr">
+      <li><b>Caption</b> - the window title that is shown in the help viewer for the resulting help</li>
+      <li><b>Remember dimensions</b> - when the user opens the help window, the last window position and sizes will be used</li>
+      <li><b>Show MSDN menu</b> - the same main menu, as was used in the MSDN help, will be used for this window type</li>
+      <li><b>Show tabs and toolbar</b> - the left navigation pane with tabs and buttons will be displayed in this window type</li>
+      <li><b>Stay on top</b> - window will be always on top</li>
+      
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Tabs:</i></li>
+      <li><b>Auto hide/show</b> - pane with the tabs (Contents, Index, ...) will be shown automatically, so it will appear when you place the mouse on the left edge of the window</li>
+      <li><b>Auto sync contents</b> - the content item will always be set on the corresponding topic displayed in the help</li>
+      <li><b>Default tab</b> - default tab, that will be displayed, when the help is opened</li>
+      <li><b>Initially closed</b> - left panel with the tabs will be hidden when you open help (see above: <i>Auto hide/show</i>)</li>
+      <li><b>Position</b> - determines the position of tabs in the left pane (At top, on left, at bottom)</li>
+      
+      <li><b>Show favorites tab</b> - Favorites tab will be displayed</li>
+      <li><b>Show search tab</b> - Search tab will be displayed (see also <a href="pageProject.htm#others">Project properties - Other options - Fulltext search</a>).</li>
+      <li><b>Advanced search options</b> - the Search tab will contain additional options and buttons the extend the fulltext search</li>
+
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Toolbar:</i></li>
+      <li><b>Hide button labels</b> - buttons on the toolbar will be displayed without the labels</li>
+      <li><b>Hide buttons</b> - hide/show the window toolbar</li>
+      <li><b>Jump 1</b> - label and the topic/url of the "Jump 1" button</li>
+      <li><b>Jump 2</b> - label and the topic/url of the "Jump 2" button</li>
+
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Window style:</i> (this section is intended for developers only)</li>
+      <li><b>Extended flags</b> - Extended window style (in the integer form)</li>
+      <li><i>No default ext. window styles</i> - see section <i>Not implemented</i></li>
+      <li><i>No default window styles</i> - see section <i>Not implemented</i></li>
+      <li><i>Send tracking messages</i> - see section <i>Not implemented</i></li>
+      <li><i>Post WM_QUIT</i> - see section <i>Not implemented</i></li>
+      <li><b>Show state</b> - integer value of the window show state (SW_HIDE=0, SW_SHOWNORMAL=1, SW_SHOWMAXIMIZED=3, ...)</li>
+      <li><b>Style flags</b> - Window style (in the integer form)</li>
+      <li><b>WM_NOTIFY ID</b> - the WM_NOTIFY message identifier</li>
+      
+      <li style="list-style-type:none"></li>
+      <li><i>Not implemented</i> - section with parameters, that are listed here, because of the full support of HHP format only.
+          Unfortunately the support for these parameters is not fully implemented even in the system <i>CHM Help viewer</i>.</li>
+    </ul>
+
+    <p>
+      <i>Note:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;Definition of window types is intended only for CHM (<i>Microsoft Compiled Html Help</i>) format.
+      It has no effect on <a href="toolsExportWebHelp.htm">publishing (exporting)</a> into another help format</i>
+    </p>
+    
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. All rights reserved.
+  </div>
+</body>
+</html>

@@ -1,0 +1,2056 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AssignmentGrammar">
+  <name>Orc Names</name>
+  <authur>Lance Boudreaux</authur>
+  <description>Generates names for orcs</description>
+  <category>Name</category>
+  <genre>Fantasy</genre>
+  <parameters />
+  <supportsMaxLength>true</supportsMaxLength>
+  <items>
+    <item name="Start">[Ab]</item>
+    <item name="Ab" next="gh">Ab</item>
+    <item name="gh" weight="8" next="at">gh</item>
+    <item name="at">at</item>
+    <item name="Start">[Ad]</item>
+    <item name="Ad" next="gu">Ad</item>
+    <item name="gu" weight="3" next="lg">gu</item>
+    <item name="lg">lg</item>
+    <item name="Start" weight="3">[Ag]</item>
+    <item name="Ag" next="gr">Ag</item>
+    <item name="gr" next="a">gr</item>
+    <item name="a">a</item>
+    <item name="Ag" next="he">Ag</item>
+    <item name="he" weight="9" next="d">he</item>
+    <item name="d">d</item>
+    <item name="Ag" next="uk">Ag</item>
+    <item name="uk">uk</item>
+    <item name="Start">[Al]</item>
+    <item name="Al" next="mt">Al</item>
+    <item name="mt" weight="2" next="hu">mt</item>
+    <item name="hu">hu</item>
+    <item name="Start">[Am]</item>
+    <item name="Am" next="bi">Am</item>
+    <item name="bi" weight="2" next="lg">bi</item>
+    <item name="lg" weight="7" next="e">lg</item>
+    <item name="e">e</item>
+    <item name="Start">[Ap]</item>
+    <item name="Ap" next="au">Ap</item>
+    <item name="au" weight="12" next="gh">au</item>
+    <item name="gh">gh</item>
+    <item name="Start" weight="5">[Ar]</item>
+    <item name="Ar" next="gh">Ar</item>
+    <item name="gh" weight="10" next="a">gh</item>
+    <item name="a">a</item>
+    <item name="Ar" next="gi">Ar</item>
+    <item name="gi" weight="6" next="go">gi</item>
+    <item name="go" weight="9" next="th">go</item>
+    <item name="th">th</item>
+    <item name="Ar" next="gu">Ar</item>
+    <item name="gu" weight="12" next="g">gu</item>
+    <item name="g">g</item>
+    <item name="Ar" next="pi">Ar</item>
+    <item name="pi" weight="2" next="gi">pi</item>
+    <item name="gi" weight="10" next="g">gi</item>
+    <item name="g">g</item>
+    <item name="Ar" next="to">Ar</item>
+    <item name="to" next="g">to</item>
+    <item name="g">g</item>
+    <item name="Start">[Au]</item>
+    <item name="Au" next="th">Au</item>
+    <item name="th" next="ga">th</item>
+    <item name="ga" weight="8" next="n">ga</item>
+    <item name="n">n</item>
+    <item name="Start" weight="2">[Az]</item>
+    <item name="Az" next="hu">Az</item>
+    <item name="hu" weight="6" next="g">hu</item>
+    <item name="g">g</item>
+    <item name="Az" next="og">Az</item>
+    <item name="og">og</item>
+    <item name="Start" weight="9">[Ba]</item>
+    <item name="Ba" next="gd">Ba</item>
+    <item name="gd" weight="4" next="ud">gd</item>
+    <item name="ud">ud</item>
+    <item name="Ba" next="gh">Ba</item>
+    <item name="gh" weight="8" next="ig">gh</item>
+    <item name="ig">ig</item>
+    <item name="Ba" weight="2" next="hg">Ba</item>
+    <item name="hg" weight="5" next="ig">hg</item>
+    <item name="ig" weight="8" next="ot">ig</item>
+    <item name="ot" weight="10" next="h">ot</item>
+    <item name="h">h</item>
+    <item name="hg" next="tr">hg</item>
+    <item name="tr" next="u">tr</item>
+    <item name="u">u</item>
+    <item name="Ba" next="lm">Ba</item>
+    <item name="lm" next="eg">lm</item>
+    <item name="eg">eg</item>
+    <item name="Ba" next="nd">Ba</item>
+    <item name="nd" weight="3" next="ag">nd</item>
+    <item name="ag" weight="15" next="h">ag</item>
+    <item name="h">h</item>
+    <item name="Ba" next="rf">Ba</item>
+    <item name="rf" weight="13" next="u">rf</item>
+    <item name="u">u</item>
+    <item name="Ba" next="rg">Ba</item>
+    <item name="rg" weight="8" next="ul">rg</item>
+    <item name="ul" weight="13" next="g">ul</item>
+    <item name="g">g</item>
+    <item name="Ba" next="ug">Ba</item>
+    <item name="ug" weight="14" next="h">ug</item>
+    <item name="h">h</item>
+    <item name="Start" weight="3">[Bi]</item>
+    <item name="Bi" next="dg">Bi</item>
+    <item name="dg" weight="3" next="ug">dg</item>
+    <item name="ug">ug</item>
+    <item name="Bi" next="ld">Bi</item>
+    <item name="ld" weight="4" next="ud">ld</item>
+    <item name="ud">ud</item>
+    <item name="Bi" next="lg">Bi</item>
+    <item name="e">e</item>
+    <item name="Start" weight="7">[Bo]</item>
+    <item name="Bo" next="g">Bo</item>
+    <item name="g">g</item>
+    <item name="Bo" next="gh">Bo</item>
+    <item name="at">at</item>
+    <item name="Bo" next="gu">Bo</item>
+    <item name="gu" weight="6" next="gh">gu</item>
+    <item name="gh">gh</item>
+    <item name="Bo" next="ld">Bo</item>
+    <item name="ld" next="og">ld</item>
+    <item name="og">og</item>
+    <item name="Bo" next="lg">Bo</item>
+    <item name="lg">lg</item>
+    <item name="Bo" next="rg">Bo</item>
+    <item name="rg" weight="3" next="an">rg</item>
+    <item name="an">an</item>
+    <item name="Bo" next="ru">Bo</item>
+    <item name="ru" weight="4" next="g">ru</item>
+    <item name="g">g</item>
+    <item name="Start" weight="6">[Br]</item>
+    <item name="Br" next="au">Br</item>
+    <item name="gh">gh</item>
+    <item name="Br" next="ou">Br</item>
+    <item name="ou" weight="3" next="gh">ou</item>
+    <item name="a">a</item>
+    <item name="Br" next="ox">Br</item>
+    <item name="ox" next="ig">ox</item>
+    <item name="ig" next="ar">ig</item>
+    <item name="ar">ar</item>
+    <item name="Br" weight="2" next="ug">Br</item>
+    <item name="ug" weight="3" next="ag">ug</item>
+    <item name="h">h</item>
+    <item name="h">h</item>
+    <item name="Br" next="ui">Br</item>
+    <item name="ui" weight="2" next="gi">ui</item>
+    <item name="g">g</item>
+    <item name="Start" weight="10">[Bu]</item>
+    <item name="Bu" next="ad">Bu</item>
+    <item name="ad" weight="2" next="ag">ad</item>
+    <item name="h">h</item>
+    <item name="Bu" next="gg">Bu</item>
+    <item name="gg" weight="3" next="ug">gg</item>
+    <item name="ug">ug</item>
+    <item name="Bu" next="il">Bu</item>
+    <item name="il" weight="7" next="ge">il</item>
+    <item name="ge">ge</item>
+    <item name="Bu" next="im">Bu</item>
+    <item name="im" weight="2" next="gh">im</item>
+    <item name="ig">ig</item>
+    <item name="Bu" next="lg">Bu</item>
+    <item name="lg" weight="3" next="an">lg</item>
+    <item name="an">an</item>
+    <item name="Bu" next="mh">Bu</item>
+    <item name="mh" weight="4" next="ug">mh</item>
+    <item name="ug">ug</item>
+    <item name="Bu" next="om">Bu</item>
+    <item name="om" weight="2" next="au">om</item>
+    <item name="gh">gh</item>
+    <item name="Bu" next="or">Bu</item>
+    <item name="or" weight="2" next="du">or</item>
+    <item name="du" weight="7" next="d">du</item>
+    <item name="d">d</item>
+    <item name="Bu" next="rg">Bu</item>
+    <item name="rg" weight="6" next="he">rg</item>
+    <item name="d">d</item>
+    <item name="Bu" next="ug">Bu</item>
+    <item name="ug" weight="7" next="ug">ug</item>
+    <item name="ug">ug</item>
+    <item name="Start" weight="4">[Ca]</item>
+    <item name="Ca" next="bu">Ca</item>
+    <item name="bu" weight="3" next="gb">bu</item>
+    <item name="gb" weight="12" next="u">gb</item>
+    <item name="u">u</item>
+    <item name="Ca" next="ga">Ca</item>
+    <item name="n">n</item>
+    <item name="Ca" next="rg">Ca</item>
+    <item name="rg" weight="3" next="uk">rg</item>
+    <item name="uk">uk</item>
+    <item name="Ca" next="rt">Ca</item>
+    <item name="rt" weight="5" next="hu">rt</item>
+    <item name="hu" weight="5" next="rg">hu</item>
+    <item name="rg">rg</item>
+    <item name="Start">[Cl]</item>
+    <item name="Cl" next="og">Cl</item>
+    <item name="og">og</item>
+    <item name="Start">[Co]</item>
+    <item name="Co" next="rg">Co</item>
+    <item name="rg" weight="3" next="ak">rg</item>
+    <item name="ak">ak</item>
+    <item name="Start">[Cr]</item>
+    <item name="Cr" next="ot">Cr</item>
+    <item name="ot" weight="3" next="hu">ot</item>
+    <item name="hu">hu</item>
+    <item name="Start" weight="3">[Cu]</item>
+    <item name="Cu" next="bu">Cu</item>
+    <item name="bu" weight="15" next="b">bu</item>
+    <item name="b">b</item>
+    <item name="Cu" next="kg">Cu</item>
+    <item name="kg" weight="3" next="il">kg</item>
+    <item name="il" weight="6" next="ug">il</item>
+    <item name="ug">ug</item>
+    <item name="Cu" next="rb">Cu</item>
+    <item name="rb" weight="12" next="ag">rb</item>
+    <item name="ag">ag</item>
+    <item name="Start" weight="5">[Da]</item>
+    <item name="Da" next="bu">Da</item>
+    <item name="b">b</item>
+    <item name="Da" weight="2" next="kg">Da</item>
+    <item name="kg" next="or">kg</item>
+    <item name="or" weight="6" next="im">or</item>
+    <item name="im">im</item>
+    <item name="kg" weight="8" next="u">kg</item>
+    <item name="u">u</item>
+    <item name="Da" next="lt">Da</item>
+    <item name="lt" weight="5" next="hu">lt</item>
+    <item name="hu">hu</item>
+    <item name="Da" next="rf">Da</item>
+    <item name="u">u</item>
+    <item name="Start" weight="3">[De]</item>
+    <item name="De" next="ak">De</item>
+    <item name="ak" weight="6" next="gu">ak</item>
+    <item name="gu">gu</item>
+    <item name="De" next="rg">De</item>
+    <item name="rg" weight="5" next="u">rg</item>
+    <item name="u">u</item>
+    <item name="De" next="rt">De</item>
+    <item name="rt" weight="4" next="ha">rt</item>
+    <item name="ha" weight="5" next="g">ha</item>
+    <item name="g">g</item>
+    <item name="Start" weight="4">[Di]</item>
+    <item name="Di" next="gd">Di</item>
+    <item name="gd" weight="3" next="ug">gd</item>
+    <item name="ug">ug</item>
+    <item name="Di" next="gg">Di</item>
+    <item name="gg" weight="3" next="u">gg</item>
+    <item name="u">u</item>
+    <item name="Di" next="lu">Di</item>
+    <item name="lu" weight="9" next="g">lu</item>
+    <item name="g">g</item>
+    <item name="Di" next="tg">Di</item>
+    <item name="tg" weight="3" next="ur">tg</item>
+    <item name="ur" weight="3" next="at">ur</item>
+    <item name="at">at</item>
+    <item name="Start">[Do]</item>
+    <item name="Do" next="rg">Do</item>
+    <item name="rg" weight="3" next="ar">rg</item>
+    <item name="ar" weight="3" next="ag">ar</item>
+    <item name="ag">ag</item>
+    <item name="Start" weight="8">[Dr]</item>
+    <item name="Dr" next="ak">Dr</item>
+    <item name="ak" next="a">ak</item>
+    <item name="a">a</item>
+    <item name="Dr" next="an">Dr</item>
+    <item name="an" next="os">an</item>
+    <item name="os" next="h">os</item>
+    <item name="h">h</item>
+    <item name="Dr" next="eg">Dr</item>
+    <item name="eg" weight="3" next="u">eg</item>
+    <item name="u">u</item>
+    <item name="Dr" next="ek">Dr</item>
+    <item name="ek" next="th">ek</item>
+    <item name="th" next="ar">th</item>
+    <item name="ar">ar</item>
+    <item name="Dr" next="et">Dr</item>
+    <item name="et" weight="3" next="ka">et</item>
+    <item name="ka" weight="3" next="g">ka</item>
+    <item name="g">g</item>
+    <item name="Dr" next="ig">Dr</item>
+    <item name="ig" weight="3" next="ka">ig</item>
+    <item name="ka">ka</item>
+    <item name="Dr" next="ik">Dr</item>
+    <item name="ik" weight="3" next="da">ik</item>
+    <item name="da" weight="4" next="ro">da</item>
+    <item name="ro" weight="4" next="k">ro</item>
+    <item name="k">k</item>
+    <item name="Dr" next="ut">Dr</item>
+    <item name="ut" weight="3" next="ha">ut</item>
+    <item name="ha">ha</item>
+    <item name="Start" weight="7">[Du]</item>
+    <item name="Du" next="da">Du</item>
+    <item name="da" weight="10" next="go">da</item>
+    <item name="go" weight="11" next="g">go</item>
+    <item name="g">g</item>
+    <item name="Du" next="ga">Du</item>
+    <item name="ga" weight="4" next="ro">ga</item>
+    <item name="ro" weight="13" next="d">ro</item>
+    <item name="d">d</item>
+    <item name="Du" next="go">Du</item>
+    <item name="go" weight="8" next="ri">go</item>
+    <item name="ri" weight="8" next="m">ri</item>
+    <item name="m">m</item>
+    <item name="Du" next="il">Du</item>
+    <item name="il" weight="3" next="ta">il</item>
+    <item name="ta" weight="4" next="g">ta</item>
+    <item name="g">g</item>
+    <item name="Du" next="ka">Du</item>
+    <item name="ka" next="gs">ka</item>
+    <item name="gs" next="h">gs</item>
+    <item name="h">h</item>
+    <item name="Du" next="rb">Du</item>
+    <item name="ag">ag</item>
+    <item name="Du" next="ro">Du</item>
+    <item name="ro" next="ta">ro</item>
+    <item name="ta" next="n">ta</item>
+    <item name="n">n</item>
+    <item name="Start">[Ea]</item>
+    <item name="Ea" next="gu">Ea</item>
+    <item name="gu" weight="3" next="ng">gu</item>
+    <item name="ng" weight="3" next="ad">ng</item>
+    <item name="ad">ad</item>
+    <item name="Start" weight="4">[Eg]</item>
+    <item name="Eg" next="gh">Eg</item>
+    <item name="a">a</item>
+    <item name="Eg" next="gu">Eg</item>
+    <item name="gu" weight="2" next="ga">gu</item>
+    <item name="ga" weight="2" next="t">ga</item>
+    <item name="t">t</item>
+    <item name="Eg" next="ha">Eg</item>
+    <item name="ha" weight="2" next="ro">ha</item>
+    <item name="d">d</item>
+    <item name="Eg" next="hu">Eg</item>
+    <item name="hu" weight="2" next="gl">hu</item>
+    <item name="gl" weight="3" next="at">gl</item>
+    <item name="at">at</item>
+    <item name="Start" weight="2">[Ei]</item>
+    <item name="Ei" next="ch">Ei</item>
+    <item name="ch" next="el">ch</item>
+    <item name="el" next="be">el</item>
+    <item name="be" next="rb">be</item>
+    <item name="rb" weight="2" next="og">rb</item>
+    <item name="og">og</item>
+    <item name="Ei" next="tr">Ei</item>
+    <item name="tr" next="ig">tr</item>
+    <item name="ig" next="g">ig</item>
+    <item name="g">g</item>
+    <item name="Start">[Ek]</item>
+    <item name="Ek" next="ga">Ek</item>
+    <item name="ga" weight="2" next="ni">ga</item>
+    <item name="ni" weight="2" next="t">ni</item>
+    <item name="t">t</item>
+    <item name="Start">[Ep]</item>
+    <item name="Ep" next="ka">Ep</item>
+    <item name="ka" weight="2" next="gu">ka</item>
+    <item name="gu" weight="2" next="t">gu</item>
+    <item name="t">t</item>
+    <item name="Start" weight="2">[Er]</item>
+    <item name="Er" next="go">Er</item>
+    <item name="th">th</item>
+    <item name="Er" next="tg">Er</item>
+    <item name="tg" weight="3" next="ut">tg</item>
+    <item name="ut" weight="2" next="h">ut</item>
+    <item name="h">h</item>
+    <item name="Start">[Ew]</item>
+    <item name="Ew" next="kb">Ew</item>
+    <item name="kb" weight="2" next="an">kb</item>
+    <item name="an" weight="2" next="ok">an</item>
+    <item name="ok">ok</item>
+    <item name="Start" weight="7">[Fa]</item>
+    <item name="Fa" next="gd">Fa</item>
+    <item name="ud">ud</item>
+    <item name="Fa" next="gh">Fa</item>
+    <item name="ig">ig</item>
+    <item name="Fa" next="nd">Fa</item>
+    <item name="h">h</item>
+    <item name="Fa" next="rf">Fa</item>
+    <item name="u">u</item>
+    <item name="Fa" weight="2" next="rg">Fa</item>
+    <item name="d">d</item>
+    <item name="rg" weight="3" next="ig">rg</item>
+    <item name="h">h</item>
+    <item name="Fa" next="ug">Fa</item>
+    <item name="h">h</item>
+    <item name="Start" weight="2">[Fe]</item>
+    <item name="Fe" next="ld">Fe</item>
+    <item name="ld" weight="2" next="gu">ld</item>
+    <item name="lg">lg</item>
+    <item name="Fe" next="nr">Fe</item>
+    <item name="nr" next="is">nr</item>
+    <item name="is">is</item>
+    <item name="Start" weight="2">[Fi]</item>
+    <item name="Fi" next="dg">Fi</item>
+    <item name="ug">ug</item>
+    <item name="Fi" next="lg">Fi</item>
+    <item name="e">e</item>
+    <item name="Start" weight="3">[Fo]</item>
+    <item name="Fo" next="da">Fo</item>
+    <item name="g">g</item>
+    <item name="Fo" next="gu">Fo</item>
+    <item name="gh">gh</item>
+    <item name="Fo" next="zh">Fo</item>
+    <item name="zh" weight="3" next="ug">zh</item>
+    <item name="ug">ug</item>
+    <item name="Start" weight="3">[Fr]</item>
+    <item name="Fr" next="ik">Fr</item>
+    <item name="ik" weight="3" next="ug">ik</item>
+    <item name="ug">ug</item>
+    <item name="Fr" next="ug">Fr</item>
+    <item name="ug">ug</item>
+    <item name="Fr" next="uk">Fr</item>
+    <item name="uk" weight="3" next="ag">uk</item>
+    <item name="ag">ag</item>
+    <item name="Start" weight="5">[Fu]</item>
+    <item name="Fu" next="bd">Fu</item>
+    <item name="bd" weight="3" next="ag">bd</item>
+    <item name="ag" weight="3" next="og">ag</item>
+    <item name="og">og</item>
+    <item name="Fu" next="dh">Fu</item>
+    <item name="dh" weight="3" next="ag">dh</item>
+    <item name="h">h</item>
+    <item name="Fu" next="pg">Fu</item>
+    <item name="pg" weight="4" next="ug">pg</item>
+    <item name="h">h</item>
+    <item name="Fu" next="rb">Fu</item>
+    <item name="og">og</item>
+    <item name="Fu" next="tg">Fu</item>
+    <item name="tg" weight="2" next="ar">tg</item>
+    <item name="ar" weight="2" next="ek">ar</item>
+    <item name="ek">ek</item>
+    <item name="Start" weight="5">[Ga]</item>
+    <item name="Ga" next="ak">Ga</item>
+    <item name="ak" weight="4" next="t">ak</item>
+    <item name="t">t</item>
+    <item name="Ga" next="ra">Ga</item>
+    <item name="ra" next="d">ra</item>
+    <item name="d">d</item>
+    <item name="Ga" next="re">Ga</item>
+    <item name="re" next="kk">re</item>
+    <item name="kk">kk</item>
+    <item name="Ga" next="rm">Ga</item>
+    <item name="rm">rm</item>
+    <item name="Ga" next="ro">Ga</item>
+    <item name="ro" next="na">ro</item>
+    <item name="na">na</item>
+    <item name="Start" weight="2">[Ge]</item>
+    <item name="Ge" next="lu">Ge</item>
+    <item name="lu" weight="3" next="b">lu</item>
+    <item name="b">b</item>
+    <item name="Ge" next="ya">Ge</item>
+    <item name="ya" next="h">ya</item>
+    <item name="h">h</item>
+    <item name="Start">[Gh]</item>
+    <item name="Gh" next="ol">Gh</item>
+    <item name="ol" weight="2" next="ug">ol</item>
+    <item name="ug">ug</item>
+    <item name="Start" weight="2">[Gi]</item>
+    <item name="Gi" next="la">Gi</item>
+    <item name="la" weight="2" next="kt">la</item>
+    <item name="kt" weight="2" next="ug">kt</item>
+    <item name="ug">ug</item>
+    <item name="Gi" next="nu">Gi</item>
+    <item name="nu" weight="5" next="g">nu</item>
+    <item name="g">g</item>
+    <item name="Start" weight="9">[Gn]</item>
+    <item name="Gn" next="ab">Gn</item>
+    <item name="ab" weight="2" next="ad">ab</item>
+    <item name="ad" weight="3" next="ug">ad</item>
+    <item name="ug">ug</item>
+    <item name="Gn" next="ad">Gn</item>
+    <item name="ug">ug</item>
+    <item name="Gn" next="al">Gn</item>
+    <item name="al" next="ur">al</item>
+    <item name="ur" weight="4" next="g">ur</item>
+    <item name="g">g</item>
+    <item name="Gn" weight="2" next="ar">Gn</item>
+    <item name="ar" next="g">ar</item>
+    <item name="g">g</item>
+    <item name="ar" next="lu">ar</item>
+    <item name="g">g</item>
+    <item name="Gn" weight="2" next="or">Gn</item>
+    <item name="or" next="l">or</item>
+    <item name="l">l</item>
+    <item name="or" next="th">or</item>
+    <item name="th">th</item>
+    <item name="Gn" next="ot">Gn</item>
+    <item name="h">h</item>
+    <item name="Gn" next="ur">Gn</item>
+    <item name="ur" weight="2" next="l">ur</item>
+    <item name="l">l</item>
+    <item name="Start" weight="10">[Go]</item>
+    <item name="Go" next="la">Go</item>
+    <item name="la" weight="2" next="g">la</item>
+    <item name="g">g</item>
+    <item name="Go" next="lf">Go</item>
+    <item name="lf" next="im">lf</item>
+    <item name="im" next="bu">im</item>
+    <item name="bu" next="l">bu</item>
+    <item name="l">l</item>
+    <item name="Go" next="lu">Go</item>
+    <item name="b">b</item>
+    <item name="Go" next="ma">Go</item>
+    <item name="ma" next="tu">ma</item>
+    <item name="tu" weight="2" next="g">tu</item>
+    <item name="g">g</item>
+    <item name="Go" next="mo">Go</item>
+    <item name="mo" weight="2" next="ku">mo</item>
+    <item name="ku">ku</item>
+    <item name="Go" next="rb">Go</item>
+    <item name="ag">ag</item>
+    <item name="Go" weight="2" next="rg">Go</item>
+    <item name="rg" next="ol">rg</item>
+    <item name="ol">ol</item>
+    <item name="u">u</item>
+    <item name="Go" next="rl">Go</item>
+    <item name="rl" next="ag">rl</item>
+    <item name="ag">ag</item>
+    <item name="Go" next="th">Go</item>
+    <item name="th" next="mo">th</item>
+    <item name="mo" next="g">mo</item>
+    <item name="g">g</item>
+    <item name="Start" weight="10">[Gr]</item>
+    <item name="Gr" next="ik">Gr</item>
+    <item name="ug">ug</item>
+    <item name="Gr" weight="2" next="is">Gr</item>
+    <item name="is" next="el">is</item>
+    <item name="el" next="da">el</item>
+    <item name="da">da</item>
+    <item name="is" next="hn">is</item>
+    <item name="hn" next="ak">hn</item>
+    <item name="ak" next="h">ak</item>
+    <item name="h">h</item>
+    <item name="Gr" next="om">Gr</item>
+    <item name="om" next="ma">om</item>
+    <item name="ma" next="sh">ma</item>
+    <item name="sh">sh</item>
+    <item name="Gr" next="ug">Gr</item>
+    <item name="ug">ug</item>
+    <item name="Gr" weight="2" next="uk">Gr</item>
+    <item name="ag">ag</item>
+    <item name="uk" next="k">uk</item>
+    <item name="k">k</item>
+    <item name="Gr" next="un">Gr</item>
+    <item name="un" next="g">un</item>
+    <item name="g">g</item>
+    <item name="Gr" weight="2" next="uu">Gr</item>
+    <item name="uu" weight="2" next="l">uu</item>
+    <item name="l">l</item>
+    <item name="uu" next="ms">uu</item>
+    <item name="ms" next="h">ms</item>
+    <item name="h">h</item>
+    <item name="Start" weight="17">[Gu]</item>
+    <item name="Gu" next="ag">Gu</item>
+    <item name="ag">ag</item>
+    <item name="Gu" next="bd">Gu</item>
+    <item name="og">og</item>
+    <item name="Gu" next="dh">Gu</item>
+    <item name="h">h</item>
+    <item name="Gu" next="g">Gu</item>
+    <item name="g">g</item>
+    <item name="Gu" next="ja">Gu</item>
+    <item name="ja" weight="2" next="re">ja</item>
+    <item name="re" weight="3" next="k">re</item>
+    <item name="k">k</item>
+    <item name="Gu" next="je">Gu</item>
+    <item name="je" next="k">je</item>
+    <item name="k">k</item>
+    <item name="Gu" next="jj">Gu</item>
+    <item name="jj" next="ab">jj</item>
+    <item name="ab">ab</item>
+    <item name="Gu" next="ld">Gu</item>
+    <item name="ld" next="an">ld</item>
+    <item name="an">an</item>
+    <item name="Gu" next="lm">Gu</item>
+    <item name="lm">lm</item>
+    <item name="Gu" next="lr">Gu</item>
+    <item name="lr" next="n">lr</item>
+    <item name="n">n</item>
+    <item name="Gu" weight="2" next="na">Gu</item>
+    <item name="na" weight="2" next="ak">na</item>
+    <item name="t">t</item>
+    <item name="na" weight="2" next="g">na</item>
+    <item name="g">g</item>
+    <item name="Gu" next="nu">Gu</item>
+    <item name="g">g</item>
+    <item name="Gu" next="ru">Gu</item>
+    <item name="ru" weight="2" next="kk">ru</item>
+    <item name="kk">kk</item>
+    <item name="Gu" weight="2" next="th">Gu</item>
+    <item name="th" weight="3" next="ak">th</item>
+    <item name="ak" weight="2" next="ug">ak</item>
+    <item name="ug">ug</item>
+    <item name="th" weight="2" next="ug">th</item>
+    <item name="ug">ug</item>
+    <item name="Gu" next="tj">Gu</item>
+    <item name="tj" weight="2" next="ja">tj</item>
+    <item name="ja">ja</item>
+    <item name="Start" weight="4">[Ha]</item>
+    <item name="Ha" next="go">Ha</item>
+    <item name="go" next="b">go</item>
+    <item name="b">b</item>
+    <item name="Ha" weight="3" next="gu">Ha</item>
+    <item name="gu">gu</item>
+    <item name="gu" weight="3" next="b">gu</item>
+    <item name="b">b</item>
+    <item name="gu" weight="6" next="k">gu</item>
+    <item name="k">k</item>
+    <item name="Start" weight="2">[He]</item>
+    <item name="He" next="bu">He</item>
+    <item name="b">b</item>
+    <item name="He" next="gu">He</item>
+    <item name="g">g</item>
+    <item name="Start" weight="2">[Hi]</item>
+    <item name="Hi" next="bu">Hi</item>
+    <item name="b">b</item>
+    <item name="Hi" next="g">Hi</item>
+    <item name="g">g</item>
+    <item name="Start" weight="6">[Ho]</item>
+    <item name="Ho" next="gu">Ho</item>
+    <item name="g">g</item>
+    <item name="Ho" weight="2" next="kn">Ho</item>
+    <item name="kn" weight="2" next="at">kn</item>
+    <item name="at" weight="4" next="h">at</item>
+    <item name="h">h</item>
+    <item name="kn" next="uk">kn</item>
+    <item name="uk">uk</item>
+    <item name="Ho" next="ku">Ho</item>
+    <item name="ku" next="lk">ku</item>
+    <item name="lk">lk</item>
+    <item name="Ho" next="lk">Ho</item>
+    <item name="lk" next="ur">lk</item>
+    <item name="g">g</item>
+    <item name="Ho" next="rk">Ho</item>
+    <item name="rk" next="nu">rk</item>
+    <item name="nu" next="th">nu</item>
+    <item name="th">th</item>
+    <item name="Start">[Hr]</item>
+    <item name="Hr" next="ol">Hr</item>
+    <item name="ol" next="ku">ol</item>
+    <item name="ku" weight="2" next="g">ku</item>
+    <item name="g">g</item>
+    <item name="Start" weight="3">[Hu]</item>
+    <item name="Hu" next="ga">Hu</item>
+    <item name="ga" weight="2" next="gu">ga</item>
+    <item name="g">g</item>
+    <item name="Hu" next="gm">Hu</item>
+    <item name="gm" next="ug">gm</item>
+    <item name="ug">ug</item>
+    <item name="Hu" next="go">Hu</item>
+    <item name="go" next="lm">go</item>
+    <item name="lm">lm</item>
+    <item name="Start" weight="6">[Ig]</item>
+    <item name="Ig">Ig</item>
+    <item name="Ig" next="mu">Ig</item>
+    <item name="mu" next="t">mu</item>
+    <item name="t">t</item>
+    <item name="Ig" next="no">Ig</item>
+    <item name="no" next="rg">no</item>
+    <item name="rg">rg</item>
+    <item name="Ig" next="ub">Ig</item>
+    <item name="ub" weight="2" next="at">ub</item>
+    <item name="at">at</item>
+    <item name="Ig" next="ug">Ig</item>
+    <item name="ug">ug</item>
+    <item name="Ig" next="ur">Ig</item>
+    <item name="g">g</item>
+    <item name="Start" weight="2">[Ik]</item>
+    <item name="Ik" next="gn">Ik</item>
+    <item name="gn" weight="2" next="at">gn</item>
+    <item name="h">h</item>
+    <item name="Ik" next="ka">Ik</item>
+    <item name="ka" weight="3" next="th">ka</item>
+    <item name="th">th</item>
+    <item name="Start">[Il]</item>
+    <item name="Il" next="ln">Il</item>
+    <item name="ln" next="ev">ln</item>
+    <item name="ev" next="al">ev</item>
+    <item name="al">al</item>
+    <item name="Start" weight="2">[In]</item>
+    <item name="In" weight="2" next="ka">In</item>
+    <item name="th" weight="4" next="u">th</item>
+    <item name="u">u</item>
+    <item name="th" next="ur">th</item>
+    <item name="g">g</item>
+    <item name="Start">[Is]</item>
+    <item name="Is" next="ag">Is</item>
+    <item name="ag" weight="2" next="ub">ag</item>
+    <item name="at">at</item>
+    <item name="Start" weight="4">[Jo]</item>
+    <item name="Jo" next="gu">Jo</item>
+    <item name="g">g</item>
+    <item name="Jo" next="kg">Jo</item>
+    <item name="kg" weight="2" next="ag">kg</item>
+    <item name="ag" weight="3" next="u">ag</item>
+    <item name="u">u</item>
+    <item name="Jo" next="la">Jo</item>
+    <item name="la" next="gh">la</item>
+    <item name="gh">gh</item>
+    <item name="Jo" next="rg">Jo</item>
+    <item name="rg" next="ag">rg</item>
+    <item name="u">u</item>
+    <item name="Start" weight="2">[Jr]</item>
+    <item name="Jr" weight="2" next="eg">Jr</item>
+    <item name="eg" weight="2" next="h">eg</item>
+    <item name="h">h</item>
+    <item name="eg" next="hu">eg</item>
+    <item name="g">g</item>
+    <item name="Start" weight="6">[Ju]</item>
+    <item name="Ju" next="ga">Ju</item>
+    <item name="ga" weight="2" next="g">ga</item>
+    <item name="g">g</item>
+    <item name="Ju" weight="2" next="gh">Ju</item>
+    <item name="gh" next="og">gh</item>
+    <item name="og">og</item>
+    <item name="gh" weight="4" next="ra">gh</item>
+    <item name="ra" weight="3" next="gh">ra</item>
+    <item name="gh">gh</item>
+    <item name="Ju" next="kh">Ju</item>
+    <item name="kh" weight="3" next="a">kh</item>
+    <item name="a">a</item>
+    <item name="Ju" next="kk">Ju</item>
+    <item name="kk" next="ha">kk</item>
+    <item name="g">g</item>
+    <item name="Ju" next="la">Ju</item>
+    <item name="la" weight="3" next="kg">la</item>
+    <item name="kg" weight="3" next="h">kg</item>
+    <item name="h">h</item>
+    <item name="Start" weight="9">[Ka]</item>
+    <item name="Ka" next="bu">Ka</item>
+    <item name="u">u</item>
+    <item name="Ka" next="gh">Ka</item>
+    <item name="gh" weight="6" next="ed">gh</item>
+    <item name="ed">ed</item>
+    <item name="Ka" next="hi">Ka</item>
+    <item name="hi" weight="2" next="gi">hi</item>
+    <item name="g">g</item>
+    <item name="Ka" next="rf">Ka</item>
+    <item name="u">u</item>
+    <item name="Ka" next="rg">Ka</item>
+    <item name="uk">uk</item>
+    <item name="Ka" weight="2" next="rr">Ka</item>
+    <item name="rr" next="gh">rr</item>
+    <item name="ed">ed</item>
+    <item name="rr" next="hi">rr</item>
+    <item name="hi" weight="6" next="g">hi</item>
+    <item name="g">g</item>
+    <item name="Ka" next="rt">Ka</item>
+    <item name="rg">rg</item>
+    <item name="Ka" next="sh">Ka</item>
+    <item name="sh" next="ur">sh</item>
+    <item name="ur">ur</item>
+    <item name="Start" weight="5">[Ke]</item>
+    <item name="Ke" next="bu">Ke</item>
+    <item name="b">b</item>
+    <item name="Ke" next="gi">Ke</item>
+    <item name="th">th</item>
+    <item name="Ke" next="gt">Ke</item>
+    <item name="gt" next="h">gt</item>
+    <item name="h">h</item>
+    <item name="Ke" next="rg">Ke</item>
+    <item name="rg" weight="2" next="hu">rg</item>
+    <item name="g">g</item>
+    <item name="Ke" next="rt">Ke</item>
+    <item name="rt" next="ug">rt</item>
+    <item name="ug">ug</item>
+    <item name="Start">[Ki]</item>
+    <item name="Ki" next="lu">Ki</item>
+    <item name="g">g</item>
+    <item name="Start" weight="3">[Kl]</item>
+    <item name="Kl" next="ap">Kl</item>
+    <item name="ap" weight="3" next="du">ap</item>
+    <item name="d">d</item>
+    <item name="Kl" next="og">Kl</item>
+    <item name="og">og</item>
+    <item name="Kl" next="ug">Kl</item>
+    <item name="ug" weight="3" next="hi">ug</item>
+    <item name="g">g</item>
+    <item name="Start" weight="6">[Kn]</item>
+    <item name="Kn" next="ag">Kn</item>
+    <item name="h">h</item>
+    <item name="Kn" next="ar">Kn</item>
+    <item name="ar" weight="3" next="au">ar</item>
+    <item name="gh">gh</item>
+    <item name="Kn" next="od">Kn</item>
+    <item name="od" weight="3" next="ag">od</item>
+    <item name="h">h</item>
+    <item name="Kn" next="or">Kn</item>
+    <item name="or" next="gh">or</item>
+    <item name="gh">gh</item>
+    <item name="Kn" next="ug">Kn</item>
+    <item name="ug" next="uk">ug</item>
+    <item name="uk">uk</item>
+    <item name="Kn" next="ur">Kn</item>
+    <item name="ur" next="ig">ur</item>
+    <item name="ig" weight="4" next="ig">ig</item>
+    <item name="ig">ig</item>
+    <item name="Start" weight="7">[Ko]</item>
+    <item name="Ko" next="da">Ko</item>
+    <item name="g">g</item>
+    <item name="Ko" next="g">Ko</item>
+    <item name="g">g</item>
+    <item name="Ko" next="ga">Ko</item>
+    <item name="n">n</item>
+    <item name="Ko" next="ma">Ko</item>
+    <item name="ma" weight="2" next="ro">ma</item>
+    <item name="d">d</item>
+    <item name="Ko" weight="2" next="rg">Ko</item>
+    <item name="ak">ak</item>
+    <item name="g">g</item>
+    <item name="Ko" next="ug">Ko</item>
+    <item name="ug" weight="3" next="ha">ug</item>
+    <item name="ha" weight="7" next="t">ha</item>
+    <item name="t">t</item>
+    <item name="Start" weight="6">[Kr]</item>
+    <item name="Kr" next="au">Kr</item>
+    <item name="au" next="gu">au</item>
+    <item name="g">g</item>
+    <item name="Kr" next="il">Kr</item>
+    <item name="ge">ge</item>
+    <item name="Kr" next="ot">Kr</item>
+    <item name="hu">hu</item>
+    <item name="Kr" next="ou">Kr</item>
+    <item name="ou" next="th">ou</item>
+    <item name="u">u</item>
+    <item name="Kr" weight="2" next="ug">Kr</item>
+    <item name="ug" weight="3" next="bu">ug</item>
+    <item name="bu">bu</item>
+    <item name="ug" next="or">ug</item>
+    <item name="im">im</item>
+    <item name="Start" weight="7">[Ku]</item>
+    <item name="Ku" next="bu">Ku</item>
+    <item name="b">b</item>
+    <item name="Ku" next="gb">Ku</item>
+    <item name="u">u</item>
+    <item name="Ku" next="kg">Ku</item>
+    <item name="ug">ug</item>
+    <item name="Ku" next="lg">Ku</item>
+    <item name="lg" weight="4" next="ha">lg</item>
+    <item name="ha">ha</item>
+    <item name="Ku" next="pg">Ku</item>
+    <item name="h">h</item>
+    <item name="Ku" next="rb">Ku</item>
+    <item name="ag">ag</item>
+    <item name="Ku" next="rm">Ku</item>
+    <item name="rm" next="ba">rm</item>
+    <item name="ba" next="g">ba</item>
+    <item name="g">g</item>
+    <item name="Start" weight="3">[La]</item>
+    <item name="La" next="gd">La</item>
+    <item name="gd" next="uf">gd</item>
+    <item name="uf">uf</item>
+    <item name="La" next="gh">La</item>
+    <item name="ed">ed</item>
+    <item name="La" next="mg">La</item>
+    <item name="mg" next="ug">mg</item>
+    <item name="h">h</item>
+    <item name="Start" weight="3">[Lu]</item>
+    <item name="Lu" next="g">Lu</item>
+    <item name="g">g</item>
+    <item name="Lu" next="gd">Lu</item>
+    <item name="gd" next="us">gd</item>
+    <item name="us" next="h">us</item>
+    <item name="h">h</item>
+    <item name="Lu" next="th">Lu</item>
+    <item name="th" next="ic">th</item>
+    <item name="ic">ic</item>
+    <item name="Start" weight="9">[Ma]</item>
+    <item name="Ma" next="bu">Ma</item>
+    <item name="b">b</item>
+    <item name="Ma" next="gd">Ma</item>
+    <item name="ud">ud</item>
+    <item name="Ma" next="lt">Ma</item>
+    <item name="hu">hu</item>
+    <item name="Ma" next="rf">Ma</item>
+    <item name="u">u</item>
+    <item name="Ma" next="rg">Ma</item>
+    <item name="g">g</item>
+    <item name="Ma" next="ru">Ma</item>
+    <item name="ru" next="sh">ru</item>
+    <item name="sh">sh</item>
+    <item name="Ma" next="uh">Ma</item>
+    <item name="uh" next="ur">uh</item>
+    <item name="ur">ur</item>
+    <item name="Ma" next="zh">Ma</item>
+    <item name="ug">ug</item>
+    <item name="Ma" next="zr">Ma</item>
+    <item name="zr" next="ig">zr</item>
+    <item name="ig" next="os">ig</item>
+    <item name="os">os</item>
+    <item name="Start" weight="2">[Me]</item>
+    <item name="Me" next="ak">Me</item>
+    <item name="gu">gu</item>
+    <item name="Me" next="rg">Me</item>
+    <item name="h">h</item>
+    <item name="Start">[Mi]</item>
+    <item name="Mi" next="lu">Mi</item>
+    <item name="g">g</item>
+    <item name="Start" weight="6">[Mu]</item>
+    <item name="Mu" next="da">Mu</item>
+    <item name="g">g</item>
+    <item name="Mu" next="ga">Mu</item>
+    <item name="d">d</item>
+    <item name="Mu" next="gh">Mu</item>
+    <item name="gh">gh</item>
+    <item name="Mu" next="go">Mu</item>
+    <item name="m">m</item>
+    <item name="Mu" next="rb">Mu</item>
+    <item name="ag">ag</item>
+    <item name="Mu" next="zg">Mu</item>
+    <item name="zg" next="as">zg</item>
+    <item name="as" next="h">as</item>
+    <item name="h">h</item>
+    <item name="Start" weight="10">[Na]</item>
+    <item name="Na" weight="2" next="gh">Na</item>
+    <item name="at">at</item>
+    <item name="ig">ig</item>
+    <item name="Na" next="gr">Na</item>
+    <item name="gr" next="el">gr</item>
+    <item name="el">el</item>
+    <item name="Na" next="gu">Na</item>
+    <item name="k">k</item>
+    <item name="Na" next="hg">Na</item>
+    <item name="h">h</item>
+    <item name="Na" next="kg">Na</item>
+    <item name="u">u</item>
+    <item name="Na" next="rf">Na</item>
+    <item name="u">u</item>
+    <item name="Na" next="rg">Na</item>
+    <item name="g">g</item>
+    <item name="Na" next="rh">Na</item>
+    <item name="rh" weight="4" next="bu">rh</item>
+    <item name="b">b</item>
+    <item name="Na" next="ro">Na</item>
+    <item name="d">d</item>
+    <item name="Start" weight="3">[Ne]</item>
+    <item name="Ne" next="gh">Ne</item>
+    <item name="ed">ed</item>
+    <item name="Ne" next="hr">Ne</item>
+    <item name="hr" weight="2" next="ak">hr</item>
+    <item name="gu">gu</item>
+    <item name="Ne" next="kr">Ne</item>
+    <item name="kr" next="os">kr</item>
+    <item name="os">os</item>
+    <item name="Start">[Ni]</item>
+    <item name="Ni" next="ld">Ni</item>
+    <item name="ud">ud</item>
+    <item name="Start" weight="5">[No]</item>
+    <item name="No" next="da">No</item>
+    <item name="g">g</item>
+    <item name="No" next="fh">No</item>
+    <item name="fh" weight="2" next="ug">fh</item>
+    <item name="ug">ug</item>
+    <item name="No" next="gu">No</item>
+    <item name="gh">gh</item>
+    <item name="No" next="mg">No</item>
+    <item name="mg" weight="2" next="ul">mg</item>
+    <item name="g">g</item>
+    <item name="No" next="og">No</item>
+    <item name="og" weight="2" next="ug">og</item>
+    <item name="h">h</item>
+    <item name="Start" weight="6">[Nu]</item>
+    <item name="Nu" next="gb">Nu</item>
+    <item name="u">u</item>
+    <item name="Nu" next="gh">Nu</item>
+    <item name="gh" weight="2" next="il">gh</item>
+    <item name="ug">ug</item>
+    <item name="Nu" next="lg">Nu</item>
+    <item name="ha">ha</item>
+    <item name="Nu" next="mh">Nu</item>
+    <item name="ug">ug</item>
+    <item name="Nu" next="rb">Nu</item>
+    <item name="ag">ag</item>
+    <item name="Nu" next="rg">Nu</item>
+    <item name="d">d</item>
+    <item name="Start" weight="2">[Oa]</item>
+    <item name="Oa" next="gu">Oa</item>
+    <item name="ad">ad</item>
+    <item name="Oa" next="kg">Oa</item>
+    <item name="u">u</item>
+    <item name="Start">[Ob]</item>
+    <item name="Ob" next="gh">Ob</item>
+    <item name="at">at</item>
+    <item name="Start" weight="5">[Og]</item>
+    <item name="Og" next="gh">Og</item>
+    <item name="a">a</item>
+    <item name="Og" next="gu">Og</item>
+    <item name="t">t</item>
+    <item name="Og" next="ha">Og</item>
+    <item name="d">d</item>
+    <item name="Og" next="hu">Og</item>
+    <item name="at">at</item>
+    <item name="Og" next="uk">Og</item>
+    <item name="uk">uk</item>
+    <item name="Start" weight="2">[Oh]</item>
+    <item name="Oh" next="om">Oh</item>
+    <item name="om" weight="2" next="du">om</item>
+    <item name="d">d</item>
+    <item name="Oh" next="ul">Oh</item>
+    <item name="ul" weight="2" next="hu">ul</item>
+    <item name="g">g</item>
+    <item name="Start">[Oi]</item>
+    <item name="Oi" next="lu">Oi</item>
+    <item name="g">g</item>
+    <item name="Start">[Ok]</item>
+    <item name="Ok" next="ga">Ok</item>
+    <item name="t">t</item>
+    <item name="Start" weight="5">[Ol]</item>
+    <item name="Ol" next="ag">Ol</item>
+    <item name="ag" weight="2" next="hi">ag</item>
+    <item name="g">g</item>
+    <item name="Ol" next="au">Ol</item>
+    <item name="gh">gh</item>
+    <item name="Ol" next="mt">Ol</item>
+    <item name="hu">hu</item>
+    <item name="Ol" next="od">Ol</item>
+    <item name="h">h</item>
+    <item name="Ol" next="og">Ol</item>
+    <item name="og">og</item>
+    <item name="Start" weight="5">[Om]</item>
+    <item name="Om" next="ag">Om</item>
+    <item name="ag" weight="2" next="he">ag</item>
+    <item name="d">d</item>
+    <item name="Om" next="bi">Om</item>
+    <item name="e">e</item>
+    <item name="Om" next="eg">Om</item>
+    <item name="eg" weight="2" next="ug">eg</item>
+    <item name="h">h</item>
+    <item name="Om" next="og">Om</item>
+    <item name="og" weight="2" next="ul">og</item>
+    <item name="g">g</item>
+    <item name="Om" next="ug">Om</item>
+    <item name="ug">ug</item>
+    <item name="Start" weight="3">[On]</item>
+    <item name="On" next="og">On</item>
+    <item name="og">og</item>
+    <item name="On" next="ub">On</item>
+    <item name="ub" weight="2" next="ub">ub</item>
+    <item name="ub">ub</item>
+    <item name="On" next="ug">On</item>
+    <item name="ug">ug</item>
+    <item name="Start" weight="4">[Oo]</item>
+    <item name="Oo" next="da">Oo</item>
+    <item name="da" weight="5" next="gh">da</item>
+    <item name="gh">gh</item>
+    <item name="Oo" next="go">Oo</item>
+    <item name="m">m</item>
+    <item name="Oo" next="gu">Oo</item>
+    <item name="gu" weight="3" next="gb">gu</item>
+    <item name="u">u</item>
+    <item name="Oo" next="mi">Oo</item>
+    <item name="mi" weight="2" next="gi">mi</item>
+    <item name="g">g</item>
+    <item name="Start" weight="6">[Op]</item>
+    <item name="Op" next="at">Op</item>
+    <item name="at" weight="4" next="hu">at</item>
+    <item name="hu">hu</item>
+    <item name="Op" next="au">Op</item>
+    <item name="gh">gh</item>
+    <item name="Op" next="eg">Op</item>
+    <item name="eg" weight="2" next="ha">eg</item>
+    <item name="t">t</item>
+    <item name="Op" next="il">Op</item>
+    <item name="ge">ge</item>
+    <item name="Op" next="ka">Op</item>
+    <item name="t">t</item>
+    <item name="Op" next="og">Op</item>
+    <item name="og" weight="2" next="uk">og</item>
+    <item name="uk">uk</item>
+    <item name="Start">[Oq]</item>
+    <item name="Oq" next="ua">Oq</item>
+    <item name="ua" weight="2" next="ga">ua</item>
+    <item name="n">n</item>
+    <item name="Start" weight="8">[Or]</item>
+    <item name="Or" next="co">Or</item>
+    <item name="co" next="ba">co</item>
+    <item name="ba" next="l">ba</item>
+    <item name="l">l</item>
+    <item name="Or" next="do">Or</item>
+    <item name="do" next="ck">do</item>
+    <item name="ck">ck</item>
+    <item name="Or" next="gh">Or</item>
+    <item name="a">a</item>
+    <item name="Or" next="go">Or</item>
+    <item name="th">th</item>
+    <item name="Or" next="gr">Or</item>
+    <item name="gr" next="im">gr</item>
+    <item name="im">im</item>
+    <item name="Or" next="gu">Or</item>
+    <item name="g">g</item>
+    <item name="Or" next="pi">Or</item>
+    <item name="g">g</item>
+    <item name="Or" next="tg">Or</item>
+    <item name="h">h</item>
+    <item name="Start" weight="2">[Ot]</item>
+    <item name="Ot" next="hr">Ot</item>
+    <item name="hr" next="od">hr</item>
+    <item name="od">od</item>
+    <item name="Ot" next="ug">Ot</item>
+    <item name="bu">bu</item>
+    <item name="Start" weight="3">[Ou]</item>
+    <item name="Ou" next="gh">Ou</item>
+    <item name="a">a</item>
+    <item name="Ou" next="gi">Ou</item>
+    <item name="th">th</item>
+    <item name="Ou" next="hg">Ou</item>
+    <item name="hg" weight="3" next="an">hg</item>
+    <item name="an">an</item>
+    <item name="Start">[Ow]</item>
+    <item name="Ow" next="kb">Ow</item>
+    <item name="ok">ok</item>
+    <item name="Start" weight="8">[Pa]</item>
+    <item name="Pa" next="gh">Pa</item>
+    <item name="gh" next="or">gh</item>
+    <item name="im">im</item>
+    <item name="Pa" weight="2" next="hg">Pa</item>
+    <item name="h">h</item>
+    <item name="hg" weight="3" next="or">hg</item>
+    <item name="im">im</item>
+    <item name="Pa" next="kg">Pa</item>
+    <item name="u">u</item>
+    <item name="Pa" next="rf">Pa</item>
+    <item name="u">u</item>
+    <item name="Pa" next="rg">Pa</item>
+    <item name="u">u</item>
+    <item name="Pa" next="rh">Pa</item>
+    <item name="b">b</item>
+    <item name="Pa" next="ro">Pa</item>
+    <item name="d">d</item>
+    <item name="Start" weight="4">[Pe]</item>
+    <item name="Pe" next="gh">Pe</item>
+    <item name="ed">ed</item>
+    <item name="Pe" next="hr">Pe</item>
+    <item name="gu">gu</item>
+    <item name="Pe" next="rg">Pe</item>
+    <item name="u">u</item>
+    <item name="Pe" next="rt">Pe</item>
+    <item name="g">g</item>
+    <item name="Start" weight="3">[Pi]</item>
+    <item name="Pi" next="gd">Pi</item>
+    <item name="ug">ug</item>
+    <item name="Pi" next="gg">Pi</item>
+    <item name="u">u</item>
+    <item name="Pi" next="tg">Pi</item>
+    <item name="at">at</item>
+    <item name="Start" weight="5">[Po]</item>
+    <item name="Po" next="da">Po</item>
+    <item name="g">g</item>
+    <item name="Po" next="fh">Po</item>
+    <item name="ug">ug</item>
+    <item name="Po" next="mg">Po</item>
+    <item name="g">g</item>
+    <item name="Po" next="og">Po</item>
+    <item name="h">h</item>
+    <item name="Po" next="rg">Po</item>
+    <item name="ag">ag</item>
+    <item name="Start" weight="5">[Pr]</item>
+    <item name="Pr" next="eg">Pr</item>
+    <item name="u">u</item>
+    <item name="Pr" next="et">Pr</item>
+    <item name="g">g</item>
+    <item name="Pr" next="ig">Pr</item>
+    <item name="ka">ka</item>
+    <item name="Pr" next="ik">Pr</item>
+    <item name="k">k</item>
+    <item name="Pr" next="ut">Pr</item>
+    <item name="ha">ha</item>
+    <item name="Start" weight="3">[Pu]</item>
+    <item name="Pu" next="gh">Pu</item>
+    <item name="ug">ug</item>
+    <item name="Pu" next="il">Pu</item>
+    <item name="g">g</item>
+    <item name="Pu" next="rb">Pu</item>
+    <item name="ag">ag</item>
+    <item name="Start">[Qo]</item>
+    <item name="Qo" next="g">Qo</item>
+    <item name="g">g</item>
+    <item name="Start" weight="6">[Qu]</item>
+    <item name="Qu" next="ad">Qu</item>
+    <item name="h">h</item>
+    <item name="Qu" next="il">Qu</item>
+    <item name="ge">ge</item>
+    <item name="Qu" next="im">Qu</item>
+    <item name="ig">ig</item>
+    <item name="Qu" next="om">Qu</item>
+    <item name="gh">gh</item>
+    <item name="Qu" next="or">Qu</item>
+    <item name="d">d</item>
+    <item name="Qu" next="ug">Qu</item>
+    <item name="ug">ug</item>
+    <item name="Start" weight="5">[Ra]</item>
+    <item name="Ra" next="db">Ra</item>
+    <item name="db" next="ug">db</item>
+    <item name="ug">ug</item>
+    <item name="Ra" next="gh">Ra</item>
+    <item name="at">at</item>
+    <item name="Ra" next="gu">Ra</item>
+    <item name="k">k</item>
+    <item name="Ra" next="kg">Ra</item>
+    <item name="u">u</item>
+    <item name="Ra" next="rf">Ra</item>
+    <item name="u">u</item>
+    <item name="Start">[Re]</item>
+    <item name="Re" next="bu">Re</item>
+    <item name="b">b</item>
+    <item name="Start">[Ri]</item>
+    <item name="Ri" next="lu">Ri</item>
+    <item name="g">g</item>
+    <item name="Start" weight="3">[Ro]</item>
+    <item name="Ro" next="da">Ro</item>
+    <item name="g">g</item>
+    <item name="Ro" next="ma">Ro</item>
+    <item name="d">d</item>
+    <item name="Ro" next="ut">Ro</item>
+    <item name="ut" next="hu">ut</item>
+    <item name="hu">hu</item>
+    <item name="Start" weight="4">[Ru]</item>
+    <item name="Ru" next="gb">Ru</item>
+    <item name="u">u</item>
+    <item name="Ru" next="go">Ru</item>
+    <item name="m">m</item>
+    <item name="Ru" next="rb">Ru</item>
+    <item name="ag">ag</item>
+    <item name="Ru" next="ri">Ru</item>
+    <item name="ri" next="gi">ri</item>
+    <item name="g">g</item>
+    <item name="Start" weight="12">[Sa]</item>
+    <item name="Sa" next="bu">Sa</item>
+    <item name="b">b</item>
+    <item name="Sa" next="gh">Sa</item>
+    <item name="ig">ig</item>
+    <item name="Sa" weight="2" next="hg">Sa</item>
+    <item name="h">h</item>
+    <item name="im">im</item>
+    <item name="Sa" next="kg">Sa</item>
+    <item name="u">u</item>
+    <item name="Sa" next="lt">Sa</item>
+    <item name="hu">hu</item>
+    <item name="Sa" next="ra">Sa</item>
+    <item name="ra" weight="2" next="ug">ra</item>
+    <item name="ug">ug</item>
+    <item name="Sa" next="rf">Sa</item>
+    <item name="u">u</item>
+    <item name="Sa" next="rg">Sa</item>
+    <item name="g">g</item>
+    <item name="Sa" next="rh">Sa</item>
+    <item name="b">b</item>
+    <item name="Sa" next="ro">Sa</item>
+    <item name="d">d</item>
+    <item name="Sa" next="ur">Sa</item>
+    <item name="ur" next="fa">ur</item>
+    <item name="fa" next="ng">fa</item>
+    <item name="ng">ng</item>
+    <item name="Start">[Sb]</item>
+    <item name="Sb" next="gh">Sb</item>
+    <item name="at">at</item>
+    <item name="Start">[Se]</item>
+    <item name="Se" next="ak">Se</item>
+    <item name="gu">gu</item>
+    <item name="Start">[Sg]</item>
+    <item name="Sg" next="uk">Sg</item>
+    <item name="uk">uk</item>
+    <item name="Start" weight="4">[Sh]</item>
+    <item name="Sh" next="ag">Sh</item>
+    <item name="ag" next="ra">ag</item>
+    <item name="ra" next="t">ra</item>
+    <item name="t">t</item>
+    <item name="Sh" next="ar">Sh</item>
+    <item name="ar" next="ga">ar</item>
+    <item name="ga" next="as">ga</item>
+    <item name="as">as</item>
+    <item name="Sh" next="om">Sh</item>
+    <item name="d">d</item>
+    <item name="Sh" next="ul">Sh</item>
+    <item name="g">g</item>
+    <item name="Start" weight="4">[Si]</item>
+    <item name="Si" next="ld">Si</item>
+    <item name="ud">ud</item>
+    <item name="Si" next="lg">Si</item>
+    <item name="e">e</item>
+    <item name="Si" next="lu">Si</item>
+    <item name="g">g</item>
+    <item name="Si" next="ns">Si</item>
+    <item name="ns" weight="2" next="bo">ns</item>
+    <item name="bo" weight="2" next="g">bo</item>
+    <item name="g">g</item>
+    <item name="Start" weight="6">[Sl]</item>
+    <item name="Sl" next="ag">Sl</item>
+    <item name="g">g</item>
+    <item name="Sl" next="ap">Sl</item>
+    <item name="d">d</item>
+    <item name="Sl" next="au">Sl</item>
+    <item name="gh">gh</item>
+    <item name="Sl" next="od">Sl</item>
+    <item name="h">h</item>
+    <item name="Sl" next="og">Sl</item>
+    <item name="og">og</item>
+    <item name="Sl" next="ug">Sl</item>
+    <item name="g">g</item>
+    <item name="Start" weight="3">[Sm]</item>
+    <item name="Sm" next="ag">Sm</item>
+    <item name="d">d</item>
+    <item name="Sm" next="eg">Sm</item>
+    <item name="h">h</item>
+    <item name="Sm" next="og">Sm</item>
+    <item name="g">g</item>
+    <item name="Start" weight="4">[Sn]</item>
+    <item name="Sn" next="ag">Sn</item>
+    <item name="ag" next="a">ag</item>
+    <item name="a">a</item>
+    <item name="Sn" next="og">Sn</item>
+    <item name="og">og</item>
+    <item name="Sn" next="ub">Sn</item>
+    <item name="ub">ub</item>
+    <item name="Sn" next="ug">Sn</item>
+    <item name="ug">ug</item>
+    <item name="Start" weight="11">[So]</item>
+    <item name="So" next="da">So</item>
+    <item name="gh">gh</item>
+    <item name="So" next="g">So</item>
+    <item name="g">g</item>
+    <item name="So" next="go">So</item>
+    <item name="m">m</item>
+    <item name="So" weight="2" next="gu">So</item>
+    <item name="u">u</item>
+    <item name="gh">gh</item>
+    <item name="So" next="mb">So</item>
+    <item name="mb" weight="2" next="il">mb</item>
+    <item name="ge">ge</item>
+    <item name="So" next="mi">So</item>
+    <item name="g">g</item>
+    <item name="So" next="na">So</item>
+    <item name="na" weight="2" next="gh">na</item>
+    <item name="gh">gh</item>
+    <item name="So" next="rg">So</item>
+    <item name="g">g</item>
+    <item name="So" next="rn">So</item>
+    <item name="rn" weight="2" next="ar">rn</item>
+    <item name="gh">gh</item>
+    <item name="So" next="ug">So</item>
+    <item name="t">t</item>
+    <item name="Start" weight="4">[Sp]</item>
+    <item name="Sp" next="at">Sp</item>
+    <item name="hu">hu</item>
+    <item name="Sp" next="eg">Sp</item>
+    <item name="t">t</item>
+    <item name="Sp" next="il">Sp</item>
+    <item name="ge">ge</item>
+    <item name="Sp" next="og">Sp</item>
+    <item name="uk">uk</item>
+    <item name="Start">[Sq]</item>
+    <item name="Sq" next="ua">Sq</item>
+    <item name="n">n</item>
+    <item name="Start">[St]</item>
+    <item name="St" next="ug">St</item>
+    <item name="bu">bu</item>
+    <item name="Start" weight="19">[Su]</item>
+    <item name="Su" next="da">Su</item>
+    <item name="g">g</item>
+    <item name="Su" next="ga">Su</item>
+    <item name="d">d</item>
+    <item name="Su" next="gb">Su</item>
+    <item name="u">u</item>
+    <item name="Su" next="gh">Su</item>
+    <item name="a">a</item>
+    <item name="Su" next="gi">Su</item>
+    <item name="th">th</item>
+    <item name="Su" next="go">Su</item>
+    <item name="m">m</item>
+    <item name="Su" next="hg">Su</item>
+    <item name="an">an</item>
+    <item name="Su" next="lg">Su</item>
+    <item name="ha">ha</item>
+    <item name="Su" next="lm">Su</item>
+    <item name="lm" weight="2" next="th">lm</item>
+    <item name="u">u</item>
+    <item name="Su" next="mh">Su</item>
+    <item name="ug">ug</item>
+    <item name="Su" next="no">Su</item>
+    <item name="no" weight="2" next="da">no</item>
+    <item name="gh">gh</item>
+    <item name="Su" next="nu">Su</item>
+    <item name="nu" weight="2" next="gu">nu</item>
+    <item name="k">k</item>
+    <item name="Su" next="pa">Su</item>
+    <item name="pa" weight="2" next="ug">pa</item>
+    <item name="h">h</item>
+    <item name="Su" next="pg">Su</item>
+    <item name="h">h</item>
+    <item name="Su" next="rb">Su</item>
+    <item name="ag">ag</item>
+    <item name="Su" weight="3" next="rg">Su</item>
+    <item name="rg" weight="2" next="ha">rg</item>
+    <item name="ha">ha</item>
+    <item name="d">d</item>
+    <item name="rg" weight="3" next="ug">rg</item>
+    <item name="ug">ug</item>
+    <item name="Su" next="rp">Su</item>
+    <item name="rp" weight="2" next="ig">rp</item>
+    <item name="ig">ig</item>
+    <item name="Start" weight="8">[Ta]</item>
+    <item name="Ta" next="gd">Ta</item>
+    <item name="ud">ud</item>
+    <item name="Ta" next="gh">Ta</item>
+    <item name="ig">ig</item>
+    <item name="Ta" next="nd">Ta</item>
+    <item name="h">h</item>
+    <item name="Ta" next="rf">Ta</item>
+    <item name="u">u</item>
+    <item name="Ta" weight="2" next="rg">Ta</item>
+    <item name="d">d</item>
+    <item name="h">h</item>
+    <item name="Ta" next="ro">Ta</item>
+    <item name="d">d</item>
+    <item name="Ta" next="ug">Ta</item>
+    <item name="h">h</item>
+    <item name="Start">[Te]</item>
+    <item name="Te" next="ld">Te</item>
+    <item name="lg">lg</item>
+    <item name="Start" weight="2">[Ti]</item>
+    <item name="Ti" next="dg">Ti</item>
+    <item name="ug">ug</item>
+    <item name="Ti" next="lg">Ti</item>
+    <item name="e">e</item>
+    <item name="Start" weight="7">[To]</item>
+    <item name="To" next="da">To</item>
+    <item name="g">g</item>
+    <item name="To" next="g">To</item>
+    <item name="g">g</item>
+    <item name="To" next="gh">To</item>
+    <item name="at">at</item>
+    <item name="To" next="gu">To</item>
+    <item name="gh">gh</item>
+    <item name="To" next="rg">To</item>
+    <item name="an">an</item>
+    <item name="To" next="ru">To</item>
+    <item name="g">g</item>
+    <item name="To" next="zh">To</item>
+    <item name="ug">ug</item>
+    <item name="Start" weight="5">[Tr]</item>
+    <item name="Tr" next="au">Tr</item>
+    <item name="gh">gh</item>
+    <item name="Tr" next="il">Tr</item>
+    <item name="ug">ug</item>
+    <item name="Tr" next="ou">Tr</item>
+    <item name="a">a</item>
+    <item name="Tr" next="ug">Tr</item>
+    <item name="h">h</item>
+    <item name="Tr" next="ui">Tr</item>
+    <item name="g">g</item>
+    <item name="Start" weight="4">[Tu]</item>
+    <item name="Tu" next="gg">Tu</item>
+    <item name="ug">ug</item>
+    <item name="Tu" next="lg">Tu</item>
+    <item name="an">an</item>
+    <item name="Tu" next="rb">Tu</item>
+    <item name="ag">ag</item>
+    <item name="Tu" next="rg">Tu</item>
+    <item name="rg" next="e">rg</item>
+    <item name="e">e</item>
+    <item name="Start">[Uf]</item>
+    <item name="Uf" next="th">Uf</item>
+    <item name="ak">ak</item>
+    <item name="Start" weight="5">[Ug]</item>
+    <item name="Ug">Ug</item>
+    <item name="Ug" next="gh">Ug</item>
+    <item name="ra">ra</item>
+    <item name="Ug" next="gu">Ug</item>
+    <item name="g">g</item>
+    <item name="Ug" next="ha">Ug</item>
+    <item name="t">t</item>
+    <item name="Ug" next="lu">Ug</item>
+    <item name="lu" next="k">lu</item>
+    <item name="k">k</item>
+    <item name="Start" weight="3">[Ul]</item>
+    <item name="Ul" next="ga">Ul</item>
+    <item name="n">n</item>
+    <item name="Ul" weight="2" next="mr">Ul</item>
+    <item name="mr" next="ag">mr</item>
+    <item name="ag" next="ha">ag</item>
+    <item name="ha">ha</item>
+    <item name="mr" next="ou">mr</item>
+    <item name="a">a</item>
+    <item name="Start" weight="3">[Um]</item>
+    <item name="Um" next="hr">Um</item>
+    <item name="hr" next="a">hr</item>
+    <item name="a">a</item>
+    <item name="Um" next="ra">Um</item>
+    <item name="ra" next="gi">ra</item>
+    <item name="g">g</item>
+    <item name="Um" next="ru">Um</item>
+    <item name="ru" next="ig">ru</item>
+    <item name="ig">ig</item>
+    <item name="Start" weight="2">[Un]</item>
+    <item name="Un" next="ga">Un</item>
+    <item name="ga" weight="2" next="gh">ga</item>
+    <item name="gh">gh</item>
+    <item name="Un" next="ru">Un</item>
+    <item name="ru" next="ga">ru</item>
+    <item name="gh">gh</item>
+    <item name="Start" weight="12">[Ur]</item>
+    <item name="Ur" next="ag">Ur</item>
+    <item name="ag">ag</item>
+    <item name="Ur" next="au">Ur</item>
+    <item name="gh">gh</item>
+    <item name="Ur" next="g">Ur</item>
+    <item name="g">g</item>
+    <item name="Ur" next="ga">Ur</item>
+    <item name="n">n</item>
+    <item name="Ur" next="gh">Ur</item>
+    <item name="at">at</item>
+    <item name="Ur" next="gr">Ur</item>
+    <item name="gr" next="an">gr</item>
+    <item name="an">an</item>
+    <item name="Ur" next="lg">Ur</item>
+    <item name="an">an</item>
+    <item name="Ur" next="mu">Ur</item>
+    <item name="mu" next="g">mu</item>
+    <item name="g">g</item>
+    <item name="Ur" next="ok">Ur</item>
+    <item name="ok">ok</item>
+    <item name="Ur" next="ug">Ur</item>
+    <item name="ug">ug</item>
+    <item name="Ur" next="uk">Ur</item>
+    <item name="uk">uk</item>
+    <item name="Ur" next="ul">Ur</item>
+    <item name="g">g</item>
+    <item name="Start" weight="17">[Va]</item>
+    <item name="Va" next="bu">Va</item>
+    <item name="u">u</item>
+    <item name="Va" next="ga">Va</item>
+    <item name="n">n</item>
+    <item name="Va" next="gr">Va</item>
+    <item name="gr" next="un">gr</item>
+    <item name="un" next="ga">un</item>
+    <item name="ga" next="d">ga</item>
+    <item name="d">d</item>
+    <item name="Va" next="gu">Va</item>
+    <item name="ad">ad</item>
+    <item name="Va" weight="2" next="kg">Va</item>
+    <item name="kg" next="ar">kg</item>
+    <item name="ar">ar</item>
+    <item name="u">u</item>
+    <item name="Va" next="km">Va</item>
+    <item name="km" next="u">km</item>
+    <item name="u">u</item>
+    <item name="Va" next="lt">Va</item>
+    <item name="rg">rg</item>
+    <item name="Va" next="mb">Va</item>
+    <item name="mb" next="ag">mb</item>
+    <item name="ag">ag</item>
+    <item name="Va" next="mu">Va</item>
+    <item name="mu" next="gb">mu</item>
+    <item name="u">u</item>
+    <item name="Va" weight="2" next="rb">Va</item>
+    <item name="rb" next="u">rb</item>
+    <item name="u">u</item>
+    <item name="rb" next="uk">rb</item>
+    <item name="uk">uk</item>
+    <item name="Va" next="rf">Va</item>
+    <item name="u">u</item>
+    <item name="Va" weight="2" next="rg">Va</item>
+    <item name="an">an</item>
+    <item name="uk">uk</item>
+    <item name="Va" next="rk">Va</item>
+    <item name="rk" next="go">rk</item>
+    <item name="m">m</item>
+    <item name="Va" next="rt">Va</item>
+    <item name="rg">rg</item>
+    <item name="Start" weight="6">[Ve]</item>
+    <item name="Ve" next="gu">Ve</item>
+    <item name="gu" next="m">gu</item>
+    <item name="m">m</item>
+    <item name="Ve" next="rg">Ve</item>
+    <item name="u">u</item>
+    <item name="Ve" next="rl">Ve</item>
+    <item name="rl" next="gu">rl</item>
+    <item name="gu">gu</item>
+    <item name="Ve" weight="2" next="rt">Ve</item>
+    <item name="g">g</item>
+    <item name="rg">rg</item>
+    <item name="Ve" next="to">Ve</item>
+    <item name="to" next="rk">to</item>
+    <item name="rk" next="ag">rk</item>
+    <item name="ag">ag</item>
+    <item name="Start" weight="8">[Vi]</item>
+    <item name="Vi" next="da">Vi</item>
+    <item name="k">k</item>
+    <item name="Vi" weight="2" next="gd">Vi</item>
+    <item name="gd" next="ol">gd</item>
+    <item name="ol" next="g">ol</item>
+    <item name="g">g</item>
+    <item name="ug">ug</item>
+    <item name="Vi" weight="2" next="gg">Vi</item>
+    <item name="u">u</item>
+    <item name="gg" next="ul">gg</item>
+    <item name="ul" next="m">ul</item>
+    <item name="m">m</item>
+    <item name="Vi" next="gu">Vi</item>
+    <item name="gu" next="ka">gu</item>
+    <item name="ka">ka</item>
+    <item name="Vi" weight="2" next="tg">Vi</item>
+    <item name="at">at</item>
+    <item name="ut">ut</item>
+    <item name="Start" weight="2">[Vl]</item>
+    <item name="Vl" next="og">Vl</item>
+    <item name="og">og</item>
+    <item name="Vl" next="or">Vl</item>
+    <item name="or" next="g">or</item>
+    <item name="g">g</item>
+    <item name="Start" weight="3">[Vo]</item>
+    <item name="Vo" weight="2" next="rg">Vo</item>
+    <item name="ak">ak</item>
+    <item name="ag">ag</item>
+    <item name="Vo" next="th">Vo</item>
+    <item name="ug">ug</item>
+    <item name="Start" weight="9">[Vr]</item>
+    <item name="Vr" next="eg">Vr</item>
+    <item name="u">u</item>
+    <item name="Vr" next="et">Vr</item>
+    <item name="g">g</item>
+    <item name="Vr" next="ig">Vr</item>
+    <item name="ka">ka</item>
+    <item name="Vr" next="ik">Vr</item>
+    <item name="k">k</item>
+    <item name="Vr" weight="2" next="og">Vr</item>
+    <item name="og" next="ak">og</item>
+    <item name="ak">ak</item>
+    <item name="og" next="ra">og</item>
+    <item name="ra" weight="2" next="g">ra</item>
+    <item name="g">g</item>
+    <item name="Vr" next="ot">Vr</item>
+    <item name="hu">hu</item>
+    <item name="Vr" next="uh">Vr</item>
+    <item name="uh" next="ag">uh</item>
+    <item name="ag">ag</item>
+    <item name="Vr" next="ut">Vr</item>
+    <item name="ha">ha</item>
+    <item name="Start" weight="7">[Vu]</item>
+    <item name="Vu" next="bu">Vu</item>
+    <item name="b">b</item>
+    <item name="Vu" next="gu">Vu</item>
+    <item name="b">b</item>
+    <item name="Vu" next="il">Vu</item>
+    <item name="g">g</item>
+    <item name="Vu" next="kg">Vu</item>
+    <item name="ug">ug</item>
+    <item name="Vu" next="lt">Vu</item>
+    <item name="lt" next="og">lt</item>
+    <item name="og">og</item>
+    <item name="Vu" next="lu">Vu</item>
+    <item name="g">g</item>
+    <item name="Vu" next="rb">Vu</item>
+    <item name="ag">ag</item>
+    <item name="Start" weight="5">[Wa]</item>
+    <item name="Wa" next="kg">Wa</item>
+    <item name="kg" next="ut">kg</item>
+    <item name="ut">ut</item>
+    <item name="Wa" next="nu">Wa</item>
+    <item name="g">g</item>
+    <item name="Wa" next="pk">Wa</item>
+    <item name="pk" next="ag">pk</item>
+    <item name="ag" next="ut">ag</item>
+    <item name="ut">ut</item>
+    <item name="Wa" next="ru">Wa</item>
+    <item name="ru" weight="2" next="k">ru</item>
+    <item name="k">k</item>
+    <item name="Wa" next="uk">Wa</item>
+    <item name="uk" next="tu">uk</item>
+    <item name="g">g</item>
+    <item name="Start" weight="2">[We]</item>
+    <item name="We" next="gu">We</item>
+    <item name="b">b</item>
+    <item name="We" next="lu">We</item>
+    <item name="b">b</item>
+    <item name="Start">[Wh]</item>
+    <item name="Wh" next="ol">Wh</item>
+    <item name="ug">ug</item>
+    <item name="Start" weight="3">[Wi]</item>
+    <item name="Wi" next="la">Wi</item>
+    <item name="ug">ug</item>
+    <item name="Wi" next="ng">Wi</item>
+    <item name="ng" next="lo">ng</item>
+    <item name="lo" next="ug">lo</item>
+    <item name="ug">ug</item>
+    <item name="Wi" next="nu">Wi</item>
+    <item name="g">g</item>
+    <item name="Start" weight="11">[Wo]</item>
+    <item name="Wo" next="ab">Wo</item>
+    <item name="ug">ug</item>
+    <item name="Wo" weight="2" next="gg">Wo</item>
+    <item name="gg" next="ha">gg</item>
+    <item name="ha">ha</item>
+    <item name="ug" next="at">ug</item>
+    <item name="at">at</item>
+    <item name="Wo" weight="2" next="gh">Wo</item>
+    <item name="gh" next="ar">gh</item>
+    <item name="ar" next="od">ar</item>
+    <item name="od">od</item>
+    <item name="gh" next="ug">gh</item>
+    <item name="ug" next="la">ug</item>
+    <item name="la" next="t">la</item>
+    <item name="t">t</item>
+    <item name="Wo" next="gl">Wo</item>
+    <item name="gl" next="ug">gl</item>
+    <item name="ug">ug</item>
+    <item name="Wo" next="kg">Wo</item>
+    <item name="kg" next="an">kg</item>
+    <item name="an" next="it">an</item>
+    <item name="it">it</item>
+    <item name="Wo" next="mk">Wo</item>
+    <item name="mk" weight="2" next="ug">mk</item>
+    <item name="ug">ug</item>
+    <item name="Wo" next="mr">Wo</item>
+    <item name="mr" next="ik">mr</item>
+    <item name="ug">ug</item>
+    <item name="Wo" next="na">Wo</item>
+    <item name="na" next="ba">na</item>
+    <item name="ba" next="du">ba</item>
+    <item name="du" next="g">du</item>
+    <item name="g">g</item>
+    <item name="Wo" next="rt">Wo</item>
+    <item name="g">g</item>
+    <item name="Start" weight="4">[Wr]</item>
+    <item name="Wr" next="ao">Wr</item>
+    <item name="ao" weight="2" next="g">ao</item>
+    <item name="g">g</item>
+    <item name="Wr" next="ug">Wr</item>
+    <item name="ug">ug</item>
+    <item name="Wr" weight="2" next="uk">Wr</item>
+    <item name="ag">ag</item>
+    <item name="uk" next="ao">uk</item>
+    <item name="g">g</item>
+    <item name="Start" weight="12">[Wu]</item>
+    <item name="Wu" next="bd">Wu</item>
+    <item name="og">og</item>
+    <item name="Wu" next="dg">Wu</item>
+    <item name="dg" next="h">dg</item>
+    <item name="h">h</item>
+    <item name="Wu" next="dh">Wu</item>
+    <item name="h">h</item>
+    <item name="Wu" next="du">Wu</item>
+    <item name="du" next="go">du</item>
+    <item name="g">g</item>
+    <item name="Wu" next="gl">Wu</item>
+    <item name="at">at</item>
+    <item name="Wu" next="ma">Wu</item>
+    <item name="ma" next="no">ma</item>
+    <item name="no" weight="2" next="k">no</item>
+    <item name="k">k</item>
+    <item name="Wu" next="mk">Wu</item>
+    <item name="mk" next="ba">mk</item>
+    <item name="ba" next="no">ba</item>
+    <item name="k">k</item>
+    <item name="Wu" next="rg">Wu</item>
+    <item name="rg" next="ot">rg</item>
+    <item name="h">h</item>
+    <item name="Wu" next="rm">Wu</item>
+    <item name="rm" next="ha">rm</item>
+    <item name="ha">ha</item>
+    <item name="Wu" weight="2" next="rt">Wu</item>
+    <item name="rt" next="gu">rt</item>
+    <item name="gu" next="th">gu</item>
+    <item name="th">th</item>
+    <item name="hu">hu</item>
+    <item name="Wu" next="tg">Wu</item>
+    <item name="ek">ek</item>
+    <item name="Start" weight="7">[Xa]</item>
+    <item name="Xa" next="ak">Xa</item>
+    <item name="t">t</item>
+    <item name="Xa" weight="2" next="go">Xa</item>
+    <item name="go">go</item>
+    <item name="go" next="k">go</item>
+    <item name="k">k</item>
+    <item name="Xa" weight="2" next="gu">Xa</item>
+    <item name="gu">gu</item>
+    <item name="k">k</item>
+    <item name="Xa" next="rl">Xa</item>
+    <item name="rl" next="ug">rl</item>
+    <item name="ug">ug</item>
+    <item name="Xa" next="rp">Xa</item>
+    <item name="rp" next="ug">rp</item>
+    <item name="ug">ug</item>
+    <item name="Start" weight="2">[Xe]</item>
+    <item name="Xe" next="gu">Xe</item>
+    <item name="g">g</item>
+    <item name="Xe" next="pu">Xe</item>
+    <item name="pu" next="g">pu</item>
+    <item name="g">g</item>
+    <item name="Start">[Xi]</item>
+    <item name="Xi" next="g">Xi</item>
+    <item name="g">g</item>
+    <item name="Start" weight="3">[Xn]</item>
+    <item name="Xn" next="at">Xn</item>
+    <item name="h">h</item>
+    <item name="Xn" next="au">Xn</item>
+    <item name="au" next="rl">au</item>
+    <item name="rl">rl</item>
+    <item name="Xn" next="ur">Xn</item>
+    <item name="l">l</item>
+    <item name="Start" weight="13">[Xo]</item>
+    <item name="Xo" next="kn">Xo</item>
+    <item name="h">h</item>
+    <item name="Xo" next="ku">Xo</item>
+    <item name="ku" next="k">ku</item>
+    <item name="k">k</item>
+    <item name="Xo" next="la">Xo</item>
+    <item name="g">g</item>
+    <item name="Xo" next="lk">Xo</item>
+    <item name="lk" next="ug">lk</item>
+    <item name="ug">ug</item>
+    <item name="Xo" next="ma">Xo</item>
+    <item name="ma" next="th">ma</item>
+    <item name="th">th</item>
+    <item name="Xo" next="mk">Xo</item>
+    <item name="ug">ug</item>
+    <item name="Xo" next="mo">Xo</item>
+    <item name="ku">ku</item>
+    <item name="Xo" next="no">Xo</item>
+    <item name="no" next="th">no</item>
+    <item name="th">th</item>
+    <item name="Xo" weight="2" next="ra">Xo</item>
+    <item name="g">g</item>
+    <item name="ra" next="kk">ra</item>
+    <item name="kk">kk</item>
+    <item name="Xo" next="ro">Xo</item>
+    <item name="ro" next="ku">ro</item>
+    <item name="ku">ku</item>
+    <item name="Xo" next="ru">Xo</item>
+    <item name="k">k</item>
+    <item name="Xo" next="th">Xo</item>
+    <item name="th" next="ku">th</item>
+    <item name="g">g</item>
+    <item name="Start">[Xr]</item>
+    <item name="Xr" next="uu">Xr</item>
+    <item name="l">l</item>
+    <item name="Start" weight="20">[Xu]</item>
+    <item name="Xu" next="ag">Xu</item>
+    <item name="ag">ag</item>
+    <item name="Xu" next="g">Xu</item>
+    <item name="g">g</item>
+    <item name="Xu" weight="5" next="ga">Xu</item>
+    <item name="ga" next="a">ga</item>
+    <item name="a">a</item>
+    <item name="g">g</item>
+    <item name="g">g</item>
+    <item name="ga" next="r">ga</item>
+    <item name="r">r</item>
+    <item name="ga" next="rf">ga</item>
+    <item name="rf">rf</item>
+    <item name="Xu" next="gh">Xu</item>
+    <item name="a">a</item>
+    <item name="Xu" next="go">Xu</item>
+    <item name="go" next="r">go</item>
+    <item name="r">r</item>
+    <item name="Xu" next="gu">Xu</item>
+    <item name="g">g</item>
+    <item name="Xu" next="ja">Xu</item>
+    <item name="k">k</item>
+    <item name="Xu" next="k">Xu</item>
+    <item name="k">k</item>
+    <item name="Xu" next="lg">Xu</item>
+    <item name="lg" next="ag">lg</item>
+    <item name="ag">ag</item>
+    <item name="Xu" weight="2" next="na">Xu</item>
+    <item name="t">t</item>
+    <item name="g">g</item>
+    <item name="Xu" next="nu">Xu</item>
+    <item name="g">g</item>
+    <item name="Xu" next="re">Xu</item>
+    <item name="k">k</item>
+    <item name="Xu" next="rl">Xu</item>
+    <item name="rl">rl</item>
+    <item name="Xu" weight="2" next="ru">Xu</item>
+    <item name="g">g</item>
+    <item name="kk">kk</item>
+    <item name="Xu" next="ta">Xu</item>
+    <item name="g">g</item>
+    <item name="Xu" next="th">Xu</item>
+    <item name="ug">ug</item>
+    <item name="Xu" next="tj">Xu</item>
+    <item name="ja">ja</item>
+    <item name="Start" weight="9">[Ya]</item>
+    <item name="Ya" next="gh">Ya</item>
+    <item name="ed">ed</item>
+    <item name="Ya" weight="2" next="gn">Ya</item>
+    <item name="gn" next="ar">gn</item>
+    <item name="ar">ar</item>
+    <item name="at" next="z">at</item>
+    <item name="z">z</item>
+    <item name="Ya" next="hg">Ya</item>
+    <item name="hg">hg</item>
+    <item name="Ya" next="hi">Ya</item>
+    <item name="g">g</item>
+    <item name="Ya" next="kg">Ya</item>
+    <item name="kg" weight="2" next="na">kg</item>
+    <item name="na" weight="2" next="th">na</item>
+    <item name="th">th</item>
+    <item name="" />
+    <item name="Ya" next="kh">Ya</item>
+    <item name="a">a</item>
+    <item name="Ya" next="la">Ya</item>
+    <item name="h">h</item>
+    <item name="Ya" next="rg">Ya</item>
+    <item name="ug">ug</item>
+    <item name="Start" weight="4">[Ye]</item>
+    <item name="Ye" next="gi">Ye</item>
+    <item name="th">th</item>
+    <item name="Ye" next="go">Ye</item>
+    <item name="th">th</item>
+    <item name="Ye" next="rg">Ye</item>
+    <item name="g">g</item>
+    <item name="Ye" next="ru">Ye</item>
+    <item name="g">g</item>
+    <item name="Start">[Ym]</item>
+    <item name="Ym" next="af">Ym</item>
+    <item name="af" next="ub">af</item>
+    <item name="ub" next="ag">ub</item>
+    <item name="ag">ag</item>
+    <item name="Start" weight="4">[Yo]</item>
+    <item name="Yo" weight="2" next="kg">Yo</item>
+    <item name="u">u</item>
+    <item name="u">u</item>
+    <item name="Yo" next="lm">Yo</item>
+    <item name="lm" next="ar">lm</item>
+    <item name="ar">ar</item>
+    <item name="Yo" next="nk">Yo</item>
+    <item name="nk" weight="2" next="at">nk</item>
+    <item name="hu">hu</item>
+    <item name="Start" weight="2">[Yr]</item>
+    <item name="Yr" next="eg">Yr</item>
+    <item name="h">h</item>
+    <item name="Yr" next="oh">Yr</item>
+    <item name="oh">oh</item>
+    <item name="Start">[Ys]</item>
+    <item name="Ys" next="ag">Ys</item>
+    <item name="ub" next="ar">ub</item>
+    <item name="ar">ar</item>
+    <item name="Start" weight="7">[Yu]</item>
+    <item name="Yu" next="gh">Yu</item>
+    <item name="gh">gh</item>
+    <item name="Yu" next="gu">Yu</item>
+    <item name="g">g</item>
+    <item name="Yu" next="kg">Yu</item>
+    <item name="th">th</item>
+    <item name="Yu" next="kh">Yu</item>
+    <item name="a">a</item>
+    <item name="Yu" next="la">Yu</item>
+    <item name="h">h</item>
+    <item name="Yu" next="nk">Yu</item>
+    <item name="hu">hu</item>
+    <item name="Yu" next="rt">Yu</item>
+    <item name="rt" next="ru">rt</item>
+    <item name="ru" next="s">ru</item>
+    <item name="s">s</item>
+    <item name="Start" weight="11">[Za]</item>
+    <item name="Za" next="bg">Za</item>
+    <item name="bg" next="ha">bg</item>
+    <item name="t">t</item>
+    <item name="Za" next="bu">Za</item>
+    <item name="b">b</item>
+    <item name="Za" next="gh">Za</item>
+    <item name="ig">ig</item>
+    <item name="Za" weight="2" next="hg">Za</item>
+    <item name="h">h</item>
+    <item name="im">im</item>
+    <item name="Za" next="lt">Za</item>
+    <item name="hu">hu</item>
+    <item name="Za" next="ra">Za</item>
+    <item name="ug">ug</item>
+    <item name="Za" next="rf">Za</item>
+    <item name="u">u</item>
+    <item name="Za" next="rg">Za</item>
+    <item name="g">g</item>
+    <item name="Za" next="rh">Za</item>
+    <item name="b">b</item>
+    <item name="Za" next="ro">Za</item>
+    <item name="d">d</item>
+    <item name="Start">[Ze]</item>
+    <item name="Ze" next="ak">Ze</item>
+    <item name="gu">gu</item>
+    <item name="Start">[Zg]</item>
+    <item name="Zg" next="uk">Zg</item>
+    <item name="uk">uk</item>
+    <item name="Start" weight="4">[Zi]</item>
+    <item name="Zi" next="ld">Zi</item>
+    <item name="ud">ud</item>
+    <item name="Zi" next="lg">Zi</item>
+    <item name="e">e</item>
+    <item name="Zi" next="lu">Zi</item>
+    <item name="g">g</item>
+    <item name="Zi" next="ns">Zi</item>
+    <item name="g">g</item>
+    <item name="Start" weight="3">[Zl]</item>
+    <item name="Zl" next="ap">Zl</item>
+    <item name="d">d</item>
+    <item name="Zl" next="og">Zl</item>
+    <item name="og">og</item>
+    <item name="Zl" next="ug">Zl</item>
+    <item name="g">g</item>
+    <item name="Start" weight="11">[Zo]</item>
+    <item name="Zo" next="da">Zo</item>
+    <item name="gh">gh</item>
+    <item name="Zo" next="g">Zo</item>
+    <item name="g">g</item>
+    <item name="Zo" weight="2" next="gu">Zo</item>
+    <item name="u">u</item>
+    <item name="gh">gh</item>
+    <item name="Zo" next="mb">Zo</item>
+    <item name="ge">ge</item>
+    <item name="Zo" next="na">Zo</item>
+    <item name="gh">gh</item>
+    <item name="Zo" next="rf">Zo</item>
+    <item name="u">u</item>
+    <item name="Zo" next="rg">Zo</item>
+    <item name="g">g</item>
+    <item name="Zo" next="rh">Zo</item>
+    <item name="rh" next="gi">rh</item>
+    <item name="th">th</item>
+    <item name="Zo" next="rn">Zo</item>
+    <item name="gh">gh</item>
+    <item name="Zo" next="ug">Zo</item>
+    <item name="t">t</item>
+    <item name="Start" weight="17">[Zu]</item>
+    <item name="Zu" next="da">Zu</item>
+    <item name="g">g</item>
+    <item name="Zu" next="ga">Zu</item>
+    <item name="d">d</item>
+    <item name="Zu" next="gb">Zu</item>
+    <item name="u">u</item>
+    <item name="Zu" next="go">Zu</item>
+    <item name="m">m</item>
+    <item name="Zu" next="hg">Zu</item>
+    <item name="an">an</item>
+    <item name="Zu" next="lg">Zu</item>
+    <item name="ha">ha</item>
+    <item name="Zu" next="lm">Zu</item>
+    <item name="u">u</item>
+    <item name="Zu" next="mh">Zu</item>
+    <item name="ug">ug</item>
+    <item name="Zu" next="no">Zu</item>
+    <item name="gh">gh</item>
+    <item name="Zu" next="nu">Zu</item>
+    <item name="k">k</item>
+    <item name="Zu" next="pa">Zu</item>
+    <item name="h">h</item>
+    <item name="Zu" next="pg">Zu</item>
+    <item name="h">h</item>
+    <item name="Zu" next="rb">Zu</item>
+    <item name="ag">ag</item>
+    <item name="Zu" weight="3" next="rg">Zu</item>
+    <item name="ha">ha</item>
+    <item name="d">d</item>
+    <item name="ug">ug</item>
+    <item name="Zu" next="rp">Zu</item>
+    <item name="ig">ig</item>
+  </items>
+  <imports />
+</Grammar>

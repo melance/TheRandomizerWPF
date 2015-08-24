@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Nastavení</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Nastavení</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/options.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      Dialog pro nastavení je základním místem pro přednastavení nebo <b>změnu parametrů aplikace</b>.
+      V produktu Precision Helper se některé parametry ukládájí automaticky (např. změny rozměrů panelů),
+      a některé (volby rozložení a vzhledu panelů) jsou dostupné jen v příslušných kontextových nabídkách.
+      Ale volby pro nastavení podstatných parametrů aplikace naleznete v tomto dialogu.
+    </p>
+    <img src="../img/ss_options.jpg" class="ssright"/>
+    <p>
+      Dialog je rozdělen do sekcí (<b>Základní</b>, <b>Vzhled</b> a <b>Externí nástroje</b>) a každá sekce je pak <b>členěna na karty</b>,
+      dle obsahu a významu parametrů v nich obsažených. V tomto tématu nápovědy je uveden popis sekcí, karet i jednotlivých parametrů.
+    </p>
+
+    <p class="big" style="padding-top:8px;">
+      <a name="sys"></a> Základní - Integrace do systému
+    </p>
+    <ul class="shr">
+      <li><b>Zobrazovat ikonu v oznamovací oblasti</b> - zobrazí ikonu aplikace v oznamovací oblasti panelu úloh operačního systému Windows</li>
+      <li><b>Minimalizovat do oznamovací oblasti</b> - pokud minimalizujete aplikaci, nebude zobrazena na panelu úloh, ale jen v oznamovací oblasti
+        (vyžaduje, aby byla zaškrtnuta volba <i>Zobrazovat ikonu v oznamovací oblasti</i>)</li>
+      <li><b>Asociovat přípony souborů</b> - tímto tlačítkem můžete asociovat soubory typu HHP (<i>Microsoft Html Help Project</i>) pro otevírání v produktu Precision Helper.
+        Pro spuštění této akce v operačním systému <i>Microsoft Windows Vista</i> je nutné nejprve spustit aplikaci jako správce (povolit zvýšení přístupových práv uživatele na práva administrátorská).</li>
+      <li><b>Zrušit asociaci přípon</b> - tímto tlačítkem můžete zrušit asociaci souborů typu HHP (<i>Microsoft Html Help Project</i>) pro otevírání v produktu Precision Helper.
+        Pro spuštění této akce v operačním systému <i>Microsoft Windows Vista</i> je nutné nejprve spustit aplikaci jako správce (povolit zvýšení přístupových práv uživatele na práva administrátorská).</li>
+    </ul>
+
+    <p class="big">
+      <a name="prj"></a> Základní - Správa projektů
+    </p>
+    <ul class="shr">
+      <li><b>Výchozí složka s projekty</b> - výchozí složka, která bude nastavena při vyvolání všech dialogů pro otevření a uložení projektu a pro otevření a uložení souboru (tématu nápovědy).
+          Jestliže chcete zachovávat historii naposledy zobrazených složek (která je evidována operačním systémem Windows), ponechte toto pole prázdné.</li>
+      <li><b>Výchozí formát projektů</b> - formát použitý při vytváření nového projektu (<i>Microsoft Compiled Html Help</i>)</li>
+      <li><b>Maximum naposledy otevřených projektů</b> - maximální počet naposledy otevřených projektů, který chcete uchovávat v historii</li>
+      <li><b>Otevřít poslední projekt při startu aplikace</b> - při dalším spuštění aplikace otevře naposledy editovaný projekt</li>
+      <li><b>Zobrazit "Úvodní stránku" po otevření posledního projektu</b> - standardně se při spuštění aplikace otevře naposledy zobrazovaný
+          <a href="navBar.htm">navigační panel</a> a k němu příslušná <a href="tabBar.htm">stránka</a>. Pokud zaškrtnete tuto volbu, bude vždy po spuštění aplikace
+          otevřena <a href="HomePage.htm">úvodní stránka</a> produktu.</li>
+      <li><b>Ukládat soubory projektu v kódování UTF-8</b> - umožňuje ukládat projektové soubory (vlastní soubor projektu, soubory obsahu, rejstříku, kontextové nápovědy, apod. nikoliv však soubory témat)
+          v kódování UTF-8. Je nutné, aby Vámi zvolený kompilátor nápovědy podporoval toto kódování.</li>
+      <li><b>Ukládat položky obsahu a rejstříku v html kódování</b> - umožňuje ukládat položky obsahu (.hhc) a rejstříku (.hhk) v html kódování</li>
+      <li><b>Při ukládání zahrnout všechny soubory projektu do sekce "Soubory"</b> - umožňuje automaticky detekovat a zařadit do projektu 
+      všechny obrázky, videa, styly, skripty a další soubory použité v tématech. Zařazení souborů do této sekce projektu je vhodné především proto,
+      že kompilátor nápovědy CHM (<i>Microsoft Html Help Compiler</i>) nerozeznává automaticky některé novější formáty souborů (např. PNG, WMV, apod.),
+      ale do výsledné nápovědy správně zahrne všechny soubory uvedené v této sekci.</li>
+    </ul>
+    
+    <p class="big">
+      <a name="edit"></a> Základní - Úpravy
+    </p>
+    <ul class="shr">
+      <li><b>Při přidání nového tématu provést následující akci</b>:<br>
+        <ul>
+          <li><font color="#880000">Vybrat z nevyužitých souborů projektu</font> - vyvolá dialog pro <a href="dialogPrjFiles.htm">výběr souboru projektu</a> v místě hledání "<i>Nevyužité soubory</i>"</li>
+          <li><font color="#880000">Vybrat ze všech souborů projektu</font> - vyvolá dialog pro <a href="dialogPrjFiles.htm">výběr souboru projektu</a> v místě hledání "<i>Soubory projektu</i>"</li>
+          <li><font color="#880000">Vytvořit nové prázdné téma</font> - vytvoří nový soubor tématu v umístění, které vyberete</li>
+          <li><font color="#880000">Vytvořit nové téma z existujícího souboru</font> - vytvoří nový soubor tématu v umístění, které vyberete, kopií existujícího souboru tématu, který zvolíte</li>
+          <li><font color="#880000">Vytvořit nové téma ze šablony</font> - vytvoří nový soubor tématu na základě zvolené šablony a v umístění, které vyberete</li>          
+          <li><font color="#880000">&lt;žádná akce&gt;</font> - v podstatě odpovídá přidání nového záhlaví (bude nabídnuto jen zadání názvu položky obsahu)</li>
+        </ul>
+      </li>
+      <li><b>Otevřít nové téma v editoru ihned po vytvoření</b> - umožňuje ihned otevřít externí editor s nově vytvořeným tématem (coby důsledkem přiřazení nového tématu položce
+          <a href="navBar_TOC.htm">obsahu</a> nebo <a href="navBar_IDX.htm">rejstříku</a>).
+          Jestliže používáte zabudovaný editor témat (nově od verze 2.0), odškrtněte tuto volbu.</li>
+      <li><b>Vždy použít titulek tématu</b> - aplikace se standardně chová tak, že jestliže vymažete název položky <a href="navBar_TOC.htm">obsahu</a> nebo <a href="navBar_IDX.htm">rejstříku</a>,
+          aplikace se pokusí přiřadit název položky automaticky, dle titulku tématu nebo názvu souboru tématu.
+          Tato volba rozšiřuje toto chování i na volbu výběru tématu - při každém výběru tématu pro položku obsahu nebo rejstříku bude položce přiřazen název automaticky.</li>
+      <li><b>Zobrazovat umístění souborů jako relativní</b> - ve všech <a href="pageFiles.htm">seznamech souborů</a> a v dialogu pro <a href="dialogPrjFiles.htm">výběr souboru projektu</a>
+        bude umístění souborů zobrazováno jako relativní vzhledem k souboru projektu</li>
+      <li><b>Zobrazit editor zdrojového souboru tématu jako výchozí záložku v oknech témat</b> - mezi náhledem, editorem témat a stromem obsahu (či rejstříku) se můžete přepínat pomocí klávesové zkratky <b>F12</b>
+          Další klávesová zkratka - <b>F5</b> slouží pro uložení změn a přechod ze záložky "Zdroj" na náhled tématu.
+          Pokud chcete jako výchozí záložku při otevření okna tématu zobrazovat editor (a nikoliv náhled), zaškrtněte tuto volbu.
+        </li>
+      <li><b>Interval pro automatické zobrazení okna doplňování kódu</b> - zadejte interval v milisekundách. Pro zrušení automatického zobrazování
+          tohoto okna na kartě editoru témat, zadejte nulu (0).
+          Okno automatického doplňování kódu můžete vyvolat kdykoliv pomocí klávesové zkratky <b>Ctrl+Space</b>.
+          </li>
+    </ul>
+    
+    <p class="big">
+      <a name="build"></a> Základní - Kompilace
+    </p>
+    <ul class="shr">
+      <li><b>Ukládat projekt před kompilací</b> - standardně je projekt ukládán jen při akci Spustit. Tato volba rozšíří automatické ukládání i na akci Kompilovat.</li>
+      <li><b>Zobrazit dialog průběhu kompilace</b> - průběh kompilace bude zobrazován ve speciálním <a href="dialogCompile.htm">dialogu</a>
+          (v opačném případě bude průběh zobrazován jen ve <a href="statusBar.htm">stavovém řádku</a>)</li>
+      <li><b>Automaticky zavřít dialog průběhu při úspěšné kompilaci</b> - po úspěšné kompilaci bude dialog automaticky zavřen
+          (tuto volbu je možno přepnout i přímo v <a href="dialogCompile.htm">dialogu kompilace</a>)</li>
+      <li><b>Zobrazit protokol o průběhu kompilace</b> - při kompilaci bude automaticky zobrazena karta <a href="helpBar_Log.htm">Protokol</a> na panelu vlastností</li>
+    </ul>
+
+    <p class="big">
+      <a name="backup"></a> Základní - Zálohování
+    </p>
+    <ul class="shr">
+      <li><b>Zálohovat konfigurační soubor</b> - konfigurační soubor aplikace bude automaticky zálohován při každém uložení nastavení a při každém zavření aplikace
+          (tento soubor obsahuje veškeré nastavení aplikace včetně seznamu evidovaných projektů, kompilací, <a href="HomePage.htm">rychlé volby</a>, apod.)</li>
+      <li><b>Zálohovat projektové soubory</b> - soubory každého otevřeného projektu (obsah, rejstřík, kontexty, atd., nikoliv však soubory témat)
+          budou automaticky zálohovány při každém uložení projektu</li>
+      <li><b>Počet záloh v historii</b> - definuje počet záloh, které budou historicky udržovány</li>
+    </ul>
+
+    <p class="big" style="margin-top:16px;">
+      <a name="prj"></a> Šablony - Volby pro práci se šablonami
+    </p>
+    <p>
+      Šablony témat a projektů umožňují vytvářet nové nápovědy pomocí předdefinovaných témat i celých projektů.
+      V této sekci máte možnost nastavit některé parametry jejich chování. 
+    </p>
+    <ul class="shr">
+      <li><b>Zobrazovat jen šablony aktuálního jazyka</b> - v dialozích a seznamech pro výběr šablon budou k dispozici jen šablony určené pro aktuálně zvolený
+        jazyk uživatelského prostředí.</li>
+      <li><b>Makra v šablonách</b> - volně definovatelný seznam maker, která můžete použít ve svých šablonách, a která budou nahrazena za zde uvedené hodnoty vždy,
+        když vytvoříte nové téma (či projekt) ze šablony. Makra $TITLE, $YEAR a $TODAY jsou podporována interními funkcemi a nemusíte je zde vyplňovat, 
+        pokud jim nechcete přiřadit vlastní (konstantní) hodnotu.</li>        
+    </ul>
+    
+    <p class="big" style="margin-top:16px;">
+      <a name="style"></a> Vzhled - Prostředí aplikace
+    </p>
+    <ul class="shr">
+      <li><b>Schéma barev</b> - schéma barev uživatelského rozhraní aplikace</li>
+      <li><b>Jazyk</b> - výběr jazykového řezu uživatelského rozhraní aplikace</li>
+      <li><b>Zvýraznění syntaxe</b> - výběr šablony pro zvýraznění syntaxe, která bude použita v editoru témat. 
+          Zvolená šablona obsahuje také nastavení klávesových zkratek pro vkládání textu a definici položek pro automatické dokončování kódu.</li>      
+      <li><b>Použít systémový motiv v editoru obsahu</b> - standardně odpovídá vzhled editoru <a href="navBar_TOC.htm">obsahu</a> a jeho položek tomu,
+          jak je definován vzhled obsahu ve výsledné nápovědě (tzn. barvy, písmo, chování, apod.). Tato volba umožňuje používat vždy standardní systémový vzhled a chování struktury obsahu.</li>
+      <li><b>Jako nový list otevřít "Úvodní stránku"</b> - standardně se aplikace chová tak, že jako <a href="tabBar.htm">nový list</a> otevírá kopii listu aktuálního.
+          Tato volba otevře jako nový list vždy <a href="HomePage.htm">Úvodní stránku</a>.</li>
+      <li><b>Otevírat stránky odlišných typů v nových listech</b> - standardně se aplikace chová tak, že otevírá odlišné <a href="tabBar.htm">typy stránek</a> ve stejném listu,
+          dokud uživatel nepoužije tlačítko <a href="tabBar.htm">Otevřít nový list</a>. Tato volba umožní automaticky otevírat odlišné typy stránek v nových listech.</li>
+      <li><b>Velikost položek rychlých voleb</b> - definuje rozměry tlačítek v sekci <a href="HomePage.htm">Rychlé volby</a> na úvodní stránce</li>
+    </ul>
+
+    <p class="big">
+      <a name="fonts"></a> Vzhled - Písma
+    </p>
+    <p style="margin-left:24px;">
+      Na této kartě je možno zvolit <b>typy a velikosti písma</b> pro jednotlivé komponenty uživatelského rozhraní (okna, nabídky, popisky, tlačítka a dialogy, texty a seznamy, nadpisy a záhlaví důležitých panelů).
+    </p>
+
+    <p class="big" style="margin-top:16px;">
+      <a name="hhc"></a> Externí nástroje - MS Html Help
+    </p>
+    <ul class="shr">
+      <li><b>Kompilátor</b> - zde můžete zvolit Váš kompilátor nápovědy formátu <b>CHM</b> (<i>Microsoft Compiled Html Help</i>).
+          Precision Helper podporuje libovolný kompilátor se stejným programovým rozhraním jako standardní knihovna <b>hha.dll</b>, resp. aplikace <b>hhc.exe</b>.</li>
+      <li><b>Maximum kontextových položek v projektovém souboru</b> - tento parametr definuje hranici pro počet položek kontextové nápovědy ukládaný přímo v projektovém souboru (<i>.HHP</i>).
+          Pro malý počet položek nemá smysl definovat externí hlavičkové soubory (<b>.h</b>, <b>.ali</b>) a na druhou stranu velký počet položek zbytečně zvětšuje velikost ("zatěžuje") projektový soubor.
+          Pokud zvolíte hodnotu <b>0</b>, budou pro definici kontextové nápovědy vždy vytvářeny externí hlavičkové soubory.</li>
+    </ul>
+
+    <p class="big">
+      <a name="mtools"></a> Externí nástroje - Ostatní
+    </p>
+    <p style="margin-left:24px;">
+      Na této kartě si můžete zvolit Vaše oblíbené aplikace, které budou používány jako externí nástroje pro úpravy nebo prohlížení témat a souborů
+      (<b>html editor</b>, <b>webový prohlížeč </b> a <b>editor obrázků</b>).<br>
+      Volba "<b>Zobrazit ve stavovém panelu</b>" ovlivňuje zobrazení ikony příslušného externího nástroje ve <a href="statusBar.htm">stavovém řádku</a>.
+    </p>
+
+    <p class="big">
+      <a name="mtools2"></a> Externí nástroje - Ostatní 2
+    </p>
+    <ul class="shr">
+      <li><b>Souborový manažer</b> - pro procházení adresáře vybraného souboru, či projektu. Pokud vyplníte toto nastavení, aktivuje se doplňková volba
+          "Prozkoumat pomocí ..." v kontextových nabídkách souborů (témat, obrázků, apod.). Adresáře s vybranými soubory tak můžete procházet nejen v Průzkumníku Windows,
+          ale i ve Vámi oblíbeném souborovém manažeru.</li>
+      <li><b>Cesta k pdScript IDE</b> - zde můžete definovat cestu k aplikaci <b>pdScript IDE</b>, která je vhodná pro vytváření a úpravu aplikačních
+          doplňků pro Precision Helper. Editor pak můžete spouštět pomocí volby <b>Editor doplňků</b> v kartě <a href="Tools.htm">Nástroje</a>.
+          Více o editoru pdScript IDE se můžete dozvědět na stránkách výrobce: <a href="http://www.be-precision.com/products/pdscript/" target="blank">http://www.be-precision.com/products/pdscript/</a>.</li>
+    </ul>
+ 
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. Všechna práva vyhrazena.
+  </div>
+</body>
+</html>

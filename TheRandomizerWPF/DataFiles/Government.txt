@@ -1,0 +1,33 @@
+maidservant
+barber
+restaurateur
+water carrier
+laundress
+porter
+doctor
+accountant
+bailiff
+barrister
+bath attendent
+butler
+carter
+chamberlain
+chimney sweep
+surgeon
+cook
+cowherd
+dairymaid
+dentist
+executioner
+farrier
+harlot
+maid
+midwife
+nurse
+prostitute
+quartermaster
+bartender
+barmaid
+innkeeper
+wagoner
+wetnurse

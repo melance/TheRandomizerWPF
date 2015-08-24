@@ -1,0 +1,7 @@
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\MRU\bin\x64\Debug\MRU.dll.config
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\MRU\bin\x64\Debug\MRU.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\MRU\bin\x64\Debug\MRU.pdb
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\MRU\obj\x64\Debug\MRU.Resources.resources
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\MRU\obj\x64\Debug\MRU.vbproj.GenerateResource.Cache
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\MRU\obj\x64\Debug\MRU.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\MRU\obj\x64\Debug\MRU.pdb

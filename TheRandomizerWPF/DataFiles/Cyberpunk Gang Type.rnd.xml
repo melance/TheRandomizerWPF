@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TableGrammar">
+  <name>Gang Generator (Cyberpunk 2020)</name>
+  <author>Lance Boudreaux</author>
+  <description>A gang generator taken from this site:</description>
+  <category>NPC</category>
+  <genre>Sci-Fi</genre>
+  <parameters />
+  <supportsMaxLength>false</supportsMaxLength>
+  <url>http://www.verminary.com/cyberpunk/gangsta.html</url>
+  <tables>
+    <table action="Random" column="Roll" name="GangType1" delimiter="|">
+		Roll | Gang Type
+		01   | Booster
+		11   | Chromer
+		21   | Combat
+		26   | Drug
+		31   | Eco
+		34   | Exotic
+		37   | Go
+		44   | Guardian
+		49   | Netrunner
+		53   | Nihilist
+		56   | Nostalgia
+		60   | Party
+		67   | Political
+		72   | Poser
+		76   | Prank
+		79   | Puppet
+		83   | Racist
+		89   | Tagger
+		95   | Theo
+		99   | Uni-Sex
+		</table>
+    <table action="Random" column="Roll" name="GangType2" delimiter="|">
+		Roll | Gang Type
+		01   | Booster
+		11   | Chromer
+		21   | Combat
+		26   | Drug
+		31   | Eco
+		34   | Exotic
+		37   | Go
+		44   | Guardian
+		49   | Netrunner
+		53   | Nihilist
+		56   | Nostalgia
+		60   | Party
+		67   | Political
+		72   | Poser
+		76   | Prank
+		79   | Puppet
+		83   | Racist
+		89   | Tagger
+		95   | Theo
+		99   | Uni-Sex
+		</table>
+    <table action="Random" column="Roll" name="AverageAge" delimiter="|">
+		Roll | Age
+		01   | 13
+		02   | 15
+		04   | 17
+		08   | 19
+		10   | 21
+		</table>
+    <table action="Random" column="Roll" name="GangAge" delimiter="|">
+		Roll | Age                             | MCA
+		1    | New, Active 1-12 Months.        | -2
+		5 	 | Young, Active 1-4 Years.        | -1
+		8    | Middle Aged, Active 5-10 Years. | +0
+		10   | Old, Active 10-20 Years.        | +1
+		</table>
+    <table action="Random" column="Roll" randomModifier="=[GangAge.MCA]" name="Membership" delimiter="|">
+		Roll | Description | Members		  | TCA
+		0 	 | Tiny	       | =Rnd(1,5)        | -3
+		1    | Small       | =Rnd(6,10)       | -2
+		2    | Mid-Sized   | =Rnd(11,25)      | -1
+		6    | Large       | =Rnd(26,50)      | +0
+		9    | Huge 	   | =Rnd(51,100)     | +1
+		10	 | Gigantic    | =Rnd(101,1000)   | +2
+		</table>
+    <table action="Random" column="Roll" randomModifier="=[Membership.TCA]" name="Turf" delimiter="|">
+		Roll | Description          	 | ECA
+		0 	 | No Turf.             	 | -4
+		1    | Couple of Buildings. 	 | -3
+		3    | One City Block. 			 | -2
+		6    | Two or Three City Blocks. | -1
+		9    | Four to Six City Blocks.  | +0
+		10   | Seven to Ten City Blocks. | +1
+		</table>
+    <table action="Random" column="Roll" randomModifier="=[Turf.ECA]" name="Expansion" delimiter="|">
+		Roll | Description
+		0    | No External Growth, Confined To One City.
+		4    | Influence in Adjacent City/Town.
+		5    | Influence in Two or Three Cities in Same Region.
+		6    | Influence in Four to Six Cities Nationwide.
+		</table>
+    <table action="Select" column="GangType" selectValue="=[GangType1.Gang Type]" name="GangDescription1" delimiter="|">
+		GangType  | Description
+		Booster   | This is your standard cyberpunk street gang. Usual traits include random acts of violence and excessive cyberware installation, riding the "Edge" towards psychosis. 
+		Chromer	  | Chromatic rock fans. Prone to idolization of rock stars. Each gang tends to revolve around a specific band or star. Not usually violent (as compared to Boosters), but gang ethics are usually dictated by the attitudes of the worshipped band. 
+		Combat    | These guys aren't violent for the sake of violence -- they just like to kick ass, preferably against willing opponents, though this isn't always the case. Most often, they restrict weapons to "honorable" ones (ie, knives, etc) and are as likely to go toe-to-toe with boosters as another combat gang. Many street solos find their beginnings in combat gangs. 
+		Drug      | These lowlives buy, sell, and/or manufacture drugs. Sample groups might include anything from psychedellic cults spaced out on love, to violent meth-heads with dealers all over town. 
+		Eco 	  | Environmentalists gone bad. Also includes animal rights activists. Such gangs use radical tactics to get their points across. They're not all violent and mean (some just get together to go hiking), yet a good deal of the more publicized ones are no better than localized eco-terrorists. 
+		Exotic    | Akin to poser gangs, exotic gangs lean towards the use of exotic biosculpts. Some gangs use animals as a topic for self-expression, while others go for the truly wierd (ie, martians, mythical beasts, etc.). 
+		Go        | These gangs are mobile, whether they use motorcycles, BMX bicycles, skateboards, rollerblades, etc. The go-gang category represents anything from a tight knit group of skaters, Yakuza-sponsored bosozoku, or hillbillies in monster trucks. 
+		Guardian  | These types of gangs protect the weak from the tyranny of other gangs, corporate forces, and law enforcement agencies. They aren't always well-armed, preferring to utilize martial arts or handguns to get the job done. While usually scrupulous, they can sometimes lose sight of their goals and become no better than just another combat gang. Some actually extort money from the local citizens that they "protect". 
+		Netrunner | Yes, you've read that right. Staking out their turf within the confines of city grids, netrunner gangs are almost exclusively Net-based. Most deal in the free distribution of data and code, though "free" doesn't always mean that there is no cost. Other groups are software pirates, rogue programmers, or cyberspace "taggers", using virtual cans of spraypaint to deface datafortress walls. 
+		Nihilist  | Members of nihilist groups like to go out in a big bang. They believe that since death is inevitable, existence is futile. Therefore, they will go to great lengths to make their deaths as flashy and destructive as possible. While these gangs have a great tendency for destruction, most don't last very long since members are constantly dying. 
+		Nostalgia | These guys are similar to posers, but without the extensive biosculpts. They try to keep the memories of an idealized past alive, fictional or otherwise. Some slick back their hair, dress like James Dean, and drive '50's muscle cars. Others dress like cowboys or wear medieval costumes and wave swords around. Mostly harmless. 
+		Party     | These guys want to have a good time, and are more than likely the hedonists of the gang world. They might be considered the "ravers" of the 21st century. Typically, they move as a group from party to party, or create their own decadence in a warehouse downtown, with or without permission. As recreational drug use is pretty common, most of the members burn out or O.D. eventually. 
+		Political | These gangs set a specific political standard or goal for themselves, be it fascism, communism, world peace, neo-luddism, etc. They just want to get their point across, even if you don't want to hear it. While not normally violent, some groups have resorted to common terrorist tactics.
+		Poser     | Posergangs use extensive biosculpts to impersonate celebrities and/or characters from the past or present. Most gangs revolve around a specific topic (dead presidents, serial murderers, etc.) or serial ("Gilligan's Island", "Hellraiser", or the ever popular "Brady Bunch"). Members are typically brain-washed, and are expected to completely become their new persona. 
+		Prank     | These guys play jokes on people. Not everyone, however, will find their jokes amusing. Some jokes are downright dangerous to the victims involved, while others are mostly harmless. 
+		Puppet	  | Specifically, puppet gangs are corporate controlled and sponsored, usually secretly. Corporations use them to distribute experimental drugs, test new weapons, and to neutralize threats on the street. Genuine gangs tend to hate puppets. Some puppet gangs are supported so covertly that only the highest ranking members know who's pulling their strings.
+		Racist    | Any gang that advocates hatred of other races, cultures, and creeds, while maintaining the superiority of their own. Examples could include the famed "Black Panthers" or the more infamous "Nazi Skinheads". 
+		Tagger 	  | Taggers are gangs that use graffitti to "tag" or deface a location. Usually, this type of vandalism takes the form of the gang's sign or initials painted or carved onto a surface that will be seen by a lot of people. In addition to stock taggers, there are also several groups who paint elaborate and striking murals on walls and sidewalks. Most building and business owners don't take kindly to kids defacing their property, and some taggers have taken to carrying weapons in addition to spray paint. 
+		Theo      | Any gang that expresses any religious and/or "cultish" behavior is a theo-gang. These gangs can include such diverse factions as the anti-cyberware neo-luddite "Inquisitors", to right-wing Christian "fundies" who stand on street corners preaching the evils of role-playing games and planning midnight raids on 7-11 porno racks. Most groups attempt to spread their version of salvation peacefully ("Hari Krishna" gangs come to mind), but others attempt to root out the heretics and force them to convert or die. 
+		Uni-Sex   | This includes any gang that expresses a sexual restriction on its members, such as exclusively male or female gangs, for any number of reasons. These reasons include a core belief in the superiority of one sex over the other (ie, sexism, such as "The He-Man Woman-Hater's Club" of Little Rascals fame), or a bias in the members' sexual orientation (ie, an exclusively homosexual gang). 
+		</table>
+    <table action="Select" column="GangType" selectValue="=[GangType2.Gang Type]" name="GangDescription2" delimiter="|">
+		GangType  | Description
+		Booster   | This is your standard cyberpunk street gang. Usual traits include random acts of violence and excessive cyberware installation, riding the "Edge" towards psychosis. 
+		Chromer	  | Chromatic rock fans. Prone to idolization of rock stars. Each gang tends to revolve around a specific band or star. Not usually violent (as compared to Boosters), but gang ethics are usually dictated by the attitudes of the worshipped band. 
+		Combat    | These guys aren't violent for the sake of violence -- they just like to kick ass, preferably against willing opponents, though this isn't always the case. Most often, they restrict weapons to "honorable" ones (ie, knives, etc) and are as likely to go toe-to-toe with boosters as another combat gang. Many street solos find their beginnings in combat gangs. 
+		Drug      | These lowlives buy, sell, and/or manufacture drugs. Sample groups might include anything from psychedellic cults spaced out on love, to violent meth-heads with dealers all over town. 
+		Eco 	  | Environmentalists gone bad. Also includes animal rights activists. Such gangs use radical tactics to get their points across. They're not all violent and mean (some just get together to go hiking), yet a good deal of the more publicized ones are no better than localized eco-terrorists. 
+		Exotic    | Akin to poser gangs, exotic gangs lean towards the use of exotic biosculpts. Some gangs use animals as a topic for self-expression, while others go for the truly wierd (ie, martians, mythical beasts, etc.). 
+		Go        | These gangs are mobile, whether they use motorcycles, BMX bicycles, skateboards, rollerblades, etc. The go-gang category represents anything from a tight knit group of skaters, Yakuza-sponsored bosozoku, or hillbillies in monster trucks. 
+		Guardian  | These types of gangs protect the weak from the tyranny of other gangs, corporate forces, and law enforcement agencies. They aren't always well-armed, preferring to utilize martial arts or handguns to get the job done. While usually scrupulous, they can sometimes lose sight of their goals and become no better than just another combat gang. Some actually extort money from the local citizens that they "protect". 
+		Netrunner | Yes, you've read that right. Staking out their turf within the confines of city grids, netrunner gangs are almost exclusively Net-based. Most deal in the free distribution of data and code, though "free" doesn't always mean that there is no cost. Other groups are software pirates, rogue programmers, or cyberspace "taggers", using virtual cans of spraypaint to deface datafortress walls. 
+		Nihilist  | Members of nihilist groups like to go out in a big bang. They believe that since death is inevitable, existence is futile. Therefore, they will go to great lengths to make their deaths as flashy and destructive as possible. While these gangs have a great tendency for destruction, most don't last very long since members are constantly dying. 
+		Nostalgia | These guys are similar to posers, but without the extensive biosculpts. They try to keep the memories of an idealized past alive, fictional or otherwise. Some slick back their hair, dress like James Dean, and drive '50's muscle cars. Others dress like cowboys or wear medieval costumes and wave swords around. Mostly harmless. 
+		Party     | These guys want to have a good time, and are more than likely the hedonists of the gang world. They might be considered the "ravers" of the 21st century. Typically, they move as a group from party to party, or create their own decadence in a warehouse downtown, with or without permission. As recreational drug use is pretty common, most of the members burn out or O.D. eventually. 
+		Political | These gangs set a specific political standard or goal for themselves, be it fascism, communism, world peace, neo-luddism, etc. They just want to get their point across, even if you don't want to hear it. While not normally violent, some groups have resorted to common terrorist tactics.
+		Poser     | Posergangs use extensive biosculpts to impersonate celebrities and/or characters from the past or present. Most gangs revolve around a specific topic (dead presidents, serial murderers, etc.) or serial ("Gilligan's Island", "Hellraiser", or the ever popular "Brady Bunch"). Members are typically brain-washed, and are expected to completely become their new persona. 
+		Prank     | These guys play jokes on people. Not everyone, however, will find their jokes amusing. Some jokes are downright dangerous to the victims involved, while others are mostly harmless. 
+		Puppet	  | Specifically, puppet gangs are corporate controlled and sponsored, usually secretly. Corporations use them to distribute experimental drugs, test new weapons, and to neutralize threats on the street. Genuine gangs tend to hate puppets. Some puppet gangs are supported so covertly that only the highest ranking members know who's pulling their strings.
+		Racist    | Any gang that advocates hatred of other races, cultures, and creeds, while maintaining the superiority of their own. Examples could include the famed "Black Panthers" or the more infamous "Nazi Skinheads". 
+		Tagger 	  | Taggers are gangs that use graffitti to "tag" or deface a location. Usually, this type of vandalism takes the form of the gang's sign or initials painted or carved onto a surface that will be seen by a lot of people. In addition to stock taggers, there are also several groups who paint elaborate and striking murals on walls and sidewalks. Most building and business owners don't take kindly to kids defacing their property, and some taggers have taken to carrying weapons in addition to spray paint. 
+		Theo      | Any gang that expresses any religious and/or "cultish" behavior is a theo-gang. These gangs can include such diverse factions as the anti-cyberware neo-luddite "Inquisitors", to right-wing Christian "fundies" who stand on street corners preaching the evils of role-playing games and planning midnight raids on 7-11 porno racks. Most groups attempt to spread their version of salvation peacefully ("Hari Krishna" gangs come to mind), but others attempt to root out the heretics and force them to convert or die. 
+		Uni-Sex   | This includes any gang that expresses a sexual restriction on its members, such as exclusively male or female gangs, for any number of reasons. These reasons include a core belief in the superiority of one sex over the other (ie, sexism, such as "The He-Man Woman-Hater's Club" of Little Rascals fame), or a bias in the members' sexual orientation (ie, an exclusively homosexual gang). 
+		</table>
+  </tables>
+  <output>
+	&lt;h3&gt;[=Generate('Cyberpunk Gang Names')]&lt;/h3&gt;
+	&lt;b&gt;Gang Type:&lt;/b&gt; [=if('[GangType1.Gang Type]'!='[GangType2.Gang Type]','[GangType1.Gang Type]/[GangType2.Gang Type]','[GangType1.Gang Type]')] Gang &lt;br /&gt;
+	&lt;b&gt;Average Member Age:&lt;/b&gt; [AverageAge.Age] years old &lt;br /&gt;
+	&lt;b&gt;Gang Age:&lt;/b&gt; [GangAge.Age] &lt;br /&gt;
+	&lt;b&gt;Membership:&lt;/b&gt; [Membership.Description] ([Membership.Members] members)&lt;br /&gt;
+	&lt;b&gt;Turf:&lt;/b&gt; [Turf.Description]&lt;br /&gt;
+	&lt;b&gt;Expansion:&lt;/b&gt; [Expansion.Description]&lt;br /&gt;
+	&lt;b&gt;[GangType1.Gang Type]:&lt;/b&gt; [GangDescription1.Description]&lt;br /&gt;
+	[=if('[GangType1.Gang Type]'!='[GangType2.Gang Type]','&lt;div&gt;','&lt;div style="display:none;"&gt;')]
+	&lt;b&gt;[GangType2.Gang Type]:&lt;/b&gt; [GangDescription2.Description]&lt;br /&gt;
+	&lt;/div&gt;
+	</output>
+</Grammar>

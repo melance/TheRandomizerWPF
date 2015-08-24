@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Typy oken nápovědy</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Typy oken nápovědy</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/wt.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      Stránka pro editaci typů oken nápovědy je určena pro definici vzhledu a funkčnosti
+      oken výsledné nápovědy. Každé téma v <a href="navBar_TOC.htm">obsahu</a> nebo <a href="navBar_IDX.htm">rejstříku</a>
+      může mít přiděleno jiný typ okna, ve kterém bude zobrazeno, a které tím pádem bude ovlivňovat další prohlížení nápovědy koncovým uživatelem.
+    </p>
+    <p>
+      Pro fungování nápovědy jako takové není nutné, aby jste definovali byť jediný typ okna.
+      Nicméně pokud chcete použít jiné než výchozí chování prohlížeče nápovědy, musíte alespoň jeden typ okna navrhnout.
+    </p>
+    <img src="../img/ss_wintype.jpg" class="ssright"/>
+    <p>
+      Precision Helper nabízí pro tyto účely <b>vizuální návrhář typu okna</b>, kde nejenže uživatel ihned vidí výsledný vzhled okna,
+      ale který také umožňuje snadný návrh vzhledu a funkčnosti pomocí prostého klikání myší.
+    </p>
+    <p>
+      Parametry, které není možné definovat ve vizuálním návrhu, jsou k dispozici v <a href="helpBar_OI.htm">Editoru vlastností</a>.
+    </p>
+    <p>
+      Základní parametry typu okna jsou pak k dispozici přímo nad panelem vizuálního návrhu.
+      Pro parametry typu soubor (výchozí téma, obsah, atd.) máte k dispozici jednak tlačítka pro samotný výběr souboru,
+      a jednak tlačítka pro navigaci na odpovídající místo v aplikaci Precision Helper, kde je možné daný soubor upravit.
+    </p>
+
+    <p class="big" style="padding-top:8px;">
+      Volby stránky Typy oken
+    </p>
+    <ul class="shr">
+      <li><b>Přidat</b> - přidání nového typu okna. Identifikátor typu okna zadáte v nabídnutém dialogu.</li>
+      <li><b>Smazat</b> - smazání aktuálně zobrazeného typu okna</li>
+
+      <li style="list-style-type:none"></li>
+      <li>Roletová <b>nabídka s typy oken</b> (vpravo nahoře) umožňuje přepínání mezi již definovanými typy oken (typ okna k editaci můžete vybírat také v <a href="navBar_Others.htm">navigačním panelu Ostatní</a>)</li>
+
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none">Tlačítko <b>Rozšířené</b> (a kontextová nabídka návrháře)</li>
+      <li><b>Vlastnosti</b> - zobrazí kartu s <a href="helpBar_OI.htm">Editorem vlastností</a>, kde můžete měnit ostatní parametry návrhu typu okna</li>
+      <li><b>Kopírovat do schránky</b> - zkopíruje definici typu okna do schránky, takže ji můžete aplikovat na jiný typ okna.
+          (<i>Definice je kopírována přesně ve formátu specifikovaném pro projekty html nápovědy, takže ji můžete, v případě potřeby, aplikovat i v jiné aplikaci, která návrh oken typu nápovědy podporuje</i>.)</li>
+      <li><b>Vložit ze schránky</b> - aplikuje definici okna uloženou ve schránce na aktuálně navrhovaný typ okna</li>
+      <li><b>Výchozí pozice</b> - nastaví rozměry okna v návrháři na výchozí hodnoty</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Možnosti vizuálního návrháře typu okna
+    </p>
+    <ul class="shr">
+      <li><b>Nadpis okna</b> - titulek okna zobrazovaný v prohlížeči výsledné nápovědy</li>
+      <li><b>Výchozí typ okna</b> - označuje typ okna, který bude použit při otevření nápovědy</li>
+      <li><b>Úvodní stránka</b> - téma, které bude zobrazeno po kliknutí na tlačítko "<i>Úvodní stránka</i>" v prohlížeči nápovědy</li>
+      <li><b>Výchozí téma</b> - téma, které bude zobrazeno při otevření nápovědy (pokud nebude prohlížení spuštěno s parametrem jiného tématu)</li>
+      <li><b>Soubor obsahu</b> - <a href="navBar_TOC.htm">obsah</a> zobrazovaný v tomto typu okna</li>
+      <li><b>Soubor rejstříku</b> - <a href="navBar_IDX.htm">rejstřík</a> zobrazovaný v tomto typu okna</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Změnou rozměrů</b> a <b>změnou pozice</b> okna v návrháři určíte výchozí rozměry a pozici okna nápovědy po jejím otevření</li>
+      <li><b>Kliknutím na tlačítko</b> v návrháři typu okna přepnete jeho <b>zobrazení/skrytí</b> v prohlížeči nápovědy</li>
+      <li><b>Přepnutím karty</b> v levém panelu (Obsah, Rejstřík, Vyhledávání, Oblíbené) určíte výchozí zobrazovanou kartu při otevření nápovědy</li>
+      <li><b>Změnou rozměru</b> levého panelu v návrháři určíte výchozí šířku tohoto panelu při otevření okna nápovědy</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Přehled ostatních parametrů návrhu
+    </p>
+    <ul class="shr">
+      <li><b>Karty a panel nástrojů</b> - zobrazení levého navigačního panelu s kartami a panelu tlačítek v prohlížeči nápovědy</li>
+      <li><b>MSDN nabídka</b> - při prohlížení nápovědy bude v okně zobrazena stejná hlavní nabídka jaká byla použita pro nápovědy MSDN</li>
+      <li><b>Nadpis</b> - titulek okna zobrazovaný v prohlížeči výsledné nápovědy</li>
+      <li><b>Okno vždy navrchu</b> - okno nápovědy bude vždy navrchu</li>
+      <li><b>Pamatovat si rozměry</b> - při otevření okna nápovědy budou použity poslední uživatelem nastavené rozměry</li>
+
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Volby karet:</i></li>
+      <li><b>Automaticky schovávat</b> - panel s kartami (Obsah, Rejstřík, ...) bude automaticky schováván a zobrazí se až při najetí myší na levý okraj okna</li>
+      <li><b>Automaticky synchronizovat obsah</b> - v obsahu bude vždy nastavena položka odpovídající tématu zobrazenému v nápovědě</li>
+      <li><b>Karta Oblíbené</b> - levý panel s kartami bude obsahovat kartu Oblíbené</li>
+      <li><b>Karta Vyhledat</b> - levý panel s kartami bude obsahovat kartu Vyhledávání (viz <a href="pageProject.htm#others">Vlastnosti projektu - Ostatní nastavení - Fulltextové vyhledávání</a>)</li>
+      <li><b>Rozšířené možnosti hledání</b> - na kartě Vyhledávání budou zobrazeny doplňující tlačítka a volby rozšířující možnosti fulltextového vyhledávání</li>
+      <li><b>Pozice</b> - určuje pozici karet v levém panelu (Nahoře, Vlevo, Dole)</li>
+      <li><b>Výchozí karta</b> - určuje výchozí zobrazovanou kartu po otevření nápovědy v prohlížeči</li>
+      <li><b>Zpočátku skryté</b> - levý panel s kartami bude po otevření nápovědy skrytý (viz výše - <i>Automaticky schovávat</i>)</li>
+
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Volby nástrojového panelu:</i></li>
+      <li><b>Odkaz 1</b> - text a téma (url) tlačítka Odkaz 1</li>
+      <li><b>Odkaz 2</b> - text a téma (url) tlačítka Odkaz 2</li>
+      <li><b>Skrýt texty tlačítek</b> - tlačítka budou zobrazena jen jako ikony (bez popisných textů)</li>
+      <li><b>Skrýt tlačítka</b> - skrytí/zobrazení panelu tlačítek</li>
+
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Volby stylu okna:</i> (tato sekce je určena jen pro vývojáře)</li>
+      <li><b>Hodnota rozšířeného stylu</b> - číselná hodnota rozšířeného stylu okna (Extended style)</li>
+      <li><b>Hodnota stavu zobrazení</b> - číselná hodnota výchozího stavu zobrazení okna nápovědy po jejím otevření (SW_HIDE=0, SW_SHOWNORMAL=1, SW_SHOWMAXIMIZED=3, ...)</li>
+      <li><b>Hodnota stylu</b> - číselná hodnota stylu okna (Window style)</li>
+      <li><i>Okno bez rozšířených stylů</i> - viz sekce <i>Neimplementováno</i></li>
+      <li><i>Okno bez výchozích stylů</i> - viz sekce <i>Neimplementováno</i></li>
+      <li><i>Posílat zprávy o procházení</i> - viz sekce <i>Neimplementováno</i></li>
+      <li><b>WM_NOTIFY ID</b> - identifikační číslo notifikační zprávy zasílané aplikacím při procházení nápovědy</li>
+      <li><i>Zařazovat WM_QUIT</i> - viz sekce <i>Neimplementováno</i></li>
+
+      <li style="list-style-type:none"></li>
+      <li><i>Neimplementováno</i> - sekce s parametry, které jsou v aplikaci uvedeny jen z důvodu plné podpory formátu projektu HHP, ale ani samotný prohlížeč nápovědy je nepodporuje.</li>
+
+    </ul>
+
+    <p>
+      <i>Poznámka:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;Definice typů oken je určena jen pro výslednou nápovědu ve formátu CHM (<i>Microsoft Compiled Html Help</i>).
+      Na <a href="toolsExportWebHelp.htm">export</a> (publikování) do ostatních formátů nemá tato definice žádný vliv.</i>
+    </p>
+    
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. Všechna práva vyhrazena.
+  </div>
+</body>
+</html>

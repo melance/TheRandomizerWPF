@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Change log</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Change log</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/icon.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      Here is the list of news, changes, implemented ideas and bug fixes for each of the product version.
+    </p>
+
+    <p class="big" style="padding-top:8px;">
+      Version 2.0&nbsp;&nbsp;<font style="font-weight:normal">(27.4.2011)</font>
+    </p>
+    <ul>
+      <li>added: Embedded editor of topics, including the syntax highlighting, code completion, text and code insertion via predefined keystrokes, and including the support for using extensions/add-ons (see bellow).
+                 All these features are customizable by defining and selecting your own syntax schemes.</li>
+      <li>added: Topic templates. Any topic can be saved and used as a template (including an automatic detection of used styles, images, scripts, etc.)</li>
+      <li>added: Project templates. Any project, including the topics, images, and other files, can be defined and used as a template.</li>
+      <li>added: Application extensions (Add-Ons). Precision Helper can be extended by user defined add-ons. A command-line and Pascal Script interfaces (including the GUI) are supported.</li>
+      <li>added: The first extensions are available, such as HTML Tidy, Project statistics, Edit TOC and Index in an external editor, Wizard to create a new project from existing topic files, and more.</li>
+      <li>added: Now build lists can contain also other formats of compilation (export), such as WebHelp, SingleHTML, etc.</li>
+      <li>added: Option to automatically add all used files into an "Included files list" (on project save)</li>
+      <li>added: WebHelp templates, that consist of navigation frames, now contain the ability to directly navigate to desired topic.
+                 So you can refer to a topic in this kind of help format, by using the simple url syntax like "c:\WebHelp\index.htm#mytopic.htm" or "http://www.mysite.com/WebHelp/index.php#mytopic.htm", etc.</li>
+      <li>added: Auto refresh of topic preview when editing in an external editor (after the user switches back to Precision Helper)</li>
+      <li>added: Function for exploring the folder of selected file (in Files/Projects/Builds lists) now supports customizable file manager option</li>
+      <li>added: Edit button for referenced TOC (in topic page window)</li>
+      <li>added: New GUI color schemes (Windows 7, Office 2010, etc.)</li>
+      <li>added: "ExtraSeparators" template for WebHelp export (to support languages like Chinese, Japanese, etc.)</li>
+      <li>added: "New window" button for opening a new instance of Precision Helper (in main menu)</li>      
+      <li>improved: Last selected templates and targets for export (publishing) are now retained for each project apart</li>
+      <li>improved: WebHelp format now supports topic titles that include apostrophes</li>
+      <li>improved: WebHelp search feature has been improved, so the whole online help can work as embedded into an IFRAME now</li>
+      <li>improved: WebHelp search feature now supports words (expressions) with apostrophes</li>
+      <li>improved: Correct handling of files stored in UTF8 encoding, without preamble. The problems were noticeable especially when exporting into WebHelp.
+                    Precision Helper now supports both these forms of UTF8 files (whether it is a configuration file, template file, topic, etc.).</li>
+      <li>improved: Bookmarks (internal links) inside the SingleHTML help are defined now as &lt;A name="#..."&gt;&lt;/A&gt;
+                    (without the end tag, the links have been displayed incorrectly in some browsers, eg Firefox and Opera)</li>
+      <li>improved: In project file selection dialog now you can switch between available places by pressing the Alt+Up or Alt+Down hot-keys</li>                    
+      <li>fixed: AutoSync feature in a WebHelp has been fixed for use in Internet Explorer, where the addresses encoded in MIME/URL did not work</li>
+      <li>fixed: AutoSync feature in a WebHelp now correctly navigates to topics with the same names, but located in other branches of TOC</li>
+      <li>fixed: Application modal dialogs have been dedicated to show strictly in the current desktop (to support dual monitors usage)</li>
+      <li>fixed: Error on adding the first keyword for topic (in the quick add keyword panel), that appears in some specific situations (eg when the index of keywords was empty)</li>
+      <li>fixed: If you have cleared all the context help IDs, Precision Helper did not clear an appropriate sections (MAP and ALIAS)
+                 in the project file. This has been fixed.</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Version 1.1&nbsp;&nbsp;<font style="font-weight:normal">(1.7.2010)</font>
+    </p>
+    <ul>
+      <li>added:    publishing to the ePUB (e-book) format</li>
+      <li>improved: significantly improved export to the WebHelp format (including the Search option)</li>
+      <li>added:    French translation (officially) added</li>
+      <li>fixed:    Topics that was defined as a local links (ie. "default.htm#section1") were not displayed in a topic preview<br>
+              (this behaviour is supported now, but generally we do not recommend to use this kind of links in TOC and INDEX)</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Version 1.0.4&nbsp;&nbsp;<font style="font-weight:normal">(12.3.2010)</font>
+    </p>
+    <ul>
+      <li>added:    Russian translation</li>
+      <li>improved: a few buttons and panels were enlarged to fit the non-english localization texts</li>
+      <li>added:    a multimedia files extensions was added to the select files dialog, to support inclusion of *.mp3, *.wav, *.avi, *.wmv, *.mpg, *.mpeg and *.swf files</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Version 1.0.3&nbsp;&nbsp;<font style="font-weight:normal">(18.11.2009)</font>
+    </p>
+    <ul>
+      <li>added:    Polish translation</li>
+      <li>added:    Hungarian translation</li>
+      <li>improved: a few buttons and panels were enlarged to fit the non-english localization texts</li>
+      <li>added:    button for quick hiding of Properties bar</li>
+      <li>improved: horizontal scroll bar in log file panel is now visible when needed</li>
+      <li>improved: the option 'Save contents and index items as html encoded' was added to the 'Project defaults' tab of Options dialog</li>
+      <li>fixed:    html encoded items are now displayed correctly in 'Table of contents' and 'Index of keywords' (ie. "Red & Blue" instead of "Red &amp;amp; Blue")</li>
+      <li>improved: CHM Import - links to topics in decompiled project (including TOC and INDEX) now contain 'backslashes', according to the topics listed in the 'FILES' section.
+                     (before this improvement, the links were decompiled as they were stored in the CHM, with the possible unwanted difference between TOC/INDEX and the FILES section)</li>
+      <li>fixed:    CHM Import - context IDs are now recovered also for the situation when the IDs were stored in the project file (.hhp)</li>
+      <li>improved: the option 'Open last project at startup' now works also when starting the application with the /N parameter</li>
+      <li>fixed:    a few minor fixes in english help (links, texts)</li>
+      <li>fixed:    'Text size' button (in ribbon bar) localization now works</li>
+      <li>fixed:    color scheme for 'Options->External tools' tab now works</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Version 1.0.2&nbsp;&nbsp;<font style="font-weight:normal">(23.8.2009)</font>
+    </p>
+    <ul>
+      <li>improved: better handling for one instance checking - the already running instance is set to the front correctly</li>
+      <li>added: The VirtualTreeview.chm help file was included into the Samples folder, to show the decompiling possibilities on the independent project.
+                  Many thanks to VirtualTreeview component author for cooperation (Mike Lischke, Soft-Gems, see <a href="Credits.htm">Credits</a>).<br>
+                   <i>Note: the decompiled help project cannot be compiled with hhc.exe compiler with unchecked "Show compilation progress" option on some machines (use the default hha.dll compiler instead).
+                    When you check the mentioned option, everything works well also for hhc.exe compiler.</i>
+                   </li>
+      <li>fixed: "CHM Viewer" and "Select project file" dialog issue for the floppy drives (when A: or B: drives was installed but had no media inside)</li>
+      <li>fixed: About box scaling on Windows XP when running under the Virtual PC (the window has larger size than the image)</li>
+      <li>fixed: when dragging a new files (topics) from other application into the TOC, a topic name was not assigned (the copy and paste method worked well)</li>
+    </ul>
+    
+    <p class="big" style="padding-top:8px;">
+      Version 1.0.1&nbsp;&nbsp;<font style="font-weight:normal">(22.7.2009)</font>
+    </p>
+    <ul>
+      <li>
+        The first publicly released version
+      </li>
+    </ul>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. All rights reserved.
+  </div>
+</body>
+</html>

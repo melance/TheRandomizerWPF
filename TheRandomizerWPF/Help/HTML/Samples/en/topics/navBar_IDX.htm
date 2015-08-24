@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Index of keywords</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Index of keywords</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/index.jpg" style="float: left; margin-right:12px;" />
+    <p>
+	    Index is an important part of the help, as providing a quick way to find desired information by the specified keyword.
+      This navigation panel is a place where you can easily define the keywords, structure and appearance of the index for your help.
+    </p>
+    <img src="../img/ss_index.jpg" class="ssright"/>
+    <p>
+      When you select the keyword in the index, an <a href="pageTopic.htm">appropriate page</a> is automatically displayed,
+      where you can select, create (or open for editing) the topic file, that you want to be linked with current keyword.
+      Alternatively you can set the "popup list", "popup item" or the "link" flag for current keyword.
+    </p>
+    <p>
+      The index of keywords navigation panel and the <a href="pageTopic.htm">topic page</a> is closely linked,
+      and in fact constitute a whole, that can quickly and effectively define the index of keywords for your help.
+    </p>
+    <p>
+      The most important options and actions, concerning the editing of index and topics, are available also at <a href="ribbonBar.htm">ribbon bar</a> (the Index tab).
+    </p>
+    <p>
+      In addition to the standard editing features, the Precision Helper offers a wide support of <b>the clipboard</b> and <b>drag &amp; drop</b> functions.
+      And not only in the context of the application and its instances, but also between Precision Helper and other applications (see below).
+    </p>
+    <p>
+      See also the description about the <a href="toolsIDXGen.htm">automatic insertion of keywords</a> into the index and description about the <a href="navBar_TOC.htm">contents editing</a>.
+    </p>
+
+    <p>
+      <i>Note:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;If there is a more indices of keywords in the project file (eg, in <a href="pageWinTypes.htm">window type definitions</a>),
+        a button for easy switching between them is displayed in the navigation panel.
+      </i>
+    </p>
+
+    <p class="big" style="padding-top:8px;">
+      Editing the Index of keywords
+    </p>
+    <ul class="shr">
+      <li><b>Add key</b> - adds a new keyword to the index. You can immediately edit the text in the offered inline edit field.</li>
+      <li><b>Rename</b> - renaming the selected index item (changing the keyword text). Precision Helper allows automatic detection of the topic title and its assignment to the keyword
+          (see <a href="dialogOptions.htm#edit">Options - General - Editing - Always use topic title</a>).</li>
+      <li><b>Delete</b> - deletes the selected keywords (including potential subkeywords)</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Cut</b> - cuts the selected keywords to the clipboard. Cut is fully functioning within the index of Precision Helper (and its instances) only.
+           When transferring to another application, this action behaves as a "copy to the clipboard" (words in the index are not removed, after pasting from the clipboard in another application).<br>
+          <i>Note: Selecting multiple items in the index is constrained to one level of items.</i></li>
+      <li><b>Copy</b> - copies the selected keywords to the clipboard (including the subitems when used within the Precision Helper)</li>
+      <li><b>Paste</b> - pasting the keywords from the clipboard</li>
+      <li><b>Duplicate</b> - duplicates selected keywords. This is actually the conjunction of events <i>Copy + Paste</i>.</li>
+      <li><b>Dragging the mouse</b> - you can freely drag the items (words, lists) both in the same index and / or between different instances of Precision Helper,
+           and between Precision Helper and other applications (eg. text editor, spreadsheet processor, etc.)</li>
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Tip:<br>&nbsp;&nbsp;&nbsp;&nbsp;When you paste the list of files from the clipboard (such as copied in Windows Explorer, in a text editor, etc.)
+           Precision Helper creates the keywords, including links to the files and inlcuding automatic detection of topic file titles.</i></li>
+
+      <li style="list-style-type:none"></li>
+      <li><b>Move up</b> - moves selected keywords up in the structure</li>
+      <li><b>Move down</b> - moves selected keywords down in the structure</li>
+      <li><b>Move left</b> - moves selected keywords left in the structure</li>
+      <li><b>Move right</b> - moves selected keywords right in the structure</li>
+      <li><b>Sort</b> - sorts the whole index alphabetically</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Expand all</b> - expands all keywords (and subitems)</li>
+      <li><b>Collapse all</b> - collapses all keywords (hides subitems)</li>
+      <li><b>Quick search</b> - if you want to find a keyword in the index (according to the text or the topic file), use the <i>Search</i> field (in the top right corner)</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Go to ...</b> - goes to the topic, that is assigned to the selected keyword, at the <a href="navBar_TOC.htm">content</a></li>
+      <li><b>API Tester</b> - opens the <a href="toolsAPITester.htm">API Tester</a> tool (to quickly verify the definition of context help identifiers or the definition of keyword)</li>
+      <li><b>Auto add keywords</b> - opens the wizard for <a href="toolsIDXGen.htm">automatic insertion of keywords</a> into the index</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+     <a name="topicsel"></a> Selecting a topic
+    </p>
+    <ul class="shr">
+      <li><b>Select file in project</b> - selecting a topic via <a href="dialogPrjFiles.htm">Project file selection dialog</a></li>
+      <li><b>Select file</b> - selecting a topic via system open file dialog</li>
+      <li><b>Enter path or url</b> - entering the topic path or the url manualy (the dialog contains also the combo box with all the topics defined anywhere in the project)</li>
+      <li><b>Create a new topic from template</b> - creates a new topic file, based on selected template, in the location, that you choose.
+        <a href="dialogPrjFiles.htm">Template selection dialog</a> is displayed first, and then the system file dialog
+        is displayed to select the file name and the path for newly created topic.</li>      
+      <li><b>Create a new topic from existing file</b> - creates a new topic file in location, that you select, by copying an existing topic file, that you choose.
+        For the existing topic file selection is displayed the <a href="dialogPrjFiles.htm">Project file selection dialog</a> and then the system open file dialog
+        is displayed to select the file name and the path for newly created topic.</li>
+      <li><b>Create a new blank topic</b> - creates a new blank topic file in location, that you select</li>
+      <li><b>Select from external help</b> - selecting a topic, that is a part of the external help file (see the <a href="dialogPrjFiles.htm">Project file selection dialog</a>)</li>
+      <li><b>Is a popup list of topic links</b> - this option defines the current index item as popup list</li>
+      <li><b>Is an item of popup list</b> - this option defines the current index item as a child of the popup list (see above)</li>
+      <li><b>Is a link to another keyword</b> - defines the selected keyword as a link to another keyword. Linked keyword can be edited in the <a href="helpBar_OI.htm">Object Inspector</a>.</li>
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Note:<br>&nbsp;&nbsp;&nbsp;&nbsp;Precision Helper remembers the last "Select a topic" option (except the option "Include another contents")
+        and offers this as the default in whole application.</i></li>
+      <li style="list-style-type:none"></li>
+      <li><b>Save as template</b> - by this option you can save any topic as a template for later use.
+          Precision Helper automatically detects the styles, images, and other files, that are used in the topic,
+          and saves them together with the topic file into the folder of newly created template.</li>
+    </ul>
+      
+    <p class="big" style="padding-top:8px;">
+      More topic editing options
+    </p>
+    <ul class="shr">
+      <li><b>Inspector</b> - shows the <a href="helpBar_OI.htm">Object Inspector</a>, where you can edit <b>properties</b> of current keyword as well as the properties
+          of the whole index</li>
+      <li><b>Edit</b> - opens the current topic in associated <a href="dialogOptions.htm">external editor</a>. In drop down menu of the "Edit" button,
+          there are all associated applications available (this means the predefined <a href="dialogOptions.htm#mtools">editor and browser</a>
+          and applications that are associated with the extension of currently selected file).</li>
+
+      <li style="list-style-type:none"></li>
+      <li><b>Print</b> - prints the current topic</li>
+      <li><b>Preview</b> - print preview of current topic</li>
+      <li><b>Find</b> - finds text on currently shown topic page</li>
+      <li><b>Text size</b> - option for displayed text size of current topic page</li>
+      <li><b>Zoom in</b> - zooms the topic page in</li>
+      <li><b>Zoom out</b> - zooms the topic page out</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Backward</b> - goes backward in the browsing history of displayed topics</li>
+      <li><b>Forward</b> - goes forward in the browsing history of displayed topics</li>
+      <li><b>Refresh</b> - refreshes current topic view</li>
+      <li><b>Synchronize</b> - synchronizes the index of keywords with currenlty displayed topic</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Style of the index (in Object Inspector)
+    </p>
+    <ul class="shr">
+      <li><b>Default font</b> - the default font for the index of the resulting help</li>
+      <li><b>Frame ID</b> - the default frame identifier, where the index items will be displayed (see also <a href="pageTopic.htm#oi">Other topic properties</a>)</li>
+      <li><b>Window ID</b> - the default <a href="pageWinTypes.htm">window type</a> identifier, where the index items will be displayed (see also <a href="pageTopic.htm#oi">Other topic properties</a>)</li>
+    </ul>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. All rights reserved.
+  </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+		 xsi:type="AssignmentGrammar">
+	<name>2,000,000+ Fantasy (D&amp;D) Plot Hooks</name>
+	<author>Dedli (implemented by Lance Boudreaux)</author>
+	<description>Generates a large variety of fantasy plot hooks tied mostly to D&amp;D</description>
+	<tags>
+		<tag>D&amp;D</tag>
+		<tag>Encounters</tag>
+		<tag>Fantasy</tag>
+	</tags>
+	<parameters />
+	<supportsMaxLength>false</supportsMaxLength>
+	<url>https://www.reddit.com/r/rpgtables/comments/2siu9r/200000000_plot_hooks/</url>
+	<items>
+		<item name="Start">[Result+ResultEx]</item>
+		
+		<item name="Result" weight="19">[NPC+NPCEx] [Quirk+QuirkEx] [Doing].</item>
+		<item name="ResultEx" weight="1"><![CDATA[[Result] and [Result]]]></item>
+		
+		<item name="NPC">[DragonAge] [ChromaticDragon]</item>
+		<item name="NPC">[DragonAge] [MetallicDragon]</item>
+		<item name="NPC">[=Pick('An elf','A dwarf','A halfling','A human')] [=Pick('acolyte','scholar','noble','knight','cultist','druid','monk','elder','sorcerer','wizard','thief','artisan')]</item>
+		<item name="NPC">[=Pick('A goblin','An orc','A dragonborn','A gnome','A pixie','A merfolk')] [=Pick('acolyte','scholar','noble','knight','cultist','druid','monk','shaman','sorcerer','wizard','thief','artisan','farmer','miner')]</item>
+		<item name="NPC">[=Pick('A troll','A goblin','An ogre','A half-giant','A centaur','A tiefling','An aasimar')]</item>
+		<item name="NPC">[=Pick('A stone','A storm','A fire','A hill','A frost','An eldrich','A death','A sand')] [=Pick('giant','half-giant')]</item>
+		<item name="NPC">[=Pick('A rock','An air','A fire','A water')] elemental</item>
+		<item name="NPC">[=Pick('A fiend','A celestial','A half-demon','A half-angel')]</item>
+		<item name="NPC">Your [=Pick('parent','sibling','rich aunt','rich uncle','old friend','old enemy','doppelganger')]</item>
+		<item name="NPC">[=Pick('A bard','A pirate','A thug','A noble')]</item>
+		<item name="NPC">The object to your left, coming to life</item>
+		<item name="NPC">A sentient [=Pick('owlbear','lion','tiger','bear','wolf','bird','snake','fish','ape','dinosaur')]</item>
+		<item name="NPCEx">The [=Pick('ghost','spectral image')] of [NPC]</item>
+		<item name="NPC">[=Pick('A lich','A dracolich','A beholder','A telephatic grell','A mindflayer','A demigod','Your alter-ego','A murloc (yes, a warcraft murloc)')]</item>
+		<item name="NPCEx">[=Pick('An undead','A skeletal')] [NPC]</item>
+		<item name="NPC">The closest [=Pick('wooden item','plant','stone object','metal object')] to you, preferably in your hand, animated</item>
+		<item name="NPC">A were[=Pick('lion','bear','rat','bat','tiger','llama','snake','tarantula')]</item>
+		<item name="NPC">A werewolf</item>
+		
+		<item name="DragonAge" weight="9">A wyrmling</item>
+		<item name="DragonAge" weight="5">A young</item>
+		<item name="DragonAge" weight="5">An adult</item>
+		<item name="DragonAge" weight="1">An ancient</item>
+		
+		<item name="ChromaticDragon" weight="2">white</item>
+		<item name="ChromaticDragon">blue</item>
+		<item name="ChromaticDragon">green</item>
+		<item name="ChromaticDragon">black</item>
+		<item name="ChromaticDragon">red</item>
+		
+		<item name="MetallicDragon" Weight="2">brass</item>
+		<item name="MetallicDragon">bronze</item>
+		<item name="MetallicDragon">copper</item>
+		<item name="MetallicDragon">gold</item>
+		<item name="MetallicDragon">silver</item>
+		
+		<item name="Quirk">the size of [=Pick('a gold coin','an oak tree')]</item>
+		<item name="Quirk">with anger issues</item>
+		<item name="Quirk">that has a lisp</item>
+		<item name="Quirk">that speaks too [=Pick('loudly','quietly')]</item>
+		<item name="Quirk">that can't help but turn everything into a joke</item>
+		<item name="Quirk">that has no sense of humor</item>
+		<item name="Quirk">that is missing [=Pick('an eye','a leg','an arm','a hand')]</item>
+		<item name="Quirk">elder</item>
+		<item name="Quirk">that is racist against [=Pick('your','your ally\'s')] race</item>
+		<item name="Quirk">that was secretly sent to [=Pick('kill you','kill your ally','lead you to their master so you can be eaten','spy on you','steal your most prized item','eliminate and become you')]</item>
+		<item name="Quirk">that has amnesia and a note with their goals</item>
+		<item name="Quirk">that is way too [=Pick('clingy','much of an asshole','sexy for your eyes to behold','high level for this shit')]</item>
+		<item name="Quirk">that gives [=Pick('you','your friends')] dirty looks</item>
+		<item name="Quirk">that has a soft side</item>
+		<item name="Quirk">that is secretly [=Pick('the opposite gender','a different race')]</item>
+		<item name="Quirk">nymphomaniac</item>
+		<item name="Quirk">kleptomaniac</item>
+		<item name="Quirk">that is totally insane</item>
+		<item name="Quirk">that is a [=Pick('sadist','masochist')]</item>
+		<item name="Quirk">that is secretly a villain or a hero if they appear to be a villain already</item>
+		<item name="Quirk">that is invisible to everyone but you</item>
+		<item name="Quirk">that is cursed to not be able to make any sound</item>
+		<item name="Quirk">that [=Pick('is blind','is deaf','is deaf and blind','has truesight')]</item>
+		<item name="Quirk">[=Pick('mind-reader','telepath')]</item>
+		<item name="Quirk">that is very [Ability]</item>
+		<item name="Quirk">that is not very [Ability]</item>
+		<item name="Quirk">that is cursed to trust [=Pick('no one','everyone')]</item>
+		<item name="Quirk">that is secretly someone from your past, or impersonating someone from your past if they already appear as someone from your past</item>
+		<item name="Quirk">that is divinely [=Pick('lucky','unlucky')]</item>
+		<item name="Quirk">that embodies [DeadlySins+DeadlySinsEx]</item>
+		<item name="Quirk">that embodies [HeavenlyVirtues+HeavenlyVirtuesEx]</item>
+		<item name="Quirk">that secretly [=Pick('loves you','hates you','loves your ally','hates your ally')]</item>
+		<item name="Quirk">child</item>
+		<item name="Quirk">that smells [=Pick('heavenly','horrible')]</item>
+		<item name="Quirk">that is cursed to say the opposite of what they want to</item>
+		<item name="Quirk">that is actually [NPC]</item>
+		<item name="Quirk">that is a powerful illusion, caused by a [=Pick('wizard','sorceror','warlock','trickster')]</item>
+		<item name="QuirkEx">[Quirk] and is unknowingly poisoned and will die in 24 hours if untreated</item>
+		<item name="QuirkEx">[Quirk] and is unknowingly cursed and will transform into a monstrous version of itself in 24 hours and attack all in sight</item>
+		<item name="QuirkEx">[Quirk] and [Quirk]</item>
+		
+		<item name="Ability">strong</item>
+		<item name="Ability">dexterous</item>
+		<item name="Ability">hearty</item>
+		<item name="Ability">intelligent</item>
+		<item name="Ability">wise</item>
+		<item name="Ability">charismatic</item>
+		
+		<item name="DeadlySins">greed</item>
+		<item name="DeadlySins">lust</item>
+		<item name="DeadlySins">sloth</item>
+		<item name="DeadlySins">wrath</item>
+		<item name="DeadlySins">envy</item>
+		<item name="DeadlySins">pride</item>
+		<item name="DeadlySins">gluttony</item>
+		<item name="DeadlySinsEx">[DeadlySins] and [DeadlySins]</item>
+		
+		<item name="HeavenlyVirtues">chastity</item>
+		<item name="HeavenlyVirtues">temperance</item>
+		<item name="HeavenlyVirtues">charity</item>
+		<item name="HeavenlyVirtues">diligence</item>
+		<item name="HeavenlyVirtues">patience</item>
+		<item name="HeavenlyVirtues">kindness</item>
+		<item name="HeavenlyVirtues">humility</item>
+		<item name="HeavenlyVirtuesEx">[HeavenlyVirtues] and [HeavenlyVirtues]</item>
+		
+		<item name="Doing">asks if you would like to [=Pick('hear a joke','hear a song','join them for an event','earn some quick money','play a game','see something crazy')]</item>
+		<item name="Doing">accuses you of stealing a magical item</item>
+		<item name="Doing">begins to charge at you with [=Pick('fury','lust')]</item>
+		<item name="Doing">challenges you to a [=Pick('duel','race','arm-wrestling challenge','performance challenge','game of chance','intelligence challenge','eating contest')]</item>
+		<item name="Doing">begs you to help them save a loved one from [=Pick('goblinoids','humanoids','fiends','celestials')]</item>
+		<item name="Doing">begs you to help protect them from [=Pick('assassins','a debt collector','an ex-lover','a supernatural stalker')]</item>
+		<item name="Doing">[=Pick('begs','demands','offers gold for','lets you know that no one wants')] you to save a loved one from old enemies</item>
+		<item name="Doing">offers an unrealistic amount of gold for the head of an enemy</item>
+		<item name="Doing">[=Pick('tries to hit on you, in the lamest way possible','confesses their love for you in the most passionate way possible')]</item>
+		<item name="Doing">IS ON FIRE</item>
+		<item name="Doing">is leading an attack on your location</item>
+		<item name="Doing">appears out of thin air and yells "There is not time! Come with me!"</item>
+		<item name="Doing">puts a knife to your neck and whispers "Don't flinch..."</item>
+		<item name="Doing">asks if you remember them</item>
+		<item name="Doing">is [=Pick('crying and pleading to you','yelling furiously at you','speaking happily to you','apparently flirting with you')] in a language you don't understand</item>
+		<item name="Doing">[=Pick('insults you','compliments you') drunkenly</item>
+		<item name="Doing">is obviously stalking you</item>
+		<item name="Doing">demands that you pay them for the damages you've caused</item>
+		<item name="Doing">is an old [=Pick('friend','rival','lover','relative','work associate','vaguely familiar individual')] from your past, whom you haven't seen in years</item>
+		<item name="Doing">owes you [=Pick('a favor','money')], and it's time to collect</item>
+		<item name="Doing">attempts to distract you from something important</item>
+		<item name="Doing">asks if you have time to talk about your lord and savior, [=Pick('Bahamut','Pelor','Blipdoolpoolp','Orcus','Cthulu','Tiamat','Gruumsh')]</item>
+		<item name="Doing">asks if they can hire some assistance in finding [=Pick('an ancient artifact','a legendary location','a means to travel to another continent or world','a pet','a lost relative','a lost toy')]</item>
+		<item name="Doing">is impersonating you and [=Pick('stealing','murdering','vandalizing','gathering a party together using your fame','scamming','donating to charity')] in your name</item>
+		<item name="Doing">arrives [=Pick('in a bland vehicle like a boat or wagon','in an exotic vehicle like an airship','on a common mount','on a rare or ridiculous mount')], shouts "There's no time to explain!", and expects you to join them</item>
+		<item name="Doing">is telling a story about you which is [=Pick('true','false','exaggerated')] and [=Pick('heroic','humiliating','honor-less','charitable','wicked')]</item>
+		<item name="Doing">is your worse enemy and looking right at you, ready to [=Pick('attack','flee')]</item>
+		<item name="Doing">has a life-threatening [=Pick('extremely contagious','maddening','disgusting','extremely contagious, disgusting, and maddening')] disease and asks to hire you to find the antidote</item>
+		<item name="Doing">is drowning</item>
+		<item name="Doing">is fighting with another random NPC, and [=Pick('losing','winning')].  The loser calls for help</item>
+		<item name="Doing">throws something large and dangerous at you</item>
+		<item name="Doing">yells, "They're coming! Everybody hide!"</item>
+		<item name="Doing">desperately needs your help, but is under a spell that doesn't allow them to explain the situation</item>
+		<item name="Doing">hands you an envelope with a note, with a wink, and then leaves.  It contains [=Pick('your darkest secret','a scrying-orb capture photograph of a loved on in chains','a threat against your home','a threat against your life')] and a polite request for [=Format(Roll(1d20)*1000,'#,##0')] gp</item>
+		<item name="Doing">is hanging off the edge of something high of the ground and calling for help</item>
+		<item name="Doing">demands that you tell them [=Pick('where their family is','who you're working with','what's in your pocket','your birthday and mother's maiden name')]</item>
+		<item name="Doing">informs you that your bank accounts are empty</item>
+		<item name="Doing">give you [Given]</item>
+		
+		<item name="Given">a magic item</item>
+		<item name="Given">a letter from a loved one you thought was dead</item>
+		<item name="Given">an heirloom from a fallen family member, who you hadn't yet learned had died</item>
+		<item name="Given">[=Format(Roll(1,100)*100,'#,##0")] sp</item>
+	</items>
+</Grammar>
+

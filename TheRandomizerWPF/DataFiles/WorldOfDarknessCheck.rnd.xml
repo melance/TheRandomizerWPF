@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+		 xsi:type="DiceRoll">
+	<name>World of Darkness Skill Check</name>
+	<author>Lance Boudreaux</author>
+	<description>Rolls a skill check for World of Darkness</description>
+	<category>Dice Roll</category>
+	<genre>Horror</genre>
+	<system>World of Darkness</system>
+	<parameters>
+		<parameter name="Version" display="Version" type="List">
+			<option display="Old World of Darkness">OWOD</option>
+			<option display="New World of Darkness">NWOD</option>
+		</parameter>
+		<parameter name="Pool" display="Dice Pool" type="Text" default="5" />
+		<parameter name="Diff" display="Difficulty" type="Text" default="6" />
+	</parameters>
+	<supportsMaxLength>false</supportsMaxLength>
+	<function>
+	<![CDATA[Successes:=if([Version]='OWOD',TargetRoll(Pool,10,Diff,'GT','R1'),TargetRoll(Pool,10,Diff,'GT','CX'))
+	'<b>' + if(Successes >= 1, 'Success', '<span style="color:DarkRed;">' + if(Successes < 0, if([Version]='OWOD','Botch','Fail'),'Fail') + '</span>') + '</b>'
+	'Die Rolls: ' + RollResults()
+	'Successes: ' + Successes]]>
+	</function>
+</Grammar>

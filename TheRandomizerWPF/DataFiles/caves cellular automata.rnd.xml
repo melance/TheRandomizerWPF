@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="LUAGrammar">
+	<name>Caves (Cellular Automata Method)</name>
+	<author>Lance Boudreaux</author>
+	<description>Generates a random cave using the cellular automata method.  Be aware that large maps may take a long time to generate.  Also, copying and pasting may cause the grid to stretch vertically.</description>
+	<url>http://www.futuredatalab.com/proceduraldungeon/</url>
+	<category>Map</category>
+	<parameters>
+		<parameter type="Text" display="Width" name="xsize" default="100">Large sizes (>200) can take a long time to complete.
+Value must be greater than 10.</parameter>
+		<parameter type="Text" display="Height" name="ysize" default="50">Large sizes (>200) can take a long time to complete.
+Value must be greater than 10.</parameter>
+		<parameter type="Text" display="Clear" name="fill" default="54">The amount of the cave to clear on the initial pass before clean up.
+Percentages below 50 tend to create very disjointed cave systems.
+The value must be between 1 and 99</parameter>
+		<parameter type="Text" display="Cell Size" name="csize" default="9">The size of each block.</parameter>
+		<parameter type="CheckBox" display="Show Grid Lines" name="gridlines" default="True" />
+	</parameters>
+	<evenResultColor>
+		<A>255</A>
+		<R>255</R>
+		<G>255</G>
+		<B>255</B>
+	</evenResultColor>
+	<dividerColor>
+		<A>255</A>
+		<R>255</R>
+		<G>255</G>
+		<B>255</B>
+	</dividerColor>
+	<supportsMaxLength>false</supportsMaxLength>
+	<scriptPath>LUA\CellularAutomataCaves.lua</scriptPath>
+</Grammar>

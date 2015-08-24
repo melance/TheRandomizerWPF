@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="LUAGrammar">
+	<name>LUA Test</name>
+	<author>Lance Boudreaux</author>
+	<description>Testing the LUA grammar</description>
+	<category>Test</category>
+	<parameters>
+		<parameter name="type" display="Type" type="List" valueType="Label">
+			<option display="Any">any</option>
+			<option display="Humanoid">human</option>
+			<option display="Lane">land</option>
+			<option display="Marine">water</option>
+			<option display="Flying">air</option>
+			<option display="Plant">plant</option>
+		</parameter>
+	</parameters>
+	<supportsMaxLength>false</supportsMaxLength>
+	<script>
+	print(calc:Generate('Monster DnD 5e',0,{selectRandom='True',size='Any',creatureType='Undead',alignmentLNC='Any',alignmentGNE='Any',minCR='0',maxCR='100'}))
+	</script>
+</Grammar>

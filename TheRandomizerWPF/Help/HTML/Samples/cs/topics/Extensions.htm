@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Aplikační doplňky</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Aplikační doplňky</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/phe.jpg" style="float:left; margin-right:12px; margin-bottom:24px;" />
+    <p>
+      Precision Helper má implementovány dva typy rozhraní pro použití aplikačních doplňků (funkčních rozšíření).      
+      Jedná se o rozhraní <b>příkazové řádky</b> a rozhraní skriptovacího jazyka <b>Pascal Script</b>.
+    </p>
+    <p>
+      Doplňky mohou podstatně rozšířit funkčnost produktu v různých oblastech a mohou být vytvářeny třetími stranami.           
+    </p>
+    <p class="big">
+      První dostupné doplňky:
+    </p>    
+    <ul class="shr">
+      <li><b>HTML Tidy</b> - doplněk využívající známý nástroj pro kontrolu, pročištění zdrojového textu a konverzi témat</li>
+      <li><b>Nový projekt ze souborů</b> - průvodce pro vytvoření nového projektu nápovědy z již existujících souborů témat</li>
+      <li><b>Upravit HHC</b> - editace zdrojového souboru obsahu v externím HTML editoru</li>
+      <li><b>Upravit HHK</b> - editace zdrojového souboru rejstříku v externím HTML editoru</li>
+      <li><b>Statistiky projektu</b> - zobrazení stručných statistických informací o aktuálním projektu</li>
+      <li><b>Datum a čas</b> - vložení aktuálního data a času do editovaného tématu</li>
+    </ul>
+    <br />
+    
+
+    <p class="big">
+      Umístění doplňků
+    </p>
+    <p>
+      Všechny aplikační doplňky musí být instalovány do aplikační složky produktu Precision Helper, do podsložky <i>Extras</i>.
+    </p>
+    <p style="margin-left:24px; text-align:left;">
+      Při výchozí instalaci na Windows 2000/XP je to složka:<br>
+      <i>"C:\Documents and Settings\%UserName%\Data aplikací\Precision\precisionhelper\Extras"</i><br><br>
+      Při výchozí instalaci na Windows Vista (a vyšší) je to složka:<br>
+      <i>"C:\Users\%UserName%\AppData\Roaming\Precision\precisionhelper\Extras"</i>
+    </p>
+    <p>
+      Každý doplněk by měl také být uložen ve zvláštní složce. Sadu doplňků, která využívá společné součásti (soubory),
+      můžete samozřejmě umístit do společné složky. 
+    </p>
+    <br />
+    
+    <p class="big">
+      Konfigurační soubory doplňků
+    </p>
+    <p>
+      Každý doplněk je definován parametry uvedenými v <b>konfiguračním souboru</b>, který musí mít příponu <b>.PHE</b>
+      (např. MyExtension.phe).<br />
+      Konfigurační soubory pro doplňky s rozhraním Pascal Script jsou jednoduché a obsahují v podstatě jen popisné informace.
+      Naopak konfigurační soubory pro doplňky s rozhraním příkazové řádky obsahují úplnou definici parametrů
+      a jednotlivých operací, které má Precision Helper provést v rámci jednotlivých kroků před spuštěním
+      a po dokončení běhu doplňku.         
+    </p>
+    <br />
+
+    <p class="big">
+      Rozhraní Pascal Script
+    </p>
+    <p>
+      Následující příklad ukazuje konfigurační soubor doplňku s rozhraním <b>Pascal Script</b>.
+    </p>
+
+<pre style="color:#000;background-color:#eee;margin-top:0px;">
+
+  <b>[Precision Helper Extension]</b>
+  <b>Interface=</b>pascalscript
+
+  ; Default title and description of the extension   
+  <b>Caption=</b>New from files
+  <b>Hint=</b>Create a new help project from an existing topic files
+
+  ; Localized title and description of the extension
+  <b>Caption.cs=</b>Nový ze souborů
+  <b>Hint.cs=</b>Vytvořit nový projekt nápovědy z existujících souborů témat
+   
+  <b>[IDE]</b>
+  ; Parts of the Precision Helper IDE, where the extension should be available
+  ribbonHOME=1
+  ribbonTOC=0
+  ribbonIDX=0
+  ribbonPUB=0
+  ribbonTOOLS=1
+  ribbonHELP=0
+  TopicSource=0
+  
+</pre>
+    <p>
+      Význam parametrů v tomto konfiguračním souboru je více méně jasný. Veškerý funkční kód doplňku tohoto typu
+      je umístěn v souboru s názvem <b>RunScript.pas</b>. Pokud doplněk obsahuje také vizuální prostředí (formulář),
+      musí být definováno v souboru <b>RunScript.dfm</b>.
+    </p>
+    <p>
+      Pro editaci a vytváření doplňků s rozhraním Pascal Script můžete použít libovolný editor,
+      ale doporučujeme použít produkt <b>pdScript IDE</b>, který je rovněž dodáván výrobcem produktu Precision Helper,
+      a který obsahuje podporu pro veškeré funkce a možnosti implementované do Precision Helperu 
+      (viz <a href="http://www.be-precision.com/products/pdscript/" target="blank">http://www.be-precision.com/products/pdscript/</a>).    
+    </p>
+    <p>
+      Jako úvodní příklady pro vytváření Vašich vlastních doplňků můžete použít předdefinované existující doplňky,
+      které naleznete ve výše zmíněné složce. 
+    </p>
+    <br />
+
+    <p class="big">
+      Rozhraní příkazové řádky
+    </p>
+    <p>
+      Následující příklad ukazuje konfigurační soubor doplňku s rozhraním <b>příkazové řádky</b>, včetně popisu významu parametrů.
+    </p>
+       
+<pre style="color:#000;background-color:#eee;margin-top:0px;">
+
+  <b>[Precision Helper Extension]</b>
+  ; Interface: 
+  ;   pascalscript - Pascal Script interface  
+  ;   cmdline      - Command-line interface
+  ;                  An external program is executed with the specified parameters.
+  ;                  (See 'Application' and 'Command-line' sections for more info)
+  <b>Interface=</b>cmdline
+  
+  <b>Caption=</b>Edit HHC
+  <b>Hint=</b>Open the table of contents source file in an external html editor
+  
+  <b>Caption.cs=</b>Upravit HHC
+  <b>Hint.cs=</b>Otevřít zdrojový soubor obsahu v externím html editoru
+  
+  <b>[Script]</b>
+  ; not implemented yet
+  <b>ExecOnLoad=</b>0
+  
+  <b>[Application]</b>
+  ; Application to execute. Can be an exact path, or path with an environment variables, 
+  ; or can contain one of the following macros:
+  ; %X% - Macro that runs one of the tools predefined in Precision Helper. 
+  ;       (X can be: 1 - Html editor, 2 - Web browser, 4 - Image editor, 5 - File manager)
+  ; %ENVIRONMENT_VARIABLE% - Any environment variable
+  ; %REG:HKxx\KeyPath,ValueName|DefaultValue% - Value from registry
+  ; %APPEXTRAS% - Extensions folder of Precision Helper
+  ; %APPTEMPLATES% - Templates folder of Precision Helper
+  ; %APPFOLDER% - Folder that contains PrecisionHelper.exe file
+  ; %APPTEMP% - Temporary folder of Precision Helper (ie. ...\Precision Helper\Temp\...)
+  ; %PROJECTFILE% - Current project file
+  ; %PROJECTFOLDER% - Folder of the current project
+  ; %APPSAMPLES% - Samples folder of Precision Helper  
+  <b>%1%</b>
+  
+  <b>[Command-line]</b>
+  ; Command-line parameters. Can contain macros mentioned in [Application] section (except the %X%) and the following macros:
+  ; %1 - filename of currently selected item in Precision Helper (topic in TOC, topic in Index, file in Include files section, etc.)
+  ; %2 - Source file name of the project (HHP)
+  ; %3 - Target CHM file of the project
+  ; %4 - Source file name of table of content (HHC)
+  ; %5 - Source file name of index of keywords (HHK)
+  ; %6 - Current installation folder of this extension
+  ; %7 - Current options file name of this extension
+  <b>Parameters=</b>"%4"
+  
+  ; Precision Helper waits until the executed extension will be closed. 
+  ; Do not use this when you work with both programs (PH and the application) side by side.
+  ; Not available when using the %X% macro in [Application] section
+  <b>waitfor=</b>0
+  
+  ; Saves the TOC before execution
+  <b>saveTOC=</b>1
+  ; Saves the IDX before execution
+  <b>saveIDX=</b>0
+  ; Saves the whole project before execution
+  <b>saveProject=</b>0
+  ; Saves the current topic before execution
+  <b>saveTopic=</b>0
+  
+  ; When the extension is executed, Precision Helper will reload the TOC after its next activation.
+  ; If 'waitfor=1' then TOC will be reloaded after closing the extension application
+  <b>reloadTOC=</b>1
+  ; Similar to reloadTOC, but applies to Index of keywords
+  <b>reloadIDX=</b>0
+  ; Similar to reloadTOC, but applies to the whole project
+  <b>reloadProject=</b>0
+  ; Similar to reloadTOC, but applies to the current topic
+  <b>reloadTopic=</b>0
+  ; Similar to reloadTOC, but reloads all the extensions (suitable for add-ons that implements Add-Ons manager features)  
+  <b>reloadExtras=</b>0
+  
+  <b>[IDE]</b>
+  ; Parts of the Precision Helper GUI, where the extension should be available
+  ribbonHOME=0
+  ribbonTOC=1
+  ribbonIDX=0
+  ribbonPUB=0
+  ribbonTOOLS=0
+  ribbonHELP=0
+  TopicSource=0
+   
+</pre>
+
+    <p>
+      Jak vidíte z popisu parametrů, tak coby doplněk můžete použít skutečně libovolnou externí aplikaci,
+      jelikož Precision Helper není přímo závislý na jejím běhu (kromě případného čekání na její dokončení), ani výstupu. 
+    </p>
+    <br>
+
+    <p class="big">
+      Další možnosti doplňků
+    </p>
+    <ul class="shr">
+      <li>Ikony doplňků musí být definovány v souborech s názvem "icon16.png" a "icon24.png",
+          které musí být umístěny u konfiguračního souboru.</li>
+      <li>Každému doplňku s rozhraním Pascal Script je vyhrazen soubor s jeho vlastním nastavením,
+          který má stejný název jako konfigurační soubor, ale příponu <b>.PHEINI</b> (viz např. doplněk "NewFromFolder")</li>
+      <li>Úplný popis syntaxe rozhraní Pascal Script není prozatím k dispozici, ale seznam dostupných funkcí najdete
+          ve schématu kódování "Precision Helper" v rámci již zmíněného editoru doplňků, produktu <b>pdScript IDE</b>
+          (viz <a href="http://www.be-precision.com/products/pdscript/" target="blank">http://www.be-precision.com/products/pdscript/</a>).          
+          </li>
+    </ul>
+    <br>
+
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011&nbsp;&nbsp;Precision software &amp; consulting. All rights reserved.
+  </div>
+</body>
+</html>

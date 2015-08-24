@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		 xsi:type="TableGrammar">
+	<name>Generic NPC</name>
+	<author>Lance Boudreaux</author>
+	<description>A generic NPC generator.</description>
+	<category>NPC</category>
+	<parameters>
+		<parameter name="Gender" display="Gender" type="List" valueType="Value">
+			<option display="Any">0</option>
+			<option display="Male">-1</option>
+			<option display="Female">+1</option>
+		</parameter>
+	</parameters>
+	<tables>
+		<table action="Random" column="Roll" randomModifier="=[Gender]" name="Gender" delimiter="|">
+			<![CDATA[
+			Roll | Gender
+			1    | Male
+			2    | Female
+			]]>
+		</table>
+		<table action="Random" column="Roll" name="PhysicalAppearance" delimiter="|">
+			Roll | Appearance
+			# Tattered
+			10	 | Gruff
+			20	 | Ragged
+			30   | Dirty
+			40   | Threadbare
+			50   | Tattered
+			60   | Shabby
+			# Clean
+			70	 | Attractive
+			80	 | Clean Cut
+			90	 | Presentable
+			100  | Neat
+			110  | Tidy
+			120  | Respectable
+			# Nondescript
+			130	 | Nondescript
+			140	 | Plain
+			150	 | Unremarkable
+			160  | Unmemorable
+			170  | Ordinary
+			180  | Average
+		</table>
+		<table action="Random" column="Roll" name="Height" delimiter="|">
+			Roll | Height
+			5    | Very Short
+			15   | Short
+			35   | Average
+			45   | Tall
+			50   | Very Tall
+		</table>
+		<table action="Random" column="Roll" name="Weight" delimiter="|">
+			Roll | Weight
+			2    | Emaciated
+			5    | Bony
+			13   | Skinny
+			33   | Average
+			51   | Big
+			56   | Heavy
+			59   | Fat
+			61   | Obese
+			62   | Morbidly Obese
+		</table>
+		<table action="Random" column="Roll" repeat="=Rnd(2,4)" repeatJoin=", " name="Personality" delimiter="|">
+			Roll | Personality
+			10   | Adventurous
+			20   | Affable
+			30   | Conscientious
+			40   | Cultured
+			50   | Dependable
+			60   | Discreet
+			70   | Fair
+			80   | Fearless
+			90   | Observant
+			100  | Impartial
+			110  | Independent
+			120  | Optimistic
+			130  | Keen
+			140  | Gragarious
+			150  | Persistent
+			160  | Capable
+			170  | Charming
+			180  | Precise
+			190  | Confident
+			200  | Dutiful
+			210  | Encouraging
+			220  | Reliable
+			230  | Exuberant
+			240  | Helpful
+			250  | Humble
+			260  | Suave
+			270  | Imaginative
+			280  | Meticulous
+			290  | Obedient
+			300  | Loyal
+			310  | Trusting
+			320  | Valiant
+			330  | Lazy
+			340  | Picky
+			350  | Sullen
+			360  | Pompous
+			370  | Dishonest
+			380  | Finicky
+			390  | Sarcastic
+			400  | Arrogant
+			410  | Cowardly
+			420  | Sneaky
+			430  | Rude
+			440  | Quarrelsome
+			450  | Impulsive
+			460  | Slovenly
+			470  | Narcissistic
+			480  | Boorish
+			490  | Surly
+			500  | Unfriendly
+			510  | Unruly
+			520  | Thoughtless
+			530  | Stingy
+			540  | Bossy
+			550  | Vulgar
+			560  | Malicious
+			570  | Conceited
+			580  | Obnoxious
+			590  | Precocious
+		</table>
+		<table action="Random" column="Roll" name="Intelligence" delimiter="|">
+			Roll | Intelligence
+			1    | Extremely Low
+			3    | Low
+			14   | Below Average
+			64   | Average
+			84   | Above Average
+			86   | Superior
+			87   | Very Superior
+		</table>
+		<table action="Random" column="Roll" repeat="=Roll(2,2)" repeatJoin=", " name="DistinguisingTrait" delimiter="|">
+			Roll | Trait
+			001  | Accent
+			002  | Acne
+			003  | Acne Scars
+			004  | Albino
+			005  | Almond Eyes
+			006  | Always eating or drinking
+			007  | Always late
+			008  | Always out of breath
+			009  | Always wears ‘lucky’ hat, scarf, ring
+			010  | Always wears favorite color
+			011  | Always wears thick, leather gloves
+			012  | Animal bite or claw scar
+			013  | Archaic speech
+			014  | Arm in sling
+			015  | Arm Tattoos
+			016  | Arthritic Hands
+			017  | Asks often about his own appearance
+			018  | Asks rhetorical questions and answers
+			019  | Avoids crowds
+			020  | Bad Breath
+			021  | Bad cook, begs PCs to eat
+			022  | Bandaged extremity
+			023  | Belches loud and often
+			024  | Big Ears
+			025  | Big Eyes
+			026  | Big Feet
+			027  | Big Nose
+			028  | Birthmark
+			029  | Bites fingernails
+			030  | Bites lower lip
+			031  | Blatantly pouts
+			032  | Blind
+			033  | Blind, sees through familiar’s eyes
+			034  | Blinks often
+			035  | Body Tattoos
+			036  | Bow Legs
+			037  | Bows before speaking and after
+			038  | Braggart
+			039  | Broken Nose
+			040  | Bronze Skin
+			041  | Bruised extremities
+			042  | Buck Teeth
+			043  | Bucktoothed
+			044  | Burn Scar
+			045  | Calls PCs by wrong names
+			046  | Carries cloth covered basket
+			047  | Carries crumbs to feed birds
+			048  | Carries satchel filled with junk
+			049  | Carries small snake, mouse, or lizard
+			050  | Chews grass, stick, or leaves
+			051  | Chews on braid or lock of hair
+			052  | Claps hands often
+			053  | Closely examines everything
+			054  | Clothes have bulging pouches
+			055  | Clothes made of woven leaves
+			056  | Clumsy
+			057  | Combs hair with fingers
+			058  | Complains of heartburn
+			059  | Conceited
+			060  | Convinced PCs need reforming
+			061  | Coughs regularly
+			062  | Covered with road dust
+			063  | Crooked Teeth
+			064  | Crumbs in beard and clothes
+			065  | Curious Smell
+			066  | Dark Complexion
+			067  | Dark tan
+			068  | Dead Eye
+			069  | Deaf
+			070  | Deep Voice
+			071  | Denies gossiping and proceeds to gossip
+			072  | Dimples
+			073  | Distinctive Gait
+			074  | Dressed in formal attire
+			075  | Dressed in furs or leather
+			076  | Dressed in silks and lace
+			077  | Dresses colorblind
+			078  | Exotic weapon
+			079  | Eye tic
+			080  | Face Tattoos
+			081  | Facial Piercing
+			082  | Facial Scar
+			083  | Falsely claims he is an adventurer too
+			084  | Fascinated by fire
+			085  | Fascinated by non human races
+			086  | Fidgets
+			087  | Flatulent
+			088  | Flips key ring with finger
+			089  | Food stained face
+			090  | Foreign clothing
+			091  | Freckles
+			092  | Gaps between teeth
+			093  | Gestures wildly with hands
+			094  | Giggles, inappropriately
+			095  | Gives a different name every meeting
+			096  | Greatly exaggerates
+			097  | Hacking cough
+			098  | Hair dye covering collar
+			099  | Hairless
+			100  | Hand covers mouth while speaking
+			101  | Hands coppers to beggar children
+			102  | Hard of Hearing
+			103  | Hare Lip
+			104  | Has arthritis in hands
+			105  | Has black eye
+			106  | Has hiccups
+			107  | Has leaves in hair or clothing
+			108  | Has long, lacquered nails
+			109  | Has one or more gold teeth
+			110  | Has paint stained hands and clothes
+			111  | Has vampire bite scars on neck
+			112  | Has wart on hand, covers it always
+			113  | Heterochromia
+			114  | High squeaky voice
+			115  | Holier than thou attitude
+			116  | Hook Nose
+			117  | Hooks thumbs in belt and bounces
+			118  | Instructs PCs on latest fashion
+			119  | Intoxicated or acting
+			120  | Jaundice
+			121  | Jingles coins in pocket or pouch
+			122  | Keeps arms folded
+			123  | Keeps hand on PCs shoulder
+			124  | Keeps hand on weapon
+			125  | Keeps hands in pockets
+			126  | Lazy Eye
+			127  | Limp
+			128  | Lisp
+			129  | Loses items and asks PCs to help look
+			130  | Makes puns
+			131  | Many hair or beard braids
+			132  | Military manner
+			133  | Mismatched eyes
+			134  | Missing Eye
+			135  | Missing Finger
+			136  | Missing limb, joints, fingers, teeth
+			137  | Missing Teeth
+			138  | Mixes gibberish with words
+			139  | Mixes languages
+			140  | Mole
+			141  | Monocle
+			142  | Mousy
+			143  | Mumbles
+			144  | Mute
+			145  | Mute, speaks through sign language
+			146  | Neck Tattoos
+			147  | Nervous Tic
+			148  | Never looks anyone in the eye
+			149  | Nods often
+			150  | Nose bleeds
+			151  | Obvious cosmetics
+			152  | Offers exotic beverages or foods
+			153  | Ogles opposite sex openly
+			154  | Oily skin or hair
+			155  | One Arm
+			156  | One Leg
+			157  | Only eats meat
+			158  | Overweight
+			159  | Pale Complexion
+			160  | Paper cuts and ink stained fingers
+			161  | Pasted on moustache or beard
+			162  | Pathological liar
+			163  | Perfume/Cologne
+			164  | Picks at scabs or loose skin
+			165  | Picks ears
+			166  | Picks lint off clothes, his and PCs
+			167  | Picks nose
+			168  | Picks teeth with knife or fingernails
+			169  | Plays with charm on necklace
+			170  | Pockmarked skin
+			171  | Polishes brooch or buckle often
+			172  | Polishes spectacles, never wears them
+			173  | Pregnant woman
+			174  | Quotes famous poet, regularly
+			175  | Quotes religious text
+			176  | Ragged Ear
+			177  | Rash
+			178  | Refers to good old days often
+			179  | Refers to self in third person
+			180  | Regularly blows stray hair out of eyes
+			181  | Rings or bells in hair or beard braids
+			182  | Rings sewn on clothes with fetishes
+			183  | Roll twice
+			184  | Rolls “R’s” while speaking
+			185  | Rope burns around neck or wrists
+			186  | Rubs back of neck
+			187  | Rubs calluses on palms with thumb
+			188  | Rubs chin
+			189  | Rubs eyes often
+			190  | Rubs hands together
+			191  | Rubs large belly often
+			192  | Rubs luckstone or fetish
+			193  | Rubs old knee injury
+			194  | Rubs palms on thighs
+			195  | Runny nose
+			196  | Says “hmm – hmm” often
+			197  | Scar
+			198  | Scratches
+			199  | Seems cold or hot
+			200  | Serious burn scar
+			201  | Sharpens knife with whetstone
+			202  | Shaving cuts on face
+			203  | Sickly
+			204  | Single hair or beard braid
+			205  | Sketches PC while talking
+			206  | Sleepy
+			207  | Smacks palm with fist
+			208  | Small Eyes
+			209  | Smells like alcohol
+			210  | Smells like cedar wood
+			211  | Smells like cheap cologne
+			212  | Smells like dogs
+			213  | Smells like expensive cologne
+			214  | Smells like horses
+			215  | Smells like lavender
+			216  | Smells like roses
+			217  | Smells like soap
+			218  | Smells like sweat
+			219  | Smells like tobacco
+			220  | Snaggle Tooth
+			221  | Sneezes often
+			222  | Sniffs often
+			223  | Snorts while laughing
+			224  | Speaks to ‘spirits’
+			225  | Speaks to animals like people
+			226  | Spit polishes thick, fancy bracelet
+			227  | Spits when talking
+			228  | Spotless, glossy boots
+			229  | Squints
+			230  | Statuesque
+			231  | Stretches often
+			232  | Stutter
+			233  | Stutters
+			234  | Sucks on teeth
+			235  | Sunburn and peeling skin
+			236  | Superstitious
+			237  | Survived torture, has no fingernails
+			238  | Sweats profusely
+			239  | Talks in rhyme
+			240  | Talks loudly
+			241  | Talks of health problems
+			242  | Taps foot incessantly
+			243  | Taps foot or drums fingers
+			244  | Tattoo
+			245  | Tongue tied
+			246  | Toothless
+			247  | Trims or cleans nails with long knife
+			248  | Tugs on ear
+			249  | Twirls coin between fingers
+			250  | Twirls hair with finger
+			251  | Twists ring
+			252  | Underweight
+			253  | Uni-brow
+			254  | Unusual jewelry
+			255  | Uses a parasol
+			256  | Uses foul language
+			257  | Uses long words incorrectly
+			258  | Vegetarian
+			259  | Very pale
+			260  | Walks like a sailor
+			261  | Wandering eye
+			262  | Warts
+			263  | Watering eye(s)
+			264  | Waxed facial hair
+			265  | Wears ancient fashions
+			266  | Wears armor covered in runes
+			267  | Wears clothes too big or too small
+			268  | Wears flower in hair or clothing
+			269  | Wears foreign style clothes
+			270  | Wears heart shaped beauty mark
+			271  | Wears notched belt
+			272  | Wears obvious wig
+			273  | Wears scarf around ankles or wrists
+			274  | Wears vest with bell buttons
+			275  | Wears well tended ancient weapon
+			276  | Whispers
+			277  | Wine colored birthmark
+			278  | Wine stained ‘moustache’
+			279  | Writes down everything PC says
+			280  | Yawns often
+		</table>
+		<table action="Loop" loopId="Id" name="Age" delimiter="|">
+			Id  | Value
+			Age | =Rnd(12,80)
+		</table>
+	</tables>
+	<output>
+		<![CDATA[
+		<h3 style="margin:0;padding:0">[Age.Age.Value] year old [PhysicalAppearance.Appearance] [Gender.Gender]</h3>
+		<b>Height</b>: [Height.Height]<br /> 
+		<b>Weight</b>: [Weight.Weight]<br />
+		<b>Personality</b>: [Personality.Personality]<br />
+		<b>Intelligence</b>: [Intelligence.Intelligence]<br />
+		<b>Distinguishing Traits</b>: [DistinguisingTrait.Trait]<br />
+		]]>
+	</output>
+</Grammar>

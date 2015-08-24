@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar">
+	<name>Monster Encounter D&amp;D 3e</name>
+	<author>Lance Boudreaux</author>
+	<description>A random monster encounter selector using D&amp;D 3e.</description>
+	<genre>Fantasy</genre>
+	<system>D&amp;D 3e</system>
+	<category>Encounter</category>
+	<parameters>
+		<parameter name="Type" display="Type" type="List" valueType="Label">
+			<option>Any</option>
+			<option>Aberration</option>
+			<option>Animal</option>
+			<option>Beast</option>
+			<option>Construct</option>
+			<option>Dragon</option>
+			<option>Elemental</option>
+			<option>Fey</option>
+			<option>Fiend</option>
+			<option>Giant</option>
+			<option>Humanoid</option>
+			<option>Ooze</option>
+			<option>Outsider</option>
+			<option>MagicalBeast</option>
+			<option>Monstrosity</option>
+			<option>Plant</option>
+			<option>ShapeChanger</option>
+			<option>Undead</option>
+			<option>Vermin</option>
+		</parameter>
+	</parameters>
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start">[Type]</item>
+		<item name="Any">[Monster]</item>
+	</items>
+	<imports>
+		<import>monsters by type</import>
+	</imports>
+</Grammar>

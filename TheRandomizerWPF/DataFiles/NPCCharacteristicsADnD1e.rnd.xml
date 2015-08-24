@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+		 xsi:type="AssignmentGrammar" >
+	<name>AD&amp;D 1e NPC Characteristics</name>
+	<author>Lance Boudreaux</author>
+	<genre>Fantasy</genre>
+	<system>AD&amp;D 1e</system>
+	<category>NPC</category>
+	<description>A NPC characteristics generator from the AD&amp;D 1e DM's Guide</description>
+	<items>
+		<!-- Race -->
+		<item name="Start" next="Race"><![CDATA[<b>Race:</b>&nbsp;]]></item>
+		<item name="Race" next="GenderTitle">Dwarf</item>
+		<item name="Race" next="GenderTitle">Elf</item>
+		<item name="Race" next="GenderTitle">Human</item>
+		<item name="Race" next="GenderTitle">Gnome</item>
+		<item name="Race" next="GenderTitle">Halfling</item>
+		<!-- Gender -->
+		<item name="GenderTitle" next="Gender"><![CDATA[<br /><b>Gender:</b>&nbsp;]]></item>
+		<item name="Gender" next="OccupationTitle">Male</item>
+		<item name="Gender" next="OccupationTitle">Female</item>
+		<!-- Occupation -->
+		<item name="OccupationTitle" next="Class"><![CDATA[<br /><b>Class:</b>&nbsp;]]></item>
+		<item name="OccupationTitle" next="Occupation"><![CDATA[<br /><b>Occupation:</b>&nbsp;]]></item>
+		<item name="Class" next="AlignmentTitle">Cleric</item>
+		<item name="Class" next="AlignmentTitle">Druid</item>
+		<item name="Class" next="AlignmentTitle">Fighter</item>
+		<item name="Class" next="AlignmentTitle">Ranger</item>
+		<item name="Class" next="AlignmentTitle">Paladin</item>
+		<item name="Class" next="AlignmentTitle">Magic-User</item>
+		<item name="Class" next="AlignmentTitle">Illusionist</item>
+		<item name="Class" next="AlignmentTitle">Monk</item>
+		<item name="Class" next="AlignmentTitle">Thief</item>
+		<item name="Class" next="AlignmentTitle">Assassin</item>
+		<item name="Occupation" next="AlignmentTitle">Laborer</item>
+		<item name="Occupation" next="AlignmentTitle">Mercenary (level 0)</item>
+		<item name="Occupation" next="AlignmentTitle">Merchant/Trader</item>
+		<!-- Alignment -->
+		<item name="AlignmentTitle" next="Alignment"><![CDATA[<br /><b>Alignment:</b>&nbsp;]]></item>
+		<item name="Alignment" next="PossessionsTitle">Lawful Good</item>
+		<item name="Alignment" next="PossessionsTitle">Lawful Neutral</item>
+		<item name="Alignment" next="PossessionsTitle">Lawful Evil</item>
+		<item name="Alignment" next="PossessionsTitle">Neutral Evil</item>
+		<item name="Alignment" next="PossessionsTitle">Chaotic Evil</item>
+		<item name="Alignment" next="PossessionsTitle">Chaotic Neutral</item>
+		<item name="Alignment" next="PossessionsTitle">Chaotic Good</item>
+		<item name="Alignment" next="PossessionsTitle">Neutral Good</item>
+		<item name="Alignment" next="PossessionsTitle" weight="2">Neutral</item>
+		<!-- Possessions -->
+		<item name="PossessionsTitle" next="Possessions"><![CDATA[<br /><b>Possessions:</b>&nbsp;]]></item>
+		<item name="Possessions" next="AgeTitle">None</item>
+		<item name="Possessions" next="AgeTitle" weight="2">Scant</item>
+		<item name="Possessions" next="AgeTitle" weight="4">Average</item>
+		<item name="Possessions" next="AgeTitle">Above Average</item>
+		<item name="Possessions" next="AgeTitle">Exceptional</item>
+		<item name="Possessions" next="AgeTitle">Superabundant</item>
+		<!-- Age -->
+		<item name="AgeTitle" next="Age"><![CDATA[<br /><b>Age:</b>&nbsp;]]></item>
+		<item name="Age" next="AppearanceTitle">Young</item>
+		<item name="Age" next="AppearanceTitle" weight="2">Youthful</item>
+		<item name="Age" next="AppearanceTitle" weight="4">Mature</item>
+		<item name="Age" next="AppearanceTitle">Middle-aged</item>
+		<item name="Age" next="AppearanceTitle">Old</item>
+		<item name="Age" next="AppearanceTitle">Ancient</item>
+		<!-- Appearance -->
+		<item name="AppearanceTitle" next="Appearance"><![CDATA[<br /><b>Appearance:</b>&nbsp;]]></item>
+		<item name="Appearance" next="SanityTitle">Dirty</item>
+		<item name="Appearance" next="SanityTitle">Clean</item>
+		<item name="Appearance" next="SanityTitle">Unkempt</item>
+		<item name="Appearance" next="SanityTitle">Immaculate</item>
+		<item name="Appearance" next="SanityTitle">Rough</item>
+		<item name="Appearance" next="SanityTitle">Ragged</item>
+		<item name="Appearance" next="SanityTitle">Dandyish</item>
+		<item name="Appearance" next="SanityTitle">Foppish</item>
+		<item name="Appearance" next="SanityTitle">Non-descript</item>
+		<item name="Appearance" next="SanityTitle">Imposing</item>
+		<!-- Sanity -->
+		<item name="SanityTitle" next="Sanity"><![CDATA[<br /><b>Sanity:</b>&nbsp;]]></item>
+		<item name="Sanity" next="GeneralTendenciesTitle">Very stable</item>
+		<item name="Sanity" next="GeneralTendenciesTitle" weight="5">Normal</item>
+		<item name="Sanity" next="GeneralTendenciesTitle">Neurotic</item>
+		<item name="Sanity" next="GeneralTendenciesTitle">Unstable</item>
+		<item name="Sanity" next="GeneralTendenciesTitle">Insane</item>
+		<item name="Sanity" next="GeneralTendenciesTitle">Maniacal</item>
+		<!-- General Tendencies -->
+		<item name="GeneralTendenciesTitle" next="GeneralTendencies"><![CDATA[<br /><b>General Tendencies:</b>&nbsp;]]></item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Optimist</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Pessimist</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Hedonist</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Altruist</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Helpful/Kindly</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Careless</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Capricious/Mischievous</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Sober</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Curious/Inquisitive</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Moody</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Trusting</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Suspicious/Cautious</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Precise/Exacting</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Perceptive</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Opinionated/Contrary</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Violent/Warlike</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Studious</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Foul/Barbaric</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Cruel/Callous</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Practical Joker/Prankster</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Servile/Obsequious</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Fanatical/Obsessive</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Malevolent</item>
+		<item name="GeneralTendencies" next="PersonalityTitle">Loquacious</item>
+		<!-- Personality -->
+		<item name="PersonalityTitle" next="PersonalityType"><![CDATA[<br /><b>Personality:</b>&nbsp;]]></item>
+		<item name="PersonalityType" next="DispositionTitle" weight="5">[Average]</item>
+		<item name="PersonalityType" next="DispositionTitle" weight="2">[Extroverted]</item>
+		<item name="PersonalityType" next="DispositionTitle" weight="1">[Introverted]</item>
+		<item name="Average">Modest</item>
+		<item name="Average">Egoist/Arrogant</item>
+		<item name="Average">Friendly</item>
+		<item name="Average">Aloof</item>
+		<item name="Average">Hostile</item>
+		<item name="Average">Well-spoken</item>
+		<item name="Average">Diplomatic</item>
+		<item name="Average">Abrasive</item>
+		<item name="Extroverted">Forceful</item>
+		<item name="Extroverted">Overbearing</item>
+		<item name="Extroverted">Friendly</item>
+		<item name="Extroverted">Blustering</item>
+		<item name="Extroverted">Antagonistic</item>
+		<item name="Extroverted">Rude</item>
+		<item name="Extroverted">Rash</item>
+		<item name="Extroverted">Diplomatic</item>
+		<item name="Introverted">Retiring</item>
+		<item name="Introverted">Taciturn</item>
+		<item name="Introverted">Friendly</item>
+		<item name="Introverted">Aloof</item>
+		<item name="Introverted">Hostile</item>
+		<item name="Introverted">Rude</item>
+		<item name="Introverted">Courteous</item>
+		<item name="Introverted">Solitary/Secretive</item>
+		<!-- Disposition -->
+		<item name="DispositionTitle" next="Disposition"><![CDATA[<br /><b>Disposition:</b>&nbsp;]]></item>
+		<item name="Disposition" next="IntellectTitle">Cheerful</item>
+		<item name="Disposition" next="IntellectTitle">Morose</item>
+		<item name="Disposition" next="IntellectTitle">Compassionate/Sensitive</item>
+		<item name="Disposition" next="IntellectTitle">Unfeeling/Insensitive</item>
+		<item name="Disposition" next="IntellectTitle">Humble</item>
+		<item name="Disposition" next="IntellectTitle">Proud/Haughty</item>
+		<item name="Disposition" next="IntellectTitle">Even Tempered</item>
+		<item name="Disposition" next="IntellectTitle">Hot tempered</item>
+		<item name="Disposition" next="IntellectTitle">Easy Going</item>
+		<item name="Disposition" next="IntellectTitle">Harsh</item>
+		<!-- Intellect -->
+		<item name="IntellectTitle" next="Intellect"><![CDATA[<br /><b>Intellect:</b>&nbsp;]]></item>
+		<item name="Intellect" next="NatureTitle">Dull</item>
+		<item name="Intellect" next="NatureTitle" weight="2">Average</item>
+		<item name="Intellect" next="NatureTitle" weight="2">Active</item>
+		<item name="Intellect" next="NatureTitle">Dreaming</item>
+		<item name="Intellect" next="NatureTitle">Ponderous</item>
+		<item name="Intellect" next="NatureTitle">Anti-intellectual</item>
+		<item name="Intellect" next="NatureTitle">Scheming</item>
+		<item name="Intellect" next="NatureTitle">Brilliant</item>
+		<!-- Nature -->
+		<item name="NatureTitle" next="Nature"><![CDATA[<br /><b>Nature:</b>&nbsp;]]></item>
+		<item name="Nature" next="MaterialismTitle">Soft-hearted</item>
+		<item name="Nature" next="MaterialismTitle">Forgiving</item>
+		<item name="Nature" next="MaterialismTitle">Hard-hearted</item>
+		<item name="Nature" next="MaterialismTitle">Unforgiving</item>
+		<item name="Nature" next="MaterialismTitle">Jealous</item>
+		<item name="Nature" next="MaterialismTitle">Vengeful</item>
+		<!-- Materialism -->
+		<item name="MaterialismTitle" next="Materialism"><![CDATA[<br /><b>Materialism:</b>&nbsp;]]></item>
+		<item name="Materialism" next="HonestyTitle">Aesthetic</item>
+		<item name="Materialism" next="HonestyTitle">Intellectualist</item>
+		<item name="Materialism" next="HonestyTitle">Average</item>
+		<item name="Materialism" next="HonestyTitle">Covetous</item>
+		<item name="Materialism" next="HonestyTitle">Greedy</item>
+		<item name="Materialism" next="HonestyTitle">Avaricious</item>
+		<!-- Honesty -->
+		<item name="HonestyTitle" next="Honesty"><![CDATA[<br /><b>Honesty:</b>&nbsp;]]></item>
+		<item name="Honesty" next="BraveryTitle">Scrupulous</item>
+		<item name="Honesty" next="BraveryTitle">Very Honorable</item>
+		<item name="Honesty" next="BraveryTitle">Truthful</item>
+		<item name="Honesty" next="BraveryTitle" weight="3">Average</item>
+		<item name="Honesty" next="BraveryTitle">Liar</item>
+		<item name="Honesty" next="BraveryTitle">Deceitful</item>
+		<!-- Bravery -->
+		<item name="BraveryTitle" next="Bravery"><![CDATA[<br /><b>Bravery:</b>&nbsp;]]></item>
+		<item name="Bravery" next="EnergyTitle" weight="3">Normal</item>
+		<item name="Bravery" next="EnergyTitle">Foolhardy</item>
+		<item name="Bravery" next="EnergyTitle">Brave</item>
+		<item name="Bravery" next="EnergyTitle">Fearless</item>
+		<item name="Bravery" next="EnergyTitle">Cowardly</item>
+		<item name="Bravery" next="EnergyTitle">Craven</item>
+		<!-- Energy -->
+		<item name="EnergyTitle" next="Energy"><![CDATA[<br /><b>Energy:</b>&nbsp;]]></item>
+		<item name="Energy" next="ThriftTitle">Slothful</item>
+		<item name="Energy" next="ThriftTitle">Lazy</item>
+		<item name="Energy" next="ThriftTitle" weight="3">Normal</item>
+		<item name="Energy" next="ThriftTitle" weight="2">Energetic</item>
+		<item name="Energy" next="ThriftTitle">Driven</item>
+		<!-- Thrift -->
+		<item name="ThriftTitle" next="Thrift"><![CDATA[<br /><b>Thrift:</b>&nbsp;]]></item>
+		<item name="Thrift" next="MoralsTitle">Miserly</item>
+		<item name="Thrift" next="MoralsTitle">Mean</item>
+		<item name="Thrift" next="MoralsTitle">Thrifty</item>
+		<item name="Thrift" next="MoralsTitle" weight="2">Average</item>
+		<item name="Thrift" next="MoralsTitle" weight="2">Spendthrift</item>
+		<item name="Thrift" next="MoralsTitle">Wastrel</item>
+		<!-- Morals -->
+		<item name="MoralsTitle" next="Morals"><![CDATA[<br /><b>Morals:</b>&nbsp;]]></item>
+		<item name="Morals" next="PietyTitle">Aesthetic</item>
+		<item name="Morals" next="PietyTitle">Virtuous</item>
+		<item name="Morals" next="PietyTitle" weight="2">Normal</item>
+		<item name="Morals" next="PietyTitle" weight="2">Lusty</item>
+		<item name="Morals" next="PietyTitle">Lustful</item>
+		<item name="Morals" next="PietyTitle">Immoral</item>
+		<item name="Morals" next="PietyTitle">Amoral</item>
+		<item name="Morals" next="PietyTitle">Perverted</item>
+		<item name="Morals" next="PietyTitle">Sadistic</item>
+		<item name="Morals" next="PietyTitle">Depraved</item>
+		<!-- Piety -->
+		<item name="PietyTitle" next="Piety"><![CDATA[<br /><b>Piety:</b>&nbsp;]]></item>
+		<item name="Piety" next="InterestsTitle">Saintly</item>
+		<item name="Piety" next="InterestsTitle">Martyr/Zealot</item>
+		<item name="Piety" next="InterestsTitle">Pious</item>
+		<item name="Piety" next="InterestsTitle">Reverent</item>
+		<item name="Piety" next="InterestsTitle" weight="4">Average</item>
+		<item name="Piety" next="InterestsTitle">Impious</item>
+		<item name="Piety" next="InterestsTitle">Irreverent</item>
+		<item name="Piety" next="InterestsTitle">Iconoclastic</item>
+		<item name="Piety" next="InterestsTitle">Irreligious</item>
+		<!-- Interests -->
+		<item name="InterestsTitle" next="Interests"><![CDATA[<br /><b>Interests:</b>&nbsp;]]></item>
+		<item name="Interests">Religion</item>
+		<item name="Interests">Legends</item>
+		<item name="Interests">History</item>
+		<item name="Interests">Nature</item>
+		<item name="Interests">Horticulture</item>
+		<item name="Interests">Husbandry</item>
+		<item name="Interests">Exotic Animals</item>
+		<item name="Interests">Hunting</item>
+		<item name="Interests">Fishing</item>
+		<item name="Interests">Handicrafts</item>
+		<item name="Interests">Athletics</item>
+		<item name="Interests">Politics</item>
+		<item name="Interests">Wine &amp; Spirits</item>
+		<item name="Interests">Foods &amp; Preparation</item>
+		<item name="Interests">Gambling</item>
+		<item name="Interests">Drugs</item>
+		<item name="Interests" weight="4">Collector of [Collections]</item>
+		<item name="Interests">Community Service</item>
+		<item name="Interests">Altruism</item>
+		<item name="Interests" weight="2">None</item>
+		<!-- Collections -->
+		<item name="Collections">Knives &amp; Daggers</item>
+		<item name="Collections">Swords</item>
+		<item name="Collections">Weapons</item>
+		<item name="Collections">Shields &amp; Weapons</item>
+		<item name="Collections">Armor</item>
+		<item name="Collections">Books &amp; Scrolls</item>
+		<item name="Collections">Minerals &amp; Gems</item>
+		<item name="Collections">Ornaments &amp; Jewelry</item>
+		<item name="Collections">Coins &amp; Tokens</item>
+		<item name="Collections">Trophies &amp; Skins</item>
+		<item name="Collections">Porcelain, China, &amp; Crystal</item>
+		<item name="Collections">Artwork</item>
+	</items>
+</Grammar>

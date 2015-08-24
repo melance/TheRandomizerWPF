@@ -1,0 +1,56 @@
+A miniature crystal
+An ancient leather bound volume
+A tattered, unusable scroll fragment
+A plain, unremarkable stone room
+A weather-worn wooden board
+A clock that keeps perfect time for another world
+A blood-stained dress
+An elegantly carved comb of oak
+What appears to be the original, handwritten manuscript 
+A broken holy sword, inscribed with the name of a legendary Paladin. 
+A ruby the size of a man’s fist 
+An ancient and worn battle ax head
+A child's puppet
+A lock of hair tied with a silk ribbon
+Bronze symbol of a long dead religion
+A map of a city that seems to be wrong
+A case filled with spent wands
+A small pebble
+A decorative ivory cane
+A detailed model of a city
+A painting of a home in the woods
+A hollowed out dragon horn
+A bugbear skull
+A piece of driftwood
+A seemingly broken music box
+A small marble
+A large marble
+A brass ball bearing
+A bowl of unspoiled fruit
+A set of masterwork gaming darts
+A human finger bone with a simple gold ring stuck on it
+A multicolored piece of fur
+A broken wizard's staff
+An ancient stone statue
+A flask of water that never seems to empty
+A small glass sphere filled with brilliant lights
+A decorative fountain
+A plain mirror
+A ring engraved in complex runes
+A large tome
+A large spectacle
+A small ivory box
+A heart shaped locket
+A skull shaped pendant
+
+A [Shape] shaped [Item]
+A [Color] [Item]
+A [Color] [Shape] shaped [Item]
+A [Size] [Gem] 
+A [State] [Item]
+
+Shape: Heart, Skull, [Rune] Rune, Crown, etc.
+Size: Large, Small, Hand Sized, Head Sized, Giant, Gargantuan, Tiny, etc.
+State: Worn, New, Weather-worn, Broken, etc.
+Rune: Rune Name
+Age: Ancient, Unknown, New, Old

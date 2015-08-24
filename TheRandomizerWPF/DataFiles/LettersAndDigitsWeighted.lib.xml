@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<library>
+	<item name="AnyLetter" weight="21">[UpperConsonant]</item>
+	<item name="AnyLetter" weight="21">[LowerConsonant]</item>
+	<item name="AnyLetter" weight="5">[UpperVowel]</item>
+	<item name="AnyLetter" weight="5">[LowerVowel]</item>
+	<item name="UpperCase" weight="21">[UpperConsonant]</item>
+	<item name="UpperCase" weight="5">[UpperVowel]</item>
+	<item name="LowerCase" weight="21">[LowerConsonant]</item>
+	<item name="LowerCase" weight="5">[LowerVowel]</item>
+	
+	<item name="Digit">0</item>
+	<item name="Digit">1</item>
+	<item name="Digit">2</item>
+	<item name="Digit">3</item>
+	<item name="Digit">4</item>
+	<item name="Digit">5</item>
+	<item name="Digit">6</item>
+	<item name="Digit">7</item>
+	<item name="Digit">8</item>
+	<item name="Digit">9</item>
+	
+	<item name="UpperConsonant" weight="470">B</item>
+	<item name="UpperConsonant" weight="351">C</item>
+	<item name="UpperConsonant" weight="267">D</item>
+	<item name="UpperConsonant" weight="378">F</item>
+	<item name="UpperConsonant" weight="195">G</item>
+	<item name="UpperConsonant" weight="723">H</item>
+	<item name="UpperConsonant" weight="629">I</item>
+	<item name="UpperConsonant" weight="60">J</item>
+	<item name="UpperConsonant" weight="59">K</item>
+	<item name="UpperConsonant" weight="271">L</item>
+	<item name="UpperConsonant" weight="437">M</item>
+	<item name="UpperConsonant" weight="237">N</item>
+	<item name="UpperConsonant" weight="255">P</item>
+	<item name="UpperConsonant" weight="17">Q</item>
+	<item name="UpperConsonant" weight="165">R</item>
+	<item name="UpperConsonant" weight="776">S</item>
+	<item name="UpperConsonant" weight="1667">T</item>
+	<item name="UpperConsonant" weight="65">V</item>
+	<item name="UpperConsonant" weight="675">W</item>
+	<item name="UpperConsonant" weight="2">X</item>
+	<item name="UpperConsonant" weight="162">Y</item>
+	<item name="UpperConsonant" weight="3">Z</item>
+	
+	<item name="LowerConsonant" weight="149">b</item>
+	<item name="LowerConsonant" weight="278">c</item>
+	<item name="LowerConsonant" weight="425">d</item>
+	<item name="LowerConsonant" weight="223">f</item>
+	<item name="LowerConsonant" weight="202">g</item>
+	<item name="LowerConsonant" weight="609">h</item>
+	<item name="LowerConsonant" weight="15">j</item>
+	<item name="LowerConsonant" weight="77">k</item>
+	<item name="LowerConsonant" weight="403">l</item>
+	<item name="LowerConsonant" weight="241">m</item>
+	<item name="LowerConsonant" weight="675">n</item>
+	<item name="LowerConsonant" weight="193">p</item>
+	<item name="LowerConsonant" weight="10">q</item>
+	<item name="LowerConsonant" weight="599">r</item>
+	<item name="LowerConsonant" weight="633">s</item>
+	<item name="LowerConsonant" weight="906">t</item>
+	<item name="LowerConsonant" weight="98">v</item>
+	<item name="LowerConsonant" weight="236">w</item>
+	<item name="LowerConsonant" weight="15">x</item>
+	<item name="LowerConsonant" weight="197">y</item>
+	<item name="LowerConsonant" weight="7">z</item>
+	
+	<item name="UpperVowel" weight="1160">A</item>
+	<item name="UpperVowel" weight="201">E</item>
+	<item name="UpperVowel" weight="629">I</item>
+	<item name="UpperVowel" weight="626">O</item>
+	<item name="UpperVowel" weight="149">U</item>
+	
+	<item name="LowerVowel" weight="817">a</item>
+	<item name="LowerVowel" weight="1270">e</item>
+	<item name="LowerVowel" weight="697">i</item>
+	<item name="LowerVowel" weight="751">o</item>
+	<item name="LowerVowel" weight="276">u</item>
+</library>

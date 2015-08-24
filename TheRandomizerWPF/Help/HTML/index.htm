@@ -1,0 +1,38 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+  <TITLE>The Randomizer</TITLE>
+  <script type="text/javascript" language="JavaScript">
+    function DoOnLoad()
+    {
+      var filename = left.location.pathname.substring(left.location.pathname.replace(/\\/gi, "\/").lastIndexOf('/')+1);
+      if (filename == 'wh_search.htm')
+      {
+        left.checkHighlight()
+      }
+      else if (filename == 'wh_toc.htm')
+      {
+        left.selectTopic(right.location.pathname)
+      }
+    }
+
+    function DoOnMainLoad()
+    {
+      var param = location.hash;
+      if (param.length != 0)
+        window.document.getElementById("right").src = param.substring(1);
+    }
+  </script>
+</HEAD>
+<frameset rows="27,*" framespacing="0" onload="DoOnMainLoad()">
+  <frame name="head" id="head" scrolling="no" noresize="noresize" src="wh_head.htm" frameborder="0">
+  <frameset cols="25%,*" framespacing="1">
+    <frame name="left" id="left" src="wh_toc.htm" frameborder="0" onload="DoOnLoad()">
+    <frame name="right" id="right" src="topics/Welcome.htm" frameborder="0" onload="DoOnLoad()">
+    <noframes>
+      Your browser does not handle frames! This feature is needed to view this WebHelp manual.
+    </noframes>
+  </frameset>
+</frameset>
+</HTML>

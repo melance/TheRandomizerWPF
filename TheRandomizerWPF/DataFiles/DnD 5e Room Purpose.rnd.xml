@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar">
+	<name>Dungeon Room Purpose (D&amp;D 5e)</name>
+	<author>Lance Boudreaux</author>
+	<description>Generates the purpose of a room based on the D&amp;D 5e DMG.</description>
+	<category>Environment</category>
+	<genre>Fantasy</genre>
+	<system>D&amp;D 5e</system>
+	<parameters>
+	    <parameter name="StructureType" display="Type of Structure" type="List" valueType="Label">
+			<option>Any</option>
+			<option>General</option>
+			<option>Death Trap</option>
+			<option>Lair</option>
+			<option>Maze</option>
+			<option>Mine</option>
+			<option>Planar Gate</option>
+			<option>Stronghold</option>
+			<option>Temple or Shrine</option>
+			<option>Tomb</option>
+			<option>Treasure Vault</option>
+		</parameter>
+	</parameters>
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start"><![CDATA[<b>[StructureType]</b><br />
+		[Contents]
+		]]></item>
+
+		<item name="Any">[General]</item>
+		<item name="Any">[Death Trap]</item>
+		<item name="Any">[Lair]</item>
+		<item name="Any">[Maze]</item>
+		<item name="Any">[Mine]</item>
+		<item name="Any">[Planar Gate]</item>
+		<item name="Any">[Stronghold]</item>
+		<item name="Any">[Temple or Shrine]</item>
+		<item name="Any">[Tomb]</item>
+		<item name="Any">[Treasure Vault]</item>
+
+		<item name="General" Weight="1">Antechamber</item>
+		<item name="General" Weight="2">Armory</item>
+		<item name="General" Weight="1">Audience Chamber</item>
+		<item name="General" Weight="1">Aviary</item>
+		<item name="General" Weight="2">Banquet Room</item>
+		<item name="General" Weight="3">Barracks</item>
+		<item name="General" Weight="1">Bath or latrine</item>
+		<item name="General" Weight="1">Bedroom</item>
+		<item name="General" Weight="1">Bestiary</item>
+		<item name="General" Weight="3">Cell</item>
+		<item name="General" Weight="1">Chantry</item>
+		<item name="General" Weight="1">Chapel</item>
+		<item name="General" Weight="2">Cistern</item>
+		<item name="General" Weight="1">Classroom</item>
+		<item name="General" Weight="1">Closet</item>
+		<item name="General" Weight="2">Conjuring room</item>
+		<item name="General" Weight="2">Court</item>
+		<item name="General" Weight="3">Crypt</item>
+		<item name="General" Weight="2">Dining room</item>
+		<item name="General" Weight="2">Divination room</item>
+		<item name="General" Weight="1">Dormitory</item>
+		<item name="General" Weight="1">Dressing room</item>
+		<item name="General" Weight="1">Entry room or vestibule</item>
+		<item name="General" Weight="2">Gallery</item>
+		<item name="General" Weight="2">Game room</item>
+		<item name="General" Weight="3">Guardroom</item>
+		<item name="General" Weight="2">Hall</item>
+		<item name="General" Weight="2">Great hall</item>
+		<item name="General" Weight="2">Hallway</item>
+		<item name="General" Weight="1">Kennel</item>
+		<item name="General" Weight="2">Kitchen</item>
+		<item name="General" Weight="2">Laboratory</item>
+		<item name="General" Weight="3">Library</item>
+		<item name="General" Weight="2">Lounge</item>
+		<item name="General" Weight="1">Meditation chamber</item>
+		<item name="General" Weight="1">Observatory</item>
+		<item name="General" Weight="1">Office</item>
+		<item name="General" Weight="2">Pantry</item>
+		<item name="General" Weight="1">Pen</item>
+		<item name="General" Weight="1">Prison</item>
+		<item name="General" Weight="2">Reception room</item>
+		<item name="General" Weight="2">Refectory</item>
+		<item name="General" Weight="1">Robing room</item>
+		<item name="General" Weight="1">Salon</item>
+		<item name="General" Weight="2">Shrine</item>
+		<item name="General" Weight="2">Sitting room</item>
+		<item name="General" Weight="2">Smithy</item>
+		<item name="General" Weight="1">Stable</item>
+		<item name="General" Weight="2">Storage room</item>
+		<item name="General" Weight="1">Strong room</item>
+		<item name="General" Weight="1">Vault</item>
+		<item name="General" Weight="2">Study</item>
+		<item name="General" Weight="3">Temple</item>
+		<item name="General" Weight="2">Throne room</item>
+		<item name="General" Weight="1">Torture chamber</item>
+		<item name="General" Weight="1">Training room</item>
+		<item name="General" Weight="1">Exercise room</item>
+		<item name="General" Weight="1">Trophy room</item>
+		<item name="General" Weight="1">Museum</item>
+		<item name="General" Weight="1">Waiting room</item>
+		<item name="General" Weight="1">Nursery or schoolroom</item>
+		<item name="General" Weight="1">Well</item>
+		<item name="General" Weight="3">Workshop</item>
+
+		<item name="Death Trap" Weight="1">Antechamber or waiting room for spectators</item>
+		<item name="Death Trap" Weight="7">Guardroom fortified against intruders</item>
+		<item name="Death Trap" Weight="3">Vault for holding important treasures, accessible only by locked or secret door [=if(Roll(1,100)&lt;=75,'(trapped)','')]</item>
+		<item name="Death Trap" Weight="3">Room containing a puzzle that must be solved to bypass a [=Pick('trap','monster')].</item>
+		<item name="Death Trap" Weight="5">Trap designed to [=Pick('kill','capture')] creatures</item>
+		<item name="Death Trap" Weight="1">Observation room, allowing guards or spectators to observe creatures moving through the dungeon</item>
+		
+		<item name="Lair" Weight="1">Amrory stocked with weapons and armor</item>
+		<item name="Lair" Weight="1">Audience chamber, used to receive guests</item>
+		<item name="Lair" Weight="1">Banquet room for important celebrations</item>
+		<item name="Lair" Weight="1">Barracks where the lair's defenders are quartered</item>
+		<item name="Lair" Weight="1">Bedroom, for use by leaders</item>
+		<item name="Lair" Weight="1">Chapel where the lair's inhabitants worship</item>
+		<item name="Lair" Weight="1">Cistern or well for drinking water</item>
+		<item name="Lair" Weight="2">Guardroom for the defense of the lair</item>
+		<item name="Lair" Weight="1">Kennel for pets or guard beasts</item>
+		<item name="Lair" Weight="1">Kitchen for food storage and preperation</item>
+		<item name="Lair" Weight="1">Pen or prison where captives are held</item>
+		<item name="Lair" Weight="2">Storage, mostly nonperishable goods</item>
+		<item name="Lair" Weight="1">Throne room where the lair's leaders hold court</item>
+		<item name="Lair" Weight="1">Torture chamber</item>
+		<item name="Lair" Weight="1">Training and exercise room</item>
+		<item name="Lair" Weight="1">Trophy room or museum</item>
+		<item name="Lair" Weight="1">Latrine or bath</item>
+		<item name="Lair" Weight="1">Workshop for the construction of weapons, armor, tools, and other goods</item>
+
+		<item name="Maze" Weight="1">Conjuring room, used to summon creatures that guard the maze</item>
+		<item name="Maze" Weight="4">Guardroom for sentinels that patrol the maze</item>
+		<item name="Maze" Weight="5">Lair for guard beasts that patrol the maze</item>
+		<item name="Maze" Weight="1">Pen or prison accessible only by secret door, used to hold captives condemned to the maze</item>
+		<item name="Maze" Weight="1">Shrine dedicated to a god or other entity</item>
+		<item name="Maze" Weight="2">Storage for food, as well as tools used by the maze's guardians to keep the complex in working order</item>
+		<item name="Maze" Weight="4">Trap to [=Pick('confound','kill')] those sent into the maze</item>
+		<item name="Maze" Weight="1">Well that provides drinking water</item>
+		<item name="Maze" Weight="1">Workshop where doors, torch sconces, and other furnishings are repaired or maintained</item>
+
+		<item name="Mine" Weight="2">Barracks for miners</item>
+		<item name="Mine" Weight="1">Bedroom for a supervisor or manager</item>
+		<item name="Mine" Weight="1">Chapel dedicated to a patron deity of [=Pick('miners','earth','protection')]</item>
+		<item name="Mine" Weight="1">Cistern providing drinking water for miners</item>
+		<item name="Mine" Weight="2">Guardroom</item>
+		<item name="Mine" Weight="1">Kitchen used to feed workers</item>
+		<item name="Mine" Weight="1">Laboratory used to conduct tests on strange minerals extracted from the mine</item>
+		<item name="Mine" Weight="6">Lode where metal ore is mined [=if(Roll(1,100)&lt;=75,'that has been depleted','')]</item>
+		<item name="Mine" Weight="1">Office used by the mine supervisor</item>
+		<item name="Mine" Weight="1">Smithy for repairing damaged tools</item>
+		<item name="Mine" Weight="2">Storage for tools and other equipment</item>
+		<item name="Mine" Weight="1">Strong room or vault used for store ore for transport to the surface</item>
+
+		<item name="Planar Gate" Weight="3">Decorated [=Pick('foyer','antechamber')]</item>
+		<item name="Planar Gate" Weight="5">Armory used by the portal's guardians</item>
+		<item name="Planar Gate" Weight="2">Audience chamber for receiving visitors</item>
+		<item name="Planar Gate" Weight="9">Barracks used by the portal's guards</item>
+		<item name="Planar Gate" Weight="4">Bedroom for use by the high-ranking members of the order that guards the portal</item>
+		<item name="Planar Gate" Weight="7">Chapel dedicated to a deity or deities related to the portal and its defenders</item>
+		<item name="Planar Gate" Weight="5">Cistern providing fresh water</item>
+		<item name="Planar Gate" Weight="3">Classroom for use of initiates learning about the portal's secrets</item>
+		<item name="Planar Gate" Weight="1">Conjuring room for summoning creatures used to [=Pick('investigating','defend')] the portal</item>
+		<item name="Planar Gate" Weight="2">Crypt where the remains of those that died guarding the portal are kept</item>
+		<item name="Planar Gate" Weight="6">Diningroom</item>
+		<item name="Planar Gate" Weight="3">Divination room used to investigate the portal and events tied to it</item>
+		<item name="Planar Gate" Weight="5">Dormitory for visitors and guards</item>
+		<item name="Planar Gate" Weight="2">[=Pick('Entry room','Vestibule')]</item>
+		<item name="Planar Gate" Weight="2">Gallery for displaying trophies and objects related to the portal or those that guard it</item>
+		<item name="Planar Gate" Weight="8">Guardroom to protect or watch over the portal</item>
+		<item name="Planar Gate" Weight="5">Kitchen</item>
+		<item name="Planar Gate" Weight="5">Laboratory for conducting experiments related to the portal and creatures that emerge from it</item>
+		<item name="Planar Gate" Weight="3">Library holding books about the portal's history</item>
+		<item name="Planar Gate" Weight="5">[=Pick('Pen','Prison')] for holding [=Pick('captives','creatures that emerge from the portal')]</item>
+		<item name="Planar Gate" Weight="2">Planar junction, where the gate to another plane once stood [=if(Roll(1,100)&lt;=25,'and is still active','')]</item>
+		<item name="Planar Gate" Weight="3">Storage</item>
+		<item name="Planar Gate" Weight="1">[=Pick('Strong room','vault')], [=Pick('for guarding valuable treasures connected to the portal','funds used to pay the planar gate\'s guardians')]</item>
+		<item name="Planar Gate" Weight="2">Study</item>
+		<item name="Planar Gate" Weight="1">Torture chamber, for questioning creatures that [=Pick('pass through the portal','attempt to clandestinely use it')]</item>
+		<item name="Planar Gate" Weight="4">[=Pick('Latrine','Bath')]</item>
+		<item name="Planar Gate" Weight="2">Workshop for constructing tools and gear needed to study the portal</item>
+
+		<item name="Stronghold" Weight="2">Antechamber where visitors seeking access to the stronghold wait</item>
+		<item name="Stronghold" Weight="3">Armory holding high-quality gear, including light siege weapons such as ballistas</item>
+		<item name="Stronghold" Weight="1">Audience chamber used by the master of the stronghold to receive visitors</item>
+		<item name="Stronghold" Weight="1">[=Pick('Aviary','Zoo')] keeping exotic creatures</item>
+		<item name="Stronghold" Weight="4">Banquet room for hosting celebratoins and guests</item>
+		<item name="Stronghold" Weight="4">Barracks used by elite guards</item>
+		<item name="Stronghold" Weight="1">Bath outfitted with marble floor and other luxurious accoutrements</item>
+		<item name="Stronghold" Weight="1">Bedroom for use by the stronghold's [=Pick('master','important guests')]</item>
+		<item name="Stronghold" Weight="1">Chapel dedicated to a deity associated with the stronghold's master</item>
+		<item name="Stronghold" Weight="3">Cistern providing drinking water</item>
+		<item name="Stronghold" Weight="4">Dining room for [=Pick('intimate gatherings','informal meals')]</item>
+		<item name="Stronghold" Weight="1">Dressing room featuring a number of wardrobes</item>
+		<item name="Stronghold" Weight="3">Gallery for the display of expensive works of art and trophies</item>
+		<item name="Stronghold" Weight="3">Game room used to entertain visitors</item>
+		<item name="Stronghold" Weight="8">Guardroom</item>
+		<item name="Stronghold" Weight="1">Kennel where [=Pick('monsters','trained animals')] that protect the stronghold are kept</item>
+		<item name="Stronghold" Weight="6">Kitchen designed to prepare exotic foods for large numbers of guests</item>
+		<item name="Stronghold" Weight="3">Library with an extensive collection of rare books</item>
+		<item name="Stronghold" Weight="1">Lounge used to entertain guests</item>
+		<item name="Stronghold" Weight="8">Pantry, including cellar for wine and spirits</item>
+		<item name="Stronghold" Weight="4">Sitting room for family and intimate guests</item>
+		<item name="Stronghold" Weight="4">Stable</item>
+		<item name="Stronghold" Weight="8">Storage for mundane goods and supplies</item>
+		<item name="Stronghold" Weight="1">[=Pick('Strong room','Vault')] for protecting important treasures[=if(Roll(1,100)&lt;=75,' hidden behind a secret door','')]</item>
+		<item name="Stronghold" Weight="5">Study, including a writing desk</item>
+		<item name="Stronghold" Weight="1">Throne room, elaborately decorated</item>
+		<item name="Stronghold" Weight="3">Waiting room where lesser guests are held before receiving audience</item>
+		<item name="Stronghold" Weight="2">[=Pick('Latrine','Bath')]</item>
+		<item name="Stronghold" Weight="2">Crypt belonging to [=Pick('the stronghold\'s master','someone of importance')]</item>
+
+		<item name="Temple or Shrine" Weight="3">Armory filled with weapons and armor, battle banners, and pennants</item>
+		<item name="Temple or Shrine" Weight="2">Audience chamber where priests of the temple receive commoners and low-ranking visitors</item>
+		<item name="Temple or Shrine" Weight="2">Banquet room used for celebrations and holy days</item>
+		<item name="Temple or Shrine" Weight="3">Barracks for the temple's [=Pick('military arm','hired guards')]</item>
+		<item name="Temple or Shrine" Weight="4">Cells where the faithful can sit in quiet contemplation</item>
+		<item name="Temple or Shrine" Weight="10">Central temple built to accommodate rituals</item>
+		<item name="Temple or Shrine" Weight="4">Chapel dedicated to a lesser deity associated with the temple's major deity</item>
+		<item name="Temple or Shrine" Weight="3">Conjuring room, specially sanctified and used to summon extraplanar creatures</item>
+		<item name="Temple or Shrine" Weight="6">Crypt for a high priest or similar figure, hidden and heavily guarded by creatures and traps</item>
+		<item name="Temple or Shrine" Weight="2">Dining room (large) for the temple's servants and lesser priests</item>
+		<item name="Temple or Shrine" Weight="1">Dining room (small) for the temple's high priests</item>
+		<item name="Temple or Shrine" Weight="3">Divniation room, inscribed with runes and stocked with soothsaying implements</item>
+		<item name="Temple or Shrine" Weight="4">Dormitory for [=Pick('lesser priests','students')]</item>
+		<item name="Temple or Shrine" Weight="6">Guardroom</item>
+		<item name="Temple or Shrine" Weight="1">Kennel for [=Pick('animals','monsters')] associated with the temple's deity</item>
+		<item name="Temple or Shrine" Weight="3">Kitchen (might bear a disturbing resemblance to a torture chamber in an evil temple)</item>
+		<item name="Temple or Shrine" Weight="5">Library, well stocked with religious treatises</item>
+		<item name="Temple or Shrine" Weight="3">Prison for captured enemies (in good or neutral temples) or those designated for sacrifice (in evil temples)</item>
+		<item name="Temple or Shrine" Weight="5">Robing room containing ceremonial outfits and items</item>
+		<item name="Temple or Shrine" Weight="1">Stable for riding horses and mounts belonging to [=Pick('the temple','visiting messengers and caravans.')]</item>
+		<item name="Temple or Shrine" Weight="5">Storage holding mundane supplies</item>
+		<item name="Temple or Shrine" Weight="1">[=Pick('Strong room','Vault')] holding important relics and ceremonial items, heavily trapped</item>
+		<item name="Temple or Shrine" Weight="2">Torture chamber, used in inquisitions (in good or neutral temples with lawful bent) or for the sheer joy of causing pain (evil temples)</item>
+		<item name="Temple or Shrine" Weight="7">Trophy room where are celebrating key figures and events from mythology is displayed</item>
+		<item name="Temple or Shrine" Weight="1">[=Pick('Latrine','Bath')]</item>
+		<item name="Temple or Shrine" Weight="4">Well for drinking water, defendable in the case of an attack</item>
+		<item name="Temple or Shrine" Weight="6">Workshop for repairing or creating weapons, religious items, and tools</item>
+
+		<item name="Tomb" Weight="1">Antechamber for those that have come to [=Pick('pay respect to the dead','prepare themselves for burial rituals')]</item>
+		<item name="Tomb" Weight="2">Chapel dedicated to deities that watch over the dead and protect their resting places</item>
+		<item name="Tomb" Weight="5">Crypt for less important burials</item>
+		<item name="Tomb" Weight="1">Divination room, used in rituals to contact the dead for guidance</item>
+		<item name="Tomb" Weight="1">False crypt (trapped) to [=Pick('kill','capture')] thieves</item>
+		<item name="Tomb" Weight="1">Gallery to display gthe deeds of the deceased through trophies, statues, paintings, and so forth</item>
+		<item name="Tomb" Weight="1">Grand crypt for [=Pick('noble','high priest','important individual')]</item>
+		<item name="Tomb" Weight="2">Guardroom, usually guarded by undead, constructs, or other creatures that don't need to eat or sleep</item>
+		<item name="Tomb" Weight="1">Robing room for priests to prepare for burial rituals</item>
+		<item name="Tomb" Weight="2">Storage, stocked with tools for maintaining the tomb and preparing the dead for burial</item>
+		<item name="Tomb" Weight="1">Tomb where the wealthiest and most important folk are interred, protected by secret doors and traps</item>
+		<item name="Tomb" Weight="2">Workshop for embalming the dead</item>
+
+		<item name="Treasure Vault" Weight="1">Antechambre for visiting dignitaries</item>
+		<item name="Treasure Vault" Weight="1">Amory containing mundane and magic gear used by the treasure vault's guards</item>
+		<item name="Treasure Vault" Weight="2">Barracks for guards</item>
+		<item name="Treasure Vault" Weight="1">Cistern providing fresh water</item>
+		<item name="Treasure Vault" Weight="4">Guardroom to defend against intruders</item>
+		<item name="Treasure Vault" Weight="1">Kennel for trained beasts used to guard the treasure vault</item>
+		<item name="Treasure Vault" Weight="1">Kitchen for feeding guards</item>
+		<item name="Treasure Vault" Weight="1">Watch room that allows guards to observe those who approach the dungeon</item>
+		<item name="Treasure Vault" Weight="1">Prison for holding captured intruders</item>
+		<item name="Treasure Vault" Weight="2">[=Pick('Strong room','Vault')], for guarding the treasure hidden in the dungeon, accessible only by a [=Pick('locked','secret')] door</item>
+		<item name="Treasure Vault" Weight="1">Torture chamber for extracting information from captured intruders</item>
+		<item name="Treasure Vault" Weight="4">[=Pick('Trap','Trick') designed to [=Pick('kill','capture')] creatures that enter the dungeon</item>
+
+		<item name="Content" weight="8">[Monster] (dominant inhabitant)</item>
+		<item name="Content" weight="7">[Monster] (dominant inhabitant) with Treasure</item>
+		<item name="Content" weight="12">[Monster] (pet or allied creature)</item>
+		<item name="Content" weight="6">[Monster] (pet or allied creature) with Treasure</item>
+		<item name="Content" weight="9">[Monster] (random creature)</item>
+		<item name="Content" weight="8">[Monster] (random creature) with Treasure</item>
+		<item name="Content" weight="8">[Dungeon Hazard] with incidental treasure</item>
+		<item name="Content" weight="5">[Obstacle]</item>
+		<item name="Content" weight="10">[Trap]</item>
+		<item name="Content" weight="3">[Trap] protecting Treasure</item>
+		<item name="Content" weight="4">[Trick]</item>
+		<item name="Content" weight="8">Empty room</item>
+		<item name="Content" weight="6">Empty room with [Dungeon Hazard]</item>
+		<item name="Content" weight="6">Empty room with Treasure</item>
+		
+		
+		
+	</items>
+</Grammar>

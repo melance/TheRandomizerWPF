@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar">
+	<name>Technology Jargon</name>
+	<author>Lance Boudreaux</author>
+	<description>Generates sci-fi techno babble names</description>
+	<category>Name</category>
+	<genre>Sci-Fi</genre>
+	<parameters />
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start">[GeneralPrefix][General][GeneralSuffix]</item>
+		<item name="Start">[GeneralPrefix][General]</item>
+		<item name="Start">[General][GeneralSuffix]</item>
+		<item name="Start">[Units][General]</item>
+		<item name="Start">[GeneralPrefix][Units][General]</item>
+		<item name="Start">[Units][Particle][General]</item>
+		<item name="Start">[Particle][Beams]</item>
+		<item name="Start">[Cosmic][General]</item>
+		<item name="Start">[Cosmic][Beams]</item>
+		<item name="Start">[GeneralPrefix][Beams]</item>
+		<item name="Start">[Beams][GeneralSuffix]</item>
+		<item name="Start">[GeneralPrefix][GeneralSuffix]</item>
+		<item name="Start">i[General]</item>
+	
+		<item name="GeneralPrefix">mechano</item>
+		<item name="GeneralPrefix">mecha</item>
+		<item name="GeneralPrefix">electro</item>
+		<item name="GeneralPrefix">morpho</item>
+		<item name="GeneralPrefix">dyna</item>
+		<item name="GeneralPrefix">gravi</item>
+		<item name="GeneralPrefix">robo</item>
+		<item name="GeneralPrefix">atomic</item>
+		<item name="GeneralPrefix">cyber</item>
+		<item name="GeneralPrefix">compu</item>
+		<item name="GeneralPrefix">neuro</item>
+		<item name="GeneralPrefix">cyclo</item>
+		<item name="GeneralPrefix">synchro</item>
+		<item name="GeneralPrefix">turbo</item>
+		<item name="GeneralPrefix">meta</item>
+		<item name="GeneralPrefix">e</item>
+		<item name="GeneralPrefix">gyro</item>
+		<item name="GeneralPrefix">aether</item>
+		<item name="GeneralPrefix">mag</item>
+		<item name="GeneralPrefix">magno</item>
+		<item name="GeneralPrefix">magneto</item>
+		<item name="GeneralPrefix">pneumatic</item>
+		
+		<item name="GeneralSuffix">tron</item>
+		<item name="GeneralSuffix">tor</item>
+		<item name="GeneralSuffix">ite</item>
+		<item name="GeneralSuffix">ium</item>
+		<item name="GeneralSuffix">oid</item>
+		<item name="GeneralSuffix">izer</item>
+		<item name="GeneralSuffix">inator</item>
+		<item name="GeneralSuffix">graph</item>
+		
+		<item name="General">matrix</item>
+		<item name="General">fusion</item>
+		<item name="General">core</item>
+		<item name="General">reactor</item>
+		<item name="General">machine</item>
+		<item name="General">engine</item>
+		<item name="General">drive</item>
+		<item name="General">thruster</item>
+		<item name="General">gun</item>
+		<item name="General">apparatus</item>
+		<item name="General">rifle</item>
+		<item name="General">blaster</item>
+		<item name="General">saber</item>
+		<item name="General">sword</item>
+		<item name="General">planet</item>
+		<item name="General">moon</item>
+		<item name="General">asteroid</item>
+		<item name="General">comet</item>
+		<item name="General">console</item>
+		<item name="General">communicator</item>
+		<item name="General">transponder</item>
+		<item name="General">cloner</item>
+		<item name="General">computer</item>
+		
+		<item name="Units">macro</item>
+		<item name="Units">mega</item>
+		<item name="Units">giga</item>
+		<item name="Units">tera</item>
+		<item name="Units">peta</item>
+		<item name="Units">micro</item>
+		<item name="Units">nano</item>
+		<item name="Units">pico</item>
+		<item name="Units">femto</item>
+
+		<item name="Particle">atomic</item>
+		<item name="Particle">nuclear</item>
+		<item name="Particle">nucleo</item>
+		<item name="Particle">quantum</item>
+		<item name="Particle">photon</item>
+		<item name="Particle">proton</item>
+		<item name="Particle">neutron</item>
+		<item name="Particle">electron</item>
+		<item name="Particle">molecular</item>
+		<item name="Particle">positron</item>
+		<item name="Particle">tachyon</item>
+		<item name="Particle">lambda</item>
+		<item name="Particle">muon</item>
+		<item name="Particle">ion</item>
+		<item name="Particle">particle</item>
+
+		<item name="Beams">laser</item>
+		<item name="Beams">graser</item>
+		<item name="Beams">maser</item>
+		<item name="Beams">uvaser</item>
+		<item name="Beams">xaser</item>
+		<item name="Beams">taser</item>
+		<item name="Beams">phaser</item>
+		<item name="Beams">blazer</item>
+		<item name="Beams">stazer</item>
+		<item name="Beams">gauss</item>
+		
+		<item name="Cosmic">space</item>
+		<item name="Cosmic">star</item>
+		<item name="Cosmic">galactic</item>
+		<item name="Cosmic">intergalactic</item>
+		<item name="Cosmic">vortex</item>
+		<item name="Cosmic">astro</item>
+		<item name="Cosmic">cosmo</item>
+		<item name="Cosmic">hyper</item>
+		<item name="Cosmic">warp</item>
+		<item name="Cosmic">phase</item>
+		<item name="Cosmic">orbital</item>
+		<item name="Cosmic">planetary</item>
+		<item name="Cosmic">interplanetary</item>
+		<item name="Cosmic">stellar</item>
+		<item name="Cosmic">interstellar</item>
+		<item name="Cosmic">flux</item>
+		<item name="Cosmic">node</item>
+
+
+
+	</items>
+</Grammar>

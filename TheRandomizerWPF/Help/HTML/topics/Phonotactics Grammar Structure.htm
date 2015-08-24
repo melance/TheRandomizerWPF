@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Phonotactics Grammar Structure</title>
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+	<link rel="stylesheet" type="text/css" href="../css/the_randomizer.css">
+</head>
+<body>
+
+	<div id="topictop">&nbsp;</div>
+	<div id="topictitleleft">
+	<div id="topictitle">
+	<h3>Phonotactics Grammar Structure</h3>
+	</div>
+	</div>
+  
+	<div id="main">
+	<p>The information below is specific to Phonotactics Grammar Files. See the <a href="Grammar File Structure.htm">Grammar Files</a> help section for common information about all 
+  Grammar Files. Phonotactics grammar files are designed for those who use constructed languages in their worlds and develop them using phonology. It uses a fairly simple structure 
+  to mimic the rules of phonotactics.</p>
+	<br />
+	<h2>Case</h2>
+	<p>This value will determine the case to give the generated values. There are four possible values:</p>
+	<p><b>None:</b> The case is unaltered</p>
+	<p><b>Proper:</b> The case is set to proper, setting each letter following a space to upper case.</p>
+	<p><b>Upper:</b> The case is set to upper case, all characters are changed to upper case.</p>
+	<p><b>Lower:</b> The case is set to lower case, all characters are changed to lower case.</p>
+	<br />
+	<h2>Definitions</h2>
+	<p>Definitions hold the keys for the phonotactics and the possible values they can represent. For example, a key named "C" can represent consonants in the English language and would therefore have the value "B,C,D,E,F,G,H,J,K,L,M,N,P,Q,R,S,T,V,W,X,Y,Z" with "," being the delimiter.</p>
+	<p class="big">Properties</p>
+	<table>
+		<tr>
+			<th>Element/Attribute</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>item</td>
+			<td>Represents a single definition</td>
+		</tr>
+		<tr>
+			<td>[key]</td>
+			<td>The key that will represent this definition in the patterns.</td>
+		</tr>
+		<tr>
+			<td>[delimiter]</td>
+			<td>The delimiter that separates the values</td>
+		</tr>
+		<tr>
+			<td>{value}</td>
+			<td>The list of replacement values for this definition</td>
+		</tr>
+	</table>
+	<br />
+	<p class="sub">Sample</p>
+	<pre><code>&lt;Definitions&gt;
+&nbsp; &nbsp;&lt;item key="V" delimiter=","&gt;A,E,I,O,U&lt;/item&gt;
+&nbsp; &nbsp;&lt;item key="C" delimiter=","&gt;B,C,D,F,G,H,J,K,L,M,N,P,Q,R,S,T,V,W,X,Y,Z&lt;/item&gt;
+&lt;/Definitions&gt;</code></pre>
+	<br />
+	
+	<h2>Patterns</h2>
+	<p>Patterns show the possible combinations of definitions that can exist in the language. Using our example above, "C" represents a consonant (and will assume "V" represents vowels), therefore; the word "Tree" would have a pattern of "CCVV". Optional values are surrounded by parenthesis.</p>
+	<p class="big">Properties</p>
+	<table>
+		<tr>
+			<th>Element/Attribute</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>item</td>
+			<td>Represents a single pattern</td>
+		</tr>
+		<tr>
+			<td>[weight]</td>
+			<td>When selecting a pattern, this is the weight this particular pattern has.</td>
+		</tr>
+		<tr>
+			<td>{pattern}</td>
+			<td>The pattern of keys</td>
+		</tr>
+	</table>
+	<br />
+	<p class="sub">Sample</p>
+	<pre><code>&lt;patterns&gt;
+ &nbsp; &nbsp;&lt;item weight="1"&gt;(C)V(C)CV&lt;/item&gt;
+ &nbsp; &nbsp;&lt;item weight="1"&gt;CVC&lt;/item&gt;
+&lt;/patterns&gt;</code></pre>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+</body>
+</html>

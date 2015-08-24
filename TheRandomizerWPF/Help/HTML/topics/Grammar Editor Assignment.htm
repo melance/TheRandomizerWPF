@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Grammar Editor Assignment</title>
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+	<link rel="stylesheet" type="text/css" href="../css/the_randomizer.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Grammar Editor Assignment</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+  <h2>Assignment Grammar</h2>
+	<img class="screenShot" src="../img/Grammar Editor Assignment.png" />
+    <p class="big">
+      1 Rules
+    </p>
+    <p>
+      The rules are the main content of the grammar. They tell the system how to generate the random things for the grammar. For more detailed information on how grammar files work see the <a href="Assignment Grammar.htm">Assignment Grammar Files Help</a> document.
+    </p>
+	<p>
+		<b>Label (a.k.a. Name)</b> is the label for this particular rule which can be used in the Next column or in the Expression.
+    </p>	
+    <p>
+		<b>Next</b> tells the generator which rule(s) are next in the chain of generation.
+	</p>
+    <p>
+		<b>Weight</b> determines the weight of a particular rule when multiple rules have the same label. The weight determines the likelyhood that a particular rule will be selected within the rules that contain the same label. For example, if there are 3 rules labeled as "Start" with weights of 1,1, and 2. Then the first two have a 25% chance of be chosen and the last has a 50% chance.
+    </p>     
+    <p>
+		<b>Expression</b> this is the expression that is evaluated by the generator when a rule is selected.
+    </p>
+    <br />
+
+	<p class="big">
+		2 Imports
+	</p>
+	<p>
+		This is where you can define libraries that you would like to import into the grammar.
+	</p>
+	<br />
+
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+</body>
+</html>

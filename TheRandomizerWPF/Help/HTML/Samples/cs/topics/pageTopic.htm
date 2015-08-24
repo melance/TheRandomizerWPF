@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Téma</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Téma</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/topic.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      Stránka s tématem je zobrazována vždy, když upravujete položky <a href="navBar_TOC.htm">obsahu</a> nebo klíčová slova <a href="navBar_IDX.htm">rejstříku</a>.
+    </p>
+    <img src="../img/ss_topic.jpg" class="ssright"/>
+    <p>
+      Navigační panel obsahu (resp. rejstříku) a stránka tématu jsou úzce propojeny a v podstatě tvoří
+      jeden celek, jehož účelem je rychle a efektivně definovat obsah nápovědy (resp. rejstřík klíčových slov).
+    </p>
+    <p>
+      Nejdůležitější volby a akce, týkající se úprav obsahu a tématu, jsou k dispozici i na <a href="ribbonBar.htm">pásu karet</a> (karta Obsah, resp. karta Rejstřík).
+    </p>
+    <p>
+      <i>Informace:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;Pokud není uvedeno jinak, níže popsané akce a volby jsou dostupné jak při editaci položky obsahu, tak při editaci klíčového slova v rejstříku.</i>
+    </p>
+    
+    <p class="big" style="padding-top:8px;">
+     <a name="tabs"></a> Náhled a Zdroj
+    </p>
+    <p>
+      Dole na stránce tématu jsou k dispozici dvě záložky - <b>Náhled</b> a <b>Zdroj</b>.
+      Pomocí nich se můžete přepínat mezi náhledem na téma a <b>vestavěným editorem</b> jeho zdrojového textu. Přepínání je možné také pomocí klávesové zkratky <b>F12</b>.
+      Kromě náhledu a editoru se tato zkratka přepíná ještě do stromu obsahu, či rejstříku, což umožňuje snadnější navigaci mezi těmito třemi prvky uživatelského rozhraní pomocí klávesnice.
+      Pokud se chcete přepínat jen mezi náhledem a editorem, používejte klávesovou zkratku <b>Shift+F12</b>.  
+    </p>
+
+    <p class="big" style="padding-top:8px;">
+     <a name="topicsel"></a> Výběr tématu
+    </p>
+    <ul class="shr">
+      <li><b>Vybrat soubor projektu</b> - výběr tématu pomocí dialogu pro <a href="dialogPrjFiles.htm">výběr souboru projektu</a></li>
+      <li><b>Vybrat soubor</b> - výběr tématu pomocí systémového dialogu pro výběr souboru</li>
+      <li><b>Zadat cestu nebo adresu url</b> - manuální zadání cesty k souboru tématu nebo adresy url (dialog obsahuje i roletovou nabídku se všemi soubory definovanými kdekoliv v projektu)</li>
+      <li><b>Vytvořit nové téma ze šablony</b> - vytvoří nový soubor tématu na základě zvolené šablony, v umístění, které vyberete. 
+          Nejprve bude zobrazen dialog pro <a href="dialogPrjFiles.htm">výběr šablony</a> a následně systémový dialog
+          pro výběr souboru, v němž zadáte umístění a název nového souboru tématu.</li>
+      <li><b>Vytvořit nové téma z existujícího souboru</b> - vytvoří nový soubor tématu tak, že zkopíruje Vámi zvolené existující téma. Pro výběr existujícího tématu je zobrazen
+          dialog pro <a href="dialogPrjFiles.htm">výběr souboru projektu</a> a následně je zobrazen systémový dialog pro výběr souboru, v němž zadáte umístění a název nového souboru tématu.</li>
+      <li><b>Vytvořit nové prázdné téma</b> - vytvoří nový soubor tématu v umístění, které zvolíte, a přiřadí toto nové téma položce obsahu (resp. rejstříku)</li>
+      <li><b>Vybrat z jiné nápovědy</b> - výběr odkazu na téma umístěné v externí nápovědě (viz dialog pro <a href="dialogPrjFiles.htm">výběr souboru projektu</a>)</li>
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Poznámka:<br>&nbsp;&nbsp;&nbsp;&nbsp;Precision Helper si pamatuje poslední z voleb pro výběr tématu (kromě volby pro zařazení jiného obsahu) a tu nabízí jako výchozí v rámci celé aplikace.</i></li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+     Uložení tématu jako šablony 
+    </p>
+    <ul class="shr">
+      <li><b>Uložit jako šablonu</b> - touto volbou můžete kterékoliv téma uložit a používat jako šablonu.
+          Precision Helper automaticky detekuje použité styly, obrázky, a další soubory, které jsou v tématu použity,
+          a uloží je spolu s tématem do příslušné složky nově vytvořené šablony.</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+     Volby výběru tématu <font color="#880000">pro úpravy obsahu</font>
+    </p>
+    <ul class="shr">
+      <a name="toctopicsel"></a>
+      <li><b>Zařadit jiný obsah</b> - zařadí do struktury <a href="pageMergeFiles.htm">externí obsah</a>.
+          Můžete zvolit jiný soubor obsahu (<i>hhc</i>) nebo odkaz na soubor obsahu v <a href="dialogPrjFiles.htm">externí nápovědě</a>.</li>
+      <li><b>Zrušit (vytvořit záhlaví)</b> - odebere položce obsahu odkaz na soubor tématu a tím ji změní na záhlaví</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+     Volby výběru tématu <font color="#880000">pro úpravy rejstříku</font>
+    </p>
+    <ul class="shr">
+      <li><b>Je seznamem témat</b> - Precision Helper umožňuje definovat strukturovaný <a href="navBar_IDX.htm">rejstřík</a> a tato volba umožní
+          vybranému klíčovému slovu přiřazovat podřízená slova (a případně další seznamy témat).
+          Podobného efektu dosáhnete i přesunutím vybraných klíčových slov pod jiné zvolené slovo (pomocí myši nebo klávesnice).</li>
+      <li><b>Je položkou v seznamu témat</b> - zapne příznak položky seznamu u vybraného klíčového slova (viz předchozí akce)</li>
+      <li><b>Je odkazem na jiné klíčové slovo</b> - umožňuje definovat vybrané klíčové slovo jako odkaz na jiné klíčové slovo. Nemusíte tak více slovům odkazujícím na stejné téma přiřazovat stejné soubory témat.
+          Odkazované slovo zadejte v příslušném řádku v <a href="helpBar_OI.htm">Editoru vlastností</a>.</li>
+    </ul>
+
+    <a name="topiceditor"></a>
+    <p class="big" style="padding-top:8px;">
+      Editor témat (vestavěný)
+    </p>
+    <p>
+      Editor nabízí standardně používané možnosti, jako např. 
+    </p>
+    <ul class="shr">
+      <li><b>Vyhledávání a nahrazování textu</b></li>
+      <li><b>Zvýrazňování syntaxe</b> - aktuálně používané schéma pro zvýrazňování můžete změnit v dialogu <a href="dialogOptions.htm#style">Nastavení</a>.
+            Schéma samotné je definováno pomocí konfiguračních souborů. Můžete si vytvořit vlastní konfigurační soubory a přizpůsobit
+            si tak chování editoru pro zvýrazňování syntaxe, dokončování kódu, i operace po stisku speciálních klávesových zkratek (viz níže).</li>     
+      <li><b>Automatické dokončování kódu</b> - toto okno je <a href="dialogOptions.htm">zobrazováno automaticky</a> 
+        anebo po stisku klávesové zkratky <b>Ctrl+Space</b>.
+        Položky v seznamu jsou definovány v konfiguračním souboru pro zvýrazňování syntaxe.</li>
+      <li><b>Speciální klávesové zkratky</b> - které umožňují vkládání předdefinovaných frází a kódu.           
+          Například: <b>Ctrl+B</b> vloží, anebo orámuje vybraný text elementem <b>&lt;B&gt;</b>,
+          <b>Alt+End</b> vloží ukončovací tag aktuálně editovaného elementu, apod.
+          Zkratky jsou definovány v konfiguračním souboru pro zvýrazňování syntaxe.</li>
+      <li><b>Aplikační doplňky</b> - např. "<b>Vložit aktuální datum</b>", <b>HTML Tidy</b>, apod. Volby pro spouštění doplňků najdete v kontextové nabídce editoru,
+            a také v seznamu položek pro automatické dokončování kódu.</li>
+    </ul>
+    <p>      
+      Další funkce editoru najdete v jeho kontextové nabídce.
+    </p>
+    
+    <p class="big" style="padding-top:8px;">
+      Další možnosti práce s tématem
+    </p>
+    <ul class="shr">
+      <li><b>Vlastnosti</b> - zobrazí kartu <a href="helpBar_OI.htm">Editoru vlastností</a>, ve kterém můžete upravovat <b>vzhled a chování</b> aktuální položky i celého obsahu (resp. rejstříku)</li>
+      <li><b>Upravit</b> - otevře externí editor pro úpravu nebo prohlížení aktuálního tématu. V kontextové nabídce tohoto tlačítka máte pro otevření k dispozici
+          <a href="dialogOptions.htm#mtools">Vámi zvolený editor a prohlížeč</a>, a také aplikace asociované s příponou aktuálního tématu.</li>
+      <li><a name="quickkeys"></a> <b>Klíčová slova</b> - V kartě <a href="helpBar_OI.htm">editoru vlastností</a> je k dispozici panel pro rychlé <b>přiřazování klíčových slov</b>, ve kterém můžete přiřazovat slova tématu
+          pouhým zaškrtnutím nebo přidávat slova nová (další volby panelu jsou dostupné také v jeho kontextové nabídce).</li>
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Tip:<br>&nbsp;&nbsp;&nbsp;&nbsp;Když kdekoliv v zobrazeném tématu označíte nějaký text a v editoru vlastností (v panelu klíčová slova) zvolíte akci <b>Přidat klíč</b>,
+          bude označený text přidán jako nové klíčové slovo.</i></li>
+      <li style="list-style-type:none"></li>
+      <li><b>Tisk</b> - tisk zobrazeného tématu</li>
+      <li><b>Náhled</b> - tiskový náhled pro aktuálně zobrazené téma</li>
+      <li><b>Najít</b> - hledání textu na stránce aktuálně zobrazeného tématu</li>
+      <li><b>Velikost textu</b> - volba velikosti textu pro aktuálně zobrazené téma</li>
+      <li><b>Zvětšit</b> - zvětšení měřítka aktuálně zobrazeného tématu</li>
+      <li><b>Zmenšit</b> - zmenšení měřítka aktuálně zobrazeného tématu</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Zpět</b> - umožňuje přejít zpět v rámci historie procházení zobrazených témat</li>
+      <li><b>Vpřed</b> - umožňuje přejít vpřed v rámci historie procházení zobrazených témat</li>
+      <li><b>Aktualizovat</b> - aktualizuje zobrazení aktuálního tématu</li>
+      <li><b>Synchronizovat</b> - synchronizuje strom obsahu s právě zobrazeným tématem</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Téma v editoru vlastností <font color="#880000">(pro úpravy obsahu)</font>
+    </p>
+    <ul class="shr">
+      <li><b>Název</b> - název položky obsahu</li>
+      <li><b>Ikona</b> - ikona, která má být použita u položky obsahu</li>
+      <li><b>Ikona (nová)</b> - u ikony v obsahu bude zobrazena hvězdička</li>
+      <li><b>Vložený obsah</b> - umístění nebo odkaz na vložený obsah (viz <a href="#toctopicsel">Zařazení jiného obsahu</a>)</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Téma v editoru vlastností <font color="#880000">(pro úpravy rejstříku)</font>
+    </p>
+    <ul class="shr">
+      <li><b>Klíčové slovo</b> - text klíčového slova v rejstříku</li>
+      <li><b>Odkaz na jiné klíčové slovo</b> - text odkazovaného klíčového slova pro situaci, kdy má aktuální slovo příznak "<i>Je odkazem na jiné klíčové slovo</i>" (viz výše)</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      <a name="oi"></a> Ostatní parametry tématu
+    </p>
+    <ul class="shr">
+      <li><b>Kontextové ID</b> - číselné identifikátory kontextové nápovědy (jen pro čtení). Kliknutím na přidružené tlačítko (nebo dvojitým kliknutím myší na řádek) se na dané téma nastavíte
+          v <a href="pageMap.htm">Editoru kontextové nápovědy</a>.</li>
+      <li><b>Symbolické ID</b> - symbolické identifikátory kontextové nápovědy (jen pro čtení). Kliknutím na přidružené tlačítko (nebo dvojitým kliknutím myší na řádek) se na dané téma nastavíte
+          v <a href="pageMap.htm">Editoru kontextové nápovědy</a>.</li>
+      <li><b>Odkaz (soubor tématu)</b> - umístění a název souboru tématu</li>
+      <li><b>Alternativní odkaz</b> - alternativní odkaz, který bude použit v případě, že hlavní odkaz na téma není dostupný</li>
+      <li><b>ID okna</b> - identifikátor <a href="pageWinTypes.htm">typu okna</a>, ve kterém má být dané téma zobrazeno</li>
+      <li><b>ID rámce</b> - identifikátor rámce (frame), ve kterém má být dané téma zobrazeno</li>
+      <li><b>Komentář</b> - autorský komentář k položce obsahu (resp. rejstříku)</li>
+      <li style="list-style-type:none"></li>
+      <li><i>Neimplementováno</i> - sekce s parametry, které jsou v aplikaci uvedeny jen z důvodu plné podpory formátu projektu HHP, ale ani samotný prohlížeč nápovědy je nepodporuje.</li>
+    </ul>
+
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. Všechna práva vyhrazena.
+  </div>
+</body>
+</html>

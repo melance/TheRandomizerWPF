@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<library>
+	<item name="AnyLetter" weight="21">[UpperConsonant]</item>
+	<item name="AnyLetter" weight="21">[LowerConsonant]</item>
+	<item name="AnyLetter" weight="5">[UpperVowel]</item>
+	<item name="AnyLetter" weight="5">[LowerVowel]</item>
+	<item name="UpperCase" weight="21">[UpperConsonant]</item>
+	<item name="UpperCase" weight="5">[UpperVowel]</item>
+	<item name="LowerCase" weight="21">[LowerConsonant]</item>
+	<item name="LowerCase" weight="5">[LowerVowel]</item>
+	
+	<item name="Digit">0</item>
+	<item name="Digit">1</item>
+	<item name="Digit">2</item>
+	<item name="Digit">3</item>
+	<item name="Digit">4</item>
+	<item name="Digit">5</item>
+	<item name="Digit">6</item>
+	<item name="Digit">7</item>
+	<item name="Digit">8</item>
+	<item name="Digit">9</item>
+	
+	<item name="UpperConsonant">B</item>
+	<item name="UpperConsonant">C</item>
+	<item name="UpperConsonant">D</item>
+	<item name="UpperConsonant">F</item>
+	<item name="UpperConsonant">G</item>
+	<item name="UpperConsonant">H</item>
+	<item name="UpperConsonant">I</item>
+	<item name="UpperConsonant">J</item>
+	<item name="UpperConsonant">K</item>
+	<item name="UpperConsonant">L</item>
+	<item name="UpperConsonant">M</item>
+	<item name="UpperConsonant">N</item>
+	<item name="UpperConsonant">P</item>
+	<item name="UpperConsonant">Q</item>
+	<item name="UpperConsonant">R</item>
+	<item name="UpperConsonant">S</item>
+	<item name="UpperConsonant">T</item>
+	<item name="UpperConsonant">V</item>
+	<item name="UpperConsonant">W</item>
+	<item name="UpperConsonant">X</item>
+	<item name="UpperConsonant">Y</item>
+	<item name="UpperConsonant">Z</item>
+	
+	<item name="LowerConsonant">b</item>
+	<item name="LowerConsonant">c</item>
+	<item name="LowerConsonant">d</item>
+	<item name="LowerConsonant">f</item>
+	<item name="LowerConsonant">g</item>
+	<item name="LowerConsonant">h</item>
+	<item name="LowerConsonant">j</item>
+	<item name="LowerConsonant">k</item>
+	<item name="LowerConsonant">l</item>
+	<item name="LowerConsonant">m</item>
+	<item name="LowerConsonant">n</item>
+	<item name="LowerConsonant">p</item>
+	<item name="LowerConsonant">q</item>
+	<item name="LowerConsonant">r</item>
+	<item name="LowerConsonant">s</item>
+	<item name="LowerConsonant">t</item>
+	<item name="LowerConsonant">v</item>
+	<item name="LowerConsonant">w</item>
+	<item name="LowerConsonant">x</item>
+	<item name="LowerConsonant">y</item>
+	<item name="LowerConsonant">z</item>
+	
+	<item name="UpperVowel">A</item>
+	<item name="UpperVowel">E</item>
+	<item name="UpperVowel">I</item>
+	<item name="UpperVowel">O</item>
+	<item name="UpperVowel">U</item>
+	
+	<item name="LowerVowel">a</item>
+	<item name="LowerVowel">e</item>
+	<item name="LowerVowel">i</item>
+	<item name="LowerVowel">o</item>
+	<item name="LowerVowel">u</item>
+</library>

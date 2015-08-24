@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Syntax schemes for topic editor</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Syntax schemes for topic editor</h3>
+    </div>
+  </div>
+  
+<div id="main">
+    <img src="../img/topic.jpg" style="float:left; margin-right:12px; margin-bottom:24px;" />
+    <p>
+      Embedded topic editor supports customizable syntax highlighting schemes,
+      customizable lists of items for code completion and customizable keystrokes
+      for inserting the predefined phrases (code) into currently edited topic.     
+    </p>
+    <p>
+      In this chapter you will learn how these schemes are defined and how you can create your own schemes.
+    </p>
+    <br />
+
+    <p class="big">
+      Schemes location
+    </p>
+    <p>
+      Schemes are located under <i>Extras\_Highlighters</i> subfolder of Precision Helper.
+    </p>
+    <p style="margin-left:24px; text-align:left;">
+      For default installation on Windows 2000/XP it is a folder:<br>
+      <i>"C:\Documents and Settings\%UserName%\AppData\Precision\precisionhelper\Extras\_Highlighters"</i><br><br>
+            For default installation on Windows Vista (and newer) it is a folder:<br>
+      <i>"C:\Users\%UserName%\AppData\Roaming\Precision\precisionhelper\Extras\_Highlighters"</i>
+    </p>
+    <br />
+    
+    <p class="big">
+      Schemes syntax
+    </p>
+    <p>
+      Each scheme can be defined by one or more files of the following types:
+    </p>
+    <ul class="shr">
+      <li>Scheme.keys.ini</li>
+      <li>Scheme.html.ini</li>      
+      <li>Scheme.html.cih</li>
+      <li>Scheme.xml.ini</li>      
+      <li>Scheme.xml.cih</li>      
+      <li>atd.</li>
+    </ul>
+    <p>
+      The files with <b>.keys.ini</b> suffix contain a definition of <b>keystrokes</b> and their corresponding phrases,
+      that will be inserted into currently edited topic, or that will be applied onto currently selected text in the editor,
+      after you press an appropriate hot-key.<br />
+      Precision Helper supports a few specific macros, that can be used in this kind of files:<br />
+      <b>|</b> (pipe - cursor location after the insertion)<br />
+      <b>#</b> (sharp - inserts the end tag for currently edited element - this is a standalone macro)<br />
+      <b>\n</b> (inserts the end of line - CRLF).
+    </p>
+    <p>
+      The files with <b>.html.ini</b> suffix contain a definition of syntax highlighting for the topics in <b>html</b> format.<br />
+      The files with <b>.xml.ini</b> suffix contain a definition of syntax highlighting for the topics in <b>xml</b> format.<br />
+    </p>
+    <p>
+      The files with <b>.html.cih</b> suffix contain a definition of code completion items for the topics in <b>html</b> format.<br />    
+      The files with <b>.xml.cih</b> suffix contain a definition of code completion items for the topics in <b>xml</b> format.<br />
+    </p>
+    <br />
+    <p>
+      The internal syntax of each file mentioned above is relatively easy to understand
+      and you can try to create your own schemes simply by copying some of the existing files.
+    </p>
+  </div>
+
+  <div id="foot">
+    Copyright 2008-2011  Precision software & consulting. All rights reserved.
+  </div>
+</body>
+</html>

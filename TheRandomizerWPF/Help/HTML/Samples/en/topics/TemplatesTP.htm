@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Topic and project templates</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Topic and project templates</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/templates.jpg" style="float:left; margin-right:12px; margin-bottom:24px;" />
+    <p>
+      Topic and project templates facilitate the creation of a new help topics, because they allow you to incorporate
+      into your current project, not only selected predefined topic style, but also all the scripts, 
+      images, videos and other files used in a topic (or project) template. 
+    </p>
+    <p>
+      In this chapter you will learn how templates are defined in the product and how you can add your own templates.
+    </p>
+    <br />
+
+    <p class="big">
+      Topic templates
+    </p>
+    <p>
+      Topic templates are located in <i>Templates\_Topics</i> subfolder of the Precision Helper.
+    </p>
+    <p style="margin-left:24px; text-align:left;">
+      For default installation on Windows 2000/XP it is a folder:<br>
+      <i>"C:\Documents and Settings\%UserName%\AppData\Precision\precisionhelper\Templates\_Topics"</i><br><br>
+            For default installation on Windows Vista (and newer) it is a folder:<br>
+      <i>"C:\Users\%UserName%\AppData\Roaming\Precision\precisionhelper\Templates\_Topics"</i>
+    </p>
+
+    <p>
+      Under the <i>_Topics</i> folder all the files and subfolders can be stored completely arbitrary,
+      but you must follow the two rules: 
+    </p>
+    <ul class="shr">
+      <li>
+        Main template file has to be stored in a classic help topic format (ie. <b>html</b>, <b>xml</b>, etc.),
+        and the name of the file should contain two suffixes - language code and the format extension itself. 
+        For example: <i>mytemplate.en.htm</i>. 
+      </li>
+      <li>
+        A template configuration file with <b>.lst</b> suffix must exists, and it must be 
+        located in the directory structure in that manner, as if it were a project file that you want to use the template for.
+        This file must contain a list of images, scripts, styles, and other files used in the template,
+        and the main template file has to be listed as first.
+        (As is probably obvious for the different templates you can use the shared images, styles, and other files.)
+      </li>
+    </ul>
+    <p>
+      You can take a look at the definition of a few basic templates, that are included in the installation of Precision Helper,
+      and you can try the creation of a new topics from them, so you can better understand the principles of their function.  
+    </p>
+    <p>
+      The easiest way, <b>how to create your own template</b>, is to use an option called
+      "<a href="pageTopic.htm#topicsel">Save as template</a>" in a topic page (under the "Select a topic" button).
+      You can create a temporary help project for your templates, so you can edit them as a standard topics,
+      and then you can save them for usage via the option mentioned above.
+    </p>
+    <br />
+   
+
+    <p class="big">
+      Project templates
+    </p>
+    <p>
+      Project templates are located under the <i>Templates\_Projects</i> subfolder of the Precision Helper.
+    </p>
+    <p>
+      All the files with <b>.HHP</b> suffix <i>(MS Html Help projects)</i> are accepted as templates.
+      To distinguish different language versions, template file names should contain two suffixes
+      - language code identifier and the .hhp extension itself. 
+      For example: <i>myproject.en.hhp</i>.        
+    </p>
+    <p>
+      Unlike for topic templates, here is not needed to define a special configuration file.
+      When a new project is created from the template, all the files from the template folder (and its subfolders)
+      are copied to the location you choose, and the project file is renamed to the title you enter.
+    </p>
+    <p>
+      Thanks to the principle mentioned above, you cannot share the image files, style sheets, scripts, etc., between the project templates.
+    </p>
+    <p>
+      The easiest way, <b>how to create your own project template</b>, is to copy the content of your selected project folder
+      into the templates folder - ie. <i>Templates\_Projects\MyTemplate</i>.
+    </p>
+
+    <br>
+  </div>
+  <div id="foot">
+    Copyright 2008-2011  Precision software & consulting. All rights reserved.
+  </div>
+</body>
+</html>

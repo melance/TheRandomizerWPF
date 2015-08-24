@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AssignmentGrammar">
+  <name>Adventure Hooks (Space Opera)</name>
+  <description>An adventure hook generator based on the this post on reddit:</description>
+  <category>Encounter</category>
+  <genre>Sci-Fi</genre>
+  <parameters />
+  <supportsMaxLength>false</supportsMaxLength>
+  <url>https://www.reddit.com/r/rpg/comments/19bd3b/d20_space_opera_plot_hook_generator_by_yours_truly/</url>
+  <items>
+    <item name="Start">&lt;b&gt;What do you have?&lt;/b&gt;&lt;br /&gt;
+		[WDYH+WDYHRR]&lt;br /&gt;
+		&lt;b&gt;Where does it need to go?&lt;/b&gt;&lt;br /&gt;
+		[WDINTG]&lt;br /&gt;
+		&lt;b&gt;Who else wants it?&lt;/b&gt;&lt;br /&gt;
+		[WEWI+WEWIRR]&lt;br /&gt;
+		&lt;b&gt;What do you need?&lt;/b&gt;&lt;br /&gt;
+		[WDYN]&lt;br /&gt;
+		&lt;b&gt;Who can help you?&lt;/b&gt;&lt;br /&gt;
+		[WCHY]&lt;br /&gt;</item>
+    <item name="WDYH">A little girl with a dark secret</item>
+    <item name="WDYH">A planet-destroying bomb</item>
+    <item name="WDYH">The sacred royal treasure of a prominent alien race</item>
+    <item name="WDYH">The cryogenically frozen body of someone important</item>
+    <item name="WDYH">The only signed copy of the peace treaty</item>
+    <item name="WDYH">A powerful new energy supply</item>
+    <item name="WDYH">A critical resupply</item>
+    <item name="WDYH">An artifact of a legendary ancient alien race</item>
+    <item name="WDYH">A religious relic of crucial importance</item>
+    <item name="WDYH">An illegal weapon</item>
+    <item name="WDYH">An experimental starfighter</item>
+    <item name="WDYH">The only working FTL drive</item>
+    <item name="WDYH">The survivors of a genocide</item>
+    <item name="WDYH">A genetically engineered clone</item>
+    <item name="WDYH">A virulent disease</item>
+    <item name="WDYH">The last specimens of an endangered organism</item>
+    <item name="WDYH">One metric tonne of a powerful narcotic</item>
+    <item name="WDYH">The blood soaked body of the universe's most powerful diplomat</item>
+    <item name="WDYH">A hibernating serial killer</item>
+    <item name="WDYH">A rare and expensive spice</item>
+    <item name="WDYHRR">Nothing of value but you're supposed to be carrying [WDYH]</item>
+    <item name="WDINTG">The edge of known space as coordinates x,y,z.</item>
+    <item name="WDINTG">The heart of the galaxy</item>
+    <item name="WDINTG">The chief historian of the imperial archives</item>
+    <item name="WDINTG">A secret temple on a remote planet</item>
+    <item name="WDINTG">One of the last known pockets of the resistance</item>
+    <item name="WDINTG">To someone that can keep it safe for us</item>
+    <item name="WDINTG">Home</item>
+    <item name="WDINTG">A maximum-security prison on an uninhabited planet</item>
+    <item name="WDINTG">An uninhabited world you had to hole up in one time</item>
+    <item name="WDINTG">Your old boss</item>
+    <item name="WDINTG">The alien's despot king</item>
+    <item name="WDINTG">Agents of the imperial army</item>
+    <item name="WDINTG">Earth</item>
+    <item name="WDINTG">A neglected mining colony way out on the frontier</item>
+    <item name="WDINTG">Your father</item>
+    <item name="WDINTG">A top secret deep space research lab</item>
+    <item name="WDINTG">The ship doctor's [Compatriots|Lab]</item>
+    <item name="WDINTG">An underworld contact who you think will give you a good price for it</item>
+    <item name="WDINTG">Your hideout</item>
+    <item name="WDINTG">A badly outmatched fleet about to engage the enemy in a last ditch battle</item>
+    <item name="WDINTG">A strategic target behind enemy lines</item>
+    <item name="WDINTG">A priest of an ancient, nearly extinct religion</item>
+    <item name="WDINTG">The republican senate</item>
+    <item name="WDINTG">The president of the universe</item>
+    <item name="WEWI">A team of expert bounty hunters</item>
+    <item name="WEWI">A large crime syndicate</item>
+    <item name="WEWI">The emperor of the galaxy</item>
+    <item name="WEWI">A powerful corporation or one of it's subsidiaries</item>
+    <item name="WEWI">The person/faction that hired you</item>
+    <item name="WEWI">A rogue government [Official|Office]</item>
+    <item name="WEWI">A pirate captain</item>
+    <item name="WEWI">A new alien race recently risen to space-faring</item>
+    <item name="WEWI">A militaristic faction with dreams of galactic domination</item>
+    <item name="WEWI">Its rightful owner</item>
+    <item name="WEWI">Your rivals</item>
+    <item name="WEWI">A remorseless general</item>
+    <item name="WEWI">Whoever you stole it from</item>
+    <item name="WEWI">An important cleric of the imperial diocese</item>
+    <item name="WEWI">A former lover</item>
+    <item name="WEWI">Nightmarish creatures from outside the galaxy</item>
+    <item name="WEWI">Someone you left for dead back in the war</item>
+    <item name="WEWI">Your old boss</item>
+    <item name="WEWI">A fanatic cult</item>
+    <item name="WEWI">No one</item>
+    <item name="WEWIRR">You don't know [WEWI]</item>
+    <item name="WDYN">Guarantees of safety for someone's dependents</item>
+    <item name="WDYN">Better weapons and shields</item>
+    <item name="WDYN">A new, more powerful reactor core</item>
+    <item name="WDYN">A new [Mechanic|Technician] with flexible morals</item>
+    <item name="WDYN">Supplies</item>
+    <item name="WDYN">Permission from a governing body</item>
+    <item name="WDYN">A new engine</item>
+    <item name="WDYN">Something to distract your opposition</item>
+    <item name="WDYN">Something to safely contain what you are carrying</item>
+    <item name="WDYN">More fuel</item>
+    <item name="WDYN">Advice from a sage</item>
+    <item name="WDYN">An extension on your contract</item>
+    <item name="WDYN">The blueprints for your ship</item>
+    <item name="WDYN">Back pay for the last job you did for this employer</item>
+    <item name="WDYN">An advance payment</item>
+    <item name="WDYN">Something to fix the [Radiation|Fluid] leak</item>
+    <item name="WDYN">The planet you are on is quarantined</item>
+    <item name="WDYN">A new AI, this time a little less sarcastic (Don't hold our breath)</item>
+    <item name="WDYN">Your ship has been taken</item>
+    <item name="WDYN">A new navigator (Probably best to not tell him what happened to the last one)</item>
+    <item name="WCHY">A legendary ghost ship populated with androids</item>
+    <item name="WCHY">Your real boss</item>
+    <item name="WCHY">A team of adrenaline-seeking smugglers</item>
+    <item name="WCHY">A tenacious street kid you met when you got here</item>
+    <item name="WCHY">The planetary governor's younger brother</item>
+    <item name="WCHY">An untrustworthy acquaintance of yours</item>
+    <item name="WCHY">An old sage</item>
+    <item name="WCHY">A mysterious stranger who contacts you out of the blue</item>
+    <item name="WCHY">Someone you saved back in the war</item>
+    <item name="WCHY">An eccentric reclusive scientist</item>
+    <item name="WCHY">A crew-member's ex-wife</item>
+    <item name="WCHY">The captain's mentor</item>
+    <item name="WCHY">The bishop</item>
+    <item name="WCHY">A disgraced politician infamous for scandalous habits</item>
+    <item name="WCHY">No one but yourselves</item>
+    <item name="WCHY">A grizzled war vet with nothing left to lose</item>
+    <item name="WCHY">The leader of the local insurgency</item>
+    <item name="WCHY">[=ToText(Roll(1,6))] of the emperor's advisors</item>
+    <item name="WCHY">A friend with a pirate crew</item>
+    <item name="WCHY">A family member with a commission in the imperial Navy</item>
+    <item name="Compatriots">compatriots</item>
+    <item name="Lab">lab</item>
+    <item name="Official">official</item>
+    <item name="Office">office</item>
+    <item name="Mechanic">mechanic</item>
+    <item name="Technician">technician</item>
+    <item name="Radiation">radiation</item>
+    <item name="Fluid">fluid</item>
+  </items>
+  <imports />
+</Grammar>

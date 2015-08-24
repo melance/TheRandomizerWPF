@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		 xsi:type="AssignmentGrammar">
+	<name>Critical Miss</name>
+	<author>Lance Boudreaux</author>
+	<description>Generates a critical miss event.</description>
+	<category>Combat</category>
+	<supportsMaxLength>false</supportsMaxLength>
+	<parameters>
+		<parameter name="attackType" display="Attack Type" type="List" valueType="Label">
+			<option>Melee</option>
+			<option>Ranged</option>
+			<option>Magic</option>
+		</parameter>
+	</parameters>
+	<items>
+		<item name="Start">[attackType]</item>
+
+		<item name="Melee">You stumble forward into your opponent.</item>
+		<item name="Melee">You attack with great zeal and miss leaving you dazed until the end of the next round of combat.</item>
+		<item name="Melee">Your weapon slips or is knocked from your hand landing a few feet away.</item>
+		<item name="Melee">The ferociousness of your attack leaves you unbalanced landing you on the ground.</item>
+		<item name="Melee">The kickback from your attack pushes you backwards several feet.</item>
+		<item name="Melee">You miss your intended target and manage to hit your nearest ally.</item>
+		<item name="Melee">Your weapon breaks leaving it useless.</item>
+		<item name="Melee">Shomehow you've managed to hit yourself.</item>
+		<item name="Melee">Your opponent manages to sidestep your attack and move into a flanking position.</item>
+		<item name="Melee">Showing the grace of a drunkard, you manage to twist your ankle causing you to limp.</item>
+		<item name="Melee">Unable to recover from the missed attack, you leave yourself flat-footed for all enemies.</item>
+		<item name="Melee">The ferocity of your failure causes you to sprain your wrist.</item>
+		<item name="Melee">Your attack never quite starts, a muscle spasm prevents you from moving your weapon and is now a pulled muscle.</item>
+
+		<item name="Ranged">Your mishandling of your weapon has left you unable to do anything but regain your composure until the next round.</item>
+		<item name="Ranged">You lose your footing slipping and knocking your head dazing you for [=Roll(1,3)] rounds.</item>
+		<item name="Ranged">Gracelessly, you slip and sprain your ankle.</item>
+		<item name="Ranged">You handle your weapon so poorly that you manage to injure yourself in the process.</item>
+		<item name="Ranged">In the process of focusing on your aim, you fail to see an opponent who has gotten the drop on you.</item>
+		<item name="Ranged">Fumbling your shot, you manage to strike one of your allies.</item>
+		<item name="Ranged">Your ammunition fumbles out of your hands onto the ground, leaving you flat-footed with nothing to fire.</item>
+		<item name="Ranged">Your weapon jams.</item>
+		<item name="Ranged">Your grip on your weapon wasn't quite tight enough, causing it to slip from your hands.</item>
+		<item name="Ranged">Somehow, in your ferverant movements to ready your weapon, you sprain your wrist.</item>
+		<item name="Ranged">You trip and fall prone with your weapon still firmly lodged in your hand.</item>
+		<item name="Ranged">The weapon in hand is broken beyond immediate repair.</item>
+		<item name="Ranged">The ammunition you fired ricochets [=if(Roll(1,100) > 50, 'landing harmlessly on the ground.', 'hitting you or one of your allies.')]</item>
+
+		<item name="Magic">Your magical affect affects the wrong target.</item>
+		<item name="Magic">The magical forces you attempted to invoke backfire causing you moderate damage.</item>
+		<item name="Magic">Somehow the bungled attempt at casting a spell has left your mute for [=Roll(1,3)] rounds.</item>
+		<item name="Magic">The intended magic failed, instead [Surge].</item>
+
+		<item name="Surge">causing one of your opponents to appear directly in front of you</item>
+		<item name="Surge">charming your allies into believe you are one of the enemies</item>
+		<item name="Surge">moderately healing one of your enemies</item>
+		<item name="Surge">moderately damaging yourself or one of your allies</item>
+		<item name="Surge">stunning you for [=Roll(1,3)] rounds</item>
+		<item name="Surge">summoning a large swarm of insects centered on the caster</item>
+		<item name="Surge">transforms you into a(n) [Animal] for [=Roll(1,6)] rounds</item>
+	</items>
+	<imports>
+		<import>animals</import>
+	</imports>
+</Grammar>

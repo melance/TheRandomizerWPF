@@ -1,0 +1,207 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ribbon bar</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Ribbon Bar</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/ribbon.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      The ribbon bar is implemented in Precision Helper application, instead of classic <b>tool bar</b> and <b>main menu</b>.
+      This modern user interface element is widely used now, because it combines (more or less) the possibilities of toolbar and menu.
+    </p>
+    <p>
+      Tabs on the bar are switched contextually, according to the active <a href="tabBar.htm">page (tab)</a>,
+      but of course you can select any ribbon bar tab at any time.
+      In ribbon bar tabs, there are placed almost all application buttons, except for a few actions, that are accessible through the popup menus of that page, pane or field only.
+    </p>
+    <p>
+      For functionality and possibilities of the ribbon bar buttons, you will find more detailed help in specific <a href="tabBar.htm">page</a> and <a href="navBar.htm">navigation bar</a> topics rather, then here.
+      Here you can find the brief overview of the ribbon bar tabs and their action buttons (controls).
+    </p>
+
+
+    <p class="big" style="padding-top:8px;">
+      Home
+    </p>
+    <ul class="shr">
+      <li><b>Home</b> - this opens the <a href="HomePage.htm">welcome page</a> of the application</li>
+      <li><b>New</b> - creates a new project (submenu contains the list of available project templates)</li>
+      <li><b>Open</b> - opens an existing project, or one of the recently used</li>
+      <li><b>Save</b> - saves current project, or saves it to another file</li>
+      <li><b>Close</b> - closes currently open project</li>
+      <li><b>Exit</b> - exit from application</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Properties</b> - opens the project <a href="pageProject.htm">properties page</a></li>
+      <li><b>Contents</b> - opens the <a href="navBar_TOC.htm">Table of contents</a> navigation panel</li>
+      <li><b>Index</b> - opens the <a href="navBar_IDX.htm">Index of keywords</a> navigation panel</li>
+      <li><b>Contexts</b> - opens the <a href="navBar_MAP.htm">Context help</a> navigation panel</li>
+      <li><b>Files</b> - opens the <a href="navBar_Files.htm">Included files</a> navigation panel</li>
+      <li><b>Settings</b> - opens the <a href="navBar_Others.htm">Settings</a> navigation panel</li>
+      <li><b>Projects list</b> - opens the <a href="ProjectsList.htm">Projects list</a> navigation panel</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Search</b> - shows the global <a href="helpBar_Search.htm">Search</a> tab</li>
+      <li><b>Inspector</b> - shows the <a href="helpBar_OI.htm">Object inspector</a> tab</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Run</b> - saves the current project, compile it (into the CHM format) and displays the resulting help</li>
+      <li><b>Compile</b> - compile the current project (into the CHM format)</li>
+      <li><b>View</b> - displays the resulting help (compiled into the CHM format), if any</li>
+      <li><b>Log file</b> - shows the last available log file for current help project</li>
+      <li><b>Builds list</b> - opens the <a href="navBar_Builds.htm">Builds list</a> navigation panel</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Extensions</b> - a section with add-ons that are dedicated for common usage</li>      
+    </ul>
+    <br />
+
+    <p class="big">
+      Contents
+    </p>
+    <ul class="shr">
+      <li><b>Add heading</b> - adds a new heading into the <a href="navBar_TOC.htm">table of contents</a></li>
+      <li><b>Add topic</b> - adds a new topic into the <a href="navBar_TOC.htm">table of contents</a></li>
+      <li><b>Delete</b> - removes the selected items</li>
+      <li><b>Moving the items</b> - options for moving items within the <a href="navBar_TOC.htm">contents</a> structure (move up, move down, move left, move right)</li>
+      <li><b>Duplicate</b> - duplicates selected items</li>
+      <li><b>Sort</b> - sorts the current selected level (items in current branch without the subitems) of the <a href="navBar_TOC.htm">table of contents</a></li>
+      <li><b>Auto add topics</b> - opens the wizard for <a href="toolsTOCGen.htm">Automatic insertion of topics</a> into the contents</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Paste</b> - paste the items from clipboard into the <a href="navBar_TOC.htm">table of contents</a></li>
+      <li><b>Cut</b> - cuts the selected topics from the <a href="navBar_TOC.htm">table of contents</a> into the clipboard</li>
+      <li><b>Copy</b> - copies the selected topics into the clipboard</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Select a topic</b> - options for assigning a topic file to the current <a href="navBar_TOC.htm">content</a> item</li>
+      <li><b>Inspector</b> - shows the <a href="helpBar_OI.htm">Object inspector</a> for current <a href="pageTopic.htm">topic</a></li>
+      <li><b>Edit</b> - opens the current <a href="pageTopic.htm">topic</a> in associated <a href="dialogOptions.htm">external editor</a></li>
+      <li style="list-style-type:none"></li>
+      <li><b>Print</b> - prints the <a href="pageTopic.htm">topic</a></li>
+      <li><b>Preview</b> - print preview of current <a href="pageTopic.htm">topic</a></li>
+      <li><b>Find</b> - finds text on currently shown <a href="pageTopic.htm">topic page</a></li>
+      <li><b>Text size</b> - option for displayed text size of current <a href="pageTopic.htm">topic page</a></li>
+      <li><b>Zoom in</b> - zooms the <a href="pageTopic.htm">topic page</a> in</li>
+      <li><b>Zoom out</b> - zooms the <a href="pageTopic.htm">topic page</a> out</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Extensions</b> - a section with add-ons that are dedicated for the table of contents</li>      
+    </ul>
+    <br />
+
+    <p class="big">
+      Index
+    </p>
+    <ul class="shr">
+      <li><b>Add key</b> - adds a new keyword into the <a href="navBar_IDX.htm">index</a></li>
+      <li><b>Delete</b> - removes the selected items</li>
+      <li><b>Moving the items</b> - options for moving items within the <a href="navBar_IDX.htm">index</a> structure (move up, move down, move left, move right)</li>
+      <li><b>Duplicate</b> - duplicates selected items</li>
+      <li><b>Sort</b> - sorts the current selected level (items in current branch without the subitems) of the <a href="navBar_IDX.htm">index</a></li>
+      <li><b>Auto add keywords</b> - opens the wizard for <a href="toolsIDXGen.htm">Automatic insertion of keywords</a> into the index</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Paste</b> - paste the items from clipboard into the <a href="navBar_IDX.htm">index of keywords</a></li>
+      <li><b>Cut</b> - cuts the selected keywords from the <a href="navBar_IDX.htm">index</a> into the clipboard</li>
+      <li><b>Copy</b> - copies the selected keywords into the clipboard</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Select a topic</b> - options for assigning a topic file to the current <a href="navBar_IDX.htm">index</a> item</li>
+      <li><b>Inspector</b> - shows the <a href="helpBar_OI.htm">Object inspector</a> for current <a href="pageTopic.htm">keyword</a></li>
+      <li><b>Edit</b> - opens the current <a href="pageTopic.htm">topic</a> in associated <a href="dialogOptions.htm">external editor</a></li>
+      <li style="list-style-type:none"></li>
+      <li><b>Print</b> - prints the <a href="pageTopic.htm">topic</a></li>
+      <li><b>Preview</b> - print preview of current <a href="pageTopic.htm">topic</a></li>
+      <li><b>Find</b> - finds text on currently shown <a href="pageTopic.htm">topic page</a></li>
+      <li><b>Text size</b> - option for displayed text size of current <a href="pageTopic.htm">topic page</a></li>
+      <li><b>Zoom in</b> - zooms the <a href="pageTopic.htm">topic page</a> in</li>
+      <li><b>Zoom out</b> - zooms the <a href="pageTopic.htm">topic page</a> out</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Extensions</b> - a section with add-ons that are dedicated for an index of keywords</li>      
+    </ul>
+    <br />
+
+    <p class="big">
+      <a name="build"></a> Build
+    </p>
+    <ul class="shr">
+      <li><b>Save build</b> - saves the currently edited <a href="pageBuilds.htm">build list</a> for later use</li>
+      <li><b>Add projects</b> - adds all projects from your <a href="ProjectsList.htm">projects list</a> into the current <a href="pageBuilds.htm">build list</a></li>
+      <li><b>Open</b> - opens the project that is selected in the <a href="pageBuilds.htm">build list</a> for editing in Precision Helper</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Run</b> - compiles the project that is selected in the <a href="pageBuilds.htm">build list</a> and displays its resulting help</li>
+      <li><b>Compile</b> - compiles the project that is selected in the <a href="pageBuilds.htm">build list</a></li>
+      <li><b>View</b> - displays the resulting help of the selected project (in the <a href="pageBuilds.htm">build list</a>), if any</li>
+      <li><b>Compile all</b> - compiles all projects in the <a href="pageBuilds.htm">build list</a> (it means all visible and checked projects)</li>    
+    </ul>
+    <br />
+
+    <p class="big">
+      Publishing
+    </p>
+    <ul class="shr">
+      <li><b>Run</b> - saves the current project, compile it (into the CHM format) and displays the resulting help</li>
+      <li><b>Compile</b> - compile the current project (into the CHM format)</li>
+      <li><b>View</b> - displays the resulting help (compiled into the CHM format), if any</li>
+      <li><b>Log file</b> - shows the last available log file for current help project</li>
+      <li><b>Builds list</b> - opens the <a href="navBar_Builds.htm">Builds list</a> navigation panel</li>
+      <li style="list-style-type:none"></li>       
+      <li><b>Export WebHelp</b> - publish the current project into the <a href="toolsExportWebHelp.htm">WebHelp</a> format (an online help)</li>
+      <li><b>Export Single doc</b> - publish the current project into the <a href="toolsExportSingleDoc.htm">single html document</a> format
+          (that is suitable for conversion into the <a href="ExportPDF.htm">Adobe PDF</a> format)</li>
+      <li><b>Export ePUB</b> - publish the current project into an <a href="toolsExportePUB.htm">ePUB (e-book)</a> format</li>
+      <li><i>For informations about exporting into the <b>Adobe PDF</b> format click <a href="ExportPDF.htm">here</a></i></li>
+      <li style="list-style-type:none"></li>
+      <li><b>Extensions</b> - a section with add-ons that are dedicated for publishing functions</li>
+    </ul>
+    <br />
+
+    <p class="big">
+      Tools
+    </p>
+    <ul class="shr">
+      <li><b>Auto add topics</b> - opens the wizard for <a href="toolsTOCGen.htm">Automatic insertion of topics</a> into the contents</li>
+      <li><b>Auto add keywords</b> - opens the wizard for <a href="toolsIDXGen.htm">Automatic insertion of keywords</a> into the index</li>
+      <li><b>API Tester</b> - opens the <a href="toolsAPITester.htm">API Tester</a> tool</li>
+      <li><b>CHM Viewer</b> - opens the <a href="toolsCHMViewer.htm">CHM Viewer</a></li>
+      <li style="list-style-type:none"></li>
+      <li><b>Import CHM</b> - creating a new project by <a href="toolsImportCHM.htm">decompiling existing help file</a> (in CHM format)</li>
+      <li><b>Import projects</b> - <a href="toolsLocatePrj.htm">searches for projects</a> in selected folder and adds them into your <a href="ProjectsList.htm">projects list</a></li>
+      <li style="list-style-type:none"></li>
+      <li><b>Options</b> - opens the <a href="dialogOptions.htm">Options dialog</a> (application preferences)</li>
+      <li><b>Colors</b> - quick selection of application color scheme</li>
+      <li><b>Language</b> - quick selection of application user interface language</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Extensions</b> - a section with add-ons that are dedicated as a common tools</li>      
+    </ul>
+    <br />
+
+    <p class="big">
+      Help
+    </p>
+    <ul class="shr">
+      <li><b>Html help</b> - opens the Microsoft Html Help Workshop reference</li>
+      <li><b>HHC errors</b> - opens the Html Help Compiler error message reference</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Product</b> - opens the product web page</li>
+      <li><b>Web</b> - opens the "Precision software & consulting" web page</li>
+      <li><b>Contact</b> - opens the e-mail client window to contact a product support via e-mail</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Help</b> - shows the context sensitive help for the currently active element in the application</li>
+      <li><b>Contents</b> - opens the help reference for Precision Helper product</li>
+      <li><b>About</b> - shows the <a href="dialogAbout.htm">About dialog</a></li>
+      <li style="list-style-type:none"></li>
+      <li><b>Extensions</b> - a section with add-ons that are dedicated for the help tab</li>
+    </ul>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. All rights reserved.
+  </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Vlastnosti projektu</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Vlastnosti projektu</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/pprops.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      Stránka "Vlastnosti projektu" je místem pro definici základní údajů o projektu nápovědy.
+      Hlavní údaje jsou k dispozici pro úpravy přímo na stránce, ostatní doplňující parametry můžete
+      upravovat v <a href="helpBar_OI.htm">Editoru vlastností</a>.
+    </p>
+    <p>
+      V sekci základních souborů projektu máte k dispozici jednak tlačítka pro samotný výběr souboru a jednak tlačítka pro navigaci
+      na odpovídající místo v aplikaci Precision Helper, kde je možné daný soubor upravit.
+    </p>
+    <p class="big" style="padding-top:8px;">
+      Základní soubory projektu
+    </p>
+    <ul class="shr">
+      <li><b>Výsledný soubor</b> - umístění a název výsledného souboru nápovědy. Zde je myšlen soubor ve formátu <b>CHM</b> (<i>Microsoft Compiled Html Help</i>).
+          Postup pro získání výsledné nápovědy v jiných formátech je uveden v kapitole <a href="Publishing.htm">Publikování nápovědy</a>.</li>
+      <li><b>Výchozí téma</b> - výchozí <a href="pageTopic.htm">téma nápovědy</a>, které bude zobrazováno při jejím spuštění (pokud bude spuštěna bez parametru pro zobrazení jiného tématu)</li>
+      <li><b>Soubor obsahu</b> - soubor, ve kterém je uložen hlavní <a href="navBar_TOC.htm">obsah nápovědy</a> (další obsahy můžete definovat v jednotlivých <a href="pageWinTypes.htm">typech oken nápovědy</a>)</li>
+      <li><b>Soubor rejstříku</b> - soubor, ve kterém je uložen hlavní <a href="navBar_IDX.htm">rejstřík klíčových slov nápovědy</a> (další rejstříky můžete definovat v jednotlivých <a href="pageWinTypes.htm">typech oken nápovědy</a>)</li>
+      <li><b>Výjímky vyhledávání</b> - soubor výjímek fulltextového vyhledávání. Jedná se o textový soubor se slovy (každé na jednom řádku), která budou ignorována při vytváření indexu fulltextového vyhledávání.</li>
+      <li><b>Chybový protokol</b> - soubor pro uložení <a href="helpBar_Log.htm">protokolu o kompilaci</a> nápovědy. Pokud toto pole nevyplníte, Precision Helper vytvoří soubor automaticky, dle názvu souboru projektu (s příponou <i>.log</i>)</li>
+    </ul>
+
+    <p class="big">
+      Jazyk a písmo
+    </p>
+    <ul class="shr">
+      <li><b>Jazyk</b> - jazyk pro výslednou nápovědu zkompilovanou ve formátu <b>CHM</b>. Jazyk je důležitý např. pro správnou funkci fulltextového vyhledávání.
+          Tento a další parametry v této sekci nemají vliv na publikování nápovědy do jiných formátů.</li>
+      <li><b>Výchozí písmo</b> - výchozí písmo pro uživatelské rozhraní výsledné nápovědy (<a href="navBar_TOC.htm">obsah</a>, <a href="navBar_IDX.htm">rejstřík</a>, apod.).
+          Vzhled obsahu a rejstříku je možné definovat samostatně v <a href="helpBar_OI.htm">Editoru vlastností</a>.</li>
+      <li><b>Znaková sada</b> - volba znakové sady pro výchozí písmo</li>
+    </ul>
+
+    <p class="big">
+      <a name="others"></a> Ostatní nastavení
+    </p>
+    <ul class="shr">
+      <li><b>Zkompilovat obsah binárně</b> - binárně kompilovaný obsah je používán pro kolekce MSDN a pro tlačítka "Další" a "Předchozí" v definovaných <a href="pageWinTypes.htm">oknech nápovědy</a>.
+          Pro fungovaní <a href="pageMergeFiles.htm">vložených obsahů</a> a sekce <a href="pageUSec.htm">INFO TYPES</a> musí být tato volba <b>vypnuta</b>.</li>
+      <li><b>Zkompilovat rejstřík binárně</b> - pro fungovaní <a href="pageMergeFiles.htm">vložených obsahů</a> a sekce <a href="pageUSec.htm">INFO TYPES</a> musí být tato volba <b>zapnuta</b>.</li>
+      <li><b>Klíčová slova z témat do rejstříku</b> - pokud je tato volba zapnuta, kompilátor nápovědy do formátu <b>CHM</b> hledá klíčová slova uvedená přímo v tématech Vaší nápovědy (tzv. <i>K-Links</i>)
+          a přemístí je do rejstříku. Doporučujeme ponechat tuto volbu <b>vypnutou</b>.</li>
+      <li><b>Fulltextové vyhledávání</b> - bude vytvořen index fulltextového vyhledávání (jen pro formát <b>CHM</b>)</li>
+      <li><b>Vytvořit rejstřík .CHI</b> - tato volba by měla být normálně <b>vypnuta</b>. <i>CHI</i> rejstříky jsou používány pro kolekce MSDN,
+          a pokud jsou vytvořeny měly by být distribuovány spolu s výsledným souborem CHM. </li>
+      <li><b>Zobrazit průběh kompilace</b> - do <a href="helpBar_Log.htm">protokolu o kompilaci</a> zařazuje názvy zpracovávaných souborů</li>
+      <li><b>Zobrazit poznámky kompilace</b> - do <a href="helpBar_Log.htm">protokolu o kompilaci</a> zařazuje další poznámky a informace</li>
+      <li><b>Vylepšená dekompilace</b> - kompilátor projektu doplní do výsledné nápovědy ve formátu CHM informace umožňující (v případě potřeby) přesnější dekompilaci.</li>
+    </ul>
+
+    <p class="big">
+      <a name="oi"></a> Editor vlastností - Aktuální projekt - Ostatní nastavení
+    </p>
+    <ul class="shr">
+      <li><b>Automaticky generovat obsah (do úrovně)</b> - kompilátor nápovědy do formátu <b>CHM</b> vygeneruje obsah nápovědy automaticky,
+          dle tagů &lt;h1&gt;, &lt;h2&gt;, atd. obsažených v tématech Vaší nápovědy. Tato volba je zde uvedena z důvodů plné podpory syntaxe tohoto kompilátoru.
+          Pro automatickou generaci položek <a href="navBar_TOC.htm">obsahu</a> využijte raději nástroj <a href="toolsTOCGen.htm">Automatické přidání témat do obsahu</a></li>
+      <li><b>Bez složek (nestrukturovat výsledek)</b> - soubor výsledné nápovědy ve formátu <b>CHM</b> nebude obsahovat Vámi definovanou adresářovou strukturu témat, stylů a dalších souborů,
+          ale všechny soubory budou v archívu CHM na jedné úrovni. Tato volba je zde uvedena z důvodů plné podpory syntaxe tohoto kompilátoru.</li>
+      <li><b>Kompatibilita</b> - volba režimu kompatibility projektového souboru.</li>
+    </ul>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. Všechna práva vyhrazena.
+  </div>
+</body>
+</html>

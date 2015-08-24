@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar">
+	<name>Weather Conditions, Descriptive</name>
+	<author>Lance Boudreaux</author>
+	<description>Generates random descriptive weather conditions.</description>
+	<category>Environment</category>
+	<parameters>
+	    <parameter name="Season" display="Season" type="List" valueType="Label">
+			<option>Any</option>
+			<option>Summer</option>
+			<option>Autumn</option>
+			<option>Winter</option>
+			<option>Spring</option>
+		</parameter>
+	</parameters>
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start">[Season]</item>
+		<item name="Any"><![CDATA[<b>Summer</b> [Summer] ]]></item>
+		<item name="Any"><![CDATA[<b>Autumn</b> [Autumn] ]]></item>
+		<item name="Any"><![CDATA[<b>Winter</b> [Winter] ]]></item>
+		<item name="Any"><![CDATA[<b>Spring</b> [Spring] ]]></item>
+		<item name="Summer">The sun is shining bright and unobstructed during the hot day but a light breeze provides some relief even during the warm evenings.</item>
+		<item name="Summer">The sun is shining through the hazy air during this hot and muggy day.</item>
+		<item name="Summer">Growing thunderstorms fill the uncomfortably hot summer skies.</item>
+		<item name="Summer">A strong wind blows across the landscape bringing the temperatures into a comfortably fair range but leaving the nights a little chilly.</item>
+		<item name="Summer">While the temperatures are fair, the hazy and humid air makes the climate just a bit uncomfortable.</item>
+		<item name="Summer">A light breeze brings relief on this cloudless sunny day.</item>
+		<item name="Summer">The sun bears down bringing the world to an unbearably hot temperature.</item>
+		<item name="Summer">The sky is lightly dusted with clouds and while the days are warm, the nights are pleasant.</item>
+		<item name="Summer">Warm sunny days and pleasant nights are filled with humidity.</item>
+		<item name="Summer">Thunderstorms fill the once sunny sky on this warm summer day.</item>
+		<item name="Autumn">The windy days are cool and the nights are freezing but the skies are clear and the sun is shining.</item>
+		<item name="Autumn">Rain comes and goes in bursts of showers and downpours making the cool windy days and cold nights more challenging.</item>
+		<item name="Autumn">A dense fog covers the land making it hard to see during these cool days and cold nights.</item>
+		<item name="Autumn">Short bursts of light snowfall from the overcast skies break up the cool days and cold nights.</item>
+		<item name="Autumn">The skies are filled with thunderclouds pouring snow and lightning onto these chilly days.</item>
+		<item name="Autumn">Warm temperatures fills these clear, breezy days.</item>
+		<item name="Autumn">The occasional rainfall litters the comfortably temperate breezy air.</item>
+		<item name="Autumn">The days are agreeably temperate while the nights are cool and filled with a dense fog.</item>
+		<item name="Autumn">Clear skies and light winds are present on these warm days and cool nights.</item>
+		<item name="Autumn">A humid haze fills the horizon as the temperature rise to an uncomfortably warm day.</item>
+		<item name="Winter">The sun shine is the one saving grace on these light, breezy, cold days and freezing nights.</item>
+		<item name="Winter">A strong wind blows through the cold days and unbearable nights.</item>
+		<item name="Winter">A light snow falls on the cold days and murderously cold nights.</item>
+		<item name="Winter">Visibility is limited due to the dense fog covering the frozen ground.</item>
+		<item name="Winter">The skies are dark and gently dropping light snow on these unbearable cold times.</item>
+		<item name="Winter">The dark skies drop light snowfall through the cold windy air.</item>
+		<item name="Winter">The arctic like climate is filled with light breezes and heavy snow fall.</item>
+		<item name="Winter">A strong wind multiplies the horrendous cold in these snow filled days.</item>
+		<item name="Winter">Hail riddles the world as lightning strikes light up the dark freezing air.</item>
+		<item name="Spring">A crisp breeze moves across the cool landscape beneath a dark cloudy sky filled with the constant fall of rain.</item>
+		<item name="Spring">The wind whips up the rain from the constant downpour falling from the darkened skies on these cold days.</item>
+		<item name="Spring">The rain and lightning filled air is heavy with cold temperatures.</item>
+		<item name="Spring">Bright hot sunny days are filled with the heaviness of humidity.</item>
+		<item name="Spring">Clear skies and strong winds make the mild temperatures even better.</item>
+		<item name="Spring">Light rainfall from an overcast sky are present on these nicely temperate days.</item>
+		<item name="Spring">Heavy showers fall making the temperatures nice despite the rain.</item>
+		<item name="Spring">A gentle breeze fills the mild, sunny, temperate days.</item>
+		<item name="Spring">The days are warm and nights are nice with clear skies and a gentle breeze.</item>
+		<item name="Spring">Humidity bears down on these warm days and gentle nights.</item>
+	</items>
+</Grammar>

@@ -1,0 +1,198 @@
+﻿<html>
+	
+<head>
+	<title>Table Grammar File Structure</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.5.0.497">
+	<meta name="keywords" content="Grammar">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "The Randomizer.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("TableGrammarFileStructure");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Table Grammar File Structure</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="GrammarFiles.html">Grammar Files</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="GrammarFiles.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="PhonotacticsGrammarFileStructure.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="CalculationFunctions.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps3"><span class="rvts8">The following information is specific to Table Grammar Files which are useful for translating random generation tables into grammar files. See the Grammar Files help section for common information about all </span><a class="rvts13" href="GrammarFileStructure.html">Grammar Files</a><span class="rvts8">.</span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Tables</span></span></h3>
+<p class="rvps3"><span class="rvts8">The Table Grammar File consists of a series of tables and an output. The tables have various options that determine how the table should be handled by the application. The content of the table tags is always a delimited table that contains a header and contents.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Table</span></span></h3>
+<p class="rvps3"><span class="rvts8">The table tag allows for several options, some of which depend on what action type you choose.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<div class="rvps3"><table width="680" border="1" cellpadding="0" cellspacing="0" style="border-color: #000000; border-style: solid;">
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 92px;"><p class="rvps10"><span class="rvts15">Attribute</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 462px;"><p class="rvps10"><span class="rvts15">Description</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 118px;"><p class="rvps10"><span class="rvts15">Values</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 92px;"><p class="rvps3"><span class="rvts8">name</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 462px;"><p class="rvps3"><span class="rvts8">The name of the table. This value is used when referencing values from the table</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 118px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 92px;"><p class="rvps3"><span class="rvts8">action</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 462px;"><p class="rvps3"><span class="rvts8">This determines how the table is handled by the application</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 118px;"><p class="rvps3"><span class="rvts8">random/loop/select</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 92px;"><p class="rvps3"><span class="rvts8">delimiter</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 462px;"><p class="rvps3"><span class="rvts8">The character that will be used to separate the columns of our table</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 118px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 92px;"><p class="rvps3"><span class="rvts8">column</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 462px;"><p class="rvps3"><span class="rvts8">The column that contains the die roll for random tables and the value for select tables</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 118px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 92px;"><p class="rvps3"><span class="rvts8">randomModifier</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 462px;"><p class="rvps3"><span class="rvts8">A modifier to the die roll, this can be a constant or reference a parameter or result of a previous table</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 118px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 92px;"><p class="rvps3"><span class="rvts8">loopId</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 462px;"><p class="rvps3"><span class="rvts8">The column that is used as the identifier for the values of a loop table</span><span class="rvts8"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 118px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 92px;"><p class="rvps3"><span class="rvts8">selectValue</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 462px;"><p class="rvps3"><span class="rvts8">The value to find in the select column of a select table</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 118px;"><br/>
+</td>
+</tr>
+</table>
+</div>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Actions</span></span></h3>
+<p class="rvps3"><span class="rvts8">The actions below define the type of table and how it is handled by the application:</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">random</span></p>
+<p class="rvps3"><span class="rvts8">Selects a row at random simulating a die roll. This method requires the randomColumn attribute to tell it which column is the die result column. Once selected, the values of the row are stored into variables with names combining the table name and column name. For example, if our table is named "People" and the first non-roll result column is named "Occupation", we can reference the results using the variable: [People.Occupation].</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Sample:</span></p>
+<p class="rvps9"><span class="rvts18">&lt;table name="Town Size" delimiter="|" action="Random" column="Roll"&gt;&lt;![CDATA[</span></p>
+<p class="rvps9"><span class="rvts18">Roll |Town Size &nbsp;|Population &nbsp; &nbsp; &nbsp; &nbsp; |GP Limit |PCA|CM </span></p>
+<p class="rvps9"><span class="rvts18">10 &nbsp; |Thorp &nbsp; &nbsp; &nbsp;|=Rnd(20,80) &nbsp; &nbsp; &nbsp; &nbsp;|40 gp &nbsp; &nbsp;|-1 |-3 &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="rvps9"><span class="rvts18">30 &nbsp; |Hamlet &nbsp; &nbsp; |=Rnd(81,400) &nbsp; &nbsp; &nbsp; |100 gp &nbsp; |0 &nbsp;|-2 </span></p>
+<p class="rvps9"><span class="rvts18">50 &nbsp; |Village &nbsp; &nbsp;|=Rnd(401,900) &nbsp; &nbsp; &nbsp;|200 gp &nbsp; |+1 |-1 </span></p>
+<p class="rvps9"><span class="rvts18">70 &nbsp; |Small Town |=Rnd(901,2000) &nbsp; &nbsp; |800 gp &nbsp; |+2 |0 &nbsp;</span></p>
+<p class="rvps9"><span class="rvts18">85 &nbsp; |Large Town |=Rnd(2001,5000) &nbsp; &nbsp;|3000 gp &nbsp;|+3 |+3 </span></p>
+<p class="rvps9"><span class="rvts18">95 &nbsp; |Small City |=Rnd(5001,12000) &nbsp; |15000 gp |+4 |+6 </span></p>
+<p class="rvps9"><span class="rvts18">99 &nbsp; |Large City |=Rnd(12001,25000) &nbsp;|40000 gp |+5 |+9 </span></p>
+<p class="rvps9"><span class="rvts18">100 &nbsp;|Metropolis |=Rnd(25001,100000) |100000 gp|+6 |+12</span></p>
+<p class="rvps9"><span class="rvts18">]]&gt;&lt;/table&gt;</span></p>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><span class="rvts15">loop</span></p>
+<p class="rvps3"><span class="rvts8">The generator will loop through each row of a loop table and calculate the values of all columns. The loopId attribute is required for these tables in order to tell the application which column to use when referencing values of the table. Results of this type of table are referenced using the table name, the loop id value, and the column name as such: [Highest-Level locals.Adept.Level].</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Sample:</span></p>
+<p class="rvps9"><span class="rvts18">&lt;table name="Highest-Level locals" delimiter="|" loopId="Class"&gt;&lt;![CDATA[</span></p>
+<p class="rvps9"><span class="rvts18">Class &nbsp; &nbsp; &nbsp;|Level &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps9"><span class="rvts18">Barbarian &nbsp;|=MakeOrdinal(Max(Roll(1,4)+[Town Size.CM],0))</span></p>
+<p class="rvps9"><span class="rvts18">Bard &nbsp; &nbsp; &nbsp; |=MakeOrdinal(Max(Roll(1,6)+[Town Size.CM],0))</span></p>
+<p class="rvps9"><span class="rvts18">Cleric &nbsp; &nbsp; |=MakeOrdinal(Max(Roll(1,6)+[Town Size.CM],0))</span></p>
+<p class="rvps9"><span class="rvts18">Druid &nbsp; &nbsp; &nbsp;|=MakeOrdinal(Max(Roll(1,6)+[Town Size.CM],0))</span></p>
+<p class="rvps9"><span class="rvts18">Fighter &nbsp; &nbsp;|=MakeOrdinal(Max(Roll(1,8)+[Town Size.CM],0))</span></p>
+<p class="rvps9"><span class="rvts18">]]&gt;&lt;/table&gt;</span></p>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><span class="rvts15">select</span></p>
+<p class="rvps3"><span class="rvts8">This type of table tells the generator to select a specific row based on the criteria found in the selectColumn and selectValue attributes. Like the random table type, the resultant values are referenced using the table name and column name such as [Size.Modifier].</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Sample:</span></p>
+<p class="rvps9"><span class="rvts18">&lt;table name="Size" column="Size" delimiter="|" selectId="=[SizeParameter]"&gt;&lt;![CDATA[</span></p>
+<p class="rvps9"><span class="rvts18">Size &nbsp; | Modifier</span></p>
+<p class="rvps9"><span class="rvts18">Small &nbsp;| +1</span></p>
+<p class="rvps9"><span class="rvts18">Medium | 0</span></p>
+<p class="rvps9"><span class="rvts18">Large &nbsp;| -1</span></p>
+<p class="rvps9"><span class="rvts18">]]&gt;&lt;/table&gt;</span></p>
+<p class="rvps9"><span class="rvts18">Calculations and Variables</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">You will have noticed in several of the samples above that I had values of attributes and columns that began with an equals sign. These are values that are calculated by the application rather than being literal values.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Calculations</span></span></h3>
+<p class="rvps3"><span class="rvts8">Calculations are handled by a modified version of a programming library known as nCalc. You can find documentation on how it works at its website. The additional functions available are detailed in the </span><a class="rvts13" href="CalculationFunctions.html">Calculation Functions</a><span class="rvts8"> help topic.</span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Variables</span></span></h3>
+<p class="rvps3"><span class="rvts8">Variables come from two sources: Parameters and Table Results. All variables are surrounded by square brackets (i.e. []). Parameters are referenced by their name (e.g. [Gender]) and table results are referenced using the methods described in the tables section above.</span></p>
+<p></p>
+<p class="rvps2"><span class="rvts6">Created with the Personal Edition of HelpNDoc: </span><a class="rvts7" href="http://www.helpndoc.com">Free HTML Help documentation generator</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2014 by Lance Boudreaux. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

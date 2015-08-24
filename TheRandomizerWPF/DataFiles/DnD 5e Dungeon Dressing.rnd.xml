@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="LUAGrammar">
+	<name>Dungeon Dressing (D&amp;D 5e)</name>
+	<author>Lance Boudreaux</author>
+	<description>Generates dungeon dressing based on the D&amp;D 5e DMG</description>
+	<genre>Fantasy</genre>
+	<system>D&amp;D 5e</system>
+	<category>Environment</category>
+	<parameters>
+		<parameter type="List" display="Structure Type" name="structureType" default="Any">
+			<option>Any</option>
+			<option>General</option>
+			<option display="Death Trap">DeathTrap</option>
+			<option>Lair</option>
+			<option>Maze</option>
+			<option>Mine</option>
+			<option display="Planar Gate">PlanarGate</option>
+			<option>Stronghold</option>
+			<option display="Temple or Shrine">Temple</option>
+			<option>Tomb</option>
+			<option display="Treasure Vault">TreasureVault</option>
+		</parameter>
+		<parameter type="Text" display="Challenge Rating" name="cr" default="" />
+	</parameters>
+	<supportsMaxLength>false</supportsMaxLength>
+	<scriptPath>LUA\DnD 5e Dungeon Dressing.lua</scriptPath>
+</Grammar>

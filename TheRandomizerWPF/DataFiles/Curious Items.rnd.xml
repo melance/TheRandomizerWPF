@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AssignmentGrammar">
+  <name>Curious Items</name>
+  <author>Lance Boudreaux</author>
+  <description>Creates a random curiosity</description>
+  <category>Treasure</category>
+  <genre>Fantasy</genre>
+  <parameters />
+  <supportsMaxLength>false</supportsMaxLength>
+  <items>
+    <item name="Start" next="AddItem">A(n) </item>
+    <item name="Start" next="AddItem">A(n) [Age] </item>
+    <item name="Start" next="AddShape">A(n) [Age] </item>
+    <item name="Start" next="AddColor">A(n) [Age] </item>
+    <item name="Start" next="AddSize">A(n) [Age] </item>
+    <item name="AddSize" next="AddItem">[Size] </item>
+    <item name="AddSize" next="AddShape">[Size] </item>
+    <item name="AddSize" next="AddMaterial">[Size] </item>
+    <item name="AddShape" next="AddMaterial">[Shape] shaped </item>
+    <item name="AddShape" next="AddColor">[Shape] shaped </item>
+    <item name="AddMaterial" next="AddItem">[Material] </item>
+    <item name="AddColor" next="AddItem">[Color] </item>
+    <item name="AddItem" next="AddEffect">[Item] </item>
+    <item name="AddEffect">that [Effect].</item>
+    <item name="Item">crystal</item>
+    <item name="Item">diamond</item>
+    <item name="Item">obsidian</item>
+    <item name="Item">onyx</item>
+    <item name="Item">ruby</item>
+    <item name="Item">arrow</item>
+    <item name="Item">astrological chart</item>
+    <item name="Item">board</item>
+    <item name="Item">book</item>
+    <item name="Item">bowl of apples</item>
+    <item name="Item">box</item>
+    <item name="Item">box of spent wands</item>
+    <item name="Item">broach</item>
+    <item name="Item">bugbear skull</item>
+    <item name="Item">candle</item>
+    <item name="Item">cane</item>
+    <item name="Item">charm</item>
+    <item name="Item">child's puppet</item>
+    <item name="Item">coil of rope</item>
+    <item name="Item">coin</item>
+    <item name="Item">comb</item>
+    <item name="Item">compass</item>
+    <item name="Item">deck of cards</item>
+    <item name="Item">dragon horn</item>
+    <item name="Item">dress</item>
+    <item name="Item">earring</item>
+    <item name="Item">empty coin pouch</item>
+    <item name="Item">figurine</item>
+    <item name="Item">fishing pole</item>
+    <item name="Item">full coin pouch</item>
+    <item name="Item">glass</item>
+    <item name="Item">goblet</item>
+    <item name="Item">lock of hair</item>
+    <item name="Item">locket</item>
+    <item name="Item">manuscript</item>
+    <item name="Item">map</item>
+    <item name="Item">marble</item>
+    <item name="Item">mask</item>
+    <item name="Item">mummified animal</item>
+    <item name="Item">mummy</item>
+    <item name="Item">music box</item>
+    <item name="Item">necklace</item>
+    <item name="Item">pan pipes</item>
+    <item name="Item">pen</item>
+    <item name="Item">pendant</item>
+    <item name="Item">pipe</item>
+    <item name="Item">pouch</item>
+    <item name="Item">quiver of arrows</item>
+    <item name="Item">ring</item>
+    <item name="Item">rose</item>
+    <item name="Item">scabbard</item>
+    <item name="Item">six fingered gloves</item>
+    <item name="Item">statue</item>
+    <item name="Item">statuette</item>
+    <item name="Item">sword</item>
+    <item name="Item">sword hilt</item>
+    <item name="Item">tablet</item>
+    <item name="Item">tome</item>
+    <item name="Item">torch</item>
+    <item name="Item">used scroll</item>
+    <item name="Item">wind chimes</item>
+    <item name="Age">ancient</item>
+    <item name="Age">mint</item>
+    <item name="Age">new</item>
+    <item name="Age">old</item>
+    <item name="Age">indescribably old</item>
+    <item name="Age" />
+    <item name="Material">ivory</item>
+    <item name="Material">leather</item>
+    <item name="Material">wood</item>
+    <item name="Shape">bird</item>
+    <item name="Shape">butterfly</item>
+    <item name="Shape">cat</item>
+    <item name="Shape">circle</item>
+    <item name="Shape">cross</item>
+    <item name="Shape">crown</item>
+    <item name="Shape">cube</item>
+    <item name="Shape">cylinder</item>
+    <item name="Shape">diamond</item>
+    <item name="Shape">dog</item>
+    <item name="Shape">dragon</item>
+    <item name="Shape">dragonfly</item>
+    <item name="Shape">egg</item>
+    <item name="Shape">eye</item>
+    <item name="Shape">heart</item>
+    <item name="Shape">intricately</item>
+    <item name="Shape">moon</item>
+    <item name="Shape">oval</item>
+    <item name="Shape">owl</item>
+    <item name="Shape">phoenix</item>
+    <item name="Shape">rune</item>
+    <item name="Shape">rectangle</item>
+    <item name="Shape">skull</item>
+    <item name="Shape">square</item>
+    <item name="Shape">sphere</item>
+    <item name="Shape">stag</item>
+    <item name="Shape">star</item>
+    <item name="Shape">sun</item>
+    <item name="Shape">teardrop</item>
+    <item name="Shape">triangle</item>
+    <item name="Size">gargantuan</item>
+    <item name="Size">giant</item>
+    <item name="Size">hand sized</item>
+    <item name="Size">head sized</item>
+    <item name="Size">large</item>
+    <item name="Size">small</item>
+    <item name="Size">tiny</item>
+    <item name="State">broken</item>
+    <item name="State">deteriorated</item>
+    <item name="State">impeccable</item>
+    <item name="State">new</item>
+    <item name="State">plain</item>
+    <item name="State">pristine</item>
+    <item name="State">ruined</item>
+    <item name="State">tattered</item>
+    <item name="State">unremarkable</item>
+    <item name="State">weather-worn</item>
+    <item name="State">worn</item>
+    <item name="State">masterwork</item>
+    <item name="Effect">glows dimly when near metal</item>
+    <item name="Effect">randomly plays soft music</item>
+    <item name="Effect">grows and shrinks in tiny amounts over time</item>
+    <item name="Effect">slowly shifts colors</item>
+    <item name="Effect">pulses when anything brightly colored is near</item>
+    <item name="Effect">is indicative of an unknown knowledge</item>
+    <item name="Effect">bleeds when harmed</item>
+    <item name="Effect">appears to have once been used for some sort of game</item>
+    <item name="Effect">displays an inscription upon rubbing</item>
+    <item name="Effect">appears completely out of place</item>
+    <item name="Effect">causes you to be transfixed</item>
+    <item name="Effect">speaks a single, seemingly random word every hour</item>
+    <item name="Effect">speaks occasionally in an unknown dialect</item>
+    <item name="Effect">is inscribed in a language long dead</item>
+    <item name="Effect">is filled with shiny dust</item>
+    <item name="Effect">glows under the moonlight</item>
+    <item name="Effect">screams loudly when touched</item>
+    <item name="Effect">is completely unremarkable</item>
+    <item name="Effect">falls like a feather when dropped</item>
+    <item name="Effect">falls like lead when dropped</item>
+    <item name="Effect">contains the words to a famous ballad, however; some of the words are slightly different than the version you know</item>
+    <item name="Effect">is inscribed with the name of a famous sorcerer</item>
+    <item name="Effect">is inscribed with the name Flayton</item>
+    <item name="Effect">causes you to feel repulsed</item>
+    <item name="Effect">has started to give you nightmares</item>
+    <item name="Effect">seems to levitate just above the ground</item>
+    <item name="Effect">crumbles to dust upon the lightest touch</item>
+    <item name="Effect">is resistant to all damage</item>
+    <item name="Effect">crackles with electrical energy but doesn't seem to have any other affect</item>
+    <item name="Effect">screams in terror when touched by an elf</item>
+    <item name="Effect">holds a creature unlike anything you have ever seen</item>
+    <item name="Effect">floats in the air unmoved by wind or gravity but falls to the ground upon being touched distributing no further magical properties</item>
+    <item name="Effect">causes visions of great fortune and terrible misery when looked into</item>
+    <item name="Effect">is adorned with fake jewels</item>
+    <item name="Effect">causes blindness for about 2 seconds when looked at closely</item>
+    <item name="Effect">reminds you of a long lost time in your life</item>
+    <item name="Effect">brings forth a longing for home</item>
+    <item name="Effect">speaks the word "forever" to you in a language you've never heard but somehow understand</item>
+    <item name="Effect">tries, albeit miserably, to convince you that you do not need your friends</item>
+    <item name="Effect">seems to repel all ordinary insects within a [=Roll(5,6)]' radius</item>
+    <item name="Effect">appears to be yours from when you were a child</item>
+    <item name="Effect">is completely immovable</item>
+    <item name="Effect">acts as a magnet</item>
+    <item name="Effect">gives one short glimpse into your future but not enough to tell you anything useful</item>
+    <item name="Effect">attracts insects within a [=Roll(5,6)]' radius</item>
+    <item name="Effect">answers yes or no questions in draconic, however; the answers are entirely random</item>
+    <item name="Effect">is covered in black ink</item>
+    <item name="Effect">floats on water and can support up to [=Roll(5,10)]lbs while doing so</item>
+    <item name="Effect">passes through [=if(Roll(1,'%')&gt;=50,'non-','')]organic matter as if a ghost</item>
+    <item name="Effect">kills any plant that it is placed next to, in a [=Roll(1,10)]' radius</item>
+    <item name="Effect">reinvigorates any plant that it is placed next to, in a [=Roll(1,10)]' radius</item>
+    <item name="Effect">appears to be magical if viewed with detect magic items although it has no actual magical properties</item>
+    <item name="Effect">appears to be blessed although it has no actual blessings</item>
+    <item name="Effect">always returns when thrown</item>
+    <item name="Effect">disappears as soon as it is let go</item>
+    <item name="Effect">shows the map of a known city when light is shone upon it, however the streets don't seem quite right</item>
+    <item name="Effect">reappears in the possession of the first person to touch it each day even if discarded until it is cleansed of the curse or that person dies</item>
+    <item name="Effect">emits the sound of a babbling brook</item>
+  </items>
+  <imports />
+</Grammar>

@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Kontextová nápověda</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Kontextová nápověda</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/context.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      Editor kontextové nápovědy <b>poskytuje úplnou kontrolu</b> nad přiřazením kontextových ID, symbolických ID, zdrojových souborů a komentářů k tématu.
+      Možnost práce v <b>jednoduchém režimu</b> je naopak výhodná pro uživatele, kteří se nechtějí podrobnostmi definice zabývat.
+    </p>
+    <img src="../img/ss_map2.jpg" class="ssright"/>
+    <p>
+      Editor kontextové nápovědy umožňuje také zadání textů stručné nápovědy (<b>Text popups</b>),
+      vizuální <b>označení duplicit</b> a v neposlední řadě kopírování a vkládání vybraných položek
+      do a ze schránky (pro snadnou spolupráci s jinými aplikacemi).
+    </p>
+    <p>
+      Navigační panel kontextové nápovědy slouží pro <b>filtraci položek</b>, volbu režimu práce a nastavení dalších parametrů editoru.
+      Umožňuje také <b>hromadné přiřazení</b> kontextových identifikátorů všem tématům nápovědy.<br>
+      Panel je rozdělen do tří sekcí - <b>Filtr témat</b>, <b>Filtr identifikátorů</b> a <b>Ostatní volby</b>.
+    </p>
+    <p>
+      Editace samotná pak probíhá na <a href="pageMap.htm">stránce Kontextová nápověda</a>,
+      která zobrazuje přehlednou tabulku témat, identifikátorů kontextové nápovědy, zdrojů umístění a komentářů.
+      Veškeré úpravy lze provádět přímo v tabulce, takže vytváření kontextové nápovědy připomíná práci s tabulkovým procesorem.
+    </p>
+    
+    <p>
+      <i>Poznámka:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;Tabulka kontextových identifikátorů je vždy <b>předvyplněna všemi tématy</b> definovanými kdekoliv v projektu.
+      Nemusíte tedy (ať už postupně nebo hromadně) přidávat a odebírat témata, ale jen přiřazujete identifikátory.
+      Ukládány jsou pak jen ty řádky tabulky, které mají vyplněny potřebné údaje kontextové nápovědy.</i>
+    </p>
+    <p>
+      Nápověda k práci s tabulkou editoru kontextové nápovědy je uvedena <a href="pageMap.htm">zde</a>.
+    </p>
+
+    <br>
+
+    <p class="big" style="padding-top:8px;">
+      Možnosti panelu Kontextová nápověda
+    </p>
+    <ul class="shr">
+      <li style="list-style-type:none"><i>Filtr témat:</i></li>
+      <li><b>Témata obsahu</b> - v tabulce zobrazí pouze témata uvedená v <a href="navBar_TOC.htm">obsahu</a> (vynechá např. témata uvedená jen v rejstříku)</li>
+      <li><b>Témata rejstříku</b> - zobrazí pouze témata uvedená v <a href="navBar_IDX.htm">rejstříku</a> (vynechá např. témata uvedená jen v obsahu)</li>
+      <li><b>Témata projektu</b> - zobrazí pouze témata uvedená v seznamu <a href="navBar_Files.htm">souborů explicitně zařazených</a> do projektu</li>
+      <li><b>Ostatní témata</b> - zobrazí všechna ostatní témata neodpovídající podmínkám pro filtr témat obsahu, rejstříku, projektu a textům stručné nápovědy</li>
+      <li><b>Texty stručné nápovědy</b> - zobrazí pouze texty stručné nápovědy</li>
+
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Filtr identifikátorů:</i></li>
+      <li><b>Duplicitní ID</b> - zobrazí pouze ty řádky tabulky, které mají duplicitní kontextový nebo symbolický identifikátor</li>
+      <li><b>Bez kontextového ID</b> - zobrazí pouze řádky bez uvedeného kontextového identifikátoru</li>
+      <li><b>Bez symbolického ID</b> - zobrazí pouze řádky bez uvedeného symbolického identifikátoru</li>
+      <li><b>Komentáře</b> - zobrazí pouze řádky, které mají uvedeny komentáře</li>
+      
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Ostatní volby:</i></li>
+      <li><b>Označit duplicity</b> - užitečná volba, která pomáhá při identifikaci duplicit v rámci tabulky. Buňky s duplicitními
+          identifikátory budou podrženy červenou vlnovkou (viz také "Filtr identifikátorů - Duplicitní ID" výše).</li>
+      <li><b>Přiřazovat identifikátory automaticky</b> - jestliže nechcete přiřadit identifikátory automaticky najednou (viz volba "Přiřadit identifikátory" níže),
+          ale přesto by jste ocenili nějakou formu automatizace této činnosti, můžete využít tuto volbu. Umožní totiž přiřadit identifikátory (a také jejich zdroje)
+          automaticky vždy jen pro ten řádek tabulky, který právě editujete. Stačí Vám tedy vždy vyplnit např. jen kontextový identifikátor
+          a zbytek definice bude doplněn automaticky. Dokonce je možné jen zahájit editaci, zadat mezeru a potvrdit klávesou ENTER a celá definice řádku se vyplní.</li>
+      <li><b>Zobrazit všechny sloupce</b> - toto je volba pro přepínání <b>režimu práce</b>. Jestliže je zapnuta, máte nad definicí plnou kontrolu (vidíte a upravujete témata,
+          identifikátory, zdroje i komentáře). Jestliže je volba vypnuta, vidíte a upravujete jen dva nejdůležitější sloupce definice (téma a kontextový identifikátor)
+          a zbytek definice (symbolický identifikátor, zdroje uložení) se generuje automaticky za Vás (bez ohledu na předchozí popsanou volbu "Přiřazovat identifikátory automaticky").</li>
+
+      <li style="list-style-type:none"></li>
+      <li><b>Zobrazit vše</b> - tato akce zapne všechny filtry popsané výše v sekcích <i>Filtr témat</i> a <i>Filtr identifikátorů</i></li>
+      <li><a name="assignids"></a> <b>Přiřadit identifikátory</b> - tato akce hromadně přiřadí identifikátory a doplní definici kontextové nápovědy tam, kde není úplná.
+          Na nesrovnalosti v definici budete také upozorněni vždy při zavření stránky editoru kontextové nápovědy.</li>
+    </ul>
+<br><br>
+    <p>
+      <b>Použitá terminologie</b>
+    </p>
+    <ul class="shr">
+      <li><i>kontextový identifikátor</i> - celočíselný identifikátor (označovaný někdy také jako "MAP ID", nebo "HelpContext") používaný k propojení nápovědy a aplikace,
+          pro kterou je nápověda určena. Pro téma, které má přiřazen kontextový identifikátor, můžete zobrazit nápovědu přímo z Vaší aplikace
+          (Váš vývojový prostředek musí podporovat propojení nápovědy aplikace - viz také <a href="toolsAPITester.htm">API Tester</a>).</li>
+      <li><i>symbolický identifikátor</i> - symbolické označení (alfanumerický identifikátor označovaný většinou jako "ALIAS ID") používané jako prostředník mezi kontextovým identifikátorem a tématem
+          v případě potřeby (např. když soubor tématu obsahuje mezery)</li>
+      <li><i>zdroj</i> - zdrojem je označeno fyzické umístění kontextového nebo symbolického identifikátoru v rámci projektu. Tyto identifikátory mohou být umístěny buď přímo v souboru projektu,
+          nebo v samostatných definičních souborech (viz také <a href="dialogOptions.htm#hhc">Nastavení - Externí nástroje - MS Html Help</a>).</li>
+      <li><i>text stručné nápovědy</i> - texty nápovědy zobrazované při výběru funkce stručné nápovědy a najetí myší na vybraný prvek aplikace (označované jako TEXT POPUPS).
+          Tyto položky kontextové nápovědy jsou vždy ukládány mimo soubor projektu, a proto mají vždy přiřazeny zdrojové soubory (resp. alespoň zdroj pro symbolické ID).</li>
+    </ul>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. Všechna práva vyhrazena.
+  </div>
+</body>
+</html>

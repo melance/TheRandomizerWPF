@@ -1,0 +1,71 @@
+﻿<?xml version="1.0"?>
+<Grammar xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:type="LUAGrammar">
+	<name>Monster (D&amp;D 5e)</name>
+	<author>Lance Boudreaux</author>
+	<description>Generates either a list of monsters fitting the selected criteria or a randomly selected monster using the criteria.</description>
+	<category>Encounter</category>
+	<genre>Fantasy</genre>
+	<system>D&amp;D 5e</system>
+	<parameters>
+		<parameter name="selectRandom" display="Select Random Monster" type="CheckBox" />
+	    <parameter name="size" display="Size" type="List">
+			<option>Any</option>
+			<option>Tiny</option>
+			<option>Small</option>
+			<option>Medium</option>
+			<option>Large</option>
+			<option>Huge</option>
+			<option>Gargantuan</option>
+		</parameter>
+		<parameter name="creatureType" display="Type" type="List">
+			<option>Any</option>
+			<option>Aberration</option>
+			<option>Beast</option>
+			<option>Celestial</option>
+			<option>Construct</option>
+			<option>Dragon</option>
+			<option>Elemental</option>
+			<option>Fey</option>
+			<option>Fiend</option>
+			<option>Giant</option>
+			<option>Humanoid</option>
+			<option>Monstrosity</option>
+			<option>Ooze</option>
+			<option>Plant</option>
+			<option>Undead</option>
+			<option>Swarm</option>
+		</parameter>
+		<parameter name="alignmentLNC" display="Alignment" type="List">
+			<option>Any</option>
+			<option>Lawful</option>
+			<option>Neutral</option>
+			<option>Chaotic</option>
+			<option>Unaligned</option>
+		</parameter>
+		<parameter name="alignmentGNE" display="Alignment" type="List">
+			<option>Any</option>
+			<option>Good</option>
+			<option>Neutral</option>
+			<option>Evil</option>
+			<option>Unaligned</option>
+		</parameter>
+		<parameter name="minCR" display="Minimum CR" type="Text" default="0" />
+		<parameter name="maxCR" display="Maximum CR" type="Text" default="100" />
+	</parameters>
+	<evenResultColor>
+		<A>255</A>
+		<R>255</R>
+		<G>255</G>
+		<B>255</B>
+	</evenResultColor>
+	<dividerColor>
+		<A>255</A>
+		<R>255</R>
+		<G>255</G>
+		<B>255</B>
+	</dividerColor>
+	<supportsMaxLength>false</supportsMaxLength>
+	<scriptPath>LUA\DnD 5e Monsters.lua</scriptPath>
+</Grammar>

@@ -1,0 +1,14 @@
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\MRU\bin\x86\Debug\MRU.dll.config
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\MRU\bin\x86\Debug\MRU.dll
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\MRU\bin\x86\Debug\MRU.pdb
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\MRU\obj\x86\Debug\MRU.Resources.resources
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\MRU\obj\x86\Debug\MRU.vbproj.GenerateResource.Cache
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\MRU\obj\x86\Debug\MRU.dll
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\MRU\obj\x86\Debug\MRU.pdb
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\MRU\bin\x86\Debug\MRU.dll.config
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\MRU\bin\x86\Debug\MRU.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\MRU\bin\x86\Debug\MRU.pdb
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\MRU\obj\x86\Debug\MRU.Resources.resources
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\MRU\obj\x86\Debug\MRU.vbproj.GenerateResource.Cache
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\MRU\obj\x86\Debug\MRU.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\MRU\obj\x86\Debug\MRU.pdb

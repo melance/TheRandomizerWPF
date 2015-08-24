@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<library>
+	<item name="DivineScrollSpell1st" from="1" to="5">Bless</item>
+	<item name="DivineScrollSpell1st" from="6" to="10">Calm animals</item>
+	<item name="DivineScrollSpell1st" from="11" to="14">Command</item>
+	<item name="DivineScrollSpell1st" from="15" to="19">Cure light wounds</item>
+	<item name="DivineScrollSpell1st" from="20" to="22">Detect chaos</item>
+	<item name="DivineScrollSpell1st" from="23" to="25">Detect evil</item>
+	<item name="DivineScrollSpell1st" from="26" to="28">Detect good</item>
+	<item name="DivineScrollSpell1st" from="29" to="31">Detect law</item>
+	<item name="DivineScrollSpell1st" from="32" to="34">Detect snares and pits</item>
+	<item name="DivineScrollSpell1st" from="35" to="39">Doom</item>
+	<item name="DivineScrollSpell1st" from="40" to="43">Entangle</item>
+	<item name="DivineScrollSpell1st" from="44" to="49">Faerie fire</item>
+	<item name="DivineScrollSpell1st" from="50" to="54">Inflict light wounds</item>
+	<item name="DivineScrollSpell1st" from="55" to="59">Invisibility to animals</item>
+	<item name="DivineScrollSpell1st" from="60" to="67">Invisibility to undead</item>
+	<item name="DivineScrollSpell1st" from="68" to="70">Magic fang</item>
+	<item name="DivineScrollSpell1st" from="71" to="73">Magic stone</item>
+	<item name="DivineScrollSpell1st" from="74" to="77">Sanctuary</item>
+	<item name="DivineScrollSpell1st" from="78" to="82">Shillelagh</item>
+	<item name="DivineScrollSpell1st" from="83" to="86">Summon monster I</item>
+	<item name="DivineScrollSpell1st" from="87" to="90">Summon nature's ally I</item>
+
+	<item name="DivineScrollSpell2nd" from="1" to="5">Aid</item>
+	<item name="DivineScrollSpell2nd" from="6" to="10">Augury</item>
+	<item name="DivineScrollSpell2nd" from="11" to="15">Barkskin</item>
+	<item name="DivineScrollSpell2nd" from="16" to="19">Bull's strength</item>
+	<item name="DivineScrollSpell2nd" from="20" to="25">Charm person or animal</item>
+	<item name="DivineScrollSpell2nd" from="26" to="28">Chill metal</item>
+	<item name="DivineScrollSpell2nd" from="29" to="31">Cure moderate wounds</item>
+	<item name="DivineScrollSpell2nd" from="32" to="36">Delay poison</item>
+	<item name="DivineScrollSpell2nd" from="37" to="39">Flame blade</item>
+	<item name="DivineScrollSpell2nd" from="40" to="42">Flaming sphere</item>
+	<item name="DivineScrollSpell2nd" from="43" to="47">Heat metal</item>
+	<item name="DivineScrollSpell2nd" from="48" to="50">Hold animal</item>
+	<item name="DivineScrollSpell2nd" from="51" to="55">Hold person</item>
+	<item name="DivineScrollSpell2nd" from="56" to="58">Inflict moderate wounds</item>
+	<item name="DivineScrollSpell2nd" from="59" to="63">Lesser restoration</item>
+	<item name="DivineScrollSpell2nd" from="64" to="67">Silence</item>
+	<item name="DivineScrollSpell2nd" from="68" to="70">Speak with animals</item>
+	<item name="DivineScrollSpell2nd" from="71" to="75">Spiritual weapon</item>
+	<item name="DivineScrollSpell2nd" from="76" to="79">Summon monster II</item>
+	<item name="DivineScrollSpell2nd" from="80" to="83">Summon nature's ally II</item>
+	<item name="DivineScrollSpell2nd" from="84" to="85">Summon swarm</item>
+	<item name="DivineScrollSpell2nd" from="86" to="90">Undetectable alignment</item>
+
+	<item name="DivineScrollSpell3rd" from="1" to="2">Call lightning</item>
+	<item name="DivineScrollSpell3rd" from="3" to="5">Cure serious wounds</item>
+	<item name="DivineScrollSpell3rd" from="10" to="13">Dispel magic</item>
+	<item name="DivineScrollSpell3rd" from="14" to="15">Dominate animal</item>
+	<item name="DivineScrollSpell3rd" from="16" to="17">Greater magic fang</item>
+	<item name="DivineScrollSpell3rd" from="18" to="19">Inflict serious wounds</item>
+	<item name="DivineScrollSpell3rd" from="20" to="22">Invisibility purge</item>
+	<item name="DivineScrollSpell3rd" from="23" to="26">Locate object</item>
+	<item name="DivineScrollSpell3rd" from="27" to="28">Magic circle against chaos</item>
+	<item name="DivineScrollSpell3rd" from="29" to="30">Magic circle against evil</item>
+	<item name="DivineScrollSpell3rd" from="31" to="32">Magic circle against good</item>
+	<item name="DivineScrollSpell3rd" from="33" to="34">Magic circle against law</item>
+	<item name="DivineScrollSpell3rd" from="35" to="38">Negative energy protection</item>
+	<item name="DivineScrollSpell3rd" from="39" to="41">Neutralize poison</item>
+	<item name="DivineScrollSpell3rd" from="42" to="43">Plant growth</item>
+	<item name="DivineScrollSpell3rd" from="44" to="46">Prayer</item>
+	<item name="DivineScrollSpell3rd" from="47" to="51">Protection from elements</item>
+	<item name="DivineScrollSpell3rd" from="52" to="53">Remove blindness/deafness</item>
+	<item name="DivineScrollSpell3rd" from="54" to="56">Remove curse</item>
+	<item name="DivineScrollSpell3rd" from="57" to="59">Remove disease</item>
+	<item name="DivineScrollSpell3rd" from="60" to="62">Searing light</item>
+	<item name="DivineScrollSpell3rd" from="63" to="65">Speak with dead</item>
+	<item name="DivineScrollSpell3rd" from="66" to="67">Spike growth</item>
+	<item name="DivineScrollSpell3rd" from="68" to="72">Stone shape</item>
+	<item name="DivineScrollSpell3rd" from="73" to="75">Summon monster III</item>
+	<item name="DivineScrollSpell3rd" from="76" to="78">Summon nature's ally III</item>
+	<item name="DivineScrollSpell3rd" from="79" to="80">Water breathing</item>
+	<item name="DivineScrollSpell3rd" from="81" to="90">Water walk</item>
+</library>

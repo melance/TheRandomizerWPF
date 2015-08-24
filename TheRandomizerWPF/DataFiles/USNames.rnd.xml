@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar">
+	<name>US Names</name>
+	<author>Lance Boudreaux</author>
+	<description>A full name generator that presents names based on the top 300 male first, female first, and surnames.</description>
+	<genre>Modern</genre>
+	<category>Name</category>
+	<parameters>
+		<parameter name="Gender" display="Gender" type="List" valueType="Label">
+			<option>Any</option>
+			<option>Male</option>
+			<option>Female</option>
+		</parameter>
+	</parameters>
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start">[Gender]</item>
+		<item name="Any">[USFullName]</item>
+		<item name="Male">[USMaleFullName]</item>
+		<item name="Female">[USFemaleFullName]</item>
+	</items>
+	<imports>
+		<import>USNames</import>
+	</imports>
+</Grammar>

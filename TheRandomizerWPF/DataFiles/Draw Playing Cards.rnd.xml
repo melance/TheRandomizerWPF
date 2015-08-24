@@ -1,0 +1,79 @@
+﻿<?xml version="1.0"?>
+<Grammar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="LUAGrammar">
+	<name>Draw Playing Cards</name>
+	<author>Lance Boudreaux</author>
+	<description>Draws a number of playing cards from a deck.</description>
+	<category>Cards</category>
+	<parameters>
+		<parameter type="Text" display="Cards to Draw" name="cardCount" default="5">The number of cards to draw from the deck.  Cannot be less than 1 nor greater than 52.</parameter>
+		<parameter type="CheckBox" display="Include Jokers" name="jokers" default="false" />
+	</parameters>
+	<supportsMaxLength>false</supportsMaxLength>
+	<script><![CDATA[
+	
+	local debug = false
+	local paramError = false
+	local errorText = ""
+	
+	local maxCards = 52
+	
+	if jokers == "True" then maxCards = 54 end
+	
+	printif(debug, string.format("%s",maxCards))
+	
+	if tonumber(cardCount) == nil then
+		errorText = errorText .. "Cards to Draw must be a number.  Value provided was '" .. cardCount .. "'.<br />"
+		paramError = true
+	end
+	
+	if tonumber(cardCount) < 1 then 
+		errorText = errorText .. "Cards to Draw must be greater than or equal to 1.  Value provided was " .. cardCount .. ".<br />"
+		paramError = true
+	end
+	
+	if tonumber(cardCount) > maxCards then
+		errorText = errorText .. "Cards to Draw must be less than or equal to " .. maxCards .. ".  Value provided was " .. cardCount .. ".<br />"
+		paramError = true
+	end
+	
+	if paramError then
+		print("<span style='color:red'>" .. errorText .. "</span>")
+		return
+	end
+	
+	local DeckOfCards = require "DeckOfCards"
+	
+	if jokers == "True" then
+		deck = GetDeckWithJokers()
+	else
+		deck = GetDeck()
+	end
+	hand = {}
+	
+	printif(debug, Spades2)
+	
+	printif(debug, string.format("%s",#deck))
+	
+	for i=1,tonumber(cardCount) do
+		local cardIndex = calc:Rnd(1,#deck)
+		printif(debug, "CardIndex: " .. cardIndex)
+		local card = table.remove(deck, cardIndex)
+		printif(debug, card)
+		table.insert(hand, card)
+	end
+	
+	result = ""
+	
+	for key, value in pairs(hand) do
+		printif(debug, value)
+		result = result .. [[<div  style='-ms-transform: scale(0.25, 0.5); /* IE 9 */
+										  -webkit-transform: scale(0.25, 0.5); /* Chrome, Safari, Opera */
+										  transform: scale(0.25, 0.5);
+										  display: inline;'>]]
+		result = result .. value
+		result = result .. "</div>"
+	end
+		
+	print(result)
+	]]></script>
+</Grammar>

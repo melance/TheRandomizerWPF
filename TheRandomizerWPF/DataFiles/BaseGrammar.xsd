@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BaseGrammar"
+		   targetNamespace="http://tempuri.org/BaseGrammar.xsd"
+		   elementFormDefault="qualified"
+		   attributeFormDefault="unqualified"
+		   xmlns="http://tempuri.org/BaseGrammar.xsd"
+		   xmlns:mstns="http://tempuri.org/BaseGrammar.xsd"
+		   xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:simpleType name="ParameterType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="List" />
+			<xs:enumeration value="Text" />
+			<xs:enumeration value="CheckBox" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="BaseGrammar">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string" />
+			<xs:element name="author" type="xs:string" />
+			<xs:element name="description" type="xs:string" />
+			<xs:element name="category" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="parameters">
+		<xs:sequence>
+			<xs:element name="parameter">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="option" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute name="display" type="xs:string" />
+									</xs:extension>
+								</xs:simpleContent>											
+							</xs:complexType>
+						</xs:element>	
+					</xs:sequence>
+					<xs:attribute name="name" type="xs:string" />
+					<xs:attribute name="display" type="xs:string" />
+					<xs:attribute name="type" type="ParameterType" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:schema>

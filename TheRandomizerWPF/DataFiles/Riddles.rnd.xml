@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AssignmentGrammar">
+	<name>Riddles</name>
+	<author>Lance Boudreaux</author>
+	<description>Selects a riddle</description>
+	<category>Other</category>
+	<parameters />
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start"><![CDATA[A woman has 7 children, half of them are boys.<br />
+									How can this be possible?<br /> 
+									[Answer]They are all boys.[/Answer]]]></item>
+		<item name="Start"><![CDATA[What lies in bed, and stands in bed,<br />
+									First white, then red.<br />
+									The plumper it gets<br />
+									The better the old woman likes it?<br />
+									[Answer]A strawberry[/Answer]]]></item>
+		<item name="Start"><![CDATA[Lighter than what I am made of,<br />
+									More of me is hidden than is seen,<br />
+									I am the bane of the mariner,<br />
+									A tooth within the sea.<br />
+									Speak my name.<br />
+									[Answer]Ice[/Answer]]]></item>
+		<item name="Start"><![CDATA[I get wetter the more I dry, what am I?<br />
+									[Answer]A towel[/Answer]]]></item>
+		<item name="Start"><![CDATA[The man who built it,<br />
+									Doesn't want it for himself.<br />
+									The man who bought it,<br />
+									Doesn't need it for himself.<br />
+									The man who needs it,
+									Doesn't know it when he does.<br />
+									[Answer]A coffin[/Answer]]]></item>
+		<item name="Start"><![CDATA[A spirited jig, it dances bright,<br />
+									Banishing all but darkest night,<br />
+									Give it food and it will live;<br />
+									Give it water and it will die.<br />
+									[Answer]Fire[/Answer]]]></item>
+		<item name="Start"><![CDATA[I am free for the taking through all of your life,<br />
+									Though given but once at birth.<br />
+									I am less than nothing in weight,<br />
+									But will fell the strongest of you if held.<br />
+									[Answer]Breath[/Answer]]]></item>
+		<item name="Start"><![CDATA[What has four wheels and flies?<br />
+									[Answer]The town garbage wagon[/Answer]]]></item>
+		<item name="Start"><![CDATA[What has four legs in the morning,<br />
+									Two legs in the afternoon,<br />
+									And three legs at night?<br />
+									[Answer]A human being[/Answer]]]></item>
+		<item name="Start"><![CDATA[No sooner spoken than broken.  What is it?<br />
+									[Answer]Silence[/Answer]]]></item>
+		<item name="Start"><![CDATA[We are very little creatures; all of us have different features. One of us in glass is set; one of us you'll find in jet. Another you may see in tin, and a fourth is boxed within. If the fifth you should pursue, it can never fly from you. What are we?<br />
+									[Answer]A, E, I, O, and U[/Answer]]]></item>
+		<item name="Start"><![CDATA[Where can you find roads without cars,<br />
+									forests without trees,<br />
+									and cities without buildings?<br />
+									[Answer]A map[/Answer]]]></item>
+		<item name="Start"><![CDATA[Cannot be seen, cannot be felt,<br />
+									cannot be heard, cannot be smelt.<br />
+									It lies behind the stars and beneath the hills.<br />
+									Ends life and daytime kills.<br />
+									[Answer]Darkness[/Answer]]]></item>
+		<item name="Start"><![CDATA[This thing runs but cannot walk,<br />
+									sometimes sings but never talks.<br />
+									Lacks arms, has hands;<br />
+									lacks a head has a face.<br />
+									[Answer]a clock[/Answer]]]></item>
+		<item name="Start"><![CDATA[Man walks over;<br />
+									Man walks under;<br />
+									In time of war<br />
+									He burns asunder.<br />
+									[Answer]A bridge[/Answer]]]></item>
+		<item name="Start"><![CDATA[Walk on the living and they do not mumble.<br />
+									Walk on the dead, they mutter and grumble.<br />
+									[Answer]Leaves[/Answer]]]></item>
+		<item name="Start"><![CDATA[With no wings, I fly.<br />
+									With no eyes, I see.<br />
+									With no arms, I climb.<br />
+									More frightening than any beast,<br />
+									Stronger than any foe.<br />
+									I am cunning, ruthless and tall;<br />
+									In the end, I rule all.<br />
+									[Answer]Imagination[/Answer]]]></item>
+		<item name="Start"><![CDATA[Without a body, yet I have a head and a tail.<br />
+									[Answer]A coin[/Answer]]]></item>
+		<item name="Start"><![CDATA[It's a part of heaven yet it thouches the Earth.<br />
+									Some say it's valuable, others say it has no worth.<br />
+									[Answer]A rainbow[/Answer]]]></item>
+		<item name="Start"><![CDATA[What three letters turn a boy into a man?<br />
+									[Answer]Age[/Answer]]]></item>
+		<item name="Start"><![CDATA[What crosses a river yet never moves?<br />
+									[Answer]A bridge[/Answer]]]></item>
+		<item name="Start"><![CDATA[What runs smoother than any rhyme,<br />
+									Loves to fall yet cannot climb?<br />
+									[Answer]Water[/Answer]]]></item>
+		<item name="Start"><![CDATA[What is always too late?<br />
+									[Answer]Regret[/Answer]]]></item>
+		<item name="Start"><![CDATA[What can travel the world while stuck in a corner?<br />
+									[Answer]A stamp[/Answer]]]></item>
+		<item name="Start"><![CDATA[How many months have 29 days?<br />
+									[Answer]All of them[/Answer]]]></item>
+		<item name="Start"><![CDATA[What can run but never walks,<br />
+									Has a mouth but never talks,<br />
+									Has a bed but never sleeps,<br />
+									Has a head but never weeps?<br />
+									[Answer]A river[/Answer]]]></item>
+		<item name="Start"><![CDATA[When first I appear, I seem mysterious,<br />
+									But when I’m explained, I’m nothing serious<br />
+									[Answer]A riddle[/Answer]]]></item>
+		<item name="Start"><![CDATA[Alive without breath,<br />
+									As cold as death;<br />
+									Never thirsty, ever drinking,<br />
+									All in mail never clinking.<br />
+									[Answer]A fish[/Answer]]]></item>
+		<item name="Start"><![CDATA[What has roots as nobody sees,<br />
+									Is taller than trees.<br />
+									Up, up it goes,<br />
+									And yet it never grows?<br />
+									[Answer]A mountain[/Answer]]]></item>
+		<item name="Start"><![CDATA[What is greater than God,<br />
+									More evil than the devil,<br />
+									The poor have it,<br />
+									The rich need it,<br />
+									and if you eat it, you will die?<br />
+									[Answer]Nothing[/Answer]]]></item>
+		<item name="Start"><![CDATA[A house of red carrying babies aplenty,<br />
+									Lies within a house of white that <br />
+									Lies within a house of green.  What is it?<br />
+									[Answer]A watermelon[/Answer]]]></item>
+		<item name="Start"><![CDATA[If you have me, you want to share me.<br />
+									If you share me you haven't got me.<br />
+									[Answer]A secret[/Answer]]]></item>
+		<item name="Start"><![CDATA[I am given from one to another,<br />
+									Yet I cannot be held.<br />
+									I cannot be held,<br />
+									Yet I can be broken.<br />
+									[Answer]A promise[/Answer]]]></item>
+		<item name="Start"><![CDATA[Forward I am heavy, but backwards I am not.<br />
+									[Answer]A ton[/Answer]]]></item>
+		<item name="Start"><![CDATA[He has married many women, yet he has never been married.  Who is he?<br />
+									[Answer]A priest[/Answer]]]></item>
+		<item name="Start"><![CDATA[What can you have but not hold,<br />
+									Catch but not throw?<br />
+									[Answer]A cold[/Answer]]]></item>
+		<item name="Start"><![CDATA[A man rides into town on Friday, stays for three nights and leaves town on Friday.  How is this?<br />
+									[Answer]His horse's name is Friday[/Answer]]]></item>
+		<item name="Start"><![CDATA[What happens once in a minute, twice in a moment, but never in a million years?<br />
+									[Answer]The letter M[/Answer]]]></item>
+		<item name="Start"><![CDATA[What is full of holes yet still holds water?<br />
+									[Answer]A sponde[/Answer]]]></item>
+		<item name="Start"><![CDATA[Pronounced as one letter,<br />
+									And written with three,<br />
+									Two letters there are,<br /> 
+									And two only in me.<br /> 
+									I'm double, I'm single,<br /> 
+									I'm black, blue, and gray,<br /> 
+									I'm read from both ends, 
+									And the same either way. 									
+									What am I?<br />
+									[Answer]Eye[/Answer]]]></item>
+		<item name="Start"><![CDATA[The more you take away, the larger I become.<br />
+									[Answer]A hole[/Answer]]]></item>
+		<item name="Start"><![CDATA[What has three feet but has no legs?<br />
+									[Answer]A yardstick[/Answer]]]></item>
+
+
+
+		<item name="Answer"><![CDATA[<span style="color:green;">]]></item>
+		<item name="/Answer"><![CDATA[</span>]]></item>
+	</items>
+	<imports />
+</Grammar>

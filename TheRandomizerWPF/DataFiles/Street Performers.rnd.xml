@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar">
+  <name>Street Performers</name>
+  <author>Lance Boudreaux</author>
+  <description>A random assortment of street performers</description>
+	<genre>Fantasy</genre>
+  <category>Environment</category>
+  <parameters />
+  <supportsMaxLength>false</supportsMaxLength>
+  <items>
+	<item name="Start" weight="1" next="">Juggler, dangerous (knives, torches, etc.)</item>
+	<item name="Start" weight="1" next="">Juggler, mundane</item>
+	<item name="Start" weight="1" next="">Contortionist</item>
+	<item name="Start" weight="1" next="">Magician, mundane</item>
+	<item name="Start" weight="1" next="">Magician, magical</item>
+	<item name="Start" weight="1" next="">Animal Tricks (bear, monkey, dog)</item>
+	<item name="Start" weight="1" next="">Sword/Blade swallower</item>
+	<item name="Start" weight="1" next="">Geek (eats anything; bugs, nails, glass etc)</item>
+	<item name="Start" weight="1" next="">Snake Charmer</item>
+	<item name="Start" weight="1" next="">Hypnotist</item>
+	<item name="Start" weight="1" next="">Fortune Teller (genuine/fake)</item>
+	<item name="Start" weight="1" next="">Knife Thrower</item>
+	<item name="Start" weight="1" next="">Strong Man/Woman</item>
+	<item name="Start" weight="1" next="">Acrobat/Tumbler</item>
+	<item name="Start" weight="1" next="">Singer(s) </item>
+	<item name="Start" weight="1" next="">Card Player (the guys that play three card monte)</item>
+	<item name="Start" weight="1" next="">Actor(s)</item>
+	<item name="Start" weight="1" next="">Musician (instrumental)</item>
+	<item name="Start" weight="1" next="">Poet</item>
+	<item name="Start" weight="1">Mime</item>
+	<item name="Start" weight="1">Panhandler (art, jewelry, crafts)</item>
+	<item name="Start" weight="1">Panhandler (weapons)</item>
+	<item name="Start" weight="1">Street Preacher</item>
+	<item name="Start" weight="1">Musician (vocalist)</item>
+	<item name="Start" weight="1">Musical Band</item>
+	<item name="Start" weight="1">Jester</item>
+	<item name="Start" weight="1">Comedian</item>
+	<item name="Start" weight="1">Barker</item>
+	<item weight="1" />
+  </items>
+</Grammar>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+		 xsi:type="TableGrammar">
+	<name>Super Hero Name</name>
+	<author>Lance Boudreaux</author>
+	<description>Generates a superhero name</description>
+	<genre>Comic Book</genre>
+	<category>Name</category>
+	<tables>
+		<table name="Prefix" action="Random" column="Roll" delimiter="|"><![CDATA[
+		Roll | Name
+		01   | Agent
+		02   | Amazing
+		03   | Amber
+		04   | Amethyst
+		05   | Aqua
+		06   | Azure
+		07   | Black
+		08   | Blue
+		09   | Brass
+		10   | Brilliant
+		11   | Bronze
+		12   | Burgundy
+		13   | Burly
+		14   | Camouflage
+		15   | Chivalrous
+		16   | Cobalt
+		17   | Copper
+		18   | Courageous
+		19   | Crimson
+		20   | Dark
+		21   | Dashing
+		22   | Elastic
+		23   | Emerald
+		24   | Exalted
+		25   | Fearless
+		26   | Feisty
+		27   | Gallant
+		28   | Giant
+		29   | Gold
+		30   | Golden
+		31   | Green
+		32   | Grey
+		33   | Hard
+		34   | Hardcore
+		35   | Indestructible
+		36   | Indigo
+		37   | Iron
+		38   | Ivory
+		39   | Jade
+		40   | Jade
+		41   | Justice
+		42   | Killer
+		43   | Kinetic
+		44   | Lightning
+		45   | Lone
+		46   | Magenta
+		47   | Maroon
+		48   | Metal
+		49   | Mighty
+		50   | New
+		51   | Night
+		52   | Notorious
+		53   | Original
+		54   | Outlander
+		55   | Powerful
+		56   | Pulverising
+		57   | Purple
+		58   | Quick
+		59   | Quixotic
+		60   | Radiant
+		61   | Razor
+		62   | Red
+		63   | Royal
+		64   | Ruby
+		65   | Sapphire
+		66   | Scarlet
+		67   | Shamrock
+		68   | Silver
+		69   | Slate
+		70   | Sparky
+		71   | Steel
+		72   | Super
+		73   | Titanium
+		74   | Tough
+		75   | Towering
+		76   | Ultra
+		77   | Ultra
+		78   | Unstoppable
+		79   | Valliant
+		80   | Vengeful
+		81   | Violent
+		82   | Violet
+		83   | Whipping
+		84   | White
+		85   | Wrathful
+		86   | X-Ray
+		87   | Xenolithic
+		88   | Yellow
+		89   | Yellowtail
+		90   | Young
+		91   | Zane
+		92   | Zealous
+		]]></table>
+		<table name="Suffix" action="Random" column="Roll" delimiter="|"><![CDATA[
+		Roll | Name
+		01   | Avenger
+		02   | Blaster
+		03   | Crusher
+		04   | Dagger
+		05   | Edge
+		06   | Fox
+		07   | Gem
+		08   | Hulk
+		09   | Ivy
+		10   | Jumper
+		11   | Knight
+		12   | Laser
+		13   | Machine
+		14   | Ninja
+		15   | Oracle
+		16   | Pepper
+		17   | Quibbler
+		18   | Ranger
+		19   | Sorcerer
+		20   | Trapper
+		21   | Unifier
+		22   | Viper
+		23   | Wanderer
+		24   | Xenolith
+		25   | Yogi
+		26   | Zealot
+		27   | Aeon
+		28   | Beast
+		29   | Coyote
+		30   | Destroyer
+		31   | Eagle
+		32   | Fighter
+		33   | Gaurdian
+		34   | Hawk
+		35   | Image
+		36   | Juggler
+		37   | King
+		38   | Lightning
+		39   | Man
+		40   | Neuron
+		41   | Pillar
+		42   | Rock
+		43   | Stone
+		44   | Tornado
+		45   | Umber
+		46   | Victor
+		47   | Watcher
+		]]></table>
+	</tables>
+	<output>
+		[=if(Rnd(100) >= 50, 'The','')] [Prefix.Name] [Suffix.Name]
+	</output>
+</Grammar>

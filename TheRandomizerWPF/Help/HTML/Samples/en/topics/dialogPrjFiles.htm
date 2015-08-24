@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Project file selection dialog</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Project file selection dialog</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/filesel.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      Dialog for selecting the file of the project is one of the most important application components.
+      In compare to the system open file dialog it provides an advanced options and the <i>places bar</i>, that is related to a project and to the help authoring generally.
+    </p>
+    <img src="../img/ss_prjfiles.jpg" class="ssright"/>
+    <p>
+      This dialog is (starting from version 2.0) used also for <b>selecting the topic templates</b>.
+    </p>
+
+    <p>
+      Dialog contains <b>list of files</b> (intended to the selected place), a field for <b>quick file searching</b> (resp. filtering by the text),
+      a <b>file type filtering</b> panel and the <b>places bar</b>.
+    </p>
+    <p>
+      Filtering by file type could be combined, if the SHIFT key is pressed during clicking the buttons (or pressing the SPACE key).
+    </p>
+    <p>
+      Dialog is always open in the <i>place</i>, that corresponds to the context and situation from which it is called.
+    </p>
+
+    <p class="big" style="padding-top:8px;">
+      Places bar items
+    </p>
+    <ul class="shr">
+      <li><b>Project files</b> - the list of all files that ARE DEFINED anywhere in your help project (ie. in the <a href="navBar_TOC.htm">table of contents</a>,
+        <a href="navBar_IDX.htm">index of keywords</a>, <a href="pageWinTypes.htm">window type definition</a>, etc.)</li>
+      <li><b>Unused files</b> - the list of files from the project's folder (and its subfolders) that ARE NOT MENTIONED anywhere in your project
+        (it can be usefull for assignment of existing files to the content items, or to the index keywords)</li>
+      <li><b>Project's folder</b> - displays the project's folder contents (from this place you can freely <b>browse</b> your file system)</li>
+      <li><b>Target folder</b> - displays the contents of the folder, where the resulting (compiled) file is located (from this place you can freely <b>browse</b> your file system)</li>
+      <li><b>This computer</b> - shows the logical drives of your file system (from this place you can freely <b>browse</b> your file system)</li>
+      <li><b>External help</b> - by clicking on this <i>place</i>, the system open file dialog is displayed and you can select a <b>CHM</b> file, 
+        whose content is then displayed in this <i>place</i>. Depending on the situation from which the "project file selection dialog" was called,
+        you may be navigated to this <i>place</i> automatically by selecting a CHM file in another <i>place</i> of this dialog.</li>
+      <li><b>Topic templates</b> - in this mode only the topic templates are listed here, along with the preview for currently selected template</li>
+    </ul>
+
+    <p>
+      <i>Note:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Almost the same dialog is displayed by opening the <a href="toolsCHMViewer.htm">CHM Viewer</a> tool,
+        but in that case it contains also the "file preview pane".
+      </i>
+    </p>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. All rights reserved.
+  </div>
+</body>
+</html>

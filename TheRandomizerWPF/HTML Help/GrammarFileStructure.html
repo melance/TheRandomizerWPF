@@ -1,0 +1,216 @@
+﻿<html>
+	
+<head>
+	<title>Grammar File Structure</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.5.0.497">
+	<meta name="keywords" content="Grammar">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "The Randomizer.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("GrammarFileStructure");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Grammar File Structure</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="GrammarFiles.html">Grammar Files</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="GrammarFiles.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="WhatareGrammarFiles.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="AssignmentGrammarFileStructure.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps3"><span class="rvts8">The grammar file is broken down into three major sections: the header, the parameters, and the rules.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h1 class="rvps8"><span class="rvts0"><span class="rvts16">The Header</span></span></h1>
+<p class="rvps3"><span class="rvts8">The header has basic information such as the name, description and author of the grammar. Additionally, it contains the parameters (if any exist for the grammar).</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Properties</span></span></h3>
+<div class="rvps3"><table width="680" border="1" cellpadding="0" cellspacing="0" style="border-color: #000000; border-style: solid;">
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 133px;"><p class="rvps10"><span class="rvts15">Element</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 383px;"><p class="rvps10"><span class="rvts15">Description</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 79px;"><p class="rvps10"><span class="rvts15">Values</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 133px;"><p class="rvps3"><span class="rvts8">Name</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 383px;"><p class="rvps3"><span class="rvts8">The name of the grammar</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 79px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 133px;"><p class="rvps3"><span class="rvts8">Description</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 383px;"><p class="rvps3"><span class="rvts8">A short description of what the grammar produces</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 79px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 133px;"><p class="rvps3"><span class="rvts8">Category</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 383px;"><p class="rvps3"><span class="rvts8">The category that the grammar fits under</span><span class="rvts8"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts8">Commonly NPC, Name, or Other</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 79px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 133px;"><p class="rvps3"><span class="rvts8">Author</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 383px;"><p class="rvps3"><span class="rvts8">The name of the author</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 79px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 133px;"><p class="rvps3"><span class="rvts8">SupportsMaxLength</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 383px;"><p class="rvps3"><span class="rvts8">Does this grammar support max length?</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 79px;"><p class="rvps3"><span class="rvts8">true/false</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Sample</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps9"><span class="rvts18">&lt;Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" </span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp; xmlns:xsd="http://www.w3.org/2001/XMLSchema" </span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp; xsi:type="AssignmentGrammar" &gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;name&gt;US Names&lt;/name&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;category&gt;Name&lt;/category&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;author&gt;Lance Boudreaux&lt;/author&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;description&gt;A full name generator that presents names based on the top 300 male first, female first, and surnames.&lt;/description&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;supportsMaxLength&gt;false&lt;/supportsMaxLength&gt;</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h1 class="rvps8"><span class="rvts0"><span class="rvts16">The Parameters</span></span></h1>
+<p class="rvps3"><span class="rvts8">There is some limited functionality allowing for parameters. In the future this functionality will be increased.</span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Properties</span></span></h3>
+<div class="rvps3"><table width="680" border="1" cellpadding="0" cellspacing="0" style="border-color: #000000; border-style: solid;">
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 118px;"><p class="rvps10"><span class="rvts15">Element/Attribute</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 393px;"><p class="rvps10"><span class="rvts8">Description</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 161px;"><p class="rvps10"><span class="rvts8">Values</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 118px;"><p class="rvps3"><span class="rvts8">Parameter</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 393px;"><p class="rvps3"><span class="rvts8">A single parameter</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 161px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 118px;"><p class="rvps3"><span class="rvts8">[name]</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 393px;"><p class="rvps3"><span class="rvts8">The name of the label the parameter value will replace</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 161px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 118px;"><p class="rvps3"><span class="rvts8">[display]</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 393px;"><p class="rvps3"><span class="rvts8">The name to display for the parameter</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 161px;"><br/>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 118px;"><p class="rvps3"><span class="rvts8">[type]</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 393px;"><p class="rvps3"><span class="rvts8">The type of parameter</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 161px;"><p class="rvps3"><span class="rvts8">List/Text/Checkbox</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 118px;"><p class="rvps3"><span class="rvts8">option</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 393px;"><p class="rvps3"><span class="rvts8">The options available if the parameter is of list type</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 161px;"><br/>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts8"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts8"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps3"><span class="rvts15">Sample</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps9"><span class="rvts18">&lt;parameters&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;parameter name="Gender" display="Gender" type="List"&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;option&gt;Any&lt;/option&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;option&gt;Male&lt;/option&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp; &nbsp; &nbsp;&lt;option&gt;Female&lt;/option&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;/parameter&gt;</span></p>
+<p class="rvps9"><span class="rvts18">&lt;/parameters</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h1 class="rvps8"><span class="rvts0"><span class="rvts16">Items</span></span></h1>
+<p class="rvps3"><span class="rvts8">The Items section varies based on the type of grammar defined by the grammar file. &nbsp;Please see one of the following topics in order to learn more about each grammar type's structure.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><a class="rvts20" href="AssignmentGrammarFileStructure.html">Assignment Grammar File Structure</a></p>
+<p class="rvps3"><a class="rvts20" href="DiceRollGrammarFileStructure.html">Dice Roll Grammar File Structure</a></p>
+<p class="rvps3"><a class="rvts20" href="LUAGrammarFileStructure.html">LUA Grammar File Structure</a></p>
+<p class="rvps3"><a class="rvts20" href="PhonotacticsGrammarFileStructure.html">Phonotactics Grammar File Structure</a></p>
+<p class="rvps3"><a class="rvts20" href="TableGrammarFileStructure.html">Table Grammar File Structure</a></p>
+<p></p>
+<p class="rvps2"><span class="rvts6">Created with the Personal Edition of HelpNDoc: </span><a class="rvts7" href="http://www.helpndoc.com/help-authoring-tool">Free help authoring tool</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2014 by Lance Boudreaux. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

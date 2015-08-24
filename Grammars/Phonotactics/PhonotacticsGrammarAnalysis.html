@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>[Name]</title>
+    <style type="text/css">
+        body {
+            font-family: Verdana;
+        }
+        h1 {
+            background: gray;
+            width: 100%;
+            padding: 3px;
+            margin: 0px;
+        }
+        caption {
+            font-weight: bolder;
+            font-size: 14px;
+        }
+        #description {
+            border-bottom: 1px solid dimgray;
+            font-weight: bold;
+            width: 100%;
+            margin-bottom: 3px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+        #header {
+            border-bottom: 1px solid dimgray;
+            width: 100%;
+            margin-bottom: 3px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+        table {
+            border-collapse: collapse;
+            empty-cells: hide;
+        }
+        td {
+            padding: 3px;
+            border: 1px solid dimgray;
+        }
+        td.number {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>[Name]</h1>
+    <div id="description">[Description]</div>
+    <div id="header">
+    <b>Category:</b> [Category] <br />
+    <b>Author:</b> [Author] <br />
+    </div>
+    <b>Parameter Count:</b> [ParameterCount]<br />
+    <b>Definition Count:</b> [DefinitionCount]<br />
+    <b>Pattern Count:</b> [PatternCount] <br />
+    <b>XML Lines:</b> [XMLLength]<br />
+    <table>
+        <caption>Parameters</caption>
+        <thead>
+            <tr>
+                <th>Parameter</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            [Parameters]
+        </tbody>
+    </table>
+    <table>
+        <caption>Definitions</caption>
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Count</th>
+                <th>Definition</th>
+            </tr>
+        </thead>
+        <tbody>
+            [Definitions]
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>Pattern</th>
+                <th>Weight</th>
+                <th>Duplicate</th>
+            </tr>
+        </thead>
+        <tbody>
+            [Patterns]
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,101 @@
+Type,GemCost,ResLow,ResHigh,Item
+Gem,10,1,8,Azurite
+Gem,10,9,16,Banded agate
+Gem,10,17,25,Blue quartz
+Gem,10,26,33,Eye agate
+Gem,10,34,41,Hematite
+Gem,10,42,50,Lapiz lazuli
+Gem,10,51,58,Malchite
+Gem,10,59,66,Moss agate
+Gem,10,67,75,Obsidian
+Gem,10,76,83,Rhodochrosite
+Gem,10,84,91,Tiger eye
+Gem,10,92,100,Turqoise
+Gem,50,1,8,Bloodstone
+Gem,50,9,16,Carnelian
+Gem,50,17,25,Chalcedony
+Gem,50,26,33,Chrysoprase
+Gem,50,34,41,Citrine
+Gem,50,42,50,Jasper
+Gem,50,51,58,Moonstone
+Gem,50,59,66,Onyx
+Gem,50,67,75,Quartz
+Gem,50,76,83,Sardonyx
+Gem,50,84,91,Star rose quartz
+Gem,50,92,100,Zircon
+Gem,100,1,10,Amber
+Gem,100,11,20,Amethyst
+Gem,100,21,30,Chrysoberyl
+Gem,100,31,40,Coral
+Gem,100,41,50,Garnet
+Gem,100,51,60,Jade
+Gem,100,61,70,Jet
+Gem,100,71,80,Pearl
+Gem,100,81,90,Spinel
+Gem,100,91,100,Tourmaline
+Gem,500,1,17,Alexandrite
+Gem,500,18,34,Aquamarine
+Gem,500,35,50,Black pearl
+Gem,500,51,67,Blue spinel
+Gem,500,68,83,Peridot
+Gem,500,84,100,Topaz
+Gem,1000,1,12,Black opal
+Gem,1000,13,25,Blue sapphire
+Gem,1000,26,37,Emerald
+Gem,1000,38,50,Fire opal
+Gem,1000,51,62,Opal
+Gem,1000,63,75,Star ruby
+Gem,1000,76,87,Star sapphire
+Gem,1000,88,100,Yellow sapphire
+Gem,5000,1,25,Black sapphire
+Gem,5000,26,50,Diamond
+Gem,5000,51,75,Jacinth
+Gem,5000,76,100,Ruby
+Art,25,1,10,Silver ewer
+Art,25,11,20,Carved bone statuette
+Art,25,21,30,Small gold bracelet
+Art,25,31,40,Cloth-of-gold vestments
+Art,25,41,50,Black velvet mask stitched with silver thread
+Art,25,51,60,Copper chalice with silver filigree
+Art,25,61,70,Pair of engraved bone dice
+Art,25,71,80,Small mirror set in a painted wooden frame
+Art,25,81,90,Embroidered silk handkerchief
+Art,25,91,100,Gold locket with a painted portrait inside
+Art,250,1,10,Gold ring set with bloodstones
+Art,250,11,20,Carved ivory statuette
+Art,250,21,30,Large gold bracelet
+Art,250,31,40,Silver necklace with a gemstone pendant
+Art,250,41,50,Bronze crown
+Art,250,51,60,Silk robe with gold embroidery
+Art,250,61,70,Large well-made tapestry
+Art,250,71,80,Brass mug with jade inlay
+Art,250,81,90,Box of turquoise animal figurines
+Art,250,91,100,Gold bird cage with electrum filigree
+Art,750,1,10,Silver chalice set with moonstones
+Art,750,11,20,Silver-plated steel longsword with jet set in hilt
+Art,750,21,30,Carved harp of exotic wood with ivory inlay and zircon gemstone
+Art,750,31,40,Small gold idol
+Art,750,41,50,Gold dragon comb set with red garnets as eyes
+Art,750,51,60,Bottle stopper cork embossed with gold leaf and set with amethysts
+Art,750,61,70,Ceremonial electrum dagger with a black pearl in the pommel
+Art,750,71,80,Gold circlet set with four aquamarines
+Art,750,81,90,Silver and gold brooch
+Art,750,91,100,A necklace string of small pink pearls
+Art,2500,1,10,Fine gold chain set with a fire opal
+Art,2500,11,20,Old masterpiece painting
+Art,2500,21,30,Embroidered silk and velvet mantle set with numerous moonstones
+Art,2500,31,40,Platinum bracelet set with a sapphire
+Art,2500,41,50,Embroidered glove set with jewel chips
+Art,2500,51,60,Jeweled anklet
+Art,2500,61,70,Gold music box
+Art,2500,71,80,Gold circlet set with four aquamarines
+Art,2500,81,90,Eye patch with a mock eye set in blue sapphire and moonstone
+Art,2500,91,100,A necklace string of small pink pearls
+Art,7500,1,12,Jeweled gold crown
+Art,7500,13,25,Jeweled platinum ring
+Art,7500,26,37,Small gold statuette set with rubies
+Art,7500,38,50,Gold cup set with emeralds
+Art,7500,51,62,Gold jewelry box with platinum filigree
+Art,7500,63,75,Painted gold child's sarcophagus
+Art,7500,76,87,Jade game board with gold playing pieces
+Art,7500,88,100,Bejeweled ivory drinking horn with gold filigree

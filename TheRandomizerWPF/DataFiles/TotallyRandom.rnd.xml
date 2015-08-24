@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar">
+  <name>Totally Random</name>
+  <author>Lance Boudreaux</author>
+  <description>A totally random name generator. This does not make very good names.</description>
+  <category>Name</category>
+  <parameters />
+  <supportsMaxLength>true</supportsMaxLength>
+	<items>
+		<item name="Start" weight="50">[C]</item>
+		<item name="Start" weight="50">[V]</item>
+		<item name="C" weight="470" next="NextC">B</item>
+		<item name="C" weight="351" next="NextC">C</item>
+		<item name="C" weight="267" next="NextC">D</item>
+		<item name="C" weight="377" next="NextC">F</item>
+		<item name="C" weight="195" next="NextC">G</item>
+		<item name="C" weight="723" next="NextC">H</item>
+		<item name="C" weight="59" next="NextC">J</item>
+		<item name="C" weight="59" next="NextC">K</item>
+		<item name="C" weight="270" next="NextC">L</item>
+		<item name="C" weight="437" next="NextC">M</item>
+		<item name="C" weight="236" next="NextC">N</item>
+		<item name="C" weight="254" next="NextC">P</item>
+		<item name="C" weight="17" next="NextC">Q</item>
+		<item name="C" weight="165" next="NextC">R</item>
+		<item name="C" weight="775" next="NextC">S</item>
+		<item name="C" weight="1667" next="NextC">T</item>
+		<item name="C" weight="64" next="NextC">V</item>
+		<item name="C" weight="675" next="NextC">W</item>
+		<item name="C" weight="1" next="NextC">X</item>
+		<item name="C" weight="16" next="NextC">Y</item>
+		<item name="C" weight="3" next="NextC">Z</item>
+		<item name="c" weight="149" next="NextC">b</item>
+		<item name="c" weight="278" next="NextC">c</item>
+		<item name="c" weight="425" next="NextC">d</item>
+		<item name="c" weight="222" next="NextC">f</item>
+		<item name="c" weight="201" next="NextC">g</item>
+		<item name="c" weight="609" next="NextC">h</item>
+		<item name="c" weight="15" next="NextC">j</item>
+		<item name="c" weight="77" next="NextC">k</item>
+		<item name="c" weight="402" next="NextC">l</item>
+		<item name="c" weight="240" next="NextC">m</item>
+		<item name="c" weight="674" next="NextC">n</item>
+		<item name="c" weight="192" next="NextC">p</item>
+		<item name="c" weight="9" next="NextC">q</item>
+		<item name="c" weight="598" next="NextC">r</item>
+		<item name="c" weight="632" next="NextC">s</item>
+		<item name="c" weight="905" next="NextC">t</item>
+		<item name="c" weight="97" next="NextC">v</item>
+		<item name="c" weight="236" next="NextC">w</item>
+		<item name="c" weight="15" next="NextC">x</item>
+		<item name="c" weight="197" next="NextC">y</item>
+		<item name="c" weight="7" next="NextC">z</item>
+		<item name="V" weight="1160" next="NextV">A</item>
+		<item name="V" weight="200" next="NextV">E</item>
+		<item name="V" weight="628" next="NextV">I</item>
+		<item name="V" weight="626" next="NextV">O</item>
+		<item name="V" weight="148" next="NextV">U</item>
+		<item name="v" weight="816" next="NextV">a</item>
+		<item name="v" weight="1270" next="NextV">e</item>
+		<item name="v" weight="696" next="NextV">i</item>
+		<item name="v" weight="750" next="NextV">o</item>
+		<item name="v" weight="275" next="NextV">u</item>
+		<item name="NextC" weight="25" next="NextC">[c]</item>
+		<item name="NextC" weight="50" next="NextV">[v]</item>
+		<item name="NextV" weight="50" next="NextC">[c]</item>
+		<item name="NextV" weight="25" next="NextV">[v]</item>
+		<item name="NextC" weight="25"/>
+		<item name="NextV" weight="25" />
+	</items>
+</Grammar>

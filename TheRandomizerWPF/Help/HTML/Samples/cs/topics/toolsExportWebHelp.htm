@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Export do formátu WebHelp</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Export do formátu WebHelp</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/webhelp.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      Tento průvodce slouží k vytvoření tzv. <b>online nápovědy</b>, jejíž formát je většinou označován jeko <i>WebHelp</i>.
+      Jedná se v podstatě o zkopírování adresářové struktury Vašeho projektu (jeho zdrojových souborů) do určené složky
+      a vytvoření rámce (hlavní stránky) ve formátu html (příp. xml), který umožní takto vytvořenou nápovědu
+      pohodlně prohlížet ve <b>webovém prohlížeči</b>.
+    </p>
+    
+    <p>
+      Precision Helper umožňuje pro vytvoření rámce online nápovědy použít <b>uživatelsky definované šablony</b> (viz níže).
+    </p>
+    
+    <p>
+      V průvodci zvolte šablonu, na jejímž základě bude online nápověda vytvořena a název hlavního souboru nové online nápovědy včetně umístění
+      (např. <i>C:\webhelp\test\index.htm</i>, <i>C:\webhelp\test\default.htm</i> apod.).
+      Pak klikněte na tlačítko "Dále &gt;" pro spuštění této akce.<br>
+    </p>
+    <p>
+      Po úspěšném dokončení průvodce Vám bude ještě nabídnuta možnost, zda chcete novou online nápovědu ihned <b>otevřít v prohlížeči</b>.
+    </p>
+
+    <p class="big" style="padding-top:8px;">
+      Šablony online nápovědy
+    </p>
+
+    <p>
+      Příklady těchto šablon naleznete v aplikační složce produktu Precision Helper v podsložce <i>Templates</i>.
+    </p>
+    <p style="margin-left:24px; text-align:left;">
+      Při výchozí instalaci na Windows 2000/XP je to složka:<br>
+      <i>"C:\Documents and Settings\%UserName%\Data aplikací\Precision\precisionhelper\Templates\"</i><br><br>
+      Při výchozí instalaci na Windows Vista (a vyšší) je to složka:<br>
+      <i>"C:\Users\%UserName%\AppData\Roaming\Precision\precisionhelper\Templates\"</i>
+    </p>
+    
+    <p>
+      Každá šablona musí být umístěna v samostatné složce, jejíž název navíc musí obsahovat identifikátor jazykového řezu coby příponu (např. "<i>test.en</i>", "<i>test.cs</i>", apod.).
+      Řídící soubor šablony musí mít vždy název "<b>WebHelp.ini</b>".
+      Syntaxe řídících souborů je velmi jednoduchá a je uvedena v rámci dodaných příkladů, takže pokud chcete vytvářet svoje vlastní šablony,
+      prostudujte si řídící soubory v dodaných příkladech. 
+    </p>
+    <p>
+      Zbytek šablony již mohou tvořit libovolné soubory, které chcete pro Vaši online nápovědu použít - tzn. soubory html, xml, xslt, css, js, atd.
+    </p>
+    <p>
+      Precision Helper umožňuje definovat speciální šablonu pro vytvoření tzv. <a href="toolsExportSingleDoc.htm">samostatného html dokumentu</a>. Tato šablona je vhodná pro pozdější konverzi
+      výsledného souboru do formátu <a href="ExportPDF.htm">Adobe PDF</a>.
+    </p>
+    
+    <p class="big" style="padding-top:8px;">
+      Další funkce v šablonách online nápovědy
+    </p>
+    <p>
+      <b>Standardní šablona online nápovědy</b>
+      a <b>Standardní šablona online nápovědy (se synchronizací témat a obsahu)</b> mají zabudovány následující doplňkové funkce: 
+    </p>
+    <ul>
+      <li>Automatické zvýraznění hledaných slov</li>
+      <li>Automatická synchronizace zobrazeného tématu a stromu obsahu</li>
+      <li>
+        Přímé nastavení se na zvolené téma z externí aplikace.<br />
+        Přestože je nápověda definována pomocí rámců (FRAMES), díky této funkci se můžete z Vašich aplikací odkazovat přímo
+        na požadované téma, a to pomocí odkazů ve tvaru<br />
+        &nbsp;&nbsp;&nbsp;"<i>c:\webhelp\index.htm#mytopic.htm</i>",<br />
+        &nbsp;&nbsp;&nbsp;"<i>c:\webhelp\index.htm#topics/mytopic.htm</i>",<br />
+        &nbsp;&nbsp;&nbsp;"<i>http://www.mysite.com/webhelp/index.php#mytopic.htm</i>", apod.
+        <br />
+        Odkaz na dané téma nápovědy je očekáván za znakem <b>#</b> (hash).         
+      </li>
+    </ul>                 
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. Všechna práva vyhrazena.
+  </div>
+</body>
+</html>

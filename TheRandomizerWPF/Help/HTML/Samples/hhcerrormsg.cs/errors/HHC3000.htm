@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><meta http-equiv="content-type" content="text/html; charset=windows-1250">
+<TITLE>HTML Help Compiler - Chyba: HHC3000</TITLE>
+
+
+ <!-- ============================================================== -->
+<!-- Author/Designer: Cheryl Lockett Zubak -->
+<!-- Artist: Marc Reed -->
+<!-- Work Write - User Assistance from WinHelp to the Web -->
+<!-- Entire contents copyright (C) 1996-1999, Work Write, Inc. and KeyWorks Software. All rights reserved. -->
+<!-- Contact: Cheryl Lockett Zubak at cheri@workwrite.com -->
+<!-- =============================================================== -->
+
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="../global/errors.css">
+
+</HEAD>
+
+<BODY>
+
+<p class="breadcrumb">Html Help Compiler - Příručka chybových hlášení</p>
+<hr>
+
+<H5>HHC3000: &lt;PARAM&gt; element je použit mimo &lt;OBJECT&gt; element.</H5>
+
+<P><B>Problém:</B> Kompilátor nalezl &lt;PARAM&gt; element, který není umístěn správně mezi dvojicí značek &lt;OBJECT&gt; &lt;/OBJECT&gt;.
+Element &lt;PARAM&gt; nastavuje parametry elementu &lt;OBJECT&gt; (typicky pro ovládání prvků ActiveX na stránce).</p>
+
+<p>Element &lt;PARAM&gt; umožňuje definovat hodnoty vlastností, jako je např. inicializace prvku HHCTRL.OCX. Pokud stránka obsahuje odkazy na související témata,
+pak by element &lt;OBJECT&gt; ovládající tento seznam, měl obsahovat následující element typu &lt;PARAM&gt;:</P>
+
+<blockquote>&lt;PARAM name="Command" value="Related Topics"&gt;</blockquote>
+
+<P><B>Výsledek:</B> Kompilátor bude ignorovat zbytek této značky, což by nemělo způsobovat problém, pokud nebudete používat
+element &lt;PARAM&gt; ke změnám odkazů na soubory či obrázku nebo k dynamickému přidávání odkazů na soubory nebo obrázky na stránce.</P>
+
+<P><B>Řešení:</B> Jestliže je element &lt;PARAM&gt; použit v rámci elementu &lt;APPLET&gt;, je toto chybové hlášení zavádějící.
+Jinak je ovšem nutné element &lt;PARAM&gt; najít a odstranit, aby mohla být nápověda zkompilována správně.</P>
+
+<hr><P CLASS="Copyright">
+Precision software & consulting<br><a href="http://www.be-precision.com" target="_blank">www.be-precision.com</a>
+</p>
+</BODY>
+</HTML>

@@ -1,0 +1,39 @@
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\Grammars\bin\Debug\Grammars.dll
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\Grammars\bin\Debug\Grammars.pdb
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\Grammars\bin\Debug\NCalc.dll
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\Grammars\bin\Debug\NLua.dll
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\Grammars\bin\Debug\Utility.dll
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\Grammars\bin\Debug\KeraLua.dll
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\Grammars\bin\Debug\Utility.pdb
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\Grammars\obj\Debug\Grammars.vbprojResolveAssemblyReference.cache
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\Grammars\obj\Debug\Grammars.Resources.resources
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\Grammars\obj\Debug\Grammars.vbproj.GenerateResource.Cache
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\Grammars\obj\Debug\Grammars.dll
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\Grammars\obj\Debug\Grammars.pdb
+C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\Grammars\bin\Debug\lua52.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\Debug\lua52.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\Debug\Grammars.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\Debug\Grammars.pdb
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\Debug\KeraLua.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\Debug\NCalc.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\Debug\NLua.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\Debug\Utility.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\Debug\Utility.pdb
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\obj\Debug\Grammars.vbprojResolveAssemblyReference.cache
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\obj\Debug\Grammars.Resources.resources
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\obj\Debug\Grammars.vbproj.GenerateResource.Cache
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\obj\Debug\Grammars.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\obj\Debug\Grammars.pdb
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF - Backup\Grammars\bin\Debug\lua52.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF - Backup\Grammars\bin\Debug\Grammars.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF - Backup\Grammars\bin\Debug\Grammars.pdb
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF - Backup\Grammars\bin\Debug\KeraLua.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF - Backup\Grammars\bin\Debug\NCalc.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF - Backup\Grammars\bin\Debug\NLua.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF - Backup\Grammars\bin\Debug\Utility.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF - Backup\Grammars\bin\Debug\Utility.pdb
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF - Backup\Grammars\obj\Debug\Grammars.vbprojResolveAssemblyReference.cache
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF - Backup\Grammars\obj\Debug\Grammars.Resources.resources
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF - Backup\Grammars\obj\Debug\Grammars.vbproj.GenerateResource.Cache
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF - Backup\Grammars\obj\Debug\Grammars.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF - Backup\Grammars\obj\Debug\Grammars.pdb

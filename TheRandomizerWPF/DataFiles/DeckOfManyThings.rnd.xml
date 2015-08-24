@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AssignmentGrammar">
+  <name>Deck of Many Things</name>
+  <author>Lance Boudreaux</author>
+  <description>Pulls a random card from the deck of many things.</description>
+  <category>Other</category>
+  <genre>Fantasy</genre>
+  <system>D&amp;D</system>
+  <parameters>
+    <parameter name="Version" display="Version" type="List" valueType="Label">
+      <option display="D&amp;D 1e greyhawk">greyhawk</option>
+      <option display="AD&amp;D 2e">add2e</option>
+      <option display="D&amp;D 3e">3e</option>
+      <option display="Custom">cust</option>
+    </parameter>
+  </parameters>
+  <supportsMaxLength>false</supportsMaxLength>
+  <items>
+    <item name="Start">[Version]</item>
+    <item name="3e">&lt;b&gt;Balance&lt;/b&gt; Change alignment instantly</item>
+    <item name="3e">&lt;b&gt;Comet&lt;/b&gt; Defeat the next monster single-handedly you meet to gain one level</item>
+    <item name="3e">&lt;b&gt;Donjon&lt;/b&gt; You are imprisoned, all gear and spells are stripped away</item>
+    <item name="3e">&lt;b&gt;Euryale&lt;/b&gt; -1 penalty to all saving throws</item>
+    <item name="3e">&lt;b&gt;The Fates&lt;/b&gt; Avoid any situation you choose ... once</item>
+    <item name="3e">&lt;b&gt;Flames&lt;/b&gt; Enmity between you and an outsider</item>
+    <item name="3e">&lt;b&gt;Fool&lt;/b&gt; Lose 10,000 experience points and you must draw again</item>
+    <item name="3e">&lt;b&gt;Gem&lt;/b&gt; Gain your choice of twenty-five pieces of jewelry or fifty gems</item>
+    <item name="3e">&lt;b&gt;Idiot&lt;/b&gt; Lose intelligence (permanent drain).  You may draw again.</item>
+    <item name="3e">&lt;b&gt;Jester&lt;/b&gt; Gain 10,000 experience or two more draws from the deck</item>
+    <item name="3e">&lt;b&gt;Key&lt;/b&gt; Gain a major magic weapon</item>
+    <item name="3e">&lt;b&gt;Knight&lt;/b&gt; Gain the service of a 4th level fighter</item>
+    <item name="3e">&lt;b&gt;Moon&lt;/b&gt; You are granted 1d4 wishes</item>
+    <item name="3e">&lt;b&gt;Rogue&lt;/b&gt; One of your friends turns against you</item>
+    <item name="3e">&lt;b&gt;Ruin&lt;/b&gt; Immediately lose all wealth and real property</item>
+    <item name="3e">&lt;b&gt;Skull&lt;/b&gt; Defeat Death or be forever destroyed</item>
+    <item name="3e">&lt;b&gt;Star&lt;/b&gt; Immediately gain a +2 inherent bonus to one ability</item>
+    <item name="3e">&lt;b&gt;Sun&lt;/b&gt; Gain beneficial medium wondrous item and 50,000xp</item>
+    <item name="3e">&lt;b&gt;Talons&lt;/b&gt; All magic items you possess disappear permanently</item>
+    <item name="3e">&lt;b&gt;Throne&lt;/b&gt; Gain 6 ranks of Diplomacy plus a small keep</item>
+    <item name="3e">&lt;b&gt;Vizier&lt;/b&gt; Know the answer to your next dilemma</item>
+    <item name="3e">&lt;b&gt;The Void&lt;/b&gt; Body functions but soul is trapped elsewhere</item>
+    <item name="cust">[2ofSpades] Immediately gain one experience level.</item>
+    <item name="cust">[2ofClubs] The character can now cast one (or one additional) cantrip per day.</item>
+    <item name="cust">[2ofHearts] The character's hit points increased by one hit die permanently.</item>
+    <item name="cust">[2ofDiamonds] All coins that the character is carrying increase to the next better coin type.</item>
+    <item name="cust">[3ofSpades] Every animal within a quarter mile begins seeking out the character to attack.</item>
+    <item name="cust">[3ofClubs] The character suffers a severe fear of violence for three days.</item>
+    <item name="cust">[3ofHearts] The character's hit points decrease by one hit die permanently (but not below 1).</item>
+    <item name="cust">[3ofDiamonds] All of the coins that the character is carrying decrease to the next lesser coin type.</item>
+    <item name="cust">[4ofSpades] One non-magical item the character is carrying gains a +2 bonus.</item>
+    <item name="cust">[4ofClubs] For a fortnight, the character avoids all attacks of opportunity.</item>
+    <item name="cust">[4ofHearts] The character's charisma increases by one to four points permanently.</item>
+    <item name="cust">[4ofDiamonds] The character is granted one wish.</item>
+    <item name="cust">[5ofSpades] A sudden and violent earthquake strikes the area the character is in.</item>
+    <item name="cust">[5ofClubs] The character's alignment shifts drastically.</item>
+    <item name="cust">[5ofHearts] The character has a premonition of a close loved one's eminent and near death.</item>
+    <item name="cust">[5ofDiamonds] All of the character's carried wealth vanishes.</item>
+    <item name="cust">[6ofSpades] Natural armor is increased by one.</item>
+    <item name="cust">[6ofClubs] The next enemy that character defeats single handedly grants one experience level.</item>
+    <item name="cust">[6ofHearts] An animal takes a liking to the character joining him as a pet.</item>
+    <item name="cust">[6ofDiamonds] The character's constitution is increased by one to four permanently</item>
+    <item name="cust">[7ofSpades] All magical items in the character's possession become mundane.</item>
+    <item name="cust">[7ofClubs] The character loses one to four points of wisdom permanently.</item>
+    <item name="cust">[7ofHearts] The character shrinks down to the next lower size.</item>
+    <item name="cust">[7ofDiamonds] All of the magical properties of the character's most powerful artifacts disappear.</item>
+    <item name="cust">[8ofSpades] One nature based skill gains one to four points.</item>
+    <item name="cust">[8ofClubs] Once per day, the character can choose to have advantage on one roll.</item>
+    <item name="cust">[8ofHearts] The next non-enemy the character encounters will immediately befriend the character.</item>
+    <item name="cust">[8ofDiamonds] All non-magical items carried by the character gain a +1 bonus.</item>
+    <item name="cust">[9ofSpades] The character's natural armor is reduced by one even if it leads to a negative natural armor.</item>
+    <item name="cust">[9ofClubs] The character becomes overwhelmed with violence attacking anyone and anything in the viacinity until subdued.</item>
+    <item name="cust">[9ofHearts] The character becomes afflicted by a deadly disease.</item>
+    <item name="cust">[9ofDiamonds] All non-magical metal items carried by the character turn to rust.</item>
+    <item name="cust">[10ofSpades] The character gains one to four points in strength permanently.</item>
+    <item name="cust">[10ofClubs] For two to eight days, the character can sense the intentions of others.</item>
+    <item name="cust">[10ofHearts] A random group of local creatures claims you as their leader.</item>
+    <item name="cust">[10ofDiamonds] All of the character's wealth is doubled.</item>
+    <item name="cust">[JofSpades] The character loses sight in one eye.</item>
+    <item name="cust">[JofClubs] The ruler of the land the character hails from finds special favor in the character.</item>
+    <item name="cust">[JofHearts] The character loses hearing in one ear.</item>
+    <item name="cust">[JofDiamonds] The character's base attack bonus is increased by one to four points.</item>
+    <item name="cust">[QofSpades] The character's age increases by fifty percent.</item>
+    <item name="cust">[QofClubs] The character's age decreases by fifty percent.</item>
+    <item name="cust">[QofHearts] The character gains advantage on all friendly (non-intimidation) charisma rolls.</item>
+    <item name="cust">[QofDiamonds] The character becomes a sheep for two to eight days.</item>
+    <item name="cust">[KofSpades] The character gains advantage on attack roles against enemies one or more sizes larger.</item>
+    <item name="cust">[KofClubs] The character becomes obsessed with being loyal and kind to the person in the group they are least amiable with.</item>
+    <item name="cust">[KofHearts] The character immediately attempts to commit suicide by the closest means possible.</item>
+    <item name="cust">[KofDiamonds] All magical weapons the character owns gain a +1 advantage.</item>
+    <item name="cust">[AofSpades] The character is transported to an alternate plane where he must best death in a contest or die.</item>
+    <item name="cust">[AofClubs] The character comes into possession of a bag that is eternally filled with berries.</item>
+    <item name="cust">[AofHearts] The character meets the love of their life.</item>
+    <item name="cust">[AofDiamonds] The character is inexplicably granted land by the local ruler.</item>
+    <item name="cust">[JokerBlack] Lose one level and draw again twice</item>
+    <item name="cust">[JokerRed] Gain one level and draw again</item>
+    <item name="greyhawk">[AofHearts] Immediately gain 50,000 experience points</item>
+    <item name="greyhawk">[KofHearts] Gain Miscellaneous Magic item from the Table of your choice</item>
+    <item name="greyhawk">[QofHearts] Gain 1-3 wishes to be taken when you like</item>
+    <item name="greyhawk">[JofHearts] Help from a Superhero with +3 armor, shield, and sword for one hour when you call for him</item>
+    <item name="greyhawk">[AofDiamonds] Immediately gain map to richest treasure on any dungeon level</item>
+    <item name="greyhawk">[KofDiamonds] Gain 5-30 pieces of jewelry immediately</item>
+    <item name="greyhawk">[QofDiamonds] Gain Scroll of 7 Spells, no 1st level spells on it</item>
+    <item name="greyhawk">[JofDiamonds] Add 1 point to any ability score you wish, i.e., strength, intelligence, wisdom, dexterity, etc.</item>
+    <item name="greyhawk">[AofSpades] Lose one experience level immediately</item>
+    <item name="greyhawk">[KofSpades] Lord with +4 armor, shield, and sword attacks you* (*all magic items disappear when attacker is defeated)</item>
+    <item name="greyhawk">[QofSpades] Immediate death, no saving throw</item>
+    <item name="greyhawk">[JofSpades] Monster from the 5th Level Underworld Monster Table attacks you by surprise</item>
+    <item name="greyhawk">[AofClubs] Change alignment immediately</item>
+    <item name="greyhawk">[KofClubs] Lose your most prized magic item immediately</item>
+    <item name="greyhawk">[QofClubs] Turn to stone, no saving throw</item>
+    <item name="greyhawk">[JofClubs] Lose 1 point from your Prime Requisite</item>
+    <item name="greyhawk">[JokerBlack] Gain 25,000 experience points immediately or select two additional cards</item>
+    <item name="greyhawk">[JokerRed] Gain 25,000 experience points immediately or select two additional cards</item>
+    <item name="add2e">&lt;b&gt;Sun&lt;/b&gt; Gain beneficial miscellaneous magic item and 50,000 experience points</item>
+    <item name="add2e">&lt;b&gt;Moon&lt;/b&gt; You are granted 1-4 wishes</item>
+    <item name="add2e">&lt;b&gt;Star&lt;/b&gt; Immediately gain 2 points on your major ability</item>
+    <item name="add2e">&lt;b&gt;Comet&lt;/b&gt; Defeat next monster you meet to gain 1 level</item>
+    <item name="add2e">&lt;b&gt;Vizier&lt;/b&gt; Know the answer to your next dilemma</item>
+    <item name="add2e">&lt;b&gt;Throne&lt;/b&gt; Gain charisma of 18 and a small keep</item>
+    <item name="add2e">&lt;b&gt;Key&lt;/b&gt; Gain a treasure map plus 1 magic weapon</item>
+    <item name="add2e">&lt;b&gt;Knight&lt;/b&gt; Gain service of a 4th level fighter</item>
+    <item name="add2e">&lt;b&gt;Gem&lt;/b&gt; Gain your choice of 50 jewelry or 50 gems</item>
+    <item name="add2e">&lt;b&gt;Fates&lt;/b&gt; Avoid any situation you choose … once</item>
+    <item name="add2e">&lt;b&gt;The Void&lt;/b&gt; Body functions but soul is trapped elsewhere</item>
+    <item name="add2e">&lt;b&gt;Flames&lt;/b&gt; Enmity between you and a devil</item>
+    <item name="add2e">&lt;b&gt;Skull&lt;/b&gt; Defeat Death or be forever destroyed</item>
+    <item name="add2e">&lt;b&gt;Talons&lt;/b&gt; All magic items you possess are torn from you</item>
+    <item name="add2e">&lt;b&gt;Idiot&lt;/b&gt; Lose 1-4 points of intelligence, you may draw again</item>
+    <item name="add2e">&lt;b&gt;Ruin&lt;/b&gt; Immediately lose all wealth and real property</item>
+    <item name="add2e">&lt;b&gt;Euryale&lt;/b&gt; Minus 3 on all saving throws vs. petrification</item>
+    <item name="add2e">&lt;b&gt;Rogue&lt;/b&gt; One of your henchmen turns against you</item>
+    <item name="add2e">&lt;b&gt;Balance&lt;/b&gt; Change alignment or be judged</item>
+    <item name="add2e">&lt;b&gt;Donjon&lt;/b&gt; You are imprisoned</item>
+    <item name="add2e">&lt;b&gt;JesterM/b&gt; Gain 10,000 experience points or 2 more draws from the deck</item>
+    <item name="add2e">&lt;b&gt;Fool&lt;/b&gt; Lose 10,000 experience points; draw again</item>
+  </items>
+  <imports>
+    <import>DeckOfCards</import>
+  </imports>
+</Grammar>

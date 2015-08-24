@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Topic (the page)</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Topic (the page)</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/topic.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      The page with a topic is displayed always, when you edit <a href="navBar_TOC.htm">the item of contents</a> or the <a href="navBar_IDX.htm">keyword</a>.
+    </p>
+    <img src="../img/ss_topic.jpg" class="ssright"/>
+    <p>
+      The <a href="navBar_TOC.htm">table of contents</a> navigation panel (resp. <a href="navBar_IDX.htm">index of keywords</a> navigation panel) and the topic page is closely linked,
+      and in fact constitute a whole, that can quickly and effectively define the help contents (or the index of keywords).
+    </p>
+    <p>
+      The most important options and actions, concerning the editing of contents, index and topics, are available also at <a href="ribbonBar.htm">ribbon bar</a> (the Contents tab, resp. the Index tab).
+    </p>
+    <p>
+      <i>Information:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;Unless otherwise specified, the following described actions and options are available as when editing the content item, so when editing the keyword in the index.</i>
+    </p>
+
+    <p class="big" style="padding-top:8px;">
+     <a name="tabs"></a> Preview and Source
+    </p>
+    <p>
+      At the bottom of the topic page you can find two tabs - <b>Preview</b> and <b>Source</b>.
+      With the help of them you can switch between the topic preview and the <b>built-in editor</b> of its source code.
+      Switching can also be done by using the keyboard shortcut <b>F12</b>.
+      This shortcut switches also into the TOC tree (or Index tree), that allows an easier navigation between these three elements of the user interface, using the keyboard.      
+      If you want to switch only between the preview and the source code, use <b>Shift+F12</b> shortcut.  
+    </p>
+
+
+    <p class="big" style="padding-top:8px;">
+     <a name="topicsel"></a> Selecting a topic
+    </p>
+    <ul class="shr">
+      <li><b>Select file in project</b> - selecting a topic via <a href="dialogPrjFiles.htm">Project file selection dialog</a></li>
+      <li><b>Select file</b> - selecting a topic via system open file dialog</li>
+      <li><b>Enter path or url</b> - entering the topic path or the url manualy (the dialog contains also the combo box with all the topics defined anywhere in the project)</li>
+      <li><b>Create a new topic from template</b> - creates a new topic file, based on selected template, in the location, that you choose.
+        <a href="dialogPrjFiles.htm">Template selection dialog</a> is displayed first, and then the system file dialog
+        is displayed to select the file name and the path for newly created topic.</li>      
+      <li><b>Create a new topic from existing file</b> - creates a new topic file in location, that you select, by copying an existing topic file, that you choose.
+        For the existing topic file selection is displayed the <a href="dialogPrjFiles.htm">Project file selection dialog</a> and then the system open file dialog
+        is displayed to select the file name and the path for newly created topic.</li>
+      <li><b>Create a new blank topic</b> - creates a new blank topic file in location, that you select</li>
+      <li><b>Select from external help</b> - selecting a topic, that is a part of the external help file (see the <a href="dialogPrjFiles.htm">Project file selection dialog</a>)</li>
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Note:<br>&nbsp;&nbsp;&nbsp;&nbsp;Precision Helper remembers the last "Select a topic" option (except the option "Include another contents")
+        and offers this as the default in whole application.</i></li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+     Saving the topic as a template 
+    </p>
+    <ul class="shr">
+      <li><b>Save as template</b> - by this option you can save any topic as a template for later use.
+          Precision Helper automatically detects the styles, images, and other files, that are used in the topic,
+          and saves them together with the topic file into the folder of newly created template.</li>
+    </ul>
+    
+    <p class="big" style="padding-top:8px;">
+     Selecting a topic - <font color="#880000">content editing options</font>
+    </p>
+    <ul class="shr">
+      <a name="toctopicsel"></a>
+      <li><b>Include another contents</b> - merges the current structure with an <a href="pageMergeFiles.htm">external table of contents</a>.
+          You can choose another contents file (<i>.hhc</i>), or the link to the table of contents, that is a part of the <a href="dialogPrjFiles.htm">external help</a> file.</li>
+      <li><b>Clear (make heading)</b> - cleans the topic link, so the item becomes a heading</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+     Selecting a topic - <font color="#880000">index editing options</font>
+    </p>
+    <ul class="shr">
+      <li><b>Is a popup list of topic links</b> - this option defines the current index item as popup list</li>
+      <li><b>Is an item of popup list</b> - this option defines the current index item as a child of the popup list (see above)</li>
+      <li><b>Is a link to another keyword</b> - defines the selected keyword as a link to another keyword. Linked keyword can be edited in the <a href="helpBar_OI.htm">Object Inspector</a>.</li>
+    </ul>
+
+    <a name="topiceditor"></a>
+    <p class="big" style="padding-top:8px;">
+      Topic editor (embedded)
+    </p>
+    <p>
+      Editor offers regularly used options such as      
+    </p>
+    <ul class="shr">
+      <li><b>Search and replace text</b></li>
+      <li><b>Syntax highlighting</b> - currently used syntax highlighting scheme can be change in <a href="dialogOptions.htm#style">Options dialog</a>.
+             The scheme itself is defined inside a special configuration file. You can create your own, customized configuration files for syntax highlighting,
+             code completion and keyboard shortcuts.</li>
+      <li><b>Code completion window</b> - it is <a href="dialogOptions.htm">displayed automatically</a> or by the <b>Ctrl+Space</b> hot-key.
+        The completion items are defined inside the current syntax highlighting scheme configuration file.
+        </li>
+      <li><b>Special keyboard shortcuts</b> - they allows you to insert the text and code snippets by pressing some of the predefined hot-keys.
+          For example, <b>Ctrl+B</b> inserts or applies the <b>bold tag</b> to the selected text,
+          <b>Alt+End</b> ends the current tag, etc. The shortcuts are defined inside the current syntax highlighting scheme configuration file.</li>
+      <li><b>Application extensions (add-ons)</b> - ie. "<b>Insert current date</b>", <b>HTML Tidy</b>, etc. Add-ons are available through the editor context menu,
+        as well as via the code completion window.</li>
+    </ul>
+    <p>
+      Other features can be found in the editor's context menu.
+    </p>
+
+    <p class="big" style="padding-top:8px;">
+      More topic editing options
+    </p>
+    <ul class="shr">
+      <li><b>Inspector</b> - shows the <a href="helpBar_OI.htm">Object Inspector</a>, where you can edit <b>properties</b> of current topic as well as the properties
+          of whole table of contents (resp. index of keywords)</li>
+      <li><b>Edit</b> - opens the current topic in associated <a href="dialogOptions.htm">external editor</a>. In drop down menu of the "Edit" button,
+          there are all associated applications available (this means the predefined <a href="dialogOptions.htm#mtools">editor and browser</a>
+          and applications that are associated with the extension of currently selected file).</li>
+      <li><a name="quickkeys"></a> <b>Keywords</b> - panel in the <a href="helpBar_OI.htm">Object Inspector</a> tab, that is used for <b>quick assignment of keywords</b>.
+          You can simply check the keyword to assign it to a topic, or you can add a new keywords via the panel popup menu.</li>
+      <li style="list-style-type:none"></li>
+      <li style="list-style-type:none"><i>Tip:<br>&nbsp;&nbsp;&nbsp;&nbsp;When you select a text anywhere in displayed topic, and then you select the option <b>Add key</b>
+          in the "Keywords panel", the selected text will be added as a new keyword.</i></li>
+
+      <li style="list-style-type:none"></li>
+      <li><b>Print</b> - prints the current topic</li>
+      <li><b>Preview</b> - print preview of current topic</li>
+      <li><b>Find</b> - finds text on currently shown topic page</li>
+      <li><b>Text size</b> - option for displayed text size of current topic page</li>
+      <li><b>Zoom in</b> - zooms the topic page in</li>
+      <li><b>Zoom out</b> - zooms the topic page out</li>
+      <li style="list-style-type:none"></li>
+      <li><b>Backward</b> - goes backward in the browsing history of displayed topics</li>
+      <li><b>Forward</b> - goes forward in the browsing history of displayed topics</li>
+      <li><b>Refresh</b> - refreshes current topic view</li>
+      <li><b>Synchronize</b> - synchronizes the table of contents with currenlty displayed topic</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Topic properties in Object Inspector <font color="#880000">(editing the contents)</font>
+    </p>
+    <ul class="shr">
+      <li><b>Label</b> - label of the content item</li>
+      <li><b>Icon</b> - the content item icon</li>
+      <li><b>Icon as new</b> - the "new flag" for an icon (a small star image will be displayed in the icon)</li>
+      <li><b>Merged contents</b> - link to merged table of contents (see <a href="#toctopicsel">Include another contents</a>)</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Topic properties in Object Inspector <font color="#880000">(editing the index)</font>
+    </p>
+    <ul class="shr">
+      <li><b>Keyword</b> - the keyword text in the index</li>
+      <li><b>Link to another keyword</b> - the linked keyword text for items with "<i>Is link to another keyword"</i> flag (see above)</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      <a name="oi"></a> Other topic properties
+    </p>
+    <ul class="shr">
+      <li><b>Context ID</b> - integer identifiers of context-sensitive help (read-only). Click on the associated button (or double-click on the field)
+          to navigate at this topic in the <a href="pageMap.htm">Context help editor</a>.</li>
+      <li><b>Symbolic ID</b> - symbolic identifiers (aliases) of context-sensitive help (read-only). Click on the associated button (or double-click on the field)
+          to navigate at this topic in the <a href="pageMap.htm">Context help editor</a>.</li>
+      <li><b>Link (topic file or url)</b> - the filename or the url that current topic links to</li>
+      <li><b>Alternate link</b> - alternate link, that will be used in case of unavailability of the main link</li>
+      <li><b>Window ID</b> - the <a href="pageWinTypes.htm">window type</a> identifier, where the topic will be displayed</li>
+      <li><b>Frame ID</b> - the frame identifier, where the topic will be displayed</li>
+      <li><b>Comment</b> - author's comment about the content item (resp. the index item)</li>
+      <li style="list-style-type:none"></li>
+      <li><i>Not implemented</i> - section with parameters, that are listed here, because of the full support of HHP format only.
+          Unfortunately the support for these parameters is not fully implemented even in the system <i>CHM Help viewer</i>.</li>
+    </ul>
+
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. All rights reserved.
+  </div>
+</body>
+</html>

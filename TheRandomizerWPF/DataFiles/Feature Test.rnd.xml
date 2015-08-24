@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar">
+	<name>Feature Test</name>
+	<author>Lance Boudreaux</author>
+	<description>Test new features</description>
+	<category>Test</category>
+	<parameters>
+		<parameter type="Text" display="Text Parameter" name="xsize" default="100">
+			Large sizes (>200) can take a long time to complete.
+			Value must be greater than 10.
+		</parameter>
+		<parameter name="Gender" display="Combo Parameter" type="List" valueType="Label">
+			<option>Any</option>
+			<option>Male</option>
+			<option>Female</option>
+		</parameter>
+		<parameter type="CheckBox" display="Check Box Parameter" name="gridlines" default="True" />
+	</parameters>
+	<supportsMaxLength>true</supportsMaxLength>
+	<items>
+		<item name="Start">[HelloWorld]</item>
+		<item name="HelloWorld">Łuk zwykły</item>
+		<item name="GoodbyeWorld">Goodbye World!</item>
+		<item name="Test">[="[HelloWorld]"]</item>
+		<!--<item name="Test">[="[GoodbyeWorld"]</item>-->
+	</items>
+</Grammar>

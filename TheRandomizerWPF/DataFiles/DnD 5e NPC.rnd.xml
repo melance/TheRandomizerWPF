@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar">
+	<name>NPC (D&amp;D 5e)</name>
+	<author>Lance Boudreaux</author>
+	<description>An NPC generator for D&amp;D 5e.</description>
+	<category>NPC</category>
+	<genre>Fantasy</genre>
+	<system>D&amp;D 5e</system>
+	<parameters>
+	</parameters>
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start">
+		<![CDATA[<b>Race:</b> [Race]<br />
+<b>Gender:</b> [Gender]<br />
+<b>Occupation:</b> [Occupation]<br />
+<b>Appearance:</b> [Appearance]<br />
+<b>Abilities:</b> <br />
+<b style="margin-left:2em;">Strength:</b> [=Roll(4,6,'DL')]<br />
+<b style="margin-left:2em;">Dexterity:</b> [=Roll(4,6,'DL')]<br />
+<b style="margin-left:2em;">Constitution:</b> [=Roll(4,6,'DL')]<br />
+<b style="margin-left:2em;">Intelligence:</b> [=Roll(4,6,'DL')]<br />
+<b style="margin-left:2em;">Wisdom:</b> [=Roll(4,6,'DL')]<br />
+<b style="margin-left:2em;">Charisma:</b> [=Roll(4,6,'DL')]<br />
+<b>Talent:</b> [Talent]<br />
+<b>Mannerism:</b> [Mannerism]<br />
+<b>Interaction:</b> [Interaction]<br />
+<b>Ideal:</b> [Ideal]<br />
+<b>Bond:</b> [Bond+BondTen]<br />
+<b>Flaw:</b> [Flaw]<br />
+		]]></item>
+
+		<item name="Race" weight="50">Human</item>
+		<item name="Race" weight="10">Elf</item>
+		<item name="Race" weight="5">Half-Elf</item>
+		<item name="Race" weight="2">Half-Orc</item>
+		<item name="Race" weight="10">Dwarf</item>
+		<item name="Race" weight="5">Gnome</item>
+		<item name="Race" weight="2">Dragonborn</item>
+		<item name="Race" weight="2">Tiefling</item>
+		<item name="Race" weight="10">Halfling</item>
+		<item name="Race" weight="2">Aasimar</item>
+
+		<item name="Gender">Male</item>
+		<item name="Gender">Female</item>
+		
+		<item name="Appearance">Distinctive [Jewelry]</item>
+		<item name="Appearance">Piercings</item>
+		<item name="Appearance">Flamboyant clothing</item>
+		<item name="Appearance">Outlandish clothing</item>
+		<item name="Appearance">Formal attire</item>
+		<item name="Appearance">Ragged clothes</item>
+		<item name="Appearance">Pronounced scar on their [Scar]</item>
+		<item name="Appearance">Missing [BodyPart]</item>
+		<item name="Appearance">[EyeColor] eyes</item>
+		<item name="Appearance">Tattoos</item>
+		<item name="Appearance">Birthmark</item>
+		<item name="Appearance">[SkinColor] skin</item>
+		<item name="Appearance">Bald</item>
+		<item name="Appearance">Braided beard</item>
+		<item name="Appearance">Braided hair</item>
+		<item name="Appearance">[EyeColor] hair</item>
+		<item name="Appearance">Eye twitch</item>
+		<item name="Appearance">Distinctive nose</item>
+		<item name="Appearance">Distinctive posture</item>
+		<item name="Appearance">Exceptionally beautiful</item>
+		<item name="Appearance">Exceptoinally ugly</item>
+
+		<item name="Talent">Plays a musical instrument</item>
+		<item name="Talent">Speaks several languages fluently</item>
+		<item name="Talent">Unbelievably lucky</item>
+		<item name="Talent">Perfect memory</item>
+		<item name="Talent">Great with animals</item>
+		<item name="Talent">Great with children</item>
+		<item name="Talent">Great at solving puzzles</item>
+		<item name="Talent">Great at one game</item>
+		<item name="Talent">Great at impersonations</item>
+		<item name="Talent">Draws beautifully</item>
+		<item name="Talent">Paints beautifully</item>
+		<item name="Talent">Sings beautifully</item>
+		<item name="Talent">Drinks everyone under the table</item>
+		<item name="Talent">Expert carpenter</item>
+		<item name="Talent">Expert cook</item>
+		<item name="Talent">Expert dart thrower and rock skipper</item>
+		<item name="Talent">Expert juggler</item>
+		<item name="Talent">Skilled actor and master of disguise</item>
+		<item name="Talent">Skilled dancer</item>
+		<item name="Talent">Knows thieve's cant</item>
+		<item name="Talent">Talentless</item>
+
+		<item name="Mannerism">Prone to singing, whistling, or humming quietly</item>
+		<item name="Mannerism">Speaks in rhyme or some other peculiar way</item>
+		<item name="Mannerism">Particularly low voice</item>
+		<item name="Mannerism">Particularly high voice</item>
+		<item name="Mannerism">Slurs words</item>
+		<item name="Mannerism">Has a lisp</item>
+		<item name="Mannerism">Stutters</item>
+		<item name="Mannerism">Enunciates overly clearly</item>
+		<item name="Mannerism">Speaks loudly</item>
+		<item name="Mannerism">Whispers</item>
+		<item name="Mannerism">Uses flowerly speech</item>
+		<item name="Mannerism">Uses long words</item>
+		<item name="Mannerism">Frequently uses the wrong word</item>
+		<item name="Mannerism">Uses colorful oaths and exclamations</item>
+		<item name="Mannerism">Makes constant jokes and puns</item>
+		<item name="Mannerism">Prone to predictions of doom</item>
+		<item name="Mannerism">Speaks very slowly</item>
+		<item name="Mannerism">Speaks very quickly</item>
+		<item name="Mannerism">Emphasises random words</item>
+		<item name="Mannerism">Fidgets</item>
+		<item name="Mannerism">Squints</item>
+		<item name="Mannerism">Wrings hands</item>
+		<item name="Mannerism">Stares into the distance</item>
+		<item name="Mannerism">Chews something</item>
+		<item name="Mannerism">Paces</item>
+		<item name="Mannerism">Taps fingers</item>
+		<item name="Mannerism">Bites fingernails</item>
+		<item name="Mannerism">Twirls hair or tugs beard</item>
+		<item name="Mannerism">Rubs belly</item>
+		<item name="Mannerism">Rubs head</item>
+		<item name="Mannerism">Taps feet</item>
+		<item name="Mannerism">Doesn't make eye contact</item>
+		<item name="Mannerism">Stares</item>
+
+		<item name="Interaction">Argumentative</item>
+		<item name="Interaction">Arrogant</item>
+		<item name="Interaction">Blustering</item>
+		<item name="Interaction">Rude</item>
+		<item name="Interaction">Curious</item>
+		<item name="Interaction">Friendly</item>
+		<item name="Interaction">Honest</item>
+		<item name="Interaction">Hot temptered</item>
+		<item name="Interaction">Irritable</item>
+		<item name="Interaction">Ponderous</item>
+		<item name="Interaction">Quiet</item>
+		<item name="Interaction">Suspicious</item>
+		<item name="Interaction">Loud</item>
+		<item name="Interaction">Aloof</item>
+		<item name="Interaction">Serious</item>
+
+		<item name="Ideal">Beauty</item>
+		<item name="Ideal">Charity</item>
+		<item name="Ideal">Greater good</item>
+		<item name="Ideal">Life</item>
+		<item name="Ideal">Respect</item>
+		<item name="Ideal">Self-sacrifice</item>
+		<item name="Ideal">Domination</item>
+		<item name="Ideal">Greed</item>
+		<item name="Ideal">Might</item>
+		<item name="Ideal">Pain</item>
+		<item name="Ideal">Retribution</item>
+		<item name="Ideal">Slaughter</item>
+		<item name="Ideal">Community</item>
+		<item name="Ideal">Fairness</item>
+		<item name="Ideal">Honor</item>
+		<item name="Ideal">Logic</item>
+		<item name="Ideal">Responsibility</item>
+		<item name="Ideal">Tradition</item>
+		<item name="Ideal">Change</item>
+		<item name="Ideal">Creativity</item>
+		<item name="Ideal">Freedom</item>
+		<item name="Ideal">Independence</item>
+		<item name="Ideal">No limits</item>
+		<item name="Ideal">Whimsy</item>
+		<item name="Ideal">Balance</item>
+		<item name="Ideal">Knowledge</item>
+		<item name="Ideal">Live and let live</item>
+		<item name="Ideal">Moderation</item>
+		<item name="Ideal">Neutrality</item>
+		<item name="Ideal">People</item>
+		<item name="Ideal">Aspiration</item>
+		<item name="Ideal">Discovery</item>
+		<item name="Ideal">Glory</item>
+		<item name="Ideal">Nation</item>
+		<item name="Ideal">Redemption</item>
+		<item name="Ideal">Self-knowledge</item>
+
+		<item name="Bond">Dedicated to fulfilling a personal life goal</item>
+		<item name="Bond">Protective of close family members</item>
+		<item name="Bond">Protective of colleagues or compatriots</item>
+		<item name="Bond">Loyal to a benefactor, patron, or employer</item>
+		<item name="Bond">Captivated by a romantic interest</item>
+		<item name="Bond">Drawn to a special place</item>
+		<item name="Bond">Protective of a sentimental keepsake</item>
+		<item name="Bond">Protective of a valuable possession</item>
+		<item name="Bond">Out of revenue</item>
+		<item name="BondTen">[Bond] [Bond]</item>
+
+		<item name="Flaw">Forbidden love or susceptibility to romance</item>
+		<item name="Flaw">Enjoys decadent pleasure</item>
+		<item name="Flaw">Arrogance</item>
+		<item name="Flaw">Envies another creature's possessions or station</item>
+		<item name="Flaw">Overpowering greed</item>
+		<item name="Flaw">Prone to rage</item>
+		<item name="Flaw">Has a powerful enemy</item>
+		<item name="Flaw">Specific phobia</item>
+		<item name="Flaw">Shameful or scandalous history</item>
+		<item name="Flaw">Secret crime or misdeed</item>
+		<item name="Flaw">Possession of forbidden lore</item>
+		<item name="Flaw">Foolhardy bravery</item>
+
+			<item name="Jewelry">earrings</item>
+		<item name="Jewelry">necklace</item>
+		<item name="Jewelry">circle</item>
+		<item name="Jewelry">bracelet</item>
+		<item name="Jewelry">broach</item>
+		<item name="Jewelry">ring</item>
+
+		<item name="Scar">face</item>
+		<item name="Scar">ceek</item>
+		<item name="Scar">neck</item>
+		<item name="Scar">hand</item>
+		<item name="Scar">arm</item>
+
+		<item name="BodyPart">ear</item>
+		<item name="BodyPart">teeth</item>
+		<item name="BodyPart">eye</item>
+		<item name="BodyPart">finger</item>
+		<item name="BodyPart">hand</item>
+		<item name="BodyPart">arm</item>
+		<item name="BodyPart">leg</item>
+		<item name="BodyPart">legs</item>
+		<item name="BodyPart">arms</item>
+		<item name="BodyPart">nose</item>
+
+		<item name="EyeColor">Ice blue</item>
+		<item name="EyeColor">Emerald green</item>
+		<item name="EyeColor">Red</item>
+		<item name="EyeColor">Purple</item>
+		<item name="EyeColor">Golden</item>
+		<item name="EyeColor">Black</item>
+		<item name="EyeColor">Yellow</item>
+		<item name="EyeColor">Burgundy</item>
+
+		<item name="SkinColor">Alabaster</item>
+		<item name="SkinColor">Golden</item>
+		<item name="SkinColor">Bronze</item>
+		<item name="SkinColor">Black</item>
+	</items>
+	<imports>
+		<import>Medeival Occupations</import>
+	</imports>
+</Grammar>

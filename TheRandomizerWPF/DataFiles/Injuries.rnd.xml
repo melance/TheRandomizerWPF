@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar">
+	<name>Injuries</name>
+	<author>Lance Boudreaux</author>
+	<description>Creates random injuries from minor to permanent.</description>
+	<category>Other</category>
+	<parameters>
+	    <parameter name="Severity" display="Severity" type="List" valueType="Label">
+			<option>Any</option>
+			<option>Minor</option>
+			<option>Major</option>
+			<option>Permanent</option>
+		</parameter>
+	</parameters>
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start">[Severity]</item>
+		
+		<item name="Any">[Minor]</item>
+		<item name="Any">[Major]</item>
+		<item name="Any">[Permanent]</item>
+		
+		<item name="Minor">Black eye</item>
+		<item name="Minor">Bruised ribs</item>
+		<item name="Minor">Exhaustion</item>
+		<item name="Minor">1st degree burn</item>
+		<item name="Minor">2nd degree burn</item>
+		<item name="Minor">Minor concussion</item>
+		<item name="Minor">Sprained ankle</item>
+		<item name="Minor">Sprained hand</item>
+		<item name="Minor">Sprained wrist</item>
+		<item name="Minor">Stunned</item>
+		<item name="Minor">Swollen eye</item>
+		<item name="Minor">Temporary tinnitus</item>
+		
+		<item name="Major">3rd degree burn</item>
+		<item name="Major">Abdominal contusion</item>
+		<item name="Major">Coma</item>
+		<item name="Major">Compound fractured [BodyPart]</item>
+		<item name="Major">Concussion</item>
+		<item name="Major">Cracked skull</item>
+		<item name="Major">Fractured [BodyPart]</item>
+		<item name="Major">Lost tooth</item>
+		<item name="Major">Puncture wound</item>
+		<item name="Major">Severe laceration</item>
+		<item name="Major">Slipped vertebrae</item>
+		<item name="Major">Unconscious</item>
+				
+		<item name="Permanent">4th degree burn</item>
+		<item name="Permanent">Blinded</item>
+		<item name="Permanent">Brain damage</item>
+		<item name="Permanent">Broken spine (paraplegic)</item>
+		<item name="Permanent">Broken spine (quadriplegic)</item>
+		<item name="Permanent">Deafened</item>
+		<item name="Permanent">Finger severed</item>
+		<item name="Permanent">Lost eye</item>
+		<item name="Permanent">Lost tongue</item>
+		<item name="Permanent">Severed [BodyPart]</item>
+		<item name="Permanent">Severed ear</item>
+		<item name="Permanent">Tinnitus</item>
+		
+		<item name="BodyPart">ankle</item>
+		<item name="BodyPart">arm</item>
+		<item name="BodyPart">foot</item>
+		<item name="BodyPart">jaw</item>
+		<item name="BodyPart">leg</item>
+		<item name="BodyPart">hand</item>
+		<item name="BodyPart">rib</item>
+		<item name="BodyPart">wrist</item>
+	</items>
+</Grammar>

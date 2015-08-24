@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Dice Roller Grammar Structure</title>
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+	<link rel="stylesheet" type="text/css" href="../css/the_randomizer.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Dice Roller Grammar Structure</h3>
+    </div>
+  </div>  
+  <div id="main">
+   <p>Dice Roll Grammar Files are used to program dice rolls, especially those that may be slightly more complicated such as rolling stats for a character. 
+   The following information is specific to Duce Roll Grammar Files. 
+   See the <a href="Grammar File Structure.htm">Grammar Files</a> help section for common information about all Grammar Files.</p>
+
+	<h2>Function</h2>
+	<p>Each function acts as a possible set of dice rolls. 
+	Multiple functions are only available if there is a parameter to let the user select which function to use, otherwise; 
+	the first function is always used. A function consists of a series of dice rolls separated by new lines.</p>
+
+	<p class="big">Variables</p>
+	<p>You may assign the results of a calculation to a variable to use later using the following format:</p>
+	<code>VariableName:=Calculation</code>
+	<br /><br />
+	<p class="sub">Example:</p>
+	<pre><code>Strength:=Roll(3,6)</code></pre>
+
+	<p class="big">The Roll Method</p>
+	<p>The roll method is the basis of the Dice Roll Grammar. &nbsp;It generates a simulated dice roll and returns the results. &nbsp;There are several options that can be given to the Roll call in order to affect how the dice are handled. The roll method is called using the following format:</p>
+	<code>Roll(Count,Die,[options])</code>
+	<br/><br />
+	<p class="sub">Examples:</p>
+	<pre><code>Roll(1,4) will roll 1 4-sided die
+Roll(4,10) will roll 4 10-sided dice</code></pre>
+	<br/>
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 3 Result: 3
+Die Results: 2, 5, 10, 8 Result: 25</code></pre>
+	<br />
+	
+	<p class="big">Roll Options</p>
+	<p>The following strings can be added as parameters to the Roll method after the number and die parameters</p>
+	<br />
+	
+	<p class="bold">Drop Lowest</p>
+	<p><b>Command String:</b> 'DL'</p>
+	<p>Drop the lowest die roll. This can be followed by a number to indicate the number of dice to drop.</p>
+	<br />
+	<p class="sub">Examples:</p>
+	<pre><code>Roll(2,20,'DL') will roll 2 20-sided dice and drop the lowest roll as is done with Advantage in D&amp;D 5e
+Roll(5,6,'DL',2) will roll 5 6-sided dice and drop the lowest 2 rolls</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 15, 10 Result: 15
+Die Results: 3, 4, 1, 6, 5 Result: 15</code></pre>
+	<br />
+	
+	<p class="bold">Drop Highest
+	<p><b>Command String:</b> 'DH'</p>
+	<p>Drop the highest die roll. This can be followed by a number to indicate the number of dice to drop.</p>
+	<br />
+	<p class="sub">Examples:</p>
+	<pre><code>Roll(2,20,'DH') will roll 2 20-sided dice and drop the highest roll as is done with Disadvantage in D&amp;D 5e
+Roll(5,10,'DH',4) will roll 5 10-sided dice and drop the highest 4 leaving only the lowest roll</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 15, 10 Result: 10
+Die Results: 2, 5, 1, 9, 10 Result: 1</code></pre>
+	<br />
+	
+	<p class="bold">Exploding Dice</p>
+	<p><b>Command String:</b> 'EX'</p>
+	<p>Exploding dice re-roll all maximum rolls and sums the results</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(4,10,'EX') will roll 4 10-sided dice and re-roll all 10's</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 4, 10, 3, 6 + 10 Result: 33</code></pre>
+	<br />
+	
+	<p class="bold">Compound Exploding Dice</p>
+	<p><b>Command String:</b> 'CX'</p>
+	<p>Compound exploding dice re-rolls all maximum rolls until none remain and adds the results</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(4,10,'CX') will roll 4 10-sided dice and re-roll all 10's</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 8, 10, 2, 10 + 10, 8 + 10 + 3 Result: 61</code></pre>
+	<br />
+	
+	<p class="bold">Re-roll Below</p>
+	<p><b>Command String</b> 'RB'</p>
+	<p>Re-roll below a given result</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(4,10,'RB',5) will roll 4 10-sided dice and re-roll all results under 5</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: <span class="rvts21">3<span class="rvts18">, 10, 5, <span class="rvts21">2<span class="rvts18"> + 6, 8 Result: 29</code></pre>
+	<br />
+	
+	<p class="bold">Over Target</p>
+	<p><b>Command String</b> 'GT'</p>
+	<p>Compare results to the target number provided looking for rolls greater than or equal to the target and return success or failure</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(3,10,'GT',6) will roll 3 10-sided dice and return success or failure depending on the number of rolls over 6 as is done in New World of Darkness games</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 1, 1, 6, 9, 10 Result: Success (3)</code></pre>
+	<br />
+	
+	<p class="bold">Under Target</p>
+	<p><b>Command String</b> 'LT'</p>
+	<p>Compare results to the target number provided looking for rolls under the target and return success or failure</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(2,20,'LT',10) will roll 2 20-sided dice and return success or failure depending on the number of rolls under 10.</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 10, 15 Result: Failure (-2)</code></pre>
+	<br />
+	
+	<p class="bold">Rule of Ones</p>
+	<p><b>Command String</b> 'R1'</p>
+	<p>For target rolls ('GT','LT') this enacts the rule of one where one's remove successes from the result</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(4,10,'GT',6,'R1') will roll 4 10-sided dice and remove successes equal to the number of one's rolled and return success or failure as is done in Old World of Darkness</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 1, 1, 10, 4 Result: Failure (-1)</code></pre>
+	<br />
+	
+<h2>An Example Roll Grammar File</h2>
+<pre><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xsi:type="DiceRoll"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;name&gt;D&amp;amp;D Attributes&lt;/name&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;authur&gt;Lance Boudreaux&lt;/authur&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;description&gt;Rolls the character attribute stats for D&amp;amp;D.&lt;/description&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;tags&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tag&gt;Dice Roll&lt;tag&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tag&gt;D&amp;amp;D&lt;tag&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tags&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;parameters&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;parameter name="RollFunction" display="Method" type="List" default="standard"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option display="3d6 in order"&gt;standard&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option display="3d6"&gt;3d6&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option display="4d6 drop lowest"&gt;4d6&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option display="5d6 drop 2 lowest"&gt;5d6&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option display="3d6 reroll 1's"&gt;3d6 Reroll&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option display="4d6 drop lowest reroll 1's"&gt;4d6 Reroll&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option display="5d6 drop lowest reroll 1's"&gt;5d6 Reroll&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/parameter&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/parameters&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;supportsMaxLength&gt;false&lt;/supportsMaxLength&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;function name="standard"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;![CDATA['STR ' + Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;'CON ' + Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;'DEX ' + Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;'INT ' + Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;'WIS ' + Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;'CHA ' + Roll(3,6)]]&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/function&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;function name="3d6"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;![CDATA[Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6)]]&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/function&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;function name="4d6"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;![CDATA[Roll(4,6,'DL')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL')]]&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/function&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;function name="5d6"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;![CDATA[Roll(5,6,'DL',2)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2)]]&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/function&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;function name="3d6 Reroll"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;![CDATA[Roll(3,6,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6,'RB')]]&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/function&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;function name="4d6 Reroll"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;![CDATA[Roll(4,6,'DL','RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL','RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL','RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL','RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL','RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL','RB')]]&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/function&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;function name="5d6 Reroll"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;![CDATA[Roll(5,6,'DL',2,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2,'RB')]]&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/function&gt;
+&lt;/Grammar&gt;</code></pre>
+<p></p>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+</body>
+</html>

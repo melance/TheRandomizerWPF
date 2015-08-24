@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Build (the editor)</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Build (the editor)</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/build.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      Precision Helper can define and store lists of projects selected for <b>batch compilation</b>.
+    </p>
+    <img src="../img/ss_builds.jpg" class="ssright"/>
+    <p>
+      <b>Predefined</b> and <b>stored</b> builds are available in <a href="navBar_Builds.htm">navigation panel</a>.
+      By selecting the desired item (a build) you open the appropriate <a href="pageBuilds.htm">editor page</a> with the list of projects used for this batch compilation.
+      You can edit this list with the help of options described below.
+    </p>
+    <p class="big" style="padding-top:8px;">
+      Build editor options
+    </p>
+    <ul class="shr">
+      <li>
+        Projects can be added to the list by the <b>Add projects</b> action (this adds all of your <a href="ProjectsList.htm">registered projects</a>)
+        and / or by dragging the selected project from the <a href="ProjectsList.htm">projects list</a>.
+      </li>
+      <li>
+	      Check the projects that you want to compile (and possibly save to a predefined compilation), uncheck the others.<br>
+	      If you want to find a project in a larger list, use the "<i>Search</i>" field (in the top right corner).
+	      This is a filtered searching, which also has an impact on it, which projects will be compiled and stored (see below).
+      </li>
+      <li>
+        Desired compilation format (CHM, WebHelp, ePUB, atd.) can be selected in an <a href="helpBar_OI.htm">Object Inspector</a>.
+        You can select the format as well, as its additional parameters there. 
+      </li>
+      <li>
+        Beside the <b>Run</b>, <b>Compile</b> and <b>View</b> options, that are intended only for the currently selected project in the list (and their behavior is the same as for the currently open project)
+        there is a <b>Compile all</b> action, that gradually compile all <b>visible and CHECKED</b> projects.
+      </li>
+      <li>
+        The last column in the list indicates the <b>state of compilation</b> for each project. So, during the batch compilation you are immediately informed about correctly compiled projects, as well as about errors.
+      </li>
+      <li>
+        The appearance and behaviour of <a href="dialogCompile.htm">compilation progress dialog</a> can be changed in the <a href="dialogOptions.htm">Options dialog</a>
+        (in the <a href="dialogOptions.htm#build">General - Compilation</a> section).</li>
+      <li>
+        The order of projects in the list can be affected by the "<b>Up</b>" and "<b>Down</b>" buttons.
+      </li>
+      <li>
+        The list of projects (batch compilation) can be stored by the <b>"Save build"</b> option.
+        Compilation name can be entered in the displayed dialog, that also gives you the selection of existing names.
+        Only <b>visible and CHECKED</b> projects are saved.
+      </li>
+      <li>
+        Of course the editor also offers the "<b>Open</b>" action, that opens the selected project for editing in the Precision Helper.
+      </li>
+    </ul>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. All rights reserved.
+  </div>
+</body>
+</html>

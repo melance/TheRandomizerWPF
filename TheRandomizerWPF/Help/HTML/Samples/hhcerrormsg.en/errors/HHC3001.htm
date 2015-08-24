@@ -1,0 +1,25 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+<TITLE>HTML Help Compiler Error: HHC3001</TITLE>
+
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="../global/errors.css">
+
+</HEAD>
+
+<BODY>
+
+<p class="breadcrumb">Html Help Compiler Error Message Reference</p>
+<hr>
+
+<H5>HHC3001: The file "filename" has a link to a non-existent file: "filename."</H5>
+
+<P><B>Problem:</B> You have linked to a file, but the compiler could not locate that file.</P>
+
+<P><B>Result:</B> The link to the missing file may be broken, and the user will see an error message if he or she selects the link. However, this message also appears when the compiler encounters references to files that are external to your .chm file. While the compiler may not be able to locate an external file during compiling, HTML Help may be able to locate the file when from the compiled help system when the user clicks the link.</P>
+
+<P><B>Solution:</B> If the link is actually broken (the file couldn't be located), either the filename or the path is incorrect. Edit the name or path so that it's correct. If this filename and path are correct, and the file is actually an external file, you can ignore the error, but be sure to test the link from the .chm file to make sure it works properly.</P>
+
+<hr><P CLASS="Copyright">
+Precision software & consulting<br><a href="http://www.be-precision.com" target="_blank">www.be-precision.com</a>
+</p>
+</BODY>
+</HTML>

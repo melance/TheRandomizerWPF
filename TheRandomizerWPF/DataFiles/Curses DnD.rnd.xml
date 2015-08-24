@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AssignmentGrammar">
+  <name>Curses (D&amp;D)</name>
+  <author>Lance Boudreaux</author>
+  <description>A random curse generator based on the this blog post:</description>
+  <category>Other</category>
+  <genre>Fantasy</genre>
+  <system>D&amp;D</system>
+  <parameters>
+    <parameter name="Severity" display="Severity" type="List" valueType="Label">
+      <option>Any</option>
+      <option>Weak</option>
+      <option>Minor</option>
+      <option>Major</option>
+      <option>Severe</option>
+    </parameter>
+  </parameters>
+  <supportsMaxLength>false</supportsMaxLength>
+  <url>http://rpgcharacters.wordpress.com/2011/03/03/random-thursday-random-curses/</url>
+  <items>
+    <item name="Start">[Severity]</item>
+    <item name="Any">[Weak]</item>
+    <item name="Any">[Minor]</item>
+    <item name="Any">[Major]</item>
+    <item name="Any">[Severe]</item>
+    <item name="Weak">Hair falls out</item>
+    <item name="Weak">Next reaction roll is at a -2 penalty</item>
+    <item name="Weak">-4 penalty on your next saving throw</item>
+    <item name="Weak">Lose one prepared spell</item>
+    <item name="Weak">Itchiness means you suffer -2 on attack rolls while wearing armor</item>
+    <item name="Weak">Miss next attack</item>
+    <item name="Weak">Next spell cast will fail</item>
+    <item name="Weak">Roll 1d20 under Dex whenever trying to run to avoid falling</item>
+    <item name="Weak">Become convinced that one minor item is a very important magic item and will not part with it</item>
+    <item name="Weak">Gradually change race to a random race (no game effects, just cosmetic)</item>
+    <item name="Weak">Automatically surprised next combat</item>
+    <item name="Weak">Reduce movement speed by half</item>
+    <item name="Minor">-3 penalty on all saving throws</item>
+    <item name="Minor">-4 on all attack rolls</item>
+    <item name="Minor">Prime requisite is reduced by half</item>
+    <item name="Minor">+2 penalty on all reaction rolls</item>
+    <item name="Minor">50% chance to be unable to act each combat round</item>
+    <item name="Minor">+/- 1 on all rolls (whatever makes it worse)</item>
+    <item name="Minor">Drop whatever you are holding whenever you roll the minimum result on any die</item>
+    <item name="Minor">Must always tell the truth</item>
+    <item name="Minor">Must never tell the truth</item>
+    <item name="Minor">Double normal chance of wandering monsters</item>
+    <item name="Minor">50% chance that each spell cast will have an unwanted effect (wrong target, opposite effect, whatever works)</item>
+    <item name="Minor">-2 damage per die on all attacks and spells</item>
+    <item name="Major">Polymorph into a frog or other harmless animal</item>
+    <item name="Major">Wandering monster of the target�s level appears in proximity and attacks</item>
+    <item name="Major">One magic item disappears</item>
+    <item name="Major">Lose one level (as if struck by a wight)</item>
+    <item name="Major">Re-roll your prime requisite</item>
+    <item name="Major">Wounds take twice as long to heal, healing spells are only half as effective</item>
+    <item name="Major">+/- 3 on all rolls (whatever makes it worse)</item>
+    <item name="Major">Cannot sleep and therefore cannot heal naturally, nor prepare spells</item>
+    <item name="Major">Lose all spellcasting ability</item>
+    <item name="Major">Double vision: all targets are treated as having the benefit of displacement</item>
+    <item name="Major">Save versus death, or die!</item>
+    <item name="Major">Struck deaf, blind and mute</item>
+    <item name="Severe">Every time you kill a target, save versus death or join him and die</item>
+    <item name="Severe">Battle Death for your soul</item>
+    <item name="Severe">Automatically fail all saving throws</item>
+    <item name="Severe">+/- 6 on all rolls (whatever makes it worse)</item>
+    <item name="Severe">Lose [=ToText(Roll(1,4)+1)] levels</item>
+    <item name="Severe">Can not wear armor or clothing or use weapons or any devices</item>
+    <item name="Severe">Can only breathe in water, or only breathe air for aquatic targets</item>
+    <item name="Severe">Triple damage received from all sources</item>
+    <item name="Severe">Character ages [=ToText(Roll(1,6))] years per combat round</item>
+    <item name="Severe">All valuables owned by the character are turned to lead and paste</item>
+    <item name="Severe">[=ToText(Roll(1,6)+1)] companions or friends &amp; family are subjected to the curse: [Major]</item>
+    <item name="Severe">[Any]&lt;br /&gt;[Any]&lt;br /&gt;[Any]&lt;br /&gt;[Any]&lt;br /&gt;[Any]&lt;br /&gt;[Any]&lt;br /&gt;</item>
+  </items>
+  <imports />
+</Grammar>

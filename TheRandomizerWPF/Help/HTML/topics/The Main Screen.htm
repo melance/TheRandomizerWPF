@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>The Main Screen</title>
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+	<link rel="stylesheet" type="text/css" href="../css/the_randomizer.css">
+</head>
+<body>
+
+	<div id="topictop">&nbsp;</div>
+	<div id="topictitleleft">
+	<div id="topictitle">
+		<h3>The Main Screen</h3>
+	</div>
+	</div>
+  
+	<div id="main">
+		<img class="screenShot" src="../img/The Main Screen.png" />
+		<p>
+		  The main screen is where the random generation magic happens. Here you select 
+		  the type of generation you want to occur, how many times, and more then press 
+		  Generate to see the magic. Below is a break down of each section of the screen 
+		  including it's purpose, and how to use it.
+		</p>
+		<p>
+		  There are several of areas on the main screen, each with its own purpose.
+		  Below are the areas, their contents, and purposes.
+		</p>
+		
+		<p class="big">
+			1 The Title Bar
+		</p>
+		<p>
+		  Aside from the standard title bar icon and controls The Randomizer has the
+		  following special commands:
+		  <ul class="shr">
+			<li><b>Settings</b>: The application Settings are indicated by a small gear 
+			icon in the window title bar.  Clicking on the icon will open the settings 
+			flyout allowing you to change things such as the window theme, the default 
+			font for results, if the application checks for new versions when launched, 
+			and more.</li>
+			<li><b>Help</b>: A small question mark icon located in the window title bar
+			launches this help documentation.</li>
+			<li><b>About</b>: Clicking on the lower case "i" contained in a circle
+			found in the window title bar will display information about the application
+			including the version, change log, copyright, and more.</li> 
+		  </ul>
+		</p>
+		<p>
+		<p class="big">
+			2 The Menu 
+		</p>
+		<p>
+		  <ul class="shr">
+			<li><b>Tools</b>
+			  <ul class="shr">
+				<li><b>Grammar Editor</b>: The Grammar Editor is a graphical user interface
+				tool used to define generator grammars in a manner that is more friendly
+				than using a text editor.</li>
+				<li><b>Markov Chain Generator</b>: The Markov Chain Generator is one 
+				method of creating a grammar based upon a collection of existing words 
+				or names.</li>
+				<li><b>Phonotactics Generator</b>: The phonotactics generator takes 
+				two files, one a sample file and the other a definition file and 
+				generates a phonotactic grammar file.</li>
+				<li><b>Item List Converter</b>: This tool will take a text file with a
+				list of items, one per line, and create a grammar or library from the 
+				list.  This is useful for times when it is desired to have a simple
+				generator that selects an item from a list of items.</li>
+				<li><b>Refresh Grammars</b>: Clicking this menu item will refresh the
+				generator list.</li>
+			  </ul>
+			</li>
+		  </ul>
+		  <ul>
+			<li><b>Donate</b><br />
+			  <ul>
+				<li><b>Paypal</b>: Brings you to The Randomizer donation page via Paypal</li>
+				<li><b>Dwolla</b>: Brings you to The Randomizer donation page via Dwolla</li>
+			  </ul>
+			</li>
+		  </ul>
+		</p>
+		
+		<p class="big">
+			3 The Tag Bar
+		</p>
+		<p>
+		  The tag bar contains a list of all of the tags currently defined in the loaded
+		  grammar files.  The generator listing is filtered by selecting the tags you would
+		  like to see or hide.  Only generators containing at least one of the selected
+		  tags will appear in the list.  By default, all tags are selected when launching the
+		  application.
+		</p>
+		<p>  
+		  Clicking on the buttons on the left of the tags that resemble a checkbox, 
+		  will either toggle all tags off or on depending upon the button clicked.  
+		</p>
+		<p>
+		  The tag bar can be hidden
+		  by clicking the chevron icon next to the header.
+		</p>
+		<br>
+
+		<p class="big">
+			4 The Generator List
+		</p>
+		<p>
+		  Below the <b>Generators</b> header is the list of currently available generators.
+		  This list can be changed by adding new grammar files to the grammars folder
+		  or by selecting and deselecting tags in the <b>Tag Bar</b>.
+		</p>
+		<p>
+		  Selecting a generator from the list will cause the application to use that
+		  geneartor as the current generator for populating the details in the <b>Details</b> 
+		  area and choosing the options such as <b>Parameters</b> and <b>Max Length</b>. 
+		</p>
+		<br>
+
+		<p class="big">
+		  5 The Detail Area
+		</p>
+		<p>
+		  The detail area is broken into 5 areas:
+		</p>
+		<p>
+		  <ul class="shr">
+			<li><b>Grammar Details:</b> This area presents the details of the selected
+			grammar including the description, author, file location, tags, etc.</li>
+			<li><b>Parmeters:</b> The parameter list only appears if a particular grammar
+			requires parameter input.  Otherwise the area does not show at all.</li>
+			<li><b>Max Length:</b> If supported by the selected grammar, this numeric box
+			sets the maximum length a single result may be.</li>
+			<li><b>Repeat:</b> This numeric box determines the number of results to request
+			from the generator.</li>
+			<li><b>Actions:</b> The last area of the <b>Detail Area</b> is the actions
+			area that contains the <b>Generate</b> and <b>Cancel</b> buttons.  Clicking the <b>Generate</b>
+			button begins the content generation process.  While the process is running,
+			the <b>Generate</b> button becomes a <b>Cancel</b> button that can stop the generation process
+			prematurely.
+		  </ul>
+		</p>
+		<br>
+		
+		<p class="big">
+			6 The Results Panel
+		</p>
+		<p>
+			All generation results and actions that can be taken on them are located here.
+		</p>
+		<p>
+			<ul class="shr">
+				<li><b>Result Tabs:</b> When generating results, the results are applied to the currently
+				selected tab.</li>
+				<li><b>Actions:</b> At the bottom of the results area are the result actions.  These include:
+					<ul class="shr">
+						<li><b>Add Tab:</b> Clicking this button will create a new result tab.</li>
+						<li><b>Close Tab:</b> Closes the currently selected result tab.</li>
+						<li><b>Select All:</b> Selects all content of the current selected result tab.</li>
+						<li><b>Select None:</b> Clears the selection of content on the current selected results tab.</li>
+						<li><b>Clear:</b> Clear the contents of the current selected results tab.</li>
+						<li><b>Copy:</b> Copies the selected content of the current results tab.</li>
+						<li><b>Print to PDF:</b> Saves the current content as a PDF.</li>
+						<li><b>Save as HTML:</b> Saves the current content to an HTML file.</li>
+					</ul>
+				</li>
+			</ul>
+		</p>>
+	</div>
+	<div id="foot">
+	2014-2015 Lance Boudreaux
+	</div>
+</body>
+</html>

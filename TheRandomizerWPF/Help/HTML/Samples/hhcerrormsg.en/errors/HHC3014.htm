@@ -1,0 +1,34 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+<TITLE>HTML Help Compiler Error: HHC3014</TITLE>
+
+
+ <!-- ============================================================== -->
+<!-- Author/Designer: Cheryl Lockett Zubak -->
+<!-- Artist: Marc Reed -->
+<!-- Work Write - User Assistance from WinHelp to the Web -->
+<!-- Entire contents copyright (C) 1996-1999, Work Write, Inc. and KeyWorks Software. All rights reserved. -->
+<!-- Contact: Cheryl Lockett Zubak at cheri@workwrite.com -->
+<!-- =============================================================== -->
+
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="../global/errors.css">
+
+</HEAD>
+
+<BODY>
+
+<p class="breadcrumb">Html Help Compiler Error Message Reference</p>
+<hr>
+
+<H5>HHC3014: An information type in your project hasn't been created as part of a category.</H5>
+
+<P><B>Problem:</B> An information type has been specified in a .HHI file that is not contained within a category. The .HHI file is a file created only the HTML Help Workshop 1.2 Preview, which was distributed at the <a href="http://www.winwriters.com">WinWriters Help Conference</a> in February 1998. The use of this file was dropped before HTML Help 1.2 was actually released.</P>
+
+<P><B>Result:</B> The information type may not work correctly.</P>
+
+<P><B>Solution:</B> This problem only occurs with projects created with the HTML Help Workshop 1.2 Preview, which created a .HHI file for information types. The actual 1.2 release version of HHW reads .HHI files, but does not create them (they are not officially supported). To resolve the problem, copy the information in the .HHI file into the .HHC file, and delete the reference to the .HHI file in the .HHC file. Alternatively, recreate the information types with a more current version of the HTML Help Workshop.</P>
+
+<hr><P CLASS="Copyright">
+Precision software & consulting<br><a href="http://www.be-precision.com" target="_blank">www.be-precision.com</a>
+</p>
+</BODY>
+</HTML>

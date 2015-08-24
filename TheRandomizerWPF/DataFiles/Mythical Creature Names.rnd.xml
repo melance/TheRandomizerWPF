@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar">
+	<name>Mythical Creature Names</name>
+	<author>Lance Boudreaux</author>
+	<description>Generates the names for new species of mythical creatures</description>
+	<genre>Fantasy</genre>
+	<category>Name</category>
+	<parameters />
+	<supportsMaxLength>true</supportsMaxLength>
+	<items>
+		<item name="Start">[Cv]</item>
+		<item name="Start">[Cvc]</item>
+		<item name="Start">[Cvd]</item>
+		<item name="Start">[Cvvc]</item>
+		<item name="Start">[Vc]</item>
+		<item name="Start">[Vv]</item>
+		
+		<!-- Definitions -->
+		<item name="V">[UpperVowel]</item>
+		<item name="v">[LowerVowel]</item>
+		<item name="C">[UpperConsonant]</item>
+		<item name="c">[LowerConsonant]</item>
+		
+		<!-- Starters -->
+		<item name="Ctvc" next="cvc">[Ct][v][c]</item>
+		<item name="Ctvcv">[Ct][v][c][v]</item>
+		<item name="Cv" next="cdvc">[C][v]</item>
+		<item name="Cv" next="cvc">[C][v]</item>
+		<item name="Cv" next="cvcd">[C][v]</item>
+		<item name="Cvc" next="cvcc">[C][v][c]</item>
+		<item name="Cvc" next="cvd">[C][v][c]</item>
+		<item name="Cvc" next="cvvcd">[C][v][c]</item>
+		<item name="Cvc" next="vcd">[C][v][c]</item>
+		<item name="Cvcd" next="ccvdc">[C][v][cd]</item>
+		<item name="Cvd" next="cdvc">[C][vd]</item>
+		<item name="Cvvc" next="cvc">[C][v][v][c]</item>
+		<item name="Vc" next="ca">[V][c]</item>
+		<item name="Vc" next="cdcv">[V][c]</item>
+		<item name="Vc" next="cvd">[V][c]</item>
+		<item name="Vc" next="vc">[V][c]</item>
+		<item name="Vv" next="cvc">[V][v]</item>
+		
+		<!-- Inners -->
+		<item name="cdcv" next="cv">[cd][c][v]</item>
+		<item name="cv" next="cdvcv">[c][v]</item>
+		<item name="cvc" next="vc">[c][v][c]</item>
+		<item name="cvc" next="vcd">[c][v][c]</item>
+		<item name="vcd" next="vc">[v][cd]</item>
+				
+		<!-- Enders -->
+		<item name="ca">[c][vd]</item>
+		<item name="ccvdc">[c][c][vd][c]</item>
+		<item name="cdvc">[cd][v][c]</item>
+		<item name="cdvcv">[cd][v][c][v]</item>
+		<item name="cv">[c][v]</item>
+		<item name="cvc">[c][v][c]</item>
+		<item name="cvcc">[c][v][c][c]</item>
+		<item name="cvcd">[c][v][cd]</item>
+		<item name="cvd">[c][vd]</item>
+		<item name="cvvcd">[c][v][v][cd]</item>
+		<item name="vc">[v][c]</item>
+		<item name="vcd">[v][cd]</item>
+		
+		<!-- Vowel Digraphs -->
+		<item name="vd">ai</item>
+		<item name="vd">au</item>
+		<item name="vd">aw</item>
+		<item name="vd">ay</item>
+		<item name="vd">ea</item>
+		<item name="vd">ee</item>
+		<item name="vd">ei</item>
+		<item name="vd">eu</item>
+		<item name="vd">ew</item>
+		<item name="vd">ey</item>
+		<item name="vd">ie</item>
+		<item name="vd">oi</item>
+		<item name="vd">oo</item>
+		<item name="vd">ow</item>
+		<item name="vd">oy</item>
+		<item name="Vd">Ai</item>
+		<item name="Vd">Au</item>
+		<item name="Vd">Aw</item>
+		<item name="Vd">Ay</item>
+		<item name="Vd">Ea</item>
+		<item name="Vd">Ee</item>
+		<item name="Vd">Ei</item>
+		<item name="Vd">Eu</item>
+		<item name="Vd">Ew</item>
+		<item name="Vd">Ey</item>
+		<item name="Vd">Ie</item>
+		<item name="Vd">Oi</item>
+		<item name="Vd">Oo</item>
+		<item name="Vd">Ow</item>
+		<item name="Vd">Oy</item>
+		
+		<!-- Consonant Digraphs -->
+		<item name="cd">bl</item>
+		<item name="cd">br</item>
+		<item name="cd">ch</item>
+		<item name="cd">cl</item>
+		<item name="cd">cr</item>
+		<item name="cd">dr</item>
+		<item name="cd">fl</item>
+		<item name="cd">fr</item>
+		<item name="cd">gl</item>
+		<item name="cd">gr</item>
+		<item name="cd">pl</item>
+		<item name="cd">pr</item>
+		<item name="cd">sc</item>
+		<item name="cd">sh</item>
+		<item name="cd">sk</item>
+		<item name="cd">sl</item>
+		<item name="cd">sm</item>
+		<item name="cd">sn</item>
+		<item name="cd">sp</item>
+		<item name="cd">st</item>
+		<item name="cd">sw</item>
+		<item name="cd">th</item>
+		<item name="cd">tr</item>
+		<item name="cd">tw</item>
+		<item name="cd">wh</item>
+		<item name="cd">wr</item>
+		<item name="cd">ph</item>
+		<item name="cd">gh</item>		
+		<item name="Cd">Bl</item>
+		<item name="Cd">Br</item>
+		<item name="Cd">Ch</item>
+		<item name="Cd">Cl</item>
+		<item name="Cd">Cr</item>
+		<item name="Cd">Dr</item>
+		<item name="Cd">Fl</item>
+		<item name="Cd">Fr</item>
+		<item name="Cd">Gl</item>
+		<item name="Cd">Gr</item>
+		<item name="Cd">Pl</item>
+		<item name="Cd">Pr</item>
+		<item name="Cd">Sc</item>
+		<item name="Cd">Sh</item>
+		<item name="Cd">Sk</item>
+		<item name="Cd">Sl</item>
+		<item name="Cd">Sm</item>
+		<item name="Cd">Sn</item>
+		<item name="Cd">Sp</item>
+		<item name="Cd">St</item>
+		<item name="Cd">Sw</item>
+		<item name="Cd">Th</item>
+		<item name="Cd">Tr</item>
+		<item name="Cd">Tw</item>
+		<item name="Cd">Wh</item>
+		<item name="Cd">Wr</item>
+		<item name="Cd">Ph</item>
+		<item name="Cd">Gh</item>
+		
+		<!-- Consonant Trigraphs -->
+		<item name="ct">sch</item>
+		<item name="ct">scr</item>
+		<item name="ct">shr</item>
+		<item name="ct">sph</item>
+		<item name="ct">spl</item>
+		<item name="ct">spr</item>
+		<item name="ct">squ</item>
+		<item name="ct">str</item>
+		<item name="ct">thr</item>
+		<item name="Ct">Sch</item>
+		<item name="Ct">Scr</item>
+		<item name="Ct">Shr</item>
+		<item name="Ct">Sph</item>
+		<item name="Ct">Spl</item>
+		<item name="Ct">Spr</item>
+		<item name="Ct">Squ</item>
+		<item name="Ct">Str</item>
+		<item name="Ct">Thr</item>
+	</items>
+	<imports>
+		<import>LettersAndDigitsWeighted</import>
+	</imports>
+</Grammar>

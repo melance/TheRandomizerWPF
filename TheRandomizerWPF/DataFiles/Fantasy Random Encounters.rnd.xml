@@ -1,0 +1,172 @@
+﻿<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar">
+	<name>Random Encounters (Fantasy)</name>
+	<author>Lance Boudreaux</author>
+	<description>A random fantasy non-plot encounter generator based on:</description>
+	<url>https://www.reddit.com/r/DnD/comments/28x8z8/so_the_other_day_i_asked_for_some_random/</url>
+	<genre>Fantasy</genre>
+	<category>Encounter</category>
+	<parameters />
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start" weight="5">A(n) [NaturalDisaster] strikes the region.</item>
+		<item name="Start" weight="3">You meet a traveling [Merchant] merchant on the road.</item>
+		<item name="Start">An escaped slave runs across your path with his master close behind.</item>
+		<item name="Start">An adventuring party similar to yours passes by.</item>
+		<item name="Start">You come across a wounded citizen on the road.</item>
+		<item name="Start">You come across a [Person] in need of food or water.</item>
+		<item name="Start">A bounty hunter passes by, stops you but doesn't do anything.</item>
+		<item name="Start">You see two gods fighting fly over head.</item>
+		<item name="Start">You see two dragons fighting fly over head.</item>
+		<item name="Start">You discover an abundant [Mineral] ore deposit in the mouth of a mysterious chasm.</item>
+		<item name="Start">The largest rat you've ever seen passes by.</item>
+		<item name="Start">You come across a pack of dogs guarding the corpes of a [Person].</item>
+		<item name="Start">You come across a camp of nomads.</item>
+		<item name="Start">A [DireAnimal] and a [DireAnimal] are fighting on the road.</item>
+		<item name="Start">A stranger walks up, hands you a [Object] with a dragon engraved in it and walks away.</item>
+		<item name="Start">Your path is blocked by a forest fire.</item>
+		<item name="Start">A row of [=ToText(Roll(3,2))] freshly dug unmarked graves line the side of the road.</item>
+		<item name="Start">A group of unmanned childer run past and call you names.</item>
+		<item name="Start">A clinicaly insane woman shuffles by ranting and raving.</item>
+		<item name="Start">You come across a cannibal eating a corpse.</item>
+		<item name="Start">You can hear a wizard casting a spell with a voice that crosses miles.</item>
+		<item name="Start">There is an empty sack by the side of the road.</item>
+		<item name="Start">A child approaches you asking for an autograph.</item>
+		<item name="Start">You spot a traveling merchant selling (fake) magic devices.</item>
+		<item name="Start">A cartographer approaches you asking for help on map notes.</item>
+		<item name="Start">You come across a small group of people trying to start up a town.</item>
+		<item name="Start">A pack of non-hostile [Undead] meander by, bickering about past discretions.</item>
+		<item name="Start">A looter tells you he's headed to a nearby destroyed town.</item>
+		<item name="Start">A fanatic in old robes passes by and screams obsinities, saying "He's coming for you!"</item>
+		<item name="Start">One of your party contracts food poisoning.</item>
+		<item name="Start">You spot a pick-pocket in a crowd of people.</item>
+		<item name="Start">A meteorite flys overhead and crashes down miles away.</item>
+		<item name="Start">A [ChromaticDragon] flys overhead and roars.</item>
+		<item name="Start">A [MetallicDragon] flys overhead and roars.</item>
+		<item name="Start">A [Humanoid] missionary comes by to share with you the lore of his deity.</item>
+		<item name="Start">You pass by an abandoned [Building].</item>
+		<item name="Start">You discover a hidden prison labor camp with the worst of the land's prisoners inside.</item>
+		<item name="Start">You spot a unicorn off in the distance.</item>
+		<item name="Start">One of your party is invited to join a guild.</item>
+		<item name="Start">You come across a rare piece of foliage.</item>
+		<item name="Start">A group of travelers come by and tell you of a nearby overgrown [Building] in some nearby woods.</item>
+		<item name="Start">A stray arrow flies overhead. A novice runs out, grabs the arrow, and apologizes.</item>
+		<item name="Start">Some workers come begging for work in exchange for food.</item>
+		<item name="Start">A lone bandit attempts to rob you.</item>
+		<item name="Start">You come across a cavern inahbited by a(n) [Animal].</item>
+		<item name="Start">A magical rift appears in your path.</item>
+		<item name="Start">You discover a lamp that grants one minor wish.</item>
+		<item name="Start" weight="3">You come across a group of slavers.</item>
+		<item name="Start">You are ambushed by a group of [=ToText(Roll(2,6))] bandits.</item>
+		<item name="Start">You are ambushed by a group of [=ToText(Roll(2,6))] incompetent bandits.</item>
+		<item name="Start">You are ambushed by a group of [=ToText(Roll(2,6))] goblins.</item>
+		<item name="Start">You are ambushed by a group of [=ToText(Roll(2,6))] incompetent goblins.</item>
+		<item name="Start">The road suddenly turns sharply, going in a direction different from the map.</item>
+		<item name="Start">A group of guards accompanying an ornate carriage passes by.</item>
+		<item name="Start">A group of bandits accosting an ornate carriage passes by.</item>
+		<item name="Start">A [Noble] passes by.</item>
+		<item name="Start">A [Noble] passes by with a group of slavers.</item>
+		<item name="Start">A group of [Humanoid]s are at the side of the road, burying a respected elder.</item>
+		<item name="Start">A group of [Animal]s circle your camp as if they are going to attack but don't.</item>
+		<item name="Start">A minsterl passes by.</item>
+		<item name="Start">A group of [BlackRobes] dressed in black robes pass you by.</item>
+		<item name="Start">A magician offers you a test. Two chests lay before him, one with treasure, one with trash.  Pick one for 1 gp.  (Both are trash)</item>
+		<item name="Start">A skeleton is on the road with the "Elixer of Eternal Life", he looks to be a week old.</item>
+		<item name="Start">A man on a horse trots past with a "squire" close behind.</item>
+		<item name="Start">A naked woman comes from the bushes, begging for protection.  A bear follows her.  [Bear].</item>
+		<item name="Start">Where a city is marked on the map, you instead find [MissingCity].</item>
+		<item name="Start">The body of a [Person] on the side of the road.</item>
+		<item name="Start">A bounty hunter passes by after some bandits.</item>
+		<item name="Start">A bounty hunter passes by looking for you.</item>
+		<item name="Start">You must cross a thin, weak, drooping rope bridge over a very large gorge.</item>
+		<item name="Start">A pack of [Fey] gather around you singing peaceful songs.</item>
+		<item name="Start">You encounter a group of [Humanoid]s that would like to travel with you for a day because they believe they are being chased.</item>
+		<item name="Start">A large tree has fallen into the road and the locals are helping move it.</item>
+		<item name="Start">You cross paths with a group of pilgrims traveling to a nearby shrine.</item>
+		<item name="Start">You come across a group of tax collectors.</item>
+		<item name="Start">A freak storm forces you to take shelter with a [Humanoid] that has already set up camp.</item>
+		<item name="Start">The road is marked by [MarkedRoad].</item>
+		<item name="Start">You come across a child who is lost and crying.</item>
+		<item name="Start">You come across a pack of wild dogs.</item>
+		<item name="Start">A group of vultures is feasting on the carcass of a freshly dead [Monster] carcass.</item>
+		<item name="Start">You spot a well worn sword embeded in a rock off of the road.</item>
+		<item name="Start">A minstrel begins to follow you around in hopes of writing songs of adventure.</item>
+		<item name="Start">The entire party falls down a sinkhole.</item>
+		<item name="Start">A group of rabid [Animal]s attacks the party.</item>
+		<item name="Start">A sorcerer claims to be a necromancer is accompanyed by two zombies.  (The zombies are actually just friends pretending).</item>
+		<item name="Start">You find a well worn journal filled with details of supernatural creatures.</item>
+		<item name="Start">A roc attacks another adventuring party just up the road.</item>
+		<item name="Start">The bridge that crosses a strong deep river has collapsed.</item>
+		<item name="Start">A horse pulling an empty carriage is running toward you, and away from someting.</item>
+		<item name="Start">You see a flutist playing a song, followed by a line of [=ToText(Roll(2,20))] children.</item>
+		
+		<item name="Bear">Her boyfriend was a druid who accidentally turned into a bear mentally and physically.</item>
+		<item name="Bear">She was a forest animal that was accidentally turned into a human.</item>
+		<item name="Bear">The bear found her while she was washing.</item>
+		<item name="Bear">The bear is actually a nervous boy druid trying to sneak a peek at a naked girl.</item>
+		
+		<item name="BlackRobes">monks from a distant land</item>
+		<item name="BlackRobes">cultists, spreading the word of a powerful aberration</item>
+		<item name="BlackRobes">famous nobles, trying to travel unseen</item>
+		<item name="BlackRobes">happy, normal travelers</item>
+		
+		<item name="Building">castle</item>
+		<item name="Building">cottage</item>
+		<item name="Building">wizard's tower</item>
+		<item name="Building">hut</item>
+		<item name="Building">mine</item>
+		<item name="Building">town</item>
+		<item name="Building">keep</item>
+		<item name="Building">village</item>
+		<item name="Building">farm</item>
+		<item name="Building">temple</item>
+
+		<item name="MarkedRoad">a grave dug in the middle of a crossroad</item>
+		<item name="MarkedRoad">a badly made summoning circle</item>
+		<item name="MarkedRoad">a group of dead bandits</item>
+		<item name="MarkedRoad">a broken down and abandoned wagon</item>
+				
+		<item name="Merchant">medical</item>
+		<item name="Merchant">alchemist</item>
+		<item name="Merchant">weapons</item>
+
+		<item name="Mineral">copper</item>
+		<item name="Mineral">silver</item>
+		<item name="Mineral">gold</item>
+		<item name="Mineral">platinum</item>
+		<item name="Mineral">iron</item>
+		<item name="Mineral">lead</item>
+		<item name="Mineral">tin</item>
+		<item name="Mineral">mercury</item>
+		<item name="Mineral">adamantine</item>
+		<item name="Mineral">mithril</item>
+		<item name="Mineral">obsidian</item>
+
+		<item name="MissingCity">a giant hole</item>
+		<item name="MissingCity">a mirage of a large pond created by a wizard as a defense system.</item>
+		<item name="MissingCity">a city controlled by bandits with all of the guards dead.</item>
+		<item name="MissingCity">the burnt ruins of the city with no bodies or gold to be found.</item>
+
+		<item name="NaturalDisaster">Earthquake</item>
+		<item name="NaturalDisaster">Hurricane</item>
+		<item name="NaturalDisaster">Blizzard</item>
+		<item name="NaturalDisaster">Supercell Thunderstorm</item>
+		<item name="NaturalDisaster">Heatwave</item>
+		<item name="NaturalDisaster">Tornado</item>
+		<item name="NaturalDisaster">Windstorm</item>
+		<item name="NaturalDisaster">Sandstorm</item>
+		
+		<item name="Object">key</item>
+		<item name="Object">metal ball</item>
+		<item name="Object">empty flask</item>
+		<item name="Object">pendant</item>
+		<item name="Object">mask</item>
+		<item name="Object">ring</item>
+		<item name="Object">brooch</item>
+		
+	</items>
+	<imports>
+		<import>Fantasy Person</import>
+		<import>monsters by type</import>
+	</imports>
+</Grammar>

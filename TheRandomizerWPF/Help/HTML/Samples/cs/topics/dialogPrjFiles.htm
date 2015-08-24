@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Výběr souboru projektu</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Výběr souboru projektu</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/filesel.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      Dialog pro výběr souboru projektu je jedním z nejdůležitějších prvků aplikace,
+      jelikož poskytuje (oproti standardnímu systémovému dialogu pro výběr souboru) rozšířené
+      možnosti a místa hledání související s projektem a vytvářením nápovědy obecně.
+    </p>
+    <img src="../img/ss_prjfiles.jpg" class="ssright"/>
+    <p>
+      Od verze 2.0 je tento dialog použit také pro <b>výběr šablon témat</b>.
+    </p>
+
+    <p>
+      Dialog obsahuje <b>seznam souborů</b> (příslušný k vybranému umístění),
+      pole pro <b>rychlé hledání</b> souborů (filtraci dle textu),
+      panel pro filtrování souborů <b>dle typu</b> a panel <b>míst hledání</b>.
+    </p>
+    <p>
+      Filtrování dle typu souboru je možné kombinovat, pokud při kliknutí myší (nebo stisku klávesy SPACE) podržíte
+      zároveň klávesu SHIFT.
+    </p>
+    <p>
+      Dialog se vždy otevírá v tom <i>místě hledání</i>, které kontextově odpovídá danému místu a situaci v aplikaci, ze které byl dialog vyvolán.
+    </p>
+
+    <p class="big" style="padding-top:8px;">
+      Místa hledání
+    </p>
+    <ul class="shr">
+      <li><b>Soubory projektu</b> - seznam všech souborů uvedených v libovolném místě projektu (např. <a href="navBar_TOC.htm">obsahu</a>,
+        <a href="navBar_IDX.htm">rejstříku</a>, <a href="pageWinTypes.htm">typu okna nápovědy</a>, apod.)</li>
+      <li><b>Nevyužité soubory</b> - seznam souborů ve složce (a podsložkách) projektu, které naopak v žádném místě projektu uvedeny nejsou
+        (což lze využít při přiřazování již existujících souborů témat položkám obsahu nebo rejstříku)</li>
+      <li><b>Složka projektu</b> - zobrazuje obsah složky projektu (z tohoto místa hledání lze standardně <b>procházet</b> Váš souborový systém)</li>
+      <li><b>Cílová složka</b> - zobrazuje obsah složky, kde je umístěn výsledný (zkompilovaný) soubor nápovědy (z tohoto místa hledání lze standardně <b>procházet</b> Váš souborový systém)</li>
+      <li><b>Tento počítač</b> - zobrazuje disky (logické jednotky) Vašeho souborového systému (z tohoto místa hledání lze standardně <b>procházet</b> Váš souborový systém)</li>
+      <li><b>Externí nápověda</b> - kliknutím na toto místo hledání vyvoláte systémový dialog pro výběr souboru nápovědy ve formátu <i>Microsoft CHM</i>,
+        jehož obsah je poté zobrazen v tomto místě hledání. V závislosti na situaci, ze které byl dialog pro výběr souboru projektu vyvolán, můžete být do tohoto místa hledání přepnuti i automaticky
+        po zvolení souboru CHM v rámci jiného místa hledání.</li>
+      <li><b>Šablony témat</b> - v režimu pro výběr šablony zobrazuje tento dialog šablony témat a náhled na aktuálně zvolenou šablonu</li>
+    </ul>
+
+    <p>
+      <i>Poznámka: Téměř shodný dialog je zobrazován i v rámci nástroje <a href="toolsCHMViewer.htm">Prohlížeč CHM</a>, kde navíc obsahuje panel náhledu na vybraný soubor.</i>
+    </p>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. Všechna práva vyhrazena.
+  </div>
+</body>
+</html>

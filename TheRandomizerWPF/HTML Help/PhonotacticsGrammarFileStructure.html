@@ -1,0 +1,165 @@
+﻿<html>
+	
+<head>
+	<title>Phonotactics Grammar File Structure</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.5.0.497">
+	<meta name="keywords" content="Grammar">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "The Randomizer.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("PhonotacticsGrammarFileStructure");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Phonotactics Grammar File Structure</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="GrammarFiles.html">Grammar Files</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="GrammarFiles.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="LUAGrammarFileStructure.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="TableGrammarFileStructure.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps3"><span class="rvts8">The information below is specific to Phonotactics Grammar Files. See the </span><a class="rvts13" href="GrammarFileStructure.html">Grammar Files</a><span class="rvts8"> help section for common information about all Grammar Files. Phonotactics grammar files are designed for those who use constructed languages in their worlds and develop them using phonology. It uses a fairly simple structure to mimic the rules of phonotactics.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Case</span></span></h3>
+<p class="rvps3"><span class="rvts8">This value will determine the case to give the generated values. There are four possible values:</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">None</span><span class="rvts8">: The case is unaltered</span></p>
+<p class="rvps3"><span class="rvts15">Proper</span><span class="rvts8">: The case is set to proper, setting each letter following a space to upper case.</span></p>
+<p class="rvps3"><span class="rvts15">Upper</span><span class="rvts8">: The case is set to upper case, all characters are changed to upper case.</span></p>
+<p class="rvps3"><span class="rvts15">Lower</span><span class="rvts8">: The case is set to lower case, all characters are changed to lower case.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Definitions</span></span></h3>
+<p class="rvps3"><span class="rvts8">Definitions hold the keys for the phonotactics and the possible values they can represent. For example, a key named "C" can represent consonants in the English language and would therefore have the value "B,C,D,E,F,G,H,J,K,L,M,N,P,Q,R,S,T,V,W,X,Y,Z" with "," being the delimiter.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Properties</span></p>
+<div class="rvps3"><table width="450" border="1" cellpadding="0" cellspacing="0" style="border-color: #000000; border-style: solid;">
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 127px;"><p class="rvps10"><span class="rvts15">Element/Attribute</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 317px;"><p class="rvps10"><span class="rvts15">Description</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 127px;"><p class="rvps3"><span class="rvts8">item</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 317px;"><p class="rvps3"><span class="rvts8">Represents a single definition</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 127px;"><p class="rvps3"><span class="rvts8">[key]</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 317px;"><p class="rvps3"><span class="rvts8">The key that will represent this definition in the patterns.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 127px;"><p class="rvps3"><span class="rvts8">[delimiter]</span><span class="rvts8"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 317px;"><p class="rvps3"><span class="rvts8">The delimiter that separates the values</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 127px;"><p class="rvps3"><span class="rvts8">{value}</span><span class="rvts8"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 317px;"><p class="rvps3"><span class="rvts8">The list of replacement values for this definition</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Sample</span></p>
+<p class="rvps9"><span class="rvts18">&lt;Definitions&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item key="V" delimiter=","&gt;A,E,I,O,U&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item key="C" delimiter=","&gt;B,C,D,F,G,H,J,K,L,M,N,P,Q,R,S,T,V,W,X,Y,Z&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18">&lt;/Definitions&gt;</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Patterns</span></span></h3>
+<p class="rvps3"><span class="rvts8">Patterns show the possible combinations of definitions that can exist in the language. Using our example above, "C" represents a consonant (and will assume "V" represents vowels), therefore; the word "Tree" would have a pattern of "CCVV". Optional values are surrounded by parenthesis.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Properties</span></p>
+<div class="rvps3"><table width="580" border="1" cellpadding="0" cellspacing="0" style="border-color: #000000; border-style: solid;">
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 130px;"><p class="rvps10"><span class="rvts15">Element/Attribute</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 314px;"><p class="rvps10"><span class="rvts15">Description</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 130px;"><p class="rvps3"><span class="rvts8">item</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 314px;"><p class="rvps3"><span class="rvts8">Represents a single pattern</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 130px;"><p class="rvps3"><span class="rvts8">[weight]</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 314px;"><p class="rvps3"><span class="rvts8">When selecting a pattern, this is the weight this particular pattern has.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 130px;"><p class="rvps3"><span class="rvts8">{pattern}</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 314px;"><p class="rvps3"><span class="rvts8">The pattern of keys</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Sample</span></p>
+<p class="rvps9"><span class="rvts18">&lt;patterns&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item weight="1"&gt;(C)V(C)CV&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18"> &nbsp; &nbsp;&lt;item weight="1"&gt;CVC&lt;/item&gt;</span></p>
+<p class="rvps9"><span class="rvts18">&lt;/patterns&gt;</span></p>
+<p></p>
+<p class="rvps2"><span class="rvts6">Created with the Personal Edition of HelpNDoc: </span><a class="rvts7" href="http://www.helpndoc.com/feature-tour/iphone-website-generation">iPhone web sites made easy</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2014 by Lance Boudreaux. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

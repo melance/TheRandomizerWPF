@@ -1,0 +1,226 @@
+﻿<html>
+	
+<head>
+	<title>Calculation Functions</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.5.0.497">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "The Randomizer.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("CalculationFunctions");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Calculation Functions</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="GrammarFiles.html">Grammar Files</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="GrammarFiles.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="TableGrammarFileStructure.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps3"><span class="rvts8">Below you can find a list of the custom calculation functions available for all grammar types. &nbsp;For the standard functionality available please visit the NCalc website at </span><a class="rvts13" href="https://ncalc.codeplex.com/" target="_blank">https://ncalc.codeplex.com/</a></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<div class="rvps3"><table width="100%" border="1" cellpadding="0" cellspacing="0" style="border-color: #000000; border-style: solid;">
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 305px;"><p class="rvps7"><span class="rvts15">Function</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 1009px;"><p class="rvps7"><span class="rvts15">Description</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 305px;"><p class="rvps3"><span class="rvts8">Roll(Number, Die, [options])</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 1009px;"><p class="rvps3"><span class="rvts8">Rolls the type of die specified the number of times specified and returns the result. &nbsp;For more information on the options, please see the section on </span><a class="rvts13" href="CalculationFunctions.html#DieRollOptions">Die Roll Options</a><span class="rvts8"> below.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 305px;"><p class="rvps3"><span class="rvts8">TargetRoll(Number, Die, Target, [options])</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 1009px;"><p class="rvps3"><span class="rvts8">Rolls the type of die specified and compares each roll against the target returning the number of successes or failures. &nbsp;For more information about the options, please see the section on </span><a class="rvts13" href="CalculationFunctions.html#DieRollOptions">Die Roll Options</a><span class="rvts8"> below.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 305px;"><p class="rvps3"><span class="rvts8">Rnd(Max)</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 1009px;"><p class="rvps3"><span class="rvts8">Returns a random integer between 1 and Max inclusively.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 305px;"><p class="rvps3"><span class="rvts8">Rnd(Min,Max)</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 1009px;"><p class="rvps3"><span class="rvts8">Returns a random integer between Min and Max inclusively.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 305px;"><p class="rvps3"><span class="rvts8">ToText(Number)</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 1009px;"><p class="rvps3"><span class="rvts8">Returns the text representation of the Number (ex: ToText(7) =&gt; seven)</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 305px;"><p class="rvps3"><span class="rvts8">ToOrdinal(Number)</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 1009px;"><p class="rvps3"><span class="rvts8">Returns the ordinal version of the Number (ex: ToOrdinal(11) =&gt; 11th)</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 305px;"><p class="rvps3"><span class="rvts8">UCase(String)</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 1009px;"><p class="rvps3"><span class="rvts8">Returns the string in all caps. (ex: UCase("orcs") =&gt; ORCS)</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 305px;"><p class="rvps3"><span class="rvts8">LCase(String)</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 1009px;"><p class="rvps3"><span class="rvts8">Returns the string in all lower case. (ex: LCase("ORCS") =&gt; orcs)</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 305px;"><p class="rvps3"><span class="rvts8">TCase(String)</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 1009px;"><p class="rvps3"><span class="rvts8">Returns the string with all words capitalized. (ex: PCase("john henry doe") =&gt; John Henry Doe)</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 305px;"><p class="rvps3"><span class="rvts8">Format(Value, String)</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 1009px;"><p class="rvps3"><span class="rvts8">Returns the Value formatted using the String format. &nbsp;See Microsoft's documentation on the </span><a class="rvts13" href="http://msdn.microsoft.com/en-us/library/microsoft.visualbasic.strings.format(v=vs.110).aspx">Format method</a><span class="rvts8"> for more details. (ex: Format(10000,"#,##0") =&gt; 10,000)</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 305px;"><p class="rvps3"><span class="rvts8">Generate(GrammarFileName or Path, [MaxLength])</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 1009px;"><p class="rvps3"><span class="rvts8">Executes the grammar with the file name of GrammarFileName.rnd.xml providing the optional maxLength. &nbsp;Does not currently support generators with parameters.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid; width: 305px;"><br/>
+</td>
+<td style="border-color: #000000; border-style: solid; width: 1009px;"><br/>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><a name="DieRollOptions"></a>
+<span class="rvts15">Die Roll Options:</span></p>
+<p class="rvps3"><span class="rvts15">'DL' </span><span class="rvts8">: Drop the lowest die roll. &nbsp;This can be followed by a number to indicate the number of dice to drop.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Examples:</span></p>
+<p class="rvps9"><span class="rvts18">Roll(2,20,'DL') will roll 2 20-sided dice and drop the lowest roll as is done with Advantage in D&amp;D 5e</span></p>
+<p class="rvps9"><span class="rvts18">Roll(5,6,'DL',2) will roll 5 6-sided dice and drop the lowest 2 rolls as is one option for rolling attributes in D&amp;D</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Sample Results of the Examples:</span></p>
+<p class="rvps9"><span class="rvts18">Die Results: 15, 10 Result: 15</span></p>
+<p class="rvps9"><span class="rvts18">Die Results: 3, 4, 1, 6, 5 Result: 15</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">'DH' </span><span class="rvts8">: Drop the highest die roll. &nbsp;This can be followed by a number to indicate the number of dice to drop.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Examples:</span></p>
+<p class="rvps9"><span class="rvts18">Roll(2,20,'DH') will roll 2 20-sided dice and drop the highest roll as is done with Disadvantage in D&amp;D 5e</span></p>
+<p class="rvps9"><span class="rvts18">Roll(5,10,'DH',4) will roll 5 10-sided dice and drop the highest 4 leaving only the lowest roll</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Sample Results of the Examples:</span></p>
+<p class="rvps9"><span class="rvts18">Die Results: 15, 10 Result: 10</span></p>
+<p class="rvps9"><span class="rvts18">Die Results: 2, 5, 1, 9, 10 Result: 1</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">'EX'</span><span class="rvts8"> : Exploding dice re-rolls all maximum rolls and adds the results</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Example:</span></p>
+<p class="rvps9"><span class="rvts18">Roll(4,10,'EX') will roll 4 10-sided dice and re-roll all 10's</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Sample Results of the Example:</span></p>
+<p class="rvps9"><span class="rvts18">Die Results: 4, 10, 3, 6 + 10 Result: 33</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">'CX'</span><span class="rvts8"> : Compound exploding dice re-rolls all maximum rolls until none remain and adds the results</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Example:</span></p>
+<p class="rvps9"><span class="rvts18">Roll(4,10,'CX') will roll 4 10-sided dice and re-roll all 10's</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Sample Results of the Example:</span></p>
+<p class="rvps9"><span class="rvts18">Die Results: 8, 10, 2, 10 + 10, 8 + 10 + 3 Result: 61</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">'RB'</span><span class="rvts8"> : Re-roll below a given result</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Example:</span></p>
+<p class="rvps9"><span class="rvts18">Roll(4,10,'RB',5) will roll 4 10-sided dice and re-roll all results under 5</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Sample Results of the Example:</span></p>
+<p class="rvps9"><span class="rvts18">Die Results: </span><span class="rvts21">3</span><span class="rvts18">, 10, 5, </span><span class="rvts21">2</span><span class="rvts18"> + 6, 8 Result: 29</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">'GT'</span><span class="rvts8"> : Compare results to the target number provided looking for rolls over the target and return success or failure</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Example:</span></p>
+<p class="rvps9"><span class="rvts18">Roll(3,10,'GT',6) will roll 3 10-sided dice and return success or failure depending on the number of rolls over 6 as is done in New World of Darkness games</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Sample Results of the Example:</span></p>
+<p class="rvps9"><span class="rvts18">Die Results: 1, 1, 6, 9, 10 Result: Success (3)</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">'LT'</span><span class="rvts8"> : Compare results to the target number provided looking for rolls under the target and return success or failure</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Example:</span></p>
+<p class="rvps9"><span class="rvts18">Roll(2,20,'LT',10) will roll 2 20-sided dice and return success or failure depending on the number of rolls under 10.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Sample Results of the Example:</span></p>
+<p class="rvps9"><span class="rvts18">Die Results: 10, 15 Result: Failure (-2)</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">'R1' </span><span class="rvts8">: For target rolls ('GT','LT') this enacts the rule of one where one's remove successes from the result</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Example:</span></p>
+<p class="rvps9"><span class="rvts18">Roll(4,10,'GT',6,'R1') will roll 4 10-sided dice and remove successes equal to the number of one's rolled and return success or failure as is done in Old World of Darkness</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Sample Results of the Example:</span></p>
+<p class="rvps9"><span class="rvts18">Die Results: 1, 1, 10, 4 Result: Failure (-1)</span></p>
+<p></p>
+<p class="rvps2"><span class="rvts6">Created with the Personal Edition of HelpNDoc: </span><a class="rvts7" href="http://www.helpndoc.com/feature-tour/iphone-website-generation">Easily create iPhone documentation</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2014 by Lance Boudreaux. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

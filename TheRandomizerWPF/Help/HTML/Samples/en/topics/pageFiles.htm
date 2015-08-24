@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Included files (the editor)</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Included files (the editor)</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/filesel.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      With help of this editor and the <a href="navBar_Files.htm">Included files</a> navigation panel, you can edit the list of all files explicitly included in your resulting help.
+    </p>
+    <img src="../img/ss_files.jpg" class="ssright"/>
+    <p>
+      Using the navigation panel options, you can easily <a href="navBar_Files.htm">filter the file list</a>,
+      so only the files, you want to work with, are visible.
+      Additional <b>quick searching</b> (filtering) by the text is available directly in this editor (in the top right corner).
+    </p>
+    <p>
+      There are an adding, removing, viewing, copying to clipboard and even more options you can use in this editor.
+      They are described below.
+    </p>
+
+    <p class="big" style="padding-top:8px;">
+      Working with the "included files" editor
+    </p>
+    <ul class="shr">
+      <li><b>Add files</b> - adds files to the list via the system open file dialog</li>
+      <li><b>Add files from folder</b> - adds all topic files from the folder you select in system "browse for folder" dialog (including subfolders)
+        If you have switched on the filter <b>by file type</b> (in the <a href="navBar_Files.htm">navigation panel</a>),
+        then the files of that type are added, whether it is the topics, images or other selected type</li>
+      <li><b>Add project files</b> - adds files to the list via the <a href="dialogPrjFiles.htm">project file selection dialog</a></li>
+      <li><b>Add used files</b> - adds topic files, that are used anywhere in the project (ie. in the <a href="navBar_TOC.htm">contents</a>,
+        <a href="navBar_IDX.htm">index</a>, <a href="pageWinTypes.htm">window type</a> definition, etc.)</li>
+      <li><b>Remove</b> - removes the selected files (of course, this is not a physical file deletion)</li>
+      <li><b>Copy to clipboard</b> - copies the selected files list to the clipboard</li>
+      <li><b>Paste from clipboard</b> - put the files from the clipboard to the list</li>
+
+      <li><b>Inspector</b> - shows the <a href="helpBar_OI.htm">Object inspector</a> for currently selected file (a file preview is displayed in this context)</li>
+      <li><b>Edit</b> - opens the selected file in associated <a href="dialogOptions.htm">external editor</a>. In drop down menu of the "Edit" button,
+          there are all associated applications available (this means the predefined <a href="dialogOptions.htm#mtools">editor and browser</a>
+          and applications that are associated with the extension of currently selected file).</li>
+    </ul>
+
+    <p>
+      Editor offers an effective possibilities by using the <b>clipboard</b> and by using the <b>drag &amp; drop</b> functionality, both between the instances of Precision Helper, and between other applications.
+    </p>
+    <p>
+      The list accepts the files dragged from <i>Windows Explorer</i>, the list of files dragged from the <i>text editor</i> or <i>spreadsheet</i>, etc.
+      Likewise, you can drag the files from Precision Helper into a spreadsheet or text editor.
+    </p>
+    <p>
+      Drag &amp; drop feature uses all the columns in the list.
+      This implies the need to turn off the "<a href="dialogOptions.htm#edit">Show relative file pathes</a>" option in preferences dialog,
+      when you want to transfer selected files including the entire file path (and not just the path related to the project).
+    </p>
+    <p>
+      Similarly, the clipboard works, but only the file name (including path) is transfered to other applications.
+    </p>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. All rights reserved.
+  </div>
+</body>
+</html>

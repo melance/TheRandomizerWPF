@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:type="LUAGrammar">
+	<name>Dungeon Tiler</name>
+	<author>Lance Boudreaux</author>
+	<description>Generates a random dungeon using tiles</description>
+	<category>Map</category>
+	<genre>Fantasy</genre>
+	<parameters>
+	    <parameter name="width" display="Width" type="Text" default="10" />
+		<parameter name="height" display="Height" type="Text" default="10" />
+		<parameter name="size" display="Tile Size %" type="Text" default="50" />
+	</parameters>
+	<supportsMaxLength>false</supportsMaxLength>
+	<css><![CDATA[
+		tr { padding: 0; }
+		td { padding: 0; }
+	    .rot90 {
+			transform: rotate(90deg) ;
+			-webkit-transform: rotate(90deg) ;
+			-moz-transform: rotate(90deg) ;
+			-o-transform: rotate(90deg) ;
+			-ms-transform: rotate(90deg) ;
+		}
+		.rot180 {
+			transform: rotate(180deg) ;
+			-webkit-transform: rotate(180deg) ;
+			-moz-transform: rotate(180deg) ;
+			-o-transform: rotate(180deg) ;
+			-ms-transform: rotate(180deg) ;
+		}
+		.rot270 {
+			transform: rotate(270deg) ;
+			-webkit-transform: rotate(270deg) ;
+			-moz-transform: rotate(270deg) ;
+			-o-transform: rotate(270deg) ;
+			-ms-transform: rotate(270deg) ;
+		}
+	]]></css>
+	<scriptPath>LUA\DungeonMapTiles.lua</scriptPath>
+</Grammar>

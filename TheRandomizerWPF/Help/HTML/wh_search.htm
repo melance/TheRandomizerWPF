@@ -1,0 +1,251 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+  <script type="text/javascript" src="js/searchindex.js"></script>
+  <style type="text/css">
+    body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    height: 100%;
+    max-height: 100%;
+    font-family:Tahoma, Arial, Helvetica, sans-serif;
+    font-size:9pt;
+    }
+
+    #framecontent {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    #width:100%;
+    height: 100%;
+    overflow: auto;
+    border-right:1px dashed #d8d8d8;
+    }
+
+    * html body { /*IE6 hack*/
+    padding: 0 0 0 0;
+    }
+
+    a {
+      text-decoration:none;}
+    a:hover {
+      text-decoration:underline;}
+
+    TABLE {
+      font-family:Tahoma, Arial, Helvetica, sans-serif;
+      font-size:9pt;
+      table-layout:fixed;
+      height:100%;
+      width:100%;
+    }
+    TD {
+      padding:8px;
+      padding-top:8px;}
+    SELECT {
+      font-family:Tahoma, Arial, Helvetica, sans-serif;
+      font-size:9pt;
+      height:100%;
+      width:100%;
+      border:1px solid #999999;
+    }
+    INPUT {
+      font-family:Tahoma, Arial, Helvetica, sans-serif;
+      font-size:9pt;
+    }
+  </style>
+  <script type="text/javascript">
+    // JavaScript SiteSearch Generator v1.2 - Search script
+
+    // This script is given as is. The author is not responsible for any possible damage done due to the use of this code.
+    // This script can be used only in a documentation, that is created by the Precision Helper product.
+    // The code remains property of the author and may not be distributed, published, given or sold in any form
+    // without the purchased royalty-free license, that allows you to distribute this code as a part of your products.
+
+    // Copyright © 2010  Precision software & consulting
+    // All rights reserved
+
+    function makeHighlightedNode(aChild)
+    {
+    	var node = window.parent.right.document.createElement('SPAN');
+    	node.style.backgroundColor = '#000099';
+    	node.style.color = '#ffffff';
+    	node.appendChild(aChild);
+    	return node;
+    }
+
+    function highlight(aWord, container)
+    {
+    	for(var i=0; i<container.childNodes.length; i++)
+      {
+    		var node = container.childNodes[i];
+
+    		if (node.nodeType == 3)
+        {
+    			var data = node.data;
+    			var lData = data.toLowerCase();
+    			if (lData.indexOf(aWord) != -1) {
+    				var new_node = window.parent.right.document.createElement('SPAN');
+    				node.parentNode.replaceChild(new_node,node);
+    				var result;
+    				while((result = lData.indexOf(aWord)) != -1){
+    					new_node.appendChild(window.parent.right.document.createTextNode(data.substr(0,result)));
+    					new_node.appendChild(makeHighlightedNode(window.parent.right.document.createTextNode(data.substr(result,aWord.length))));
+    					data = data.substr(result + aWord.length);
+    					lData = lData.substr(result + aWord.length);}
+    				new_node.appendChild(window.parent.right.document.createTextNode(data));}
+    		}
+        else
+          {highlight(aWord,node);}
+    	}
+    }
+
+    function checkHighlight()
+    {
+      if (window.parent.right.document.body.childNodes.length>0)
+      {
+        if (document.SearchForm.searchtext.value!='')
+        {
+          var j;
+        	var srchexpr = document.SearchForm.searchtext.value.toLowerCase();
+        	srchexpr = srchexpr.replace(/^\s*([\S\s]*)\b\s*$/, "$1");
+        	var words = srchexpr.split(" ");
+    			for(j=0; j<words.length; j++) {
+            if (words[j].indexOf("*")!=-1) {
+                words[j] = words[j].substring(0,words[j].lastIndexOf("*"));}}
+     			for(j=0; j<words.length; j++){
+            highlight(words[j],window.parent.right.document.body);}
+        }
+      }
+      return;
+    }
+
+    function showtopic()
+    {
+      if (document.SearchForm.Results.selectedIndex>=0)
+        window.open(document.SearchForm.Results[document.SearchForm.Results.selectedIndex].value,"right");
+    }
+
+    function doSearch(srchexpr)
+    {
+    	if(srchexpr.length != 0)
+    	{
+        var mword;
+      	var i,j,k,t,mw;
+      	document.SearchForm.Results.length = 0;
+      	srchexpr = srchexpr.toLowerCase();
+      	srchexpr = srchexpr.replace(/^\s*([\S\s]*)\b\s*$/, "$1");
+      	var words = srchexpr.split(" ");
+
+      	// clear counts
+      	for(j = 0 ; j < stopics.length ; j++)
+      	{
+          stopics[j][2] = 0;
+        }
+
+      	if (srchexpr.indexOf("*")!=-1)
+      	{
+          // masked words
+          mw = 0;
+        	for(i = 0 ; i < words.length ; i++) {
+            mword = words[i];
+            t = mword.indexOf("*");
+            if (t!=-1)
+            {
+              mword = mword.substring(0,mword.lastIndexOf("*"));
+        		  for(j = 0 ; j < sindex.length ; j++) {
+        			  if(sindex[j][0].indexOf(mword)==0) {
+        			 	  for(k = 0 ; k < sindex[j][1].length ; k++)
+        			 	    {
+                      if (stopics[[sindex[j][1][k]]][2]>=mw)
+                     stopics[[sindex[j][1][k]]][2] = mw+1;
+                     }}}
+              mw++;
+            }
+        	}
+
+        	for(i = 0 ; i < words.length ; i++) {
+            mword = words[i];
+            if (mword.indexOf("*") == -1)
+            {
+        		  for(j = 0 ; j < sindex.length ; j++) {
+        			  if(mword == sindex[j][0]) {
+        			 	  for(k = 0 ; k < sindex[j][1].length ; k++)
+        			 	    {stopics[[sindex[j][1][k]]][2]++;}
+        			 	  break; } }
+            }
+        	}
+        }
+        else
+        {
+        	for(i = 0 ; i < words.length ; i++) {
+        		for(j = 0 ; j < sindex.length ; j++) {
+        			if(words[i] == sindex[j][0]) {
+        				for(k = 0 ; k < sindex[j][1].length ; k++)
+        				  {stopics[[sindex[j][1][k]]][2]++;}
+        				break; } }
+        	}
+      	}
+
+      	// add results with counts = all words
+      	i = 0;
+      	t = words.length;
+        var sortArr = new Array();
+      	for(j = 0 ; j < stopics.length ; j++)
+      	{
+          if (stopics[j][2] >= t)
+          {
+            sortArr[i] = new Array();
+            sortArr[i][0] = stopics[j][0];
+            sortArr[i][1] = stopics[j][1];
+            i++;
+          }
+        }
+        sortArr.sort();
+
+        for (i=0;i<sortArr.length;i++) {
+    			  var resopt = document.createElement("OPTION");
+    			  resopt.text = sortArr[i][0];
+    			  resopt.value = sortArr[i][1];
+    			  document.SearchForm.Results[document.SearchForm.Results.length] = resopt;
+        }
+
+        if (document.SearchForm.Results.length>0)
+        {
+          document.SearchForm.Results.selectedIndex=0;
+          document.SearchForm.Results.focus();
+          showtopic();
+        }
+    	}
+    	return false;
+    }
+
+  </script>
+</head>
+<body>
+  <div id="framecontent">
+    <form name="SearchForm" onSubmit="javascript:return doSearch(document.SearchForm.searchtext.value);" style="padding:0px;margin:0px;">
+    <table>
+      <tr>
+        <td style="height:32px;padding-bottom:0px;">
+          <input name="searchtext" type="text" id="searchtext" style="width:100%;border:1px solid #999999;">
+        </td>
+        <td style="height:32px;width:80px; padding:0px; padding-top:6px;">
+          <input type="submit" name="searchbutton" value="Search">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <select name="Results" ondblclick="javascript:showtopic();" onchange="javascript:showtopic();" size="2">
+          </select>
+        </td>
+      </tr>
+    </table>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+<TITLE>HTML Help Compiler Error: HHC4014</TITLE>
+
+
+ <!-- ============================================================== -->
+<!-- Author/Designer: Cheryl Lockett Zubak -->
+<!-- Artist: Marc Reed -->
+<!-- Work Write - User Assistance from WinHelp to the Web -->
+<!-- Entire contents copyright (C) 1996-1999, Work Write, Inc. and KeyWorks Software. All rights reserved. -->
+<!-- Contact: Cheryl Lockett Zubak at cheri@workwrite.com -->
+<!-- =============================================================== -->
+
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="../global/errors.css">
+
+</HEAD>
+<BODY>
+
+<p class="breadcrumb">Html Help Compiler Error Message Reference</p>
+<hr>
+
+<H5>HHC4014: The following map definition has an invalid context id: "context id"</H5>
+
+<P><B>Problem:</B> An id has been mapped to something other than a number using the #define statement.</P>
+
+<P><B>Result:</B> The id will be ignored and a program attempting to use the id will fail.</P>
+
+<P><B>Solution:</B> Either change the id to a number, or remove the leading "#define" if the id is an HTML file.</P>
+
+<P>It is valid to have an id with this form:</P>
+
+<BLOCKQUOTE>
+	IDH_MYID myid.htm
+</BLOCKQUOTE>
+
+<P>but it is not valid to have an id with this form:</P>
+
+<BLOCKQUOTE>
+	#define IDH_MYID myid.htm
+</BLOCKQUOTE></p>
+
+<P>The use of the keyword "#define" requires the id to be a number.</P>
+
+<hr><P CLASS="Copyright">
+Precision software & consulting<br><a href="http://www.be-precision.com" target="_blank">www.be-precision.com</a>
+</p>
+</BODY>
+</HTML>

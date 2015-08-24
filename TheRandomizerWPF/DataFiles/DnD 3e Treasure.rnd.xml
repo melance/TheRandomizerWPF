@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar">
+	<name>Treasure Generator (D&amp;D 3e)</name>
+	<author>Lance Boudreaux</author>
+	<description>A treasure generator based on the D&amp;D 3e DMG.</description>
+	<category>Treasure</category>
+	<parameters>
+		<parameter name="Level" display="Level" type="List" valueType="Label">
+			<option>Any</option>
+			<option>1st</option>
+			<option>2nd</option>
+			<option>3rd</option>
+			<option>4th</option>
+			<option>5th</option>
+			<option>6th</option>
+			<option>7th</option>
+			<option>8th</option>
+			<option>9th</option>
+			<option>10th</option>
+			<option>11th</option>
+			<option>12th</option>
+			<option>13th</option>
+			<option>14th</option>
+			<option>15th</option>
+			<option>16th</option>
+			<option>17th</option>
+			<option>18th</option>
+			<option>19th</option>
+			<option>20th</option>
+		</parameter>
+	</parameters>
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start">[Level]</item>
+		<item name="Any">[1st]</item>
+		<item name="Any">[2nd]</item>
+		<item name="Any">[3rd]</item>
+		<item name="Any">[4th]</item>
+		<item name="Any">[5th]</item>
+		<item name="Any">[6th]</item>
+		<item name="Any">[7th]</item>
+		<item name="Any">[8th]</item>
+		<item name="Any">[9th]</item>
+		<item name="Any">[10th]</item>
+		<item name="Any">[11th]</item>
+		<item name="Any">[12th]</item>
+		<item name="Any">[13th]</item>
+		<item name="Any">[14th]</item>
+		<item name="Any">[15th]</item>
+		<item name="Any">[16th]</item>
+		<item name="Any">[17th]</item>
+		<item name="Any">[18th]</item>
+		<item name="Any">[19th]</item>
+		<item name="Any">[20th]</item>
+		
+		<item name="1st"><![CDATA[<b>Coins:</b> [1stCoins] <br />
+								  <b>Goods:</b> [1stGoods] <br />
+								  <b>Items:</b> [1stItems] <br />]]></item>
+		<item name="1stCoins" from="1" to="14">—</item>
+		<item name="1stCoins" from="15" to="29">[=Roll(1,6)*1000] cp</item>
+		<item name="1stCoins" from="30" to="52">[=Roll(1,8)*100] cp</item>
+		<item name="1stCoins" from="53" to="95">[=Roll(2,8)*10] gp</item>
+		<item name="1stCoins" from="96" to="100">[=Roll(1,4)*10] pp</item>
+		<item name="1stGoods" from="1" to="90">—</item>
+		<item name="1stGoods" from="91" to="95">[Gem]</item>
+		<item name="1stGoods" from="96" to="100">[Art]</item>
+		<item name="1stItems" from="1" to="71">—</item>
+		<item name="1stItems" from="72" to="95">[Mundane]</item>
+		<item name="1stItems" from="96" to="100">[Minor]</item>
+
+
+		<item name="Gem" from="1" to="25">[GemName1] ([=Roll(4,4)] gp)</item>
+		<item name="Gem" from="26" to="50">[GemName2] ([=Roll(2,4)*10] gp)</item>
+		<item name="Gem" from="51" to="70">[GemName3] ([=Roll(4,4)*10] gp)</item>
+		<item name="Gem" from="71" to="90">[GemName4] ([=Roll(2,4)*500] gp)</item>
+		<item name="Gem" from="91" to="99">[GemName5] ([=Roll(4,4)*100] gp)</item>
+		<item name="Gem" from="100" to="100">[GemName6] ([=Roll(2,4)*1000] gp)</item>
+
+		<item name="Art" from="1" to="10">[ArtName1] ([=Roll(1,10)*10] gp)</item>
+		<item name="Art" from="11" to="25">[ArtName2] ([=Roll(3,6)*10] gp)</item>
+		<item name="Art" from="26" to="40">[ArtName3] ([=Roll(1,6)*100] gp)</item>
+		<item name="Art" from="41" to="50">[ArtName4] ([=Roll(1,10)*100] gp)</item>
+		<item name="Art" from="51" to="60">[ArtName5] ([=Roll(2,6)*100] gp)</item>
+		<item name="Art" from="61" to="70">[ArtName6] ([=Roll(3,6)*100] gp)</item>
+		<item name="Art" from="71" to="80">[ArtName7] ([=Roll(4,6)*100] gp)</item>
+		<item name="Art" from="81" to="85">[ArtName8] ([=Roll(5,6)*100] gp)</item>
+		<item name="Art" from="86" to="90">[ArtName9] ([=Roll(1,4)*1000] gp)</item>
+		<item name="Art" from="91" to="95">[ArtName10] ([=Roll(1,6)*1000] gp)</item>
+		<item name="Art" from="96" to="99">[ArtName11] ([=Roll(2,4)*1000] gp)</item>
+		<item name="Art" from="100" to="100">[ArtName12] ([=Roll(2,6)*1000] gp)</item>
+
+		<item name="Mundane" from="1" to="5">Alchemists's Fire ([=Roll(1,4)] flasks, 20 gp each)</item>
+		<item name="Mundane" from="6" to="10">Acid ([=Roll(2,4)] flasks, 10 gp each)</item>
+		<item name="Mundane" from="11" to="12">Smokesticks ([=Roll(1,4)] sticks, 20 gp each)</item>
+		<item name="Mundane" from="13" to="18">Holy Water ([=Roll(1,4)] flasks, 25 gp each)</item>
+		<item name="Mundane" from="19" to="20">Thunderstones ([=Roll(1,4)] stones, 30 gp each)</item>
+		<item name="Mundane" from="21" to="22">[Size] Chain Shirt (100 gp)</item>
+		<item name="Mundane" from="23" to="27">Antitoxin ([=Roll(1,4)] doses, 50 gp each)</item>
+		<item name="Mundane" from="28" to="29">Tanglefoot bag ([=Roll(1,4)] bags, 50 gp each)</item>
+		<item name="Mundane" from="30" to="34">[MasterworkSize] Masterwork Studded Leather (175 gp)</item>
+		<item name="Mundane" from="35" to="39">Mighty Composite Shortbow [ShortbowType]</item>
+		<item name="Mundane" from="40" to="43">[Size] Breastplate (200 gp)</item>
+		<item name="Mundane" from="44" to="48">[Size] Banded Mail (250 gp)</item>
+		<item name="Mundane" from="49" to="66">Masterwork [CommonMelee]</item>
+		<item name="Mundane" from="67" to="68">Masterwork [UncommonMelee]</item>
+		<item name="Mundane" from="69" to="73">Masterwork [CommonRangedWeapon]</item>
+		<item name="Mundane" from="74" to="83">Mighty Composite Longbow [LongbowType]</item>
+		<item name="Mundane" from="84" to="93">[Size] Half-plate (600 gp)</item>
+		<item name="Mundane" from="94" to="100">[Size] Full Plate (1,500 gp)</item>
+
+		<item name="Minor" weight="4">[MinorArmor]</item>
+		<item name="Minor" weight="5">[MinorWeapon]</item>
+		<item name="Minor" weight="34">[MinorPotion]</item>
+		<item name="Minor" weight="2">[MinorRing]</item>
+		<item name="Minor" weight="34">[MinorScroll]</item>
+		<item name="Minor" weight="10">[MinorWand]</item>
+		<item name="Minor" weight="9">[MinorWonderousItem]</item>
+		
+		<item name="MinorArmor" weight="60">+1 Shield</item>
+		<item name="MinorArmor" weight="20">+1 Armor</item>
+		<item name="MinorArmor" weight="5">+2 Shield</item>
+		<item name="MinorArmor" weight="2">+2 Armor</item>
+		<item name="MinorArmor" weight="7">[MinorShieldAbility] Shield</item>
+		<item name="MinorArmor" weight="6">[MinorArmorAbility] Armor</item>
+
+		<item name="MinorWeapon" weight="70">[CommonMelee] [MinorMeleeSpecial]</item>
+		<item name="MinorWeapon" weight="10">[UncommonMelee] [MinorMeleeSpecial]</item>
+		<item name="MinorWeapon" weight="20">[CommonRanged] [MinorRangedSpecial]</item>
+
+		<item name="MinorPotion" weight="5">Jump Potion</item>
+		<item name="MinorPotion" weight="5">Spider Climb</item>
+
+		<item name="MinorWand"></item>
+
+		<item name="MinorMeleeSpecial" weight="15">Defending</item>
+		<item name="MinorMeleeSpecial" weight="10">Flaming</item>
+		<item name="MinorMeleeSpecial" weight="10">Frost</item>
+		<item name="MinorMeleeSpecial" weight="10">Shock</item>
+		<item name="MinorMeleeSpecial" weight="10">Ghost Touch</item>
+		<item name="MinorMeleeSpecial" weight="15">Keen</item>
+		<item name="MinorMeleeSpecial" weight="10">Mighty Cleaving</item>
+		<item name="MinorMeleeSpecial" weight="10">Spell Storing</item>
+		<item name="MinorMeleeSpecial" weight="9">Throwing</item>
+		<item name="MinorMeleeSpecial" weight="1">[MinorMeleeSpecial] [MinorMeleeSpecial]</item>
+
+		<item name="MinorRangedSpecial" weight="20">Returning</item>
+		<item name="MinorRangedSpecial" weight="20">Distance</item>
+		<item name="MinorRangedSpecial" weight="20">Flaming</item>
+		<item name="MinorRangedSpecial" weight="20">Shock</item>
+		<item name="MinorRangedSpecial" weight="20">Frost</item>
+		
+		<item name="MinorShieldAbility" weight="30">Bashing</item>
+		<item name="MinorShieldAbility" weight="20">Blinding</item>
+		<item name="MinorShieldAbility" weight="10">Light Fortification</item>
+		<item name="MinorShieldAbility" weight="39">Arrow Deflection</item>
+		<item name="MinorShieldAbility" weight="1">[MinorShieldAbility] [MinorShieldAbility]</item>
+
+		<item name="MinorArmorAbility" weight="30">Glamered</item>
+		<item name="MinorArmorAbility" weight="21">Slick</item>
+		<item name="MinorArmorAbility" weight="21">Shadow</item>
+		<item name="MinorArmorAbility" weight="21">Silent Moves</item>
+		<item name="MinorArmorAbility" weight="3">Moderate Fortification</item>
+		<item name="MinorArmorAbility" weight="2">[MinorArmorAbility] [MinorArmorAbility]</item>
+		
+		<item name="Size" weight="10">Small</item>
+		<item name="Size" weight="90">Medium</item>
+
+		<item name="MasterworkSize" weight="50">Small</item>
+		<item name="MasterworkSize" weight="50">Medium</item>
+
+		<item name="ShortbowType" weight="60">+1 (150 gp)</item>
+		<item name="ShortbowType" weight="40">+2 (225 gp)</item>
+
+		<item name="LongbowType" weight="45">+1 (200 gp)</item>
+		<item name="LongbowType" weight="30">+2 (300 gp)</item>
+		<item name="LongbowType" weight="15">+3 (400 gp)</item>
+		<item name="LongbowType" weight="10">+4 (500 gp)</item>
+		
+		<item name="GemName1">Banded Agate</item>
+		<item name="GemName1">Eye Agate</item>
+		<item name="GemName1">Moss Agate</item>
+		<item name="GemName1">Azurite</item>
+		<item name="GemName1">Blue Quartz</item>
+		<item name="GemName1">Hematite</item>
+		<item name="GemName1">Lapis Lazuli</item>
+		<item name="GemName1">Malachite</item>
+		<item name="GemName1">Obsidian</item>
+		<item name="GemName1">Rhodochrosite</item>
+		<item name="GemName1">Tiger Eye Turquoise</item>
+		<item name="GemName1">Irregular Freshwater Pearl</item>
+
+		<item name="GemName2">Bloodstone</item>
+		<item name="GemName2">Carnelian</item>
+		<item name="GemName2">Chalcedony</item>
+		<item name="GemName2">Chrysoprase</item>
+		<item name="GemName2">Citrine</item>
+		<item name="GemName2">Iolite</item>
+		<item name="GemName2">Jasper</item>
+		<item name="GemName2">Moonstone</item>
+		<item name="GemName2">Onyx</item>
+		<item name="GemName2">Peridot</item>
+		<item name="GemName2">Rock Crystal (Clear Quartz)</item>
+		<item name="GemName2">Sard</item>
+		<item name="GemName2">Sandonyx</item>
+		<item name="GemName2">Rose Quartz</item>
+		<item name="GemName2">Smoky Quartz</item>
+		<item name="GemName2">Star Rose Quartz</item>
+		<item name="GemName2">Ziron</item>
+
+		<item name="GemName3">Amber</item>
+		<item name="GemName3">Amethyst</item>
+		<item name="GemName3">Chrysoberyl</item>
+		<item name="GemName3">Coral</item>
+		<item name="GemName3">Red Garnet</item>
+		<item name="GemName3">Brown-green Garnet</item>
+		<item name="GemName3">Jade</item>
+		<item name="GemName3">Jet</item>
+		<item name="GemName3">White Pearl</item>
+		<item name="GemName3">Golen Pearl</item>
+		<item name="GemName3">Pink Pearl</item>
+		<item name="GemName3">Silver Pearl</item>
+		<item name="GemName3">Red Spinel</item>
+		<item name="GemName3">Red-brown Spinel</item>
+		<item name="GemName3">Deep Green Spinel</item>
+		<item name="GemName3">Tourmaline</item>
+
+		<item name="GemName4">Alexandrite</item>
+		<item name="GemName4">Aquamarine</item>
+		<item name="GemName4">Violet Garnet</item>
+		<item name="GemName4">Black Pearl</item>
+		<item name="GemName4">Deep Blue Spinel</item>
+		<item name="GemName4">Golen Yellow Topaz</item>
+
+		<item name="GemName5">Emerald</item>
+		<item name="GemName5">White Opal</item>
+		<item name="GemName5">Black Opal</item>
+		<item name="GemName5">Fire Opal</item>
+		<item name="GemName5">Blue Sapphire</item>
+		<item name="GemName5">Fiery Yellow Corundum</item>
+		<item name="GemName5">Rich Purple Corundum</item>
+		<item name="GemName5">Blue Sapphire</item>
+		<item name="GemName5">Black Star Sapphire</item>
+		<item name="GemName5">Star Ruby</item>
+
+		<item name="GemName6">Clearest Bright Green Emerald</item>
+		<item name="GemName6">Blue-white Diamond</item>
+		<item name="GemName6">Canary Diamond</item>
+		<item name="GemName6">Pink Diamond</item>
+		<item name="GemName6">Brown Diamond</item>
+		<item name="GemName6">Blue Diamond</item>
+		<item name="GemName6">Jacinth</item>
+
+		<item name="ArtName1">Silver Ewer</item>
+		<item name="ArtName1">Carved Bone Statuette</item>
+		<item name="ArtName1">Ivory Statuette</item>
+		<item name="ArtName1">Finely Wrought Small Gold Bracelet</item>
+
+		<item name="ArtName2">Cloth of Gold Vestments</item>
+		<item name="ArtName2">Black Velvet Mask with Numerous Citrines</item>
+		<item name="ArtName2">Silver Chalice with Lapis Lazuli Gems</item>
+
+		<item name="ArtName3">Large Well-done Wool Tapestry</item>
+		<item name="ArtName3">Brass Mug with Jade Inlays</item>
+
+		<item name="ArtName4">Silver Comb with Moonstones</item>
+		<item name="ArtName4">Silver-plated Steel Longsword with Jet Jewel Hilt</item>
+
+		<item name="ArtName5">Carved Harp of Exotic Wood with Iveory Inlay and Zircon Gems</item>
+		<item name="ArtName5">Solid Gold Idol</item>
+
+		<item name="ArtName6">Gold Dragon Comb with Red Garnet Eye</item>
+		<item name="ArtName6">Gold and Topaz Bottle Stopper Cork</item>
+		<item name="ArtName6">Ceremonial Electrum Dagger with a Star Ruby in the Pommel</item>
+
+		<item name="ArtName7">Eyepatch with Mock Eye of Sapphire and Moonstone</item>
+		<item name="ArtName7">Fire Opal Pendant on a Fine Gold Chain</item>
+		<item name="ArtName7">Old Masterpiece Painting</item>
+
+		<item name="ArtName8">Embroidered Silk and Velvet Mantle with Numerous Moonstones</item>
+		<item name="ArtName8">Sapphire Pendant on Gold Chain</item>
+
+		<item name="ArtName9">Embroidered and Bejeweled Glove</item>
+		<item name="ArtName9">Gold Music Box</item>
+
+		<item name="ArtName10">Golden Circlet with Four Aquamarines</item>
+		<item name="ArtName10">A String of Small Pink Pearls</item>
+
+		<item name="ArtName11">Jeweled Gold Crown</item>
+		<item name="ArtName11">Jeweled Electrum Ring</item>
+
+		<item name="ArtName12">Gold and Ruby Ring</item>
+		<item name="ArtName12">Gold Cup Set with Emeralds</item>
+
+		<item name="CommonMelee" weight="4">Dagger</item>
+		<item name="CommonMelee" weight="10">Greataxe</item>
+		<item name="CommonMelee" weight="10">Greatsword</item>
+		<item name="CommonMelee" weight="4">Kama</item>
+		<item name="CommonMelee" weight="12">Longsword</item>
+		<item name="CommonMelee" weight="4">Light Mace</item>
+		<item name="CommonMelee" weight="5">Heavy Mace</item>
+		<item name="CommonMelee" weight="4">Nunchaku</item>
+		<item name="CommonMelee" weight="3">Quarterstaff</item>
+		<item name="CommonMelee" weight="3">Rapier</item>
+		<item name="CommonMelee" weight="5">Scimitar</item>
+		<item name="CommonMelee" weight="3">Shortspear</item>
+		<item name="CommonMelee" weight="4">Siangham</item>
+		<item name="CommonMelee" weight="10">Bastard Sword</item>
+		<item name="CommonMelee" weight="4">Short sword</item>
+		<item name="CommonMelee" weight="10">Dwarven Waraxe</item>
+
+		<item name="UncommonMelee" weight="3">Orc Double Axe</item>
+		<item name="UncommonMelee" weight="4">Battleaxe</item>
+		<item name="UncommonMelee" weight="3">Spiked Chain</item>
+		<item name="UncommonMelee" weight="3">Club</item>
+		<item name="UncommonMelee" weight="4">Hand Crossbow</item>
+		<item name="UncommonMelee" weight="3">Repeating Crossbow</item>
+		<item name="UncommonMelee" weight="2">Punching Dagger</item>
+		<item name="UncommonMelee" weight="2">Falchion</item>
+		<item name="UncommonMelee" weight="3">Dire Flail</item>
+		<item name="UncommonMelee" weight="4">Heavy Flail</item>
+		<item name="UncommonMelee" weight="3">Light Flail</item>
+		<item name="UncommonMelee" weight="2">Gauntlet</item>
+		<item name="UncommonMelee" weight="2">Spiked Gauntlet</item>
+		<item name="UncommonMelee" weight="2">Glaive</item>
+		<item name="UncommonMelee" weight="2">Greatclub</item>
+		<item name="UncommonMelee" weight="2">Guisarme</item>
+		<item name="UncommonMelee" weight="3">Halberd</item>
+		<item name="UncommonMelee" weight="3">Halfspear</item>
+		<item name="UncommonMelee" weight="3">Gnome Hooked Hammer</item>
+		<item name="UncommonMelee" weight="2">Light Hammer</item>
+		<item name="UncommonMelee" weight="2">Handaxe</item>
+		<item name="UncommonMelee" weight="3">Kukri</item>
+		<item name="UncommonMelee" weight="2">Heavy Lance</item>
+		<item name="UncommonMelee" weight="2">Light Lance</item>
+		<item name="UncommonMelee" weight="2">Longspear</item>
+		<item name="UncommonMelee" weight="3">Morningstar</item>
+		<item name="UncommonMelee" weight="2">Net</item>
+		<item name="UncommonMelee" weight="2">Heavy Pick</item>
+		<item name="UncommonMelee" weight="2">Light Pick</item>
+		<item name="UncommonMelee" weight="2">Ranseur</item>
+		<item name="UncommonMelee" weight="2">Sap</item>
+		<item name="UncommonMelee" weight="2">Scythe</item>
+		<item name="UncommonMelee" weight="2">Shuriken</item>
+		<item name="UncommonMelee" weight="2">Sickle</item>
+		<item name="UncommonMelee" weight="3">Two-bladed Sword</item>
+		<item name="UncommonMelee" weight="2">Trident</item>
+		<item name="UncommonMelee" weight="3">Dwarven Urgosh</item>
+		<item name="UncommonMelee" weight="3">Warhammer</item>
+		<item name="UncommonMelee" weight="3">Whip</item>
+
+		<item name="CommonRangedWeapon" weight="10">[CommonAmmunition]</item>
+		<item name="CommonRangedWeapon" weight="5">Throwing Axe</item>
+		<item name="CommonRangedWeapon" weight="10">Heavy Crossbow</item>
+		<item name="CommonRangedWeapon" weight="10">Light Crossbow</item>
+		<item name="CommonRangedWeapon" weight="4">Dart</item>
+		<item name="CommonRangedWeapon" weight="2">Javelin</item>
+		<item name="CommonRangedWeapon" weight="5">Shortbow</item>
+		<item name="CommonRangedWeapon" weight="5">Composite Shortbow</item>
+		<item name="CommonRangedWeapon" weight="5">Mighty Composite Shortbow (+1 Str Bonus)</item>
+		<item name="CommonRangedWeapon" weight="5">Mighty Composite Shortbow (+2 Str Bonus)</item>
+		<item name="CommonRangedWeapon" weight="4">Sling</item>
+		<item name="CommonRangedWeapon" weight="10">Longbow</item>
+		<item name="CommonRangedWeapon" weight="5">Composite Longbow</item>
+		<item name="CommonRangedWeapon" weight="5">Mighty Composite Longbow (+1 Str Bonus)</item>
+		<item name="CommonRangedWeapon" weight="5">Mighty Composite Longbow (+2 Str Bonus)</item>
+		<item name="CommonRangedWeapon" weight="5">Mighty Composite Longbow (+3 Str Bonus)</item>
+		<item name="CommonRangedWeapon" weight="5">Mighty Composite Longbow (+4 Str Bonus)</item>
+
+		<item name="CommonAmmunition" weight="50">Arrows (50)</item>
+		<item name="CommonAmmunition" weight="30">Crossbow Bolts(50)</item>
+		<item name="CommonAmmunition" weight="20">Sling Bullets (50)</item>		
+	</items>
+</Grammar>

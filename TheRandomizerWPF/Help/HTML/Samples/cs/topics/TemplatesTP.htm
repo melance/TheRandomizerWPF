@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Šablony témat a projektů</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Šablony témat a projektů</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/templates.jpg" style="float:left; margin-right:12px; margin-bottom:24px;" />
+    <p>
+      Šablony témat a projektů usnadňují vytváření nových témat nápovědy, jelikož Vám umožní zahrnout do Vašeho aktuálního projektu
+      nejen zvolený předdefinovaný styl tématu, ale automaticky také všechny použité skripty, obrázky, videa a další soubory použité v šabloně tématu.
+    </p>
+    <p>
+      V této kapitole se dozvíte, jak jsou šablony v produktu definovány a jak si můžete přidat šablony vlastní. 
+    </p>
+    <br />
+
+    <p class="big">
+      Šablony témat
+    </p>
+    <p>
+      Šablony témat naleznete v aplikační složce produktu Precision Helper v podsložce <i>Templates\_Topics</i>.
+    </p>
+    <p style="margin-left:24px; text-align:left;">
+      Při výchozí instalaci na Windows 2000/XP je to složka:<br>
+      <i>"C:\Documents and Settings\%UserName%\Data aplikací\Precision\precisionhelper\Templates\_Topics"</i><br><br>
+      Při výchozí instalaci na Windows Vista (a vyšší) je to složka:<br>
+      <i>"C:\Users\%UserName%\AppData\Roaming\Precision\precisionhelper\Templates\_Topics"</i>
+    </p>
+
+    <p>
+      Ve složce <i>_Topics</i> mohou již být soubory a další složky uloženy zcela libovolně, ale pro správné fungování v produktu
+      Precision Helper je nutné splnit dvě podmínky:
+    </p>
+    <ul class="shr">
+      <li>
+        Hlavní soubor šablony musí být ve formátu tématu nápovědy (čili <b>html</b>, <b>xml</b>, apod.),
+        a název souboru by měl obsahovat dvě přípony - identifikátor jazykového řezu a vlastní formát souboru.
+        Čili např.: <i>mytemplate.en.htm</i>. 
+      </li>
+      <li>
+        Pro daný soubor šablony musí existovat konfigurační soubor s příponou <b>.lst</b>, který musí být ve struktuře adresářů
+          umístěn tak, jako by se jednalo o projektový soubor, ve kterém budete chtít danou šablonu použít.
+          Tento soubor pak musí obsahovat seznam obrázků, skriptů, stylů, a dalších souborů použitých v šabloně, přičemž hlavní soubor
+          šablony musí být uveden na prvním místě. (Jak je asi patrné, pro různé šablony můžete využívat společné obrázky, styly, a další soubory.) 
+      </li>
+    </ul>
+    <p>
+      Precision Helper obsahuje několik základních šablon, na jejichž definici se můžete podívat, a také vyzkoušet jakým
+      způsobem jsou poté nová témata, vytvořená z těchto šablon, zařazována do Vašich projektů. 
+    </p>
+    <p>
+      Nejsnadnějším způsobem, <b>jak vytvořit novou vlastní šablonu</b>, je použít volbu
+      "<a href="pageTopic.htm#topicsel">Uložit jako šablonu</a>" v okně tématu (v nabídce "Vybrat téma").
+      Šablony si můžete evidovat v pomocném projektu nápovědy, editovat je jako normální témata,
+      a poté uložit pro používání pomocí výše zmíněné volby. 
+    </p>
+    <br />
+   
+
+    <p class="big">
+      Šablony projektů
+    </p>
+    <p>
+      Šablony projektů naleznete v aplikační složce produktu Precision Helper v podsložce <i>Templates\_Projects</i>.
+    </p>
+    <p>
+      Jako šablony jsou akceptovány všechny soubory s příponou <b>.HHP</b> <i>(projekty MS Html Help)</i>.
+      Pro rozlišení jazykových mutací, by projektové soubory měly obsahovat dvě přípony - identifikátor jazykového řezu a vlastní formát souboru.
+      Čili např.: <i>myproject.en.hhp</i>.        
+    </p>
+    <p>
+      Narozdíl od šablon témat, zde není nutné definovat speciální konfigurační soubory. Při vytváření nového projektu ze šablony
+      se veškerý obsah složky s vybranou šablonou projektu (včetně podsložek) zkopíruje do umístění, které jste vybrali pro Váš
+      nový projekt, a projektový soubor se přejmenuje na Vámi zadaný název.
+    </p>
+    <p>
+      Díky výše uvedenému principu použití šablon projektů, nelze soubory obrázků, stylů, skriptů, apod., sdílet mezi jednotlivými šablonami projektů.
+    </p>
+    <p>
+      Nejsnadnějším způsobem, <b>jak vytvořit novou vlastní šablonu projektu</b>, 
+      je zkopírovat obsah celého adresáře s Vaším stávajícím projektem do zmíněné složky šablon - např. <i>Templates\_Projects\MyTemplate</i>.
+    </p>
+
+    <br>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011&nbsp;&nbsp;Precision software &amp; consulting. All rights reserved.
+  </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar">
+	<name>Sample Assignment Gramar</name>
+	<author>Lance Boudreaux</author>
+	<description>A sample assignment grammar</description>
+	<tags>
+		<tag>Sample</tag>
+		<tag>Test</tag>
+	</tags>
+	<parameters>
+		<parameter name="Gender" display="Gender" type="List" valueType="Label">
+			<option display="any">GenderAny</option>
+			<option display="Male">GenderMale</option>
+			<option display="Female">GenderFemale</option>
+		</parameter>
+	</parameters>
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start">[=Rnd(12,60)] year old [Gender] [Race]</item>
+		<item name="GenderAny">Male</item>
+		<item name="GenderAny">Female</item>
+		<item name="GenderMale">Male</item>
+		<item name="GenderFemale">Female</item>
+		<item name="Race">Human</item>
+		<item name="Race">[Elf] Elf</item>
+		<item name="Race">[Gnome] Gnome</item>
+
+		<item name="Elf">Wood</item>
+		<item name="Elf">High</item>
+
+		<item name="Gnome">Rock</item>
+		<item name="Gnome">Travel</item>
+	</items>
+</Grammar>

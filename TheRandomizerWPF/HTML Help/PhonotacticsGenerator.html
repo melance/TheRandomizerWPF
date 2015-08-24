@@ -1,0 +1,95 @@
+﻿<html>
+	
+<head>
+	<title>Phonotactics Generator</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.5.0.497">
+	<meta name="keywords" content="Tools">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "The Randomizer.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("PhonotacticsGenerator");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Phonotactics Generator</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="TheUserInterface.html">The User Interface</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="TheUserInterface.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="ItemListConverter.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="GrammarFiles.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps3"><span class="rvts8">The phonotactics generator takes two files, one a sample file and the other a definition file and generates a phonotactic grammar file.</span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/Phonotactics Generator.png"/></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Grammar Info</span></span></h3>
+<p class="rvps3"><span class="rvts8">Grammar info fills in the header information of the grammar. In order to have a usable grammar, this information should be filled in.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Name</span><span class="rvts8">: The name of the grammar</span></p>
+<p class="rvps3"><span class="rvts15">Description</span><span class="rvts8">: The description of the grammar</span></p>
+<p class="rvps3"><span class="rvts15">Author: </span><span class="rvts8">The author of the grammar</span></p>
+<p class="rvps3"><span class="rvts15">Genre: </span><span class="rvts8">The genre the grammar falls under</span></p>
+<p class="rvps3"><span class="rvts15">System: </span><span class="rvts8">The roleplaying system the grammar is intended for</span></p>
+<p class="rvps3"><span class="rvts15">Category</span><span class="rvts8">: The category to list the grammar under</span></p>
+<p class="rvps3"><span class="rvts15">Supports Max Length</span><span class="rvts8">: Does this grammar allow max length.</span></p>
+<h3 class="rvps5"><span class="rvts0"><span class="rvts14">Phonotactics Options</span></span></h3>
+<p class="rvps3"><span class="rvts15">Sample File: </span><span class="rvts8">The file containing sample words with one word per line</span></p>
+<p class="rvps3"><span class="rvts15">Definition File: </span><span class="rvts8">The file containing the definitions of the key words. &nbsp;The format for the definiton file is: [Key Character]=[Comma Separated Values]</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps9"><span class="rvts18">c=b,c,d,f,j,k,l,m,n,p,q,r,s,t,v</span></p>
+<p class="rvps9"><span class="rvts18">v=a,e,i,o,u</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><span class="rvts15">Limit Weight:</span><span class="rvts8"> If selected, this will tell the generate that the weight of a single value cannot be greater than the given value. &nbsp;This can help to keep the bias from getting too high.</span></p>
+<p></p>
+<p class="rvps2"><span class="rvts6">Created with the Personal Edition of HelpNDoc: </span><a class="rvts7" href="http://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle">Produce Kindle eBooks easily</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2014 by Lance Boudreaux. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DiceRoll">
+  <name>D&amp;D Attributes</name>
+  <author>Lance Boudreaux</author>
+  <description>Rolls the character attribute stats for D&amp;D.</description>
+	<genre>Fantasy</genre>
+	<system>D&amp;D</system>
+    <category>Dice Roll</category>
+  <parameters>
+    <parameter name="RollFunction" display="Method" type="List" valueType="Label" default="standard">
+      <option display="3d6 in order">standard</option>
+      <option display="3d6">3d6</option>
+      <option display="4d6 drop lowest">4d6</option>
+      <option display="5d6 drop 2 lowest">5d6</option>
+      <option display="3d6 reroll 1's">3d6 Reroll</option>
+      <option display="4d6 drop lowest reroll 1's">4d6 Reroll</option>
+      <option display="5d6 drop lowest reroll 1's">5d6 Reroll</option>
+    </parameter>
+  </parameters>
+  <supportsMaxLength>false</supportsMaxLength>
+  <function name="standard">'STR ' + Roll(3,6)
+	'CON ' + Roll(3,6)
+	'DEX ' + Roll(3,6)
+	'INT ' + Roll(3,6)
+	'WIS ' + Roll(3,6)
+	'CHA ' + Roll(3,6)</function>
+  <function name="3d6">Roll(3,6)
+	Roll(3,6)
+	Roll(3,6)
+	Roll(3,6)
+	Roll(3,6)
+	Roll(3,6)</function>
+  <function name="4d6">Roll(4,6,'DL')
+	Roll(4,6,'DL')
+	Roll(4,6,'DL')
+	Roll(4,6,'DL')
+	Roll(4,6,'DL')
+	Roll(4,6,'DL')</function>
+  <function name="5d6">Roll(5,6,'DL',2)
+	Roll(5,6,'DL',2)
+	Roll(5,6,'DL',2)
+	Roll(5,6,'DL',2)
+	Roll(5,6,'DL',2)
+	Roll(5,6,'DL',2)</function>
+  <function name="3d6 Reroll">Roll(3,6,'RB')
+	Roll(3,6,'RB')
+	Roll(3,6,'RB')
+	Roll(3,6,'RB')
+	Roll(3,6,'RB')
+	Roll(3,6,'RB')</function>
+  <function name="4d6 Reroll">Roll(4,6,'DL','RB')
+	Roll(4,6,'DL','RB')
+	Roll(4,6,'DL','RB')
+	Roll(4,6,'DL','RB')
+	Roll(4,6,'DL','RB')
+	Roll(4,6,'DL','RB')</function>
+  <function name="5d6 Reroll">Roll(5,6,'DL',2,'RB')
+	Roll(5,6,'DL',2,'RB')
+	Roll(5,6,'DL',2,'RB')
+	Roll(5,6,'DL',2,'RB')
+	Roll(5,6,'DL',2,'RB')
+	Roll(5,6,'DL',2,'RB')</function>
+</Grammar>

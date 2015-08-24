@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Assignment Grammar Structure</title>
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+	<link rel="stylesheet" type="text/css" href="../css/the_randomizer.css">
+</head>
+<body>
+
+	<div id="topictop">&nbsp;</div>
+	<div id="topictitleleft">
+		<div id="topictitle">
+			<h3>Assignment Grammar Structure</h3>
+		</div>
+	</div>
+  
+	<div id="main">
+	<p>Assignment Grammar Files are a generic grammar type which is highly customizable. 
+	The following information is specific to Assignment Grammar Files. 
+	See the <a href="Grammar File Structure.htm">Grammar Files</a> help section for common information about all Grammar Files.</p>
+
+	<h2>The Rules</h2>
+	<p>The rules are the meat of the grammar. The rules are what tell The Randomizer how to generate it's content. 
+	Based on Markov Chains, the rules are extremely flexible and powerful.</p>
+
+	<p class="big">Properties</p>
+	<table>
+		<tr>
+			<th>Element</th>
+			<th>Description</th>
+			<th>Values</th>
+		</tr>
+		<tr>
+			<td>item</td>
+			<td>A single rule</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>[name]</td>
+			<td>The label of the rule</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>[weight]</td>
+			<td>The weight of this particular rule during selection</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>[next]</td>
+			<td>The label of the rule that will come after this one</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>{expression}</td>
+			<td>The value of this rule</td>
+			<td>See the expressions section below</td>
+		</tr>
+	</table>
+	<br />
+	<p class="sub">Sample</p>
+	<pre><code>&lt;items&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="Start"&gt;[Gender]&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="Any" weight="50"&gt;[MaleName]&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="Any" weight="50"&gt;[FemaleName]&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="Male"&gt;[MaleName]&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="Female"&gt;[FemaleName]&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="MaleName" weight="300" next="[Space]"&gt;James&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="MaleName" weight="299" next="[Space]"&gt;John&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="MaleName" weight="298" next="[Space]"&gt;Robert&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="MaleName" weight="297" next="[Space]"&gt;Michael&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;:
+&nbsp; &nbsp; &nbsp; &nbsp;:
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="SurName" weight="1"&gt;Williamson&lt;/item&gt;
+&lt;/items&gt;</code></pre>
+	
+	<p class="big">Expressions</p>
+	<p>Expressions are the key to the rules. They can be as simple as a string value or as complex as a series of labels, strings, calculations, and formatting commands.</p>
+	<br />
+	<p class="bold">Strings</p>
+	<p>The simplest form of an expression is a string. Things such as "Lance" or "A". An example rule would look like so:</p>
+
+	<pre><code>&lt;item name="Sample"&gt;Lance&lt;/item&gt;
+&lt;item name="Sample"&gt;Boudreaux&lt;/item&gt;</pre></code>
+
+	<p class="bold">Labels</p>
+	<p>Labels can also be placed in the expression. These tell the generator to produce a result from the results of evaluating that label.
+	Labels are denoted by being surrounded by square brackets like so: [LabelName].
+	For example, you could generate a first and last name using an expression something like this:</p>
+
+	<pre><code>&lt;item name="FullName"&gt;[FirstName] [LastName]&lt;/item&gt;
+&lt;item name="FirstName"&gt;Lance&lt;/item&gt;
+&lt;item name="FirstName"&gt;John&lt;/item&gt;
+&lt;item name="LastName"&gt;Boudreaux&lt;/item&gt;
+&lt;item name="LastName"&gt;Doe&lt;/item&gt;</code></pre>
+
+	<p class="bold">Calculations</p>
+	<p>Calculations look similar to labels but allow for numerical and string computations to be done. 
+	They are denoted by being in square brackets with an equal sign immediately after the opening bracket:</b>
+
+	<pre><code>&lt;item name="Strength"&gt;[=Roll(3,6)]&lt;/item&gt;
+&lt;item name="NumberOfOrcs"&gt;You encounter [=ToText(Roll(2,4)+2)] orcs!&lt;/item&gt;</code></pre>
+
+	<p>You can find a list of functionality available for calculations at the </span><a class="rvts13" href="https://ncalc.codeplex.com/" target="_blank">nCalc</a><image src="../img/popout.gif" /> website. &nbsp;Additional functions included in The Randomizer are detailed in the <a href="Calculation Functions.htm">Calculation Functions</a> help topic but also include those listed here:</p>
+
+	<table>
+		<tr>
+			<th>Function</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>Items([Label])</td>
+			<td>Returns the number of rule items that have been visited thus far. 
+			If the Label is provided it counts only those rule items with that label.</td>
+		</tr>
+	</table>
+	<br />
+	<p class="bold">Formatting</p>
+	<p>Formatting can be added to expressions in the form of html tags. 
+	For example, if you wanted to make a word bold and red you could use the following code:</p>
+	<pre><code>&lt;item name="Orcs"&gt;&lt;![CDATA[&lt;span style="font-weight:bold;color:red"&gt;ORCS!&lt;/span&gt;]]&gt;&lt;/item&gt;</code></pre>
+	
+	<p>The results of this would be:</p>
+	<pre><code><span style="font-weight:bold; color:red;">ORCS!</span></code></pre>
+	
+	<br />
+	<p class="big">Imports</p>
+	<p>It is possible in Assignment Grammars to import library files that contain rules that will be included in the grammar. 
+	Library files have an extension of *.lib.xml and are included in the same folder as the grammars. 
+	Importing the library is done by adding import tags with the content being the name of the library file with or without the extension.</p>
+
+	<p class="sub">Sample:</p>
+	<pre><code> &lt;imports&gt;
+ &nbsp; &nbsp;&lt;import&gt;USNames&lt;/import&gt;
+ &lt;/imports&gt;</code></pre>
+	<br />
+	<p class="sub">Library File Sample:</p>
+	<pre><code>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;library&gt;
+&nbsp; &nbsp;&lt;item name="FirstName"&gt;John&lt;/item&gt;
+&nbsp; &nbsp;&lt;item name="FirstName"&gt;Lance&lt;/item&gt;
+&nbsp; &nbsp;&lt;item name="LastName"&gt;Doe&lt;/item&gt;
+&nbsp; &nbsp;&lt;item name="LastName"&gt;Boudreaux&lt;/item&gt;
+&lt;/library&gt;</code></pre>
+
+	<p class="sub">A sample Assignment Grammar</p>
+	<pre><code>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;Grammar xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xsi:type=&quot;AssignmentGrammar&quot;&gt;
+	&lt;name&gt;Sample Assignment Gramar&lt;/name&gt;
+	&lt;author&gt;Lance Boudreaux&lt;/author&gt;
+	&lt;description&gt;A sample assignment grammar&lt;/description&gt;
+	&lt;tags&gt;
+		&lt;tag&gt;Sample&lt;/tag&gt;
+		&lt;tag&gt;Test&lt;/tag&gt;
+	&lt;/tags&gt;
+	&lt;parameters&gt;
+	    &lt;parameter name=&quot;Gender&quot; display=&quot;Gender&quot; type=&quot;List&quot; valueType=&quot;Label&quot;&gt;
+			&nbsp; &nbsp; &nbsp; &nbsp;&lt;option display="any"&gt;GenderAny&lt;/option&gt;
+			&nbsp; &nbsp; &nbsp; &nbsp;&lt;option display="Male"&gt;GenderMale&lt;/option&gt;
+			&nbsp; &nbsp; &nbsp; &nbsp;&lt;option display="Female"&gt;GenderFemale&lt;/option&gt;
+		&lt;/parameter&gt;
+	&lt;/parameters&gt;
+	&lt;supportsMaxLength&gt;false&lt;/supportsMaxLength&gt;
+	&lt;items&gt;
+		&lt;item name=&quot;Start&quot;&gt;[=Rnd(12,60)] year old [Gender] [Race]&lt;/item&gt;
+		&lt;item name=&quot;GenderAny&quot;&gt;Male&lt;/item&gt;
+		&lt;item name=&quot;GenderAny&quot;&gt;Female&lt;/item&gt;
+		&lt;item name=&quot;GenderMale&quot;&gt;Male&lt;/item&gt;
+		&lt;item name=&quot;GenderFemale&quot;&gt;Female&lt;/item&gt;
+		&lt;item name=&quot;Race&quot;&gt;Human&lt;/item&gt;
+		&lt;item name=&quot;Race&quot;&gt;[Elf] Elf&lt;/item&gt;
+		&lt;item name=&quot;Race&quot;&gt;[Gnome] Gnome&lt;/item&gt;
+		
+		&lt;item name=&quot;Elf&quot;&gt;Wood&lt;/item&gt;
+		&lt;item name=&quot;Elf&quot;&gt;High&lt;/item&gt;
+		
+		&lt;item name=&quot;Gnome&quot;&gt;Rock&lt;/item&gt;
+		&lt;item name=&quot;Gnome&quot;&gt;Travel&lt;/item&gt;
+	&lt;/items&gt;
+&lt;/Grammar&gt;</code></pre>
+
+	<p>The output of the sample would look like so:</p>
+	<pre><code>60 year old Female High Elf
+30 year old Male Human
+42 year old Female Rock Gnome
+59 year old Male Human
+31 year old Female Wood Elf</code></pre>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Application extensions (add-ons)</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Application extensions (add-ons)</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/phe.jpg" style="float:left; margin-right:12px; margin-bottom:24px;" />
+    <p>
+      Precision Helper implements two interfaces for using the application extensions (add-ons).
+      They are <b>command-line</b> interface and <b>Pascal Script</b> interface.     
+    </p>
+    <p>
+      Application add-ons can significantly extend the functionality of the product in different areas and can be created by third parties.
+    </p>
+    <p class="big">
+      The first available add-ons:
+    </p>    
+    <ul class="shr">
+      <li><b>HTML Tidy</b> - uses the well-known tool to check, clean and reformat the topic</li>
+      <li><b>New project from files</b> - wizard for creating a new project from an existing topic files</li>
+      <li><b>Edit HHC</b> - allows editing of TOC source file in an external HTML editor</li>
+      <li><b>Edit HHK</b> - allows editing of Index source file in an external HTML editor</li>
+      <li><b>Project stats</b> - displays a brief statistical info about the current project</li>
+      <li><b>Date and time</b> - inserts an actual date and time into currently edited topic</li>
+    </ul>
+    <br />
+
+    <p class="big">
+      Where are the extensions installed?
+    </p>
+    <p>
+      All extensions must be installed into the <i>Extras</i> subfolder of Precision Helper application folder.
+    </p>
+    <p style="margin-left:24px; text-align:left;">
+      For default installation on Windows 2000/XP it is a folder:<br>
+      <i>"C:\Documents and Settings\%UserName%\AppData\Precision\precisionhelper\Extras"</i><br><br>
+            For default installation on Windows Vista (and newer) it is a folder:<br>
+      <i>"C:\Users\%UserName%\AppData\Roaming\Precision\precisionhelper\Extras"</i>
+    </p>
+    <p>
+      Each extension should be also located in a different folder. Of course, a set of extensions, that share the same components (files),
+      can be stored in the same folder.
+    </p>
+    <br />
+
+    <p class="big">
+      Add-on configuration files
+    </p>
+    <p>
+      Each add-on is defined by the parameters specified in the <b>configuration file</b>.
+      that must have a <b>.PHE</b> suffix (ie. MyExtension.phe).<br />
+      The configuration files for Pascal Script interface are simple and contains essentially only descriptive information.
+      On the contrary, the configuration files for command-line interface contain a complete definition of parameters and operations, 
+      that Precision Helper must process in each step (before execution, after execution, etc.).
+    </p>
+    <br />
+
+    <p class="big">
+      Pascal Script interface
+    </p>
+    <p>
+      The following example shows a configuration file of the <b>Pascal Script</b> interface add-on.
+    </p>
+
+<pre style="color:#000;background-color:#eee;margin-top:0px;">
+
+  <b>[Precision Helper Extension]</b>
+  <b>Interface=</b>pascalscript
+
+  ; Default title and description of the extension   
+  <b>Caption=</b>New from files
+  <b>Hint=</b>Create a new help project from an existing topic files
+
+  ; Localized title and description of the extension
+  <b>Caption.cs=</b>Nový ze souborů
+  <b>Hint.cs=</b>Vytvořit nový projekt nápovědy z existujících souborů témat
+   
+  <b>[IDE]</b>
+  ; Parts of the Precision Helper IDE, where the extension should be available
+  ribbonHOME=1
+  ribbonTOC=0
+  ribbonIDX=0
+  ribbonPUB=0
+  ribbonTOOLS=1
+  ribbonHELP=0
+  TopicSource=0
+  
+</pre>
+    <p>
+      The parameters in the example are more or less clear.
+      The code for this kind of add-ons is placed in a file named <b>RunScript.pas</b>. 
+      If the add-on contains a GUI (visual user interface), it must be defined in a file named <b>RunScript.dfm</b>.
+    </p>
+    <p>
+      For editing and designing the add-ons with Pascal Script interface,
+      you can use any editor, but we recommend to use our <b>pdScript IDE</b> product,
+      that contains a full support for Precision Helper pascal scripting interface 
+      (see <a href="http://www.be-precision.com/products/pdscript/" target="blank">http://www.be-precision.com/products/pdscript/</a>).    
+    </p>
+    <p>
+      As starting examples for creating your own add-ons you can use the predefined existing extensions,
+      that can be found in the above mentioned folder.
+    </p>
+    <br />
+
+    <p class="big">
+      Command-line interface
+    </p>
+    <p>
+      The following example shows a configuration file of the <b>command-line</b> interface add-on,
+      including the description of individual parameters.
+    </p>
+       
+<pre style="color:#000;background-color:#eee;margin-top:0px;">
+
+  <b>[Precision Helper Extension]</b>
+  ; Interface: 
+  ;   pascalscript - Pascal Script interface  
+  ;   cmdline      - Command-line interface
+  ;                  An external program is executed with the specified parameters.
+  ;                  (See 'Application' and 'Command-line' sections for more info)
+  <b>Interface=</b>cmdline
+  
+  <b>Caption=</b>Edit HHC
+  <b>Hint=</b>Open the table of contents source file in an external html editor
+  
+  <b>Caption.cs=</b>Upravit HHC
+  <b>Hint.cs=</b>Otevřít zdrojový soubor obsahu v externím html editoru
+  
+  <b>[Script]</b>
+  ; not implemented yet
+  <b>ExecOnLoad=</b>0
+  
+  <b>[Application]</b>
+  ; Application to execute. Can be an exact path, or path with an environment variables, 
+  ; or can contain one of the following macros:
+  ; %X% - Macro that runs one of the tools predefined in Precision Helper. 
+  ;       (X can be: 1 - Html editor, 2 - Web browser, 4 - Image editor, 5 - File manager)
+  ; %ENVIRONMENT_VARIABLE% - Any environment variable
+  ; %REG:HKxx\KeyPath,ValueName|DefaultValue% - Value from registry
+  ; %APPEXTRAS% - Extensions folder of Precision Helper
+  ; %APPTEMPLATES% - Templates folder of Precision Helper
+  ; %APPFOLDER% - Folder that contains PrecisionHelper.exe file
+  ; %APPTEMP% - Temporary folder of Precision Helper (ie. ...\Precision Helper\Temp\...)
+  ; %PROJECTFILE% - Current project file
+  ; %PROJECTFOLDER% - Folder of the current project
+  ; %APPSAMPLES% - Samples folder of Precision Helper  
+  <b>%1%</b>
+  
+  <b>[Command-line]</b>
+  ; Command-line parameters. Can contain macros mentioned in [Application] section (except the %X%) and the following macros:
+  ; %1 - filename of currently selected item in Precision Helper (topic in TOC, topic in Index, file in Include files section, etc.)
+  ; %2 - Source file name of the project (HHP)
+  ; %3 - Target CHM file of the project
+  ; %4 - Source file name of table of content (HHC)
+  ; %5 - Source file name of index of keywords (HHK)
+  ; %6 - Current installation folder of this extension
+  ; %7 - Current options file name of this extension
+  <b>Parameters=</b>"%4"
+  
+  ; Precision Helper waits until the executed extension will be closed. 
+  ; Do not use this when you work with both programs (PH and the application) side by side.
+  ; Not available when using the %X% macro in [Application] section
+  <b>waitfor=</b>0
+  
+  ; Saves the TOC before execution
+  <b>saveTOC=</b>1
+  ; Saves the IDX before execution
+  <b>saveIDX=</b>0
+  ; Saves the whole project before execution
+  <b>saveProject=</b>0
+  ; Saves the current topic before execution
+  <b>saveTopic=</b>0
+  
+  ; When the extension is executed, Precision Helper will reload the TOC after its next activation.
+  ; If 'waitfor=1' then TOC will be reloaded after closing the extension application
+  <b>reloadTOC=</b>1
+  ; Similar to reloadTOC, but applies to Index of keywords
+  <b>reloadIDX=</b>0
+  ; Similar to reloadTOC, but applies to the whole project
+  <b>reloadProject=</b>0
+  ; Similar to reloadTOC, but applies to the current topic
+  <b>reloadTopic=</b>0
+  ; Similar to reloadTOC, but reloads all the extensions (suitable for add-ons that implements Add-Ons manager features)  
+  <b>reloadExtras=</b>0
+  
+  <b>[IDE]</b>
+  ; Parts of the Precision Helper GUI, where the extension should be available
+  ribbonHOME=0
+  ribbonTOC=1
+  ribbonIDX=0
+  ribbonPUB=0
+  ribbonTOOLS=0
+  ribbonHELP=0
+  TopicSource=0
+   
+</pre>
+
+    <p>
+      As you can see from the parameters description, you can actually use any external application as an add-on,
+      because Precision Helper is not directly dependent on its execution (except possibly waiting for it to finish), nor output. 
+    </p>
+    <br>
+
+    <p class="big">
+      Other add-ons options
+    </p>
+    <ul class="shr">
+      <li>
+        The add-on icons must be stored in the files named "icon16.png" and "icon24.png", 
+          and they have to be located near the configuration file</li>
+      <li>
+        Each add-on with Pascal Script interface has a dedicated file with its own preferences (options).
+        This file should have the same name as configuration file, but the <b>.PHEINI</b> suffix
+        (see the "NewFromFolder" add-on).</li>
+      <li>
+        Full description of Pascal Script interface syntax (classes, methods, types, etc.) is not yet available,
+        but the list of supported syntax is available in a coding scheme template named "Precision Helper"
+        inside the mentioned editor of add-ons, the <b>pdScript IDE</b> product
+        (more at <a href="http://www.be-precision.com/products/pdscript/" target="blank">http://www.be-precision.com/products/pdscript/</a>).          
+          </li>
+    </ul>
+    <br>
+
+  </div>
+  <div id="foot">
+    Copyright 2008-2011  Precision software & consulting. All rights reserved.
+  </div>
+</body>
+</html>

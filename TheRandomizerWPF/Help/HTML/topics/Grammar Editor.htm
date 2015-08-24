@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Grammar Editor</title>
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+	<link rel="stylesheet" type="text/css" href="../css/the_randomizer.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Grammar Editor</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+	<img class="screenShot" src="../img/Grammar Editor.png" />
+    <p>
+	  The grammar editor allows for grammar files to be created and edited in a more friendly manner than using a text editor.
+	  It is especially useful to users who are not familiar with or comfortable editing XML documents.
+    </p>
+
+    <p class="big">
+		1 The Main Menu
+    </p>
+    <p>
+		<ul class="shr">
+			<li><b>File</b>
+				<ul class="shr">
+					<li><b>New</b>
+						<ul class="shr">
+							<li><b>Assignment Grammar</b> creates a new assignment grammar</li>
+							<li><b>Dice Grammar</b> creates a new dice roller grammar</li>
+							<li><b>Lua Grammar</b> creates a new Lua grammar</li>
+							<li><b>Phonotactics Grammar</b> creates a new phonotactics grammar</li>
+							<li><b>Table Grammar</b> creates a new table grammar</li>
+						</ul>
+					</li>
+					<li><b>Close</b> closes the Grammar Editor</li>
+				</ul>
+			</li>
+			<li><b>Tools</b>
+				<ul class="shr">
+					<li><b>Preview XML</b> displays the xml of the currently loaded grammar</li>
+					<li><b>Analyze</b> displays a summary of the current grammar if available</li>
+				</ul>
+			</li>
+		</ul>
+    </p>
+    
+	<h2>All Grammars</h2>
+    <p class="big">
+		2 General
+    </p>
+    <p>
+		The General area of the grammar editor allows you to define the general information about the grammar such as the name, description and category.
+	</p>
+	<p>
+		<b>Name</b> is the name that will be displayed in the type list when the grammar is loaded on the main form.
+	</p>
+	<p>
+		<b>Author</b> is the name of the author of the grammar.
+	</p>
+	<p>
+		<b>Category</b> is the category that the grammar will be listed under in the grammar combobox on the main form.
+	</p>
+	<p>
+		<b>Supports Max Length</b> tells the main form if the grammar will require a max length of generated items. This is highly recommended if the grammar has the potential to enter into indefinite loops.
+	</p>
+	<p>
+		<b>Description</b> is the tooltip that will appear when the cursor is hovered over the grammar name in the type list. It should be relatively short but descriptive enough for a user to know what to expect when using the grammar.
+	</p>
+	<br />
+    
+	<p class="big">
+		3 Parameters
+	</p>
+	<p>
+		Parameters, like the Genral area, is common between all grammar types. This grid allows for the addition, editing and removal of parameters. The name, display, and type are defined here as well as the ability to add options for list parameters.
+	</p>
+	<p>
+		<b>Name</b> is the name of the parameter as it will appear in the grammar rules.
+	</p>
+	<p>
+		<b>Display</b> is the text to display next to the edit control when displaying the parameter to the user.
+	</p>
+	<p>
+		<b>Default</b> is the default value of the parameter.
+	</p>
+	<p>
+		<b>Type</b> determines what type of control will be used to receive the user input. At present, only the list option is useful but in a future update the others will become more useful
+	</p>
+	<br />
+	
+	
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+</body>
+</html>

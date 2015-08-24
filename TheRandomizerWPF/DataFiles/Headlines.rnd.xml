@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+		 xsi:type="AssignmentGrammar">
+	<name>Headline (Contemporary)</name>
+	<author>Lance Boudreaux</author>
+	<description>Creates a contemporary random news headline</description>
+	<genre>Modern</genre>
+	<category>Other</category>
+	<parameters />
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start"><![CDATA[<div style="font-family: Times;">[Subject] [Action] [Location]</div>]]></item>
+		
+		<item name="Subject">A park ranger</item>
+		<item name="Subject">A group of teens</item>
+		<item name="Subject">An internet activist group</item>
+		<item name="Subject">A town councilman</item>
+		<item name="Subject">A group of local mothers</item>
+		<item name="Subject">A workers union</item>
+		<item name="Subject">A teachers coalition</item>
+		<item name="Subject">A motorcycle gang</item>
+		<item name="Subject">A gang member</item>
+		<item name="Subject">An antique dealer</item>
+		<item name="Subject">An art collector</item>
+		<item name="Subject">An area drug dealer</item>
+		<item name="Subject">A visiting ambassador</item>
+		<item name="Subject">The police officers union</item>
+		<item name="Subject">A local politician</item>
+		<item name="Subject">A state politician</item>
+		<item name="Subject">A federal politician</item>
+		<item name="Subject">The justice department</item>
+		<item name="Subject">An area club owner</item>
+		<item name="Subject">A homeless man</item>
+		<item name="Subject">A homeless woman</item>
+		<item name="Subject">A local businessman</item>
+		<item name="Subject">A local religious leader</item>
+		<item name="Subject">A noted musician</item>
+		<item name="Subject">The city council</item>
+		<item name="Subject">A sports legend</item>
+		<item name="Subject">A citizen</item>
+		<item name="Subject">A beloved local hero</item>
+		<item name="Subject">A concerned citizens group</item>
+		<item name="Subject">A local bar owner</item>
+		<item name="Subject">An up and coming actor</item>
+		
+		<item name="Action">observed acting oddly last night at a local playground</item>
+		<item name="Action">seemingly on PCP, seen running amok</item>
+		<item name="Action">disappeared mysteriously</item>
+		<item name="Action">found murdered</item>
+		<item name="Action">vetoes funding for local renovation</item>
+		<item name="Action">rioted</item>
+		<item name="Action">decryed the decaying morals of society</item>
+		<item name="Action">are displaying symptoms of a [Disease]</item>
+		<item name="Action">claim to have seen a UFO</item>
+		<item name="Action">are responsible for a string of prank 911 calls</item>
+		<item name="Action">began protesting</item>
+		<item name="Action">expressed outrage at tainted products being sold to the poor</item>
+		<item name="Action">heard muttering about rats in the walls</item>
+		<item name="Action">claimed the meat served was in fact human flesh</item>
+		<item name="Action">found in possession of [AmountOfMoney] worth of [IllegalSubstance]</item>
+		<item name="Action">are still looking for survivors</item>
+		<item name="Action">have not stopped the search</item>
+		<item name="Action">expect that there are no survivors</item>
+		<item name="Action">notes that "Well, they were asking for it"</item>
+		<item name="Action">is wrapped up in a sex scandal</item>
+		<item name="Action">arrested on charges of [Crime]</item>
+		<item name="Action">released on bonding pending trial</item>
+		
+		<item name="Location">in front of several burning cars</item>
+		<item name="Location">near the police headquarters</item>
+		<item name="Location">behind a wall of cameras on the Capital steps</item>
+		<item name="Location">around family dinner tables</item>
+		<item name="Location">at the local sports arena</item>
+		<item name="Location">in their home</item>
+		<item name="Location">outside of the museum of natural history</item>
+		<item name="Location">inside of the parts factory</item>
+		<item name="Location">at the train station</item>
+		<item name="Location">at the bus station</item>
+		<item name="Location">in the wilderness</item>
+		<item name="Location">in the local forest</item>
+		<item name="Location">at a neighborhood park</item>
+		<item name="Location">in an apartment complex</item>
+		<item name="Location">outside of the supermarket</item>
+		<item name="Location">inside of the supermarket</item>
+		<item name="Location">at the court house</item>
+		<item name="Location">in a press conference</item>
+		<item name="Location">in the sewer</item>
+		<item name="Location">at an abandoned art gallery</item>
+		<item name="Location">in the water treatment plant</item>
+		<item name="Location">on the witness stand</item>
+		<item name="Location">at the Congressional hearing</item>
+		<item name="Location">on the highway</item>
+		
+		<item name="Crime">laundering</item>
+		<item name="Crime">murder</item>
+		<item name="Crime">manslaughter</item>
+		<item name="Crime">human trafficking</item>
+		<item name="Crime">prostitution</item>
+		<item name="Crime">bribery</item>
+		
+		<item name="Disease">malaria</item>
+		<item name="Disease">scarlet fever</item>
+		<item name="Disease">ebola</item>
+		<item name="Disease">e coli</item>
+		<item name="Disease">tuberculosis</item>
+		<item name="Disease">small pox</item>
+		
+		<item name="AmountOfMoney">over a million dollars</item>
+		<item name="AmountOfMoney">thousands of dollars</item>
+		<item name="AmountOfMoney">millions of dollars</item>
+		
+		<item name="IllegalSubstance">marijuana</item>
+		<item name="IllegalSubstance">cocaine</item>
+		<item name="IllegalSubstance">heroine</item>
+		<item name="IllegalSubstance">PCP</item>
+		<item name="IllegalSubstance">amphetamines</item>
+		<item name="IllegalSubstance">prescription drugs</item>
+		<item name="IllegalSubstance">counterfeit money</item>
+		<item name="IllegalSubstance">moonshine</item>
+		<item name="IllegalSubstance">stolen electronics</item>
+	</items>
+</Grammar>

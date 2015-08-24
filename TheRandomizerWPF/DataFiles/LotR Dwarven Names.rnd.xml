@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="AssignmentGrammar">
+	<name>Dwarven Names (Lord of the Rings)</name>
+	<author>Lance Boudreaux</author>
+	<description>A dwarven name generator based on dwarven names in the Lord of the Rings.</description>
+	<genre>Fantasy</genre>
+	<category>Name</category>
+	<parameters />
+	<supportsMaxLength>false</supportsMaxLength>
+	<items>
+		<item name="Start" weight="75">[Prefix][Suffix]</item>
+		<item name="Start" weight="25">[Prefix]</item>
+		<item name="Prefix">Al</item>
+		<item name="Prefix">Andavari</item>
+		<item name="Prefix">Ann</item>
+		<item name="Prefix">Aust</item>
+		<item name="Prefix">Anzanul</item>
+		<item name="Prefix">Bal</item>
+		<item name="Prefix">Baraz</item>
+		<item name="Prefix">Bard</item>
+		<item name="Prefix">Baruk</item>
+		<item name="Prefix">Blain</item>
+		<item name="Prefix">Bofurr</item>
+		<item name="Prefix">Bomburr</item>
+		<item name="Prefix">Bori</item>
+		<item name="Prefix">Brand</item>
+		<item name="Prefix">Bund</item>
+		<item name="Prefix">Dainn</item>
+		<item name="Prefix">Dolg</item>
+		<item name="Prefix">Dufr</item>
+		<item name="Prefix">Durinn</item>
+		<item name="Prefix">Eiken</item>
+		<item name="Prefix">Farin</item>
+		<item name="Prefix">Fili</item>
+		<item name="Prefix">Fimbul</item>
+		<item name="Prefix">Forn</item>
+		<item name="Prefix">Frar</item>
+		<item name="Prefix">Frosti</item>
+		<item name="Prefix">Fund</item>
+		<item name="Prefix">Gim</item>
+		<item name="Prefix">Ginnar</item>
+		<item name="Prefix">Glo</item>
+		<item name="Prefix">Gro</item>
+		<item name="Prefix">Hannar</item>
+		<item name="Prefix">Hepti</item>
+		<item name="Prefix">Hor</item>
+		<item name="Prefix">Horn</item>
+		<item name="Prefix">Jari</item>
+		<item name="Prefix">Khazad</item>
+		<item name="Prefix">Kheled</item>
+		<item name="Prefix">Kibil</item>
+		<item name="Prefix">Kili</item>
+		<item name="Prefix">Litr</item>
+		<item name="Prefix">Lofars</item>
+		<item name="Prefix">Maeztr</item>
+		<item name="Prefix">Marzabul</item>
+		<item name="Prefix">Mim</item>
+		<item name="Prefix">Nbli</item>
+		<item name="Prefix">Nar</item>
+		<item name="Prefix">Nithi</item>
+		<item name="Prefix">Nipingr</item>
+		<item name="Prefix">Nothri</item>
+		<item name="Prefix">Nyi</item>
+		<item name="Prefix">Nyr</item>
+		<item name="Prefix">Oinn</item>
+		<item name="Prefix">Onarr</item>
+		<item name="Prefix">Ori</item>
+		<item name="Prefix">Shathur</item>
+		<item name="Prefix">Skjald</item>
+		<item name="Prefix">Sognir</item>
+		<item name="Prefix">Suthri</item>
+		<item name="Prefix">Thekkr</item>
+		<item name="Prefix">Thrasir</item>
+		<item name="Prefix">Thjf</item>
+		<item name="Prefix">Thorinn</item>
+		<item name="Prefix">Thror</item>
+		<item name="Prefix">Vargr</item>
+		<item name="Prefix">Vestri</item>
+		<item name="Prefix">Viggr</item>
+		<item name="Prefix">Vind</item>
+		<item name="Prefix">Virfir</item>
+		<item name="Prefix">Vitr</item>
+		<item name="Prefix">Zinbar</item>
+		<item name="Prefix">Zirak</item>
+		<item name="Suffix">le</item>
+		<item name="Suffix">hle</item>
+		<item name="Suffix">in</item>
+		<item name="Suffix">inn</item>
+		<item name="Suffix">i</item>
+		<item name="Suffix">is</item>
+		<item name="Suffix">nala</item>
+		<item name="Suffix">ri</item>
+		<item name="Suffix">u</item>
+	</items>
+</Grammar>

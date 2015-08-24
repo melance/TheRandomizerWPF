@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Historie změn</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Historie změn</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/icon.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      Zde je uveden přehled novinek, změn, zapracovaných námětů a oprav v jednotlivých verzích produktu.
+    </p>
+    
+    <p class="big" style="padding-top:8px;">
+      Verze 2.0&nbsp;&nbsp;<font style="font-weight:normal">(27.4.2011)</font>
+    </p>
+    <ul>
+      <li>přidáno: Vestavěný editor témat, jenž obsahuje zvýrazňování syntaxe, funkci dokončování kódu,
+                   podporu vkládání textu pomocí klávesových zkratek, a také možnost využití aplikačních doplňků (viz níže).
+                   Všechny tyto funkce si můžete nastavit a přizpůsobit svým potřebám pomocí definice vlastních schémat syntaxe.</li>
+      <li>přidáno: Šablony témat. Kterékoliv téma lze uložit a používat jako šablonu 
+                   (včetně automatické detekce použitých stylů, obrázků, skriptů, atd.)</li>
+      <li>přidáno: Šablony projektů. Libovolný projekt, včetně témat, obrázků, a dalších souborů, lze používat jako šablonu</li>      
+      <li>přidáno: Aplikační doplňky. Funkčnost produktu Precision Helper může být nyní libovolně rozšiřována pomocí
+                   doplňků. Implementováno je rozhraní příkazové řádky a skriptovacího jazyka Pascal Script (včetně vizuálního rozhraní).</li>
+      <li>přidáno: K dispozici jsou první doplňky, jako např. HTML Tidy, Statistiky projektu, Editace obsahu a rejstříku v externím editoru,
+                   Průvodce vytvořením nového projektu z existujících souborů témat, a další.</li>                   
+      <li>přidáno: Podpora více cílových formátů v hromadné kompilaci projektů (Chm, WebHelp, ePUB, atd.)</li>      
+      <li>přidáno: Volba pro automatické zjištění a zařazení všech souborů využitých v projektu do sekce Soubory - FILES (při každém uložení projektu)</li>
+      <li>přidáno: Online nápověda (WebHelp), jež je tvořena navigačními rámci (FRAMES), nyní obsahuje funkci pro přímé nastavení se
+                   na zvolené téma. Tzn., že se z Vašich aplikací můžete odkazovat na požadované téma v tomto typu nápovědy,
+                   a to pomocí jednoduchých odkazů typu "c:\webhelp\index.htm#mytopic.htm", nebo "http://www.mysite.com/webhelp/index.php#mytopic.htm", apod.</li>
+      <li>přidáno: Automatické obnovení náhledu na téma při přepnutí z externího editoru do Precision Helperu</li>
+      <li>přidáno: Pro funkci "Prozkoumat složku" vybraného souboru si můžete zvolit (kromě Průzkumníka Windows) také doplňkový (vlastní) souborový manažer</li>
+      <li>přidáno: Tlačítko "Editovat obsah" pro otevření vnořeného obsahu k editaci v Precision Helperu</li>
+      <li>přidáno: Nová schémata barev uživatelského rozhraní (Windows 7, Office 2010, atd.)</li>
+      <li>přidáno: Šablona exportu do formátu WebHelp ("Extra separators") pro podporu specifických oddělovačů slov v jazycích jako čínština, japonština, apod.</li>
+      <li>přidáno: Tlačítko "Nové okno" pro otevření nové instance Precision Helper (v hlavní nabídce)</li>      
+      <li>vylepšeno: Poslední použité volby pro export (publikování) nápovědy se nyní uchovávají pro každý projekt zvlášť</li>
+      <li>vylepšeno: Názvy témat obsahující apostrofy jsou nyní již podporovány při exportu do formátu WebHelp</li>
+      <li>vylepšeno: Funkce vyhledávání (sekce Vyhledat) v exportované online nápovědě (WebHelp) byla upravena tak,
+                     aby bylo možné celou nápovědu vložit do elementu IFRAME.</li>
+      <li>vylepšeno: Vyhledávání v online nápovědě (WebHelp) již podporuje slova a výrazy s apostrofy.</li>
+      <li>vylepšeno: Práce se soubory uloženými v kódování UTF8 (bez úvodních identifikačních znaků). Takovéto soubory činily problém hlavně
+                    při exportu do formátu WebHelp a SingleHTML. Precision Helper nyní podporuje obě formy takovýchto souborů
+                    (ať již se jedná o konfigurační soubory šablon, témata, aj.)</li>
+      <li>vylepšeno: Vnitřní odkazy v nápovědě exportované do formátu SingleHTML jsou nyní definovány jako &lt;A name="#..."&gt;&lt;/A&gt;
+                    (bez této definice, včetně uzavírajícího tagu, se odkazy chybně zobrazovaly v některých prohlížečích, např. Firefox a Opera)</li>
+      <li>vylepšeno: V dialogu pro výběr souboru projektu nyní můžete přepínat jednotlivá místa hledání pomocí klávesových zkratek Alt+Up a Alt+Down</li>                                   
+      <li>opraveno: Automatická synchronizace tématu a obsahu v online nápovědě (WebHelp) byla opravena pro použití v Internet Exploreru,
+                    kde nefungovaly odkazy na adresy kódované v MIME/URL</li>
+      <li>opraveno: Automatická synchronizace tématu a obsahu v online nápovědě (WebHelp) se nyní správně naviguje na témata
+                    se shodnými názvy, umístěná v různých větvích obsahu nápovědy</li>
+                     
+      <li>opraveno: Modální dialogy aplikace jsou nyní zobrazovány na aktuální ploše (při používání více monitorů)</li>
+      <li>opraveno: Chyba při přidávání prvního klíčového slova k tématu (v panelu pro rychlé přidání klíčového slova),
+                    která se projevovala v některých specifických situacích (např. když byl rejstřík slov v projektu prázdný)</li>
+      <li>opraveno: Pokud jste v Precision Helperu smazali veškeré definice kontextové nápovědy, Precision Helper
+                    nevyčistil odpovídající sekce (MAP a ALIAS) v souboru projektu. Toto je nyní opraveno.</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Verze 1.1&nbsp;&nbsp;<font style="font-weight:normal">(1.7.2010)</font>
+    </p>
+    <ul>
+      <li>přidáno:    publikování do formátu ePUB (e-book)</li>
+      <li>vylepšeno:  Výrazně vylepšen export do formátu WebHelp (online nápovědy), včetně možnosti vyhledávání</li>
+      <li>přidáno:    Oficiálně byla přidána Francouzská lokalizace</li>
+      <li>opraveno:   Témata definovaná lokálním odkazem (např. "default.htm#section1") nebyla zobrazována v náhledu<br>
+                      (toto je nyní opraveno, ale obecně nedoporučujeme v obsahu nebo rejstříku takto definované odkazy používat)</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Verze 1.0.4&nbsp;&nbsp;<font style="font-weight:normal">(12.3.2010)</font>
+    </p>
+    <ul>
+      <li>přidáno:    ruská lokalizace</li>
+      <li>vylepšeno:  několik tlačítek a panelů bylo zvětšeno tak, aby bylo možné zobrazit lokalizované texty v jiných jazycích</li>
+      <li>přidáno:    do výběrových dialogů pro zařazení souborů do projektu nápovědy byly přidány přípony multimediálních souborů *.mp3, *.wav, *.avi, *.wmv, *.mpg, *.mpeg and *.swf</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Verze 1.0.3&nbsp;&nbsp;<font style="font-weight:normal">(18.11.2009)</font>
+    </p>
+    <ul>
+      <li>přidáno:    polská lokalizace</li>
+      <li>přidáno:    maďarská lokalizace</li>
+      <li>vylepšeno:  několik tlačítek a panelů bylo zvětšeno tak, aby bylo možné zobrazit lokalizované texty v jiných jazycích</li>
+      <li>přidáno:    tlačítko pro rychlé skrytí panelu vlastností</li>
+      <li>vylepšeno:  horizontální posuvník v protokolu o kompilaci je nyní zobrazován dle potřeby</li>
+      <li>vylepšeno:  v dialogu 'Nastavení->Správa projektů' přibyla volba 'Ukládat položky obsahu a rejstříku v html kódování'</li>
+      <li>vylepšeno:  položky obsahu a rejstříku kódované v html jsou nyní zobrazovány správně (např. "Červená & Modrá" místo "Červená &amp;amp; Modrá")</li>
+      <li>doplněno:   Import CHM - odkazy na témata v dekompilovaném projektu (včetně obsahu a rejstříku) nyní obsahují 'opačná lomítka', v souladu s tématy uvedenými v sekci 'FILES'.
+                    (před touto úpravou byly odkazy dekompilovány tak, jak byly uloženy v CHM, což v mnoha případech vedlo k nechtěným rozdílům mezi obsahem/rejstříkem a sekcí 'FILES')</li>
+      <li>opraveno:   Import CHM - identifikátory kontextové nápovědy jsou nyní dekompilovány i pro situaci, kdy jsou v rámci CHM uloženy přímo v projektovém souboru (.hhp)</li>
+      <li>vylepšeno:  volba 'Otevřít poslední projekt při startu' nyní funguje i při spouštění aplikace s parametrem /N</li>
+      <li>opraveno:   několik drobných oprav v anglické nápovědě (odkazy, texty)</li>
+      <li>opraveno:   tlačítko 'Velikost textu' (v hlavním panelu nástrojů) je již možné lokalizovat</li>
+      <li>opraveno:   barevné schéma nyní funguje i pro kartu 'Nastavení->Externí nástroje'</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Verze 1.0.2&nbsp;&nbsp;<font style="font-weight:normal">(23.8.2009)</font>
+    </p>
+    <ul>
+      <li>vylepšeno: vylepšena kontrola jedné běžící instance - aktuálně běžící instance se nyní nastavuje do popředí</li>
+      <li>přidáno: Soubor nápovědy VirtualTreeview.chm byl přidán do adresáře Samples (příklady), pro demonstraci možností dekompilace na nezávislém projektu.
+                    Velice děkujeme autoru komponenty VirtualTreeview za spolupráci (Mike Lischke, Soft-Gems, viz <a href="Credits.htm">Použité komponenty třetích stran</a>).<br>
+                   <i>Poznámka: dekompilovaný projekt nemůže být kompilován pomocí hhc.exe bez zaškrtnuté volby "Zobrazovat průběh kompilace" na některých PC (je nutné použít výchozí kompilátor hha.dll).
+                             Pokud je zmíněná volba zaškrtnuta, vše funguje správně i s kompilátorem hhc.exe.</i>
+                   </li>
+      <li>opraveno: problém "Prohlížeče CHM" a "Dialogu pro výběr souboru projektu" s disketovými mechanikami (když byly jednotky A: nebo B: nainstalovány, ale nebyly v nich diskety)</li>
+      <li>opraveno: rozvržení dialogu "Informace o aplikaci" na Windows XP běžících pod Virtual PC (okno mělo větší rozměr než obrázek)</li>
+      <li>opraveno: při přetažení souborů myší z jiné aplikace do obsahu se nevyplnil název tématu (metoda kopírovat a vložit fungovala správně)</li>
+    </ul>
+
+    <p class="big" style="padding-top:8px;">
+      Verze 1.0.1&nbsp;&nbsp;<font style="font-weight:normal">(22.7.2009)</font>
+    </p>
+    <ul>
+      <li>
+        První veřejně distribuovaná verze.
+      </li>
+    </ul>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. Všechna práva vyhrazena.
+  </div>
+</body>
+</html>

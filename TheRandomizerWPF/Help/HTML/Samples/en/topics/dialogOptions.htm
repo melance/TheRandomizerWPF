@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Options</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Options</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/options.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      The"Options dialog" is the basic place for set or modify <b>application parameters</b>.
+      Some parameters (eg. changes in panel dimensions) are stored automatically
+      <img src="../img/ss_options.jpg" class="ssright"/>
+      and some (the layout and appearance of the panels) are available only in the popup menus of Precision Helper.
+      But the essential parameters of the application can be found in this dialog box.
+    </p>
+    <p>
+      Dialog is divided into categories (<b>General</b>, <b>Appearance</b> and <b>External tools</b>) and each category is <b>divided into tabs</b>,
+      according to content and the importance of parameters.
+      In this topic you can find the description of each category, tab and parameter.
+    </p>
+
+    <p class="big" style="padding-top:8px;">
+      <a name="sys"></a> General - System integration
+    </p>
+    <ul class="shr">
+      <li><b>Show icon in notification area</b> - shows the application icon in the notification area of the Windows Taskbar</li>
+      <li><b>Minimize to notification area</b> - if you minimize the application, it will not be displayed on the taskbar, but only in the notification area
+        (it requires the option <i>Show icon in notification area</i> to be checked)</li>
+      <li><b>Associate file extensions</b> - 	by clicking this button, you can associate the HHP file type (<i> Microsoft HTML Help Project </i>) for opening in the Precision Helper application.
+        To execute this action in the <i>Microsoft Windows Vista</i>, first execute the application as an <i>administrator</i> (because it requires the elevation of user access rights to the administrator's rights).</li>
+      <li><b>Remove associations</b> - by clicking this button, you can remove the previously described association (it requires the elevation of user access rights too)</li>
+    </ul>
+
+    <p class="big">
+      <a name="prj"></a> General - Project defaults
+    </p>
+    <ul class="shr">
+      <li><b>Default projects folder</b> - an initial folder for all of the system file selection dialogs used in the application.
+          If you want to always display the last opened folder, leave the field blank.</li>
+      <li><b>Default project format</b> - help file format, that is used for creating a new project (<i>Microsoft Compiled Html Help</i>)</li>
+      <li><b>Maximum recently opened projects</b> - maximum count of recently opened projects, that are kept in the history (eg. displayed in the recently opened lists)</li>
+      <li><b>Open last project at startup</b> - the last project will be opened automatically at next application start</li>
+      <li><b>Show "Welcome page" after open last project</b> - by default the last shown <a href="navBar.htm">navigation panel</a> and its appropriate <a href="tabBar.htm">page</a>
+          will be displayed at start. If you select this option, the "<a href="HomePage.htm">Welcome page</a>" will be displayed at application start.</li>
+      <li><b>Save project files in UTF-8 encoding</b> - allows to save project files in UTF-8 encoding (a project file itself, content files, index files, context help header files, etc. but not the topic files).
+          Such a help compiler is required that supports this encoding.</li>
+      <li><b>Save contents and index items as html encoded</b> - allows saving of contents (.hhc) and index (.hhk) items in html encoding</li>
+      <li><b>Automatically include all the project files into the "Files" section (when saving)</b> -
+          It tells the Precision Helper to automatically detect and include all the images, videos, style sheets, scripts and other files,
+          used in your topics, into the FILES section of your help project.
+          Inclusion of the files to this section is important for CHM compilation, because <i>Microsoft Html Help Compiler</i>
+          does not automatically recognize some of the newer file formats (eg PNG, WMV, etc.). 
+          But all the files listed in this section are correctly included into the resulting help. </li>
+    </ul>
+    
+    <p class="big">
+      <a name="edit"></a> General - Editing
+    </p>
+    <ul class="shr">
+      <li><b>Perform this action on adding topic</b>:<br>
+        <ul>
+          <li><font color="#880000">Select from unused project files</font> - opens the <a href="dialogPrjFiles.htm">project file selection dialog</a> in the "<i>Unused files</i>" place.</li>
+          <li><font color="#880000">Select from all project files</font> - opens the <a href="dialogPrjFiles.htm">project file selection dialog</a> in the "<i>Project's files</i>" place.</li>
+          <li><font color="#880000">Create new blank topic</font> - creates a new topic file in location, that you select</li>
+          <li><font color="#880000">Create new topic from file</font> - creates a new topic file in location, that you select, by copying an existing topic file, that you choose</li>
+          <li><font color="#880000">Create new topic from template</font> - creates a new topic file, based on selected template, in the location, that you choose</li>
+          <li><font color="#880000">&lt;no action&gt;</font> - in fact, this is the same as adding a new heading (inline editor for entering the item name will be activated)</li>
+        </ul>
+      </li>
+      <li><b>Open new topic in editor immediately after creation</b> - it allows to automatically open an external editor for newly created topic in the
+        <a href="navBar_TOC.htm">table of contents</a> or in the <a href="navBar_IDX.htm">index of keywords</a>).
+        If you are using an embedded topics editor (new in version 2.0), uncheck this option.</li>
+        </li>
+      <li><b>Always use topic title</b> - by default, when you clean the <a href="navBar_TOC.htm">content item</a> name (resp. the <a href="navBar_IDX.htm">keyword</a> text),
+          application will try to assign the name automatically from the topic title (or the topic filename).
+          This option extends this behaviour also to the "Select a topic" action - for every topic selection the content item name will be assigned automatically.</li>
+      <li><b>Show relative file pathes</b> - all file pathes will be displayed relatively to the project file (in <a href="pageFiles.htm">Included files</a> editor,
+          <a href="dialogPrjFiles.htm">Project file selection dialog</a>, etc.)</li>
+      <li><b>Show source editor as a default tab in topic windows</b> - you can switch between preview, editor and the TOC tree (or Index tree)
+          by pressing the <b>F12</b> keyboard shortcut. Also the <b>F5</b> key can save the changes in editor and show the results in preview tab.
+          If you want to display an editor (and not the preview) when the topic window is opened, check this option.
+        </li>
+      <li><b>Interval for auto popup code completion</b> - enter the time interval in milliseconds.
+          If you do not want to display this window in topic source editor automatically, enter zero (0) here.
+          Code completion can be invoked anytime by pressing the <b>Ctrl+Space</b> keyboard shortcut. 
+          </li>          
+    </ul>
+    
+    <p class="big">
+      <a name="build"></a> General - Compilation
+    </p>
+    <ul class="shr">
+      <li><b>Save project before compile</b> - by default, the project file is automatically saved before the "Run" action only.
+          This option will extend the automatic saving also to the "Compile" action.</li>
+      <li><b>Show compilation progress dialog</b> - compilation progress will be displayed in the modal <a href="dialogCompile.htm">dialog</a>
+          (otherwise the compilation progress will be displayed only in the <a href="statusBar.htm">status bar</a>)</li>
+      <li><b>Automatically close progress dialog on successfull compile</b> - after a successful compilation, the dialog will be automatically closed
+          (this option can be selected directly in <a href="dialogCompile.htm">compilation progress dialog</a>)</li>
+      <li><b>Show report log on compilation</b> - when compilation starts, the <a href="helpBar_Log.htm">Log file tab</a> will be activated on panel of properties</li>
+    </ul>
+
+    <p class="big">
+      <a name="backup"></a> General - Backup
+    </p>
+    <ul class="shr">
+      <li><b>Backup configuration file</b> - the configuration file will be backed up always, when the user saves the options and when the application closes
+          (configuration file contains all application settings including <a href="ProjectsList.htm">projects list</a>, <a href="navBar_Builds.htm">builds list</a>,
+          <a href="HomePage.htm">quick launch buttons</a>, etc.)</li>
+      <li><b>Backup project files</b> - project files will be backed up always, when the project is saved ("project files" means the project definition files, so not the topic files, images, etc.)</li>
+      <li><b>Number of history backups</b> - this defines the number of copies, that will be kept in history</li>
+    </ul>
+
+    <p class="big" style="margin-top:16px;">
+      <a name="prj"></a> Templates - Options for working with templates
+    </p>
+    <p>
+      Topic templates and project templates allow you to create a new help references with the help of predefined topics or even the whole projects.
+      In this section you can setup some of their parameters.
+    </p>
+    <ul class="shr">
+      <li><b>Show templates only for the current language</b> - only the templates dedicated for currently selected language will be available
+        in the dialogs and selection lists</li>
+      <li><b>Template macros</b> - freely definable list of macros, that you can use in your templates. 
+          These macros will be substituted by the values listed here, always when you create a new topic (or project) from the template.
+          $TITLE, $YEAR and $TODAY macros are supported internally and you do not have to define them here, unless you want to define some constant values for them.</li>        
+    </ul>
+
+    <p class="big" style="margin-top:16px;">
+      <a name="style"></a> Appearance - User interface
+    </p>
+    <ul class="shr">
+      <li><b>Color scheme</b> - the user interface color scheme</li>
+      <li><b>Language</b> - the user interface language</li>
+      <li><b>Syntax highlighter</b> - a syntax highlighting template for use in the topic editor.
+          Selected template contains also the definition of keystrokes (for inserting the text snippets)
+          and the definition of code completion items.</li>      
+      <li><b>Use system theme in table of contents</b> - by default the <a href="navBar_TOC.htm">topic of contents</a> editor mimics the look and feel of resulting help contents.
+          This option switching the behaviour and appearance of the editor to a system theme.</li>
+      <li><b>As new tab open the "Welcome page"</b> - by default the <a href="tabBar.htm">new tab</a> is opened as a copy of current tab.
+          This option allows to always open the "<a href="HomePage.htm">Welcome page</a>" as a new tab.</li>
+      <li><b>Open different page types in new tabs</b> - by default all <a href="tabBar.htm">page types</a> are displayed in the same tab,
+          until the user clicks "<a href="tabBar.htm">Open a new tab</a>" button. This option allows to automatically open different page types in different tabs.</li>
+      <li><b>Size of Quick launch items</b> - defines dimensions of buttons in the <a href="HomePage.htm">Quick launch panel</a> on welcome page</li>
+    </ul>
+
+    <p class="big">
+      <a name="fonts"></a> Appearance - Fonts
+    </p>
+    <p style="margin-left:24px;">
+	   On this tab, you can choose <b>font types and sizes </b> for the individual user interface components (windows, menus, labels, buttons and dialogs, texts and lists, titles and headings of important panels).
+    </p>
+
+    <p class="big" style="margin-top:16px;">
+      <a name="hhc"></a> External tools - MS Html Help
+    </p>
+    <ul class="shr">
+      <li><b>Compiler</b> - here you can select your <b>CHM</b> (<i>Microsoft Compiled Html Help</i>) compiler.
+          Precision Helper supports any compiler with the same programming interface as a standard library <b>hha.dll</b>, and / or executable compilaer <b>hhc.exe</b>.</ li>
+
+      <li><b>Maximum context help items stored in the project file</b> - this parameter defines the threshold for the number of contextual help items that are stored directly in the project file (<i>.hhp</i>).
+      	  For a small number of items it does not make sense to define the external header files (<b>.h</b>, <b>.ali</b>),
+          but on the other hand a large number of items unnecessarily increases the project file size.
+          If you leave this field blank, the external header files will be used always.</li>
+    </ul>
+
+    <p class="big">
+      <a name="mtools"></a> External tools - Miscellaneous
+    </p>
+    <p style="margin-left:24px;">
+      On this tab you can choose your favorite applications, which will be used as external tools for editing or viewing topics and files (<b>html editor</b>, <b>web browser</b> and <b>image editor</b>).<br>
+      The "<b>Show in status bar</b>" option will show / hide the external tool in application <a href="statusBar.htm">status bar</a>.
+    </p>
+
+    <p class="big">
+      <a name="mtools2"></a> Externí tools - Miscellaneous 2
+    </p>
+    <ul class="shr">
+      <li><b>File manager</b> - for exploring the folder of selected project or file.
+          If you enter the path and parameters here, an additional option called "Explore with ..." will be enabled in context menus
+          for projects and files (topics, pictures, etc.). Thus, the folders of selected files can be explored
+          also by your favorite file manager (in addition to exploring with Windows Explorer)</li>
+      <li><b>Path to the pdScript IDE</b> - here you can define the path to the <b>pdScript IDE</b> application,
+          that is a good choice for creating and designing your own application extensions (add-ons) for Precision Helper.
+          The editor can be opened via <b>Code Editor</b> button in the <a href="Tools.htm">Tools</a> tab.
+          More info about pdScript IDE can be found here: <a href="http://www.be-precision.com/products/pdscript/" target="blank">http://www.be-precision.com/products/pdscript/</a>.</li>
+    </ul>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. All rights reserved.
+  </div>
+</body>
+</html>

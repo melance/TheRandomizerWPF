@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TableGrammar"
+		   targetNamespace="http://tempuri.org/TableGrammar.xsd"
+		   elementFormDefault="qualified"
+		   xmlns="http://tempuri.org/TableGrammar.xsd"
+		   xmlns:mstns="http://tempuri.org/TableGrammar.xsd"
+		   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		   attributeFormDefault="unqualified">
+
+	<xs:simpleType name="ParameterType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="List" />
+			<xs:enumeration value="Text" />
+			<xs:enumeration value="CheckBox" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="ActionType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Random" />
+			<xs:enumeration value="Loop" />
+			<xs:enumeration value="Select" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="Parameters">
+		<xs:sequence>
+			<xs:element name="parameter" type="Parameter" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Parameter">
+		<xs:sequence>
+			<xs:element name="option" minOccurs="0" maxOccurs="unbounded" type="Option" />
+		</xs:sequence>
+		<xs:attribute name="name" type="xs:string" />
+		<xs:attribute name="display" type="xs:string" />
+		<xs:attribute name="type" type="ParameterType" />
+	</xs:complexType>
+
+	<xs:complexType name="Option">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="display" type="xs:string" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="Tables">
+		<xs:sequence>
+			<xs:element name="table" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Table">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="name" type="xs:string" />
+				<xs:attribute name="action" type="ActionType" />
+				<xs:attribute name="column" type="xs:string" />
+				<xs:attribute name="randomModifier" type="xs:string" />
+				<xs:attribute name="loopId" type="xs:string" />
+				<xs:attribute name="selectValue" type="xs:string" />
+				<xs:attribute name="repeat" type="xs:string" />
+				<xs:attribute name="repeatJoin" type="xs:string" />
+				<xs:attribute name="delimiter" type="xs:string" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+		<xs:element name="Grammar">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1" />
+					<xs:element name="author" type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1" />
+					<xs:element name="category" type="xs:string" minOccurs="1" maxOccurs="1" />
+					<xs:element name="parameters" type="Parameters" minOccurs="0" maxOccurs="1" />
+					<xs:element name="tables" type="Table" minOccurs="1" maxOccurs="1" />
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>	
+</xs:schema>

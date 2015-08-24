@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<library>
+	<item name="CTHeaderStyle"><![CDATA[
+		font-family: Consolas, Courier, Monospace; background: white; cell-padding: 0; cell-spacing: 0; margin: 1em 0 0 1em; display: inline; border:1px solid black; border-collapse: collapse;		
+	]]></item>
+	<item name="CTHeaderBlack"><![CDATA[
+		<table style="[CTHeaderStyle] color:black;">
+	]]></item>
+	<item name="CTHeaderRed">
+		<![CDATA[
+		<table style="[CTHeaderStyle] color:red;">
+	]]></item>
+	<item name="CTFooter"><![CDATA[
+		</table>
+	]]></item>
+	<item name="CTRowOpen"><![CDATA[
+		<tr style="height:1em;">
+	]]></item>
+	<item name="CTRowClose"><![CDATA[
+		</tr>
+	]]>
+	</item>
+	<item name="CTCellStyle"><![CDATA[
+		width:1.5em; text-align:center; vertical-align:center;
+	]]></item>
+	<item name="CT□"><![CDATA[
+		<td style="[CTCellStyle]">&#xA0;</td>
+	]]></item>
+	<item name="CT♠"><![CDATA[
+		<td style="[CTCellStyle]">♠</td>
+	]]></item>
+	<item name="CT♣"><![CDATA[
+		<td style="[CTCellStyle]">♣</td>
+	]]>
+	</item>
+	<item name="CT♥"><![CDATA[
+		<td style="[CTCellStyle]">♥</td>
+	]]></item>
+	<item name="CT♦"><![CDATA[
+		<td style="[CTCellStyle]">♦</td>
+	]]>
+	</item>
+	<item name="CTJ">
+		<![CDATA[
+		<td style="[CTCellStyle]">J</td>
+	]]>
+	</item>
+	<item name="CTQ">
+		<![CDATA[
+		<td style="[CTCellStyle]">Q</td>
+	]]>
+	</item>
+	<item name="CTK">
+		<![CDATA[
+		<td style="[CTCellStyle]">K</td>
+	]]>
+	</item>
+	<item name="CTO">
+		<![CDATA[
+		<td style="[CTCellStyle]">O</td>
+	]]>
+	</item>
+	<item name="CTC">
+		<![CDATA[
+		<td style="[CTCellStyle]">C</td>
+	]]>
+	</item>
+	<item name="CTE">
+		<![CDATA[
+		<td style="[CTCellStyle]">E</td>
+	]]>
+	</item>
+	<item name="CTR">
+		<![CDATA[
+		<td style="[CTCellStyle]">R</td>
+	]]>
+	</item>
+	<item name="CTA">
+		<![CDATA[
+		<td style="[CTCellStyle]">A</td>
+	]]>
+	</item>
+	
+	<item name="2ofSpades">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]				 
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="2ofClubs">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="2ofHearts">
+				 [CTHeaderRed]
+				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="2ofDiamonds">
+				 [CTHeaderRed]
+				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="3ofSpades">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="3ofClubs">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="3ofHearts">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="3ofDiamonds">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="4ofSpades">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="4ofClubs">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]				 
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="4ofHearts">
+				 [CTHeaderRed]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="4ofDiamonds">
+				 [CTHeaderRed]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="5ofSpades">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="5ofClubs">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="5ofHearts">
+				 [CTHeaderRed]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="5ofDiamonds">
+				 [CTHeaderRed]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="6ofSpades">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="6ofClubs">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="6ofHearts">
+				 [CTHeaderRed]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="6ofDiamonds">
+				 [CTHeaderRed]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="7ofSpades">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="7ofClubs">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="7ofHearts">
+				 [CTHeaderRed]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="7ofDiamonds">
+				 [CTHeaderRed]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="8ofSpades">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="8ofClubs">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="8ofHearts">
+				 [CTHeaderRed]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="8ofDiamonds">
+				 [CTHeaderRed]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="9ofSpades">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTRowOpen][CT♠][CT♠][CT♠][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="9ofClubs">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTRowOpen][CT♣][CT♣][CT♣][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="9ofHearts">
+				 [CTHeaderRed]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTRowOpen][CT♥][CT♥][CT♥][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="9ofDiamonds">
+				 [CTHeaderRed]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTRowOpen][CT♦][CT♦][CT♦][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="10ofSpades">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTRowOpen][CT♠][CT♠][CT♠][CTRowClose]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="10ofClubs">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTRowOpen][CT♣][CT♣][CT♣][CTRowClose]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="10ofHearts">
+				 [CTHeaderRed]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTRowOpen][CT♥][CT♥][CT♥][CTRowClose]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="10ofDiamonds">
+				 [CTHeaderRed]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTRowOpen][CT♦][CT♦][CT♦][CTRowClose]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="JofSpades">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CTJ][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♠][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT♠][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CTJ][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="JofClubs">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CTJ][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♣][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT♣][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CTJ][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="JofHearts">
+				 [CTHeaderRed]
+				 [CTRowOpen][CTJ][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♥][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT♥][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CTJ][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="JofDiamonds">
+				 [CTHeaderRed]
+				 [CTRowOpen][CTJ][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♦][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT♦][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CTJ][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="QofSpades">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CTQ][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♠][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT♠][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CTQ][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="QofClubs">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CTQ][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♣][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT♣][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CTQ][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="QofHearts">
+				 [CTHeaderRed]
+				 [CTRowOpen][CTQ][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♥][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT♥][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CTQ][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="QofDiamonds">
+				 [CTHeaderRed]
+				 [CTRowOpen][CTQ][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♦][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT♦][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CTQ][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="KofSpades">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CTK][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♠][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT♠][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CTK][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="KofClubs">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CTK][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♣][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT♣][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CTK][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="KofHearts">
+				 [CTHeaderRed]
+				 [CTRowOpen][CTK][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♥][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT♥][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CTK][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="KofDiamonds">
+				 [CTHeaderRed]
+				 [CTRowOpen][CTK][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT♦][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT♦][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CTK][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="AofSpades">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CTA][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CTA][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="AofClubs">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CTA][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CTA][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="AofHearts">
+				 [CTHeaderRed]
+				 [CTRowOpen][CTA][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CTA][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="AofDiamonds">
+		[CTHeaderRed]
+				 [CTRowOpen][CTA][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+				 [CTRowOpen][CT□][CT□][CTA][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="JokerBlack">
+				 [CTHeaderBlack]
+				 [CTRowOpen][CTJ][CT□][CTR][CTRowClose]
+				 [CTRowOpen][CTO][CT□][CTE][CTRowClose]
+				 [CTRowOpen][CTK][CT□][CTK][CTRowClose]
+				 [CTRowOpen][CTE][CT□][CTO][CTRowClose]
+				 [CTRowOpen][CTR][CT□][CTJ][CTRowClose]
+				 [CTFooter]
+	</item>
+	<item name="JokerRed">
+				 [CTHeaderRed]
+				 [CTRowOpen][CTJ][CT□][CTR][CTRowClose]
+				 [CTRowOpen][CTO][CT□][CTE][CTRowClose]
+				 [CTRowOpen][CTK][CT□][CTK][CTRowClose]
+				 [CTRowOpen][CTE][CT□][CTO][CTRowClose]
+				 [CTRowOpen][CTR][CT□][CTJ][CTRowClose]
+				 [CTFooter]
+	</item>
+</library>

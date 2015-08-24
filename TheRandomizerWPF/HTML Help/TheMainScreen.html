@@ -1,0 +1,96 @@
+﻿<html>
+	
+<head>
+	<title>The Main Screen</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.5.0.497">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "The Randomizer.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("TheMainScreen");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">The Main Screen</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="TheUserInterface.html">The User Interface</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="TheUserInterface.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="TheUserInterface.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="Preferences.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps3"><span class="rvts8">The main screen is where the random generation magic happens. Here you select the type of generation you want to occur, how many times, and more then press Generate to see the magic. Below is a break down of each section of the screen including it's purpose, and how to use it.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/MainScreen.png"/></p>
+<h1 class="rvps8"><span class="rvts0"><span class="rvts16">Genre</span></span></h1>
+<p class="rvps3"><span class="rvts8">You can filter the list of generators based on genre using this combo box. &nbsp;No filter will be applied if Genre is left blank.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h1 class="rvps8"><span class="rvts0"><span class="rvts16">System</span></span></h1>
+<p class="rvps3"><span class="rvts8">This combo box will filter the results by the role playing system that they are intended to be used for. &nbsp;No filter will be applied if System is left blank.</span></p>
+<h1 class="rvps8"><span class="rvts0"><span class="rvts16">Category</span></span></h1>
+<p class="rvps3"><span class="rvts8">From this comb box, you can filter the generators by their category. &nbsp;No filter will be applied if Category is left blank.</span></p>
+<h1 class="rvps8"><span class="rvts0"><span class="rvts16">Generators</span></span></h1>
+<p class="rvps3"><span class="rvts8">This is the list of generators found for the category selected above. Just like the availability of items in the Category drop down, this list depends upon the installed grammar files. You will select an item in this list to determine what will be generated in the results.</span></p>
+<h1 class="rvps8"><span class="rvts0"><span class="rvts16">Details</span></span></h1>
+<p class="rvps3"><span class="rvts8">Below the generator list, you will see details about the generator that is currently highlighted in the list.</span></p>
+<h1 class="rvps8"><span class="rvts0"><span class="rvts16">Parameters</span></span></h1>
+<p class="rvps3"><span class="rvts8">If a grammar file requires parameters, they will appear directly below the type list upon selecting that grammar.</span></p>
+<h1 class="rvps8"><span class="rvts0"><span class="rvts16">Max Length</span></span></h1>
+<p class="rvps3"><span class="rvts8">Some grammars allow you to limit the length of the content generated. This is most common in random name generators which could theoretically lead to nearly endless names.</span></p>
+<h1 class="rvps8"><span class="rvts0"><span class="rvts16">Repeat</span></span></h1>
+<p class="rvps3"><span class="rvts8">The value of this field will determine how many times the generator will generate items. It is possible to generate from 1 to 500 items in a list. Individual results are delineated by the alternating background colors. &nbsp;In addition to typing the number in, you can also use the up and down arrows on your keyboard to increase and decrease the number.</span></p>
+<h1 class="rvps8"><span class="rvts0"><span class="rvts16">Results</span></span></h1>
+<p class="rvps3"><span class="rvts8">The results display in a tabbed interface allowing you to maintain results you liked as you work with the application. &nbsp;Clicking on the + button of the tab header will create a new tab. &nbsp;All results generated go to the currently selected tab. &nbsp;They can easily be selected and copied as desired. The buttons at the bottom of this area Select All, Select None, Clear, Copy, and Save simplify this process.</span></p>
+<p></p>
+<p class="rvps2"><span class="rvts6">Created with the Personal Edition of HelpNDoc: </span><a class="rvts7" href="http://www.helpndoc.com/create-epub-ebooks">Write EPub books for the iPad</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2014 by Lance Boudreaux. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

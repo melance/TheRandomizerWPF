@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>LUA Grammar Structure</title>
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+	<link rel="stylesheet" type="text/css" href="../css/the_randomizer.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>LUA Grammar Structure</h3>
+    </div>
+  </div>
+  
+	<div id="main">
+	<p>The following information is specific to LUA Grammar Files which are useful for translating random generation tables into grammar files. 
+	See the Grammar Files help section for common information about all <a href="Grammar File Structure.htm">Grammar Files</a>.</p>
+	<br />
+	<h2>Script</h2>
+	<p>The LUA grammar file functionality is entirely contained inside of a "script" tag. 
+	The contents of this tag should be a LUA chunk with a return value of simple data types or a table of simple data types. 
+	The parameters received from the user are available as global variables.</p>
+	<br />
+
+	<p class="sub">Example</p>
+	<pre><code>&lt;?xml version="1.0"?&gt;
+&lt;Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; xsi:type="LUAGrammar"&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;name&gt;LUA Test&lt;/name&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;authur&gt;Lance Boudreaux&lt;/authur&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;description&gt;A test of the LUA functionality&lt;/description&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;category&gt;Test&lt;/category&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;parameters&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;parameter name="type" display="Type" type="List" valueType="Label"&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;option display="Any"&gt;any&lt;/option&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;option display="Option One"&gt;option1&lt;/option&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;option display="Option Two"&gt;option 2&lt;/option&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/parameter&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;/parameters&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;supportsMaxLength&gt;false&lt;/supportsMaxLength&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;script&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;![CDATA[
+&nbsp; &nbsp; &nbsp; &nbsp;mymodule = require 'LUATest'
+&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;if type == 'any' then
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;type = calc:SelectFromTable({'option1','option2'})
+&nbsp; &nbsp; &nbsp; &nbsp;end
+&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;return type
+&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;]]&gt;
+&lt;/script&gt;
+&lt;/Grammar&gt;</code></pre>
+	<br />
+	<h2>The calc Object</h2>
+	<p>The calc object provides all of the same functions that are allowed in other grammars that are detailed in the <a href="Calculation Functions.htm">Calculation Functions</a> section. Additional methods available are:</p>
+	<p><b>CSVToTable(filePath as String):</b> Parses a CSV file to a LUA Table.  The first row is read as a header and used to name the table indexes.</p>
+	<p><b>Evaluate(Expression as String):</b> This will evaluate a calculation string using the NCalc engine as is done in the other grammars. Please see the <a href="Calculation Functions.htm">Calculation Functions</a> section for more details.</p>
+	<p><b>ExpandPath(filePath as string):</b> Expands all Environment Variables in a path and gives makes the path absolute if it is relative.</p>
+	<p><b>FileToString(FilePath as String):</b> This will read the entire contents of a file and return them as a single string. The file path can be full or relative. Relative file paths are relative to the location of the grammar file.</p>
+	<p><b>FileToTable(FilePath as String):</b> This will read the contents of a file and return them as a zero based table of strings. The file path can be full or relative. Relative file paths are relative to the location of the grammar file.</p>
+	<p><b>SelectFromTable(Values as Table):</b> This will randomly select an item from the table. 
+	It requires the index to be integer based and in ascending order. For example: {1='Item One', 6='Item Two', 10='Item Three'} will tell the function to select a random number between 1 and 10 and select the item that has the closest index greater than the number.</p>
+	<p><b>XMLFileToTable(filePath as String):</b> Parses an xml file into a nexted LUA Tree.</p>
+	<br />
+	<h2>Require Path</h2>
+	<p>The default require search path is expanded to include the [grammar file directories]\lua</p>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+</body>
+</html>

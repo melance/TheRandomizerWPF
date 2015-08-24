@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Table Grammar Structure</title>
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+	<link rel="stylesheet" type="text/css" href="../css/the_randomizer.css">
+</head>
+<body>
+
+	<div id="topictop">&nbsp;</div>
+	<div id="topictitleleft">
+	<div id="topictitle">
+		<h3>Table Grammar Structure</h3>
+	</div>
+	</div>
+	
+	<div id="main">
+    <p>The following information is specific to Table Grammar Files which are useful for translating random generation tables into grammar files. See the Grammar Files help section for common information about all <a href="Grammar File Structure.htm">Grammar Files</a>.</p>
+	<h2>Tables</h2>
+	<p>The Table Grammar File consists of a series of tables and an output. The tables have various options that determine how the table should be handled by the application. The content of the table tags is always a delimited table that contains a header and contents.</p>
+	<br />
+	<h2>Table</h2>
+	<p>The table tag allows for several options, some of which depend on what action type you choose.</p>
+	<table>
+		<tr>
+			<th>Attribute</th>
+			<th>Description</th>
+			<th>Values</td>
+		</tr>
+		<tr>
+			<td>name</td>
+			<td>The name of the table. This value is used when referencing values from the table</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>action</td>
+			<td>This determines how the table is handled by the application</td>
+			<td>random/loop/select</td>
+		</tr>
+		<tr>
+			<td>delimiter</td>
+			<td>The character that will be used to separate the columns of our table</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>column</td>
+			<td>The column that contains the die roll for random tables and the value for select tables</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>randomModifier</td>
+			<td>A modifier to the die roll, this can be a constant or reference a parameter or result of a previous table</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>loopId</td>
+			<td>The column that is used as the identifier for the values of a loop table</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>selectValue</td>
+			<td>The value to find in the select column of a select table</td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+	<br />
+	<h2>Actions</h3>
+	<p>The actions below define the type of table and how it is handled by the application:</p>
+	<p class="big">random</p>
+	<p>Selects a row at random simulating a die roll. This method requires the randomColumn attribute to tell it which column is the die result column. Once selected, the values of the row are stored into variables with names combining the table name and column name. For example, if our table is named "People" and the first non-roll result column is named "Occupation", we can reference the results using the variable: [People.Occupation].</p>
+	<br />
+	<p class="sub">Sample:</p>
+	<pre><code>&lt;table name="Town Size" delimiter="|" action="Random" column="Roll"&gt;&lt;![CDATA[
+Roll |Town Size &nbsp;|Population &nbsp; &nbsp; &nbsp; &nbsp; |GP Limit |PCA|CM
+10 &nbsp; |Thorp &nbsp; &nbsp; &nbsp;|=Rnd(20,80) &nbsp; &nbsp; &nbsp; &nbsp;|40 gp &nbsp; &nbsp;|-1 |-3 &nbsp; &nbsp; &nbsp; &nbsp;
+30 &nbsp; |Hamlet &nbsp; &nbsp; |=Rnd(81,400) &nbsp; &nbsp; &nbsp; |100 gp &nbsp; |0 &nbsp;|-2
+50 &nbsp; |Village &nbsp; &nbsp;|=Rnd(401,900) &nbsp; &nbsp; &nbsp;|200 gp &nbsp; |+1 |-1
+70 &nbsp; |Small Town |=Rnd(901,2000) &nbsp; &nbsp; |800 gp &nbsp; |+2 |0 &nbsp;
+85 &nbsp; |Large Town |=Rnd(2001,5000) &nbsp; &nbsp;|3000 gp &nbsp;|+3 |+3
+95 &nbsp; |Small City |=Rnd(5001,12000) &nbsp; |15000 gp |+4 |+6
+99 &nbsp; |Large City |=Rnd(12001,25000) &nbsp;|40000 gp |+5 |+9
+100 &nbsp;|Metropolis |=Rnd(25001,100000) |100000 gp|+6 |+12
+]]&gt;&lt;/table&gt;</code></pre>
+	<br />
+	<p class="big">loop</p>
+	<p>The generator will loop through each row of a loop table and calculate the values of all columns. The loopId attribute is required for these tables in order to tell the application which column to use when referencing values of the table. Results of this type of table are referenced using the table name, the loop id value, and the column name as such: [Highest-Level locals.Adept.Level].</p>
+	<br />
+	<p class="sub">Sample:</p>
+	<pre><code>&lt;table name="Highest-Level locals" delimiter="|" loopId="Class"&gt;&lt;![CDATA[
+Class &nbsp; &nbsp; &nbsp;|Level &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+Barbarian &nbsp;|=MakeOrdinal(Max(Roll(1,4)+[Town Size.CM],0))
+Bard &nbsp; &nbsp; &nbsp; |=MakeOrdinal(Max(Roll(1,6)+[Town Size.CM],0))
+Cleric &nbsp; &nbsp; |=MakeOrdinal(Max(Roll(1,6)+[Town Size.CM],0))
+Druid &nbsp; &nbsp; &nbsp;|=MakeOrdinal(Max(Roll(1,6)+[Town Size.CM],0))
+Fighter &nbsp; &nbsp;|=MakeOrdinal(Max(Roll(1,8)+[Town Size.CM],0))
+]]&gt;&lt;/table&gt;</code></pre>
+<p><br/></p>
+	<p class="big">select</p>
+	<p>This type of table tells the generator to select a specific row based on the criteria found in the column and selectValue attributes. Like the random table type, the resultant values are referenced using the table name and column name such as [Size.Modifier].</p>
+	<br />
+	<p class="sub">Sample:</p>
+	<pre><code>&lt;table name="Size" column="Size" delimiter="|" selectValue="=[SizeParameter]"&gt;&lt;![CDATA[
+Size &nbsp; | Modifier
+Small &nbsp;| +1
+Medium | 0
+Large &nbsp;| -1
+]]&gt;&lt;/table&gt;</code></pre>
+	
+	<h2>Calculations and Variables</h2>
+	<p>You will have noticed in several of the samples above that I had values of attributes and columns that began with an equals sign. These are values that are calculated by the application rather than being literal values.</p>
+	<br />
+	<p class="big">Calculations</p>
+	<p>Calculations are handled by a modified version of a programming library known as nCalc. You can find documentation on how it works at its website. The additional functions available are detailed in the <a href="Calculation Functions.htm">Calculation Functions</a> help topic.</p>
+	<p class="big">Variables</p>
+	<p>Variables come from two sources: Parameters and Table Results. All variables are surrounded by square brackets (i.e. []). Parameters are referenced by their name (e.g. [Gender]) and table results are referenced using the methods described in the tables section above.</p>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+</body>
+</html>

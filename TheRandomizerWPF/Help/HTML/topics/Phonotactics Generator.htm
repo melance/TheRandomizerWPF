@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Phonotactics Generator</title>
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+	<style>
+		pre {
+			border: 4px inset #036;
+			background: #EEF;
+			padding: 1em;
+		}
+		code {
+			color:#036;
+			font-family: "Consolas","Courier New", Courier, Monospace;}
+	</style>
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Phonotactics Generator</h3>
+    </div>
+  </div>
+  
+	<div id="main">
+	<p>
+		The phonotactics generator takes two files, one a sample file and the other a definition file and generates a phonotactic grammar file.
+	</p>
+
+	<p class="big">
+		Grammar Info
+	</p>
+	<p>
+		Grammar info fills in the header information of the grammar. In order to have a usable grammar, this information should be filled in.
+	</p>
+	<ul class="shr">
+		<li><b>Name</b>: The name of the grammar</li>
+		<li><b>Description</b>: The description of the grammar</li>
+		<li><b>Author</b>: The author of the grammar</li>
+		<li><b>Tags</b>: A list of keywords used to categorize the grammar</li>
+		<li><b>Category</b>: The category to list the grammar under</li>
+		<li><b>Supports Max Length</b>: Does this grammar allow max length.</li>
+	</ul>
+	
+	<p class="big">
+		Phonotactics Options
+	</p>
+	<ul>
+		<li><b>Sample File</b>: The file containing sample words with one word per line</li>
+		<li><b>Definition File</b>: The file containing the definitions of the key words.  The format for the definiton file is: [Key Character]=[Comma Separated Values]
+	<pre><code>
+c=b,c,d,f,j,k,l,m,n,p,q,r,s,t,v
+v=a,e,i,o,u
+	</code></pre>
+		</li>
+		<li><b>Limit Weight</b>: If selected, this will tell the generate that the weight of a single value cannot be greater than the given value.  This can help to keep the bias from getting too high.</li>
+	</ul>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+</body>
+</html>

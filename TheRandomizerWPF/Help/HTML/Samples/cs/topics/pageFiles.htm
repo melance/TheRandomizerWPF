@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Soubory (editor seznamu)</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+</head>
+<body>
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Soubory (editor seznamu)</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="../img/filesel.jpg" style="float: left; margin-right:12px;" />
+    <p>
+      Pomocí <a href="navBar_Files.htm">navigačního panelu Soubory</a> a této stránky (editoru) můžete upravovat seznam všech souborů explicitně zařazených do výsledné nápovědy.
+    </p>
+    <img src="../img/ss_files.jpg" class="ssright"/>
+    <p>
+      Pomocí voleb navigačního panelu lze seznam souborů rychle <a href="navBar_Files.htm">filtrovat</a> tak, aby jste zobrazili jen ty soubory,
+      se kterými chcete dále pracovat. Doplňkové <b>rychlé vyhledávání</b> (filtrování) podle textu je k dispozici přímo na stránce editoru (vpravo nahoře).
+    </p>
+    <p>
+      Pomocí voleb na této stránce (editoru) pak můžete soubory do seznamu přidávat, odebírat, prohlížet, kopírovat do schránky a provádět další, níže popsané akce.
+    </p>
+
+    <p class="big" style="padding-top:8px;">
+      Práce s editorem seznamu souborů
+    </p>
+    <ul class="shr">
+      <li><b>Přidat soubory</b> - přidání souborů do seznamu pomocí systémového dialogu pro výběr souboru</li>
+      <li><b>Přidat soubory ze složky</b> - přidá do seznamu všechny soubory témat z vybrané složky (včetně podsložek).
+          Jestliže máte zapnut filtr souborů <b>dle typu</b> (v <a href="navBar_Files.htm">navigačním panelu</a>), pak se přidají jen soubory daného typu,
+          ať již se jedná o témata, obrázky nebo jiný vybraný typ.</li>
+      <li><b>Přidat soubory projektu</b> - přidání souborů do seznamu pomocí dialogu pro <a href="dialogPrjFiles.htm">výběr souboru projektu</a></li>
+      <li><b>Přidat použité soubory</b> - přidá do seznamu soubory témat, které jsou použity kdekoliv v rámci projektu (tedy v <a href="navBar_TOC.htm">obsahu</a>,
+          <a href="navBar_IDX.htm">rejstříku</a>, v definici <a href="pageWinTypes.htm">typů oken</a>, apod.).</li>
+      <li><b>Odebrat</b> - odebere ze seznamu vybrané soubory (samozřejmě nejde o fyzické smazání souborů)</li>
+      <li><b>Kopírovat do schránky</b> - zkopíruje seznam vybraných souborů do schránky</li>
+      <li><b>Vložit ze schránky</b> - vloží soubory ze schránky do seznamu</li>
+      <li><b>Vlastnosti</b> - zobrazí kartu <a href="helpBar_OI.htm">Editoru vlastností</a>, kde se v tomto kontextu zobrazuje náhled na vybraný soubor</li>
+      <li><b>Upravit</b> - otevře externí editor pro úpravu nebo prohlížení vybraného souboru. V kontextové nabídce tohoto tlačítka máte pro otevření k dispozici
+          <a href="dialogOptions.htm#mtools">Vámi zvolený editor a prohlížeč</a> a také aplikace asociované s příponou aktuálně vybraného souboru.</li>
+    </ul>
+
+    <p>
+      Editor nabízí efektivní možnosti využítí <b>schránky</b> a funkce <b>přetažení myší</b>, a to jak mezi instancemi aplikace Precision Helper, tak mezi jinými aplikacemi.
+    </p>
+    <p>
+      Do seznamu je možné přetáhnout myší: např. soubory z <i>Průzkumníku Windows</i>, nebo také seznam souborů napsaný v textovém editoru či tabulkovém procesoru.
+      Stejně tak můžete naopak přenést seznam souborů z aplikace Precision Helper do tabulkového procesoru nebo textového editoru.
+    </p>
+    <p>
+      Při přetažení myší se pracuje se všemi údaji uvedenými v seznamu.
+      Z toho vyplývá i nutnost vypnout volbu "<a href="dialogOptions.htm#edit">Zobrazovat umístění souborů jako relativní</a>" v dialogu Nastavení v případě,
+      že chcete přenášet informace včetně celé cesty souboru (a ne jen relativní cesty vzhledem k projektu).
+    </p>
+    <p>
+      Obdobně funguje i schránka, ale zde se při interakci s jinými aplikacemi přenáší jen název souboru (včetně cesty).
+    </p>
+
+  </div>
+  <div id="foot">
+    Copyright &copy; 2008-2011 &nbsp;Precision software & consulting. Všechna práva vyhrazena.
+  </div>
+</body>
+</html>

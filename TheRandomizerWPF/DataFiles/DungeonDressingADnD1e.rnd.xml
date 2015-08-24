@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+		 xsi:type="AssignmentGrammar">
+	<name>AD&amp;D 1e Dungeon Dressing</name>
+	<author>Lance Boudreaux</author>
+	<genre>Fantasy</genre>
+	<system>AD&amp;D 1e</system>
+	<category>Environment</category>
+	<description>A dungeon dressing generator from the AD&amp;D 1e Appendix I</description>
+	<items>
+		<item name="Start"><![CDATA[<b>Air Currents:</b> [AirCurrents]
+		<br /> <b>Odors:</b> [Odors]
+		<br /> <b>Air:</b> [Air]
+		<br /> <b>General:</b> [General]
+		<br /> <b>Unexplained Sounds and Weird Noises:</b> [Sounds]
+		<br /> <b>Furnishing and Appointments, General:</b> [Furnishing]
+		<br /> <b>Religious Articles and Furnishings:</b> [Religious]
+		<br /> <b>Torture Chamber:</b> [Torture]
+		<br /> <b>Magic-User Furnishings:</b> [MagicUser]]]></item>
+		<item name="AirCurrents" weight="5">Breeze, slight</item>
+		<item name="AirCurrents" weight="5">Breeze, slight, damp</item>
+		<item name="AirCurrents" weight="2">Breeze, gusting</item>
+		<item name="AirCurrents" weight="6">Cold current</item>
+		<item name="AirCurrents" weight="2">Downdraft, slight</item>
+		<item name="AirCurrents" weight="2">Downdraft, strong</item>
+		<item name="AirCurrents" weight="47">Still</item>
+		<item name="AirCurrents" weight="5">Still, very chilly</item>
+		<item name="AirCurrents" weight="10">Still, warm (or hot)</item>
+		<item name="AirCurrents" weight="2">Updraft, slight</item>
+		<item name="AirCurrents" weight="2">Updraft, strong</item>
+		<item name="AirCurrents" weight="3">Wind, strong</item>
+		<item name="AirCurrents" weight="2">Wind, strong, gusting</item>
+		<item name="AirCurrents" weight="5">Wind, strong, moaning</item>
+		
+		<item name="Odors" weight="3">Acrid smell</item>
+		<item name="Odors" weight="2">Chlorine smell</item>
+		<item name="Odors" weight="34">Dark, mouldy smell</item>
+		<item name="Odors" weight="10">Earthy smell</item>
+		<item name="Odors" weight="8">Manure smell</item>
+		<item name="Odors" weight="3">Metallic smell</item>
+		<item name="Odors" weight="4">Ozone smell</item>
+		<item name="Odors" weight="4">Putrid smell</item>
+		<item name="Odors" weight="5">Rotting vegetation smell</item>
+		<item name="Odors" weight="2">Salty, wet smell</item>
+		<item name="Odors" weight="5">Smoky smell</item>
+		<item name="Odors" weight="7">Stale, fetid smell</item>
+		<item name="Odors" weight="6">Sulphurous smell</item>
+		<item name="Odors" weight="5">Urine smell</item>
+		
+		<item name="Air" weight="70">Clear</item>
+		<item name="Air" weight="10">Foggy (or steamy)</item>
+		<item name="Air" weight="8">Foggy near floor (or steamy)</item>
+		<item name="Air" weight="2">Hazy (dust)</item>
+		<item name="Air" weight="8">Hazy (smoke)</item>
+		<item name="Air" weight="2">Misted</item>
+		
+		<item name="General" weight="1">Arrow, broken</item>
+		<item name="General" weight="3">Ashes</item>
+		<item name="General" weight="2">Bones</item>
+		<item name="General" weight="1">Bottle, broken</item>
+		<item name="General" weight="1">Chain, corroded</item>
+		<item name="General" weight="1">Club, splintered</item>
+		<item name="General" weight="10">Cobwebs</item>
+		<item name="General" weight="1">Coin, copper (bent)</item>
+		<item name="General" weight="2">Cracks, ceiling</item>
+		<item name="General" weight="2">Cracks, floor</item>
+		<item name="General" weight="2">Cracks, wall</item>
+		<item name="General" weight="1">Dagger hilt</item>
+		<item name="General" weight="2">Dampness, ceiling</item>
+		<item name="General" weight="4">Dampness, wall</item>
+		<item name="General" weight="7">Dripping</item>
+		<item name="General" weight="1">Dried blood</item>
+		<item name="General" weight="3">Dung</item>
+		<item name="General" weight="5">Dust</item>
+		<item name="General" weight="1">Flask, cracked</item>
+		<item name="General" weight="1">Food scraps</item>
+		<item name="General" weight="1">Fungi, common</item>
+		<item name="General" weight="3">Guano</item>
+		<item name="General" weight="1">Hair/fur bits</item>
+		<item name="General" weight="1">Hammer head, cracked</item>
+		<item name="General" weight="1">Helmet, badly dented</item>
+		<item name="General" weight="1">Iron bar, bent, rusted</item>
+		<item name="General" weight="1">Javelin head, blunt</item>
+		<item name="General" weight="1">Leather boot</item>
+		<item name="General" weight="3">Leaves (dry) &amp; twigs</item>
+		<item name="General" weight="4">Mold (common)</item>
+		<item name="General" weight="1">Pick handle</item>
+		<item name="General" weight="1">Pole, broken (5 2/3')</item>
+		<item name="General" weight="1">Pottery shards</item>
+		<item name="General" weight="2">Rags</item>
+		<item name="General" weight="1">Rope, rotten</item>
+		<item name="General" weight="2">Rubble &amp; dirt</item>
+		<item name="General" weight="1">Sack, torn</item>
+		<item name="General" weight="1">Slimy coating, ceiling</item>
+		<item name="General" weight="1">Slimy coating, floor</item>
+		<item name="General" weight="1">Slimy coating, wall</item>
+		<item name="General" weight="1">Spike, rusted</item>
+		<item name="General" weight="2">Sticks</item>
+		<item name="General" weight="1">Stones, small</item>
+		<item name="General" weight="1">Straw</item>
+		<item name="General" weight="1">Sword blade, broken</item>
+		<item name="General" weight="1">Teeth/fangs, scattered</item>
+		<item name="General" weight="1">Torch stub</item>
+		<item name="General" weight="1">Wall scratchings</item>
+		<item name="General" weight="2">Water, small puddle</item>
+		<item name="General" weight="2">Water, large puddle</item>
+		<item name="General" weight="2">Water, trickle</item>
+		<item name="General" weight="1">Wax drippings</item>
+		<item name="General" weight="1">Wax blob (candle stub)</item>
+		<item name="General" weight="1">Wood pieces, rotting</item>
+		
+		<item name="Sounds" weight="5">Bang, slam</item>
+		<item name="Sounds" weight="1">Bellow(ing)</item>
+		<item name="Sounds" weight="1">Bong</item>
+		<item name="Sounds" weight="1">Buzzing</item>
+		<item name="Sounds" weight="2">Chanting</item>
+		<item name="Sounds" weight="1">Chiming</item>
+		<item name="Sounds" weight="1">Chirping</item>
+		<item name="Sounds" weight="1">Clanking</item>
+		<item name="Sounds" weight="1">Clashing</item>
+		<item name="Sounds" weight="1">Clicking</item>
+		<item name="Sounds" weight="1">Coughing</item>
+		<item name="Sounds" weight="2">Creaking</item>
+		<item name="Sounds" weight="1">Drumming</item>
+		<item name="Sounds" weight="4">Footsteps (ahead)</item>
+		<item name="Sounds" weight="3">Footsteps (approaching)</item>
+		<item name="Sounds" weight="3">Footsteps (behind)</item>
+		<item name="Sounds" weight="2">Footsteps (receding)</item>
+		<item name="Sounds" weight="2">Footsteps (side)</item>
+		<item name="Sounds" weight="2">Giggling (faint)</item>
+		<item name="Sounds" weight="1">Gong</item>
+		<item name="Sounds" weight="3">Grating</item>
+		<item name="Sounds" weight="2">Groaning</item>
+		<item name="Sounds" weight="1">Grunting</item>
+		<item name="Sounds" weight="2">Hissing</item>
+		<item name="Sounds" weight="1">Hooting</item>
+		<item name="Sounds" weight="1">Horn/trumpet sounding</item>
+		<item name="Sounds" weight="1">Howling</item>
+		<item name="Sounds" weight="1">Humming</item>
+		<item name="Sounds" weight="1">Jingling</item>
+		<item name="Sounds" weight="4">Knocking</item>
+		<item name="Sounds" weight="2">Laughter</item>
+		<item name="Sounds" weight="2">Moaning</item>
+		<item name="Sounds" weight="3">Murmuring</item>
+		<item name="Sounds" weight="1">Music</item>
+		<item name="Sounds" weight="1">Rattling</item>
+		<item name="Sounds" weight="1">Ringing</item>
+		<item name="Sounds" weight="1">Roar(ing)</item>
+		<item name="Sounds" weight="4">Rustling</item>
+		<item name="Sounds" weight="4">Scratching/scrabbling</item>
+		<item name="Sounds" weight="2">Scream(ing)</item>
+		<item name="Sounds" weight="3">Scuttling</item>
+		<item name="Sounds" weight="1">Shuffling</item>
+		<item name="Sounds" weight="2">Slithering</item>
+		<item name="Sounds" weight="1">Snapping</item>
+		<item name="Sounds" weight="1">Sneezing</item>
+		<item name="Sounds" weight="1">Sobbing</item>
+		<item name="Sounds" weight="1">Splashing</item>
+		<item name="Sounds" weight="1">Splintering</item>
+		<item name="Sounds" weight="2">Squeaking</item>
+		<item name="Sounds" weight="1">Squealing</item>
+		<item name="Sounds" weight="2">Tapping</item>
+		<item name="Sounds" weight="2">Thud</item>
+		<item name="Sounds" weight="2">Thumping</item>
+		<item name="Sounds" weight="1">Tinkling</item>
+		<item name="Sounds" weight="1">Twanging</item>
+		<item name="Sounds" weight="1">Whining</item>
+		<item name="Sounds" weight="1">Whispering</item>
+		<item name="Sounds" weight="2">Whistling</item>
+		
+		<item name="Furnishing" weight="1">Altar</item>
+		<item name="Furnishing" weight="1">Armchair</item>
+		<item name="Furnishing" weight="1">Armoire</item>
+		<item name="Furnishing" weight="1">Arras</item>
+		<item name="Furnishing" weight="1">Bag</item>
+		<item name="Furnishing" weight="1">Barrel</item>
+		<item name="Furnishing" weight="2">Bed</item>
+		<item name="Furnishing" weight="1">Bench</item>
+		<item name="Furnishing" weight="1">Blanket</item>
+		<item name="Furnishing" weight="1">Box (large)</item>
+		<item name="Furnishing" weight="1">Brazier &amp; charcoal</item>
+		<item name="Furnishing" weight="1">Bucket</item>
+		<item name="Furnishing" weight="1">Buffet</item>
+		<item name="Furnishing" weight="1">Bunks</item>
+		<item name="Furnishing" weight="1">Butt (large barrel)</item>
+		<item name="Furnishing" weight="1">Cabinet</item>
+		<item name="Furnishing" weight="1">Candelabrum</item>
+		<item name="Furnishing" weight="1">Carpet (largish)</item>
+		<item name="Furnishing" weight="1">Cask</item>
+		<item name="Furnishing" weight="1">Chandelier</item>
+		<item name="Furnishing" weight="1">Charcoal</item>
+		<item name="Furnishing" weight="2">Chair</item>
+		<item name="Furnishing" weight="1">Chair, padded</item>
+		<item name="Furnishing" weight="1">Chair, padded, arm</item>
+		<item name="Furnishing" weight="1">Chest, large</item>
+		<item name="Furnishing" weight="1">Chest, medium</item>
+		<item name="Furnishing" weight="1">Chest of drawers</item>\
+		<item name="Furnishing" weight="1">Closet (wardrobe)</item>
+		<item name="Furnishing" weight="1">Coal</item>
+		<item name="Furnishing" weight="2">Couch</item>
+		<item name="Furnishing" weight="1">Crate</item>
+		<item name="Furnishing" weight="1">Cresset</item>
+		<item name="Furnishing" weight="1">Cupboard</item>
+		<item name="Furnishing" weight="1">Cushion</item>
+		<item name="Furnishing" weight="1">Dais</item>
+		<item name="Furnishing" weight="1">Desk</item>
+		<item name="Furnishing" weight="3">Fireplace &amp; wood</item>
+		<item name="Furnishing" weight="1">Firkin</item>
+		<item name="Furnishing" weight="1">Fountain</item>
+		<item name="Furnishing" weight="1">Fresco</item>
+		<item name="Furnishing" weight="1">Grindstone</item>
+		<item name="Furnishing" weight="1">Hamper</item>
+		<item name="Furnishing" weight="1">Hassok</item>
+		<item name="Furnishing" weight="1">Hogshead</item>
+		<item name="Furnishing" weight="1">Idol (largish)</item>
+		<item name="Furnishing" weight="1">Keg</item>
+		<item name="Furnishing" weight="1">Loom</item>
+		<item name="Furnishing" weight="1">Mat</item>
+		<item name="Furnishing" weight="1">Mattress</item>
+		<item name="Furnishing" weight="1">Pail</item>
+		<item name="Furnishing" weight="1">Painting</item>
+		<item name="Furnishing" weight="3">Pallet</item>
+		<item name="Furnishing" weight="1">Pedestal</item>
+		<item name="Furnishing" weight="3">Pegs</item>
+		<item name="Furnishing" weight="1">Pillow</item>
+		<item name="Furnishing" weight="1">Pipe (large cask)</item>
+		<item name="Furnishing" weight="1">Quilt</item>
+		<item name="Furnishing" weight="3">Rug (small-medium)</item>
+		<item name="Furnishing" weight="1">Rushes</item>
+		<item name="Furnishing" weight="1">Sack</item>
+		<item name="Furnishing" weight="1">Sconce, wall</item>
+		<item name="Furnishing" weight="1">Screen</item>
+		<item name="Furnishing" weight="1">Sheet</item>
+		<item name="Furnishing" weight="2">Shelf</item>
+		<item name="Furnishing" weight="1">Shrine</item>
+		<item name="Furnishing" weight="1">Sideboard</item>
+		<item name="Furnishing" weight="1">Sofa</item>
+		<item name="Furnishing" weight="1">Staff, normal</item>
+		<item name="Furnishing" weight="1">Stand</item>
+		<item name="Furnishing" weight="1">Statue</item>
+		<item name="Furnishing" weight="1">Stool, high</item>
+		<item name="Furnishing" weight="1">Stool, normal</item>
+		<item name="Furnishing" weight="1">Table, large</item>
+		<item name="Furnishing" weight="1">Table, long</item>
+		<item name="Furnishing" weight="1">Table, low</item>
+		<item name="Furnishing" weight="1">Table, round</item>
+		<item name="Furnishing" weight="1">Table, small</item>
+		<item name="Furnishing" weight="1">Table, trestle</item>
+		<item name="Furnishing" weight="1">Tapestry</item>
+		<item name="Furnishing" weight="1">Throne</item>
+		<item name="Furnishing" weight="1">Trunk</item>
+		<item name="Furnishing" weight="1">Tub</item>
+		<item name="Furnishing" weight="1">Tun</item>
+		<item name="Furnishing" weight="1">Urn</item>
+		<item name="Furnishing" weight="1">Wall basin and font</item>
+		<item name="Furnishing" weight="1">Wood billets</item>
+		<item name="Furnishing" weight="1">Workbench</item>
+		
+		<item name="Religious" weight="5">Altar</item>
+		<item name="Religious" weight="3">Bell(s)</item>
+		<item name="Religious" weight="3">Brazier(s)</item>
+		<item name="Religious" weight="1">Candelabra</item>
+		<item name="Religious" weight="2">Candles</item>
+		<item name="Religious" weight="1">Candlesticks</item>
+		<item name="Religious" weight="1">Cassocks</item>
+		<item name="Religious" weight="1">Chime(s)</item>
+		<item name="Religious" weight="2">Cloth (altar)</item>
+		<item name="Religious" weight="4">Columns/pillars</item>
+		<item name="Religious" weight="1">Curtain/tapestry</item>
+		<item name="Religious" weight="1">Drum</item>
+		<item name="Religious" weight="2">Font</item>
+		<item name="Religious" weight="2">Gong</item>
+		<item name="Religious" weight="6">Holy/unholy symbol(s)</item>
+		<item name="Religious" weight="2">Holy/unholy writings</item>
+		<item name="Religious" weight="6">Idol(s)</item>
+		<item name="Religious" weight="5">Incense burner(s)</item>
+		<item name="Religious" weight="1">Kneeling bench</item>
+		<item name="Religious" weight="4">Lamp(s)</item>
+		<item name="Religious" weight="1">Lectern</item>
+		<item name="Religious" weight="1">Mosaics</item>
+		<item name="Religious" weight="3">Offertory container</item>
+		<item name="Religious" weight="1">Paintings/frescoes</item>
+		<item name="Religious" weight="2">Pews</item>
+		<item name="Religious" weight="1">Pipes (musical)</item>
+		<item name="Religious" weight="1">Prayer rug</item>
+		<item name="Religious" weight="1">Pulpit</item>
+		<item name="Religious" weight="1">Rail</item>
+		<item name="Religious" weight="2">Robes</item>
+		<item name="Religious" weight="2">Sanctuary</item>
+		<item name="Religious" weight="2">Screen</item>
+		<item name="Religious" weight="5">Shrine</item>
+		<item name="Religious" weight="1">Side chair(s)</item>
+		<item name="Religious" weight="2">Stand</item>
+		<item name="Religious" weight="3">Statue(s)</item>
+		<item name="Religious" weight="1">Throne</item>
+		<item name="Religious" weight="2">Thurible</item>
+		<item name="Religious" weight="3">Tripod</item>
+		<item name="Religious" weight="2">Vestry</item>
+		<item name="Religious" weight="7">Vestments</item>
+		<item name="Religious" weight="2">Votive light</item>
+		<item name="Religious" weight="1">Whistle</item>
+		
+		<item name="Torture" weight="2">Bastinadoes</item>
+		<item name="Torture" weight="1">Bell (huge)</item>
+		<item name="Torture" weight="3">Bench</item>
+		<item name="Torture" weight="4">Boots (iron)</item>
+		<item name="Torture" weight="5">Branding irons</item>
+		<item name="Torture" weight="5">Brazier</item>
+		<item name="Torture" weight="2">Cage</item>
+		<item name="Torture" weight="4">Chains</item>
+		<item name="Torture" weight="1">Chair with straps</item>
+		<item name="Torture" weight="1">Clamps</item>
+		<item name="Torture" weight="3">Cressets</item>
+		<item name="Torture" weight="1">Fetters</item>
+		<item name="Torture" weight="3">Fire pit</item>
+		<item name="Torture" weight="1">Grill</item>
+		<item name="Torture" weight="2">Hooks</item>
+		<item name="Torture" weight="7">Iron maiden</item>
+		<item name="Torture" weight="1">Knives</item>
+		<item name="Torture" weight="1">Manacles</item>
+		<item name="Torture" weight="1">Oubliette (pit)</item>
+		<item name="Torture" weight="2">Oil (barrel of)</item>
+		<item name="Torture" weight="2">Pillory</item>
+		<item name="Torture" weight="4">Pincers</item>
+		<item name="Torture" weight="2">Pliers</item>
+		<item name="Torture" weight="2">Pot (huge)</item>
+		<item name="Torture" weight="8">Rack</item>
+		<item name="Torture" weight="2">Ropes</item>
+		<item name="Torture" weight="1">Stocks</item>
+		<item name="Torture" weight="2">Stool</item>
+		<item name="Torture" weight="4">Strappado</item>
+		<item name="Torture" weight="3">Straw</item>
+		<item name="Torture" weight="2">Table</item>
+		<item name="Torture" weight="1">Thongs</item>
+		<item name="Torture" weight="4">Thumb screws</item>
+		<item name="Torture" weight="3">Torches</item>
+		<item name="Torture" weight="2">"U" rack</item>
+		<item name="Torture" weight="1">Vice</item>
+		<item name="Torture" weight="2">Well</item>
+		<item name="Torture" weight="3">Wheel</item>
+		<item name="Torture" weight="4">Whips</item>
+		
+		<item name="MagicUser" weight="3">Alembic</item>
+		<item name="MagicUser" weight="2">Balance &amp; weights</item>
+		<item name="MagicUser" weight="4">Beaker of [Container]</item>
+		<item name="MagicUser" weight="1">Bellows</item>
+		<item name="MagicUser" weight="1">Bladder</item>
+		<item name="MagicUser" weight="2">Bottle of [Container]</item>
+		<item name="MagicUser" weight="3">Book</item>
+		<item name="MagicUser" weight="1">Bowl of [Container]</item>
+		<item name="MagicUser" weight="1">Box</item>
+		<item name="MagicUser" weight="4">Brazier</item>
+		<item name="MagicUser" weight="1">Cage</item>
+		<item name="MagicUser" weight="2">Caldron</item>
+		<item name="MagicUser" weight="1">Candle</item>
+		<item name="MagicUser" weight="1">Candlestick</item>
+		<item name="MagicUser" weight="1">Carafe</item>
+		<item name="MagicUser" weight="2">Chalk</item>
+		<item name="MagicUser" weight="1">Crucible</item>
+		<item name="MagicUser" weight="1">Cruet</item>
+		<item name="MagicUser" weight="1">Crystal ball</item>
+		<item name="MagicUser" weight="1">Decanter</item>
+		<item name="MagicUser" weight="1">Desk</item>
+		<item name="MagicUser" weight="1">Dish</item>
+		<item name="MagicUser" weight="2">Flask of [Container]</item>
+		<item name="MagicUser" weight="1">Funnel</item>
+		<item name="MagicUser" weight="1">Furnace</item>
+		<item name="MagicUser" weight="4">Herbs</item>
+		<item name="MagicUser" weight="1">Horn</item>
+		<item name="MagicUser" weight="1">Hourglass</item>
+		<item name="MagicUser" weight="2">Jar of [Container]</item>
+		<item name="MagicUser" weight="1">Jug of [Container]</item>
+		<item name="MagicUser" weight="1">Kettle</item>
+		<item name="MagicUser" weight="1">Ladle</item>
+		<item name="MagicUser" weight="1">Lamp</item>
+		<item name="MagicUser" weight="1">Lens (concave, convex, etc.)</item>
+		<item name="MagicUser" weight="1">Magic circle</item>
+		<item name="MagicUser" weight="1">Mortar &amp; pestle</item>
+		<item name="MagicUser" weight="1">Pan</item>
+		<item name="MagicUser" weight="2">Parchment</item>
+		<item name="MagicUser" weight="1">Pentacle</item>
+		<item name="MagicUser" weight="1">Pentagram</item>
+		<item name="MagicUser" weight="1">Phial</item>
+		<item name="MagicUser" weight="1">Pipette</item>
+		<item name="MagicUser" weight="1">Pot of [Container]</item>
+		<item name="MagicUser" weight="1">Prism</item>
+		<item name="MagicUser" weight="1">Quill</item>
+		<item name="MagicUser" weight="3">Retort</item>
+		<item name="MagicUser" weight="1">Rod, mixing/stirring</item>
+		<item name="MagicUser" weight="2">Scroll</item>
+		<item name="MagicUser" weight="1">Scroll tube</item>
+		<item name="MagicUser" weight="1">Sheet</item>
+		<item name="MagicUser" weight="1">Skin</item>
+		<item name="MagicUser" weight="1">Skull</item>
+		<item name="MagicUser" weight="1">Spatula</item>
+		<item name="MagicUser" weight="1">Spoon, measuring</item>
+		<item name="MagicUser" weight="1">Stand</item>
+		<item name="MagicUser" weight="1">Stool</item>
+		<item name="MagicUser" weight="1">Stuffed animal</item>
+		<item name="MagicUser" weight="1">Tank of [Container]</item>
+		<item name="MagicUser" weight="1">Tongs</item>
+		<item name="MagicUser" weight="1">Tripod</item>
+		<item name="MagicUser" weight="1">Tube of [Container]</item>
+		<item name="MagicUser" weight="2">Tube (piping)</item>
+		<item name="MagicUser" weight="1">Tweezers</item>
+		<item name="MagicUser" weight="2">Vial</item>
+		<item name="MagicUser" weight="1">Waterclock</item>
+		<item name="MagicUser" weight="1">Wire</item>
+		<item name="MagicUser" weight="8">Workbench</item>
+		
+		<item name="Container" weight="3">Ash</item>
+		<item name="Container" weight="3">Bark</item>
+		<item name="Container" weight="3">Bone</item>
+		<item name="Container" weight="5">Chunks</item>
+		<item name="Container" weight="3">Cinders</item>
+		<item name="Container" weight="5">Crystals</item>
+		<item name="Container" weight="4">Dust</item>
+		<item name="Container" weight="2">Fibers</item>
+		<item name="Container" weight="3">Gelatin</item>
+		<item name="Container" weight="2">Globes</item>
+		<item name="Container" weight="4">Grains</item>
+		<item name="Container" weight="3">Greasy</item>
+		<item name="Container" weight="3">Husks</item>
+		<item name="Container" weight="5">Leaves</item>
+		<item name="Container" weight="8">Liquid</item>
+		<item name="Container" weight="2">Lump(s)</item>
+		<item name="Container" weight="3">Oily</item>
+		<item name="Container" weight="4">Paste</item>
+		<item name="Container" weight="4">Pellets</item>
+		<item name="Container" weight="3">Powder</item>
+		<item name="Container" weight="2">Semi-liquid</item>
+		<item name="Container" weight="2">Skin/hide</item>
+		<item name="Container" weight="2">Splinters</item>
+		<item name="Container" weight="2">Stalks</item>
+		<item name="Container" weight="3">Strands</item>
+		<item name="Container" weight="3">Strips</item>
+		<item name="Container" weight="5">Viscous</item>
+	</items>
+</Grammar>
