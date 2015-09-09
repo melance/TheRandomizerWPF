@@ -1,0 +1,42 @@
+﻿<metro:MetroWindow x:Class="TagEditor"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:util="clr-namespace:Utility;assembly=Utility"
+                   xmlns:actb="clr-namespace:dragonz.actb.control;assembly=dragonz.actb"
+                   xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                   x:Name="main"
+                   Title="TagEditor" 
+                   Height="300" 
+                   Width="300" 
+                   Style="{DynamicResource WindowStyle}"
+                   WindowStartupLocation="CenterOwner">
+    <Window.CommandBindings>
+        <CommandBinding Command="Save" Executed="Save_Executed" />
+        <CommandBinding Command="Close" Executed="Cancel_Executed" />
+        <CommandBinding Command="{x:Static util:CustomCommands.Add}" Executed="Add_Executed" />
+        <CommandBinding Command="{x:Static util:CustomCommands.Delete}" Executed="Delete_Executed" />
+    </Window.CommandBindings>
+    <Window.InputBindings>
+        <KeyBinding Key="Enter" Command="Save" />
+        <KeyBinding Key="Esc" Command="Close" />
+        <KeyBinding Key="Enter" Modifiers="Control" Command="{x:Static util:CustomCommands.Add}" />
+        <KeyBinding Key="Delete" Modifiers="Control" Command="{x:Static util:CustomCommands.Delete}" />
+    </Window.InputBindings>
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top" LastChildFill="False">
+            <Button Name="btnAdd" Command="{x:Static util:CustomCommands.Add}" Content="Add" Width="80" Margin="3" />
+            <Button Name="btnDelete" Command="{x:Static util:CustomCommands.Delete}" Content="Delete" Width="80" Margin="3" />
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Bottom" LastChildFill="False">
+            <Button Name="btnOk" Command="Save" IsDefault="True" Content="_Ok" DockPanel.Dock="Right" Width="80" Margin="3" />
+            <Button Name="btnCancel" Command="Close" IsCancel="True" Content="_Cancel" DockPanel.Dock="Right" Width="80" Margin="3" />
+        </DockPanel>
+        <ListBox Name="lstTags" Margin="3" DataContext="{Binding ElementName=main}" ItemsSource="{Binding TagListInternal}" HorizontalContentAlignment="Stretch">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBox Margin="6,0,0,0" Text="{Binding Value, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </DockPanel>
+</metro:MetroWindow>

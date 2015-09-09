@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="Tools.PhonotacticsGrammarEditor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:clr="clr-namespace:System;assembly=mscorlib"
+             xmlns:grm="clr-namespace:Grammars.Phonotactics;assembly=Grammars"
+             xmlns:help="clr-namespace:TheRandomizerWPF.Help"
+             help:HelpProvider.HelpTopic="7"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <ObjectDataProvider x:Key="CaseTypeEnum"
+                            MethodName="GetValues"
+                            ObjectType="{x:Type clr:Enum}" >
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="grm:CaseType"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0" LastChildFill="False">
+            <Label Content="Options" DockPanel.Dock="Top" Style="{DynamicResource ResourceKey=TitleLabel}" />
+            <Grid Height="32" DockPanel.Dock="Top" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Label Content="Case" Margin="3" Grid.Column="0" VerticalAlignment="Center"/>
+                <ComboBox Name="cboCase" HorizontalAlignment="Left" Margin="3" Width="120" Grid.Column="1" SelectedIndex="0" SelectedItem="{Binding Case, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Source={StaticResource CaseTypeEnum}}" />
+            </Grid>
+        </DockPanel>
+        <DockPanel Grid.Row="1" LastChildFill="True">
+            <Label Content="Definitions" DockPanel.Dock="Top" Style="{DynamicResource ResourceKey=TitleLabel}" />
+            <DataGrid Name="grdDefinitions" 
+                      Margin="3"
+                      ItemsSource="{Binding Definitions, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                      AutoGenerateColumns="False" 
+                      AlternationCount="2" 
+                      AlternatingRowBackground="Gainsboro"
+                      CanUserAddRows="True"
+                      CanUserDeleteRows="True"
+                      CanUserReorderColumns="false"
+                      CanUserResizeColumns="True"
+                      CanUserResizeRows="False"
+                      CanUserSortColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Key" Binding="{Binding Key}"/>
+                    <DataGridTextColumn Header="Delimiter" Binding="{Binding Delimiter}"/>
+                    <DataGridTextColumn Header="Values" Width="*" Binding="{Binding Value}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+        <GridSplitter Grid.Row="2" Height="3" ResizeBehavior="PreviousAndNext" ResizeDirection="Rows" HorizontalAlignment="Stretch" />
+        <DockPanel Grid.Row="3">
+            <Label Content="Patterns" DockPanel.Dock="Top" Style="{DynamicResource ResourceKey=TitleLabel}" />
+            <DataGrid Name="grdPatterns" 
+                      Margin="3"
+                      ItemsSource="{Binding Patterns, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                      AutoGenerateColumns="False" 
+                      AlternationCount="2" 
+                      AlternatingRowBackground="Gainsboro"
+                      CanUserAddRows="True"
+                      CanUserDeleteRows="True"
+                      CanUserReorderColumns="false"
+                      CanUserResizeColumns="True"
+                      CanUserResizeRows="False"
+                      CanUserSortColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Value" Binding="{Binding Value}" Width="*" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+    </Grid>
+</UserControl>

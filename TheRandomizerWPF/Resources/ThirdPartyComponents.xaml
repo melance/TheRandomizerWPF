@@ -1,0 +1,117 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <FlowDocument x:Key="ThirdPartyComponents" 
+                  FontSize="12" 
+                  FontFamily="Consolas">
+        <FlowDocument.Resources>
+            <ResourceDictionary>
+                <Style TargetType="TableCell" x:Key="Header">
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="BorderBrush" Value="DimGray" />
+                    <Setter Property="BorderThickness" Value="0,0,0,0.5" />
+                </Style>
+            </ResourceDictionary>
+        </FlowDocument.Resources>
+        <Table Name="tblComponents">
+            <Table.Columns>
+                <TableColumn Width="140" />
+                <TableColumn Width="Auto" />
+            </Table.Columns>
+            <TableRowGroup Name="trgComponents">
+                <TableRow>
+                    <TableCell Style="{DynamicResource Header}">
+                        <Paragraph>Component</Paragraph>
+                    </TableCell>
+                    <TableCell Style="{DynamicResource Header}">
+                        <Paragraph>Purpose</Paragraph>
+                    </TableCell>
+                    <TableCell Style="{DynamicResource Header}">
+                        <Paragraph>Link</Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>LUA</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>
+                            Engine for the LUA Grammar type
+                        </Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="https://github.com/NLua/NLua">NLUA on Github</Hyperlink>
+                        </Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>NCalc</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>
+                            Calculatoin engine for grammars
+                        </Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="https://ncalc.codeplex.com/">NCalc at Codeplex</Hyperlink>
+                        </Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>
+                            MahApps.Metro
+                        </Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>
+                            User Interface Styles
+                        </Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="http://mahapps.com/">MahApps Homepage</Hyperlink>
+                        </Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>
+                            Dragablz
+                        </Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>
+                            Dragable tabs
+                        </Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="http://dragablz.net/">Dragablz Homepage</Hyperlink>
+                        </Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>
+                            AutoUpdater.Net
+                        </Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>
+                            Automatically update The Randomizer
+                        </Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="https://autoupdaterdotnet.codeplex.com/">AutoUpdater.Net on CodePlex</Hyperlink>
+                        </Paragraph>
+                    </TableCell>
+                </TableRow>
+            </TableRowGroup>
+        </Table>
+    </FlowDocument>
+
+</ResourceDictionary>

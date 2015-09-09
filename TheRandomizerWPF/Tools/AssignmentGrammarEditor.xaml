@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="AssignmentGrammarEditor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:help="clr-namespace:TheRandomizerWPF.Help"
+             help:HelpProvider.HelpTopic="4"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0">
+            <Label DockPanel.Dock="Top" Content="Rules" Grid.Row="0" Style="{DynamicResource ResourceKey=TitleLabel}" />
+            <DataGrid Name="grdRules" 
+                      Grid.Row="1"
+                      Margin="3"
+                      ItemsSource="{Binding Rules, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                      AutoGenerateColumns="False" 
+                      AlternationCount="2" 
+                      AlternatingRowBackground="Gainsboro"
+                      CanUserAddRows="True"
+                      CanUserDeleteRows="True"
+                      CanUserReorderColumns="false"
+                      CanUserResizeColumns="True"
+                      CanUserResizeRows="False"
+                      CanUserSortColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Label" Binding="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                    <DataGridTextColumn Header="Next" Binding="{Binding Next, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <DataGridTextColumn Header="Weight" Binding="{Binding Weight, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <DataGridTextColumn Header="Expression" Binding="{Binding Expression, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+        <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" Height="3" ResizeBehavior="PreviousAndNext" ResizeDirection="Rows" />
+        <DockPanel Grid.Row="2">
+            <Label DockPanel.Dock="Top" Content="Imports" Grid.Row="3" Style="{DynamicResource ResourceKey=TitleLabel}" />
+            <DockPanel DockPanel.Dock="Top" LastChildFill="False" Margin="3" Style="{DynamicResource ResourceKey=ContentPanel}">
+                <Button Name="btnAdd" Width="90" Margin="3" DockPanel.Dock="Left" Content="Add" Click="btnAdd_Click" />
+                <Button Name="btnRemove" Width="90" Margin="3" DockPanel.Dock="Left" Content="Remove" Click="btnRemove_Click" />
+            </DockPanel>
+            <ListBox Name="lstImports" Grid.Row="5" Margin="3" ItemsSource="{Binding Import, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+        </DockPanel>
+    </Grid>
+</UserControl>

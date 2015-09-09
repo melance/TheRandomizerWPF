@@ -1,0 +1,156 @@
+﻿<metro:MetroWindow x:Class="Tools.GrammarEditor"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:cnv="clr-namespace:TheRandomizerWPF.ValueConverters"
+                   xmlns:grm="clr-namespace:Grammars;assembly=Grammars"
+                   xmlns:clr="clr-namespace:System;assembly=mscorlib"
+                   xmlns:vld="clr-namespace:TheRandomizerWPF.Validation"
+                   xmlns:cmd="clr-namespace:Utility;assembly=Utility"
+                   xmlns:mru="clr-namespace:MRU;assembly=MRU"
+                   xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                   xmlns:help="clr-namespace:TheRandomizerWPF.Help"
+                   help:HelpProvider.HelpTopic="9"
+                   WindowStartupLocation="CenterOwner"
+                   Title="Grammar Editor" 
+                   Height="546" 
+                   Width="876"        
+                   Style="{DynamicResource WindowStyle}"
+                   DataContext="{Binding RelativeSource={RelativeSource Self}}"
+                   Icon="..\TheRandomizer.ico">
+    <Window.CommandBindings>
+        <CommandBinding Command="Save" CanExecute="Save_CanExecute" Executed="Save_Executed" />
+        <CommandBinding Command="SaveAs" CanExecute="Save_CanExecute" Executed="SaveAs_Executed" />
+        <CommandBinding Command="Open" CanExecute="Open_CanExecute" Executed="Open_Executed" />
+        <CommandBinding Command="Close" Executed="Close_Executed" />
+    </Window.CommandBindings>
+    <Window.InputBindings>
+        <KeyBinding Command="Save" Key="S" Modifiers="Control" />
+        <KeyBinding Command="SaveAs" Key="S" Modifiers="Control+Shift" />
+        <KeyBinding Command="Open" Key="O" Modifiers="Control" />
+        <KeyBinding Command="Close" Key="F4" Modifiers="Alt"/>
+    </Window.InputBindings>
+    <Window.Resources>        
+        <ObjectDataProvider x:Key="DataTypesEnum"
+                            MethodName="GetValues"
+                            ObjectType="{x:Type clr:Enum}" >
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="grm:DataTypes"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+        <cnv:ObjectIsNothingToBooleanConverter x:Key="nothingConverter" />
+    </Window.Resources>
+    <metro:MetroWindow.RightWindowCommands>
+        <metro:WindowCommands>
+            <Button Name="btnHelp" Command="Help">
+                <Rectangle Width="20" Height="20" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_question}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+            </Button>
+        </metro:WindowCommands>
+    </metro:MetroWindow.RightWindowCommands>
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="240"/>
+            <ColumnDefinition Width="Auto" MinWidth="3"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="132"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Menu Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3">
+            <MenuItem Header="_File">
+                <MenuItem Header="_New">
+                    <MenuItem Name="mnuAssignmentGrammar" Header="_Assignment Grammar" Click="mnuAssignmentGrammar_Click" />
+                    <MenuItem Name="mnuDiceGrammar" Header="_Dice Grammar" Click="mnuDiceGrammar_Click" />
+                    <MenuItem Name="mnuLuaGrammar" Header="_Lua Grammar" Click="mnuLuaGrammar_Click"/>
+                    <MenuItem Name="mnuPhotacticsGrammar" Header="_Phonotactics Grammar" Click="mnuPhotacticsGrammar_Click" />
+                    <MenuItem Name="mnuTableGrammar" Header="_Table Grammar" Click="mnuTableGrammar_Click" />
+                </MenuItem>
+                <MenuItem Name="mnuOpen" Header="_Open" Command="Open" InputGestureText="Ctrl+O" />
+                <mru:MRUFileList Name="mnuRecent" Header="Open _Recent" Storage="{Binding MRUStorage, RelativeSource={RelativeSource AncestorType={x:Type Window}}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                <MenuItem Name="mnuSave" Header="_Save" Command="Save" />
+                <MenuItem Name="mnuSaveAs" Header="Save _As..." Command="SaveAs" InputGestureText="Ctrl+Shit+S" />
+                <Separator />
+                <MenuItem Name="mnuExit" Header="_Close" Command="Close" InputGestureText="Alt+F4" />
+            </MenuItem>
+            <MenuItem Header="Tools">
+                <MenuItem Name="mnuPreviewXML" Header="_Preview XML" Click="mnuPreviewXML_Click" />
+                <MenuItem Name="mnuAnalyze" Header="_Analyze" Click="mnuAnalyze_Click" />
+            </MenuItem>
+        </Menu>
+        <DockPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Margin="3">
+            <Label Content="General" DockPanel.Dock="Top" Style="{DynamicResource ResourceKey=TitleLabel}" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition />
+                    <ColumnDefinition  Width="80"/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Label Content="Name" Margin="3" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" Foreground="{DynamicResource ResourceKey=ContentLabelBrush}" />
+                <TextBox Name="txtName" Margin="3" Height="21" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" IsEnabled="{Binding  Grammar, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource ResourceKey=nothingConverter}}" Text="{Binding Grammar.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
+                <Label Content="Author" Margin="3" DockPanel.Dock="Left" Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" Foreground="{DynamicResource ResourceKey=ContentLabelBrush}" />
+                <TextBox Name="txtAuthor" Text="{Binding Path=Grammar.Author, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="3" Height="21" Grid.Column="3" Grid.Row="0" VerticalAlignment="Center" IsEnabled="{Binding  Grammar, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource ResourceKey=nothingConverter}}"/>
+                <CheckBox Name="chkMaxLength" IsChecked="{Binding Path=Grammar.SupportsMaxLength, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="3" Content="Supports Max Length" Grid.Column="4" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center" IsEnabled="{Binding  Grammar, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource ResourceKey=nothingConverter}}" Foreground="{DynamicResource ResourceKey=ContentLabelBrush}" />
+                <TextBlock Margin="3" Padding="3" Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" Foreground="{DynamicResource ResourceKey=ContentLabelBrush}">
+                    <Hyperlink Name="lnkTags" Click="lnkTags_Click" IsEnabled="{Binding  Grammar, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource ResourceKey=nothingConverter}}">Tags</Hyperlink>
+                </TextBlock>
+                <ListBox Name="txtTag" Margin="3" Grid.ColumnSpan="5" MinHeight="21" Height="Auto" BorderThickness="0" ItemsSource="{Binding Path=Grammar.Tags, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" IsEnabled="{Binding  Grammar, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource ResourceKey=nothingConverter}}">
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Orientation="Horizontal" IsItemsHost="True" MaxWidth="{Binding ActualWidth, Mode=OneWay, ElementName=lstTags}" />
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.Resources>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="Margin" Value="3" />
+                            <Setter Property="Padding" Value="3,0,3,0" />
+                            <Setter Property="Background" Value="Gainsboro" />
+                            <Setter Property="BorderBrush" Value="Black" />
+                            <Setter Property="BorderThickness" Value="1" />
+                        </Style>
+                    </ListBox.Resources>
+                </ListBox>
+                <Label Content="Description" Margin="3" DockPanel.Dock="Left" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Foreground="{DynamicResource ResourceKey=ContentLabelBrush}" />
+                <TextBox Name="txtDescription" Margin="3" Height="21" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" VerticalAlignment="Center" IsEnabled="{Binding  Grammar, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource ResourceKey=nothingConverter}}" Text="{Binding Grammar.Description, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
+            </Grid>
+        </DockPanel>
+        <GridSplitter Width="3" Grid.Column="1" Grid.Row="2" ResizeBehavior="PreviousAndNext" />
+        <DockPanel Grid.Column="0" Grid.Row="2" Margin="3">
+            <Label Content="Parameters" DockPanel.Dock="Top" Style="{DynamicResource ResourceKey=TitleLabel}" />
+            <DataGrid Name="grdParameters" ItemsSource="{Binding Grammar.Parameters, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="3" DockPanel.Dock="Top" SelectionMode="Single" SelectionUnit="FullRow" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserAddRows="True" CanUserDeleteRows="True" AutoGenerateColumns="False" RowDetailsVisibilityMode="VisibleWhenSelected" AlternationCount="2" AlternatingRowBackground="Gainsboro">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="Display" Binding="{Binding Display}" />
+                    <DataGridTextColumn Header="Default" Binding="{Binding Default}" />
+                    <DataGridComboBoxColumn Header="Type" Width="Auto" SelectedItemBinding="{Binding Type}" ItemsSource="{Binding Source={StaticResource DataTypesEnum}}" />
+                </DataGrid.Columns>
+                <DataGrid.RowDetailsTemplate>
+                    <DataTemplate>
+                        <DockPanel>
+                            <Label Content="Options" DockPanel.Dock="Top" FontWeight="Bold" Padding="3,0,0,0" Background="Gainsboro" />
+                            <DataGrid Name="grdOptions" Margin="6" ItemsSource="{Binding Options}" SelectionMode="Single" SelectionUnit="CellOrRowHeader" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserAddRows="True" CanUserDeleteRows="True" AutoGenerateColumns="False" AlternationCount="2" AlternatingRowBackground="Gainsboro">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Display" Binding="{Binding Display}" />
+                                    <DataGridTextColumn Header="Value" Binding="{Binding Value}" />
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </DockPanel>
+                    </DataTemplate>
+                </DataGrid.RowDetailsTemplate>
+            </DataGrid>
+        </DockPanel>
+        <DockPanel Name="pnlDetails" Grid.Column="2" Grid.Row="2" Margin="3" />
+    </Grid>
+</metro:MetroWindow>

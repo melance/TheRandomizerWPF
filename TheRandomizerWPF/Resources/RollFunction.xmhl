@@ -1,0 +1,73 @@
+﻿<SyntaxDefinition name="RollFunction"
+        xmlns="http://icsharpcode.net/sharpdevelop/syntaxdefinition/2008">
+    <Color name="Comment" foreground="Green" />
+    <Color name="String" foreground="Purple" />
+    
+    <!-- This is the main ruleset. -->
+    <RuleSet>
+        <Span color="Comment" begin="#" />
+        
+        <Span color="String">
+            <Begin>'</Begin>
+            <End>'</End>
+        </Span>
+		
+		<Span color="Orange">
+			<Begin>[</Begin>
+			<End>]</End>
+		</Span>
+		
+		<Keywords foreground="Black">
+			<Word>:=</Word>
+		</Keywords>
+        
+        <Keywords fontWeight="bold" foreground="Blue">
+			<Word>Abs</Word>
+			<Word>Acos</Word>
+			<Word>Asin</Word>
+			<Word>Atan</Word>
+			<Word>Ceiling</Word>
+			<Word>Cos</Word>
+			<Word>Exp</Word>
+			<Word>Floor</Word>
+			<Word>IEEERemainder</Word>
+			<Word>Log</Word>
+			<Word>Log10</Word>
+			<Word>Max</Word>
+			<Word>Min</Word>
+			<Word>Pow</Word>
+			<Word>Round</Word>
+			<Word>Sign</Word>
+			<Word>Sin</Word>
+			<Word>Sqrt</Word>
+			<Word>Tan</Word>
+			<Word>Truncate</Word>
+			<Word>in</Word>
+            <Word>if</Word>
+        </Keywords>
+
+		<Keywords fontWeight="Bold" foreground="DarkBlue">
+			<Word>Roll</Word>
+			<Word>TargetRoll</Word>
+			<Word>RollResults</Word>
+			<Word>Rnd</Word>
+			<Word>Generate</Word>
+			<Word>ToText</Word>
+			<Word>ToOrdinal</Word>
+			<Word>UCase</Word>
+			<Word>LCase</Word>
+			<Word>TCase</Word>
+			<Word>Format</Word>
+		</Keywords>
+        
+        <!-- Digits -->
+        <Rule foreground="DarkBlue">
+            \b0[xX][0-9a-fA-F]+  # hex number
+        |    \b
+            (    \d+(\.[0-9]+)?   #number with optional floating point
+            |    \.[0-9]+         #or just starting with floating point
+            )
+            ([eE][+-]?[0-9]+)? # optional exponent
+        </Rule>
+    </RuleSet>
+</SyntaxDefinition>

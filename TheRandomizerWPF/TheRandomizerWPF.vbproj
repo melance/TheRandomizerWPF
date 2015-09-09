@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{906E7850-26FE-4E64-B79F-6245EA6CDCE6}</ProjectGuid>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TheRandomizerWPF</RootNamespace>
+    <AssemblyName>TheRandomizer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>46e1eae6</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>true</IncrementalBuild>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>false</IncrementalBuild>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>TheRandomizer.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoUpdater.NET">
+      <HintPath>..\..\TheRandomizer\TheRandomizer\References\autoupdater\AutoUpdater.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Dragablz, Version=0.0.2.118, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Dragablz.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlRenderer">
+      <HintPath>..\References\HtmlRenderer.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlRenderer.PdfSharp">
+      <HintPath>..\References\HtmlRenderer.PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlRenderer.WPF">
+      <HintPath>..\References\HtmlRenderer.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro">
+      <HintPath>..\packages\MahApps.Metro.1.1.2.0\lib\net45\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.32.3057.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.32.3057.0\lib\net20\PdfSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.32.3057.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.32.3057.0\lib\net20\PdfSharp.Charting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.1.2.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="Application.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="About.xaml.vb">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Accents\List.vb" />
+    <Compile Include="Controls\GrammarTabItem.xaml.vb">
+      <DependentUpon>GrammarTabItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExceptionDialog.xaml.vb">
+      <DependentUpon>ExceptionDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpProvider.vb" />
+    <Compile Include="LoadErrors.xaml.vb">
+      <DependentUpon>LoadErrors.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MarkupExtensions\SettingBinding.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsStorage.vb" />
+    <Compile Include="ShowFlowDocument.xaml.vb">
+      <DependentUpon>ShowFlowDocument.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.xaml.vb">
+      <DependentUpon>SplashScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabHost.xaml.vb">
+      <DependentUpon>TabHost.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TagEditor.xaml.vb">
+      <DependentUpon>TagEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Analyze.xaml.vb">
+      <DependentUpon>Analyze.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\AssignmentGrammarEditor.xaml.vb">
+      <DependentUpon>AssignmentGrammarEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ItemListConverter.xaml.vb">
+      <DependentUpon>ItemListConverter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\PhonotacticsGenerator.xaml.vb">
+      <DependentUpon>PhonotacticsGenerator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\DiceRollGrammarEditor.xaml.vb">
+      <DependentUpon>DiceRollGrammarEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\GrammarEditor.xaml.vb">
+      <DependentUpon>GrammarEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\GrammarInfo.xaml.vb">
+      <DependentUpon>GrammarInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\LUAGrammarEditor.xaml.vb">
+      <DependentUpon>LUAGrammarEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\MCGenerator.xaml.vb">
+      <DependentUpon>MCGenerator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\PhonotacticsGrammarEditor.xaml.vb">
+      <DependentUpon>PhonotacticsGrammarEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\PreviewXML.xaml.vb">
+      <DependentUpon>PreviewXML.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\TableGrammarActionDetailSelector.vb" />
+    <Compile Include="Tools\TableGrammarEditor.xaml.vb">
+      <DependentUpon>TableGrammarEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TRInterTabClient.vb" />
+    <Compile Include="Validation\RequiredValidation.vb" />
+    <Compile Include="ValueConverters\EmptyStringConverter.vb" />
+    <Compile Include="ValueConverters\FileNameConverter.vb" />
+    <Compile Include="ValueConverters\IntegerToVisibilityConverter.vb" />
+    <Compile Include="ValueConverters\ObjectIsNothingToBooleanConverter.vb" />
+    <Compile Include="ValueConverters\StringToVisibilityConverter.vb" />
+    <Compile Include="TextBoxMaskBehavior.vb" />
+    <Compile Include="WindowSettings.vb" />
+    <Resource Include="TheRandomizer.ico" />
+    <Resource Include="DataFiles\Curious Items.rnd.xml" />
+    <Content Include="DataFiles\Images\DungeonTile001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile002.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile003.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile004.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile005.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile006.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile007.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile008.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile009.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile010.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile011.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile012.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile013.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile014.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile015.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile016.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile017.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile018.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile019.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile020.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile021.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile022.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile023.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile024.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile025.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile026.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile027.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile028.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile029.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Images\DungeonTile030.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Maze.rnd.xml" />
+    <Content Include="DataFiles\Monster DnD 5e.rnd.xml" />
+    <Content Include="DataFiles\DnD 5e Dungeon Dressing.rnd.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataFiles\DnD 5e Room Purpose.rnd.xml" />
+    <Content Include="DataFiles\DnD 5e Classes.lib.xml" />
+    <Content Include="DataFiles\DnD 5e NPC.rnd.xml" />
+    <Content Include="DataFiles\Crappy Fantasy Adventure Hooks.rnd.xml" />
+    <Content Include="DataFiles\Injuries.rnd.xml" />
+    <Content Include="DataFiles\Medeival Occupations.lib.xml" />
+    <Content Include="DataFiles\Orc Names.rnd.xml" />
+    <Content Include="DataFiles\Post Apocalyptic Adventure Hooks.rnd.xml" />
+    <Content Include="DataFiles\Psychological Disorder.rnd.xml" />
+    <Content Include="DataFiles\Critical Miss.rnd.xml" />
+    <Content Include="DataFiles\animals.lib.xml" />
+    <Content Include="DataFiles\Draw Playing Cards.rnd.xml" />
+    <Content Include="DataFiles\LUA\CellularAutomataCaves.lua">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\LUA\DeckOfCards.lua">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\LUA\DnD 5e Monsters.lua">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\LUA\DnD 5e Dungeon Dressing.lua">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\LUA Test.csv" />
+    <Content Include="DataFiles\LUA\DnD 5e Monsters.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\LUA\inspect.lua">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\LUA\maze builder.lua">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\TheRandomizer.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+    <Resource Include="Resources\Entypo.ttf" />
+    <None Include="Resources\RollFunction.xmhl" />
+    <Page Include="About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Resource Include="Accents\Gray.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Resource>
+    <Page Include="Controls\GrammarTabItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ExceptionDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoadErrors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Application.xaml.vb">
+      <DependentUpon>Application.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.vb">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="DataFiles\ADnD Dwarf Names.rnd.xml" />
+    <Content Include="DataFiles\Bars and Pubs Sci Fi.rnd.xml" />
+    <Content Include="DataFiles\BBEG Generic.rnd.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataFiles\caves cellular automata.rnd.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataFiles\Corporation Names.rnd.xml" />
+    <Content Include="DataFiles\Riddles.rnd.xml" />
+    <Content Include="DataFiles\Curious Items.txt" />
+    <Content Include="DataFiles\Curses DnD.rnd.xml" />
+    <Content Include="DataFiles\Cyberpunk Gang Names.rnd.xml" />
+    <Content Include="DataFiles\Cyberpunk Gang Type.rnd.xml" />
+    <Content Include="DataFiles\DeckOfCards.lib.xml" />
+    <Content Include="DataFiles\DeckOfManyThings.rnd.xml" />
+    <Content Include="DataFiles\Descriptive Weather Conditions.rnd.xml" />
+    <Content Include="DataFiles\DnD 3e ArcaneScrollSpells.lib.xml" />
+    <Content Include="DataFiles\DnD 3e DivineScrollSpells.lib.xml" />
+    <Content Include="DataFiles\DnD 3e Minor Magic Item.rnd.xml" />
+    <Content Include="DataFiles\DnD 3e Treasure.rnd.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataFiles\DnD Attributes.rnd.xml" />
+    <Content Include="DataFiles\DungeonDressingADnD1e.rnd.xml" />
+    <Content Include="DataFiles\Egyptian Names.rnd.xml" />
+    <Content Include="DataFiles\Elven Names.rnd.xml" />
+    <Content Include="DataFiles\Fantasy Adventure Hooks.rnd.xml" />
+    <Content Include="DataFiles\Fantasy Nicknames.rnd.xml" />
+    <Content Include="DataFiles\Fantasy Person.lib.xml" />
+    <Content Include="DataFiles\Fantasy Random Encounters.rnd.xml" />
+    <Content Include="DataFiles\Feature Test.rnd.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Fortune Cookie.rnd.xml" />
+    <Content Include="DataFiles\Generic NPC Description.rnd.xml" />
+    <Content Include="DataFiles\Headlines.rnd.xml" />
+    <Content Include="DataFiles\LettersAndDigits.lib.xml" />
+    <Content Include="DataFiles\LettersAndDigitsWeighted.lib.xml" />
+    <Content Include="DataFiles\LotR Dwarven Names.rnd.xml" />
+    <Content Include="DataFiles\LUATest.rnd.xml" />
+    <Content Include="DataFiles\Monster DnD 3e.rnd.xml" />
+    <Content Include="DataFiles\monsters by size.lib.xml" />
+    <Content Include="DataFiles\monsters by type.lib.xml" />
+    <Content Include="DataFiles\Mythical Creature Names.rnd.xml" />
+    <Content Include="DataFiles\NPCCharacteristicsADnD1e.rnd.xml" />
+    <Content Include="DataFiles\phonotactics example.rnd.xml" />
+    <Content Include="DataFiles\Planet Names.rnd.xml" />
+    <Content Include="DataFiles\Planets.rnd.xml" />
+    <Content Include="DataFiles\Sample.rnd.xml" />
+    <Content Include="DataFiles\SciFi Technology.rnd.xml" />
+    <Content Include="DataFiles\SettlementName.rnd.xml" />
+    <Content Include="DataFiles\Shadowrun Encounters.rnd.xml" />
+    <Content Include="DataFiles\Space Opera Adventure Hooks.rnd.xml" />
+    <Content Include="DataFiles\Spaceship Names.rnd.xml" />
+    <Content Include="DataFiles\Street Performers.rnd.xml" />
+    <Content Include="DataFiles\Super Villain Name.rnd.xml" />
+    <Content Include="DataFiles\Superhero Name.rnd.xml" />
+    <Content Include="DataFiles\TableTable.rnd.xml" />
+    <Content Include="DataFiles\Tavern Names.rnd.xml" />
+    <Content Include="DataFiles\TotallyRandom.rnd.xml" />
+    <Content Include="DataFiles\TownGeneration.rnd.xml" />
+    <Content Include="DataFiles\TwoMillionPlusPlotHooks.rnd.xml" />
+    <Content Include="DataFiles\UKNames.lib.xml" />
+    <Content Include="DataFiles\UKNames.rnd.xml" />
+    <Content Include="DataFiles\USNames.lib.xml" />
+    <Content Include="DataFiles\USNames.rnd.xml" />
+    <Content Include="DataFiles\Viking Names.rnd.xml" />
+    <Content Include="DataFiles\WoD Random Encounters.rnd.xml" />
+    <Content Include="DataFiles\WorldOfDarknessCheck.rnd.xml" />
+    <Resource Include="Resources\exception.png" />
+    <Page Include="Resources\Contributors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Icons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ThirdPartyComponents.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ShowFlowDocument.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SplashScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TabHost.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TagEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\Analyze.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\AssignmentGrammarEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\ItemListConverter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\PhonotacticsGenerator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tools\DiceRollGrammarEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\GrammarEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\GrammarInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\LUAGrammarEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\MCGenerator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\PhonotacticsGrammarEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\PreviewXML.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\TableGrammarEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Validation\ValidationStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Resource Include="The Randomizer.ico" />
+    <Resource Include="Resources\TheRandomizer.png" />
+    <Content Include="ResultsTemplate.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Shapes" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWpfExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.WPF.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataFiles\BaseGrammar.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataFiles\TableGrammar.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <AppDesigner Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Grammars\Grammars.vbproj">
+      <Project>{971117fc-ad14-4cd5-9f58-c000eb967e43}</Project>
+      <Name>Grammars</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MRU\MRU.vbproj">
+      <Project>{e0b8d276-b588-406f-8da8-52f18198d33f}</Project>
+      <Name>MRU</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.vbproj">
+      <Project>{18a04041-388f-4619-a5cd-04a3653c6916}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

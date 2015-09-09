@@ -1,0 +1,15 @@
+﻿<metro:MetroWindow x:Class="Tools.Analyze"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                   
+                   xmlns:osm="http://schemas.awesomium.com/winfx"
+                   xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                   xmlns:i="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+                   xmlns:forms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+                   Style="{DynamicResource WindowStyle}"
+                   Title="Analyse" Height="600" Width="500">
+    <Grid>
+        <i:WindowsFormsHost>
+            <forms:WebBrowser x:Name="webBrowser" Margin="3,3,3,3" />
+        </i:WindowsFormsHost>
+    </Grid>
+</metro:MetroWindow>

@@ -1,0 +1,18 @@
+﻿<metro:MetroWindow x:Class="Tools.PreviewXML"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                   xmlns:i="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+                   xmlns:forms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+                   Title="XML Preview" 
+                   Style="{DynamicResource WindowStyle}"
+                   Height="600" 
+                   Width="500" 
+                   Icon="/TheRandomizer;component/The Randomizer.ico">
+    <Grid>
+        <i:WindowsFormsHost>
+            <forms:WebBrowser AllowWebBrowserDrop="False" WebBrowserShortcutsEnabled="False" x:Name="webBrowser" />
+        </i:WindowsFormsHost>
+        <!--<TextBox Name="txtPreview" Margin="3" FontFamily="Consolas" FontSize="12" IsReadOnly="True" TextWrapping="NoWrap" />-->
+    </Grid>
+</metro:MetroWindow>

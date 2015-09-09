@@ -1,0 +1,138 @@
+﻿<UserControl x:Class="Tools.TableGrammarEditor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:tg="clr-namespace:TheRandomizerWPF.Tools"
+             xmlns:clr="clr-namespace:System;assembly=mscorlib"
+             xmlns:g="clr-namespace:Grammars.Table;assembly=Grammars"
+             xmlns:help="clr-namespace:TheRandomizerWPF.Help"
+             help:HelpProvider.HelpTopic="8"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <ObjectDataProvider x:Key="ActionsEnum"
+                            MethodName="GetValues"
+                            ObjectType="{x:Type clr:Enum}" >
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="g:Actions"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+        <tg:TableGrammarActionDetailSelector x:Key="detailSelector">
+            <tg:TableGrammarActionDetailSelector.LoopDataTemplate>
+                <DataTemplate>
+                    <Grid Margin="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Label Content="Loop Id" Grid.Row="0" Grid.Column="0" Margin="3,0,3,0" />
+                        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding LoopId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <Label Content="Repeat" Grid.Row="1" Grid.Column="0" Margin="3,0,3,0" />
+                        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Repeat, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <Label Content="Repeat Join" Grid.Row="2" Grid.Column="0" Margin="3,0,3,0" />
+                        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding RepeatJoin, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <Label Content="Table" Grid.Row="3" Grid.ColumnSpan="2" Margin="3,0,3,0" />
+                        <TextBox Grid.Row="4" Grid.ColumnSpan="2" Text="{Binding Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" AcceptsReturn="True" AcceptsTab="True" Height="Auto" />
+                    </Grid>
+                </DataTemplate>
+            </tg:TableGrammarActionDetailSelector.LoopDataTemplate>
+            <tg:TableGrammarActionDetailSelector.RandomDataTemplate>
+                <DataTemplate>
+                    <Grid Margin="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Label Content="Column" Grid.Column="0" Grid.Row="0" Margin="3,0,3,0" />
+                        <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Column, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <Label Content="Modifier" Grid.Column="0" Grid.Row="1" Margin="3,0,3,0" />
+                        <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding RandomModifier, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <Label Content="Repeat" Grid.Row="2" Grid.Column="0" Margin="3,0,3,0" />
+                        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Repeat, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <Label Content="Repeat Join" Grid.Row="3" Grid.Column="0" Margin="3,0,3,0" />
+                        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding RepeatJoin, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <Label Content="Table" Grid.Row="4" Grid.ColumnSpan="2" Margin="3,0,3,0" />
+                        <TextBox Grid.Row="5" Grid.ColumnSpan="2" Text="{Binding Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" AcceptsReturn="True" AcceptsTab="True" Height="Auto" />
+                    </Grid>
+                </DataTemplate>
+            </tg:TableGrammarActionDetailSelector.RandomDataTemplate>
+            <tg:TableGrammarActionDetailSelector.SelectDataTemplate>
+                <DataTemplate>
+                    <Grid Margin="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Label Content="Column" Grid.Column="0" Grid.Row="0" Margin="3,0,3,0" />
+                        <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Column, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <Label Content="Value" Grid.Column="0" Grid.Row="1" Margin="3,0,3,0" />
+                        <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding SelectValue, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <Label Content="Repeat" Grid.Row="2" Grid.Column="0" Margin="3,0,3,0" />
+                        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Repeat, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <Label Content="Repeat Join" Grid.Row="3" Grid.Column="0" Margin="3,0,3,0" />
+                        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding RepeatJoin, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <Label Content="Table" Grid.Row="4" Grid.ColumnSpan="2" Margin="3,0,3,0" />
+                        <TextBox Grid.Row="5" Grid.ColumnSpan="2" Text="{Binding Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" AcceptsReturn="True" AcceptsTab="True" Height="Auto" />
+                    </Grid>
+                </DataTemplate>
+            </tg:TableGrammarActionDetailSelector.SelectDataTemplate>
+        </tg:TableGrammarActionDetailSelector>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Label Content="Tables" Grid.Row="0" Style="{DynamicResource ResourceKey=TitleLabel}" />
+        <DataGrid Grid.Row="1"
+                  Name="grdDefinitions" 
+                  Margin="3"
+                  ItemsSource="{Binding Tables, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                  AutoGenerateColumns="False" 
+                  AlternationCount="2" 
+                  AlternatingRowBackground="Gainsboro"
+                  CanUserAddRows="True"
+                  CanUserDeleteRows="True"
+                  CanUserReorderColumns="false"
+                  CanUserResizeColumns="True"
+                  CanUserResizeRows="False"
+                  CanUserSortColumns="False" 
+                  RowDetailsTemplateSelector="{StaticResource ResourceKey=detailSelector}"
+                  CellEditEnding="HandleMainDataGridCellEditEnding">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                <DataGridComboBoxColumn Header="Action" SelectedItemBinding="{Binding Action}" ItemsSource="{Binding Source={StaticResource ResourceKey=ActionsEnum}}"/>
+                <DataGridTextColumn Header="Skip Table" Binding="{Binding SkipTable}" />
+                <DataGridTextColumn Header="Delimiter" Binding="{Binding Delimiter}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Output" Grid.Row="2" Style="{DynamicResource ResourceKey=TitleLabel}" />
+        <TextBox Name="txtOutput" Grid.Row="3" FontFamily="Consolas" AcceptsReturn="True" AcceptsTab="True" TextWrapping="NoWrap" Text="{Binding Output, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,70 @@
+﻿<Window x:Class="SplashScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="SplashScreen" 
+        Height="213.791" 
+        Width="405.139" 
+        WindowStyle="None" 
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Closing="Window_Closing" 
+        Icon="The Randomizer.ico"
+        WindowStartupLocation="CenterScreen">
+    <Border Background="{DynamicResource WindowBackgroundBrush}" Margin="12">
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="12"
+                              Color="{DynamicResource AccentColor}"
+                              Opacity="1"
+                              ShadowDepth="0" />
+        </Border.Effect>
+        <Grid Margin="6">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="42"/>
+            </Grid.RowDefinitions>
+            <Label Margin="12" 
+                   Style="{DynamicResource TitleLabel}" 
+                   VerticalContentAlignment="Center" 
+                   HorizontalContentAlignment="Center"
+                   Grid.Row="0" 
+                   Grid.Column="0">
+                <DockPanel >
+                    <Image DockPanel.Dock="Left" 
+                           Height="42" 
+                           Source="pack://application:,,,/Resources/TheRandomizer.png" />
+                    <TextBlock Name="txtStatus"
+                               FontSize="14"
+                               FontFamily="Consolas"
+                               Text="" 
+                               DockPanel.Dock="Bottom" 
+                               TextWrapping="NoWrap" 
+                               TextTrimming="CharacterEllipsis" MaxWidth="251" />
+                    <TextBlock FontSize="14"
+                               FontFamily="Consolas"
+                               Text="Loading"
+                               DockPanel.Dock="Bottom"/>
+                    <TextBlock FontSize="32" 
+                               FontWeight="Bold" 
+                               DockPanel.Dock="Top" 
+                               HorizontalAlignment="Stretch" 
+                               Text="The Randomizer" 
+                               VerticalAlignment="Top" 
+                               Margin="0,0,6,0">
+                        <TextBlock.Effect>
+                            <DropShadowEffect BlurRadius="4" Direction="-90" Color="DimGray" />
+                        </TextBlock.Effect>
+                    </TextBlock>
+                </DockPanel>
+            </Label>
+            <DockPanel Grid.Row="1" HorizontalAlignment="Stretch">
+                <metro:MetroProgressBar Name="prgBar" DockPanel.Dock="Bottom" Foreground="{DynamicResource AccentColorBrush}" Background="{DynamicResource WindowBackgroundBrush}" Margin="-6,0,-6,-6"/>
+                <Label Content="Lance Boudreaux" DockPanel.Dock="Left" FontWeight="Bold" Margin="12,3,3,3" />
+                <Label Content="Solitude Software"  DockPanel.Dock="Right" HorizontalContentAlignment="Right" FontWeight="Bold" Margin="3,3,12,3"/>
+                <Label Name="lblVersion" Content="-" DockPanel.Dock="Left" HorizontalContentAlignment="Center" FontWeight="Bold" Margin="3"/>
+            </DockPanel>
+        </Grid>
+    </Border>
+</Window>

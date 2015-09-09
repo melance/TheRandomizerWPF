@@ -1,0 +1,196 @@
+﻿<metro:MetroWindow x:Class="Tools.ItemListConverter"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:tools="clr-namespace:TheRandomizerWPF.Tools"
+                   xmlns:cnv="clr-namespace:TheRandomizerWPF.ValueConverters"
+                   xmlns:ae="clr-namespace:ICSharpCode.AvalonEdit;assembly=ICSharpCode.AvalonEdit"
+                   xmlns:util="clr-namespace:Utility;assembly=Utility"
+                   xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                   xmlns:help="clr-namespace:TheRandomizerWPF.Help"
+                   help:HelpProvider.HelpTopic="14"
+                   Title="Item List Converter" 
+                   Style="{DynamicResource WindowStyle}"
+                   Height="563.861" 
+                   Width="767.054"
+                   Icon="/TheRandomizer;component/TheRandomizer.ico">
+    <Window.Resources>
+        
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="Save" Executed="Save_Executed" CanExecute="Save_CanExecute" />
+        <CommandBinding Command="SelectAll" Executed="SelectAll_Executed" CanExecute="SelectAll_CanExecute" />
+        <CommandBinding Command="Copy" Executed="Copy_Executed" CanExecute="Copy_CanExecute" />
+        <CommandBinding Command="Delete" Executed="Delete_Executed" CanExecute="Delete_CanExecute" />
+        <CommandBinding Command="{x:Static util:CustomCommands.SelectNone}" Executed="SelectNone_Executed" CanExecute="SelectNone_CanExecute" />
+        <CommandBinding Command="{x:Static util:CustomCommands.Generate}" Executed="Generate_Executed" CanExecute="Generate_CanExecute"/>
+    </Window.CommandBindings>
+
+    <metro:MetroWindow.RightWindowCommands>
+        <metro:WindowCommands>
+            <Button Name="btnHelp" Command="Help">
+                <Rectangle Width="20" Height="20" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_question}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+            </Button>
+        </metro:WindowCommands>
+    </metro:MetroWindow.RightWindowCommands>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Border Margin="3" Grid.Row="0" Grid.Column="0">
+            <tools:GrammarInfo x:Name="usrGrammarInfo" IsEnabled="{Binding ElementName=radAssignmentGrammar, Path=IsChecked}" />
+        </Border>
+        <Border Margin="3" Grid.Row="1" Grid.Column="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Label Content="Options" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Style="{DynamicResource ResourceKey=TitleLabel}" />
+                <Border Grid.Row="1" Grid.Column="0" Grid.RowSpan="3" CornerRadius="0"/>
+                <Border Grid.Row="1" Grid.Column="1" Grid.RowSpan="3" CornerRadius="0"/>
+                <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" CornerRadius="0"/>
+                <RadioButton Name="radWeightEvenly" GroupName="Weight" IsChecked="True" Margin="3" Grid.Row="1" Grid.Column="0" Content="Weight Evenly" Foreground="{DynamicResource ResourceKey=ContentLabelBrush}"/>
+                <RadioButton Name="radWeightAscending" GroupName="Weight" Margin="3" Grid.Row="2" Grid.Column="0" Content="Weight Ascending" Foreground="{DynamicResource ResourceKey=ContentLabelBrush}"/>
+                <RadioButton Name="radWeightDescending" GroupName="Weight" Margin="3" Grid.Row="3" Grid.Column="0" Content="Weight Descending" Foreground="{DynamicResource ResourceKey=ContentLabelBrush}"/>
+                <RadioButton Name="radAssignmentGrammar" GroupName="Type" IsChecked="True" Margin="3" Grid.Row="1" Grid.Column="1" Content="Assignment Grammar" Foreground="{DynamicResource ResourceKey=ContentLabelBrush}"/>
+                <RadioButton Name="radAssignmentLibrary" GroupName="Type" IsChecked="{Binding SkipValidation}" Margin="3" Grid.Row="2" Grid.Column="1" Content="Assignment Library" Foreground="{DynamicResource ResourceKey=ContentLabelBrush}"/>
+                <CheckBox Name="chkRemoveDuplicates" Grid.Row="4" Grid.Column="0" Margin="3" Content="Remove Duplicates" Foreground="{DynamicResource ResourceKey=ContentLabelBrush}"/>
+                <CheckBox Name="chkCaseSensitive" Grid.Row="4" Grid.Column="1" Margin="3" Content="Case Sensitive" Foreground="{DynamicResource ResourceKey=ContentLabelBrush}"/>
+            </Grid>
+        </Border>
+        <Border Margin="3" Grid.Row="2" Grid.Column="0">
+            <DockPanel>
+                <Label Content="Item Lists" DockPanel.Dock="Top" Style="{DynamicResource ResourceKey=TitleLabel}" />
+                <DataGrid Name="grdFileNames"
+                          Margin="3"
+                          AutoGenerateColumns="False"
+                          IsReadOnly="False"
+                          IsEnabled="True"
+                          CanUserAddRows="True"
+                          CanUserDeleteRows="True"
+                          CanUserReorderColumns="False"
+                          CanUserResizeRows="False"
+                          CanUserSortColumns="False"
+                          SelectionMode="Single"
+                          SelectionUnit="CellOrRowHeader"
+                          AlternatingRowBackground="GhostWhite"
+                          ColumnWidth="Auto"
+                          ItemsSource="{Binding FileNames, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True}">
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn Header="File Name" Width="*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding FileName, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, Converter={cnv:FileNameConverter}, ValidatesOnDataErrors=True}" Tag="{Binding FileName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Style.Triggers>
+                                                    <Trigger Property="Validation.HasError"
+                                                             Value="False">
+                                                        <Setter Property="ToolTip"
+                                                                Value="{Binding RelativeSource={x:Static RelativeSource.Self}, Path=Tag}"/>
+                                                    </Trigger>
+                                                    <Trigger Property="Validation.HasError"
+                                                             Value="True">
+                                                        <Setter Property="ToolTip"
+                                                                Value="{Binding RelativeSource={x:Static RelativeSource.Self}, Path=(Validation.Errors)[0].ErrorContent}"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate>
+                                    <DockPanel>
+                                        <Button Name="btnFileName" Tag="{Binding FileName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" Click="btnFileName_Click">
+                                            <Rectangle Width="12" Height="12" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                                                <Rectangle.OpacityMask>
+                                                    <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_folder_open}" />
+                                                </Rectangle.OpacityMask>
+                                            </Rectangle>
+                                        </Button>
+                                        <TextBox Name="txtFilename" Text="{Binding ElementName=btnFileName, Path=Tag, UpdateSourceTrigger=PropertyChanged}" util:FocusAttacher.Focus="True" />
+                                    </DockPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn Header="Label" MinWidth="90" Binding="{Binding Label, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="{x:Type TextBlock}">
+                                    <Setter Property="DataGridCell.ToolTip"
+                                            Value="{Binding RelativeSource={RelativeSource Self},
+                                                    Path=(Validation.Errors)[0].ErrorContent}"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                    </DataGrid.Columns>             
+                </DataGrid>
+            </DockPanel>
+        </Border>
+        <DockPanel Grid.Row="3" Grid.Column="0" LastChildFill="False">
+            <Button Name="btnGenerate" Command="{x:Static util:CustomCommands.Generate}" Content="Generate" Width="90" DockPanel.Dock="Right" Margin="3" Style="{DynamicResource AccentedSquareButtonStyle}" />
+        </DockPanel>
+        <GridSplitter Width="3" ResizeBehavior="PreviousAndNext" Grid.Column="1" Grid.RowSpan="4" />
+        <DockPanel Grid.Row="0" Grid.Column="2" Grid.RowSpan="4">
+            <Label Content="Results" DockPanel.Dock="Top" Style="{DynamicResource ResourceKey=TitleLabel}" />
+            <DockPanel DockPanel.Dock="Bottom" LastChildFill="False"> 
+                <Button Name="btnSave" ToolTip="Save" Command="Save" DockPanel.Dock="Right" Margin="3">
+                    <Rectangle Width="12" Height="12" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_save}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                </Button>
+                <Button Name="btnCopy" ToolTip="Copy" Command="Copy" DockPanel.Dock="Right" Margin="3,3,0,3">
+                    <Rectangle Width="12" Height="12" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_page_copy}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                </Button>
+                <Button Name="btnClear" ToolTip="Clear" Command="Delete" DockPanel.Dock="Right" Margin="3,3,0,3">
+                    <Rectangle Width="12" Height="12" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_clear}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                </Button>
+                <Button Name="btnSelectNone" ToolTip="Select None" Command="{x:Static util:CustomCommands.SelectNone}" DockPanel.Dock="Right" Margin="3,3,0,3">
+                    <Rectangle Width="12" Height="12" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_checkmark_uncrossed}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                </Button>
+                <Button Name="btnSelectAll" ToolTip="Select All" Command="SelectAll" DockPanel.Dock="Right" Margin="3,3,0,3">
+                    <Rectangle Width="12" Height="12" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_checkmark}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                </Button>
+            </DockPanel>
+            <TextBox Name="txtResults" IsReadOnly="True" TextWrapping="NoWrap" Margin="3" FontFamily="Consolas" FontSize="12" />
+        </DockPanel>
+    </Grid>
+</metro:MetroWindow>

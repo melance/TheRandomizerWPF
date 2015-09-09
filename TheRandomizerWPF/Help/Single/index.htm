@@ -1,0 +1,2482 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>The Randomizer</title>
+  <link rel="stylesheet" type="text/css" href="../css/styles_standard.css">
+<link rel="stylesheet" type="text/css" href="../css/the_randomizer.css">
+  <style>
+    @media screen
+      {
+      div.singledoc {margin-top:16px;}
+    }
+    @media print
+      {
+      div.singledoc {margin-top:80mm;}
+    }
+  </style>
+  </head>
+  <body>
+    <div class="singledoc" align="center">
+      <h1>The Randomizer</h1>
+    </div>
+<p class="pbreak" style="page-break-before: always" />
+<a name="T1"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Welcome</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    
+    <p class="big">
+      <img src="img/therandomizer.png" style="float: left; margin-right:8px;" width="128" height="128" />
+      Introduction
+      <p>
+        <img src="img/welcomepicture.png" class="ssright" style="border: 6px inset gray" />
+      </p>
+    </p>
+    <p>
+      Welcome to The Randomzer.  This application is designed with RPG gamemasters 
+      and story tellers in mind though it can be used by anyone who needs to randomly 
+      generate content.  
+    </p>
+    <p>
+      Customization is the primary benefit of The Randomizer.  Through the use of
+      specialized xml file structures, anything that can be rendered using HTML can
+      be generated.  There are a number of different grammar types that can be used
+      to define a generator each with its own purpose.  The topic 
+      <a href="#T18">What Are Grammar Files?</a> has more details
+      about each grammar type and their purposes.
+    </p>
+    <p>
+      If you are new to The Randomizer, please see the links below under the 
+      <b>Getting started</b> heading or visit 
+      <a href="http://www.reddit.com/r/therandomizer">The Randomizer Subreddit</a> <image src="img/popout.gif" /> online.
+    </p>
+
+    <p class="big">
+      Getting started
+    </p>
+    <ul class="shr">
+      <li><a href="#T5">The Main Screen User Interface Overview</a></li>
+      <li><a href="#T28l">How to Generate Content</a></li>
+	  <li><a href="#T18">What Are Grammar Files?</a></li>
+    </ul>
+
+    <p class="big">
+      External Resources
+    </p>
+    <ul class="shr">
+      <li><a href="https://bitbucket.org/lanceboudreaux/the-randomizer" target="_blank">The Randomizer at Bitbucket</a> <image src="img/popout.gif" /></li>
+      <li><a href="http://www.reddit.com/r/therandomizer" target="_blank">The Randomizer Subreddit</a> <image src="img/popout.gif" /></li>
+      <li><a href="https://www.reddit.com/r/TheRandomizer/wiki/grammars" target="_blank">Additional Grammars for Download</a> <image src="img/popout.gif" /></li>
+      <li><a href="http://35887a069d1c5e40fcaa-9f14dcdabbf0f021d6ceb0c8533f4ebc.r20.cf1.rackcdn.com/Changelog.html">The Randomizer Change Log</a> <image src="img/popout.gif" /></li>
+	  <li><a href="https://www.reddit.com/message/compose?to=melance&subject=The Randomizer Help&message=" target="_blank">Contact Me on Reddit</a> <image src="img/popout.gif" /></li>
+    </ul>
+    
+    <p class="big">
+      System Requirements
+    </p>
+	<p>
+    <table>
+		<tr>
+			<th>Operating System</th>
+			<td>Windows Vista or Better</td>
+		</tr>
+		<tr>
+			<th>Processor</th>
+			<td>1 GHz or Faster</td>
+		</tr>
+		<tr>
+			<th>Hard Drive</th>
+			<td>3 MB</td>
+		</tr>
+		<tr>
+			<th>Memory</th>
+			<td>512 MB of RAM</td>
+		</tr>
+		<tr>
+			<th>Framework</th>
+			<td>Microsoft .NET Framework 4.5</td>
+		</tr>
+	</table>
+	</p>
+
+  </div>
+
+  <div id="foot">    
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T2"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Welcome</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    
+    <p class="big">
+      <img src="img/therandomizer.png" style="float: left; margin-right:8px;" width="128" height="128" />
+      Introduction
+      <p>
+        <img src="img/welcomepicture.png" class="ssright" style="border: 6px inset gray" />
+      </p>
+    </p>
+    <p>
+      Welcome to The Randomzer.  This application is designed with RPG gamemasters 
+      and story tellers in mind though it can be used by anyone who needs to randomly 
+      generate content.  
+    </p>
+    <p>
+      Customization is the primary benefit of The Randomizer.  Through the use of
+      specialized xml file structures, anything that can be rendered using HTML can
+      be generated.  There are a number of different grammar types that can be used
+      to define a generator each with its own purpose.  The topic 
+      <a href="#T18">What Are Grammar Files?</a> has more details
+      about each grammar type and their purposes.
+    </p>
+    <p>
+      If you are new to The Randomizer, please see the links below under the 
+      <b>Getting started</b> heading or visit 
+      <a href="http://www.reddit.com/r/therandomizer">The Randomizer Subreddit</a> <image src="img/popout.gif" /> online.
+    </p>
+
+    <p class="big">
+      Getting started
+    </p>
+    <ul class="shr">
+      <li><a href="#T5">The Main Screen User Interface Overview</a></li>
+      <li><a href="#T28l">How to Generate Content</a></li>
+	  <li><a href="#T18">What Are Grammar Files?</a></li>
+    </ul>
+
+    <p class="big">
+      External Resources
+    </p>
+    <ul class="shr">
+      <li><a href="https://bitbucket.org/lanceboudreaux/the-randomizer" target="_blank">The Randomizer at Bitbucket</a> <image src="img/popout.gif" /></li>
+      <li><a href="http://www.reddit.com/r/therandomizer" target="_blank">The Randomizer Subreddit</a> <image src="img/popout.gif" /></li>
+      <li><a href="https://www.reddit.com/r/TheRandomizer/wiki/grammars" target="_blank">Additional Grammars for Download</a> <image src="img/popout.gif" /></li>
+      <li><a href="http://35887a069d1c5e40fcaa-9f14dcdabbf0f021d6ceb0c8533f4ebc.r20.cf1.rackcdn.com/Changelog.html">The Randomizer Change Log</a> <image src="img/popout.gif" /></li>
+	  <li><a href="https://www.reddit.com/message/compose?to=melance&subject=The Randomizer Help&message=" target="_blank">Contact Me on Reddit</a> <image src="img/popout.gif" /></li>
+    </ul>
+    
+    <p class="big">
+      System Requirements
+    </p>
+	<p>
+    <table>
+		<tr>
+			<th>Operating System</th>
+			<td>Windows Vista or Better</td>
+		</tr>
+		<tr>
+			<th>Processor</th>
+			<td>1 GHz or Faster</td>
+		</tr>
+		<tr>
+			<th>Hard Drive</th>
+			<td>3 MB</td>
+		</tr>
+		<tr>
+			<th>Memory</th>
+			<td>512 MB of RAM</td>
+		</tr>
+		<tr>
+			<th>Framework</th>
+			<td>Microsoft .NET Framework 4.5</td>
+		</tr>
+	</table>
+	</p>
+
+  </div>
+
+  <div id="foot">    
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T3"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Terminology</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+
+    <p class="big">
+        <img src="img/dictionary.png" style="float:right; margin-right:12px; margin-bottom:24px;" />
+      Definitions
+    </p>
+    <p>
+      Below is a list of terms used in The Randomizer as well as in this help system
+      that have paticular meaning in this context.
+    </p>
+    <p>
+      <b>Generator</b>: application code that generates random content using the
+      rules set forth by a particular grammar.<br /> 
+      <b>Grammar</b>: a set of rules used by a generator in order to create random 
+      content.<br />
+      <b>Markov Chain</b>: generation of assignment type grammars follows the Markov
+      Chain method as described by the 
+      <a href="https://en.wikipedia.org/wiki/Markov_chain">Wikipedia article</a> <image src="img/popout.gif" /><br />
+      <b>Phonotactics</b>: used by the phonotactics grammar type, phonotactics restricts 
+      the possible sound sequences and syllable structures in a language.  More 
+      information can be found at the <a href="https://en.wikipedia.org/wiki/Phonotactics">Wikipedia article</a> <image src="img/popout.gif" /><br />
+      <b>Tag</b>: a word or phrase used to categorize grammars allowing them to
+      be filtered easily.<br />
+    </p>
+    <br>
+
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T4"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>License</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="img/information.png" style="float:right; margin-right:12px; margin-bottom:24px;" />
+    <p class="big">My Freeware Promise</p><br />
+    <p>
+    I will never charge to use any feature of The Randomizer. It will remain freeware whether open or closed source. The only method of collecting money will be through a donation feature on this wiki and in the application itself.
+    </p>
+    <p>
+      <b>Open Source License</b><br />
+      <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The Randomizer</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.reddit.com/r/therandomizer" property="cc:attributionName" rel="cc:attributionURL">Lance Boudreaux</a> <image src="img/popout.gif" /> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. <image src="img/popout.gif" /><br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://bitbucket.org/lanceboudreaux/the-randomizer" rel="dct:source">https://bitbucket.org/lanceboudreaux/the-randomizer</a> <image src="img/popout.gif" />.
+    </p>
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T5"></a>
+
+
+	<div id="topictop">&nbsp;</div>
+	<div id="topictitleleft">
+	<div id="topictitle">
+		<h3>The Main Screen</h3>
+	</div>
+	</div>
+  
+	<div id="main">
+		<img class="screenShot" src="img/the main screen.png" />
+		<p>
+		  The main screen is where the random generation magic happens. Here you select 
+		  the type of generation you want to occur, how many times, and more then press 
+		  Generate to see the magic. Below is a break down of each section of the screen 
+		  including it's purpose, and how to use it.
+		</p>
+		<p>
+		  There are several of areas on the main screen, each with its own purpose.
+		  Below are the areas, their contents, and purposes.
+		</p>
+		
+		<p class="big">
+			1 The Title Bar
+		</p>
+		<p>
+		  Aside from the standard title bar icon and controls The Randomizer has the
+		  following special commands:
+		  <ul class="shr">
+			<li><b>Settings</b>: The application Settings are indicated by a small gear 
+			icon in the window title bar.  Clicking on the icon will open the settings 
+			flyout allowing you to change things such as the window theme, the default 
+			font for results, if the application checks for new versions when launched, 
+			and more.</li>
+			<li><b>Help</b>: A small question mark icon located in the window title bar
+			launches this help documentation.</li>
+			<li><b>About</b>: Clicking on the lower case "i" contained in a circle
+			found in the window title bar will display information about the application
+			including the version, change log, copyright, and more.</li> 
+		  </ul>
+		</p>
+		<p>
+		<p class="big">
+			2 The Menu 
+		</p>
+		<p>
+		  <ul class="shr">
+			<li><b>Tools</b>
+			  <ul class="shr">
+				<li><b>Grammar Editor</b>: The Grammar Editor is a graphical user interface
+				tool used to define generator grammars in a manner that is more friendly
+				than using a text editor.</li>
+				<li><b>Markov Chain Generator</b>: The Markov Chain Generator is one 
+				method of creating a grammar based upon a collection of existing words 
+				or names.</li>
+				<li><b>Phonotactics Generator</b>: The phonotactics generator takes 
+				two files, one a sample file and the other a definition file and 
+				generates a phonotactic grammar file.</li>
+				<li><b>Item List Converter</b>: This tool will take a text file with a
+				list of items, one per line, and create a grammar or library from the 
+				list.  This is useful for times when it is desired to have a simple
+				generator that selects an item from a list of items.</li>
+				<li><b>Refresh Grammars</b>: Clicking this menu item will refresh the
+				generator list.</li>
+			  </ul>
+			</li>
+		  </ul>
+		  <ul>
+			<li><b>Donate</b><br />
+			  <ul>
+				<li><b>Paypal</b>: Brings you to The Randomizer donation page via Paypal</li>
+				<li><b>Dwolla</b>: Brings you to The Randomizer donation page via Dwolla</li>
+			  </ul>
+			</li>
+		  </ul>
+		</p>
+		
+		<p class="big">
+			3 The Tag Bar
+		</p>
+		<p>
+		  The tag bar contains a list of all of the tags currently defined in the loaded
+		  grammar files.  The generator listing is filtered by selecting the tags you would
+		  like to see or hide.  Only generators containing at least one of the selected
+		  tags will appear in the list.  By default, all tags are selected when launching the
+		  application.
+		</p>
+		<p>  
+		  Clicking on the buttons on the left of the tags that resemble a checkbox, 
+		  will either toggle all tags off or on depending upon the button clicked.  
+		</p>
+		<p>
+		  The tag bar can be hidden
+		  by clicking the chevron icon next to the header.
+		</p>
+		<br>
+
+		<p class="big">
+			4 The Generator List
+		</p>
+		<p>
+		  Below the <b>Generators</b> header is the list of currently available generators.
+		  This list can be changed by adding new grammar files to the grammars folder
+		  or by selecting and deselecting tags in the <b>Tag Bar</b>.
+		</p>
+		<p>
+		  Selecting a generator from the list will cause the application to use that
+		  geneartor as the current generator for populating the details in the <b>Details</b> 
+		  area and choosing the options such as <b>Parameters</b> and <b>Max Length</b>. 
+		</p>
+		<br>
+
+		<p class="big">
+		  5 The Detail Area
+		</p>
+		<p>
+		  The detail area is broken into 5 areas:
+		</p>
+		<p>
+		  <ul class="shr">
+			<li><b>Grammar Details:</b> This area presents the details of the selected
+			grammar including the description, author, file location, tags, etc.</li>
+			<li><b>Parmeters:</b> The parameter list only appears if a particular grammar
+			requires parameter input.  Otherwise the area does not show at all.</li>
+			<li><b>Max Length:</b> If supported by the selected grammar, this numeric box
+			sets the maximum length a single result may be.</li>
+			<li><b>Repeat:</b> This numeric box determines the number of results to request
+			from the generator.</li>
+			<li><b>Actions:</b> The last area of the <b>Detail Area</b> is the actions
+			area that contains the <b>Generate</b> and <b>Cancel</b> buttons.  Clicking the <b>Generate</b>
+			button begins the content generation process.  While the process is running,
+			the <b>Generate</b> button becomes a <b>Cancel</b> button that can stop the generation process
+			prematurely.
+		  </ul>
+		</p>
+		<br>
+		
+		<p class="big">
+			6 The Results Panel
+		</p>
+		<p>
+			All generation results and actions that can be taken on them are located here.
+		</p>
+		<p>
+			<ul class="shr">
+				<li><b>Result Tabs:</b> When generating results, the results are applied to the currently
+				selected tab.</li>
+				<li><b>Actions:</b> At the bottom of the results area are the result actions.  These include:
+					<ul class="shr">
+						<li><b>Add Tab:</b> Clicking this button will create a new result tab.</li>
+						<li><b>Close Tab:</b> Closes the currently selected result tab.</li>
+						<li><b>Select All:</b> Selects all content of the current selected result tab.</li>
+						<li><b>Select None:</b> Clears the selection of content on the current selected results tab.</li>
+						<li><b>Clear:</b> Clear the contents of the current selected results tab.</li>
+						<li><b>Copy:</b> Copies the selected content of the current results tab.</li>
+						<li><b>Print to PDF:</b> Saves the current content as a PDF.</li>
+						<li><b>Save as HTML:</b> Saves the current content to an HTML file.</li>
+					</ul>
+				</li>
+			</ul>
+		</p>>
+	</div>
+	<div id="foot">
+	2014-2015 Lance Boudreaux
+	</div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T6"></a>
+
+
+	<div id="topictop">&nbsp;</div>
+	<div id="topictitleleft">
+	<div id="topictitle">
+		<h3>The Main Screen</h3>
+	</div>
+	</div>
+  
+	<div id="main">
+		<img class="screenShot" src="img/the main screen.png" />
+		<p>
+		  The main screen is where the random generation magic happens. Here you select 
+		  the type of generation you want to occur, how many times, and more then press 
+		  Generate to see the magic. Below is a break down of each section of the screen 
+		  including it's purpose, and how to use it.
+		</p>
+		<p>
+		  There are several of areas on the main screen, each with its own purpose.
+		  Below are the areas, their contents, and purposes.
+		</p>
+		
+		<p class="big">
+			1 The Title Bar
+		</p>
+		<p>
+		  Aside from the standard title bar icon and controls The Randomizer has the
+		  following special commands:
+		  <ul class="shr">
+			<li><b>Settings</b>: The application Settings are indicated by a small gear 
+			icon in the window title bar.  Clicking on the icon will open the settings 
+			flyout allowing you to change things such as the window theme, the default 
+			font for results, if the application checks for new versions when launched, 
+			and more.</li>
+			<li><b>Help</b>: A small question mark icon located in the window title bar
+			launches this help documentation.</li>
+			<li><b>About</b>: Clicking on the lower case "i" contained in a circle
+			found in the window title bar will display information about the application
+			including the version, change log, copyright, and more.</li> 
+		  </ul>
+		</p>
+		<p>
+		<p class="big">
+			2 The Menu 
+		</p>
+		<p>
+		  <ul class="shr">
+			<li><b>Tools</b>
+			  <ul class="shr">
+				<li><b>Grammar Editor</b>: The Grammar Editor is a graphical user interface
+				tool used to define generator grammars in a manner that is more friendly
+				than using a text editor.</li>
+				<li><b>Markov Chain Generator</b>: The Markov Chain Generator is one 
+				method of creating a grammar based upon a collection of existing words 
+				or names.</li>
+				<li><b>Phonotactics Generator</b>: The phonotactics generator takes 
+				two files, one a sample file and the other a definition file and 
+				generates a phonotactic grammar file.</li>
+				<li><b>Item List Converter</b>: This tool will take a text file with a
+				list of items, one per line, and create a grammar or library from the 
+				list.  This is useful for times when it is desired to have a simple
+				generator that selects an item from a list of items.</li>
+				<li><b>Refresh Grammars</b>: Clicking this menu item will refresh the
+				generator list.</li>
+			  </ul>
+			</li>
+		  </ul>
+		  <ul>
+			<li><b>Donate</b><br />
+			  <ul>
+				<li><b>Paypal</b>: Brings you to The Randomizer donation page via Paypal</li>
+				<li><b>Dwolla</b>: Brings you to The Randomizer donation page via Dwolla</li>
+			  </ul>
+			</li>
+		  </ul>
+		</p>
+		
+		<p class="big">
+			3 The Tag Bar
+		</p>
+		<p>
+		  The tag bar contains a list of all of the tags currently defined in the loaded
+		  grammar files.  The generator listing is filtered by selecting the tags you would
+		  like to see or hide.  Only generators containing at least one of the selected
+		  tags will appear in the list.  By default, all tags are selected when launching the
+		  application.
+		</p>
+		<p>  
+		  Clicking on the buttons on the left of the tags that resemble a checkbox, 
+		  will either toggle all tags off or on depending upon the button clicked.  
+		</p>
+		<p>
+		  The tag bar can be hidden
+		  by clicking the chevron icon next to the header.
+		</p>
+		<br>
+
+		<p class="big">
+			4 The Generator List
+		</p>
+		<p>
+		  Below the <b>Generators</b> header is the list of currently available generators.
+		  This list can be changed by adding new grammar files to the grammars folder
+		  or by selecting and deselecting tags in the <b>Tag Bar</b>.
+		</p>
+		<p>
+		  Selecting a generator from the list will cause the application to use that
+		  geneartor as the current generator for populating the details in the <b>Details</b> 
+		  area and choosing the options such as <b>Parameters</b> and <b>Max Length</b>. 
+		</p>
+		<br>
+
+		<p class="big">
+		  5 The Detail Area
+		</p>
+		<p>
+		  The detail area is broken into 5 areas:
+		</p>
+		<p>
+		  <ul class="shr">
+			<li><b>Grammar Details:</b> This area presents the details of the selected
+			grammar including the description, author, file location, tags, etc.</li>
+			<li><b>Parmeters:</b> The parameter list only appears if a particular grammar
+			requires parameter input.  Otherwise the area does not show at all.</li>
+			<li><b>Max Length:</b> If supported by the selected grammar, this numeric box
+			sets the maximum length a single result may be.</li>
+			<li><b>Repeat:</b> This numeric box determines the number of results to request
+			from the generator.</li>
+			<li><b>Actions:</b> The last area of the <b>Detail Area</b> is the actions
+			area that contains the <b>Generate</b> and <b>Cancel</b> buttons.  Clicking the <b>Generate</b>
+			button begins the content generation process.  While the process is running,
+			the <b>Generate</b> button becomes a <b>Cancel</b> button that can stop the generation process
+			prematurely.
+		  </ul>
+		</p>
+		<br>
+		
+		<p class="big">
+			6 The Results Panel
+		</p>
+		<p>
+			All generation results and actions that can be taken on them are located here.
+		</p>
+		<p>
+			<ul class="shr">
+				<li><b>Result Tabs:</b> When generating results, the results are applied to the currently
+				selected tab.</li>
+				<li><b>Actions:</b> At the bottom of the results area are the result actions.  These include:
+					<ul class="shr">
+						<li><b>Add Tab:</b> Clicking this button will create a new result tab.</li>
+						<li><b>Close Tab:</b> Closes the currently selected result tab.</li>
+						<li><b>Select All:</b> Selects all content of the current selected result tab.</li>
+						<li><b>Select None:</b> Clears the selection of content on the current selected results tab.</li>
+						<li><b>Clear:</b> Clear the contents of the current selected results tab.</li>
+						<li><b>Copy:</b> Copies the selected content of the current results tab.</li>
+						<li><b>Print to PDF:</b> Saves the current content as a PDF.</li>
+						<li><b>Save as HTML:</b> Saves the current content to an HTML file.</li>
+					</ul>
+				</li>
+			</ul>
+		</p>>
+	</div>
+	<div id="foot">
+	2014-2015 Lance Boudreaux
+	</div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T7"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Settings</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+	<img src="img/settings.png" class="screenShot" style="border-color: gainsboro" />
+    <p>
+      The settings are contained in the flyout that appears when clicking on the 
+      gear icon in the title bar.  Changing a setting takes place immediately unless it requires a restart.
+    </p>
+    <ul class="shr">
+      <li><b>Theme</b>: Lets you select whether you would like to use the light
+      or dark theme</li>
+      <li><b>Color</b>: Determines the Accent color to use with the theme</li>
+      <li><b>Auto Update</b>: If true, The Randomizer will check for new versions
+      when it starts.</li>
+      <li><b>Show Grammar Load Errors</b>: If true, any errors that occur while attempting
+      to load the grammar files.  This is useful for figuring out why a grammar may
+      not appear in the generators list.</li>
+      <li><b>Default Results Font</b>: If a grammar does not sepcify a font to use,
+      then this font will be used.</li>
+      <li><b>Generator Directory</b>: An alternate location for grammar files to be 
+      stored in.</li>
+    </ul>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T8"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Grammar Editor</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+	<img class="screenShot" src="img/grammar editor.png" />
+    <p>
+	  The grammar editor allows for grammar files to be created and edited in a more friendly manner than using a text editor.
+	  It is especially useful to users who are not familiar with or comfortable editing XML documents.
+    </p>
+
+    <p class="big">
+		1 The Main Menu
+    </p>
+    <p>
+		<ul class="shr">
+			<li><b>File</b>
+				<ul class="shr">
+					<li><b>New</b>
+						<ul class="shr">
+							<li><b>Assignment Grammar</b> creates a new assignment grammar</li>
+							<li><b>Dice Grammar</b> creates a new dice roller grammar</li>
+							<li><b>Lua Grammar</b> creates a new Lua grammar</li>
+							<li><b>Phonotactics Grammar</b> creates a new phonotactics grammar</li>
+							<li><b>Table Grammar</b> creates a new table grammar</li>
+						</ul>
+					</li>
+					<li><b>Close</b> closes the Grammar Editor</li>
+				</ul>
+			</li>
+			<li><b>Tools</b>
+				<ul class="shr">
+					<li><b>Preview XML</b> displays the xml of the currently loaded grammar</li>
+					<li><b>Analyze</b> displays a summary of the current grammar if available</li>
+				</ul>
+			</li>
+		</ul>
+    </p>
+    
+	<h2>All Grammars</h2>
+    <p class="big">
+		2 General
+    </p>
+    <p>
+		The General area of the grammar editor allows you to define the general information about the grammar such as the name, description and category.
+	</p>
+	<p>
+		<b>Name</b> is the name that will be displayed in the type list when the grammar is loaded on the main form.
+	</p>
+	<p>
+		<b>Author</b> is the name of the author of the grammar.
+	</p>
+	<p>
+		<b>Category</b> is the category that the grammar will be listed under in the grammar combobox on the main form.
+	</p>
+	<p>
+		<b>Supports Max Length</b> tells the main form if the grammar will require a max length of generated items. This is highly recommended if the grammar has the potential to enter into indefinite loops.
+	</p>
+	<p>
+		<b>Description</b> is the tooltip that will appear when the cursor is hovered over the grammar name in the type list. It should be relatively short but descriptive enough for a user to know what to expect when using the grammar.
+	</p>
+	<br />
+    
+	<p class="big">
+		3 Parameters
+	</p>
+	<p>
+		Parameters, like the Genral area, is common between all grammar types. This grid allows for the addition, editing and removal of parameters. The name, display, and type are defined here as well as the ability to add options for list parameters.
+	</p>
+	<p>
+		<b>Name</b> is the name of the parameter as it will appear in the grammar rules.
+	</p>
+	<p>
+		<b>Display</b> is the text to display next to the edit control when displaying the parameter to the user.
+	</p>
+	<p>
+		<b>Default</b> is the default value of the parameter.
+	</p>
+	<p>
+		<b>Type</b> determines what type of control will be used to receive the user input. At present, only the list option is useful but in a future update the others will become more useful
+	</p>
+	<br />
+	
+	
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T9"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Grammar Editor</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+	<img class="screenShot" src="img/grammar editor.png" />
+    <p>
+	  The grammar editor allows for grammar files to be created and edited in a more friendly manner than using a text editor.
+	  It is especially useful to users who are not familiar with or comfortable editing XML documents.
+    </p>
+
+    <p class="big">
+		1 The Main Menu
+    </p>
+    <p>
+		<ul class="shr">
+			<li><b>File</b>
+				<ul class="shr">
+					<li><b>New</b>
+						<ul class="shr">
+							<li><b>Assignment Grammar</b> creates a new assignment grammar</li>
+							<li><b>Dice Grammar</b> creates a new dice roller grammar</li>
+							<li><b>Lua Grammar</b> creates a new Lua grammar</li>
+							<li><b>Phonotactics Grammar</b> creates a new phonotactics grammar</li>
+							<li><b>Table Grammar</b> creates a new table grammar</li>
+						</ul>
+					</li>
+					<li><b>Close</b> closes the Grammar Editor</li>
+				</ul>
+			</li>
+			<li><b>Tools</b>
+				<ul class="shr">
+					<li><b>Preview XML</b> displays the xml of the currently loaded grammar</li>
+					<li><b>Analyze</b> displays a summary of the current grammar if available</li>
+				</ul>
+			</li>
+		</ul>
+    </p>
+    
+	<h2>All Grammars</h2>
+    <p class="big">
+		2 General
+    </p>
+    <p>
+		The General area of the grammar editor allows you to define the general information about the grammar such as the name, description and category.
+	</p>
+	<p>
+		<b>Name</b> is the name that will be displayed in the type list when the grammar is loaded on the main form.
+	</p>
+	<p>
+		<b>Author</b> is the name of the author of the grammar.
+	</p>
+	<p>
+		<b>Category</b> is the category that the grammar will be listed under in the grammar combobox on the main form.
+	</p>
+	<p>
+		<b>Supports Max Length</b> tells the main form if the grammar will require a max length of generated items. This is highly recommended if the grammar has the potential to enter into indefinite loops.
+	</p>
+	<p>
+		<b>Description</b> is the tooltip that will appear when the cursor is hovered over the grammar name in the type list. It should be relatively short but descriptive enough for a user to know what to expect when using the grammar.
+	</p>
+	<br />
+    
+	<p class="big">
+		3 Parameters
+	</p>
+	<p>
+		Parameters, like the Genral area, is common between all grammar types. This grid allows for the addition, editing and removal of parameters. The name, display, and type are defined here as well as the ability to add options for list parameters.
+	</p>
+	<p>
+		<b>Name</b> is the name of the parameter as it will appear in the grammar rules.
+	</p>
+	<p>
+		<b>Display</b> is the text to display next to the edit control when displaying the parameter to the user.
+	</p>
+	<p>
+		<b>Default</b> is the default value of the parameter.
+	</p>
+	<p>
+		<b>Type</b> determines what type of control will be used to receive the user input. At present, only the list option is useful but in a future update the others will become more useful
+	</p>
+	<br />
+	
+	
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T10"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Grammar Editor Assignment</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+  <h2>Assignment Grammar</h2>
+	<img class="screenShot" src="img/grammar editor assignment.png" />
+    <p class="big">
+      1 Rules
+    </p>
+    <p>
+      The rules are the main content of the grammar. They tell the system how to generate the random things for the grammar. For more detailed information on how grammar files work see the <a href="Assignment Grammar.htm">Assignment Grammar Files Help</a> document.
+    </p>
+	<p>
+		<b>Label (a.k.a. Name)</b> is the label for this particular rule which can be used in the Next column or in the Expression.
+    </p>	
+    <p>
+		<b>Next</b> tells the generator which rule(s) are next in the chain of generation.
+	</p>
+    <p>
+		<b>Weight</b> determines the weight of a particular rule when multiple rules have the same label. The weight determines the likelyhood that a particular rule will be selected within the rules that contain the same label. For example, if there are 3 rules labeled as "Start" with weights of 1,1, and 2. Then the first two have a 25% chance of be chosen and the last has a 50% chance.
+    </p>     
+    <p>
+		<b>Expression</b> this is the expression that is evaluated by the generator when a rule is selected.
+    </p>
+    <br />
+
+	<p class="big">
+		2 Imports
+	</p>
+	<p>
+		This is where you can define libraries that you would like to import into the grammar.
+	</p>
+	<br />
+
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T11"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Grammar Editor Dice Roll</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+
+	<h2>Dice Roll Grammar</h2>
+	<img class="screenShot" src="img/grammar editor dice roll.png">
+	<p class="big">
+		Dice Rolls
+	</p>
+	<p>
+		This grid is where the dice roll functions are defined.  In order to use multiple functions, there must be a parameter that is used to select the appropriate function.  For example, if you have functions called "Standard", "Extended", and "Custom" then you must have a List parameter with these values for the user to select from.
+	</p>
+	<br />
+
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T12"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Grammar Editor LUA</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <h2>LUA Grammar</h2>
+	<img class="screenShot" src="img/grammar editor lua.png">
+	<p class="big">
+		Script
+	</p>
+	<p>
+		This text box contains the entire LUA script that will be executed when the grammar is run.
+	</p>
+	<br />
+
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T13"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Grammar Editor Phonotactics</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+   <h2>Phonotactics Grammar</h2>
+   <img class="screenShot" src="img/grammar editor phonotactics.png" />
+	<p class="big">
+		1 Options
+	</p>
+	<p>
+		There is currently only one option for Phonotactics Grammars and that is the Case of the generated result.
+	</p>
+	<p>
+		<b>Case</b> determines what case the final word will be in. There are four options:
+	</p>
+	<ul class="shr">
+		<li><b>None</b>: the final generated result will be displayed unaltered.</li>
+		<li><b>Proper</b>: the final generated result will be displayed with all letters following a space capitalized.</li>
+		<li><b>Upper</b>: the final generated result will be in all upper case.</li>
+		<li><b>Lower</b>: the final generated result will be in all lower case.</li>
+	</ul>
+	<p class="big">
+		2 Definitions
+	</p>
+	<p>
+		The definitions grid contains the keys and their definitions for the grammar.
+	</p>
+	<p>
+		<b>Key</b> is the key that will be used in the patterns for this definition. It must be a single character.
+	</p>
+	<p>
+		<b>Delimiter</b> is the character placed between the replacement values of the definition.
+	</p>
+	<p>	
+		<b>Values</b> is the delimiter separated list of values that can act as replacement values for the key
+	</p>
+	<p class="big">
+		3 Patterns
+	</p>
+	<p>
+		The grid of patterns determines what patterns are available for this grammar.
+	</p>
+	<p>
+		<b>Value</b> is the pattern of keys.
+	</p>
+	<p>
+		<b>Weight</b> is the weight of this particular pattern when randomly selecting a pattern from the list.
+	</p>
+	<br />
+
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T14"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Grammar Editor Table</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+	<img class="screenShot" src="img/grammar editor table.png" />
+   <h2>Table Grammar</h2>
+	<p class="big">
+		Tables
+	</p>
+	<p>
+		This grid contains the list of tables that are used to generate the values of the grammar.  
+	</p>
+	<p>
+		<b>Name</b> is the name of the table
+	</p>
+	<p>
+		<b>Action</b> is the type of action that will be performed on the table.
+	</p>
+	<p>
+		<b>Delimiter</b> is the character that is used to delimit values in the table.
+	</p>
+	<p class="big">
+		Output
+	<p>
+	<p>
+		This area contains the output html for the generated values.
+	</p>
+
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T15"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Markov Chain Generator</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+	<p>
+		The Markov Chain Generator is one method of creating a grammar based upon a collection of existing words or names. 
+		It can create some very nice grammars given a large enough list of words. This does not mean smaller lists can't work 
+		as a good starting point for a grammar but they will rarely give much variety.
+		To learn more about Markov Chains, see this article on <a href="https://en.wikipedia.org/wiki/Markov_chain" target="_blank">Wikipedia</a> <image src="img/popout.gif" />.
+	</p>
+	<p class="big">
+		Grammar Info
+	</p>
+	<p>
+		Grammar info fills in the header information of the grammar. In order to have a usable grammar, this information should be filled in.
+	</p>
+	<p>
+		<b>Name</b>: The name of the grammar
+	</p>
+	<p>
+		<b>Description</b>: The description of the grammar
+	</p>
+	<p>
+		<b>Author</b>: The author of the grammar
+	</p>
+	<p>
+		<b>Tags</b>: A list of tags used to categorize the grammar
+	</p>
+	<p>
+		<b>Supports Max Length</b>: Does this grammar allow max length. This should usually be true for Markov Chain grammars
+	</p>
+	
+	<p class="big">
+		Markov Chain Options
+	</p>
+	<p>
+Input options are the name list file that will be the template of the grammar and the length of each syllable. These are the most important parts of generating the grammar.
+	</p>
+	
+	<p class="big">
+		File
+	</p>
+	<p>
+		The file is a list of "names" in a file separated by new lines like the sample here:
+	</p>
+
+	<pre><code>
+Bob
+Robert
+Rob
+Frank
+Fred
+Henry
+Joe
+	</code></pre>
+	
+	<p class="big">
+		Syllable Length
+	</p>
+	<p>
+		The syllable length determines the length of each piece that will pulled from each name. Using the name list above and an example syllable length of 2 we would receive a Markov Chain that can be visualized like this:
+	</p>
+
+	<pre><code>
+Bo=>b=>[end]
+Ro=>be=>rt=>[end]
+Ro=>b=>[end]
+Fr=>an=>k=>[end]
+Fr=>ed=>[end]
+He=>nr=>y=>[end]
+Jo=>e=>[end]
+	</code></pre>
+
+	<p class="big">
+		Limit Weight
+	</p>
+	<p>
+		This option can be used to prevent unusually large weights from skewing the generation of the items when randomized. Simply select the checkbox and tell the tool the largest weight you will allow.
+	</p>
+	<p>
+		Then, when deconstructed into a grammar:
+	</p>
+
+	<pre><code>
+[start]=>Bo
+[start]=>Ro
+[start]=>Fr
+[start]=>He
+[start]=>Jo
+Bo=>b
+Ro=>be
+Ro=>b
+Fr=>an
+Fr=>ed
+He=>nr
+Jo=>e
+b=>[end]
+be=>rt
+an=>k
+ed=>[end]
+nr=>y
+e=>[end]
+rt=>[end]
+k=>[end]
+y=>[end]
+	</code></pre>
+	
+	<p class="big">
+		Actions
+	</p>
+	<ul class="shr">
+		<li><b>Generate</b> will generate the Markov Chain in the output window.</li>
+		<li><b>Save</b> allows you to save the Markov Chain to a file.</li>
+	</ul>
+
+	<p class="big">
+		The Output
+	</p>
+	<p>
+		The output will be a Randomizer grammar file.
+	</p>
+
+	<pre><code>
+&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;Grammar xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xsi:type=&quot;AssignmentGrammar&quot;&gt;
+ &lt;name /&gt;
+ &lt;author /&gt;
+ &lt;description /&gt;
+ &lt;category /&gt;
+ &lt;parameters /&gt;
+ &lt;supportsMaxLength&gt;true&lt;/supportsMaxLength&gt;
+ &lt;items&gt;
+   &lt;item name=&quot;Start&quot; weight=&quot;1&quot; next=&quot;&quot;&gt;[Bo]&lt;/item&gt;
+   &lt;item name=&quot;Bo&quot; weight=&quot;1&quot; next=&quot;b&quot;&gt;Bo&lt;/item&gt;
+   &lt;item name=&quot;b&quot; weight=&quot;1&quot; next=&quot;&quot;&gt;b&lt;/item&gt;
+   &lt;item name=&quot;Start&quot; weight=&quot;1&quot; next=&quot;&quot;&gt;[Ro]&lt;/item&gt;
+   &lt;item name=&quot;Ro&quot; weight=&quot;1&quot; next=&quot;be&quot;&gt;Ro&lt;/item&gt;
+   &lt;item name=&quot;be&quot; weight=&quot;1&quot; next=&quot;rt&quot;&gt;be&lt;/item&gt;
+   &lt;item name=&quot;rt&quot; weight=&quot;1&quot; next=&quot;&quot;&gt;rt&lt;/item&gt;
+   &lt;item name=&quot;Ro&quot; weight=&quot;1&quot; next=&quot;b&quot;&gt;Ro&lt;/item&gt;
+   &lt;item name=&quot;b&quot; weight=&quot;1&quot; next=&quot;&quot;&gt;b&lt;/item&gt;
+   &lt;item name=&quot;Start&quot; weight=&quot;1&quot; next=&quot;&quot;&gt;[Fr]&lt;/item&gt;
+   &lt;item name=&quot;Fr&quot; weight=&quot;1&quot; next=&quot;an&quot;&gt;Fr&lt;/item&gt;
+   &lt;item name=&quot;an&quot; weight=&quot;1&quot; next=&quot;k&quot;&gt;an&lt;/item&gt;
+   &lt;item name=&quot;k&quot; weight=&quot;1&quot; next=&quot;&quot;&gt;k&lt;/item&gt;
+   &lt;item name=&quot;Fr&quot; weight=&quot;1&quot; next=&quot;ed&quot;&gt;Fr&lt;/item&gt;
+   &lt;item name=&quot;ed&quot; weight=&quot;1&quot; next=&quot;&quot;&gt;ed&lt;/item&gt;
+   &lt;item name=&quot;Start&quot; weight=&quot;1&quot; next=&quot;&quot;&gt;[He]&lt;/item&gt;
+   &lt;item name=&quot;He&quot; weight=&quot;1&quot; next=&quot;nr&quot;&gt;He&lt;/item&gt;
+   &lt;item name=&quot;nr&quot; weight=&quot;1&quot; next=&quot;y&quot;&gt;nr&lt;/item&gt;
+   &lt;item name=&quot;y&quot; weight=&quot;1&quot; next=&quot;&quot;&gt;y&lt;/item&gt;
+   &lt;item name=&quot;Start&quot; weight=&quot;1&quot; next=&quot;&quot;&gt;[Jo]&lt;/item&gt;
+   &lt;item name=&quot;Jo&quot; weight=&quot;1&quot; next=&quot;e&quot;&gt;Jo&lt;/item&gt;
+   &lt;item name=&quot;e&quot; weight=&quot;1&quot; next=&quot;&quot;&gt;e&lt;/item&gt;
+ &lt;/items&gt;
+&lt;/Grammar&gt;
+	</code></pre>
+
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T16"></a>
+
+
+	  <div id="topictop">&nbsp;</div>
+	  <div id="topictitleleft">
+		<div id="topictitle">
+		  <h3>Item List Converter</h3>
+		</div>
+	  </div>
+  
+	<div id="main">
+	<p>
+		The Item List Converter is designed to make converting a simple list of items into a grammar. This tool was used to create the Top US Names grammar.
+	</p>
+
+	<p class="big">
+		Grammar Info
+	</p>
+	<p>
+		Grammar info fills in the header information of the grammar. In order to have a usable grammar, this information should be filled in.
+	</p>
+	<ul class="shr">
+		<li><b>Name</b>: The name of the grammar</li>
+		<li><b>Description</b>: The description of the grammar</li>
+		<li><b>Author</b>: The author of the grammar</li>
+		<li><b>Tags</b>: A list of tags used to categorize the grammar</li>
+		<li><b>Supports Max Length</b>: Does this grammar allow max length.  This should rarely be true for Item Lists.</li>
+	</ul>
+	
+	<p class="big">
+		Options
+	</p>
+	<p>
+		The options set how the weight of each item is calculated.
+	</p>
+	<ul class="shr">
+		<li><b>Weight Evenly</b>: every item has the same weight.</li>
+		<li><b>Weight Ascending</b>: each item has the weight of the previous item plus one.</li>
+		<li><b>Weight Descending</b>: each item has the weight of the previous item minus one.</li>
+	</ul>
+	<ul class="shr">
+		<li><b>Assignment Grammar</b>: If this is selected, a full grammar file will be generated</li>
+		<li><b>Assignment Library</b>: If this is selected, a library file will be generated instead of a full grammar</li>
+	</ul>
+	<ul class="shr">
+		<li><b>Remove Duplicates</b>: If selected, any duplicate items found will be removed</li>
+		<li><b>Case Sensitive</b>: If selected, duplicate detection will be case sensitive</li>
+	</ul>
+	
+	<p class="big">
+		Item List
+	</p>
+	<p>
+		This is the list of the files to use as a source for the grammar or library.
+	</p>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T17"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Phonotactics Generator</h3>
+    </div>
+  </div>
+  
+	<div id="main">
+	<p>
+		The phonotactics generator takes two files, one a sample file and the other a definition file and generates a phonotactic grammar file.
+	</p>
+
+	<p class="big">
+		Grammar Info
+	</p>
+	<p>
+		Grammar info fills in the header information of the grammar. In order to have a usable grammar, this information should be filled in.
+	</p>
+	<ul class="shr">
+		<li><b>Name</b>: The name of the grammar</li>
+		<li><b>Description</b>: The description of the grammar</li>
+		<li><b>Author</b>: The author of the grammar</li>
+		<li><b>Tags</b>: A list of keywords used to categorize the grammar</li>
+		<li><b>Category</b>: The category to list the grammar under</li>
+		<li><b>Supports Max Length</b>: Does this grammar allow max length.</li>
+	</ul>
+	
+	<p class="big">
+		Phonotactics Options
+	</p>
+	<ul>
+		<li><b>Sample File</b>: The file containing sample words with one word per line</li>
+		<li><b>Definition File</b>: The file containing the definitions of the key words.  The format for the definiton file is: [Key Character]=[Comma Separated Values]
+	<pre><code>
+c=b,c,d,f,j,k,l,m,n,p,q,r,s,t,v
+v=a,e,i,o,u
+	</code></pre>
+		</li>
+		<li><b>Limit Weight</b>: If selected, this will tell the generate that the weight of a single value cannot be greater than the given value.  This can help to keep the bias from getting too high.</li>
+	</ul>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T18"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>The Randomizer</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <p>
+      Grammar files are xml files with the suffix .rnd.xml that contain the rules necessary for The Randomizer to know how to generate content. These files can be very simple or very complex depending on the needs of the grammar.
+    </p>
+    <p>
+      The default grammars are located in the Datafiles subdirectory where The Randomzer is installed. For example, if The Randomizer is installed here: C:\Program Files (x86)\TheRandomizer then the grammar files will be located in C:\Program Files (x86)\TheRandomizer\DataFiles.
+    </p>
+    <p>
+      Custom grammar files can be stored in the same location as the default grammars or they can be stored in the folder specified in the preferences screen. The default location for custom grammars is %localappdata%\The Randomizer\DataFiles.
+    </p>
+    <br>
+
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T19"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>The Randomizer</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <p>
+      Grammar files are xml files with the suffix .rnd.xml that contain the rules necessary for The Randomizer to know how to generate content. These files can be very simple or very complex depending on the needs of the grammar.
+    </p>
+    <p>
+      The default grammars are located in the Datafiles subdirectory where The Randomzer is installed. For example, if The Randomizer is installed here: C:\Program Files (x86)\TheRandomizer then the grammar files will be located in C:\Program Files (x86)\TheRandomizer\DataFiles.
+    </p>
+    <p>
+      Custom grammar files can be stored in the same location as the default grammars or they can be stored in the folder specified in the preferences screen. The default location for custom grammars is %localappdata%\The Randomizer\DataFiles.
+    </p>
+    <br>
+
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T20"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Grammar File Structure</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <p>The grammar file is broken down into three major sections: the header, the parameters, and the rules.</p>
+
+	<h2>The Header</h2>
+	<p>The header has basic information such as the name, description and author of the grammar. Additionally, it contains the parameters (if any exist for the grammar).</p>
+
+	<p class="big">Properties</p>
+	<table>
+		<tr>
+			<th>Element</th>
+			<th>Description</th>
+			<th>Values</th>
+		</tr>
+		<tr>
+			<td>name</td>
+			<td>The name of the grammar</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>description</td>
+			<td>A short description of what the grammar produces</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>tags</td>
+			<td>A list of keywords used to categorize the grammar</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>author</td>
+			<td>The name of the author</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>supportsMaxLength</td>
+			<td>Does this grammar support max length?</td>
+			<td>true/false</td>
+		</tr>
+	</table>
+
+	<br/>
+	<p class="bold">Sample</p>
+	<pre><code>&lt;Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	&nbsp; &nbsp; &nbsp; &nbsp; xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	&nbsp; &nbsp; &nbsp; &nbsp; xsi:type="AssignmentGrammar" &gt;
+	&nbsp; &nbsp;&lt;name&gt;US Names&lt;/name&gt;
+	&nbsp; &nbsp;&lt;tags&gt;
+	&nbsp; &nbsp; &nbsp;&lt;tag&gt;Fantasy&lt;/tag&gt;
+	&nbsp; &nbsp; &nbsp;&lt;tag&gt;Encounter&lt;/tag&gt;
+	&nbsp; &nbsp; &nbsp;&lt;tag&gt;D&amp;D&lt;/tag&gt;
+	&nbsp; &nbsp;&lt;/tags&gt;
+	&nbsp; &nbsp;&lt;author&gt;Lance Boudreaux&lt;/author&gt;
+	&nbsp; &nbsp;&lt;description&gt;A full name generator that presents names based on the top 300 male first, female first, and surnames.&lt;/description&gt;
+	&nbsp; &nbsp;&lt;supportsMaxLength&gt;false&lt;/supportsMaxLength&gt;
+	</code></pre>
+
+	<h2>The Parameters</h2>
+	<p class="big">Properties</p>
+	<table>
+		<tr>
+			<th>Element/Attribute</th>
+			<th>Description</th>
+			<th>Values</th>
+		</tr>
+		<tr>
+			<td>parameter</td>
+			<td>A single parameter</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>[name]</td>
+			<td>The name of the label the parameter value will replace</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>[display]</td>
+			<td>The name to display for the parameter</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>[type]</td>
+			<td>The type of parameter</td>
+			<td>List/Text/Checkbox</td>
+		</tr>
+		<tr>
+			<td>option</td>
+			<td>The options available if the parameter is of list type</td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+	<br />
+	<p class="bold">Sample</p>
+	<pre><code>&lt;parameters&gt;
+&nbsp; &nbsp;&lt;parameter name="Gender" display="Gender" type="List"&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;option display="any"&gt;GenderAny&lt;/option&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;option display="Male"&gt;GenderMale&lt;/option&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;option display="Female"&gt;GenderFemale&lt;/option&gt;
+&nbsp; &nbsp;&lt;/parameter&gt;
+&lt;/parameters&gt;
+	</pre></code>
+	<br/>
+	<h2>Items</h2>
+	<p>The Items section varies based on the type of grammar defined by the grammar file. &nbsp;Please see one of the following topics in order to learn more about each grammar type's structure.</p>
+	<p><a href="#T21">Assignment Grammar File Structure</a></p>
+	<p><a href="Dice Roll Grammar Structure.htm">Dice Roll Grammar File Structure</a></p>
+	<p><a href="#T23">LUA Grammar File Structure</a></p>
+	<p><a href="#T24">Phonotactics Grammar File Structure</a></p>
+	<p><a href="#T25">Table Grammar File Structure</a></p>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T21"></a>
+
+
+	<div id="topictop">&nbsp;</div>
+	<div id="topictitleleft">
+		<div id="topictitle">
+			<h3>Assignment Grammar Structure</h3>
+		</div>
+	</div>
+  
+	<div id="main">
+	<p>Assignment Grammar Files are a generic grammar type which is highly customizable. 
+	The following information is specific to Assignment Grammar Files. 
+	See the <a href="#T20">Grammar Files</a> help section for common information about all Grammar Files.</p>
+
+	<h2>The Rules</h2>
+	<p>The rules are the meat of the grammar. The rules are what tell The Randomizer how to generate it's content. 
+	Based on Markov Chains, the rules are extremely flexible and powerful.</p>
+
+	<p class="big">Properties</p>
+	<table>
+		<tr>
+			<th>Element</th>
+			<th>Description</th>
+			<th>Values</th>
+		</tr>
+		<tr>
+			<td>item</td>
+			<td>A single rule</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>[name]</td>
+			<td>The label of the rule</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>[weight]</td>
+			<td>The weight of this particular rule during selection</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>[next]</td>
+			<td>The label of the rule that will come after this one</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>{expression}</td>
+			<td>The value of this rule</td>
+			<td>See the expressions section below</td>
+		</tr>
+	</table>
+	<br />
+	<p class="sub">Sample</p>
+	<pre><code>&lt;items&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="Start"&gt;[Gender]&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="Any" weight="50"&gt;[MaleName]&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="Any" weight="50"&gt;[FemaleName]&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="Male"&gt;[MaleName]&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="Female"&gt;[FemaleName]&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="MaleName" weight="300" next="[Space]"&gt;James&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="MaleName" weight="299" next="[Space]"&gt;John&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="MaleName" weight="298" next="[Space]"&gt;Robert&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="MaleName" weight="297" next="[Space]"&gt;Michael&lt;/item&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;:
+&nbsp; &nbsp; &nbsp; &nbsp;:
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;item name="SurName" weight="1"&gt;Williamson&lt;/item&gt;
+&lt;/items&gt;</code></pre>
+	
+	<p class="big">Expressions</p>
+	<p>Expressions are the key to the rules. They can be as simple as a string value or as complex as a series of labels, strings, calculations, and formatting commands.</p>
+	<br />
+	<p class="bold">Strings</p>
+	<p>The simplest form of an expression is a string. Things such as "Lance" or "A". An example rule would look like so:</p>
+
+	<pre><code>&lt;item name="Sample"&gt;Lance&lt;/item&gt;
+&lt;item name="Sample"&gt;Boudreaux&lt;/item&gt;</pre></code>
+
+	<p class="bold">Labels</p>
+	<p>Labels can also be placed in the expression. These tell the generator to produce a result from the results of evaluating that label.
+	Labels are denoted by being surrounded by square brackets like so: [LabelName].
+	For example, you could generate a first and last name using an expression something like this:</p>
+
+	<pre><code>&lt;item name="FullName"&gt;[FirstName] [LastName]&lt;/item&gt;
+&lt;item name="FirstName"&gt;Lance&lt;/item&gt;
+&lt;item name="FirstName"&gt;John&lt;/item&gt;
+&lt;item name="LastName"&gt;Boudreaux&lt;/item&gt;
+&lt;item name="LastName"&gt;Doe&lt;/item&gt;</code></pre>
+
+	<p class="bold">Calculations</p>
+	<p>Calculations look similar to labels but allow for numerical and string computations to be done. 
+	They are denoted by being in square brackets with an equal sign immediately after the opening bracket:</b>
+
+	<pre><code>&lt;item name="Strength"&gt;[=Roll(3,6)]&lt;/item&gt;
+&lt;item name="NumberOfOrcs"&gt;You encounter [=ToText(Roll(2,4)+2)] orcs!&lt;/item&gt;</code></pre>
+
+	<p>You can find a list of functionality available for calculations at the </span><a class="rvts13" href="https://ncalc.codeplex.com/" target="_blank">nCalc</a><image src="img/popout.gif" /> website. &nbsp;Additional functions included in The Randomizer are detailed in the <a href="#T26">Calculation Functions</a> help topic but also include those listed here:</p>
+
+	<table>
+		<tr>
+			<th>Function</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>Items([Label])</td>
+			<td>Returns the number of rule items that have been visited thus far. 
+			If the Label is provided it counts only those rule items with that label.</td>
+		</tr>
+	</table>
+	<br />
+	<p class="bold">Formatting</p>
+	<p>Formatting can be added to expressions in the form of html tags. 
+	For example, if you wanted to make a word bold and red you could use the following code:</p>
+	<pre><code>&lt;item name="Orcs"&gt;&lt;![CDATA[&lt;span style="font-weight:bold;color:red"&gt;ORCS!&lt;/span&gt;]]&gt;&lt;/item&gt;</code></pre>
+	
+	<p>The results of this would be:</p>
+	<pre><code><span style="font-weight:bold; color:red;">ORCS!</span></code></pre>
+	
+	<br />
+	<p class="big">Imports</p>
+	<p>It is possible in Assignment Grammars to import library files that contain rules that will be included in the grammar. 
+	Library files have an extension of *.lib.xml and are included in the same folder as the grammars. 
+	Importing the library is done by adding import tags with the content being the name of the library file with or without the extension.</p>
+
+	<p class="sub">Sample:</p>
+	<pre><code> &lt;imports&gt;
+ &nbsp; &nbsp;&lt;import&gt;USNames&lt;/import&gt;
+ &lt;/imports&gt;</code></pre>
+	<br />
+	<p class="sub">Library File Sample:</p>
+	<pre><code>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;library&gt;
+&nbsp; &nbsp;&lt;item name="FirstName"&gt;John&lt;/item&gt;
+&nbsp; &nbsp;&lt;item name="FirstName"&gt;Lance&lt;/item&gt;
+&nbsp; &nbsp;&lt;item name="LastName"&gt;Doe&lt;/item&gt;
+&nbsp; &nbsp;&lt;item name="LastName"&gt;Boudreaux&lt;/item&gt;
+&lt;/library&gt;</code></pre>
+
+	<p class="sub">A sample Assignment Grammar</p>
+	<pre><code>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;Grammar xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xsi:type=&quot;AssignmentGrammar&quot;&gt;
+	&lt;name&gt;Sample Assignment Gramar&lt;/name&gt;
+	&lt;author&gt;Lance Boudreaux&lt;/author&gt;
+	&lt;description&gt;A sample assignment grammar&lt;/description&gt;
+	&lt;tags&gt;
+		&lt;tag&gt;Sample&lt;/tag&gt;
+		&lt;tag&gt;Test&lt;/tag&gt;
+	&lt;/tags&gt;
+	&lt;parameters&gt;
+	    &lt;parameter name=&quot;Gender&quot; display=&quot;Gender&quot; type=&quot;List&quot; valueType=&quot;Label&quot;&gt;
+			&nbsp; &nbsp; &nbsp; &nbsp;&lt;option display="any"&gt;GenderAny&lt;/option&gt;
+			&nbsp; &nbsp; &nbsp; &nbsp;&lt;option display="Male"&gt;GenderMale&lt;/option&gt;
+			&nbsp; &nbsp; &nbsp; &nbsp;&lt;option display="Female"&gt;GenderFemale&lt;/option&gt;
+		&lt;/parameter&gt;
+	&lt;/parameters&gt;
+	&lt;supportsMaxLength&gt;false&lt;/supportsMaxLength&gt;
+	&lt;items&gt;
+		&lt;item name=&quot;Start&quot;&gt;[=Rnd(12,60)] year old [Gender] [Race]&lt;/item&gt;
+		&lt;item name=&quot;GenderAny&quot;&gt;Male&lt;/item&gt;
+		&lt;item name=&quot;GenderAny&quot;&gt;Female&lt;/item&gt;
+		&lt;item name=&quot;GenderMale&quot;&gt;Male&lt;/item&gt;
+		&lt;item name=&quot;GenderFemale&quot;&gt;Female&lt;/item&gt;
+		&lt;item name=&quot;Race&quot;&gt;Human&lt;/item&gt;
+		&lt;item name=&quot;Race&quot;&gt;[Elf] Elf&lt;/item&gt;
+		&lt;item name=&quot;Race&quot;&gt;[Gnome] Gnome&lt;/item&gt;
+		
+		&lt;item name=&quot;Elf&quot;&gt;Wood&lt;/item&gt;
+		&lt;item name=&quot;Elf&quot;&gt;High&lt;/item&gt;
+		
+		&lt;item name=&quot;Gnome&quot;&gt;Rock&lt;/item&gt;
+		&lt;item name=&quot;Gnome&quot;&gt;Travel&lt;/item&gt;
+	&lt;/items&gt;
+&lt;/Grammar&gt;</code></pre>
+
+	<p>The output of the sample would look like so:</p>
+	<pre><code>60 year old Female High Elf
+30 year old Male Human
+42 year old Female Rock Gnome
+59 year old Male Human
+31 year old Female Wood Elf</code></pre>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T22"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>Dice Roller Grammar Structure</h3>
+    </div>
+  </div>  
+  <div id="main">
+   <p>Dice Roll Grammar Files are used to program dice rolls, especially those that may be slightly more complicated such as rolling stats for a character. 
+   The following information is specific to Duce Roll Grammar Files. 
+   See the <a href="#T20">Grammar Files</a> help section for common information about all Grammar Files.</p>
+
+	<h2>Function</h2>
+	<p>Each function acts as a possible set of dice rolls. 
+	Multiple functions are only available if there is a parameter to let the user select which function to use, otherwise; 
+	the first function is always used. A function consists of a series of dice rolls separated by new lines.</p>
+
+	<p class="big">Variables</p>
+	<p>You may assign the results of a calculation to a variable to use later using the following format:</p>
+	<code>VariableName:=Calculation</code>
+	<br /><br />
+	<p class="sub">Example:</p>
+	<pre><code>Strength:=Roll(3,6)</code></pre>
+
+	<p class="big">The Roll Method</p>
+	<p>The roll method is the basis of the Dice Roll Grammar. &nbsp;It generates a simulated dice roll and returns the results. &nbsp;There are several options that can be given to the Roll call in order to affect how the dice are handled. The roll method is called using the following format:</p>
+	<code>Roll(Count,Die,[options])</code>
+	<br/><br />
+	<p class="sub">Examples:</p>
+	<pre><code>Roll(1,4) will roll 1 4-sided die
+Roll(4,10) will roll 4 10-sided dice</code></pre>
+	<br/>
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 3 Result: 3
+Die Results: 2, 5, 10, 8 Result: 25</code></pre>
+	<br />
+	
+	<p class="big">Roll Options</p>
+	<p>The following strings can be added as parameters to the Roll method after the number and die parameters</p>
+	<br />
+	
+	<p class="bold">Drop Lowest</p>
+	<p><b>Command String:</b> 'DL'</p>
+	<p>Drop the lowest die roll. This can be followed by a number to indicate the number of dice to drop.</p>
+	<br />
+	<p class="sub">Examples:</p>
+	<pre><code>Roll(2,20,'DL') will roll 2 20-sided dice and drop the lowest roll as is done with Advantage in D&amp;D 5e
+Roll(5,6,'DL',2) will roll 5 6-sided dice and drop the lowest 2 rolls</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 15, 10 Result: 15
+Die Results: 3, 4, 1, 6, 5 Result: 15</code></pre>
+	<br />
+	
+	<p class="bold">Drop Highest
+	<p><b>Command String:</b> 'DH'</p>
+	<p>Drop the highest die roll. This can be followed by a number to indicate the number of dice to drop.</p>
+	<br />
+	<p class="sub">Examples:</p>
+	<pre><code>Roll(2,20,'DH') will roll 2 20-sided dice and drop the highest roll as is done with Disadvantage in D&amp;D 5e
+Roll(5,10,'DH',4) will roll 5 10-sided dice and drop the highest 4 leaving only the lowest roll</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 15, 10 Result: 10
+Die Results: 2, 5, 1, 9, 10 Result: 1</code></pre>
+	<br />
+	
+	<p class="bold">Exploding Dice</p>
+	<p><b>Command String:</b> 'EX'</p>
+	<p>Exploding dice re-roll all maximum rolls and sums the results</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(4,10,'EX') will roll 4 10-sided dice and re-roll all 10's</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 4, 10, 3, 6 + 10 Result: 33</code></pre>
+	<br />
+	
+	<p class="bold">Compound Exploding Dice</p>
+	<p><b>Command String:</b> 'CX'</p>
+	<p>Compound exploding dice re-rolls all maximum rolls until none remain and adds the results</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(4,10,'CX') will roll 4 10-sided dice and re-roll all 10's</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 8, 10, 2, 10 + 10, 8 + 10 + 3 Result: 61</code></pre>
+	<br />
+	
+	<p class="bold">Re-roll Below</p>
+	<p><b>Command String</b> 'RB'</p>
+	<p>Re-roll below a given result</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(4,10,'RB',5) will roll 4 10-sided dice and re-roll all results under 5</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: <span class="rvts21">3<span class="rvts18">, 10, 5, <span class="rvts21">2<span class="rvts18"> + 6, 8 Result: 29</code></pre>
+	<br />
+	
+	<p class="bold">Over Target</p>
+	<p><b>Command String</b> 'GT'</p>
+	<p>Compare results to the target number provided looking for rolls greater than or equal to the target and return success or failure</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(3,10,'GT',6) will roll 3 10-sided dice and return success or failure depending on the number of rolls over 6 as is done in New World of Darkness games</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 1, 1, 6, 9, 10 Result: Success (3)</code></pre>
+	<br />
+	
+	<p class="bold">Under Target</p>
+	<p><b>Command String</b> 'LT'</p>
+	<p>Compare results to the target number provided looking for rolls under the target and return success or failure</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(2,20,'LT',10) will roll 2 20-sided dice and return success or failure depending on the number of rolls under 10.</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 10, 15 Result: Failure (-2)</code></pre>
+	<br />
+	
+	<p class="bold">Rule of Ones</p>
+	<p><b>Command String</b> 'R1'</p>
+	<p>For target rolls ('GT','LT') this enacts the rule of one where one's remove successes from the result</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(4,10,'GT',6,'R1') will roll 4 10-sided dice and remove successes equal to the number of one's rolled and return success or failure as is done in Old World of Darkness</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 1, 1, 10, 4 Result: Failure (-1)</code></pre>
+	<br />
+	
+<h2>An Example Roll Grammar File</h2>
+<pre><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xsi:type="DiceRoll"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;name&gt;D&amp;amp;D Attributes&lt;/name&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;authur&gt;Lance Boudreaux&lt;/authur&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;description&gt;Rolls the character attribute stats for D&amp;amp;D.&lt;/description&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;tags&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tag&gt;Dice Roll&lt;tag&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tag&gt;D&amp;amp;D&lt;tag&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tags&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;parameters&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;parameter name="RollFunction" display="Method" type="List" default="standard"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option display="3d6 in order"&gt;standard&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option display="3d6"&gt;3d6&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option display="4d6 drop lowest"&gt;4d6&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option display="5d6 drop 2 lowest"&gt;5d6&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option display="3d6 reroll 1's"&gt;3d6 Reroll&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option display="4d6 drop lowest reroll 1's"&gt;4d6 Reroll&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option display="5d6 drop lowest reroll 1's"&gt;5d6 Reroll&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/parameter&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/parameters&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;supportsMaxLength&gt;false&lt;/supportsMaxLength&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;function name="standard"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;![CDATA['STR ' + Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;'CON ' + Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;'DEX ' + Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;'INT ' + Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;'WIS ' + Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;'CHA ' + Roll(3,6)]]&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/function&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;function name="3d6"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;![CDATA[Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6)]]&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/function&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;function name="4d6"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;![CDATA[Roll(4,6,'DL')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL')]]&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/function&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;function name="5d6"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;![CDATA[Roll(5,6,'DL',2)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2)
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2)]]&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/function&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;function name="3d6 Reroll"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;![CDATA[Roll(3,6,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(3,6,'RB')]]&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/function&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;function name="4d6 Reroll"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;![CDATA[Roll(4,6,'DL','RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL','RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL','RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL','RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL','RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(4,6,'DL','RB')]]&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/function&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;function name="5d6 Reroll"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;![CDATA[Roll(5,6,'DL',2,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2,'RB')
+&nbsp;&nbsp;&nbsp;&nbsp;Roll(5,6,'DL',2,'RB')]]&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/function&gt;
+&lt;/Grammar&gt;</code></pre>
+<p></p>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T23"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>LUA Grammar Structure</h3>
+    </div>
+  </div>
+  
+	<div id="main">
+	<p>The following information is specific to LUA Grammar Files which are useful for translating random generation tables into grammar files. 
+	See the Grammar Files help section for common information about all <a href="#T20">Grammar Files</a>.</p>
+	<br />
+	<h2>Script</h2>
+	<p>The LUA grammar file functionality is entirely contained inside of a "script" tag. 
+	The contents of this tag should be a LUA chunk with a return value of simple data types or a table of simple data types. 
+	The parameters received from the user are available as global variables.</p>
+	<br />
+
+	<p class="sub">Example</p>
+	<pre><code>&lt;?xml version="1.0"?&gt;
+&lt;Grammar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; xsi:type="LUAGrammar"&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;name&gt;LUA Test&lt;/name&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;authur&gt;Lance Boudreaux&lt;/authur&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;description&gt;A test of the LUA functionality&lt;/description&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;category&gt;Test&lt;/category&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;parameters&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;parameter name="type" display="Type" type="List" valueType="Label"&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;option display="Any"&gt;any&lt;/option&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;option display="Option One"&gt;option1&lt;/option&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;option display="Option Two"&gt;option 2&lt;/option&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/parameter&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;/parameters&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;supportsMaxLength&gt;false&lt;/supportsMaxLength&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;script&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;&lt;![CDATA[
+&nbsp; &nbsp; &nbsp; &nbsp;mymodule = require 'LUATest'
+&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;if type == 'any' then
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;type = calc:SelectFromTable({'option1','option2'})
+&nbsp; &nbsp; &nbsp; &nbsp;end
+&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;return type
+&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;]]&gt;
+&lt;/script&gt;
+&lt;/Grammar&gt;</code></pre>
+	<br />
+	<h2>The calc Object</h2>
+	<p>The calc object provides all of the same functions that are allowed in other grammars that are detailed in the <a href="#T26">Calculation Functions</a> section. Additional methods available are:</p>
+	<p><b>CSVToTable(filePath as String):</b> Parses a CSV file to a LUA Table.  The first row is read as a header and used to name the table indexes.</p>
+	<p><b>Evaluate(Expression as String):</b> This will evaluate a calculation string using the NCalc engine as is done in the other grammars. Please see the <a href="#T26">Calculation Functions</a> section for more details.</p>
+	<p><b>ExpandPath(filePath as string):</b> Expands all Environment Variables in a path and gives makes the path absolute if it is relative.</p>
+	<p><b>FileToString(FilePath as String):</b> This will read the entire contents of a file and return them as a single string. The file path can be full or relative. Relative file paths are relative to the location of the grammar file.</p>
+	<p><b>FileToTable(FilePath as String):</b> This will read the contents of a file and return them as a zero based table of strings. The file path can be full or relative. Relative file paths are relative to the location of the grammar file.</p>
+	<p><b>SelectFromTable(Values as Table):</b> This will randomly select an item from the table. 
+	It requires the index to be integer based and in ascending order. For example: {1='Item One', 6='Item Two', 10='Item Three'} will tell the function to select a random number between 1 and 10 and select the item that has the closest index greater than the number.</p>
+	<p><b>XMLFileToTable(filePath as String):</b> Parses an xml file into a nexted LUA Tree.</p>
+	<br />
+	<h2>Require Path</h2>
+	<p>The default require search path is expanded to include the [grammar file directories]\lua</p>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T24"></a>
+
+
+	<div id="topictop">&nbsp;</div>
+	<div id="topictitleleft">
+	<div id="topictitle">
+	<h3>Phonotactics Grammar Structure</h3>
+	</div>
+	</div>
+  
+	<div id="main">
+	<p>The information below is specific to Phonotactics Grammar Files. See the <a href="#T20">Grammar Files</a> help section for common information about all 
+  Grammar Files. Phonotactics grammar files are designed for those who use constructed languages in their worlds and develop them using phonology. It uses a fairly simple structure 
+  to mimic the rules of phonotactics.</p>
+	<br />
+	<h2>Case</h2>
+	<p>This value will determine the case to give the generated values. There are four possible values:</p>
+	<p><b>None:</b> The case is unaltered</p>
+	<p><b>Proper:</b> The case is set to proper, setting each letter following a space to upper case.</p>
+	<p><b>Upper:</b> The case is set to upper case, all characters are changed to upper case.</p>
+	<p><b>Lower:</b> The case is set to lower case, all characters are changed to lower case.</p>
+	<br />
+	<h2>Definitions</h2>
+	<p>Definitions hold the keys for the phonotactics and the possible values they can represent. For example, a key named "C" can represent consonants in the English language and would therefore have the value "B,C,D,E,F,G,H,J,K,L,M,N,P,Q,R,S,T,V,W,X,Y,Z" with "," being the delimiter.</p>
+	<p class="big">Properties</p>
+	<table>
+		<tr>
+			<th>Element/Attribute</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>item</td>
+			<td>Represents a single definition</td>
+		</tr>
+		<tr>
+			<td>[key]</td>
+			<td>The key that will represent this definition in the patterns.</td>
+		</tr>
+		<tr>
+			<td>[delimiter]</td>
+			<td>The delimiter that separates the values</td>
+		</tr>
+		<tr>
+			<td>{value}</td>
+			<td>The list of replacement values for this definition</td>
+		</tr>
+	</table>
+	<br />
+	<p class="sub">Sample</p>
+	<pre><code>&lt;Definitions&gt;
+&nbsp; &nbsp;&lt;item key="V" delimiter=","&gt;A,E,I,O,U&lt;/item&gt;
+&nbsp; &nbsp;&lt;item key="C" delimiter=","&gt;B,C,D,F,G,H,J,K,L,M,N,P,Q,R,S,T,V,W,X,Y,Z&lt;/item&gt;
+&lt;/Definitions&gt;</code></pre>
+	<br />
+	
+	<h2>Patterns</h2>
+	<p>Patterns show the possible combinations of definitions that can exist in the language. Using our example above, "C" represents a consonant (and will assume "V" represents vowels), therefore; the word "Tree" would have a pattern of "CCVV". Optional values are surrounded by parenthesis.</p>
+	<p class="big">Properties</p>
+	<table>
+		<tr>
+			<th>Element/Attribute</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>item</td>
+			<td>Represents a single pattern</td>
+		</tr>
+		<tr>
+			<td>[weight]</td>
+			<td>When selecting a pattern, this is the weight this particular pattern has.</td>
+		</tr>
+		<tr>
+			<td>{pattern}</td>
+			<td>The pattern of keys</td>
+		</tr>
+	</table>
+	<br />
+	<p class="sub">Sample</p>
+	<pre><code>&lt;patterns&gt;
+ &nbsp; &nbsp;&lt;item weight="1"&gt;(C)V(C)CV&lt;/item&gt;
+ &nbsp; &nbsp;&lt;item weight="1"&gt;CVC&lt;/item&gt;
+&lt;/patterns&gt;</code></pre>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T25"></a>
+
+
+	<div id="topictop">&nbsp;</div>
+	<div id="topictitleleft">
+	<div id="topictitle">
+		<h3>Table Grammar Structure</h3>
+	</div>
+	</div>
+	
+	<div id="main">
+    <p>The following information is specific to Table Grammar Files which are useful for translating random generation tables into grammar files. See the Grammar Files help section for common information about all <a href="#T20">Grammar Files</a>.</p>
+	<h2>Tables</h2>
+	<p>The Table Grammar File consists of a series of tables and an output. The tables have various options that determine how the table should be handled by the application. The content of the table tags is always a delimited table that contains a header and contents.</p>
+	<br />
+	<h2>Table</h2>
+	<p>The table tag allows for several options, some of which depend on what action type you choose.</p>
+	<table>
+		<tr>
+			<th>Attribute</th>
+			<th>Description</th>
+			<th>Values</td>
+		</tr>
+		<tr>
+			<td>name</td>
+			<td>The name of the table. This value is used when referencing values from the table</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>action</td>
+			<td>This determines how the table is handled by the application</td>
+			<td>random/loop/select</td>
+		</tr>
+		<tr>
+			<td>delimiter</td>
+			<td>The character that will be used to separate the columns of our table</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>column</td>
+			<td>The column that contains the die roll for random tables and the value for select tables</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>randomModifier</td>
+			<td>A modifier to the die roll, this can be a constant or reference a parameter or result of a previous table</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>loopId</td>
+			<td>The column that is used as the identifier for the values of a loop table</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>selectValue</td>
+			<td>The value to find in the select column of a select table</td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+	<br />
+	<h2>Actions</h3>
+	<p>The actions below define the type of table and how it is handled by the application:</p>
+	<p class="big">random</p>
+	<p>Selects a row at random simulating a die roll. This method requires the randomColumn attribute to tell it which column is the die result column. Once selected, the values of the row are stored into variables with names combining the table name and column name. For example, if our table is named "People" and the first non-roll result column is named "Occupation", we can reference the results using the variable: [People.Occupation].</p>
+	<br />
+	<p class="sub">Sample:</p>
+	<pre><code>&lt;table name="Town Size" delimiter="|" action="Random" column="Roll"&gt;&lt;![CDATA[
+Roll |Town Size &nbsp;|Population &nbsp; &nbsp; &nbsp; &nbsp; |GP Limit |PCA|CM
+10 &nbsp; |Thorp &nbsp; &nbsp; &nbsp;|=Rnd(20,80) &nbsp; &nbsp; &nbsp; &nbsp;|40 gp &nbsp; &nbsp;|-1 |-3 &nbsp; &nbsp; &nbsp; &nbsp;
+30 &nbsp; |Hamlet &nbsp; &nbsp; |=Rnd(81,400) &nbsp; &nbsp; &nbsp; |100 gp &nbsp; |0 &nbsp;|-2
+50 &nbsp; |Village &nbsp; &nbsp;|=Rnd(401,900) &nbsp; &nbsp; &nbsp;|200 gp &nbsp; |+1 |-1
+70 &nbsp; |Small Town |=Rnd(901,2000) &nbsp; &nbsp; |800 gp &nbsp; |+2 |0 &nbsp;
+85 &nbsp; |Large Town |=Rnd(2001,5000) &nbsp; &nbsp;|3000 gp &nbsp;|+3 |+3
+95 &nbsp; |Small City |=Rnd(5001,12000) &nbsp; |15000 gp |+4 |+6
+99 &nbsp; |Large City |=Rnd(12001,25000) &nbsp;|40000 gp |+5 |+9
+100 &nbsp;|Metropolis |=Rnd(25001,100000) |100000 gp|+6 |+12
+]]&gt;&lt;/table&gt;</code></pre>
+	<br />
+	<p class="big">loop</p>
+	<p>The generator will loop through each row of a loop table and calculate the values of all columns. The loopId attribute is required for these tables in order to tell the application which column to use when referencing values of the table. Results of this type of table are referenced using the table name, the loop id value, and the column name as such: [Highest-Level locals.Adept.Level].</p>
+	<br />
+	<p class="sub">Sample:</p>
+	<pre><code>&lt;table name="Highest-Level locals" delimiter="|" loopId="Class"&gt;&lt;![CDATA[
+Class &nbsp; &nbsp; &nbsp;|Level &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+Barbarian &nbsp;|=MakeOrdinal(Max(Roll(1,4)+[Town Size.CM],0))
+Bard &nbsp; &nbsp; &nbsp; |=MakeOrdinal(Max(Roll(1,6)+[Town Size.CM],0))
+Cleric &nbsp; &nbsp; |=MakeOrdinal(Max(Roll(1,6)+[Town Size.CM],0))
+Druid &nbsp; &nbsp; &nbsp;|=MakeOrdinal(Max(Roll(1,6)+[Town Size.CM],0))
+Fighter &nbsp; &nbsp;|=MakeOrdinal(Max(Roll(1,8)+[Town Size.CM],0))
+]]&gt;&lt;/table&gt;</code></pre>
+<p><br/></p>
+	<p class="big">select</p>
+	<p>This type of table tells the generator to select a specific row based on the criteria found in the column and selectValue attributes. Like the random table type, the resultant values are referenced using the table name and column name such as [Size.Modifier].</p>
+	<br />
+	<p class="sub">Sample:</p>
+	<pre><code>&lt;table name="Size" column="Size" delimiter="|" selectValue="=[SizeParameter]"&gt;&lt;![CDATA[
+Size &nbsp; | Modifier
+Small &nbsp;| +1
+Medium | 0
+Large &nbsp;| -1
+]]&gt;&lt;/table&gt;</code></pre>
+	
+	<h2>Calculations and Variables</h2>
+	<p>You will have noticed in several of the samples above that I had values of attributes and columns that began with an equals sign. These are values that are calculated by the application rather than being literal values.</p>
+	<br />
+	<p class="big">Calculations</p>
+	<p>Calculations are handled by a modified version of a programming library known as nCalc. You can find documentation on how it works at its website. The additional functions available are detailed in the <a href="#T26">Calculation Functions</a> help topic.</p>
+	<p class="big">Variables</p>
+	<p>Variables come from two sources: Parameters and Table Results. All variables are surrounded by square brackets (i.e. []). Parameters are referenced by their name (e.g. [Gender]) and table results are referenced using the methods described in the tables section above.</p>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T26"></a>
+
+
+	<div id="topictop">&nbsp;</div>
+	<div id="topictitleleft">
+	<div id="topictitle">
+		<h3>Calculation Functions</h3>
+	</div>
+	</div>
+  
+	<div id="main">
+	<p>Below you can find a list of the custom calculation functions available for all grammar types. 
+	For the standard functionality available please visit the NCalc website at </span><a href="https://ncalc.codeplex.com/" target="_blank">Codeplex</a><image src="img/popout.gif" /></p>
+	<br />
+	<table>
+		<tr>
+			<th>Function</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>Roll(Number, Die, [options])</td>
+			<td>Rolls the type of die specified the number of times specified and returns the result. &nbsp;For more information on the options, please see the section on </span><a href="CalculationFunctions.html#DieRollOptions">Die Roll Options</a> below.</td>
+		</tr>
+		<tr>
+			<td>TargetRoll(Number, Die, Target, [options])</td>
+			<td>Rolls the type of die specified and compares each roll against the target returning the number of successes or failures. &nbsp;For more information about the options, please see the section on </span><a href="CalculationFunctions.html#DieRollOptions">Die Roll Options</a> below.</td>
+		</tr>
+		<tr>
+			<td>RollResults([delimiter])</td>
+			<td>Returns the full results of the last TargetRoll call delimited by the provided delimiter which is a space by default.</td>
+		</tr>
+		<tr>
+			<td>RolledOnes()</td>
+			<td>Returns the number of 1's rolled on the last TargetRoll call</td>
+		</tr>
+		<tr>
+			<td>Rnd(Max)</td>
+			<td>Returns a random integer between 1 and Max inclusively.</td>
+		</tr>
+		<tr>
+			<td>Rnd(Min,Max)</td>
+			<td>Returns a random integer between Min and Max inclusively.</td>
+		</tr>
+		<tr>
+			<td>ToText(Number)</td>
+			<td>Returns the text representation of the Number (ex: ToText(7) =&gt; seven)</td>
+		</tr>
+		<tr>
+			<td>ToOrdinal(Number)</td>
+			<td>Returns the ordinal version of the Number (ex: ToOrdinal(11) =&gt; 11th)</td>
+		</tr>
+		<tr>
+			<td>UCase(String)</td>
+			<td>Returns the string in all caps. (ex: UCase("orcs") =&gt; ORCS)</td>
+		</tr>
+		<tr>
+			<td>LCase(String)</td>
+			<td>Returns the string in all lower case. (ex: LCase("ORCS") =&gt; orcs)</td>
+		</tr>
+		<tr>
+			<td>TCase(String)</td>
+			<td>Returns the string with all words capitalized. (ex: PCase("john henry doe") =&gt; John Henry Doe)</td>
+		</tr>
+		<tr>
+			<td>Format(Value, String)</td>
+			<td>Returns the Value formatted using the String format. &nbsp;See Microsoft's documentation on the <a href="http://msdn.microsoft.com/en-us/library/microsoft.visualbasic.strings.format(v=vs.110).aspx" target="_blank">Format method</a> for more details. (ex: Format(10000,"#,##0") =&gt; 10,000)</td>
+		</tr>
+		<tr>
+			<td>Generate(GrammarFileName or Path, [MaxLength])</td>
+			<td>Executes the grammar with the file name of GrammarFileName.rnd.xml providing the optional maxLength. &nbsp;Does not currently support generators with parameters.</td>
+		</tr>
+		<tr>
+			<td>Pick([ItemList])</td>
+			<td>Returns a random item from the provided list.  Ex: Pick("Dog","Cow","Sheep") =&gt; Dog)</td>
+		</tr>
+	</table>
+	<br />
+	<a name="T26_DieRollOptions">
+	<p class="big">Roll Options</p>
+	<p>The following strings can be added as parameters to the Roll method after the number and die parameters</p>
+	<br />
+	
+	<p class="bold">Drop Lowest</p>
+	<p><b>Command String:</b> 'DL'</p>
+	<p>Drop the lowest die roll. This can be followed by a number to indicate the number of dice to drop.</p>
+	<br />
+	<p class="sub">Examples:</p>
+	<pre><code>Roll(2,20,'DL') will roll 2 20-sided dice and drop the lowest roll as is done with Advantage in D&amp;D 5e
+Roll(5,6,'DL',2) will roll 5 6-sided dice and drop the lowest 2 rolls</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 15, 10 Result: 15
+Die Results: 3, 4, 1, 6, 5 Result: 15</code></pre>
+	<br />
+	
+	<p class="bold">Drop Highest
+	<p><b>Command String:</b> 'DH'</p>
+	<p>Drop the highest die roll. This can be followed by a number to indicate the number of dice to drop.</p>
+	<br />
+	<p class="sub">Examples:</p>
+	<pre><code>Roll(2,20,'DH') will roll 2 20-sided dice and drop the highest roll as is done with Disadvantage in D&amp;D 5e
+Roll(5,10,'DH',4) will roll 5 10-sided dice and drop the highest 4 leaving only the lowest roll</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 15, 10 Result: 10
+Die Results: 2, 5, 1, 9, 10 Result: 1</code></pre>
+	<br />
+	
+	<p class="bold">Exploding Dice</p>
+	<p><b>Command String:</b> 'EX'</p>
+	<p>Exploding dice re-roll all maximum rolls and sums the results</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(4,10,'EX') will roll 4 10-sided dice and re-roll all 10's</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 4, 10, 3, 6 + 10 Result: 33</code></pre>
+	<br />
+	
+	<p class="bold">Compound Exploding Dice</p>
+	<p><b>Command String:</b> 'CX'</p>
+	<p>Compound exploding dice re-rolls all maximum rolls until none remain and adds the results</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(4,10,'CX') will roll 4 10-sided dice and re-roll all 10's</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 8, 10, 2, 10 + 10, 8 + 10 + 3 Result: 61</code></pre>
+	<br />
+	
+	<p class="bold">Re-roll Below</p>
+	<p><b>Command String</b> 'RB'</p>
+	<p>Re-roll below a given result</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(4,10,'RB',5) will roll 4 10-sided dice and re-roll all results under 5</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: <span class="rvts21">3<span class="rvts18">, 10, 5, <span class="rvts21">2<span class="rvts18"> + 6, 8 Result: 29</code></pre>
+	<br />
+	
+	<p class="bold">Over Target</p>
+	<p><b>Command String</b> 'GT'</p>
+	<p>Compare results to the target number provided looking for rolls greater than or equal to the target and return success or failure</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(3,10,'GT',6) will roll 3 10-sided dice and return success or failure depending on the number of rolls over 6 as is done in New World of Darkness games</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 1, 1, 6, 9, 10 Result: Success (3)</code></pre>
+	<br />
+	
+	<p class="bold">Under Target</p>
+	<p><b>Command String</b> 'LT'</p>
+	<p>Compare results to the target number provided looking for rolls under the target and return success or failure</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(2,20,'LT',10) will roll 2 20-sided dice and return success or failure depending on the number of rolls under 10.</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 10, 15 Result: Failure (-2)</code></pre>
+	<br />
+	
+	<p class="bold">Rule of Ones</p>
+	<p><b>Command String</b> 'R1'</p>
+	<p>For target rolls ('GT','LT') this enacts the rule of one where one's remove successes from the result</p>
+	<br />
+	<p class="sub">Example:</p>
+	<pre><code>Roll(4,10,'GT',6,'R1') will roll 4 10-sided dice and remove successes equal to the number of one's rolled and return success or failure as is done in Old World of Darkness</code></pre>
+	<br />
+	<p class="sub">Sample Results:</p>
+	<pre><code>Die Results: 1, 1, 10, 4 Result: Failure (-1)</code></pre>
+
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T27"></a>
+<p class="pbreak" style="page-break-before: always" />
+<a name="T28"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>How To Generate Content</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <img src="img/how to generate content.png" class="screenShot" />
+    <p>
+      Using the steps below you will learn how to generate content in The Randomizer.
+    </p>
+
+    <p class="big">
+      Steps
+    </p>
+    <p>
+      <ol class="shr">
+        <li>Select a generator from the list of generators on the far left panel 
+        of the main screen.</li>
+        <li>If there are parameters available, populate them with your selections.</li>
+        <li>If Max Length is available, enter in the maximum length you would like the content to be <i>(Not shown in the screen shot)</i>.</li>
+        <li>Select the number of times you would like the generator to repeat.</li>
+        <li>Click on the <b>Generate</b> button.</li>
+      </ol>
+    </p>
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T29"></a>
+
+
+	<div id="topictop">&nbsp;</div>
+	<div id="topictitleleft">
+	<div id="topictitle">
+		<h3>How to Filter Generators</h3>
+	</div>
+	</div>
+  
+	<div id="main">
+		<p>Filtering the generators is very easy and it is a great way to find specific generators that you would like to use.</p>
+		<p class="big">Steps</p>
+		<ol>
+			<li>When you first launch The Randomizer, you will see the Tabs bar at the top of the window and all of the tags listed will
+			be highlighted.</li>
+			<li>At this point, you can do one of the following
+				<ul class="shr">
+					<li>Click on tags that you do not want to see.</li>
+					<li>Click on the <b>Unselect All Tags</b> button and select those tags you would like to see.</li>
+					<li>At any time, you can click the <b>Select All Tags</b> button to reselect all tags.</li>
+				</ul>
+			</li>
+			<li>All grammars that have at least one of the selected tags will show in the generators list.</li>
+		</ol>
+
+	</div>
+	<div id="foot">
+		2014-2015 Lance Boudreaux
+	</div>
+
+<p class="pbreak" style="page-break-before: always" />
+<a name="T30"></a>
+
+
+  <div id="topictop">&nbsp;</div>
+  <div id="topictitleleft">
+    <div id="topictitle">
+      <h3>How to Edit Tags</h3>
+    </div>
+  </div>
+  
+  <div id="main">
+    <p class="big">
+      Introduction
+    </p>
+	<p>
+	Tags are used to categorize grammars for easy filtering of the generator list.  Tags can be used to group grammars into any groups desired.  One use of this 
+	is to have "favorites".  For example, if you are running a D&amp;D 5e game, you could have two tags: [D&amp;D 5e Preparation] and [D&amp;D 5e In Game].
+	</p>
+
+    <p class="big">
+      Steps
+    </p>
+    <p>
+      <ol>
+		<li>Select the grammar in the generator list you want to change the tags for</li>
+		<li>In the Details you will see a list of tags with a link next to them that says [Edit]</li>
+		<li>Click the [Edit] link to launch the Tag Editor</li>
+		<li>To add a new Tag, click the Add button and enter the name of the new tag</li>
+		<li>To remove a tag, select it in the list and click the Delete button</li>
+		<li>To edit a tag, select it in the list and edit the text</li>
+		<li>When you are done, click the Ok button to save your changes</li>
+	  </ol>
+    </p>
+    <br>
+
+  </div>
+  <div id="foot">
+    2014-2015 Lance Boudreaux
+  </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,40 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <FlowDocument x:Key="Contributors">
+        <Table>
+            <Table.Columns>
+                <TableColumn Width="120" />
+                <TableColumn />
+                <TableColumn />
+            </Table.Columns>
+            <TableRowGroup>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>Development:</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph FontWeight="Bold">Lance Boudreaux</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="http://solitudesoftware.webs.com">Solitude Software</Hyperlink>
+                        </Paragraph>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>Icon Design:</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph FontWeight="Bold">Hubert Tomaszewski</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="http://rndmnm.deviantart.com/">rndmnm on Deviant Art</Hyperlink>
+                        </Paragraph>
+                    </TableCell>
+                </TableRow>
+            </TableRowGroup>
+        </Table>
+    </FlowDocument>
+</ResourceDictionary>
