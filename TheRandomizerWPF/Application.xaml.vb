@@ -4,22 +4,9 @@ Imports MahApps.Metro
 Imports System.ComponentModel
 
 Class Application
-
-    Friend Enum RenderEngineType
-        WebBrowser
-        HtmlRenderer
-    End Enum
-
-
     Public Sub New()
         AddHandler My.Application.DispatcherUnhandledException, AddressOf UnhandledExceptionHandler
     End Sub
-
-    Friend Shared ReadOnly Property RenderEngine As RenderEngineType
-        Get
-            Return RenderEngineType.HtmlRenderer
-        End Get
-    End Property
 
     Private Sub UnhandledExceptionHandler(ByVal sender As Object, ByVal e As System.Windows.Threading.DispatcherUnhandledExceptionEventArgs)
         Dim dialog As New ExceptionDialog("Unhandled Exception", e.Exception)

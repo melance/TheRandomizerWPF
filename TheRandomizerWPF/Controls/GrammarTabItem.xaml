@@ -6,7 +6,6 @@
              xmlns:metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
              xmlns:util="clr-namespace:Utility;assembly=Utility"
              xmlns:cnv="clr-namespace:TheRandomizerWPF.ValueConverters"
-             xmlns:html="clr-namespace:TheArtOfDev.HtmlRenderer.WPF;assembly=HtmlRenderer.WPF"
              DataContext="{Binding RelativeSource={RelativeSource Self}}"
              HorizontalAlignment="Stretch"
              VerticalAlignment="Stretch"
@@ -21,7 +20,7 @@
         <CommandBinding Command="Save" Executed="Save_Executed" CanExecute="Save_CanExecute" />
         <CommandBinding Command="Delete" Executed="Clear_Executed" CanExecute="Clear_CanExecute" />
         <CommandBinding Command="Copy" Executed="Copy_Executed" CanExecute="Copy_CanExecute" />
-        <CommandBinding Command="{x:Static util:CustomCommands.Generate}" Executed="Generate_Executed" CanExecute="Generate_CanExecute" />
+        <CommandBinding Command="{x:Static util:CustomCommands.Generate}" Executed="Generate" CanExecute="CanGenerate" />
         <CommandBinding Command="{x:Static util:CustomCommands.Cancel}" Executed="Cancel_Executed" />
         <CommandBinding Command="Print" Executed="Print_Executed" CanExecute="Print_CanExecute" />
     </UserControl.CommandBindings>
@@ -130,18 +129,18 @@
                 <Button ToolTip="Clear" Command="Delete" DockPanel.Dock="Right" Padding="12" Margin="3,3,0,3" Style="{DynamicResource MetroCircleButtonStyle}">
                     <Rectangle Width="12" Height="12" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
                         <Rectangle.OpacityMask>
-                            <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_close}" />
+                            <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_clear}" />
                         </Rectangle.OpacityMask>
                     </Rectangle>
                 </Button>
-                <Button ToolTip="Select None" Visibility="Collapsed" Command="{x:Static util:CustomCommands.SelectNone}" DockPanel.Dock="Right" Padding="12" Margin="3,3,0,3" Style="{DynamicResource MetroCircleButtonStyle}">
+                <Button ToolTip="Select None" Command="{x:Static util:CustomCommands.SelectNone}" DockPanel.Dock="Right" Padding="12" Margin="3,3,0,3" Style="{DynamicResource MetroCircleButtonStyle}">
                     <Rectangle Width="12" Height="12" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
                         <Rectangle.OpacityMask>
                             <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_checkmark_uncrossed}" />
                         </Rectangle.OpacityMask>
                     </Rectangle>
                 </Button>
-                <Button ToolTip="Select All" Visibility="Collapsed" Command="SelectAll" DockPanel.Dock="Right" Padding="12" Margin="3,3,0,3" Style="{DynamicResource MetroCircleButtonStyle}">
+                <Button ToolTip="Select All" Command="SelectAll" DockPanel.Dock="Right" Padding="12" Margin="3,3,0,3" Style="{DynamicResource MetroCircleButtonStyle}">
                     <Rectangle Width="12" Height="12" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
                         <Rectangle.OpacityMask>
                             <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_checkmark}" />
@@ -158,7 +157,6 @@
                 </DockPanel>
             </Grid>
             <WebBrowser x:Name="webBrowser" Margin="3" AllowDrop="False" />
-            <html:HtmlPanel x:Name="htmlPanel" Margin="3" />
         </DockPanel>
     </Grid>
 </UserControl>

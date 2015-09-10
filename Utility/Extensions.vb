@@ -5,23 +5,8 @@ Imports System.Text
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Media
-Imports System.Windows.Media.Imaging
 
 Public Module Extensions
-
-    <Extension>
-    Public Sub Print(extended As BitmapSource, ByVal description As String)
-        Dim pd As New PrintDialog()
-
-        If pd.ShowDialog() Then
-            Dim dv As New DrawingVisual()
-            Using dc As DrawingContext = dv.RenderOpen()
-                dc.DrawImage(extended, New Rect(0, 0, extended.Width, extended.Height))
-            End Using
-            pd.PrintVisual(dv, description)
-        End If
-    End Sub
-
     <Extension>
     Public Function GetParentWindow(ByVal extended As DependencyObject) As Window
         Dim parent As DependencyObject = VisualTreeHelper.GetParent(extended)

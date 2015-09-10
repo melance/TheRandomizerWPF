@@ -14,9 +14,7 @@ C:\Users\lboudreaux\Documents\Visual Studio 2012\Projects\TheRandomizerWPF\Gramm
 C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x86\Debug\lua52.dll
 C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x86\Debug\Grammars.dll
 C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x86\Debug\Grammars.pdb
-C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x86\Debug\KeraLua.dll
 C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x86\Debug\NCalc.dll
-C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x86\Debug\NLua.dll
 C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x86\Debug\Utility.dll
 C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x86\Debug\Utility.pdb
 C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\obj\x86\Debug\Grammars.vbprojResolveAssemblyReference.cache
@@ -24,3 +22,5 @@ C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\obj\x86\De
 C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\obj\x86\Debug\Grammars.vbproj.GenerateResource.Cache
 C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\obj\x86\Debug\Grammars.dll
 C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\obj\x86\Debug\Grammars.pdb
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x86\Debug\KeraLua.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x86\Debug\NLua.dll

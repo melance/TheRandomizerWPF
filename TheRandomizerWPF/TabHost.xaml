@@ -4,17 +4,14 @@
                          xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
                          xmlns:dockablz="clr-namespace:Dragablz.Dockablz;assembly=Dragablz"
                          xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
-                         Title="The Randomizer" 
+                         Title="TabHost" 
                          Height="300" 
-                         Width="300" 
-                         WindowState="Normal"
-                         WindowStartupLocation="CenterOwner"
-                         Icon="TheRandomizer.ico">
-    
-    <dragablz:TabablzControl Name="tabContainer" ShowDefaultCloseButton="True" AddLocationHint="After">
-        <dragablz:TabablzControl.InterTabController>
-            <dragablz:InterTabController />
-        </dragablz:TabablzControl.InterTabController>
-    </dragablz:TabablzControl>
-    
+                         Width="300" WindowStartupLocation="CenterOwner">
+    <dockablz:Layout>
+        <dragablz:TabablzControl Name="tabContainer">
+            <dragablz:TabablzControl.InterTabController>
+                <dragablz:InterTabController />
+            </dragablz:TabablzControl.InterTabController>
+        </dragablz:TabablzControl>
+    </dockablz:Layout>
 </dragablz:DragablzWindow>
