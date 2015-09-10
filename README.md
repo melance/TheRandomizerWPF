@@ -1,6 +1,6 @@
 # README #
 
-### What is The Ranomizer ###
+### What is The Randomizer ###
 ---
 * The Randomizer is the Infinitely Customizeable Random Content Generator.  It was designed with role playing game players and writers in mind though it is far from limited to those folks.
 * Using an easy to use but robust and flexible interface you can generate content of almost any sort including *names, descriptions, detailed characters, maps,* and *much more*
