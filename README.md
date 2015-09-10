@@ -6,6 +6,8 @@
 * Using an easy to use but robust and flexible interface you can generate content of almost any sort including *names, descriptions, detailed characters, maps,* and *much more*
 * Included with the initial installation are dozens of generators to get you started, however; the true power of The Randomizer is the ability to write your own generators in one of several simple xml layouts or using the built in Grammar Editor.
 
+![The Randomizer](The%20Randomizer%20ScreenShot.png "The Randomizer Main Screen")
+
 ### How do I get set up? ###
 ---
 There are two ways to set up The Randomizer:
