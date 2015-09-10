@@ -12,6 +12,8 @@ Imports MahApps.Metro.Controls.Dialogs
 Imports mshtml
 Imports TheRandomizerWPF.Controls
 Imports Dragablz
+Imports TheRandomizerWPF.Settings
+Imports System.Collections.Specialized
 
 Class MainWindow
     Inherits MetroWindow
@@ -224,6 +226,7 @@ Class MainWindow
         End If
         If Not flySettings.IsVisible AndAlso tabResults.SelectedItem IsNot Nothing Then tabResults.Visibility = Windows.Visibility.Visible
         Visibility = Windows.Visibility.Visible
+        LoadUserSettings()
     End Sub
 
     Private Sub LoadGrammars_ReportProgress(sender As Object, e As ProgressChangedEventArgs)
@@ -315,13 +318,19 @@ Class MainWindow
     End Sub
 
     Private Sub LoadWindowSettings()
-        Dim settings As New WindowSettings
+        Dim settings As New WindowPosition
         Me.Height = settings.WindowHeight
         Me.Width = settings.WindowWidth
         Me.Top = settings.WindowTop
         Me.Left = settings.WindowLeft
         Me.WindowState = settings.WindowState
         Me.colGenerators.Width = New GridLength(settings.GeneratorsWidth)
+    End Sub
+
+    Private Sub LoadUserSettings()
+        If My.Settings.SelectedTags IsNot Nothing Then
+            SelectTheseTags(My.Settings.SelectedTags)
+        End If
     End Sub
 
     Private Sub OpenMCGenerator()
@@ -343,7 +352,7 @@ Class MainWindow
     End Sub
 
     Private Sub SaveWindowSettings()
-        Dim settings As New WindowSettings
+        Dim settings As New WindowPosition
         settings.WindowHeight = Me.Height
         settings.WindowWidth = Me.Width
         settings.WindowTop = Me.Top
@@ -351,6 +360,13 @@ Class MainWindow
         settings.WindowState = Me.WindowState
         settings.GeneratorsWidth = Me.colGenerators.Width.Value
         settings.Save()
+    End Sub
+
+    Private Sub SaveUserSettings()
+        If My.Settings.SelectedTags Is Nothing Then My.Settings.SelectedTags = New StringCollection
+        My.Settings.SelectedTags.Clear()
+        My.Settings.SelectedTags.AddRange(GetTagList().ToArray)
+        My.Settings.Save()
     End Sub
 
     Private Sub ShowAbout()
@@ -385,6 +401,13 @@ Class MainWindow
         Next
         FilterGrammarFiles()
     End Sub
+
+    Private Sub SelectTheseTags(ByVal tagList As StringCollection)
+        For Each chkTag As ToggleButton In pnlTags.Children
+            chkTag.IsChecked = Not tagList.Contains(chkTag.Content.ToString)
+        Next
+        FilterGrammarFiles()
+    End Sub
 #End Region
 
 #Region "Routed Commands"
@@ -411,6 +434,10 @@ Class MainWindow
 
     Private Sub MainWindow_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         SaveWindowSettings()
+    End Sub
+
+    Private Sub MainWindow_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        SaveUserSettings()
     End Sub
 
     Private Sub MainWindow_Loaded(sender As Object, e As RoutedEventArgs) Handles Me.Loaded
@@ -505,12 +532,10 @@ Class MainWindow
     End Sub
 
     Private Sub flySettings_IsVisibleChanged(sender As Object, e As DependencyPropertyChangedEventArgs) Handles flySettings.IsVisibleChanged
-        If Application.RenderEngine = Application.RenderEngineType.WebBrowser Then
-            If flySettings.IsVisible Then
-                tabResults.Visibility = Windows.Visibility.Hidden
-            Else
-                tabResults.Visibility = Windows.Visibility.Visible
-            End If
+        If flySettings.IsVisible Then
+            tabResults.Visibility = Windows.Visibility.Hidden
+        Else
+            tabResults.Visibility = Windows.Visibility.Visible
         End If
     End Sub
 

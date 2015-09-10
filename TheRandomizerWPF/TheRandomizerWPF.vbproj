@@ -107,28 +107,11 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\References\Dragablz.dll</HintPath>
     </Reference>
-    <Reference Include="HtmlRenderer">
-      <HintPath>..\References\HtmlRenderer.dll</HintPath>
-    </Reference>
-    <Reference Include="HtmlRenderer.PdfSharp">
-      <HintPath>..\References\HtmlRenderer.PdfSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="HtmlRenderer.WPF">
-      <HintPath>..\References\HtmlRenderer.WPF.dll</HintPath>
-    </Reference>
     <Reference Include="MahApps.Metro">
       <HintPath>..\packages\MahApps.Metro.1.1.2.0\lib\net45\MahApps.Metro.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="PdfSharp, Version=1.32.3057.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\PDFsharp.1.32.3057.0\lib\net20\PdfSharp.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="PdfSharp.Charting, Version=1.32.3057.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\PDFsharp.1.32.3057.0\lib\net20\PdfSharp.Charting.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -172,7 +155,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SettingsStorage.vb" />
+    <Compile Include="Settings\SettingsStorage.vb" />
     <Compile Include="ShowFlowDocument.xaml.vb">
       <DependentUpon>ShowFlowDocument.xaml</DependentUpon>
     </Compile>
@@ -230,99 +213,9 @@
     <Compile Include="ValueConverters\ObjectIsNothingToBooleanConverter.vb" />
     <Compile Include="ValueConverters\StringToVisibilityConverter.vb" />
     <Compile Include="TextBoxMaskBehavior.vb" />
-    <Compile Include="WindowSettings.vb" />
+    <Compile Include="Settings\WindowSettings.vb" />
     <Resource Include="TheRandomizer.ico" />
     <Resource Include="DataFiles\Curious Items.rnd.xml" />
-    <Content Include="DataFiles\Images\DungeonTile001.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile002.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile003.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile004.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile005.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile006.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile007.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile008.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile009.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile010.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile011.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile012.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile013.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile014.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile015.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile016.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile017.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile018.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile019.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile020.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile021.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile022.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile023.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile024.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile025.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile026.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile027.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile028.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile029.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataFiles\Images\DungeonTile030.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="DataFiles\Maze.rnd.xml" />
     <Content Include="DataFiles\Monster DnD 5e.rnd.xml" />
     <Content Include="DataFiles\DnD 5e Dungeon Dressing.rnd.xml">

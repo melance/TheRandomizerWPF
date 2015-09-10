@@ -219,6 +219,17 @@ Partial Friend NotInheritable Class MySettings
             Me("Theme") = value
         End Set
     End Property
+    
+    <Global.System.Configuration.UserScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+    Public Property SelectedTags() As Global.System.Collections.Specialized.StringCollection
+        Get
+            Return CType(Me("SelectedTags"),Global.System.Collections.Specialized.StringCollection)
+        End Get
+        Set
+            Me("SelectedTags") = value
+        End Set
+    End Property
 End Class
 
 Namespace My

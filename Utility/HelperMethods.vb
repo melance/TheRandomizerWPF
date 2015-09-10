@@ -5,7 +5,6 @@ Imports System.Security.AccessControl
 Imports Microsoft.Win32
 Imports System.Security
 Imports System.Drawing
-Imports System.Windows
 
 Public NotInheritable Class HelperMethods
 

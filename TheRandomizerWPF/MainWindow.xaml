@@ -213,11 +213,13 @@
                     <RowDefinition />
                 </Grid.RowDefinitions>
                 <Label Content="Generators" Style="{DynamicResource TitleLabel}" Grid.Row="0" />
-                <dragablz:TabablzControl x:Name="tabResults" ShowDefaultCloseButton="True" AddLocationHint="After" Grid.Row="1" Margin="3">
-                    <dragablz:TabablzControl.InterTabController>
-                        <dragablz:InterTabController InterTabClient="{Binding InterTabClientInstance}" />
-                    </dragablz:TabablzControl.InterTabController>
-                </dragablz:TabablzControl>
+                <dockablz:Layout Grid.Row="1" Margin="3">
+                    <dragablz:TabablzControl x:Name="tabResults" ShowDefaultCloseButton="True" AddLocationHint="After">
+                        <dragablz:TabablzControl.InterTabController>
+                            <dragablz:InterTabController InterTabClient="{Binding InterTabClientInstance}" />
+                        </dragablz:TabablzControl.InterTabController>
+                    </dragablz:TabablzControl>
+                </dockablz:Layout>
             </Grid>
         </Grid>
     </Grid>

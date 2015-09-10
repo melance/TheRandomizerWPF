@@ -9,6 +9,7 @@ Imports Grammars.Table
 Imports Utility
 Imports System.ComponentModel
 Imports System.Runtime.CompilerServices
+Imports TheRandomizerWPF.Settings
 
 Namespace Tools
     Public Class GrammarEditor
@@ -226,7 +227,7 @@ Namespace Tools
 
         Private Sub GrammarEditor_Loaded(sender As Object, e As RoutedEventArgs) Handles Me.Loaded
             GrammarAvailable = False
-            MRUStorage = New SettingsStorage("RecentGrammarFiles")
+            MRUStorage = New MRUStorage("RecentGrammarFiles")
         End Sub
 
         Private Sub Save_CanExecute(sender As Object, e As CanExecuteRoutedEventArgs)

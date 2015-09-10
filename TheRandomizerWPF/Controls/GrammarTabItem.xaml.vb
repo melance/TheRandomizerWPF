@@ -1,10 +1,6 @@
 ﻿Imports Grammars
 Imports MahApps.Metro.Controls
 Imports System.ComponentModel
-Imports Utility
-Imports Utility.HelperMethods
-Imports TheArtOfDev.HtmlRenderer.WPF
-Imports TheArtOfDev.HtmlRenderer.PdfSharp
 
 Namespace Controls
     Public Class GrammarTabItem
@@ -36,14 +32,6 @@ Namespace Controls
             ' This call is required by the designer.
             InitializeComponent()
 
-            Select Case Application.RenderEngine
-                Case Application.RenderEngineType.WebBrowser
-                    webBrowser.Visibility = Windows.Visibility.Visible
-                    htmlPanel.Visibility = Windows.Visibility.Collapsed
-                Case Application.RenderEngineType.HtmlRenderer
-                    webBrowser.Visibility = Windows.Visibility.Collapsed
-                    htmlPanel.Visibility = Windows.Visibility.Visible
-            End Select
             Me.Grammar = grammar
         End Sub
 #End Region
@@ -121,28 +109,32 @@ Namespace Controls
 
         Public ReadOnly Property AreResultsEmpty As Boolean
             Get
-                Select Case Application.RenderEngine
-                    Case Application.RenderEngineType.HtmlRenderer
-                        Return htmlPanel Is Nothing OrElse String.IsNullOrEmpty(htmlPanel.Text)
-                    Case Application.RenderEngineType.WebBrowser
-                        Return webBrowser Is Nothing OrElse webBrowser.Document Is Nothing OrElse Document.body Is Nothing
-                End Select
+                Return webBrowser Is Nothing OrElse webBrowser.Document Is Nothing OrElse Document.body Is Nothing
             End Get
         End Property
 #End Region
 
 #Region "Commands"
+        Public Sub CanGenerate(ByVal sender As Object, ByVal e As CanExecuteRoutedEventArgs)
+            e.CanExecute = Grammar IsNot Nothing
+        End Sub
+
+        Public Sub Generate_Executed()
+            Try
+                Me.UpdateLayout()
+                btnGenerate.IsEnabled = False
+                Generate()
+            Finally
+                btnGenerate.IsEnabled = True
+            End Try
+        End Sub
+
         Private Sub Cancel_Executed(sender As Object, e As ExecutedRoutedEventArgs)
             If Grammar IsNot Nothing Then Grammar.Cancel()
         End Sub
 
         Private Sub Clear_Executed(sender As Object, e As ExecutedRoutedEventArgs)
-            Select Case Application.RenderEngine
-                Case Application.RenderEngineType.HtmlRenderer
-                    htmlPanel.Text = String.Empty
-                Case Application.RenderEngineType.WebBrowser
-                    Document.clear()
-            End Select
+            Document.clear()
         End Sub
 
         Private Sub Clear_CanExecute(sender As Object, e As CanExecuteRoutedEventArgs)
@@ -150,16 +142,7 @@ Namespace Controls
         End Sub
 
         Private Sub Copy_Executed(sender As Object, e As ExecutedRoutedEventArgs)
-            Select Case Application.RenderEngine
-                Case Application.RenderEngineType.HtmlRenderer
-                    If Not String.IsNullOrEmpty(htmlPanel.SelectedText) Then
-                        ClipboardHelper.CopyToClipboard(htmlPanel.SelectedHtml, htmlPanel.SelectedText)
-                    Else
-                        ClipboardHelper.CopyToClipboard(htmlPanel.GetHtml, htmlPanel.Text)
-                    End If
-                Case Application.RenderEngineType.WebBrowser
-                    Document.execCommand(COPY_COMMAND)
-            End Select
+            Document.execCommand(COPY_COMMAND)
         End Sub
 
         Private Sub Copy_CanExecute(sender As Object, e As CanExecuteRoutedEventArgs)
@@ -180,63 +163,16 @@ Namespace Controls
             e.CanExecute = Grammar IsNot Nothing
         End Sub
 
+        Private Sub Print_Executed(sender As Object, e As ExecutedRoutedEventArgs)
+            Document.execCommand("Print", True)
+        End Sub
+
         Private Sub Print_CanExecute(sender As Object, e As CanExecuteRoutedEventArgs)
             e.CanExecute = Not AreResultsEmpty
         End Sub
 
-        Private Sub Print_Executed(sender As Object, e As ExecutedRoutedEventArgs)
-            Select Case Application.RenderEngine
-                Case Application.RenderEngineType.HtmlRenderer
-                    Dim html As String = htmlPanel.GetHtml
-                    Dim bmp As BitmapFrame = HtmlRender.RenderToImage(html, HtmlRender.Measure(html, 8.5 * 96))
-
-                    bmp.Print(Grammar.Name)
-                Case Application.RenderEngineType.WebBrowser
-                    Document.execCommand("Print", True)
-            End Select
-        End Sub
-
         Private Sub Save_Executed(sender As Object, e As ExecutedRoutedEventArgs)
-            Select Case Application.RenderEngine
-                Case Application.RenderEngineType.HtmlRenderer
-                    Dim dlgSave As New Microsoft.Win32.SaveFileDialog
-                    dlgSave.AddExtension = True
-                    dlgSave.DefaultExt = "html"
-                    dlgSave.Filter = "HTML File (*.html ,*.htm)|*.html;*.htm|Text File (*.txt)|*.txt|Adobe PDF File (*.pdf)|*.pdf|Bitmap (*.bmp)|*.bmp|JPEG (*.jpg, *.jpeg)|*.jpg|Portable Network Graphics (*.png)|*.png|Tagged Image File Format (*.tif, *.tiff)|*.tif;*.tiff"
-                    dlgSave.OverwritePrompt = True
-                    If dlgSave.ShowDialog = True Then
-                        Select Case dlgSave.FilterIndex
-                            Case 0 ' HTML
-                                IO.File.WriteAllText(dlgSave.FileName, htmlPanel.GetHtml)
-                            Case 1 ' Text
-                                IO.File.WriteAllText(dlgSave.FileName, htmlPanel.Text)
-                            Case 2 ' PDF
-                                Dim config As New PdfGenerateConfig
-                                config.PageOrientation = PdfSharp.PageOrientation.Portrait
-                                config.PageSize = PdfSharp.PageSize.Letter
-                                Using document As PdfSharp.Pdf.PdfDocument = PdfGenerator.GeneratePdf(htmlPanel.GetHtml, config)
-                                    document.Save(dlgSave.FileName)
-                                End Using
-                            Case Else ' Images
-                                Dim encoder As BitmapEncoder = Nothing
-                                Dim stream As New IO.FileStream(dlgSave.FileName, IO.FileMode.Create)
-
-                                Select Case dlgSave.FilterIndex
-                                    Case 3 : encoder = New BmpBitmapEncoder ' Bitmap
-                                    Case 4 : encoder = New JpegBitmapEncoder ' Jpeg
-                                    Case 5 : encoder = New PngBitmapEncoder ' Portable Network Graphics
-                                    Case 6 : encoder = New TiffBitmapEncoder ' Tagged Image File Format
-                                End Select
-                                If encoder IsNot Nothing Then
-                                    encoder.Frames.Add(HtmlRender.RenderToImage(htmlPanel.GetHtml))
-                                    encoder.Save(stream)
-                                End If
-                        End Select
-                    End If
-
-                Case Application.RenderEngineType.WebBrowser
-                    Document.execCommand("Save", True)
-            End Select
+            Document.execCommand("Save", True)
         End Sub
 
         Private Sub Save_CanExecute(sender As Object, e As CanExecuteRoutedEventArgs)
@@ -244,12 +180,7 @@ Namespace Controls
         End Sub
 
         Private Sub SelectAll_Executed(sender As Object, e As ExecutedRoutedEventArgs)
-            Select Case Application.RenderEngine
-                Case Application.RenderEngineType.HtmlRenderer
-                    'TODO: Select all htmlpanel
-                Case Application.RenderEngineType.WebBrowser
-                    Document.execCommand(SELECT_ALL_COMMAND)
-            End Select
+            Document.execCommand(SELECT_ALL_COMMAND)
         End Sub
 
         Private Sub SelectAll_CanExecute(sender As Object, e As CanExecuteRoutedEventArgs)
@@ -257,12 +188,7 @@ Namespace Controls
         End Sub
 
         Private Sub SelectNone_Executed(sender As Object, e As ExecutedRoutedEventArgs)
-            Select Case Application.RenderEngine
-                Case Application.RenderEngineType.HtmlRenderer
-                    htmlPanel.ClearSelection()
-                Case Application.RenderEngineType.WebBrowser
-                    Document.execCommand(UNSELECT_COMMAND)
-            End Select
+            Document.execCommand(UNSELECT_COMMAND)
         End Sub
 
         Private Sub SelectNone_CanExecute(sender As Object, e As CanExecuteRoutedEventArgs)
@@ -271,6 +197,7 @@ Namespace Controls
 #End Region
 
 #Region "Private Methods"
+
         Private Sub ProgressUpdate(ByVal sender As Object, ByVal e As BaseGrammar.ProgressUpdateEventArgs)
             Dispatcher.Invoke(Sub(value As Int32)
                                   prgResults.Value = value
@@ -363,17 +290,7 @@ Namespace Controls
             grdProgress.Visibility = Windows.Visibility.Collapsed
             btnCancel.Visibility = Windows.Visibility.Collapsed
             btnGenerate.Visibility = Windows.Visibility.Visible
-            SetResults(result.ToString)
-            CommandManager.InvalidateRequerySuggested()
-        End Sub
-
-        Private Sub SetResults(ByVal result As String)
-            Select Case Application.RenderEngine
-                Case Application.RenderEngineType.HtmlRenderer
-                    htmlPanel.Text = result
-                Case Application.RenderEngineType.WebBrowser
-                    webBrowser.NavigateToString(result)
-            End Select
+            webBrowser.NavigateToString(result.ToString)
         End Sub
 #End Region
 
