@@ -24,7 +24,7 @@
         <CommandBinding Command="{x:Static util:CustomCommands.Cancel}" Executed="Cancel_Executed" />
         <CommandBinding Command="Print" Executed="Print_Executed" CanExecute="Print_CanExecute" />
     </UserControl.CommandBindings>
-    <Grid>
+    <Grid Name="grdMain">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="30*" />
             <ColumnDefinition Width="70*" />

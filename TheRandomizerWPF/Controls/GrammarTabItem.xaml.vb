@@ -327,6 +327,12 @@ Namespace Controls
                 Process.Start(DirectCast(e.Source, Hyperlink).NavigateUri.ToString)
             End If
         End Sub
+
+        Private Sub GrammarTabItem_Loaded(sender As Object, e As RoutedEventArgs) Handles Me.Loaded
+            If My.Settings.DefaultDetailWidth > 0 Then
+                grdMain.ColumnDefinitions(0).Width = New GridLength(My.Settings.DefaultDetailWidth)
+            End If
+        End Sub
 #End Region
 
     End Class
