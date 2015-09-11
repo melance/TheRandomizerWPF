@@ -65,6 +65,7 @@
             <metro:Flyout Header="Settings" Position="Right" Width="400" Theme="Inverse" x:Name="flySettings" IsModal="True">
                 <DockPanel Margin="24,6,24,0" LastChildFill="False">
                     <DockPanel DockPanel.Dock="Top" Margin="0,3,0,3">
+                        <!-- Theme -->
                         <ComboBox Name="cboTheme" Margin="3,0,3,0" Width="200" DockPanel.Dock="Right" IsEditable="False" SelectionChanged="cboTheme_SelectionChanged">
                             <ComboBoxItem Tag="BaseLight" Name="BaseLight">
                                 <DockPanel>
@@ -82,13 +83,16 @@
                         <Label Content="Theme" DockPanel.Dock="Left" Margin="0,0,3,0" />
                     </DockPanel>
                     <DockPanel DockPanel.Dock="Top" Margin="0,3,0,3">
+                        <!-- Accent Color -->
                         <ComboBox Name="cboAccent" Margin="3,0,3,0" Width="200" DockPanel.Dock="Right" IsEditable="False" SelectionChanged="cboAccent_SelectionChanged" ItemTemplate="{StaticResource cboAccentTemplate}" />
-                        <Label Content="Color" DockPanel.Dock="Left" Margin="0,0,3,0" />               
+                        <Label Content="Color" DockPanel.Dock="Left" Margin="0,0,3,0" />
                     </DockPanel>
                     <Separator DockPanel.Dock="Top" Margin="0,3,0,3"/>
-                    <metro:ToggleSwitch OnLabel="Auto Update" OffLabel="Manual Update" DockPanel.Dock="Top" Margin="0,3,0,3" IsChecked="{Binding Source={x:Static local:MySettings.Default}, Path=CheckForUpdates}"/>
-                    <metro:ToggleSwitch OnLabel="Show Grammar Load Errors" OffLabel="Hide Grammar Load Errors" DockPanel.Dock="Top" Margin="0,3,0,3" IsChecked="{Binding Source={x:Static local:MySettings.Default}, Path=ShowLoadErrors}" />
                     <DockPanel DockPanel.Dock="Top" Margin="0,3,0,3">
+                        <Label Content="Default Detail Column Width" DockPanel.Dock="Left" Margin="0,0,3,0" />
+                        <metro:NumericUpDown Interval="60" VerticalAlignment="Center" Margin="3,0,3,0" Value="{Binding Source={x:Static local:MySettings.Default}, Path=DefaultDetailWidth}" Minimum="0" Maximum="1000" />
+                    </DockPanel>
+                    <DockPanel DockPanel.Dock="Top" Margin="0,3,0,3"> <!-- Default Results Font -->
                         <Label Content="Default Results Font" DockPanel.Dock="Left" Margin="0,0,3,0" />
                         <Button Name="btnDefaultResultsFont" DockPanel.Dock="Right" Margin="3,0,0,0" Click="btnDefaultResultsFont_Click">
                             <Rectangle Width="20" Height="20" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
@@ -99,7 +103,7 @@
                         </Button>
                         <TextBox IsReadOnly="true" VerticalContentAlignment="Center" Margin="3,0,3,0" Text="{Binding Source={x:Static local:MySettings.Default}, Path=DefaultResultFont}"/>
                     </DockPanel>
-                    <DockPanel DockPanel.Dock="Top" Margin="0,3,0,3">
+                    <DockPanel DockPanel.Dock="Top" Margin="0,3,0,3"> <!-- Generator Directory -->
                         <Label Content="Generator Directory" DockPanel.Dock="Left" Margin="0,0,3,0" />
                         <Button Name="btnGrammarPath" DockPanel.Dock="Right" Margin="3,0,0,0" Click="btnGrammarPath_Click">
                             <Rectangle Width="20" Height="20" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
@@ -110,6 +114,9 @@
                         </Button>
                         <TextBox IsReadOnly="true" VerticalContentAlignment="Center" Margin="3,0,3,0" Text="{Binding Source={x:Static local:MySettings.Default}, Path=GrammarFilePath}"/>
                     </DockPanel>
+                    <Separator DockPanel.Dock="Top" Margin="0,3,0,3"/>
+                    <metro:ToggleSwitch OnLabel="Auto Update" OffLabel="Manual Update" DockPanel.Dock="Top" Margin="0,3,0,3" IsChecked="{Binding Source={x:Static local:MySettings.Default}, Path=CheckForUpdates}"/>
+                    <metro:ToggleSwitch OnLabel="Show Grammar Load Errors" OffLabel="Hide Grammar Load Errors" DockPanel.Dock="Top" Margin="0,3,0,3" IsChecked="{Binding Source={x:Static local:MySettings.Default}, Path=ShowLoadErrors}" />
                 </DockPanel>
             </metro:Flyout>
         </metro:FlyoutsControl>

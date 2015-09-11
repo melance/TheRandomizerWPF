@@ -60,5 +60,5 @@ Imports System.Windows.Markup
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("2.1.0.4")> 
-<Assembly: AssemblyFileVersion("2.1.0.4")> 
+<Assembly: AssemblyVersion("2.1.1.1")> 
+<Assembly: AssemblyFileVersion("2.1.1.1")> 
