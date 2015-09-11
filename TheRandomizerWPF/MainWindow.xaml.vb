@@ -103,7 +103,7 @@ Class MainWindow
     Private Const COPY_COMMAND As String = "Copy"
     Private Const SAVE_AS_COMMAND As String = "SaveAs"
     Private Const FILE_NAME_FORMAT As String = "{0}.html"
-    Private Const AUTO_UPDATE_MANIFEST As String = "http://35887a069d1c5e40fcaa-9f14dcdabbf0f021d6ceb0c8533f4ebc.r20.cf1.rackcdn.com/appcast.xml"
+    Private Const AUTO_UPDATE_MANIFEST As String = "https://raw.githubusercontent.com/melance/TheRandomizerWPF/master/appcast.xml"
     Private Const EXPLORER_PROCESS As String = "Explorer.exe"
     Private Const EXPLORER_PROCESS_ARGS As String = "/select,""{0}"""
     Private ReadOnly DEFAULT_RESULT_FONT As New System.Drawing.Font("Consolas", 12)
