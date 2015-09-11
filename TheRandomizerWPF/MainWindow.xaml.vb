@@ -114,7 +114,6 @@ Class MainWindow
     Private WithEvents _worker As BackgroundWorker
     Private _splashScreen As SplashScreen
     Private _tags As List(Of String)
-    Private _traceLog As StringWriter
     Private _theme As String
     Private Const ACCENT_COLOR_BRUSH As String = "AccentColorBrush"
     Private _controller As ProgressDialogController
@@ -224,6 +223,13 @@ Class MainWindow
             _splashScreen.Close()
             _splashScreen = Nothing
         End If
+        If e.Result IsNot Nothing Then
+            Dispatcher.Invoke(Sub()
+                                  Dim le As New LoadErrors
+                                  le.ErrorList = DirectCast(e.Result, Dictionary(Of String, Exception))
+                                  le.ShowDialog()
+                              End Sub)
+        End If
         If Not flySettings.IsVisible AndAlso tabResults.SelectedItem IsNot Nothing Then tabResults.Visibility = Windows.Visibility.Visible
         Visibility = Windows.Visibility.Visible
         LoadUserSettings()
@@ -247,6 +253,7 @@ Class MainWindow
     Private Sub LoadGrammarFiles(sender As Object, e As DoWorkEventArgs)
         Dim tags As New List(Of String)
         Dim paths As New List(Of String)
+        Dim errorList As Dictionary(Of String, Exception)
 
         paths.Add(IO.Path.Combine(My.Application.Info.DirectoryPath, DATA_FILES_DIRECTORY))
         If Not String.IsNullOrWhiteSpace(My.Settings.GrammarFilePath) Then paths.Add(My.Settings.GrammarFilePath)
@@ -254,12 +261,15 @@ Class MainWindow
         Grammars.Utility.GrammarFilePaths.AddRange(paths)
         GrammarList = New GrammarList(paths)
         AddHandler GrammarList.ReportProgress, AddressOf GrammarList_ReportProgress
-        GrammarList.Load()
+        errorList = GrammarList.Load()
 
-        If My.Settings.ShowLoadErrors AndAlso Not String.IsNullOrEmpty(_traceLog.ToString) Then
-            Dim le As New LoadErrors
-            le.ErrorText = _traceLog.ToString
-            le.ShowDialog()
+        If My.Settings.ShowLoadErrors AndAlso errorList IsNot Nothing AndAlso errorList.Count > 0 Then
+            e.Result = errorList
+            'Dispatcher.Invoke(Sub()
+            '    Dim le As New LoadErrors
+            '    le.ErrorList = errorList
+            '    le.ShowDialog()
+            'End Sub)
         End If
 
         Dispatcher.Invoke(Sub() pnlTags.Children.Clear())
@@ -447,8 +457,6 @@ Class MainWindow
         _splashScreen.WindowStartupLocation = Windows.WindowStartupLocation.CenterScreen
         Application.SetTheme(_splashScreen, My.Settings.ThemeAccent, My.Settings.Theme)
         _splashScreen.Show()
-        _traceLog = New StringWriter
-        DirectCast(Trace.Listeners("TraceLog"), TextWriterTraceListener).Writer = _traceLog
         Visibility = Windows.Visibility.Hidden
         LoadGrammarFilesWorker()
         LoadThemes()

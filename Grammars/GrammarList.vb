@@ -13,18 +13,11 @@ Public Class GrammarList
     Private Const LOADING_GRAMMAR_FILE_ERROR As String = "\b Error loading the grammar rules file {0} \b0"
     Private Const RTF_TAB As String = "\tab"
 
-    Private _loadErrors As String
     Private _paths As List(Of String)
     Private _selectedTags As New List(Of String)
     Private _filteredList As GrammarList
 
     Public Event ReportProgress As EventHandler(Of ProgressChangedEventArgs)
-
-    Public ReadOnly Property LoadErrors As String
-        Get
-            Return _loadErrors
-        End Get
-    End Property
 
     Public Property SelectedTags As List(Of String)
         Get
@@ -54,8 +47,8 @@ Public Class GrammarList
         _paths = paths
     End Sub
 
-    Public Sub Load()
-        Dim errorList As New StringBuilder
+    Public Function Load() As Dictionary(Of String, Exception)
+        Dim errorList As New Dictionary(Of String, Exception)
         Dim count As Int32 = 0
         Dim done As Int32 = 0
         Dim fileList As New List(Of String)
@@ -79,22 +72,12 @@ Public Class GrammarList
                     Me.Add(info)
                 End If
             Catch ex As Exception
-                Dim ie As Exception = ex
-
-                If String.IsNullOrEmpty(errorList.ToString) Then errorList.AppendLine(ERROR_HEADER)
-
-                Trace.WriteLine(String.Format(LOADING_GRAMMAR_FILE_ERROR, IO.Path.GetFileName(filename)))
-                Trace.Indent()
-                Do
-                    Trace.WriteLine(RTF_TAB & ie.Message)
-                    ie = ie.InnerException
-                Loop Until ie Is Nothing
-                Trace.Unindent()
+                errorList.Add(Path.GetFileName(filename), ex)
             End Try
         Next
 
-        _loadErrors = errorList.ToString
-    End Sub
+        Return errorList
+    End Function
 
     Private Sub FilterList()
         Dim result As New GrammarList
