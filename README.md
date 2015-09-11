@@ -12,8 +12,8 @@
 ---
 There are two ways to set up The Randomizer:
 
-* [A Windows Installer](https://github.com/melance/TheRandomizerWPF/releases/download/2.1.1.0/The.Randomizer.Setup.exe)
-* [A Compressed Zip File](https://github.com/melance/TheRandomizerWPF/releases/download/2.1.1.0/The.Randomizer.zip)
+* [A Windows Installer](https://github.com/melance/TheRandomizerWPF/releases/download/2.1.1.1/The.Randomizer.Setup.exe)
+* [A Compressed Zip File](https://github.com/melance/TheRandomizerWPF/releases/download/2.1.1.1/The.Randomizer.zip)
 
 Both can be found in the [Releases](https://github.com/melance/TheRandomizerWPF/releases) section of this repository
 
