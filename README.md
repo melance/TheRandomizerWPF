@@ -21,6 +21,12 @@ Both can be found in the [Releases](https://github.com/melance/TheRandomizerWPF/
 ---
 There is a small but great community on reddit that I personally moderate under the subreddit [/r/TheRandomizer](http://www.reddit.com/r/therandomizer) to keep up to date on news, new versions, customizations, and more.
 
+### Customizations ###
+---
+Customizations can be found in the following repository:
+
+[The Randomizer Customizations](https://github.com/melance/TheRandomizerWPFCustomizations)
+
 ### Contributing ###
 ---
 **Everyone**
