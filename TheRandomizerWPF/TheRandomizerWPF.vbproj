@@ -101,7 +101,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AutoUpdater.NET">
-      <HintPath>..\..\TheRandomizer\TheRandomizer\References\autoupdater\AutoUpdater.NET.dll</HintPath>
+      <HintPath>..\References\AutoUpdater.NET.dll</HintPath>
     </Reference>
     <Reference Include="Dragablz, Version=0.0.2.118, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

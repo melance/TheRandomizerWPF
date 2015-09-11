@@ -6,10 +6,12 @@
                    Height="600" 
                    Width="600">
     <Grid>
-        <RichTextBox Name="txtErrors" 
-                     IsReadOnly="True" 
-                     ScrollViewer.CanContentScroll="True" 
-                     ScrollViewer.HorizontalScrollBarVisibility="Auto" 
-                     ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <ListBox Name="lstExceptions" SelectionChanged="lstExceptions_SelectionChanged" />
+        <GridSplitter Grid.Column="0" Width="3" ResizeBehavior="CurrentAndNext" />
+        <TextBox Name="txtException" Grid.Column="1" />
     </Grid>
 </metro:MetroWindow>
