@@ -34,3 +34,15 @@ I love seeing custom grammars and libraries written by users to add to the growi
 
 **Developers**
 I'm always looking for new developers to contribute to the cause.  I have a number of grand ideas on the horizon for the project that can always use help if you are interested.
+
+### Donations ###
+---
+Donations can help keep this project up to date on a more regular basis and are greatly appreciated:
+
+**Donate Via Paypal**
+
+[<img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppmcvdam.png" alt="Buy now with PayPal" />](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RGRLDFD5WD2A2&lc=US&item_name=Solitude%20Software&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
+
+**Donate via Dwolla**
+
+[<img src="https://developers.dwolla.com/assets/images/bd/dwolla-btn-donate.png" />](https://www.dwolla.com/hub/solitudesoftware)
