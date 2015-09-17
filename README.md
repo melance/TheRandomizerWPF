@@ -30,7 +30,7 @@ Customizations can be found in the following repository:
 ### Contributing ###
 ---
 **Everyone**
-I love seeing custom grammars and libraries written by users to add to the growing list.  If you develop a new grammar that you think anyone else might like, please submit it to the [subreddit](http://www.reddit.com/r/therandomizer) or send it to me a message here via my [GitHub profile](https://github.com/melance).
+I love seeing custom grammars and libraries written by users to add to the growing list.  If you develop a new grammar that you think anyone else might like, please submit it to the [wiki](http://therandomizer.wikidot.com/grammar) or send it to me a message here via my [GitHub profile](https://github.com/melance).
 
 **Translators**
 I'm working on translating The Randomizer into as many languages as I can.  If you are interested, please see the link below.
