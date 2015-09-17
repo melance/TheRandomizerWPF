@@ -32,6 +32,11 @@ Customizations can be found in the following repository:
 **Everyone**
 I love seeing custom grammars and libraries written by users to add to the growing list.  If you develop a new grammar that you think anyone else might like, please submit it to the [subreddit](http://www.reddit.com/r/therandomizer) or send it to me a message here via my [GitHub profile](https://github.com/melance).
 
+**Translators**
+I'm working on translating The Randomizer into as many languages as I can.  If you are interested, please see the link below.
+
+[![Crowdin](https://d322cqt584bo4o.cloudfront.net/the-randomizer/localized.svg)](https://crowdin.com/project/the-randomizer)
+
 **Developers**
 I'm always looking for new developers to contribute to the cause.  I have a number of grand ideas on the horizon for the project that can always use help if you are interested.
 
