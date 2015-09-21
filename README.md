@@ -12,8 +12,8 @@
 ---
 There are two ways to set up The Randomizer:
 
-* [A Windows Installer](https://github.com/melance/TheRandomizerWPF/releases/download/2.1.1.0/The.Randomizer.Setup.exe)
-* [A Compressed Zip File](https://github.com/melance/TheRandomizerWPF/releases/download/2.1.1.0/The.Randomizer.zip)
+* [A Windows Installer](https://github.com/melance/TheRandomizerWPF/releases/download/2.1.1.1/The.Randomizer.Setup.exe)
+* [A Compressed Zip File](https://github.com/melance/TheRandomizerWPF/releases/download/2.1.1.1/The.Randomizer.zip)
 
 Both can be found in the [Releases](https://github.com/melance/TheRandomizerWPF/releases) section of this repository
 
@@ -30,7 +30,24 @@ Customizations can be found in the following repository:
 ### Contributing ###
 ---
 **Everyone**
-I love seeing custom grammars and libraries written by users to add to the growing list.  If you develop a new grammar that you think anyone else might like, please submit it to the [subreddit](http://www.reddit.com/r/therandomizer) or send it to me a message here via my [GitHub profile](https://github.com/melance).
+I love seeing custom grammars and libraries written by users to add to the growing list.  If you develop a new grammar that you think anyone else might like, please submit it to the [wiki](http://therandomizer.wikidot.com/grammar) or send it to me a message here via my [GitHub profile](https://github.com/melance).
+
+**Translators**
+I'm working on translating The Randomizer into as many languages as I can.  If you are interested, please see the link below.
+
+[![Crowdin](https://d322cqt584bo4o.cloudfront.net/the-randomizer/localized.svg)](https://crowdin.com/project/the-randomizer)
 
 **Developers**
 I'm always looking for new developers to contribute to the cause.  I have a number of grand ideas on the horizon for the project that can always use help if you are interested.
+
+### Donations ###
+---
+Donations can help keep this project up to date on a more regular basis and are greatly appreciated:
+
+**Donate Via Paypal**
+
+[<img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppmcvdam.png" alt="Buy now with PayPal" />](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RGRLDFD5WD2A2&lc=US&item_name=Solitude%20Software&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
+
+**Donate via Dwolla**
+
+[<img src="https://developers.dwolla.com/assets/images/bd/dwolla-btn-donate.png" />](https://www.dwolla.com/hub/solitudesoftware)
