@@ -2,6 +2,7 @@
 Imports System.Reflection
 Imports NCalc
 Imports Utility
+Imports YamlDotNet.Serialization
 
 Namespace Table
 
@@ -96,6 +97,7 @@ Namespace Table
         <XmlText()>
         Public Property Value() As String
         <XmlIgnore()>
+        <YamlIgnore>
         Public ReadOnly Property Table As DataTable
             Get
                 Return _table

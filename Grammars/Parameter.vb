@@ -5,6 +5,7 @@ Imports Utility
 Imports System.Collections.ObjectModel
 Imports System.Runtime.CompilerServices
 Imports System.Windows.Data
+Imports YamlDotNet.Serialization
 
 Public Enum DataTypes
     List
@@ -54,8 +55,10 @@ Public Class Parameter
     Public Property [Default] As String
 
     <XmlIgnore>
+    <YamlIgnore>
     Public Property Value As String
     <XmlIgnore>
+    <YamlIgnore>
     Public ReadOnly Property Control As DockPanel
         Get
             Dim value As Control = Nothing

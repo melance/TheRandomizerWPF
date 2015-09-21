@@ -10,6 +10,7 @@ Imports System.Text
 Imports System.Collections.ObjectModel
 Imports System.Runtime.CompilerServices
 Imports System.ComponentModel
+Imports YamlDotNet.Serialization
 
 Namespace Assignment
     <XmlRoot("grammar")>
@@ -168,7 +169,7 @@ Namespace Assignment
             rules.Sort()
 
             If createLibrary Then
-                Dim library As New library
+                Dim library As New Library
                 library.Rules.AddRange(rules)
                 value = library
             Else
@@ -351,18 +352,28 @@ Namespace Assignment
 #Region "Properties"
         <XmlArray("items")>
         <XmlArrayItem("item")>
-        Public ReadOnly Property Rules As ObservableCollection(Of LineItem)
+        <YamlMember(Alias:="items")>
+        Public Property Rules As ObservableCollection(Of LineItem)
             Get
                 Return _rules
             End Get
+            Set(value As ObservableCollection(Of LineItem))
+                _rules = value
+                OnPropertyChanged()
+            End Set
         End Property
 
         <XmlArray("imports")>
         <XmlArrayItem("import")>
-        Public ReadOnly Property Import As ObservableCollection(Of String)
+        <YamlMember(Alias:="imports")>
+        Public Property Import As ObservableCollection(Of String)
             Get
                 Return _import
             End Get
+            Set(value As ObservableCollection(Of String))
+                _import = value
+                OnPropertyChanged()
+            End Set
         End Property
 #End Region
 

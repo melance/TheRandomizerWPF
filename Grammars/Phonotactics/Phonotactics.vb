@@ -4,6 +4,7 @@ Imports System.Text
 Imports System.Globalization
 Imports System.Collections.ObjectModel
 Imports System.ComponentModel
+Imports YamlDotNet.Serialization
 
 Namespace Phonotactics
 
@@ -212,6 +213,7 @@ Namespace Phonotactics
         Public Property Value() As String
 
         <XmlIgnore>
+        <YamlIgnore>
         Friend ReadOnly Property ValueList() As List(Of String)
             Get
                 If _valueList Is Nothing Then

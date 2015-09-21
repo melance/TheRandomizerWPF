@@ -1,4 +1,5 @@
 ﻿Imports System.Xml.Serialization
+Imports YamlDotNet.Serialization
 
 Namespace Assignment
     Public Class LineItem
@@ -47,16 +48,22 @@ Namespace Assignment
         Private _to As Int32 = 0
 
         <XmlAttribute("name")>
+        <YamlMember(Alias:="name")>
         Public Property Name As String
         <XmlText>
+        <YamlMember(Alias:="value")>
         Public Property Expression As String
         <XmlAttribute("weight")>
+        <YamlMember(Alias:="weight")>
         Public Property Weight As Int32 = 1
         <XmlAttribute("next")>
+        <YamlMember(Alias:="next")>
         Public Property [Next] As String
         <XmlAttribute("variable")>
+        <YamlMember(Alias:="variable")>
         Public Property Variable As String
         <XmlAttribute("from")>
+        <YamlMember(Alias:="from")>
         Public Property FromValue As Int32
             Get
                 Return _from
@@ -70,6 +77,7 @@ Namespace Assignment
         End Property
 
         <XmlAttribute("to")>
+        <YamlMember(Alias:="to")>
         Public Property ToValue As Int32
             Get
                 Return _to
