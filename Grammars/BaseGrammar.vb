@@ -111,6 +111,7 @@ Public MustInherit Class BaseGrammar
 #Region "Members"
     Private Shared _random As Random
     Private _name As String
+    Private _version As Double?
     Private _description As String
     Private _author As String
     Private _category As String
@@ -168,6 +169,19 @@ Public MustInherit Class BaseGrammar
                 _name = value
                 OnPropertyChanged()
             End If
+        End Set
+    End Property
+
+    <XmlElement("version", IsNullable:=True)>
+    <YamlMember(Alias:="version")>
+    Public Overridable Property Version As Double?
+        Get
+            If _version Is Nothing Then Return 1
+            Return _version
+        End Get
+        Set(value As Double?)
+            _version = value
+            OnPropertyChanged()
         End Set
     End Property
 

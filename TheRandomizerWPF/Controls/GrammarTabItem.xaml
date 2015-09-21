@@ -71,6 +71,10 @@
                                 <Run Text="By:" FontWeight="Bold"/>
                                 <Run Text="{Binding Grammar.Author, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
                             </Paragraph>
+                            <Paragraph>
+                                <Run Text="Version:" FontWeight="Bold" />
+                                <Run Text="{Binding Grammar.Version, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat={}{0:0.00}}" />
+                            </Paragraph>
                             <Paragraph IsHyphenationEnabled="False" TextAlignment="Left">
                                 <Run Text="File:" FontWeight="Bold" />
                                 <Hyperlink Click="lnkFilePath_Click" Foreground="{DynamicResource AccentColorBrush}">
