@@ -1,4 +1,4 @@
-# README #
+# The Randomizer #
 
 ### What is The Randomizer ###
 ---
