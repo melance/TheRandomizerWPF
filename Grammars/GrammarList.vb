@@ -8,7 +8,8 @@ Public Class GrammarList
     Inherits BindingList(Of GrammarListItem)
     Implements INotifyPropertyChanged
 
-    Private Const GENERATOR_FILE_PATTERN As String = "*.rnd.xml"
+    Private ReadOnly GENERATOR_FILE_PATTERN As String() = {"*.rnd.xml",
+                                                           "*.rnd.yaml"}
     Private Const ERROR_HEADER As String = "{\rtf1\ansi\deff0 {\fonttbl {\f0 Courier;}}"
     Private Const LOADING_GRAMMAR_FILE_ERROR As String = "\b Error loading the grammar rules file {0} \b0"
     Private Const RTF_TAB As String = "\tab"
@@ -54,7 +55,9 @@ Public Class GrammarList
         Dim fileList As New List(Of String)
 
         For Each path As String In _paths
-            If Directory.Exists(path) Then fileList.AddRange(Directory.GetFiles(path, GENERATOR_FILE_PATTERN))
+            For Each pattern As String In GENERATOR_FILE_PATTERN
+                If Directory.Exists(path) Then fileList.AddRange(Directory.GetFiles(path, pattern))
+            Next
         Next
 
         count = fileList.Count

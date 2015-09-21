@@ -24,3 +24,6 @@ C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\obj\x86\De
 C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\obj\x86\Debug\Grammars.pdb
 C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x86\Debug\KeraLua.dll
 C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x86\Debug\NLua.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x86\Debug\YamlDotNet.dll
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x86\Debug\YamlDotNet.pdb
+C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\Grammars\bin\x86\Debug\YamlDotNet.xml

@@ -6,6 +6,7 @@ Imports System.ComponentModel
 Imports System.Runtime.CompilerServices
 Imports System.Collections.ObjectModel
 Imports System.Windows.Media
+Imports YamlDotNet.Serialization
 
 <XmlRoot("Grammar", Namespace:="")>
 Public MustInherit Class BaseGrammar
@@ -52,6 +53,14 @@ Public MustInherit Class BaseGrammar
 
 #Region "Shared Methods"
     Public Shared Function Open(ByVal fileName As String) As BaseGrammar
+        Select Case IO.Path.GetExtension(fileName).ToLower
+            Case XML_EXTENSION : Return OpenXML(fileName)
+            Case YAML_EXTENSION,
+                 YML_EXTENSION : Return OpenYAML(fileName)
+        End Select
+    End Function
+
+    Public Shared Function OpenXML(ByVal fileName As String) As BaseGrammar
         Dim deserializer As New XmlSerializer(GetType(BaseGrammar), KnownTypes)
         Using reader As IO.StreamReader = IO.File.OpenText(fileName)
             Dim grammar As BaseGrammar = DirectCast(deserializer.Deserialize(reader), BaseGrammar)
@@ -60,6 +69,26 @@ Public MustInherit Class BaseGrammar
             Return grammar
         End Using
     End Function
+
+    Public Shared Function OpenYAML(ByVal fileName As String) As BaseGrammar
+        Dim deserializer As New YamlDotNet.Serialization.Deserializer()
+        Using reader As IO.TextReader = IO.File.OpenText(fileName)
+            Dim grammar As BaseGrammar = deserializer.Deserialize(Of BaseGrammar)(reader)
+            grammar.FilePath = fileName
+            grammar.IsDirty = False
+            Return grammar
+        End Using
+    End Function
+
+    Public Shared Sub ConvertXMLToYAML(ByVal sourcefileName As String,
+                                       ByVal targetFileName As String)
+
+        Dim grammar As BaseGrammar = OpenXML(sourcefileName)
+        Dim serializer As New YamlDotNet.Serialization.Serializer(YamlDotNet.Serialization.SerializationOptions.Roundtrip)
+        Using output As IO.TextWriter = IO.File.CreateText(targetFileName)
+            serializer.Serialize(output, grammar)
+        End Using
+    End Sub
 #End Region
 
 #Region "Constructors"
@@ -73,6 +102,10 @@ Public MustInherit Class BaseGrammar
     Private ReadOnly DEFAULT_DIVIDER_COLOR As Color = Colors.Black
     Private ReadOnly DEFAULT_RESULT_FONT As New System.Drawing.Font("Consolas", 12)
     Private Const HTML_COLOR_FORMAT As String = "#{0:X2}{1:X2}{2:X2}"
+
+    Private Const XML_EXTENSION As String = ".xml"
+    Private Const YAML_EXTENSION As String = ".yaml"
+    Private Const YML_EXTENSION As String = ".yml"
 #End Region
 
 #Region "Members"
@@ -92,9 +125,11 @@ Public MustInherit Class BaseGrammar
 #End Region
 
 #Region "Properties"
+    <YamlIgnore>
     <XmlIgnore>
     Public Property FilePath As String
 
+    <YamlIgnore>
     <XmlIgnore>
     Public ReadOnly Property FileDirectory As String
         Get
@@ -102,6 +137,7 @@ Public MustInherit Class BaseGrammar
         End Get
     End Property
 
+    <YamlIgnore>
     <XmlIgnore>
     Public ReadOnly Property FileName As String
         Get
@@ -109,6 +145,7 @@ Public MustInherit Class BaseGrammar
         End Get
     End Property
 
+    <YamlIgnore>
     <XmlIgnore>
     Public Shared ReadOnly Property Random As Random
         Get
@@ -121,6 +158,7 @@ Public MustInherit Class BaseGrammar
     End Property
 
     <XmlElement("name")>
+    <YamlMember(Alias:="name")>
     Public Overridable Property Name As String
         Get
             Return _name
@@ -134,6 +172,7 @@ Public MustInherit Class BaseGrammar
     End Property
 
     <XmlElement("author")>
+    <YamlMember(Alias:="author")>
     Public Overridable Property Author As String
         Get
             Return _author
@@ -147,6 +186,7 @@ Public MustInherit Class BaseGrammar
     End Property
 
     <XmlElement("description")>
+    <YamlMember(Alias:="description")>
     Public Overridable Property Description As String
         Get
             Return _description
@@ -159,6 +199,7 @@ Public MustInherit Class BaseGrammar
         End Set
     End Property
 
+    <YamlIgnore>
     <XmlElement("category")>
     Public Overridable Property Category As String
         Get
@@ -176,7 +217,8 @@ Public MustInherit Class BaseGrammar
         End Set
     End Property
 
-    <XmlElement("genre", IsNullable:=True)>
+    <YamlIgnore>
+    <XmlElement("genre")>
     Public Overridable Property Genre As String
         Get
             Return _genre
@@ -193,7 +235,8 @@ Public MustInherit Class BaseGrammar
         End Set
     End Property
 
-    <XmlElement("system", IsNullable:=True)>
+    <YamlIgnore>
+    <XmlElement("system")>
     Public Overridable Property System As String
         Get
             Return _system
@@ -222,6 +265,7 @@ Public MustInherit Class BaseGrammar
         End Set
     End Property
 
+    <YamlIgnore>
     <XmlIgnore>
     Public ReadOnly Property TagList As String
         Get
@@ -231,6 +275,7 @@ Public MustInherit Class BaseGrammar
 
     <XmlArray("parameters")>
     <XmlArrayItem("parameter")>
+    <YamlMember(Alias:="parameters")>
     Public Overridable Property Parameters As ObservableCollection(Of Parameter)
         Get
             Return _parameters
@@ -244,6 +289,7 @@ Public MustInherit Class BaseGrammar
     End Property
 
     <XmlElement("supportsMaxLength")>
+    <YamlMember(Alias:="supportsMaxLength")>
     Public Overridable Property SupportsMaxLength As Boolean
         Get
             Return _supportsMaxLength
@@ -257,6 +303,7 @@ Public MustInherit Class BaseGrammar
     End Property
 
     <XmlElement("url")>
+    <YamlMember(Alias:="url")>
     Public Overridable Property URL As String
         Get
             Return _url
@@ -269,24 +316,31 @@ Public MustInherit Class BaseGrammar
         End Set
     End Property
 
-    <XmlElement("visible")>
+    <YamlIgnore>
+    <XmlIgnore>
     Public Overridable Property Visible As Boolean = True
 
-    <XmlElement("oddResultColor")>
+    <YamlIgnore>
+    <XmlIgnore>
     Public Overridable Property OddResultColor As Color = DEFAULT_ODD_COLOR
 
-    <XmlElement("evenResultColor")>
+    <YamlIgnore>
+    <XmlIgnore>
     Public Overridable Property EvenResultColor As Color = DEFAULT_EVEN_COLOR
 
-    <XmlElement("dividerColor")>
+    <YamlIgnore>
+    <XmlIgnore>
     Public Overridable Property DividerColor As Color = DEFAULT_DIVIDER_COLOR
 
-    <XmlIgnore()>
+    <YamlIgnore>
+    <XmlIgnore>
     Public Overridable Property ResultFont As System.Drawing.Font = DEFAULT_RESULT_FONT
 
-    <XmlElement("css")>
+    <YamlIgnore>
+    <XmlIgnore>
     Public Overridable Property CSS As String
 
+    <YamlIgnore>
     <XmlIgnore>
     Public Overridable ReadOnly Property OddResultColorSpecified As Boolean
         Get
@@ -294,6 +348,7 @@ Public MustInherit Class BaseGrammar
         End Get
     End Property
 
+    <YamlIgnore>
     <XmlIgnore>
     Public Overridable ReadOnly Property EvenResultColorSpecified As Boolean
         Get
@@ -301,6 +356,7 @@ Public MustInherit Class BaseGrammar
         End Get
     End Property
 
+    <YamlIgnore>
     <XmlIgnore>
     Public Overridable ReadOnly Property DividerColorSpecified As Boolean
         Get
@@ -308,6 +364,7 @@ Public MustInherit Class BaseGrammar
         End Get
     End Property
 
+    <YamlIgnore>
     <XmlIgnore>
     Public Overridable ReadOnly Property ResultFontSpecified As Boolean
         Get
@@ -315,6 +372,7 @@ Public MustInherit Class BaseGrammar
         End Get
     End Property
 
+    <YamlIgnore>
     <XmlIgnore>
     Public Overridable ReadOnly Property CSSSpecified As Boolean
         Get
@@ -322,12 +380,15 @@ Public MustInherit Class BaseGrammar
         End Get
     End Property
 
+    <YamlIgnore>
     <XmlIgnore>
     Public Property IsDirty As Boolean = False
 
+    <YamlIgnore>
     <XmlIgnore>
     Public Overridable Property Variables As New Dictionary(Of String, Object)
 
+    <YamlIgnore>
     <XmlIgnore>
     Public Property Variable(ByVal name As String) As Object
         Get
@@ -343,6 +404,7 @@ Public MustInherit Class BaseGrammar
         End Set
     End Property
 
+    <YamlIgnore>
     <XmlIgnore>
     Public ReadOnly Property CategorySpecified As Boolean
         Get
@@ -350,6 +412,7 @@ Public MustInherit Class BaseGrammar
         End Get
     End Property
 
+    <YamlIgnore>
     <XmlIgnore>
     Public ReadOnly Property GenreSpecified As Boolean
         Get
@@ -357,6 +420,7 @@ Public MustInherit Class BaseGrammar
         End Get
     End Property
 
+    <YamlIgnore>
     <XmlIgnore>
     Public ReadOnly Property SystemSpecified As Boolean
         Get
@@ -366,6 +430,7 @@ Public MustInherit Class BaseGrammar
 
     Protected Property MaxLength As Int32 = Int32.MaxValue
 
+    <YamlIgnore>
     <XmlIgnore>
     Public ReadOnly Property Parameter(ByVal name As String) As Object
         Get
@@ -374,6 +439,7 @@ Public MustInherit Class BaseGrammar
         End Get
     End Property
 
+    <YamlIgnore>
     <XmlIgnore>
     Public Overridable ReadOnly Property [Error] As String Implements IDataErrorInfo.Error
         Get
@@ -381,6 +447,7 @@ Public MustInherit Class BaseGrammar
         End Get
     End Property
 
+    <YamlIgnore>
     <XmlIgnore>
     Default Public Overridable ReadOnly Property Item(columnName As String) As String Implements IDataErrorInfo.Item
         Get
@@ -396,6 +463,7 @@ Public MustInherit Class BaseGrammar
         End Get
     End Property
 
+    <YamlIgnore>
     <XmlIgnore>
     Private ReadOnly Property FilterComponentsInError As Boolean
         Get
@@ -405,6 +473,7 @@ Public MustInherit Class BaseGrammar
         End Get
     End Property
 
+    <YamlIgnore>
     <XmlIgnore>
     Public Property SkipValidation As Boolean
         Get
