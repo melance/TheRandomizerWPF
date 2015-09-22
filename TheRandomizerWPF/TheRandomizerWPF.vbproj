@@ -507,8 +507,8 @@
       <Project>{971117fc-ad14-4cd5-9f58-c000eb967e43}</Project>
       <Name>Grammars</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MRU\MRU.vbproj">
-      <Project>{e0b8d276-b588-406f-8da8-52f18198d33f}</Project>
+    <ProjectReference Include="..\MRU2\MRU.csproj">
+      <Project>{abc7a817-7f69-4796-b26f-2a4adcdec38e}</Project>
       <Name>MRU</Name>
     </ProjectReference>
     <ProjectReference Include="..\Utility\Utility.vbproj">
