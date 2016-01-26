@@ -101,14 +101,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AutoUpdater.NET">
-      <HintPath>..\References\AutoUpdater.NET.dll</HintPath>
+      <HintPath>..\packages\AutoupdaterdotNet.1.3.1\lib\AutoUpdater.NET.dll</HintPath>
     </Reference>
-    <Reference Include="Dragablz, Version=0.0.2.118, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\References\Dragablz.dll</HintPath>
+    <Reference Include="Dragablz, Version=0.0.2.147, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dragablz.0.0.2.147\lib\net45\Dragablz.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="MahApps.Metro">
+    <Reference Include="MahApps.Metro, Version=1.1.2.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
       <HintPath>..\packages\MahApps.Metro.1.1.2.0\lib\net45\MahApps.Metro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.0.0.0.0\lib\net45\MaterialDesignColors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=0.0.0.90, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.0.0.0.90\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -118,6 +127,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\MahApps.Metro.1.1.2.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
