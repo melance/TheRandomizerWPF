@@ -130,8 +130,10 @@ publish/
 *.publishproj
 
 # NuGet Packages Directory
-## TODO: If you have NuGet Package Restore enabled, uncomment the next line
-#packages/
+## If you have NuGet Package Restore enabled, uncomment the next line
+**/packages/*
+## If the tool you use requires repositories.config
+!**/packages/repositories.config
 
 # Windows Azure Build Output
 csx

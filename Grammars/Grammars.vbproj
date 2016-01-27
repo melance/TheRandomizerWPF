@@ -90,8 +90,9 @@
       <HintPath>..\packages\NLua.1.3.2.1\lib\net45\KeraLua.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="NCalc">
-      <HintPath>..\..\TheSandbox\TheSandbox\References\NCalc.dll</HintPath>
+    <Reference Include="NCalc, Version=1.3.8.0, Culture=neutral, PublicKeyToken=973cde3f1cafed03, processorArchitecture=MSIL">
+      <HintPath>..\packages\ncalc.1.3.8\lib\NCalc.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="NLua, Version=1.3.2.0, Culture=neutral, PublicKeyToken=8df2ab518030ea95, processorArchitecture=MSIL">
       <HintPath>..\packages\NLua.1.3.2.1\lib\net45\NLua.dll</HintPath>
@@ -189,9 +190,6 @@
     <None Include="Assignment\AssignmentGrammarAnalysis.html" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="lua52.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Phonotactics\PhonotacticsGrammarAnalysis.html" />
     <Content Include="ResultsTemplate.html" />
   </ItemGroup>
@@ -201,7 +199,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <PropertyGroup>
     <PostBuildEvent>
-xcopy /s /y "C:\Personal\Dropbox\Development\Source Code\TheRandomizerWPF\packages\NLua.1.3.2.1\lib\native\*.*" "$(TargetDir)"</PostBuildEvent>
+xcopy /s /y "$(ProjectDir)\..\packages\NLua.1.3.2.1\lib\native\*.*" "$(TargetDir)"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
