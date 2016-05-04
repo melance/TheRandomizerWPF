@@ -513,19 +513,23 @@
     <AppDesigner Include="My Project\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Grammars\Grammars.vbproj">
+    <ProjectReference Include="..\Grammars\Grammars.csproj">
       <Project>{971117fc-ad14-4cd5-9f58-c000eb967e43}</Project>
       <Name>Grammars</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MRU2\MRU.csproj">
+    <ProjectReference Include="..\MRU\MRU.csproj">
       <Project>{abc7a817-7f69-4796-b26f-2a4adcdec38e}</Project>
       <Name>MRU</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Utility\Utility.vbproj">
+    <ProjectReference Include="..\Utility\Utility.csproj">
       <Project>{18a04041-388f-4619-a5cd-04a3653c6916}</Project>
       <Name>Utility</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+xcopy /s /y "$(ProjectDir)\..\packages\NLua.1.3.2.1\lib\native\*.*" "$(TargetDir)"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
