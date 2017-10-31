@@ -30,7 +30,7 @@ Customizations can be found in the following repository:
 ### Contributing ###
 ---
 **Everyone**
-I love seeing custom grammars and libraries written by users to add to the growing list.  If you develop a new grammar that you think anyone else might like, please submit it to the [wiki](http://therandomizer.wikidot.com/grammar) or send it to me a message here via my [GitHub profile](https://github.com/melance).
+I love seeing custom grammars and libraries written by users to add to the growing list.  If you develop a new grammar that you think anyone else might like, please submit it to the [Customizations Repository](https://github.com/melance/TheRandomizerWPFCustomizations) or send it to me a message here via my [GitHub profile](https://github.com/melance).
 
 **Translators**
 I'm working on translating The Randomizer into as many languages as I can.  If you are interested, please see the link below.
@@ -47,7 +47,3 @@ Donations can help keep this project up to date on a more regular basis and are 
 **Donate Via Paypal**
 
 [<img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppmcvdam.png" alt="Buy now with PayPal" />](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RGRLDFD5WD2A2&lc=US&item_name=Solitude%20Software&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
-
-**Donate via Dwolla**
-
-[<img src="https://developers.dwolla.com/assets/images/bd/dwolla-btn-donate.png" />](https://www.dwolla.com/hub/solitudesoftware)
